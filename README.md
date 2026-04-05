@@ -184,4 +184,4 @@ WHERE genres LIKE '%Thriller%'
 
 ---
 ### Response Summaries
-Check out the [response](Sprint 1/Response.md) from various LLMs.
+Check out the [response](Sprint%201/Response.md) from various LLMs.
