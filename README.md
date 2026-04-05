@@ -1,8 +1,5 @@
 # LLM Data Extraction Benchmark: Structured vs. Unstructured Data
 
-### Project Overview
-![Project Overview Mind Map](Mind%20Map%20-%20Project%20Overview.png)
-
 This repository contains a benchmark test designed to evaluate the ability of Large Language Models (LLMs) to accurately extract and compute data from completely unstructured text files. 
 
 The dataset consists of 1,000 random movies (stratified by year and rating) from the IMDb database, formatted into natural language paragraphs. Below are the 5 benchmark questions, the PostgreSQL queries used to establish the "ground truth" answer key from the structured CSV, and the results.
