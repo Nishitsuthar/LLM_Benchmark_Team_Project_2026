@@ -10,8 +10,6 @@ The dataset consists of 1,000 random movies (stratified by year and rating) from
 
 **Question:** Which pair of actors or directors appear together in the most movies in this dataset? Name the pair and list the titles of the movies they collaborated on.
 
-**Why this breaks LLMs:** LLMs struggle with large-scale combinatorial matching. To answer this from unstructured text, the model must cross-reference every cast list with every other cast list and maintain a perfect running tally of pairs.
-
 #### The SQL Query
 ```sql
 WITH unnested_cast AS (
@@ -44,8 +42,6 @@ LIMIT 1;
 
 **Question:** Calculate the exact average user rating for all movies categorized as 'Comedy' that were released strictly between the years 2000 and 2005.
 
-**Why this breaks LLMs:** LLMs cannot natively perform bulk mathematics. The model must accurately extract the rating of every applicable comedy, hold those floats in its context window, sum them, and divide without skipping a single record.
-
 #### The SQL Query
 ```sql
 SELECT 
@@ -63,88 +59,122 @@ WHERE genres LIKE '%Comedy%'
 
 ---
 
-### 3. The "Prolific but Poor" Benchmark (Grouping and Thresholding)
+### 3. The 3-Way Combinatorial
 
-**Question:** Identify the single actor or director who is associated with the highest total number of movies rated strictly below 5.0. How many low-rated movies are they credited in?
-
-**Why this breaks LLMs:** This requires the model to filter records based on a numerical threshold, extract every human entity from the surviving records, and construct an invisible frequency dictionary to find the maximum. 
+**Question:** Identify the maximum number of times any Actor/Director/Producer trio collaborated on Action or Drama movies between 2001 and 2010 with a rating between 5.0 and 8.0. Then, list all trios that achieved this maximum, along with the titles of the specific movies they collaborated on.
 
 #### The SQL Query
 ```sql
-WITH unnested_bad_cast AS (
-    SELECT TRIM(person) AS person_name
-    FROM benchmark_movies, 
+WITH filtered_movies AS (
+    SELECT tconst, primaryTitle, genres
+    FROM benchmark_movies
+    WHERE startYear BETWEEN 2001 AND 2010
+      AND (genres LIKE '%Action%' OR genres LIKE '%Drama%')
+      AND averageRating > 5.0 
+      AND averageRating < 8.0
+),
+cast_list AS (
+    SELECT tconst, TRIM(person) AS person_name
+    FROM benchmark_movies,
     unnest(string_to_array(Cast_and_Crew, ',')) AS person
-    WHERE averageRating < 5.0 
-      AND Cast_and_Crew != 'No Cast Data'
+),
+trio_counts AS (
+    SELECT 
+        c1.person_name AS actor_actress, 
+        c2.person_name AS director, 
+        c3.person_name AS producer, 
+        COUNT(*) as collaboration_count,
+        STRING_AGG(f.primaryTitle, ', ') as movies
+    FROM filtered_movies f
+    JOIN cast_list c1 ON f.tconst = c1.tconst AND (c1.person_name LIKE '%(actor)%' OR c1.person_name LIKE '%(actress)%')
+    JOIN cast_list c2 ON f.tconst = c2.tconst AND c2.person_name LIKE '%(director)%'
+    JOIN cast_list c3 ON f.tconst = c3.tconst AND c3.person_name LIKE '%(producer)%'
+    GROUP BY 1, 2, 3
 )
-SELECT person_name, COUNT(*) as bad_movie_count
-FROM unnested_bad_cast
-GROUP BY person_name
-ORDER BY bad_movie_count DESC
-LIMIT 1;
+SELECT * FROM trio_counts
+WHERE collaboration_count = (SELECT MAX(collaboration_count) FROM trio_counts)
+ORDER BY actor_actress;
 ```
 
 #### Query 3 Result
-| person_name | bad_movie_count |
-| :--- | :--- |
-| Vinnie Jones (actor) | 4 |
+| actor_actress | director | producer | collaboration_count | movies |
+| :--- | :--- | :--- | :--- | :--- |
+| Alba Gaïa Bellugi (actress) | Jean-Pierre Améris (director) | Fabienne Vonier (producer) | 2 | Call Me Elisabeth, Call Me Elisabeth |
+| Ayesha Jhulka (actress) | Imtiaz Ali (director) | Dharmendra (producer) | 2 | Socha Na Tha, Socha Na Tha |
+| Birte Heribertson (actress) | Jan Troell (director) | Christer Nilson (producer) | 2 | Everlasting Moments, Everlasting Moments |
+| Birte Heribertson (actress) | Jan Troell (director) | Tero Kaukomaa (producer) | 2 | Everlasting Moments, Everlasting Moments |
+| Birte Heribertson (actress) | Jan Troell (director) | Thomas Stenderup (producer) | 2 | Everlasting Moments, Everlasting Moments |
+| Bruce Glover (actor) | Peter McGennis (director) | Peter McGennis (producer) | 2 | Buffalo Bushido, Buffalo Bushido |
+| Carrie-Anne Moss (actress) | Nick Guthe (director) | Dana Brunetti (producer) | 2 | Mini's First Time, Mini's First Time |
+| Carrie-Anne Moss (actress) | Nick Guthe (director) | Edward Bass (producer) | 2 | Mini's First Time, Mini's First Time |
+| Carrie-Anne Moss (actress) | Nick Guthe (director) | Evan Astrowsky (producer) | 2 | Mini's First Time, Mini's First Time |
+| Carrie-Anne Moss (actress) | Nick Guthe (director) | Kevin Spacey (producer) | 2 | Mini's First Time, Mini's First Time |
+| Inge Appelt (actress) | Vinko Bresan (director) | Ivan Maloca (producer) | 2 | Will Not End Here, Will Not End Here |
+| Kalabhavan Mani (actor) | Rajasenan (director) | B.Rakesh (producer) | 2 | Malayalimamanu Vanakkam, Malayalimamanu Vanakkam |
+| Kalabhavan Mani (actor) | Saran (director) | B. Gurunath (producer) | 2 | Gemini, Gemini |
+| Kalabhavan Mani (actor) | Saran (director) | Balasubramanian M. (producer) | 2 | Gemini, Gemini |
+| Kalabhavan Mani (actor) | Saran (director) | Guhan M.S. (producer) | 2 | Gemini, Gemini |
+| Kalabhavan Mani (actor) | Saran (director) | Saravanan M. (producer) | 2 | Gemini, Gemini |
+| Luke Wilson (actor) | Nick Guthe (director) | Dana Brunetti (producer) | 2 | Mini's First Time, Mini's First Time |
+| Luke Wilson (actor) | Nick Guthe (director) | Edward Bass (producer) | 2 | Mini's First Time, Mini's First Time |
+| Luke Wilson (actor) | Nick Guthe (director) | Evan Astrowsky (producer) | 2 | Mini's First Time, Mini's First Time |
+| Luke Wilson (actor) | Nick Guthe (director) | Kevin Spacey (producer) | 2 | Mini's First Time, Mini's First Time |
+| Yves Verhoeven (actor) | Jeanne Waltz (director) | Didier Haudepin (producer) | 2 | A Parting Shot, A Parting Shot |
+| Yves Verhoeven (actor) | Jeanne Waltz (director) | Pierre-Alain Meier (producer) | 2 | A Parting Shot, A Parting Shot |
 
 ---
 
-### 4. The "Negative Space" Benchmark (Identifying Absence)
+### 4. The "Year-Over-Year Drop"
 
-**Question:** Are there any years in this dataset where not a single 'Action' movie received a rating of 8.0 or higher? If so, list the specific years.
-
-**Why this breaks LLMs:** AI models are generative; they are designed to find and produce existing data. Identifying the *absence* of data requires mapping all successful action movies to a timeline and subtracting that from the absolute dataset boundaries.
+**Question:** Looking exclusively at movies containing the 'Sci-Fi' genre, which specific release year saw the largest drop in the average rating compared to the year immediately preceding it? State the two years and the exact difference in the average rating.
 
 #### The SQL Query
 ```sql
-WITH all_years AS (
-    SELECT DISTINCT startYear FROM benchmark_movies
+WITH yearly_averages AS (
+    SELECT startYear, AVG(averageRating) as avg_rating
+    FROM benchmark_movies
+    WHERE genres LIKE '%Sci-Fi%'
+    GROUP BY startYear
 ),
-years_with_good_action AS (
-    SELECT DISTINCT startYear FROM benchmark_movies
-    WHERE genres LIKE '%Action%' AND averageRating >= 8.0
+year_over_year AS (
+    SELECT 
+        startYear as current_year,
+        avg_rating as current_rating,
+        LAG(startYear) OVER (ORDER BY startYear) as previous_year,
+        LAG(avg_rating) OVER (ORDER BY startYear) as previous_rating,
+        (avg_rating - LAG(avg_rating) OVER (ORDER BY startYear)) as rating_delta
+    FROM yearly_averages
 )
-SELECT a.startYear AS missing_years
-FROM all_years a
-LEFT JOIN years_with_good_action g ON a.startYear = g.startYear
-WHERE g.startYear IS NULL
-ORDER BY a.startYear;
-```
-
-#### Query 4 Result
-| missing_years |
-| :--- |
-| 2001 |
-| 2002 |
-| 2004 |
-| 2007 |
-| 2011 |
-| 2013 |
-| 2014 |
-| 2015 |
-
----
-
-### 5. The "Opposing Metrics" Benchmark (Sorting by Secondary Traits)
-
-**Question:** Among all the movies in the dataset that received more than 500,000 user votes, which one has the absolute lowest average rating?
-
-**Why this breaks LLMs:** This mixes large-number extraction (filtering by a 6-digit integer) with complex comparative sorting (organizing the remaining pool by a separate decimal value). It easily causes context-window confusion.
-
-#### The SQL Query
-```sql
-SELECT primaryTitle, startYear, numVotes, averageRating
-FROM benchmark_movies
-WHERE numVotes > 500000
-ORDER BY averageRating ASC
+SELECT previous_year, current_year, ROUND(rating_delta, 2) AS largest_drop
+FROM year_over_year
+WHERE previous_year IS NOT NULL
+ORDER BY rating_delta ASC
 LIMIT 1;
 ```
 
+#### Query 4 Result
+| previous_year | current_year | largest_drop |
+| :--- | :--- | :--- |
+| 2004 | 2005 | -2.85 |
+
+---
+
+### 5. The "Weighted Average"
+
+**Question:** Calculate the weighted average rating of all 'Thriller' movies released in or after the year 2015, weighted by the total number of votes (numVotes). Round your final answer to two decimal places.
+
+#### The SQL Query
+```sql
+SELECT 
+    ROUND(
+        SUM(averageRating * numVotes) / SUM(numVotes), 
+    2) AS weighted_avg_rating
+FROM benchmark_movies
+WHERE genres LIKE '%Thriller%'
+  AND startYear >= 2015;
+```
+
 #### Query 5 Result
-| primarytitle | startyear | numvotes | averagerating |
-| :--- | :--- | :--- | :--- |
-| The Amazing Spider-Man | 2012 | 760969 | 6.9 |
+| weighted_avg_rating |
+| :--- |
 
