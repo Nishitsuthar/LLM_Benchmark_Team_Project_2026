@@ -13,13 +13,17 @@ The dataset consists of 1,000 random movies (stratified by year and rating) from
 #### The SQL Query
 ```sql
 WITH unnested_cast AS (
-    SELECT tconst, primaryTitle, TRIM(person) AS person_name
+    SELECT DISTINCT tconst, primaryTitle, TRIM(person) AS person_name
     FROM benchmark_movies, 
     unnest(string_to_array(Cast_and_Crew, ',')) AS person
     WHERE Cast_and_Crew != 'No Cast Data'
 ),
 pairs AS (
-    SELECT a.person_name AS person1, b.person_name AS person2, COUNT(*) as movie_count, STRING_AGG(a.primaryTitle, ', ') as movies
+    SELECT 
+        a.person_name AS person1, 
+        b.person_name AS person2, 
+        COUNT(*) as movie_count, 
+        STRING_AGG(a.primaryTitle, ', ') as movies
     FROM unnested_cast a
     JOIN unnested_cast b 
       ON a.tconst = b.tconst AND a.person_name < b.person_name
