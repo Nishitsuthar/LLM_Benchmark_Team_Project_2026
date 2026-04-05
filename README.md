@@ -182,3 +182,6 @@ WHERE genres LIKE '%Thriller%'
 | weighted_avg_rating |
 | :--- |
 
+---
+### Response Summaries
+Check out the [response](Sprint 1/Response.md) from various LLMs.
