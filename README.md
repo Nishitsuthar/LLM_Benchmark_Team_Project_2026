@@ -38,7 +38,7 @@ LIMIT 1;
 #### Query 1 Result
 | person1 | person2 | movie_count | movies |
 | :--- | :--- | :--- | :--- |
-| Akira Ishida (actor) | Megumi Hayashibara (actress) | 9 | Evangelion: 3.0 You Can (Not) Redo, Evangelion: 3.0 You Can (Not) Redo, Evangelion: 3.0 You Can (Not) Redo, A Chinese Ghost Story: The Tsui Hark Animation, Neon Genesis Evangelion: The End of Evangelion, Neon Genesis Evangelion: The End of Evangelion, A Chinese Ghost Story: The Tsui Hark Animation, A Chinese Ghost Story: The Tsui Hark Animation, A Chinese Ghost Story: The Tsui Hark Animation |
+| Deborah Aquila (casting_director) | Tricia Wood (casting_director) | 7 | The A-Team, Good Boy, Evan Almighty, Devil's Knot, R.I.P.D., The Spirit, Red State |
 
 ---
 
