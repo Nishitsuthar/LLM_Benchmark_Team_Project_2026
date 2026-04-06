@@ -183,5 +183,9 @@ WHERE genres LIKE '%Thriller%'
 | :--- |
 
 ---
-### Response Summaries
+## Response Summaries
 Check out the [response](Sprint%201/Response.md) from various LLMs.
+
+## References
+
+- IMDb Movie Dataset: [Non-Commercial Datasets](https://developer.imdb.com/non-commercial-datasets/)
