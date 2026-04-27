@@ -77,10 +77,11 @@ def create_schema(cursor):
 
 def import_csv_file(cursor, filename, table_name):
     """Import a single CSV file into a table"""
-    filepath = Path(__file__).parent / filename
+    # Look for CSV files in ../../Data/ folder
+    filepath = Path(__file__).parent.parent.parent / 'Data' / filename
 
     if not filepath.exists():
-        print(f"  ⚠ Warning: {filename} not found, skipping...")
+        print(f"  ⚠ Warning: {filename} not found at {filepath}, skipping...")
         return False
 
     try:
