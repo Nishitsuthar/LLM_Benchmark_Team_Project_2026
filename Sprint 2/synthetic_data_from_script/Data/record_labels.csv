@@ -1,0 +1,51 @@
+label_id,name,country,founding_year,label_type,royalty_rate_per_stream
+LBL_0001,Universal Records,USA,1970,Major,0.00456
+LBL_0002,Sony Records,France,1973,Major,0.00538
+LBL_0003,Warner Records,Canada,1957,Major,0.0047
+LBL_0004,Capitol Records,UK,1953,Major,0.00738
+LBL_0005,Columbia Records,USA,1978,Major,0.00673
+LBL_0006,"Rodriguez, Figueroa and Sanchez Music",USA,2017,Independent,0.00313
+LBL_0007,Doyle Ltd Records,Japan,1985,Independent,0.00393
+LBL_0008,"Mcclain, Miller and Henderson Records",Canada,2018,Independent,0.00524
+LBL_0009,Davis and Sons Music,France,2014,Subsidiary,0.00388
+LBL_0010,"Guzman, Hoffman and Baldwin Music",USA,2017,Independent,0.00624
+LBL_0011,"Gardner, Robinson and Lawrence Records",USA,1980,Independent,0.00579
+LBL_0012,Blake and Sons Music,UK,2001,Independent,0.00362
+LBL_0013,"Henderson, Ramirez and Lewis Records",USA,2001,Independent,0.00337
+LBL_0014,Garcia-James Music,USA,1986,Independent,0.00639
+LBL_0015,Abbott-Munoz Music,USA,2018,Independent,0.00623
+LBL_0016,Blair PLC Entertainment,Germany,2009,Independent,0.0035
+LBL_0017,Dudley Group Records,UK,2004,Independent,0.00521
+LBL_0018,Arnold Ltd Entertainment,USA,2020,Independent,0.00654
+LBL_0019,"Mcclure, Ward and Lee Entertainment",USA,2003,Independent,0.00377
+LBL_0020,Williams and Sons Records,France,1984,Subsidiary,0.00565
+LBL_0021,Galloway-Wyatt Records,Germany,1998,Independent,0.00642
+LBL_0022,James Group Music,USA,1986,Independent,0.00411
+LBL_0023,"Flowers, Martin and Kelly Music",UK,2020,Independent,0.00365
+LBL_0024,"Adams, Zuniga and Wong Records",UK,2002,Independent,0.00568
+LBL_0025,"Reid, Ferguson and Sanchez Entertainment",Japan,1984,Independent,0.00554
+LBL_0026,Gray-Mayo Entertainment,Canada,2014,Independent,0.00398
+LBL_0027,"Watts, Robinson and Nguyen Music",UK,2009,Independent,0.00408
+LBL_0028,Perez Inc Entertainment,USA,2020,Subsidiary,0.00523
+LBL_0029,Morales-Jones Records,Germany,2000,Subsidiary,0.00392
+LBL_0030,"Walter, Edwards and Rios Music",Japan,1982,Independent,0.0046
+LBL_0031,Wilkerson-Day Records,Japan,1984,Independent,0.00665
+LBL_0032,Baker and Sons Entertainment,USA,2016,Independent,0.00426
+LBL_0033,"Hoffman, Baker and Richards Music",USA,2011,Independent,0.00654
+LBL_0034,"Ross, Robinson and Bright Records",USA,2009,Subsidiary,0.00406
+LBL_0035,"Snyder, Campos and Callahan Entertainment",USA,1995,Independent,0.00525
+LBL_0036,Burton Ltd Entertainment,UK,1996,Independent,0.00534
+LBL_0037,Carlson-Cruz Music,Germany,2017,Independent,0.00445
+LBL_0038,"Ferrell, Rice and Maddox Entertainment",France,1988,Subsidiary,0.00497
+LBL_0039,Frazier Inc Records,USA,1983,Independent,0.00361
+LBL_0040,"Dyer, Potter and Mack Entertainment",Germany,1990,Subsidiary,0.00469
+LBL_0041,Rodriguez-Graham Music,Canada,1984,Subsidiary,0.00453
+LBL_0042,Smith-Bowen Entertainment,USA,2009,Independent,0.00401
+LBL_0043,"Baker, Mason and White Records",USA,2015,Subsidiary,0.00572
+LBL_0044,Harrell LLC Entertainment,UK,1987,Independent,0.00654
+LBL_0045,"Romero, Gonzalez and Brooks Entertainment",USA,1997,Independent,0.00436
+LBL_0046,Ryan PLC Music,USA,1998,Subsidiary,0.00363
+LBL_0047,George Group Entertainment,UK,1980,Subsidiary,0.0065
+LBL_0048,Rodriguez LLC Entertainment,UK,1996,Independent,0.00605
+LBL_0049,Allen-Allen Records,Canada,2012,Subsidiary,0.00648
+LBL_0050,"Arroyo, Miller and Tucker Entertainment",UK,1999,Subsidiary,0.00503

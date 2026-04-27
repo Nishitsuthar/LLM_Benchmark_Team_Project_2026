@@ -1,0 +1,1501 @@
+album_id,artist_id,title,release_year,release_date,primary_genre,secondary_genre,album_type,total_tracks,popularity_score
+ALB_0001,ART_0438,Mandatory Next Generation Hierarchy,2005,2021-08-30,Rock,,Studio,14,0.09
+ALB_0002,ART_0142,Forever Decide,2022,2025-07-10,Pop,,Studio,10,0.084
+ALB_0003,ART_0387,Open-Architected Motivating Analyzer,2022,2024-05-29,Hip-Hop,,Live,14,0.072
+ALB_0004,ART_0270,Velvet Certain,2010,2022-04-23,Jazz,Country,Studio,14,0.068
+ALB_0005,ART_0581,Journey Summer,2019,2023-09-08,Indie,,Studio,12,0.134
+ALB_0006,ART_0567,Storm Loss,2020,2022-11-30,Rock,,EP,14,0.076
+ALB_0007,ART_0395,World Walk,2021,2024-11-11,Classical,R&B,Live,8,0.073
+ALB_0008,ART_0273,Inverse Reciprocal Functionalities,2018,2021-04-17,Pop,,Studio,8,0.055
+ALB_0009,ART_0300,Seamless User-Facing Framework,2022,2025-07-04,Rock,Metal,Studio,10,0.066
+ALB_0010,ART_0212,World Movement,1994,2021-03-02,Classical,,Studio,10,0.068
+ALB_0011,ART_0008,Public-Key Mobile Strategy,2007,2018-11-20,Electronic,,Live,10,0.069
+ALB_0012,ART_0236,Light May,2020,2025-07-31,Pop,Country,Studio,12,0.081
+ALB_0013,ART_0404,Multi-Layered Full-Range Service-Desk,2024,2026-04-27,R&B,,Studio,14,0.077
+ALB_0014,ART_0032,Operative Optimal Function,2021,2025-09-16,Hip-Hop,R&B,Live,12,0.083
+ALB_0015,ART_0197,Up-Sized System-Worthy Product,2024,2026-04-27,Classical,Indie,Studio,10,0.105
+ALB_0016,ART_0187,Phased Empowering Projection,2004,2021-12-23,R&B,Metal,EP,10,0.117
+ALB_0017,ART_0301,Edge Stand,2017,2023-05-15,Rock,,Live,12,0.097
+ALB_0018,ART_0539,Focused Uniform Application,2018,2023-10-27,Metal,Jazz,Studio,12,0.224
+ALB_0019,ART_0622,Love Conference,2018,2023-06-19,Pop,,Live,12,0.055
+ALB_0020,ART_0031,Up-Sized Regional Time-Frame,2016,2025-01-17,Indie,,Studio,8,0.06
+ALB_0021,ART_0045,Digitized Systemic Encryption,2024,2026-04-27,Country,Classical,Studio,10,0.055
+ALB_0022,ART_0611,Total Bifurcated Core,2017,2019-06-14,Electronic,,Studio,16,0.087
+ALB_0023,ART_0598,Storm Former,2021,2024-07-28,Rock,,Studio,12,0.154
+ALB_0024,ART_0643,Journey Itself,2021,2025-05-22,Classical,,Studio,16,0.062
+ALB_0025,ART_0045,Open-Source Motivating Time-Frame,2016,2023-03-18,Country,Classical,Live,12,0.179
+ALB_0026,ART_0392,Phased User-Facing Superstructure,2022,2024-06-10,Classical,Country,Studio,14,0.056
+ALB_0027,ART_0458,Devolved Multi-State Database,2007,2018-11-08,Pop,,Studio,10,0.188
+ALB_0028,ART_0485,Wave Recognize,2021,2024-10-02,Electronic,Classical,Studio,10,0.066
+ALB_0029,ART_0413,Multi-Tiered Foreground Conglomeration,2023,2025-10-11,Jazz,Hip-Hop,Studio,12,0.057
+ALB_0030,ART_0217,Public-Key Global Moratorium,2018,2022-06-11,Metal,Pop,Live,10,0.074
+ALB_0031,ART_0257,Neon Sport,2023,2026-03-09,Electronic,Indie,Studio,16,0.062
+ALB_0032,ART_0397,Synergized Secondary Website,2023,2026-01-04,Country,,Studio,8,0.063
+ALB_0033,ART_0373,Digital Poor,2022,2025-04-14,Electronic,R&B,Studio,16,0.064
+ALB_0034,ART_0356,Fully-Configurable Even-Keeled Open Architecture,2000,2009-06-25,Classical,,Studio,8,0.114
+ALB_0035,ART_0437,Storm Year,2013,2026-01-08,Rock,Jazz,Studio,12,0.077
+ALB_0036,ART_0180,Innovative Zero Administration Forecast,1996,2018-01-21,Pop,,Studio,10,0.064
+ALB_0037,ART_0321,Team-Oriented Tertiary Matrix,1997,2007-11-17,Country,Indie,Studio,16,0.083
+ALB_0038,ART_0311,Monitored Next Generation Utilization,2017,2024-05-15,Rock,,Live,12,0.096
+ALB_0039,ART_0242,World Field,2024,2026-04-27,Hip-Hop,,Studio,12,0.063
+ALB_0040,ART_0133,Pulse Require,2020,2024-06-28,Electronic,,Studio,10,0.069
+ALB_0041,ART_0437,Object-Based Grid-Enabled Throughput,2017,2024-12-13,Rock,Jazz,EP,14,0.058
+ALB_0042,ART_0564,Life Fill,2015,2017-09-11,Hip-Hop,,Studio,8,0.06
+ALB_0043,ART_0508,Universal Attitude-Oriented Hardware,2016,2025-09-16,Pop,,Live,16,0.091
+ALB_0044,ART_0045,World Reality,2019,2022-08-07,Country,Classical,Studio,14,0.06
+ALB_0045,ART_0013,World Measure,2016,2020-01-12,Indie,,Live,12,0.076
+ALB_0046,ART_0339,Public-Key Encompassing Open Architecture,2002,2019-08-20,Rock,Country,Studio,12,0.095
+ALB_0047,ART_0489,Devolved Bi-Directional Pricing Structure,2015,2023-12-27,Pop,R&B,Studio,8,0.057
+ALB_0048,ART_0381,Wave Education,2015,2019-07-02,Electronic,Hip-Hop,Studio,10,0.08
+ALB_0049,ART_0483,Time Relationship,2007,2024-09-15,Metal,,Studio,16,0.062
+ALB_0050,ART_0289,Face-To-Face Scalable Emulation,2023,2025-05-15,Indie,,Studio,14,0.243
+ALB_0051,ART_0046,Light Job,2011,2017-08-11,Pop,,EP,12,0.073
+ALB_0052,ART_0202,Time Marriage,2019,2021-10-26,Indie,R&B,Studio,8,0.115
+ALB_0053,ART_0052,Visionary Client-Driven Ability,2023,2026-04-14,Pop,,Studio,12,0.078
+ALB_0054,ART_0585,Time Woman,2022,2024-08-19,Country,,EP,14,0.055
+ALB_0055,ART_0219,Streamlined Methodical Matrices,2023,2025-12-20,Pop,Classical,Studio,12,0.086
+ALB_0056,ART_0684,Time Something,2021,2026-03-18,R&B,Pop,Live,12,0.215
+ALB_0057,ART_0623,Light Full,2021,2024-03-04,Pop,Rock,Studio,8,0.083
+ALB_0058,ART_0067,Midnight Artist,2003,2024-05-20,Jazz,,Studio,12,0.118
+ALB_0059,ART_0405,Cross-Group Solution-Oriented Orchestration,1993,2002-07-08,Pop,,Live,10,0.145
+ALB_0060,ART_0638,User-Centric Uniform Alliance,2014,2025-06-14,Electronic,,Studio,8,0.061
+ALB_0061,ART_0296,Enhanced Intangible Conglomeration,2012,2025-07-11,Metal,,Live,14,0.061
+ALB_0062,ART_0447,Life Although,2005,2026-04-07,R&B,Country,Studio,8,0.084
+ALB_0063,ART_0697,Object-Based Zero Tolerance Methodology,2024,2026-04-27,Hip-Hop,Country,Studio,10,0.069
+ALB_0064,ART_0047,Time Smile,2022,2026-03-30,Country,,Studio,10,0.125
+ALB_0065,ART_0655,Implemented 5Thgeneration Access,2020,2023-07-06,Classical,Hip-Hop,Live,12,0.155
+ALB_0066,ART_0262,Time Player,2024,2026-04-27,R&B,Electronic,Live,12,0.066
+ALB_0067,ART_0483,Stories Government,2019,2022-09-27,Metal,,EP,8,0.062
+ALB_0068,ART_0603,Stand-Alone Needs-Based Moderator,2021,2024-10-19,Rock,,Compilation,14,0.108
+ALB_0069,ART_0177,Devolved Motivating Local Area Network,2012,2017-08-04,Metal,Electronic,EP,14,0.063
+ALB_0070,ART_0233,Customizable Full-Range Complexity,2024,2026-04-27,Indie,Metal,Studio,12,0.119
+ALB_0071,ART_0103,Life Raise,2024,2026-04-27,Indie,,Live,12,0.07
+ALB_0072,ART_0593,Light Cultural,2008,2010-07-18,Pop,,Studio,14,0.09
+ALB_0073,ART_0627,Digital Green,2024,2026-04-27,Electronic,,Studio,8,0.057
+ALB_0074,ART_0437,Edge Out,2019,2024-09-09,Rock,Jazz,Studio,16,0.085
+ALB_0075,ART_0053,Time Data,2022,2024-09-01,Metal,Electronic,Studio,12,0.071
+ALB_0076,ART_0146,Time Total,2023,2025-12-15,Hip-Hop,Classical,Compilation,10,0.081
+ALB_0077,ART_0517,World Into,2024,2026-04-27,Indie,,Live,12,0.059
+ALB_0078,ART_0333,Velvet Myself,2024,2026-04-27,Jazz,,Studio,12,0.1
+ALB_0079,ART_0120,Open-Architected Static Attitude,2005,2010-10-30,Electronic,,Live,10,0.134
+ALB_0080,ART_0146,Stories Challenge,2021,2024-10-01,Hip-Hop,Classical,Studio,12,0.061
+ALB_0081,ART_0198,Life Would,2005,2012-01-12,Hip-Hop,Classical,EP,12,0.057
+ALB_0082,ART_0449,Fundamental Human-Resource Encoding,2019,2023-07-21,Indie,R&B,Compilation,8,0.055
+ALB_0083,ART_0528,Stories Example,2013,2025-10-24,Indie,,Studio,10,0.087
+ALB_0084,ART_0351,Innovative Optimal Success,2022,2025-06-18,Indie,,Studio,8,0.083
+ALB_0085,ART_0296,Fundamental Solution-Oriented Hierarchy,2017,2024-03-02,Metal,,Studio,12,0.078
+ALB_0086,ART_0149,Centralized Static Capability,2023,2025-10-13,R&B,,EP,12,0.061
+ALB_0087,ART_0675,Life Collection,2007,2016-03-17,R&B,,Live,8,0.068
+ALB_0088,ART_0492,Dreams Morning,2024,2026-04-27,Pop,Metal,Live,12,0.082
+ALB_0089,ART_0138,Journey View,2021,2025-06-06,Metal,,Studio,10,0.074
+ALB_0090,ART_0450,Journey Foreign,2019,2024-10-08,R&B,,Studio,10,0.403
+ALB_0091,ART_0305,Journey Purpose,2020,2025-12-25,Hip-Hop,,Live,10,0.058
+ALB_0092,ART_0478,Stories Find,2023,2025-09-07,R&B,,Compilation,14,0.093
+ALB_0093,ART_0424,Time Do,2012,2016-12-12,Country,Jazz,Studio,12,0.069
+ALB_0094,ART_0381,Devolved Mission-Critical Collaboration,2021,2024-09-06,Electronic,Hip-Hop,Studio,10,0.07
+ALB_0095,ART_0609,Journey Police,2006,2015-01-16,R&B,,Studio,10,0.097
+ALB_0096,ART_0687,Light Science,2021,2024-12-18,Pop,Electronic,Studio,12,0.093
+ALB_0097,ART_0516,Phased Web-Enabled Monitoring,2020,2025-07-11,Pop,,Compilation,10,0.469
+ALB_0098,ART_0329,World That,2014,2018-07-02,R&B,Hip-Hop,Studio,14,0.058
+ALB_0099,ART_0347,Fully-Configurable Systemic System Engine,2021,2025-02-08,Hip-Hop,,EP,16,0.057
+ALB_0100,ART_0635,Journey Store,2023,2025-05-25,Indie,,Studio,10,0.098
+ALB_0101,ART_0571,Organized Multi-Tasking Strategy,2021,2024-05-27,Pop,,EP,12,0.081
+ALB_0102,ART_0372,Stories Whose,2022,2025-06-12,R&B,Hip-Hop,Studio,14,0.063
+ALB_0103,ART_0105,Centralized Neutral Middleware,2024,2026-04-27,Pop,Jazz,Studio,10,0.056
+ALB_0104,ART_0022,Life Not,2017,2020-05-14,Country,Indie,Studio,12,0.057
+ALB_0105,ART_0611,Inverse Multi-State Intranet,1995,2000-09-09,Electronic,,Live,14,0.151
+ALB_0106,ART_0454,Time Describe,2022,2025-10-02,Indie,,Compilation,14,0.06
+ALB_0107,ART_0070,Time Middle,2020,2022-09-06,Hip-Hop,,Studio,14,0.065
+ALB_0108,ART_0381,Wave Mrs,2019,2023-07-18,Electronic,Hip-Hop,Studio,12,0.061
+ALB_0109,ART_0435,Centralized Logistical Capacity,2010,2019-07-03,Jazz,Electronic,Studio,12,0.066
+ALB_0110,ART_0291,Persevering Non-Volatile Approach,2023,2025-11-16,Jazz,Pop,Studio,12,0.056
+ALB_0111,ART_0256,Synergistic Fault-Tolerant Success,2009,2011-08-24,Indie,,Studio,8,0.076
+ALB_0112,ART_0113,Function-Based 24Hour Synergy,1995,2003-08-22,Hip-Hop,Jazz,Live,8,0.056
+ALB_0113,ART_0231,Compatible 6Thgeneration Interface,2015,2020-06-01,Electronic,Rock,Studio,14,0.113
+ALB_0114,ART_0142,Dreams Attack,2020,2024-06-25,Pop,,Studio,10,0.061
+ALB_0115,ART_0437,Centralized Asymmetric Leverage,2014,2016-08-19,Rock,Jazz,Studio,8,0.077
+ALB_0116,ART_0370,Thunder Issue,2024,2026-04-27,Rock,Pop,Studio,14,0.143
+ALB_0117,ART_0430,Devolved Zero Administration Project,2023,2026-04-19,Jazz,,Studio,10,0.088
+ALB_0118,ART_0421,Stand-Alone Intangible Hub,2022,2026-04-21,Rock,,Studio,10,0.077
+ALB_0119,ART_0332,Multi-Tiered Local Implementation,1991,2005-09-18,Pop,,Studio,12,0.065
+ALB_0120,ART_0396,Forever Result,2014,2025-12-17,Pop,,Studio,8,0.065
+ALB_0121,ART_0040,Quality-Focused Client-Driven Projection,2006,2023-10-21,Electronic,Rock,Studio,10,0.09
+ALB_0122,ART_0267,Stories By,2021,2023-11-08,Metal,Rock,Studio,16,0.562
+ALB_0123,ART_0579,Public-Key Hybrid Moderator,2019,2021-12-14,Electronic,Classical,Studio,12,0.089
+ALB_0124,ART_0067,Face-To-Face 24Hour System Engine,2000,2002-11-12,Jazz,,Studio,12,0.079
+ALB_0125,ART_0140,Innovative Maximized Service-Desk,2023,2026-01-14,Rock,Hip-Hop,Live,12,0.099
+ALB_0126,ART_0438,Storm Language,2024,2026-04-27,Rock,,Studio,10,0.072
+ALB_0127,ART_0139,Circuit Than,2013,2017-11-04,Electronic,Country,Compilation,12,0.056
+ALB_0128,ART_0646,World Magazine,2014,2019-10-12,Metal,,Studio,12,0.079
+ALB_0129,ART_0282,Journey Fact,2009,2014-02-22,Hip-Hop,,Studio,8,0.229
+ALB_0130,ART_0581,Up-Sized Well-Modulated Budgetary Management,1997,2000-03-09,Indie,,Studio,8,0.059
+ALB_0131,ART_0104,Love Recent,2023,2025-09-26,Pop,,Live,8,0.093
+ALB_0132,ART_0384,Visionary 3Rdgeneration Encoding,2019,2022-05-07,R&B,,Studio,10,0.06
+ALB_0133,ART_0157,Cross-Platform Radical Alliance,1998,2011-12-04,Country,Pop,Studio,14,0.077
+ALB_0134,ART_0483,Time Remember,2023,2026-01-08,Metal,,Studio,12,0.057
+ALB_0135,ART_0359,Business-Focused Dynamic Support,2018,2020-07-31,Classical,,Live,8,0.071
+ALB_0136,ART_0584,Stories Leg,2020,2023-04-04,Hip-Hop,,Studio,8,0.103
+ALB_0137,ART_0270,Midnight Director,1998,2019-12-07,Jazz,Country,Studio,12,0.066
+ALB_0138,ART_0381,Vision-Oriented Analyzing Challenge,2022,2025-04-29,Electronic,Hip-Hop,Studio,12,0.089
+ALB_0139,ART_0141,Implemented Discrete Superstructure,2022,2025-06-21,Hip-Hop,,Live,8,0.112
+ALB_0140,ART_0218,Re-Engineered Radical Throughput,2018,2024-05-09,Metal,,Compilation,12,0.179
+ALB_0141,ART_0021,Digital Full,2015,2019-06-13,Electronic,Jazz,Compilation,14,0.061
+ALB_0142,ART_0547,Digitized Stable Model,2016,2020-02-01,Jazz,Hip-Hop,Studio,12,0.069
+ALB_0143,ART_0255,Forever First,2024,2026-04-27,Pop,R&B,Studio,14,0.059
+ALB_0144,ART_0011,World Onto,2020,2026-02-10,R&B,,Compilation,10,0.502
+ALB_0145,ART_0537,User-Centric Context-Sensitive Product,2013,2022-10-14,Classical,Electronic,Studio,14,0.179
+ALB_0146,ART_0399,Realigned Modular Application,1993,2025-06-17,Country,,Studio,8,0.077
+ALB_0147,ART_0255,Light Year,2023,2025-12-17,Pop,R&B,EP,14,0.126
+ALB_0148,ART_0667,Multi-Tiered Zero Tolerance Moderator,2011,2017-06-17,Country,Hip-Hop,Studio,10,0.076
+ALB_0149,ART_0575,Thunder Keep,2024,2026-04-27,Rock,,Studio,14,0.085
+ALB_0150,ART_0437,Innovative Homogeneous Contingency,2017,2024-08-07,Rock,Jazz,EP,12,0.057
+ALB_0151,ART_0347,Journey Material,2023,2025-07-23,Hip-Hop,,Studio,8,0.103
+ALB_0152,ART_0532,Thunder Down,2020,2023-07-10,Rock,,Studio,8,0.058
+ALB_0153,ART_0577,Edge Second,2008,2012-08-17,Rock,Classical,Studio,14,0.12
+ALB_0154,ART_0404,Persistent Analyzing Open Architecture,2006,2015-09-30,R&B,,Studio,16,0.109
+ALB_0155,ART_0448,Operative Next Generation Moderator,2017,2020-04-03,R&B,,Studio,10,0.095
+ALB_0156,ART_0117,Fully-Configurable Eco-Centric Database,2023,2025-08-24,Hip-Hop,,Studio,10,0.055
+ALB_0157,ART_0687,Star Bar,2022,2026-03-01,Pop,Electronic,Studio,8,0.064
+ALB_0158,ART_0147,Circuit Throw,2009,2016-11-19,Electronic,,Live,12,0.062
+ALB_0159,ART_0465,World North,2024,2026-04-27,Country,,Live,12,0.067
+ALB_0160,ART_0311,Edge Cut,2019,2021-07-29,Rock,,Studio,8,0.057
+ALB_0161,ART_0341,Multi-Tiered Systematic Portal,2017,2023-07-16,Pop,Jazz,Studio,12,0.191
+ALB_0162,ART_0227,Compatible Content-Based Website,2022,2025-11-03,Hip-Hop,Pop,Compilation,8,0.078
+ALB_0163,ART_0031,Journey Shake,2004,2019-09-30,Indie,,Studio,14,0.064
+ALB_0164,ART_0375,Life Director,2022,2025-04-11,Hip-Hop,,Live,8,0.068
+ALB_0165,ART_0148,Stories True,2020,2025-12-12,Country,,Live,12,0.071
+ALB_0166,ART_0232,Innovative 24/7 Data-Warehouse,2019,2026-01-02,Indie,,Compilation,14,0.083
+ALB_0167,ART_0602,Smooth Site,2019,2021-11-26,Jazz,,Studio,12,0.076
+ALB_0168,ART_0154,Versatile Mission-Critical Encryption,2016,2023-11-19,Indie,Country,Studio,12,0.171
+ALB_0169,ART_0473,Triple-Buffered Demand-Driven Infrastructure,2019,2025-11-22,Electronic,Pop,Studio,14,0.074
+ALB_0170,ART_0232,Stories Old,2010,2016-10-26,Indie,,Compilation,10,0.493
+ALB_0171,ART_0603,Horizontal Homogeneous Local Area Network,2010,2019-10-16,Rock,,EP,14,0.129
+ALB_0172,ART_0039,Edge Her,2018,2022-03-03,Rock,,Studio,14,0.06
+ALB_0173,ART_0020,Life Here,2019,2023-11-18,Indie,,Compilation,12,0.183
+ALB_0174,ART_0242,Proactive Maximized Attitude,2011,2023-10-03,Hip-Hop,,Studio,12,0.058
+ALB_0175,ART_0386,Up-Sized Methodical Task-Force,2023,2026-02-27,Metal,,Studio,10,0.118
+ALB_0176,ART_0092,Expanded Holistic Functionalities,2021,2024-07-23,Country,,Studio,14,0.068
+ALB_0177,ART_0089,Dreams Order,2023,2026-03-08,Pop,,Studio,10,0.142
+ALB_0178,ART_0155,World Site,2022,2024-08-10,Country,,Studio,10,0.137
+ALB_0179,ART_0109,Stories Every,2024,2026-04-27,Country,,EP,12,0.115
+ALB_0180,ART_0179,Reduced Optimal Success,1997,2010-08-05,Rock,,Studio,12,0.111
+ALB_0181,ART_0617,Distributed Dedicated Groupware,2021,2024-01-04,Pop,R&B,Live,8,0.064
+ALB_0182,ART_0102,Time Over,2017,2025-02-24,Hip-Hop,,Compilation,10,0.057
+ALB_0183,ART_0084,Proactive Neutral Projection,2009,2025-06-21,Pop,Hip-Hop,Live,12,0.069
+ALB_0184,ART_0296,Stories Green,2021,2024-02-03,Metal,,Live,10,0.059
+ALB_0185,ART_0437,Storm Term,2021,2024-10-13,Rock,Jazz,EP,10,0.093
+ALB_0186,ART_0272,Storm Several,2007,2020-03-23,Rock,,Studio,12,0.066
+ALB_0187,ART_0060,Thunder Military,2021,2024-09-13,Rock,Indie,Studio,10,0.294
+ALB_0188,ART_0559,Time Significant,2024,2026-04-27,Classical,Electronic,Studio,12,0.087
+ALB_0189,ART_0344,Down-Sized Client-Driven Success,2024,2026-04-27,Electronic,,Studio,12,0.119
+ALB_0190,ART_0657,Stories Create,2008,2024-12-27,Country,,Compilation,12,0.058
+ALB_0191,ART_0189,Quality-Focused Secondary Approach,2023,2025-11-03,Pop,,Live,14,0.134
+ALB_0192,ART_0460,Compatible Static Application,2022,2025-11-05,Classical,,Studio,10,0.174
+ALB_0193,ART_0591,Open-Source Client-Driven Product,2014,2018-08-19,Hip-Hop,,Studio,12,0.074
+ALB_0194,ART_0025,Triple-Buffered Coherent Access,2021,2023-12-22,Hip-Hop,,Studio,12,0.083
+ALB_0195,ART_0354,Persevering Holistic Approach,2006,2019-06-10,Indie,,Studio,10,0.105
+ALB_0196,ART_0267,Synchronized Reciprocal Matrices,2024,2026-04-27,Metal,Rock,Studio,14,0.059
+ALB_0197,ART_0082,Ameliorated 24Hour Monitoring,2023,2025-11-13,Classical,,Studio,12,0.075
+ALB_0198,ART_0437,Advanced 3Rdgeneration Moderator,2022,2025-10-05,Rock,Jazz,Studio,12,0.069
+ALB_0199,ART_0347,Public-Key Executive Adapter,2024,2026-04-27,Hip-Hop,,Compilation,14,0.058
+ALB_0200,ART_0437,Total Systematic Internet Solution,2018,2025-02-26,Rock,Jazz,EP,10,0.067
+ALB_0201,ART_0357,Enhanced Bi-Directional Attitude,2019,2023-12-10,R&B,Classical,Compilation,16,0.056
+ALB_0202,ART_0559,Front-Line Content-Based Process Improvement,2019,2023-12-13,Classical,Electronic,Studio,14,0.055
+ALB_0203,ART_0684,Stories Teacher,2023,2025-09-02,R&B,Pop,Studio,12,0.058
+ALB_0204,ART_0456,Time Stuff,2014,2020-04-14,R&B,,EP,8,0.244
+ALB_0205,ART_0489,Multi-Layered Impactful Knowledgebase,2024,2026-04-27,Pop,R&B,Live,10,0.078
+ALB_0206,ART_0424,Journey Same,2006,2012-05-20,Country,Jazz,Compilation,14,0.252
+ALB_0207,ART_0138,Synergized Attitude-Oriented Projection,2020,2026-04-14,Metal,,Studio,16,0.07
+ALB_0208,ART_0086,Echo Rate,2024,2026-04-27,Rock,,Studio,8,0.064
+ALB_0209,ART_0249,Time Better,2024,2026-04-27,Country,,Studio,8,0.075
+ALB_0210,ART_0163,Dreams Huge,2013,2021-05-25,Pop,,Live,10,0.071
+ALB_0211,ART_0507,Centralized Scalable Access,2019,2024-10-31,Metal,,Studio,12,0.057
+ALB_0212,ART_0385,Pulse Beautiful,2008,2018-04-26,Electronic,Hip-Hop,Studio,12,0.087
+ALB_0213,ART_0151,Love Leader,2015,2023-02-14,Pop,,Live,8,0.061
+ALB_0214,ART_0410,Pulse Glass,2014,2021-12-23,Electronic,Metal,Live,12,0.084
+ALB_0215,ART_0476,Cross-Platform Multi-Tasking Analyzer,2024,2026-04-27,Classical,,Compilation,8,0.088
+ALB_0216,ART_0068,Wave Wear,2009,2024-05-04,Electronic,Rock,Studio,12,0.059
+ALB_0217,ART_0304,Time Very,2007,2018-12-14,R&B,,Compilation,12,0.056
+ALB_0218,ART_0282,Time Experience,2014,2016-10-13,Hip-Hop,,Studio,12,0.108
+ALB_0219,ART_0463,Compatible Systemic Focus Group,2015,2025-05-30,Electronic,Indie,Live,16,0.072
+ALB_0220,ART_0211,Re-Contextualized Stable Alliance,2024,2026-04-27,Country,,Live,12,0.056
+ALB_0221,ART_0462,Echo To,2008,2015-05-08,Rock,,Studio,10,0.597
+ALB_0222,ART_0305,Life Despite,2023,2025-11-26,Hip-Hop,,EP,12,0.056
+ALB_0223,ART_0352,World Soldier,2003,2022-07-21,R&B,Metal,Studio,16,0.093
+ALB_0224,ART_0581,Object-Based Asynchronous Framework,2002,2007-11-22,Indie,,Studio,12,0.353
+ALB_0225,ART_0603,Front-Line Non-Volatile Info-Mediaries,2004,2019-11-10,Rock,,EP,16,0.062
+ALB_0226,ART_0056,Quality-Focused Full-Range Info-Mediaries,2003,2021-03-09,Pop,,Compilation,12,0.058
+ALB_0227,ART_0611,Digital Challenge,2017,2024-11-07,Electronic,,Studio,14,0.058
+ALB_0228,ART_0064,Wave Risk,2023,2026-01-16,Electronic,,Studio,8,0.064
+ALB_0229,ART_0644,Profit-Focused Value-Added Hardware,2001,2004-07-21,Rock,,Live,12,0.057
+ALB_0230,ART_0318,Optional Discrete Archive,2018,2022-05-12,Rock,Pop,EP,10,0.093
+ALB_0231,ART_0167,Stories Specific,2017,2023-08-13,Country,,Studio,10,0.056
+ALB_0232,ART_0370,Edge Physical,2020,2023-11-27,Rock,Pop,Live,12,0.075
+ALB_0233,ART_0309,Time Staff,2024,2026-04-27,Metal,R&B,Studio,12,0.73
+ALB_0234,ART_0683,Sharable Encompassing Toolset,2023,2026-04-24,R&B,,Studio,10,0.117
+ALB_0235,ART_0282,Pre-Emptive Discrete Help-Desk,2015,2022-04-18,Hip-Hop,,Studio,12,0.084
+ALB_0236,ART_0453,Light How,1999,2012-02-12,Pop,,Studio,14,0.064
+ALB_0237,ART_0687,Synergized Optimal Protocol,2023,2025-09-12,Pop,Electronic,Compilation,12,0.085
+ALB_0238,ART_0060,Visionary Regional Frame,2023,2026-02-12,Rock,Indie,Studio,10,0.076
+ALB_0239,ART_0352,Time Sell,2020,2022-08-12,R&B,Metal,Studio,14,0.07
+ALB_0240,ART_0446,World Executive,2018,2021-03-30,Indie,Hip-Hop,Compilation,12,0.058
+ALB_0241,ART_0435,Blue Seek,2015,2024-05-16,Jazz,Electronic,EP,14,0.146
+ALB_0242,ART_0351,Stories Class,2024,2026-04-27,Indie,,Studio,12,0.071
+ALB_0243,ART_0487,Intuitive High-Level Benchmark,2019,2021-10-10,Classical,,Studio,12,0.06
+ALB_0244,ART_0682,Integrated Leadingedge Hierarchy,2012,2023-06-15,R&B,Rock,Studio,12,0.067
+ALB_0245,ART_0029,Stories Blue,2022,2024-07-31,Hip-Hop,Jazz,Studio,16,0.069
+ALB_0246,ART_0192,Enterprise-Wide Intermediate Knowledge User,2023,2025-11-15,Classical,Indie,Studio,12,0.121
+ALB_0247,ART_0133,Circuit Music,2015,2020-12-27,Electronic,,Studio,8,0.099
+ALB_0248,ART_0555,Assimilated Background Help-Desk,2022,2025-06-05,Pop,,Studio,12,0.106
+ALB_0249,ART_0359,World Picture,2013,2021-11-23,Classical,,Compilation,12,0.055
+ALB_0250,ART_0185,Inverse Human-Resource Access,2014,2019-03-28,Country,Hip-Hop,Live,14,0.069
+ALB_0251,ART_0188,Light Important,2018,2024-12-28,Pop,,Compilation,10,0.073
+ALB_0252,ART_0488,Up-Sized Next Generation Encryption,2015,2022-06-19,Electronic,,Studio,14,0.055
+ALB_0253,ART_0554,Life Condition,2014,2023-03-04,Metal,R&B,Studio,14,0.062
+ALB_0254,ART_0359,Down-Sized Client-Driven Flexibility,2010,2016-07-13,Classical,,EP,14,0.104
+ALB_0255,ART_0064,Digital Mind,2021,2023-10-03,Electronic,,Compilation,8,0.058
+ALB_0256,ART_0578,Life Computer,2016,2021-10-18,Indie,,EP,12,0.077
+ALB_0257,ART_0438,Operative Exuding Matrices,2022,2025-11-19,Rock,,Compilation,12,0.061
+ALB_0258,ART_0414,Multi-Lateral Eco-Centric Encryption,2021,2025-06-25,Hip-Hop,,Studio,8,0.055
+ALB_0259,ART_0437,Thunder Mission,2022,2025-07-04,Rock,Jazz,EP,8,0.062
+ALB_0260,ART_0132,Exclusive Logistical Benchmark,2017,2020-04-07,Hip-Hop,,Compilation,14,0.296
+ALB_0261,ART_0352,Life According,2021,2026-03-01,R&B,Metal,Studio,16,0.113
+ALB_0262,ART_0291,Managed Regional Implementation,2021,2025-09-24,Jazz,Pop,Studio,10,0.234
+ALB_0263,ART_0194,Thunder Girl,2022,2025-03-13,Rock,,Studio,10,0.074
+ALB_0264,ART_0216,Optional Solution-Oriented Policy,2024,2026-04-27,Rock,,Studio,12,0.057
+ALB_0265,ART_0237,Inverse Real-Time Solution,2010,2015-02-17,Country,,Studio,8,0.078
+ALB_0266,ART_0385,Pulse Former,2007,2012-05-03,Electronic,Hip-Hop,EP,8,0.072
+ALB_0267,ART_0433,World Information,2021,2026-03-23,Hip-Hop,Pop,EP,14,0.127
+ALB_0268,ART_0202,Implemented User-Facing Solution,2008,2020-06-11,Indie,R&B,Studio,12,0.057
+ALB_0269,ART_0418,Revolution Parent,2016,2024-07-28,Rock,,Studio,14,0.074
+ALB_0270,ART_0487,Stories Gas,2022,2025-01-25,Classical,,Studio,10,0.059
+ALB_0271,ART_0258,Object-Based High-Level Budgetary Management,2004,2024-12-16,Metal,Indie,Studio,8,0.065
+ALB_0272,ART_0010,Blue Decision,2020,2024-09-08,Jazz,,Live,10,0.1
+ALB_0273,ART_0309,Quality-Focused Contextually-Based Software,2024,2026-04-27,Metal,R&B,Studio,8,0.073
+ALB_0274,ART_0335,Edge Agreement,2001,2025-03-28,Rock,,Studio,14,0.067
+ALB_0275,ART_0149,Time Main,2023,2026-04-06,R&B,,Compilation,10,0.068
+ALB_0276,ART_0651,Thunder Determine,2006,2016-03-17,Rock,,Studio,10,0.072
+ALB_0277,ART_0467,Implemented System-Worthy Architecture,2005,2022-11-17,R&B,Rock,Studio,12,0.109
+ALB_0278,ART_0428,Soul Stuff,2020,2025-07-01,Jazz,Country,Compilation,12,0.15
+ALB_0279,ART_0551,Smooth Report,2005,2016-10-21,Jazz,,Studio,8,0.223
+ALB_0280,ART_0185,Time Property,2020,2023-07-13,Country,Hip-Hop,Studio,12,0.11
+ALB_0281,ART_0437,Echo Entire,2024,2026-04-27,Rock,Jazz,Studio,12,0.065
+ALB_0282,ART_0454,World Senior,2021,2024-08-02,Indie,,Studio,12,0.092
+ALB_0283,ART_0188,Multi-Tiered Asynchronous Knowledge User,2018,2026-04-06,Pop,,Studio,12,0.071
+ALB_0284,ART_0048,Polarized Optimal Initiative,2014,2021-08-30,Rock,,Studio,14,0.062
+ALB_0285,ART_0046,Team-Oriented Intangible Moratorium,2013,2015-09-21,Pop,,Studio,12,0.125
+ALB_0286,ART_0055,Multi-Lateral Tangible Workforce,2024,2026-04-27,Country,,Studio,14,0.055
+ALB_0287,ART_0296,Sharable Attitude-Oriented Benchmark,2020,2025-05-24,Metal,,Live,12,0.156
+ALB_0288,ART_0112,Switchable Static Help-Desk,2020,2022-12-26,R&B,,Studio,14,0.072
+ALB_0289,ART_0437,Seamless 6Thgeneration Open System,2024,2026-04-27,Rock,Jazz,Compilation,12,0.086
+ALB_0290,ART_0190,Synergistic Secondary Initiative,1997,2025-06-03,R&B,Hip-Hop,Compilation,16,0.089
+ALB_0291,ART_0411,Time Glass,2013,2025-12-10,R&B,,Studio,10,0.152
+ALB_0292,ART_0621,Time Law,2002,2006-08-25,Metal,R&B,Live,12,0.086
+ALB_0293,ART_0647,Cross-Platform Empowering Definition,2019,2023-11-15,Pop,,Studio,12,0.084
+ALB_0294,ART_0460,Stories Natural,2013,2021-06-16,Classical,,Studio,14,0.056
+ALB_0295,ART_0467,Team-Oriented Object-Oriented Definition,2017,2022-06-09,R&B,Rock,Studio,14,0.076
+ALB_0296,ART_0304,Time Include,2005,2016-02-12,R&B,,Studio,10,0.059
+ALB_0297,ART_0295,Synergistic Optimizing Solution,2023,2025-10-26,Rock,,Studio,14,0.1
+ALB_0298,ART_0389,Monitored 4Thgeneration Matrices,2016,2019-02-26,Metal,Electronic,EP,10,0.075
+ALB_0299,ART_0227,Time Just,2022,2026-02-27,Hip-Hop,Pop,Studio,10,0.091
+ALB_0300,ART_0279,Configurable Bifurcated Superstructure,2018,2021-03-02,Pop,Electronic,Studio,12,0.055
+ALB_0301,ART_0347,Life Forget,2019,2023-01-12,Hip-Hop,,Studio,12,0.057
+ALB_0302,ART_0404,World Still,2018,2021-07-23,R&B,,Studio,12,0.096
+ALB_0303,ART_0457,Circuit Meeting,1996,2008-01-27,Electronic,,Studio,12,0.056
+ALB_0304,ART_0360,Cross-Platform Leadingedge Success,2017,2024-03-12,Country,,Studio,12,0.056
+ALB_0305,ART_0147,Intuitive Asymmetric Framework,2007,2010-01-28,Electronic,,Studio,10,0.055
+ALB_0306,ART_0478,Triple-Buffered Bifurcated Adapter,2024,2026-04-27,R&B,,Compilation,10,0.226
+ALB_0307,ART_0296,World Raise,2022,2024-07-14,Metal,,EP,10,0.1
+ALB_0308,ART_0371,Time Such,2024,2026-04-27,R&B,,Studio,16,0.066
+ALB_0309,ART_0031,User-Centric Dynamic Model,1995,2002-05-18,Indie,,Studio,8,0.064
+ALB_0310,ART_0479,Diverse Full-Range Open Architecture,2014,2020-07-31,Pop,Electronic,Studio,14,0.066
+ALB_0311,ART_0553,Stories Maintain,2024,2026-04-27,Hip-Hop,,Studio,8,0.107
+ALB_0312,ART_0117,Open-Architected Responsive Contingency,2019,2022-04-01,Hip-Hop,,Live,14,0.089
+ALB_0313,ART_0057,Switchable Intermediate Infrastructure,2018,2020-06-28,R&B,Classical,Live,10,0.06
+ALB_0314,ART_0018,Seamless Dedicated Knowledge User,1995,2014-06-29,Pop,Jazz,Studio,10,0.059
+ALB_0315,ART_0437,Networked 24Hour Strategy,2010,2015-04-29,Rock,Jazz,Studio,14,0.057
+ALB_0316,ART_0041,Blue Family,2018,2024-10-31,Jazz,,Studio,10,0.089
+ALB_0317,ART_0344,Neon Table,2019,2025-04-19,Electronic,,Live,14,0.105
+ALB_0318,ART_0564,Re-Engineered Bi-Directional Website,2013,2024-11-28,Hip-Hop,,Live,12,0.063
+ALB_0319,ART_0424,Enterprise-Wide High-Level Graphic Interface,2015,2019-02-02,Country,Jazz,Studio,10,0.055
+ALB_0320,ART_0551,Customizable Empowering Secured Line,2013,2024-10-22,Jazz,,Studio,10,0.057
+ALB_0321,ART_0577,Edge News,2022,2026-04-02,Rock,Classical,EP,12,0.259
+ALB_0322,ART_0095,Intuitive Radical Info-Mediaries,2013,2022-01-16,Rock,,Studio,8,0.064
+ALB_0323,ART_0672,Stories People,2024,2026-04-27,Metal,,Studio,10,0.106
+ALB_0324,ART_0136,Multi-Channeled Logistical Process Improvement,1996,2003-02-24,Pop,,Studio,16,0.085
+ALB_0325,ART_0109,Synergistic Tertiary Website,2023,2025-08-12,Country,,Live,12,0.068
+ALB_0326,ART_0283,Seamless Optimizing Artificial Intelligence,2020,2025-01-02,Classical,,Studio,10,0.06
+ALB_0327,ART_0641,Intuitive Bottom-Line Encoding,2002,2011-01-14,Pop,,Studio,12,0.058
+ALB_0328,ART_0537,Life Cover,2024,2026-04-27,Classical,Electronic,Live,16,0.084
+ALB_0329,ART_0016,Digitized Multimedia Info-Mediaries,2021,2024-07-28,Metal,Indie,Compilation,10,0.107
+ALB_0330,ART_0008,Wave Certainly,1998,2015-04-06,Electronic,,Studio,10,0.087
+ALB_0331,ART_0612,Journey Land,2024,2026-04-27,Indie,Classical,Studio,10,0.077
+ALB_0332,ART_0454,Sharable National Solution,2006,2024-11-11,Indie,,Studio,12,0.055
+ALB_0333,ART_0202,Enhanced Next Generation Concept,2019,2023-10-07,Indie,R&B,Studio,16,0.262
+ALB_0334,ART_0651,Echo Challenge,1995,2002-09-29,Rock,,Studio,12,0.113
+ALB_0335,ART_0435,Velvet Thousand,2007,2016-12-25,Jazz,Electronic,Studio,8,0.064
+ALB_0336,ART_0266,Life Argue,1998,2022-10-27,Indie,,Compilation,12,0.322
+ALB_0337,ART_0092,Stories Act,2024,2026-04-27,Country,,Studio,10,0.083
+ALB_0338,ART_0274,Journey Day,2023,2026-02-18,Hip-Hop,,Studio,12,0.081
+ALB_0339,ART_0520,Realigned Motivating Projection,2005,2016-09-21,Jazz,,Live,8,0.102
+ALB_0340,ART_0150,Synergized Mobile Instruction Set,2021,2025-06-13,Rock,Classical,Studio,8,0.116
+ALB_0341,ART_0581,Organic Mobile Concept,2023,2025-05-26,Indie,,Studio,10,0.088
+ALB_0342,ART_0126,Assimilated Well-Modulated Definition,2015,2019-12-12,Indie,Pop,Compilation,10,0.058
+ALB_0343,ART_0278,Grass-Roots Directional Monitoring,2010,2016-05-11,Pop,,Live,10,0.066
+ALB_0344,ART_0255,Vision-Oriented Logistical Open System,2023,2026-01-22,Pop,R&B,Live,8,0.18
+ALB_0345,ART_0490,Visionary Modular Neural-Net,2015,2021-11-30,Hip-Hop,R&B,Live,10,0.061
+ALB_0346,ART_0533,Time Page,2010,2013-12-01,R&B,Rock,EP,12,0.067
+ALB_0347,ART_0619,Love Stage,2022,2025-05-28,Pop,,Studio,10,0.07
+ALB_0348,ART_0314,Multi-Lateral Needs-Based System Engine,2022,2024-05-26,Classical,,Compilation,8,0.071
+ALB_0349,ART_0088,Up-Sized Leadingedge Moratorium,2004,2010-09-09,Pop,Electronic,Live,12,0.084
+ALB_0350,ART_0487,Optimized Bi-Directional Support,2016,2024-12-16,Classical,,Studio,10,0.2
+ALB_0351,ART_0166,Dreams Society,2012,2017-04-15,Pop,,EP,8,0.062
+ALB_0352,ART_0615,Automated Local Firmware,2001,2011-05-03,Indie,Country,EP,12,0.058
+ALB_0353,ART_0432,Cross-Group Leadingedge Capability,2014,2024-01-28,Hip-Hop,,Studio,10,0.06
+ALB_0354,ART_0105,Love Economic,2022,2024-09-26,Pop,Jazz,Studio,12,0.146
+ALB_0355,ART_0154,User-Centric Optimizing Solution,2018,2022-06-03,Indie,Country,EP,14,0.087
+ALB_0356,ART_0409,Triple-Buffered Reciprocal Product,2017,2022-04-25,Hip-Hop,,Live,14,0.063
+ALB_0357,ART_0585,Seamless Client-Driven Toolset,2024,2026-04-27,Country,,Studio,10,0.117
+ALB_0358,ART_0511,Stories Design,2004,2022-06-05,Indie,,Studio,16,0.134
+ALB_0359,ART_0124,Stories Over,2019,2023-01-26,R&B,,Live,14,0.127
+ALB_0360,ART_0587,Grass-Roots Radical Monitoring,2013,2017-03-03,Hip-Hop,Country,EP,12,0.17
+ALB_0361,ART_0381,Pulse Score,2013,2018-07-15,Electronic,Hip-Hop,Studio,10,0.062
+ALB_0362,ART_0210,Life Page,2015,2019-09-22,R&B,,Studio,8,0.103
+ALB_0363,ART_0182,Stories Toward,2008,2018-07-20,Country,Indie,Studio,10,0.072
+ALB_0364,ART_0657,Journey We,2022,2025-09-04,Country,,EP,14,0.126
+ALB_0365,ART_0684,Stories Beyond,2006,2010-10-04,R&B,Pop,Studio,10,0.098
+ALB_0366,ART_0027,Versatile Zero Tolerance Installation,2019,2025-11-29,Pop,Metal,Studio,16,0.107
+ALB_0367,ART_0555,Star Factor,2024,2026-04-27,Pop,,Studio,8,0.088
+ALB_0368,ART_0369,Time Card,1997,2018-04-04,R&B,Country,Studio,12,0.059
+ALB_0369,ART_0455,Life Cause,2015,2019-07-25,Country,Electronic,Studio,16,0.078
+ALB_0370,ART_0272,Thunder Seek,2004,2012-10-04,Rock,,Studio,12,0.363
+ALB_0371,ART_0016,Fully-Configurable Well-Modulated Service-Desk,2024,2026-04-27,Metal,Indie,Live,12,0.192
+ALB_0372,ART_0463,Neon Change,2022,2025-06-22,Electronic,Indie,Live,14,0.055
+ALB_0373,ART_0681,Journey Exist,2024,2026-04-27,Country,,EP,12,0.059
+ALB_0374,ART_0146,Multi-Tiered Local Archive,2024,2026-04-27,Hip-Hop,Classical,Live,14,0.058
+ALB_0375,ART_0348,Time Up,2023,2026-02-01,Classical,,Studio,8,0.098
+ALB_0376,ART_0295,Edge Interesting,2018,2023-05-31,Rock,,Live,10,0.118
+ALB_0377,ART_0318,Storm Fall,2012,2022-08-27,Rock,Pop,Studio,12,0.061
+ALB_0378,ART_0394,Time Understand,2021,2024-06-04,Hip-Hop,,Compilation,14,0.075
+ALB_0379,ART_0437,Thunder Method,2015,2020-04-06,Rock,Jazz,Studio,16,0.125
+ALB_0380,ART_0379,Adaptive Zero-Defect Superstructure,2024,2026-04-27,Rock,,Studio,12,0.099
+ALB_0381,ART_0043,Persevering Scalable Secured Line,2021,2025-05-30,Hip-Hop,,Studio,10,0.078
+ALB_0382,ART_0437,Cloned National Infrastructure,2015,2019-04-12,Rock,Jazz,Studio,10,0.082
+ALB_0383,ART_0437,Optimized Didactic Methodology,2021,2024-02-15,Rock,Jazz,Studio,14,0.075
+ALB_0384,ART_0469,Horizontal Global Neural-Net,2003,2017-06-15,Jazz,,Studio,14,0.064
+ALB_0385,ART_0256,Re-Contextualized Mobile Toolset,2022,2025-01-02,Indie,,Studio,10,0.079
+ALB_0386,ART_0354,Life Rest,2019,2025-02-16,Indie,,Studio,10,0.092
+ALB_0387,ART_0502,Balanced Bandwidth-Monitored Product,2020,2025-06-15,Rock,,Studio,12,0.139
+ALB_0388,ART_0621,Persevering 3Rdgeneration Capability,2020,2026-01-13,Metal,R&B,Studio,8,0.086
+ALB_0389,ART_0049,Diverse Leadingedge Knowledgebase,2012,2014-04-29,Metal,,Studio,16,0.104
+ALB_0390,ART_0373,Optimized Dedicated Solution,2024,2026-04-27,Electronic,R&B,Live,14,0.059
+ALB_0391,ART_0470,Love Us,2017,2023-11-14,Pop,,Compilation,16,0.072
+ALB_0392,ART_0341,Dreams Cold,2018,2025-07-25,Pop,Jazz,Live,12,0.055
+ALB_0393,ART_0147,Grass-Roots Background Projection,2020,2023-10-05,Electronic,,Studio,14,0.062
+ALB_0394,ART_0296,Configurable Holistic Secured Line,2012,2025-03-01,Metal,,Studio,10,0.098
+ALB_0395,ART_0664,Down-Sized Actuating Infrastructure,2019,2024-06-11,Rock,,Compilation,14,0.483
+ALB_0396,ART_0088,Up-Sized Tangible System Engine,2001,2008-09-14,Pop,Electronic,Studio,8,0.057
+ALB_0397,ART_0606,Thunder Reality,2020,2022-09-07,Rock,Jazz,Studio,12,0.069
+ALB_0398,ART_0219,Forever Beyond,2023,2025-04-26,Pop,Classical,Studio,16,0.113
+ALB_0399,ART_0352,Polarized Asynchronous Capacity,2010,2020-08-18,R&B,Metal,Studio,8,0.06
+ALB_0400,ART_0437,Programmable Systemic Intranet,2014,2016-05-29,Rock,Jazz,Studio,14,0.079
+ALB_0401,ART_0020,Stories Safe,2018,2022-05-19,Indie,,Studio,12,0.099
+ALB_0402,ART_0437,Edge Camera,2016,2026-03-23,Rock,Jazz,Studio,8,0.084
+ALB_0403,ART_0360,Stories Knowledge,2018,2024-06-25,Country,,Studio,12,0.06
+ALB_0404,ART_0334,World Mean,2014,2017-01-09,Hip-Hop,,Compilation,16,0.066
+ALB_0405,ART_0134,Networked Background Superstructure,2014,2024-05-18,Country,,Studio,16,0.109
+ALB_0406,ART_0284,Thunder Board,2018,2022-03-13,Rock,,Studio,16,0.079
+ALB_0407,ART_0117,Innovative Client-Driven Implementation,2014,2024-01-20,Hip-Hop,,Studio,10,0.055
+ALB_0408,ART_0132,World Some,2013,2024-12-08,Hip-Hop,,Live,8,0.104
+ALB_0409,ART_0144,Forever Put,2008,2026-03-16,Pop,,Studio,12,0.055
+ALB_0410,ART_0127,Digitized Asymmetric Moderator,2021,2025-01-03,Electronic,,Studio,12,0.101
+ALB_0411,ART_0238,Seamless Solution-Oriented Concept,2001,2013-06-10,Rock,,Studio,12,0.06
+ALB_0412,ART_0283,Time Seven,2020,2023-03-04,Classical,,Compilation,14,0.23
+ALB_0413,ART_0438,User-Friendly Coherent Installation,2013,2022-02-04,Rock,,Studio,12,0.067
+ALB_0414,ART_0337,Neon Level,2014,2024-12-01,Electronic,,Compilation,10,0.065
+ALB_0415,ART_0637,Digital Before,2014,2025-04-14,Electronic,Jazz,Studio,10,0.059
+ALB_0416,ART_0657,Devolved Web-Enabled Capability,2014,2022-03-19,Country,,Studio,8,0.064
+ALB_0417,ART_0675,World If,2024,2026-04-27,R&B,,Compilation,12,0.141
+ALB_0418,ART_0437,Optimized Foreground Utilization,2014,2017-09-18,Rock,Jazz,Studio,10,0.696
+ALB_0419,ART_0217,Stories Factor,2024,2026-04-27,Metal,Pop,Compilation,14,0.067
+ALB_0420,ART_0438,Echo Energy,2020,2024-07-13,Rock,,Studio,10,0.071
+ALB_0421,ART_0259,Time Plan,2004,2020-09-28,R&B,Electronic,EP,10,0.097
+ALB_0422,ART_0108,Horizontal Zero-Defect Solution,2024,2026-04-27,Rock,,EP,8,0.146
+ALB_0423,ART_0022,Journey Throw,2019,2024-08-10,Country,Indie,Studio,12,0.082
+ALB_0424,ART_0272,Innovative Demand-Driven Model,2007,2019-08-21,Rock,,Studio,8,0.068
+ALB_0425,ART_0437,Edge Current,2019,2025-01-21,Rock,Jazz,Studio,12,0.069
+ALB_0426,ART_0151,Star Find,1996,2016-05-30,Pop,,EP,12,0.093
+ALB_0427,ART_0442,Journey Step,2016,2025-07-02,Indie,,Live,12,0.054
+ALB_0428,ART_0151,Light Education,2004,2016-03-20,Pop,,Studio,8,0.084
+ALB_0429,ART_0655,Customizable Disintermediate Methodology,2023,2025-12-15,Classical,Hip-Hop,Studio,8,0.066
+ALB_0430,ART_0116,Compatible Multi-Tasking Access,2021,2026-04-12,Country,Metal,Live,16,0.112
+ALB_0431,ART_0285,Intuitive Clear-Thinking Info-Mediaries,2003,2023-05-25,Metal,,Studio,8,0.057
+ALB_0432,ART_0230,Time Outside,2017,2022-04-07,Metal,,Studio,12,0.081
+ALB_0433,ART_0162,Pulse Office,2019,2024-09-24,Electronic,,Compilation,14,0.073
+ALB_0434,ART_0551,Virtual Methodical Throughput,2009,2012-05-30,Jazz,,Studio,12,0.087
+ALB_0435,ART_0483,Journey People,2016,2018-11-10,Metal,,Studio,10,0.056
+ALB_0436,ART_0109,Life Everybody,2024,2026-04-27,Country,,Studio,10,0.081
+ALB_0437,ART_0156,Stories Win,2020,2022-07-24,Country,,Live,12,0.079
+ALB_0438,ART_0691,Stories Strategy,2007,2016-01-31,Hip-Hop,Metal,Studio,8,0.079
+ALB_0439,ART_0506,Horizontal Responsive Structure,2019,2023-10-28,Pop,,Studio,10,0.083
+ALB_0440,ART_0437,Operative Interactive Standardization,2014,2020-05-04,Rock,Jazz,Studio,14,0.091
+ALB_0441,ART_0404,Life Push,2024,2026-04-27,R&B,,Studio,12,0.114
+ALB_0442,ART_0153,Seamless Coherent Focus Group,2015,2018-01-25,Indie,,Studio,14,0.063
+ALB_0443,ART_0365,Love Bar,2010,2019-06-23,Pop,,Studio,10,0.12
+ALB_0444,ART_0368,Expanded Coherent Monitoring,2024,2026-04-27,Hip-Hop,,EP,14,0.074
+ALB_0445,ART_0538,Reverse-Engineered Scalable Task-Force,2015,2024-10-29,Rock,,Compilation,10,0.056
+ALB_0446,ART_0664,Synergized Secondary Architecture,2024,2026-04-27,Rock,,EP,16,0.056
+ALB_0447,ART_0437,Optional Upward-Trending Encoding,2024,2026-04-27,Rock,Jazz,Studio,12,0.065
+ALB_0448,ART_0141,Time Before,2024,2026-04-27,Hip-Hop,,Live,12,0.109
+ALB_0449,ART_0093,Customizable Logistical Pricing Structure,2002,2017-09-17,Rock,Electronic,Live,12,0.095
+ALB_0450,ART_0676,Wave For,2023,2025-12-25,Electronic,Hip-Hop,Live,12,0.11
+ALB_0451,ART_0326,Journey Really,2012,2023-03-17,Indie,Classical,Studio,14,0.076
+ALB_0452,ART_0679,Decentralized 24/7 Strategy,2008,2012-07-06,Hip-Hop,,Studio,14,0.071
+ALB_0453,ART_0486,Life Activity,2003,2008-10-03,Country,Rock,Studio,14,0.058
+ALB_0454,ART_0416,Monitored Multi-State Model,2019,2025-03-26,Jazz,,EP,10,0.065
+ALB_0455,ART_0610,Up-Sized Empowering Concept,2022,2025-01-22,Country,,Compilation,10,0.07
+ALB_0456,ART_0044,User-Friendly Zero-Defect Flexibility,2015,2023-11-30,Country,,Studio,12,0.057
+ALB_0457,ART_0629,Decentralized Zero Administration Algorithm,2020,2023-08-29,Pop,,Studio,10,0.061
+ALB_0458,ART_0219,Light Laugh,2023,2025-08-03,Pop,Classical,Studio,10,0.082
+ALB_0459,ART_0150,Cloned Empowering Structure,2016,2026-02-13,Rock,Classical,Studio,10,0.1
+ALB_0460,ART_0073,Edge Product,2020,2022-08-17,Rock,,EP,16,1.0
+ALB_0461,ART_0567,Edge Lose,2023,2025-10-29,Rock,,Live,10,0.186
+ALB_0462,ART_0448,Centralized Modular Open System,2017,2020-06-26,R&B,,Live,10,0.087
+ALB_0463,ART_0415,Diverse Eco-Centric Throughput,2021,2023-08-17,Metal,,EP,14,0.07
+ALB_0464,ART_0106,Re-Engineered Systematic Success,2008,2012-03-01,Rock,Hip-Hop,Live,12,0.086
+ALB_0465,ART_0359,Life Sit,2019,2023-11-11,Classical,,EP,10,0.11
+ALB_0466,ART_0082,Life Another,2023,2026-03-06,Classical,,Studio,8,0.058
+ALB_0467,ART_0542,Advanced Dynamic Analyzer,2023,2025-10-15,Rock,Indie,Live,12,0.069
+ALB_0468,ART_0632,Dreams Identify,2019,2025-12-02,Pop,,EP,8,0.125
+ALB_0469,ART_0355,Life Country,2011,2025-06-04,Indie,Jazz,Studio,10,0.068
+ALB_0470,ART_0563,Automated Neutral Website,2024,2026-04-27,Jazz,Pop,Studio,10,0.08
+ALB_0471,ART_0229,User-Centric Solution-Oriented Instruction Set,2016,2020-02-12,Metal,Rock,Studio,12,0.081
+ALB_0472,ART_0589,Edge Energy,2000,2012-04-22,Rock,,Studio,10,0.06
+ALB_0473,ART_0098,Journey Service,1999,2009-04-26,R&B,,Live,12,0.067
+ALB_0474,ART_0453,Compatible Object-Oriented Hub,2020,2022-10-18,Pop,,Studio,14,0.065
+ALB_0475,ART_0018,Dreams Report,2023,2026-03-22,Pop,Jazz,Studio,10,0.055
+ALB_0476,ART_0151,Light Country,1995,2003-10-16,Pop,,Live,8,0.055
+ALB_0477,ART_0424,Programmable 6Thgeneration Initiative,2011,2014-03-19,Country,Jazz,Studio,12,0.122
+ALB_0478,ART_0185,Persistent Executive Time-Frame,2008,2023-11-02,Country,Hip-Hop,Studio,10,0.063
+ALB_0479,ART_0010,Soul Generation,2020,2022-08-31,Jazz,,EP,14,0.076
+ALB_0480,ART_0154,Persevering 24/7 Hub,2019,2022-04-27,Indie,Country,Studio,8,0.064
+ALB_0481,ART_0270,Re-Contextualized Zero Tolerance Framework,1995,2018-10-07,Jazz,Country,EP,14,0.196
+ALB_0482,ART_0497,Love Eight,2023,2025-10-12,Pop,,Studio,12,0.062
+ALB_0483,ART_0270,Soul Perhaps,2022,2026-04-06,Jazz,Country,Studio,8,0.07
+ALB_0484,ART_0178,Visionary Zero-Defect Customer Loyalty,2021,2025-07-07,R&B,,Studio,10,0.139
+ALB_0485,ART_0565,Quality-Focused Well-Modulated Utilization,2022,2024-10-22,Country,,Studio,12,0.126
+ALB_0486,ART_0163,Forever According,2015,2025-09-16,Pop,,Studio,14,0.06
+ALB_0487,ART_0623,Assimilated Discrete Moratorium,2022,2025-01-04,Pop,Rock,Studio,8,0.114
+ALB_0488,ART_0481,Star Those,2019,2024-10-13,Pop,,EP,10,0.072
+ALB_0489,ART_0280,Advanced Full-Range Ability,2013,2023-09-01,Metal,,Studio,12,0.073
+ALB_0490,ART_0441,Multi-Tiered User-Facing Superstructure,2002,2011-01-31,Hip-Hop,,Studio,14,0.058
+ALB_0491,ART_0271,Expanded Multi-Tasking Encoding,2024,2026-04-27,R&B,,Studio,16,0.057
+ALB_0492,ART_0379,Centralized Client-Server Structure,2022,2024-11-16,Rock,,Studio,12,0.098
+ALB_0493,ART_0688,Balanced Discrete Model,2024,2026-04-27,Electronic,,Compilation,12,0.074
+ALB_0494,ART_0381,Circuit War,2022,2025-01-23,Electronic,Hip-Hop,Studio,14,0.071
+ALB_0495,ART_0404,User-Friendly Attitude-Oriented Paradigm,2007,2010-12-10,R&B,,Compilation,10,0.099
+ALB_0496,ART_0368,Devolved Scalable Infrastructure,2023,2025-05-23,Hip-Hop,,Studio,16,0.105
+ALB_0497,ART_0427,Echo Out,2021,2023-07-04,Rock,R&B,Studio,12,0.059
+ALB_0498,ART_0167,Switchable Clear-Thinking Encoding,2017,2021-05-11,Country,,Studio,14,0.083
+ALB_0499,ART_0587,Journey Today,2015,2020-02-25,Hip-Hop,Country,Live,10,0.058
+ALB_0500,ART_0652,Object-Based Tangible Support,2007,2014-11-12,Classical,,Studio,8,0.102
+ALB_0501,ART_0699,Star Local,2024,2026-04-27,Pop,,Studio,12,0.088
+ALB_0502,ART_0327,Time Bad,2020,2026-02-03,Metal,,Studio,10,0.226
+ALB_0503,ART_0111,Time Century,2024,2026-04-27,Indie,,Studio,10,0.056
+ALB_0504,ART_0491,Reduced Bi-Directional Collaboration,2002,2006-08-23,Electronic,,Live,14,0.056
+ALB_0505,ART_0680,Organized Maximized Functionalities,2013,2019-10-16,Hip-Hop,,Studio,10,0.063
+ALB_0506,ART_0581,Public-Key Heuristic Throughput,2018,2021-07-25,Indie,,Studio,10,0.062
+ALB_0507,ART_0579,Integrated Maximized Firmware,2022,2026-01-09,Electronic,Classical,Live,12,0.062
+ALB_0508,ART_0473,Pulse Believe,2020,2022-12-13,Electronic,Pop,Studio,8,0.16
+ALB_0509,ART_0272,Echo Rich,2018,2022-02-21,Rock,,Live,10,0.062
+ALB_0510,ART_0691,Triple-Buffered Tangible Portal,2021,2023-06-10,Hip-Hop,Metal,Studio,10,0.063
+ALB_0511,ART_0518,Inverse Client-Server Array,2009,2021-12-26,Electronic,,Compilation,10,0.104
+ALB_0512,ART_0363,Life Heart,2015,2020-11-18,Indie,,Studio,14,0.071
+ALB_0513,ART_0025,Business-Focused Systematic Framework,2023,2025-07-30,Hip-Hop,,Studio,10,0.108
+ALB_0514,ART_0054,Pulse Contain,2023,2025-05-07,Electronic,Jazz,Live,10,0.056
+ALB_0515,ART_0428,Open-Architected Local Open Architecture,2019,2025-01-21,Jazz,Country,Live,14,0.074
+ALB_0516,ART_0437,Storm Enjoy,2011,2014-07-19,Rock,Jazz,Studio,14,0.055
+ALB_0517,ART_0518,Customer-Focused Client-Driven Capability,2020,2022-05-14,Electronic,,Live,10,0.056
+ALB_0518,ART_0438,Storm Then,2017,2024-10-13,Rock,,Live,10,0.16
+ALB_0519,ART_0264,Neon Doctor,2024,2026-04-27,Electronic,,Studio,10,0.058
+ALB_0520,ART_0693,Open-Architected Holistic Software,2001,2017-10-25,Classical,,Studio,16,0.077
+ALB_0521,ART_0236,Stand-Alone Attitude-Oriented Paradigm,2022,2025-06-28,Pop,Country,EP,16,0.069
+ALB_0522,ART_0030,Circuit Whose,2015,2024-08-19,Electronic,,Live,14,0.066
+ALB_0523,ART_0611,Ameliorated Asymmetric Customer Loyalty,2000,2023-12-24,Electronic,,Compilation,12,0.155
+ALB_0524,ART_0104,Organic Clear-Thinking Array,2023,2026-03-23,Pop,,Studio,10,0.055
+ALB_0525,ART_0515,Stories Themselves,2024,2026-04-27,R&B,,Studio,12,0.089
+ALB_0526,ART_0412,Life Can,2020,2022-06-28,Classical,Electronic,Studio,12,0.245
+ALB_0527,ART_0375,Persistent Actuating Concept,2019,2025-12-09,Hip-Hop,,Compilation,12,0.079
+ALB_0528,ART_0423,World Lead,2015,2024-09-17,Classical,,EP,10,0.191
+ALB_0529,ART_0517,Object-Based Modular Algorithm,2023,2025-09-13,Indie,,Compilation,12,0.056
+ALB_0530,ART_0024,Optimized Context-Sensitive Help-Desk,2007,2012-12-19,Pop,Classical,Live,12,0.07
+ALB_0531,ART_0280,Time Culture,2020,2023-06-02,Metal,,Compilation,8,0.062
+ALB_0532,ART_0516,Organized Coherent Alliance,2022,2025-07-18,Pop,,Compilation,8,0.099
+ALB_0533,ART_0319,Seamless Dynamic Project,2019,2022-10-17,Electronic,,Studio,16,0.332
+ALB_0534,ART_0045,Open-Source Neutral Matrices,2007,2010-05-09,Country,Classical,Live,10,0.062
+ALB_0535,ART_0437,Grass-Roots Human-Resource Challenge,2019,2023-05-31,Rock,Jazz,Compilation,10,0.088
+ALB_0536,ART_0450,Stand-Alone Multi-Tasking Encryption,2016,2023-05-14,R&B,,Studio,8,0.06
+ALB_0537,ART_0133,Quality-Focused 3Rdgeneration Implementation,2023,2026-02-06,Electronic,,Live,16,0.079
+ALB_0538,ART_0347,Journey Her,2021,2024-10-03,Hip-Hop,,Studio,14,0.072
+ALB_0539,ART_0198,World Station,2021,2024-10-09,Hip-Hop,Classical,Studio,12,0.276
+ALB_0540,ART_0289,Re-Contextualized Motivating Graphic Interface,2024,2026-04-27,Indie,,Live,12,0.083
+ALB_0541,ART_0076,Enterprise-Wide 4Thgeneration Functionalities,2018,2023-11-25,Hip-Hop,,Studio,12,0.066
+ALB_0542,ART_0441,Assimilated Zero-Defect Focus Group,2009,2012-03-13,Hip-Hop,,Live,10,0.057
+ALB_0543,ART_0557,Phased Multi-Tasking Help-Desk,2024,2026-04-27,Country,,Live,10,0.059
+ALB_0544,ART_0436,Life Early,2019,2026-03-10,Indie,,Studio,10,0.061
+ALB_0545,ART_0370,Storm Black,2018,2021-10-21,Rock,Pop,Studio,14,0.062
+ALB_0546,ART_0162,Front-Line Encompassing Monitoring,2007,2023-03-13,Electronic,,Studio,8,0.129
+ALB_0547,ART_0697,Stories Whose,2022,2025-10-16,Hip-Hop,Country,Compilation,12,0.079
+ALB_0548,ART_0493,Stories South,2002,2026-03-29,Hip-Hop,,Live,8,0.076
+ALB_0549,ART_0074,Face-To-Face Object-Oriented Website,2005,2014-09-12,Indie,,Studio,10,0.057
+ALB_0550,ART_0407,Enhanced Context-Sensitive Encoding,2023,2025-11-28,Pop,Rock,Studio,16,0.133
+ALB_0551,ART_0158,Edge Sure,2011,2022-11-30,Rock,,Studio,12,0.097
+ALB_0552,ART_0375,Multi-Channeled Optimizing Algorithm,2016,2023-12-12,Hip-Hop,,Studio,8,0.056
+ALB_0553,ART_0392,Multi-Channeled Non-Volatile Open System,2022,2024-08-07,Classical,Country,Studio,8,0.095
+ALB_0554,ART_0184,Wave Cup,2022,2025-12-28,Electronic,,Studio,12,0.078
+ALB_0555,ART_0142,Light Take,2019,2025-09-22,Pop,,Studio,10,0.057
+ALB_0556,ART_0593,Proactive Needs-Based Function,2017,2020-07-18,Pop,,EP,12,0.072
+ALB_0557,ART_0438,Automated Background Approach,2016,2020-03-06,Rock,,Compilation,8,0.074
+ALB_0558,ART_0437,Echo Discuss,2022,2024-05-10,Rock,Jazz,Studio,12,0.059
+ALB_0559,ART_0648,Stories Mean,2019,2021-04-27,Country,,Studio,12,0.204
+ALB_0560,ART_0153,Seamless Dedicated Workforce,2017,2020-03-25,Indie,,Studio,8,0.129
+ALB_0561,ART_0118,Journey Series,2017,2020-07-23,Country,,EP,10,0.09
+ALB_0562,ART_0240,Star Suffer,2014,2024-10-05,Pop,,Studio,12,0.072
+ALB_0563,ART_0198,World Game,2009,2012-03-18,Hip-Hop,Classical,Studio,14,0.069
+ALB_0564,ART_0449,Digitized Optimizing Strategy,2017,2025-09-27,Indie,R&B,Live,12,0.088
+ALB_0565,ART_0089,Vision-Oriented Bifurcated Moderator,2017,2025-05-05,Pop,,Live,16,0.078
+ALB_0566,ART_0544,Compatible Holistic Strategy,2014,2025-09-26,Pop,Electronic,Live,12,0.056
+ALB_0567,ART_0405,Object-Based Optimizing Attitude,2019,2022-12-31,Pop,,Studio,16,0.075
+ALB_0568,ART_0625,Inverse Client-Driven Complexity,2004,2020-12-18,Metal,Country,Studio,8,0.115
+ALB_0569,ART_0105,Love Leave,2023,2026-02-09,Pop,Jazz,Live,10,0.072
+ALB_0570,ART_0438,Thunder Message,2007,2020-05-09,Rock,,Studio,12,0.056
+ALB_0571,ART_0671,Dreams Contain,2024,2026-04-27,Pop,Country,Live,8,0.11
+ALB_0572,ART_0590,Realigned System-Worthy Pricing Structure,2008,2022-11-29,Country,Hip-Hop,Live,10,0.06
+ALB_0573,ART_0222,Echo Dog,1999,2017-12-15,Rock,,Studio,12,0.062
+ALB_0574,ART_0621,Enhanced Homogeneous Function,1998,2019-05-27,Metal,R&B,Studio,8,0.059
+ALB_0575,ART_0581,Implemented Clear-Thinking Conglomeration,2001,2020-01-30,Indie,,EP,14,0.065
+ALB_0576,ART_0410,Wave Science,2021,2026-03-01,Electronic,Metal,Studio,12,0.103
+ALB_0577,ART_0438,Storm Include,2020,2025-09-20,Rock,,Live,12,0.076
+ALB_0578,ART_0185,Visionary Non-Volatile Alliance,2008,2013-03-26,Country,Hip-Hop,Studio,14,0.06
+ALB_0579,ART_0097,Intuitive Reciprocal Definition,2012,2021-12-29,Indie,,Live,8,0.141
+ALB_0580,ART_0418,Revolution Body,2014,2025-09-07,Rock,,Studio,10,0.142
+ALB_0581,ART_0649,Digitized Full-Range Synergy,2005,2008-10-17,Jazz,,Studio,8,0.138
+ALB_0582,ART_0137,Monitored Foreground Concept,2006,2019-10-08,R&B,,EP,14,0.062
+ALB_0583,ART_0186,Cross-Group Tertiary Secured Line,2017,2023-10-17,Hip-Hop,,Studio,12,0.071
+ALB_0584,ART_0387,Managed Local Access,2006,2013-02-02,Hip-Hop,,Studio,8,0.367
+ALB_0585,ART_0317,Fully-Configurable System-Worthy Architecture,2022,2025-01-07,Rock,Indie,Studio,10,0.107
+ALB_0586,ART_0209,Customer-Focused Uniform Ability,2020,2022-07-06,R&B,Indie,Studio,10,0.055
+ALB_0587,ART_0474,Organic Upward-Trending Instruction Set,2018,2026-02-18,Country,Rock,Studio,8,0.056
+ALB_0588,ART_0673,Open-Source Modular Implementation,2022,2025-01-07,Jazz,,Studio,8,0.072
+ALB_0589,ART_0489,Forever How,2010,2013-09-26,Pop,R&B,Studio,16,0.162
+ALB_0590,ART_0185,Polarized Zero Tolerance Orchestration,2018,2024-03-22,Country,Hip-Hop,Compilation,12,0.077
+ALB_0591,ART_0665,Time Right,2024,2026-04-27,Country,R&B,Studio,16,0.074
+ALB_0592,ART_0388,Journey Live,2004,2007-10-17,Country,,Studio,14,0.057
+ALB_0593,ART_0009,World Throughout,2024,2026-04-27,Country,Indie,Studio,10,0.088
+ALB_0594,ART_0225,Love Again,2024,2026-04-27,Pop,Classical,Live,12,0.119
+ALB_0595,ART_0158,Edge Book,2014,2017-01-22,Rock,,Studio,10,0.068
+ALB_0596,ART_0611,Circuit Conference,2016,2025-06-03,Electronic,,Studio,12,0.107
+ALB_0597,ART_0597,Diverse Upward-Trending Archive,2024,2026-04-27,Pop,,Live,12,0.248
+ALB_0598,ART_0311,Thunder Water,2017,2026-03-01,Rock,,Live,14,0.06
+ALB_0599,ART_0567,Mandatory Radical Pricing Structure,2023,2026-03-18,Rock,,Studio,14,0.076
+ALB_0600,ART_0052,Light Sea,2021,2023-05-30,Pop,,Studio,14,0.063
+ALB_0601,ART_0487,Time Yes,2020,2024-12-06,Classical,,Studio,10,0.111
+ALB_0602,ART_0437,Revolution Policy,2012,2024-12-29,Rock,Jazz,Studio,10,0.08
+ALB_0603,ART_0004,World Close,2004,2007-05-23,Classical,,Compilation,12,0.086
+ALB_0604,ART_0413,Managed Demand-Driven Core,2023,2025-09-22,Jazz,Hip-Hop,Studio,10,0.113
+ALB_0605,ART_0381,Pulse Once,2011,2022-09-14,Electronic,Hip-Hop,Studio,16,0.068
+ALB_0606,ART_0539,Upgradable Needs-Based Firmware,2021,2025-04-20,Metal,Jazz,Studio,12,0.167
+ALB_0607,ART_0604,Innovative Disintermediate Attitude,2010,2013-01-04,Country,Pop,Studio,12,0.077
+ALB_0608,ART_0450,Life Owner,2017,2023-03-02,R&B,,Studio,8,0.059
+ALB_0609,ART_0064,Pre-Emptive Coherent Application,2022,2025-01-14,Electronic,,Studio,12,0.093
+ALB_0610,ART_0607,Optimized Background Frame,2024,2026-04-27,Rock,Hip-Hop,Studio,10,0.111
+ALB_0611,ART_0658,Life Process,2024,2026-04-27,Indie,Metal,Studio,14,0.065
+ALB_0612,ART_0626,Exclusive Bandwidth-Monitored Algorithm,2019,2022-05-09,Hip-Hop,R&B,Live,12,0.132
+ALB_0613,ART_0461,Sharable Explicit Artificial Intelligence,2020,2024-03-18,Jazz,,Studio,10,0.159
+ALB_0614,ART_0437,Customizable Fault-Tolerant Toolset,2019,2023-04-22,Rock,Jazz,Compilation,12,0.063
+ALB_0615,ART_0068,Pre-Emptive Stable Firmware,2020,2022-09-07,Electronic,Rock,Studio,14,0.352
+ALB_0616,ART_0407,Star Off,2007,2015-11-27,Pop,Rock,Studio,14,0.058
+ALB_0617,ART_0521,Journey Hospital,2021,2025-12-22,Country,,Studio,12,0.06
+ALB_0618,ART_0093,Multi-Layered Contextually-Based Knowledge User,2016,2018-09-04,Rock,Electronic,Live,10,0.06
+ALB_0619,ART_0657,Organic Maximized Firmware,2012,2017-01-12,Country,,Studio,12,0.151
+ALB_0620,ART_0368,Future-Proofed Non-Volatile Approach,2019,2022-01-27,Hip-Hop,,Studio,16,0.088
+ALB_0621,ART_0155,World Same,2021,2025-04-27,Country,,Studio,10,0.059
+ALB_0622,ART_0481,Configurable Static Hardware,2019,2025-05-11,Pop,,Live,14,0.071
+ALB_0623,ART_0307,Open-Source Web-Enabled Parallelism,2022,2024-10-09,Metal,Jazz,Live,10,0.084
+ALB_0624,ART_0680,Life Ask,2010,2024-02-02,Hip-Hop,,Live,10,0.057
+ALB_0625,ART_0283,Time Tell,2024,2026-04-27,Classical,,Studio,12,0.144
+ALB_0626,ART_0010,Midnight North,2021,2025-05-19,Jazz,,Studio,16,0.114
+ALB_0627,ART_0449,Stories Would,2020,2024-03-20,Indie,R&B,Studio,8,0.075
+ALB_0628,ART_0187,Time Upon,1998,2006-06-11,R&B,Metal,Studio,16,0.257
+ALB_0629,ART_0254,Innovative Attitude-Oriented Infrastructure,2006,2024-07-26,Indie,Jazz,Studio,8,0.07
+ALB_0630,ART_0271,Universal 5Thgeneration Middleware,2024,2026-04-27,R&B,,Studio,12,0.357
+ALB_0631,ART_0375,Programmable Object-Oriented Service-Desk,2019,2026-03-26,Hip-Hop,,EP,12,0.09
+ALB_0632,ART_0298,Digitized Bottom-Line System Engine,2016,2021-11-29,Country,Classical,Studio,12,0.086
+ALB_0633,ART_0617,Love Computer,2013,2026-01-05,Pop,R&B,Studio,12,0.059
+ALB_0634,ART_0133,Pulse System,2022,2024-09-13,Electronic,,Studio,14,0.144
+ALB_0635,ART_0103,Journey And,2024,2026-04-27,Indie,,Live,10,0.07
+ALB_0636,ART_0110,Synergized Intermediate Customer Loyalty,2017,2026-04-20,Jazz,Country,Studio,12,0.059
+ALB_0637,ART_0683,World Product,2020,2022-11-29,R&B,,Compilation,8,0.055
+ALB_0638,ART_0498,Right-Sized Empowering Functionalities,2012,2025-04-01,Electronic,,Studio,16,0.079
+ALB_0639,ART_0608,Love Who,2023,2026-02-15,Pop,Metal,Studio,16,0.076
+ALB_0640,ART_0381,Circuit Begin,2020,2023-11-15,Electronic,Hip-Hop,Studio,12,0.097
+ALB_0641,ART_0487,Life Industry,2020,2024-07-11,Classical,,Studio,12,0.148
+ALB_0642,ART_0404,Grass-Roots Multi-State Knowledgebase,2020,2025-12-26,R&B,,Studio,10,0.056
+ALB_0643,ART_0117,Advanced Zero Tolerance Standardization,2013,2022-03-04,Hip-Hop,,Studio,10,0.099
+ALB_0644,ART_0351,Journey Necessary,2021,2025-08-30,Indie,,Studio,14,0.06
+ALB_0645,ART_0091,Customizable Intangible Collaboration,2020,2022-11-29,Rock,,Studio,8,0.132
+ALB_0646,ART_0272,Echo Per,2019,2024-03-25,Rock,,Compilation,12,0.118
+ALB_0647,ART_0368,Cross-Platform Bi-Directional Open System,2019,2025-03-20,Hip-Hop,,Studio,12,0.077
+ALB_0648,ART_0072,Horizontal National Hardware,2010,2024-08-10,Rock,Metal,Studio,14,0.096
+ALB_0649,ART_0132,Stories Everything,2019,2023-03-26,Hip-Hop,,Studio,8,0.065
+ALB_0650,ART_0616,Pre-Emptive Object-Oriented Portal,2014,2021-01-18,Rock,,Studio,16,0.073
+ALB_0651,ART_0698,Storm Consider,2003,2011-02-06,Rock,,Studio,10,0.119
+ALB_0652,ART_0142,Digitized Regional Portal,2019,2024-09-20,Pop,,Studio,10,0.072
+ALB_0653,ART_0370,Thunder Interest,2018,2020-07-20,Rock,Pop,Studio,12,0.067
+ALB_0654,ART_0212,Managed System-Worthy Encoding,2000,2003-07-03,Classical,,Live,16,0.074
+ALB_0655,ART_0423,Life May,1997,2024-03-07,Classical,,Compilation,12,0.121
+ALB_0656,ART_0024,Star Watch,2020,2023-10-23,Pop,Classical,Studio,8,0.065
+ALB_0657,ART_0343,Mandatory Exuding Function,2024,2026-04-27,Electronic,,Compilation,12,0.059
+ALB_0658,ART_0437,Storm Million,2015,2025-01-15,Rock,Jazz,Studio,14,0.096
+ALB_0659,ART_0661,Stories Reveal,2020,2022-09-17,Metal,Rock,Studio,16,0.12
+ALB_0660,ART_0101,Edge Trouble,2021,2024-01-01,Rock,Pop,EP,14,0.057
+ALB_0661,ART_0244,Light First,2019,2026-03-10,Pop,,Live,10,0.062
+ALB_0662,ART_0661,Organic Zero-Defect Graphic Interface,2021,2024-02-16,Metal,Rock,Studio,8,0.058
+ALB_0663,ART_0186,Journey Keep,2006,2019-03-17,Hip-Hop,,Studio,12,0.066
+ALB_0664,ART_0068,Cross-Group Content-Based Intranet,2015,2019-03-22,Electronic,Rock,Live,16,0.071
+ALB_0665,ART_0527,Revolution Than,2024,2026-04-27,Rock,,Compilation,12,0.102
+ALB_0666,ART_0095,Edge Memory,2024,2026-04-27,Rock,,Studio,16,0.088
+ALB_0667,ART_0623,Multi-Layered Analyzing Migration,2023,2026-02-09,Pop,Rock,Studio,16,0.085
+ALB_0668,ART_0438,Echo Attorney,2013,2018-09-28,Rock,,Studio,14,0.066
+ALB_0669,ART_0334,Profit-Focused Impactful Challenge,2017,2024-10-12,Hip-Hop,,Studio,8,0.126
+ALB_0670,ART_0405,Progressive Non-Volatile Algorithm,2019,2022-03-09,Pop,,Studio,12,0.073
+ALB_0671,ART_0317,Echo Type,2017,2025-02-23,Rock,Indie,Studio,8,0.316
+ALB_0672,ART_0437,Centralized Dynamic Alliance,2011,2019-04-02,Rock,Jazz,Studio,16,0.086
+ALB_0673,ART_0262,Life Why,2024,2026-04-27,R&B,Electronic,Studio,10,0.058
+ALB_0674,ART_0645,Stories Decide,2022,2024-11-12,Country,,Compilation,8,0.091
+ALB_0675,ART_0064,Persistent Motivating Infrastructure,2023,2025-12-14,Electronic,,Studio,14,0.065
+ALB_0676,ART_0626,Decentralized Systemic Algorithm,2020,2023-04-15,Hip-Hop,R&B,Live,10,0.092
+ALB_0677,ART_0688,Wave Middle,2024,2026-04-27,Electronic,,Compilation,12,0.056
+ALB_0678,ART_0319,Enhanced Methodical Parallelism,2023,2025-11-13,Electronic,,Live,12,0.059
+ALB_0679,ART_0060,Storm Guy,2014,2017-12-14,Rock,Indie,Studio,12,0.131
+ALB_0680,ART_0318,Fundamental Value-Added Solution,2007,2010-11-08,Rock,Pop,Studio,16,0.061
+ALB_0681,ART_0478,Assimilated Human-Resource Application,2023,2025-06-24,R&B,,Studio,12,0.124
+ALB_0682,ART_0419,Re-Engineered Zero-Defect Data-Warehouse,2023,2026-03-05,R&B,,Studio,12,0.063
+ALB_0683,ART_0490,Stand-Alone Directional Service-Desk,2012,2016-10-19,Hip-Hop,R&B,Studio,10,0.087
+ALB_0684,ART_0144,Streamlined Incremental Migration,2015,2017-06-30,Pop,,Live,12,0.093
+ALB_0685,ART_0313,Vision-Oriented Zero Administration Software,2013,2015-06-01,R&B,,Studio,12,0.075
+ALB_0686,ART_0481,Light Which,2024,2026-04-27,Pop,,Studio,12,0.064
+ALB_0687,ART_0554,Life Consumer,2015,2022-09-23,Metal,R&B,Studio,12,0.061
+ALB_0688,ART_0158,Storm Across,2011,2016-03-23,Rock,,Studio,10,0.055
+ALB_0689,ART_0191,Robust Fault-Tolerant Structure,2020,2026-03-09,Electronic,Indie,Studio,10,0.064
+ALB_0690,ART_0388,Stand-Alone Even-Keeled Interface,1997,2023-07-01,Country,,Studio,10,0.088
+ALB_0691,ART_0013,Monitored Logistical Extranet,2014,2018-07-02,Indie,,Studio,12,0.193
+ALB_0692,ART_0454,Stories Five,2021,2025-05-08,Indie,,Studio,14,0.138
+ALB_0693,ART_0481,Light Thank,2020,2024-10-24,Pop,,Studio,12,0.105
+ALB_0694,ART_0273,Star Pattern,2021,2023-08-17,Pop,,Studio,8,0.11
+ALB_0695,ART_0551,Profound Stable Hub,2002,2016-09-01,Jazz,,Compilation,12,0.089
+ALB_0696,ART_0014,Smooth Phone,2024,2026-04-27,Jazz,Hip-Hop,EP,12,0.062
+ALB_0697,ART_0590,Innovative Systemic Benchmark,2012,2020-02-06,Country,Hip-Hop,Studio,8,0.16
+ALB_0698,ART_0113,Mandatory Even-Keeled Productivity,2007,2014-11-05,Hip-Hop,Jazz,Studio,8,0.09
+ALB_0699,ART_0437,Thunder Factor,2022,2024-11-02,Rock,Jazz,Studio,12,0.079
+ALB_0700,ART_0225,Universal Solution-Oriented Framework,2021,2023-11-19,Pop,Classical,EP,8,0.057
+ALB_0701,ART_0317,Programmable Well-Modulated Encoding,2013,2025-03-19,Rock,Indie,Studio,14,0.071
+ALB_0702,ART_0120,Pulse Support,2021,2025-11-21,Electronic,,Studio,8,0.072
+ALB_0703,ART_0018,Forever Take,2021,2025-02-12,Pop,Jazz,Studio,8,0.135
+ALB_0704,ART_0220,Switchable Foreground Software,2017,2020-04-18,Classical,,Studio,12,0.078
+ALB_0705,ART_0009,Journey Agree,2024,2026-04-27,Country,Indie,EP,10,0.068
+ALB_0706,ART_0487,World Find,2022,2024-11-01,Classical,,EP,12,0.301
+ALB_0707,ART_0031,Operative Impactful Info-Mediaries,2017,2024-06-22,Indie,,Studio,8,0.057
+ALB_0708,ART_0423,Reduced Tertiary Orchestration,2022,2025-12-13,Classical,,Studio,12,0.07
+ALB_0709,ART_0046,Mandatory Uniform Structure,2005,2011-07-18,Pop,,Live,8,0.055
+ALB_0710,ART_0237,Public-Key Scalable Toolset,2011,2019-07-03,Country,,Studio,12,0.1
+ALB_0711,ART_0437,Synchronized Heuristic Middleware,2024,2026-04-27,Rock,Jazz,Studio,12,0.17
+ALB_0712,ART_0369,Down-Sized Stable Open Architecture,2015,2018-12-12,R&B,Country,Studio,8,0.063
+ALB_0713,ART_0458,Cross-Platform Methodical Capacity,2003,2020-11-16,Pop,,Studio,10,0.132
+ALB_0714,ART_0481,Up-Sized Next Generation Task-Force,2021,2026-01-21,Pop,,Studio,16,0.064
+ALB_0715,ART_0171,World Your,2019,2024-09-18,Hip-Hop,Indie,Studio,14,0.163
+ALB_0716,ART_0637,Digital Government,2024,2026-04-27,Electronic,Jazz,Studio,10,0.103
+ALB_0717,ART_0611,Circuit Doctor,2014,2019-11-14,Electronic,,Studio,8,0.114
+ALB_0718,ART_0542,Edge Size,2023,2026-03-10,Rock,Indie,Live,14,0.055
+ALB_0719,ART_0453,Forever Kitchen,1997,2020-08-06,Pop,,Studio,12,0.243
+ALB_0720,ART_0135,Thunder Glass,2021,2024-06-07,Rock,,Studio,16,0.098
+ALB_0721,ART_0540,Reduced Explicit Local Area Network,2017,2025-04-11,Metal,Rock,Studio,10,0.064
+ALB_0722,ART_0158,Edge Many,2010,2013-01-25,Rock,,EP,14,0.122
+ALB_0723,ART_0611,Digital Protect,2012,2021-04-27,Electronic,,Compilation,10,0.063
+ALB_0724,ART_0568,Time Yet,2024,2026-04-27,Country,,Studio,14,0.139
+ALB_0725,ART_0258,Time Marriage,2000,2023-08-31,Metal,Indie,Studio,10,0.057
+ALB_0726,ART_0405,Profit-Focused Bottom-Line Software,2023,2025-09-12,Pop,,Studio,16,0.095
+ALB_0727,ART_0261,Stories Fire,2023,2025-09-24,Hip-Hop,Country,Studio,14,0.077
+ALB_0728,ART_0199,Stories Truth,2012,2024-07-27,Country,Hip-Hop,Studio,14,0.057
+ALB_0729,ART_0428,Midnight Certain,2015,2026-04-01,Jazz,Country,Compilation,12,0.062
+ALB_0730,ART_0546,Storm Guess,2022,2025-02-19,Rock,,Compilation,14,0.055
+ALB_0731,ART_0432,Time Over,2013,2025-02-20,Hip-Hop,,Live,8,0.073
+ALB_0732,ART_0375,Life Lot,2012,2016-01-14,Hip-Hop,,Studio,8,0.064
+ALB_0733,ART_0628,Star Travel,2014,2023-06-23,Pop,Electronic,Studio,12,0.082
+ALB_0734,ART_0513,Time Start,2024,2026-04-27,R&B,,EP,12,0.064
+ALB_0735,ART_0122,Managed Responsive Conglomeration,2023,2025-08-18,Hip-Hop,,Live,8,0.064
+ALB_0736,ART_0106,Centralized 24Hour Knowledge User,2002,2010-05-03,Rock,Hip-Hop,Studio,10,0.101
+ALB_0737,ART_0312,Virtual Zero-Defect Concept,1993,2013-03-08,Hip-Hop,Pop,EP,10,0.056
+ALB_0738,ART_0555,Diverse Mobile Toolset,2018,2024-11-24,Pop,,EP,14,0.157
+ALB_0739,ART_0134,Cross-Group Clear-Thinking Pricing Structure,2014,2020-08-27,Country,,Studio,16,0.13
+ALB_0740,ART_0505,Life Laugh,2019,2023-05-02,Classical,Electronic,Live,10,0.09
+ALB_0741,ART_0120,Digital Me,2019,2023-03-27,Electronic,,Studio,12,0.082
+ALB_0742,ART_0549,Journey Always,2022,2025-05-21,Classical,,Studio,10,0.15
+ALB_0743,ART_0661,World Side,2023,2025-09-09,Metal,Rock,Studio,12,0.06
+ALB_0744,ART_0655,Advanced Fresh-Thinking System Engine,2021,2025-10-26,Classical,Hip-Hop,Studio,12,0.056
+ALB_0745,ART_0010,Blue Cut,2024,2026-04-27,Jazz,,Studio,12,0.062
+ALB_0746,ART_0258,Life Above,2018,2024-01-29,Metal,Indie,Studio,14,0.112
+ALB_0747,ART_0325,Forever Energy,2010,2015-06-27,Pop,Rock,Live,10,0.055
+ALB_0748,ART_0623,Light Understand,2014,2019-10-05,Pop,Rock,Studio,12,0.081
+ALB_0749,ART_0677,De-Engineered Bi-Directional Info-Mediaries,2021,2024-10-29,R&B,,Studio,12,0.63
+ALB_0750,ART_0446,World Follow,2018,2021-04-27,Indie,Hip-Hop,Live,14,0.131
+ALB_0751,ART_0626,Stories Than,1990,1993-11-14,Hip-Hop,R&B,Studio,12,0.076
+ALB_0752,ART_0433,Journey Fill,2005,2015-12-25,Hip-Hop,Pop,Studio,8,0.056
+ALB_0753,ART_0437,Storm Nature,2024,2026-04-27,Rock,Jazz,Studio,12,0.122
+ALB_0754,ART_0437,Mandatory Intermediate Software,2021,2026-04-22,Rock,Jazz,Studio,12,0.082
+ALB_0755,ART_0558,Velvet Guess,2018,2026-04-18,Jazz,,Studio,8,0.057
+ALB_0756,ART_0064,Pre-Emptive Heuristic System Engine,2024,2026-04-27,Electronic,,Live,10,0.057
+ALB_0757,ART_0481,Light Yourself,2023,2026-03-23,Pop,,Studio,8,0.162
+ALB_0758,ART_0694,Open-Architected 3Rdgeneration Emulation,2018,2021-08-30,Hip-Hop,,Studio,16,0.09
+ALB_0759,ART_0377,Life Catch,2019,2022-05-16,Metal,,Studio,12,0.121
+ALB_0760,ART_0021,Wave Age,2023,2025-11-27,Electronic,Jazz,Studio,12,0.142
+ALB_0761,ART_0190,Journey Condition,2022,2024-07-25,R&B,Hip-Hop,Studio,12,0.08
+ALB_0762,ART_0691,World Seek,2008,2020-09-22,Hip-Hop,Metal,Studio,14,0.076
+ALB_0763,ART_0191,Automated Homogeneous Productivity,2015,2019-08-15,Electronic,Indie,Compilation,8,0.07
+ALB_0764,ART_0040,Pulse Nor,2022,2025-07-25,Electronic,Rock,Compilation,12,0.065
+ALB_0765,ART_0222,Right-Sized Actuating Protocol,2020,2022-10-01,Rock,,Compilation,12,0.07
+ALB_0766,ART_0259,Stories Think,2008,2010-08-20,R&B,Electronic,Live,12,0.107
+ALB_0767,ART_0406,Team-Oriented Bifurcated Instruction Set,2006,2016-04-25,R&B,,Studio,16,0.083
+ALB_0768,ART_0212,Stories Candidate,2001,2015-11-27,Classical,,Studio,10,0.15
+ALB_0769,ART_0487,Phased Tangible Collaboration,2014,2018-05-16,Classical,,Studio,10,0.071
+ALB_0770,ART_0417,Synergized Responsive Access,2020,2023-07-10,Jazz,,Studio,10,0.083
+ALB_0771,ART_0115,Time Recently,2022,2024-07-08,Hip-Hop,Country,Studio,12,0.086
+ALB_0772,ART_0071,Pulse Nature,2024,2026-04-27,Electronic,,Studio,12,0.082
+ALB_0773,ART_0162,Robust Tangible Challenge,1995,2009-06-19,Electronic,,Studio,8,0.094
+ALB_0774,ART_0383,Star Way,2012,2015-07-30,Pop,,Studio,12,0.062
+ALB_0775,ART_0603,Up-Sized Regional Capability,2018,2022-01-05,Rock,,Studio,10,0.075
+ALB_0776,ART_0317,Echo Still,2019,2021-11-06,Rock,Indie,Studio,14,0.057
+ALB_0777,ART_0485,Digital Decide,2022,2025-07-15,Electronic,Classical,Live,12,0.068
+ALB_0778,ART_0375,Life Star,2022,2024-11-04,Hip-Hop,,EP,14,0.074
+ALB_0779,ART_0674,Journey Necessary,2024,2026-04-27,Indie,,Studio,8,0.088
+ALB_0780,ART_0352,Multi-Channeled Tertiary Installation,2020,2023-07-02,R&B,Metal,Studio,14,0.213
+ALB_0781,ART_0405,Star Among,1999,2015-01-09,Pop,,Live,12,0.083
+ALB_0782,ART_0088,Dreams Whether,2008,2013-08-22,Pop,Electronic,EP,12,0.101
+ALB_0783,ART_0381,Polarized Full-Range Encoding,2010,2012-05-10,Electronic,Hip-Hop,Live,16,0.075
+ALB_0784,ART_0693,Synchronized Background Budgetary Management,2007,2023-07-08,Classical,,Compilation,10,0.086
+ALB_0785,ART_0024,Synchronized Modular Collaboration,2010,2025-08-11,Pop,Classical,Studio,8,0.056
+ALB_0786,ART_0422,Love State,2012,2020-06-16,Pop,,Studio,14,0.062
+ALB_0787,ART_0614,Up-Sized Uniform Attitude,2024,2026-04-27,Country,Pop,Studio,10,0.067
+ALB_0788,ART_0489,Stand-Alone Discrete Knowledgebase,2009,2026-02-23,Pop,R&B,Studio,14,0.073
+ALB_0789,ART_0267,Implemented Empowering Local Area Network,2020,2022-07-09,Metal,Rock,Studio,12,0.056
+ALB_0790,ART_0412,Journey Tax,2018,2021-05-13,Classical,Electronic,Live,14,0.058
+ALB_0791,ART_0352,Life Among,2020,2025-09-23,R&B,Metal,Studio,10,0.063
+ALB_0792,ART_0513,Journey Here,2024,2026-04-27,R&B,,EP,10,0.274
+ALB_0793,ART_0117,Intuitive Interactive Support,2021,2023-09-01,Hip-Hop,,EP,12,0.065
+ALB_0794,ART_0547,Midnight Today,2024,2026-04-27,Jazz,Hip-Hop,Live,10,0.073
+ALB_0795,ART_0171,Balanced 24/7 Challenge,2022,2025-08-23,Hip-Hop,Indie,Live,14,0.06
+ALB_0796,ART_0039,Edge Conference,2023,2025-08-24,Rock,,Studio,16,0.084
+ALB_0797,ART_0437,Organic Regional Flexibility,2023,2026-03-13,Rock,Jazz,Live,8,0.063
+ALB_0798,ART_0022,World Better,2020,2023-10-23,Country,Indie,Studio,14,0.06
+ALB_0799,ART_0405,Dreams Guess,1999,2005-11-21,Pop,,Studio,10,0.076
+ALB_0800,ART_0148,Time Institution,2022,2025-02-12,Country,,Studio,10,0.055
+ALB_0801,ART_0665,Stories Loss,2024,2026-04-27,Country,R&B,Live,12,0.055
+ALB_0802,ART_0621,Stories Image,2000,2018-11-16,Metal,R&B,Studio,10,0.061
+ALB_0803,ART_0141,Polarized Intangible Projection,2013,2025-01-24,Hip-Hop,,Studio,10,0.055
+ALB_0804,ART_0155,Down-Sized Bifurcated Capacity,2024,2026-04-27,Country,,EP,14,0.057
+ALB_0805,ART_0553,Centralized Cohesive Benchmark,2023,2025-09-25,Hip-Hop,,Live,10,0.066
+ALB_0806,ART_0421,Thunder Performance,2023,2025-10-19,Rock,,Compilation,14,0.114
+ALB_0807,ART_0260,Re-Contextualized Systematic Intranet,2007,2012-05-25,Metal,Electronic,EP,10,0.08
+ALB_0808,ART_0590,Multi-Tiered Zero-Defect Help-Desk,2016,2023-03-18,Country,Hip-Hop,Studio,10,0.075
+ALB_0809,ART_0070,World Travel,1998,2018-02-11,Hip-Hop,,Studio,8,0.064
+ALB_0810,ART_0112,Life This,2018,2024-09-06,R&B,,Studio,8,0.184
+ALB_0811,ART_0230,Time Wait,2016,2019-05-13,Metal,,Compilation,10,0.068
+ALB_0812,ART_0436,Pre-Emptive Bifurcated Installation,2019,2023-07-10,Indie,,Studio,14,0.057
+ALB_0813,ART_0473,Cloned Empowering Projection,2015,2020-02-23,Electronic,Pop,Compilation,14,0.084
+ALB_0814,ART_0242,World Sea,2018,2025-07-12,Hip-Hop,,Studio,14,0.057
+ALB_0815,ART_0288,Progressive Zero Administration Synergy,2024,2026-04-27,Jazz,,EP,12,0.066
+ALB_0816,ART_0177,Journey Other,2019,2022-06-09,Metal,Electronic,Studio,12,0.075
+ALB_0817,ART_0377,Synchronized Global Model,2023,2025-11-03,Metal,,Studio,12,0.14
+ALB_0818,ART_0090,Total Regional Attitude,1996,2010-06-09,R&B,,Studio,12,0.074
+ALB_0819,ART_0402,Upgradable Dynamic Matrices,1995,2007-05-07,Metal,,Compilation,10,0.094
+ALB_0820,ART_0307,Time Require,2022,2025-08-07,Metal,Jazz,Studio,14,0.513
+ALB_0821,ART_0201,Forever Church,2017,2025-03-11,Pop,,Studio,16,0.058
+ALB_0822,ART_0514,World Open,2017,2025-07-25,Hip-Hop,,Live,12,0.063
+ALB_0823,ART_0409,Seamless Actuating Access,2023,2025-12-17,Hip-Hop,,EP,14,0.068
+ALB_0824,ART_0437,Revolution Close,2013,2020-11-17,Rock,Jazz,Compilation,10,0.07
+ALB_0825,ART_0286,Stories Manager,2021,2025-11-15,R&B,Classical,Live,8,0.069
+ALB_0826,ART_0662,Down-Sized Asynchronous System Engine,2022,2025-04-20,Classical,,Live,14,0.161
+ALB_0827,ART_0001,Stories Effect,2016,2020-12-18,Indie,Metal,Compilation,10,0.096
+ALB_0828,ART_0216,Grass-Roots Actuating Middleware,2019,2022-06-06,Rock,,Studio,10,0.083
+ALB_0829,ART_0648,Stand-Alone Homogeneous Initiative,2011,2023-12-10,Country,,Studio,14,0.064
+ALB_0830,ART_0184,Digital Bar,2017,2022-07-13,Electronic,,Studio,14,0.12
+ALB_0831,ART_0418,Re-Engineered Local Array,2018,2025-06-16,Rock,,Compilation,10,0.223
+ALB_0832,ART_0128,World Likely,2023,2025-08-19,Indie,Hip-Hop,Studio,12,0.119
+ALB_0833,ART_0069,Soul Modern,2008,2022-03-30,Jazz,Rock,Studio,14,0.054
+ALB_0834,ART_0699,Ameliorated Bi-Directional Initiative,2024,2026-04-27,Pop,,Studio,12,0.086
+ALB_0835,ART_0375,World Onto,2017,2023-03-01,Hip-Hop,,Compilation,14,0.056
+ALB_0836,ART_0437,Edge That,2022,2024-07-01,Rock,Jazz,Studio,14,0.062
+ALB_0837,ART_0180,Robust Regional Productivity,2012,2017-12-22,Pop,,Live,14,0.056
+ALB_0838,ART_0347,Profound Next Generation Database,2024,2026-04-27,Hip-Hop,,Studio,12,0.083
+ALB_0839,ART_0631,Time Loss,2010,2025-08-16,Metal,,Live,14,0.092
+ALB_0840,ART_0431,Life Himself,2023,2026-02-22,Country,R&B,Studio,8,0.057
+ALB_0841,ART_0311,Echo Technology,2023,2025-07-16,Rock,,Studio,14,0.068
+ALB_0842,ART_0391,Journey Look,2010,2016-12-18,Metal,,Live,16,0.072
+ALB_0843,ART_0440,Journey Speak,2016,2023-04-11,Country,Pop,Studio,12,0.067
+ALB_0844,ART_0568,Phased Transitional Protocol,2007,2015-06-30,Country,,EP,10,0.058
+ALB_0845,ART_0580,Thunder Local,2024,2026-04-27,Rock,Electronic,Live,10,0.07
+ALB_0846,ART_0347,Virtual Stable Definition,2018,2020-04-30,Hip-Hop,,Studio,10,0.102
+ALB_0847,ART_0167,World Hear,2004,2022-12-01,Country,,Studio,8,0.056
+ALB_0848,ART_0148,Life Such,2022,2024-11-25,Country,,Studio,16,0.056
+ALB_0849,ART_0172,Time Nearly,2020,2023-10-25,Classical,,Studio,10,0.066
+ALB_0850,ART_0211,Customer-Focused 6Thgeneration Concept,2024,2026-04-27,Country,,Studio,12,0.198
+ALB_0851,ART_0688,Universal Value-Added Success,2024,2026-04-27,Electronic,,Studio,14,0.09
+ALB_0852,ART_0209,Function-Based Reciprocal Customer Loyalty,2023,2025-07-03,R&B,Indie,Studio,12,0.091
+ALB_0853,ART_0401,Stories Wonder,2024,2026-04-27,Indie,Rock,Studio,16,0.067
+ALB_0854,ART_0406,Time Dinner,1996,2011-02-12,R&B,,Live,8,0.082
+ALB_0855,ART_0099,Stories Station,2022,2024-09-12,Hip-Hop,,Studio,12,0.055
+ALB_0856,ART_0483,Mandatory Bi-Directional System Engine,2011,2018-09-15,Metal,,Live,12,0.086
+ALB_0857,ART_0442,Stories With,2023,2025-12-13,Indie,,Compilation,10,0.165
+ALB_0858,ART_0611,Neon Remember,1990,2012-05-03,Electronic,,Studio,12,0.084
+ALB_0859,ART_0586,Visionary Local Knowledgebase,2022,2025-08-20,Rock,Indie,Studio,12,0.139
+ALB_0860,ART_0695,Profit-Focused Client-Driven Methodology,2002,2004-05-30,Jazz,,Studio,14,0.098
+ALB_0861,ART_0381,User-Centric Actuating Neural-Net,2022,2026-03-10,Electronic,Hip-Hop,Studio,10,0.058
+ALB_0862,ART_0510,Reduced Mission-Critical Migration,2024,2026-04-27,Classical,Pop,Studio,16,0.157
+ALB_0863,ART_0634,Enhanced System-Worthy Paradigm,2020,2023-01-05,Country,,Studio,16,0.056
+ALB_0864,ART_0006,De-Engineered Bi-Directional Info-Mediaries,2016,2023-07-31,Classical,,Studio,8,0.077
+ALB_0865,ART_0611,Digital Police,1991,2022-06-13,Electronic,,Studio,12,0.058
+ALB_0866,ART_0683,Life Mother,2018,2025-08-10,R&B,,EP,8,0.055
+ALB_0867,ART_0151,Operative Real-Time Solution,2004,2021-07-26,Pop,,Live,14,0.07
+ALB_0868,ART_0437,Grass-Roots Hybrid Graphical User Interface,2011,2025-12-07,Rock,Jazz,Studio,10,0.064
+ALB_0869,ART_0323,World Local,2010,2023-08-02,Indie,Classical,Live,8,0.074
+ALB_0870,ART_0581,Devolved Incremental Portal,2008,2021-07-08,Indie,,Studio,16,0.08
+ALB_0871,ART_0176,World Smile,2023,2025-10-30,Country,,Studio,8,0.056
+ALB_0872,ART_0381,Wave Threat,2014,2023-05-02,Electronic,Hip-Hop,Studio,10,0.058
+ALB_0873,ART_0437,Intuitive Transitional Support,2022,2026-03-10,Rock,Jazz,Live,12,0.079
+ALB_0874,ART_0335,Self-Enabling Didactic Customer Loyalty,1997,2004-12-24,Rock,,Studio,8,0.066
+ALB_0875,ART_0046,Universal Explicit Software,2006,2014-07-14,Pop,,Studio,16,0.098
+ALB_0876,ART_0615,Synergistic Clear-Thinking Strategy,2019,2024-07-26,Indie,Country,Studio,8,0.088
+ALB_0877,ART_0099,Enhanced Motivating Moratorium,2024,2026-04-27,Hip-Hop,,Studio,8,0.127
+ALB_0878,ART_0226,Inverse Tertiary Budgetary Management,2024,2026-04-27,Classical,Hip-Hop,Studio,14,0.093
+ALB_0879,ART_0442,Realigned Mission-Critical Paradigm,2023,2025-11-20,Indie,,Live,12,0.07
+ALB_0880,ART_0584,Synchronized Tertiary Instruction Set,2021,2025-05-04,Hip-Hop,,Compilation,12,0.09
+ALB_0881,ART_0501,Storm Wall,2007,2023-08-16,Rock,,Studio,14,0.063
+ALB_0882,ART_0010,Horizontal Interactive Workforce,2023,2025-04-30,Jazz,,Studio,14,0.064
+ALB_0883,ART_0319,Circuit Both,2023,2025-05-05,Electronic,,Studio,16,0.11
+ALB_0884,ART_0437,Echo Check,2020,2022-07-13,Rock,Jazz,Live,16,0.071
+ALB_0885,ART_0381,Centralized Dedicated Flexibility,2013,2023-07-28,Electronic,Hip-Hop,Studio,10,0.113
+ALB_0886,ART_0012,Diverse Executive Software,2018,2021-10-27,Metal,,Compilation,16,0.119
+ALB_0887,ART_0537,Life Those,2010,2013-03-09,Classical,Electronic,Live,8,0.132
+ALB_0888,ART_0437,Implemented Demand-Driven System Engine,2014,2021-09-23,Rock,Jazz,Studio,10,0.168
+ALB_0889,ART_0356,Multi-Channeled Local Benchmark,2013,2022-02-04,Classical,,Studio,12,0.07
+ALB_0890,ART_0178,Synergistic User-Facing Open Architecture,2024,2026-04-27,R&B,,Studio,14,0.065
+ALB_0891,ART_0100,User-Friendly Secondary Open Architecture,2021,2024-06-26,Country,Classical,Studio,14,0.081
+ALB_0892,ART_0667,Profound Zero Tolerance Utilization,2017,2024-11-28,Country,Hip-Hop,Studio,10,0.067
+ALB_0893,ART_0611,Horizontal System-Worthy Secured Line,1999,2002-06-29,Electronic,,Studio,10,0.083
+ALB_0894,ART_0230,Multi-Tiered Human-Resource Instruction Set,2015,2025-12-05,Metal,,Studio,10,0.095
+ALB_0895,ART_0675,Life Reveal,2023,2025-08-18,R&B,,Studio,10,0.092
+ALB_0896,ART_0045,Stories Old,2016,2018-10-01,Country,Classical,Compilation,10,0.067
+ALB_0897,ART_0590,User-Friendly Eco-Centric Customer Loyalty,2019,2024-06-02,Country,Hip-Hop,Studio,16,0.059
+ALB_0898,ART_0681,World Statement,2023,2026-03-06,Country,,Studio,10,0.07
+ALB_0899,ART_0147,Pulse Level,2021,2025-10-22,Electronic,,Studio,16,0.058
+ALB_0900,ART_0426,Stories Which,2012,2021-12-03,Metal,Country,Studio,10,0.148
+ALB_0901,ART_0670,Triple-Buffered Secondary Hub,2021,2025-08-01,Metal,Jazz,Studio,10,0.066
+ALB_0902,ART_0129,Time Office,2021,2025-07-14,R&B,,Studio,14,0.059
+ALB_0903,ART_0370,Revolution Debate,2017,2024-10-01,Rock,Pop,Studio,12,0.055
+ALB_0904,ART_0350,Ergonomic Explicit Knowledge User,2003,2009-01-16,Hip-Hop,,EP,8,0.087
+ALB_0905,ART_0487,Journey Result,2018,2020-10-06,Classical,,Compilation,10,0.086
+ALB_0906,ART_0154,Time Consumer,2018,2024-09-23,Indie,Country,Studio,12,0.066
+ALB_0907,ART_0276,Decentralized Homogeneous Analyzer,1994,2009-03-04,Hip-Hop,,Studio,16,0.056
+ALB_0908,ART_0404,Realigned Empowering Capacity,2010,2014-07-27,R&B,,Studio,14,0.069
+ALB_0909,ART_0151,Love Throughout,2012,2017-05-18,Pop,,Studio,14,0.064
+ALB_0910,ART_0037,Managed Maximized Strategy,2006,2025-03-12,Jazz,,Live,12,0.091
+ALB_0911,ART_0211,Life Among,2024,2026-04-27,Country,,EP,16,0.083
+ALB_0912,ART_0260,Inverse Radical Application,2019,2025-03-09,Metal,Electronic,Compilation,14,0.067
+ALB_0913,ART_0151,Dreams Process,1999,2016-09-16,Pop,,Studio,10,0.061
+ALB_0914,ART_0019,Switchable Exuding Matrix,2024,2026-04-27,Indie,,Studio,10,0.407
+ALB_0915,ART_0437,Reactive Heuristic Archive,2024,2026-04-27,Rock,Jazz,Studio,10,0.072
+ALB_0916,ART_0650,Intuitive Multi-Tasking Definition,2024,2026-04-27,Indie,,Live,10,0.092
+ALB_0917,ART_0283,Stories Near,2021,2023-07-10,Classical,,Studio,10,0.058
+ALB_0918,ART_0682,Time Mouth,2022,2024-08-20,R&B,Rock,Live,12,0.074
+ALB_0919,ART_0093,Revolution Of,2022,2025-05-23,Rock,Electronic,Studio,14,0.055
+ALB_0920,ART_0148,World Best,2019,2023-01-24,Country,,Studio,10,0.075
+ALB_0921,ART_0426,Extended Stable Groupware,2022,2024-12-24,Metal,Country,Studio,8,0.247
+ALB_0922,ART_0039,Storm Finally,2021,2023-12-22,Rock,,Studio,12,0.068
+ALB_0923,ART_0219,Versatile Regional Moderator,2019,2023-09-10,Pop,Classical,EP,10,0.055
+ALB_0924,ART_0044,Realigned Web-Enabled Projection,2022,2024-05-02,Country,,Studio,16,0.055
+ALB_0925,ART_0098,Journey Relate,2023,2025-08-30,R&B,,Studio,8,0.068
+ALB_0926,ART_0157,Stories Effect,1999,2023-12-06,Country,Pop,EP,10,0.059
+ALB_0927,ART_0050,Light Positive,2024,2026-04-27,Pop,Indie,Live,8,0.055
+ALB_0928,ART_0287,Fully-Configurable 6Thgeneration Software,2022,2026-02-02,Pop,,EP,8,0.103
+ALB_0929,ART_0243,Journey I,2021,2026-01-24,Classical,,Live,10,0.072
+ALB_0930,ART_0474,Customizable Human-Resource Extranet,2024,2026-04-27,Country,Rock,Studio,10,0.064
+ALB_0931,ART_0416,Horizontal 4Thgeneration Model,2017,2025-01-27,Jazz,,Studio,10,0.155
+ALB_0932,ART_0619,Star House,2022,2025-05-06,Pop,,EP,16,0.058
+ALB_0933,ART_0164,Storm Movie,2012,2019-08-31,Rock,,Studio,14,0.225
+ALB_0934,ART_0125,Balanced Explicit Projection,2016,2019-11-10,Pop,Country,Studio,14,0.065
+ALB_0935,ART_0065,Profound Attitude-Oriented Attitude,1997,2003-11-02,Pop,Jazz,Studio,10,0.147
+ALB_0936,ART_0381,Pulse Spring,2014,2021-09-12,Electronic,Hip-Hop,Studio,12,0.083
+ALB_0937,ART_0377,Adaptive Responsive Architecture,2020,2023-02-28,Metal,,Studio,8,0.121
+ALB_0938,ART_0350,Self-Enabling Zero-Defect Data-Warehouse,2010,2024-06-05,Hip-Hop,,Studio,14,0.356
+ALB_0939,ART_0370,Optimized Bi-Directional Database,2021,2024-12-06,Rock,Pop,Studio,8,0.063
+ALB_0940,ART_0141,Total User-Facing Time-Frame,2016,2021-10-19,Hip-Hop,,Studio,10,0.238
+ALB_0941,ART_0060,Compatible Value-Added Software,2015,2018-09-13,Rock,Indie,Studio,12,0.068
+ALB_0942,ART_0373,Circuit Machine,2015,2023-10-09,Electronic,R&B,Studio,12,0.068
+ALB_0943,ART_0641,Automated Background Archive,2004,2007-05-28,Pop,,Studio,14,0.066
+ALB_0944,ART_0273,Function-Based Next Generation Archive,2019,2024-03-11,Pop,,Compilation,12,0.078
+ALB_0945,ART_0151,Focused Empowering Installation,2004,2014-01-29,Pop,,Studio,10,0.059
+ALB_0946,ART_0496,World Professor,2021,2024-07-13,Hip-Hop,Indie,Studio,14,0.078
+ALB_0947,ART_0148,Stories Four,2022,2024-05-08,Country,,Studio,12,0.078
+ALB_0948,ART_0629,Love Report,2015,2018-05-19,Pop,,Studio,12,0.104
+ALB_0949,ART_0567,Echo According,2024,2026-04-27,Rock,,Studio,8,0.123
+ALB_0950,ART_0567,Echo Present,2024,2026-04-27,Rock,,Studio,10,0.071
+ALB_0951,ART_0437,Echo Skill,2022,2025-06-28,Rock,Jazz,Studio,8,0.064
+ALB_0952,ART_0167,Total Asynchronous Help-Desk,2010,2025-04-24,Country,,Studio,10,0.062
+ALB_0953,ART_0380,Journey Born,2024,2026-04-27,Country,Electronic,Studio,16,0.06
+ALB_0954,ART_0261,Synergized Exuding Portal,2021,2023-07-30,Hip-Hop,Country,Studio,12,0.056
+ALB_0955,ART_0147,Virtual Leadingedge Implementation,2019,2023-04-17,Electronic,,EP,10,0.066
+ALB_0956,ART_0339,Switchable 4Thgeneration Leverage,2019,2022-02-05,Rock,Country,EP,10,0.063
+ALB_0957,ART_0108,Face-To-Face Client-Driven Synergy,2018,2022-08-31,Rock,,Live,10,0.254
+ALB_0958,ART_0487,World Subject,2020,2025-09-19,Classical,,Compilation,12,0.079
+ALB_0959,ART_0260,Implemented Scalable Circuit,2015,2020-01-01,Metal,Electronic,Studio,12,0.066
+ALB_0960,ART_0502,Upgradable Secondary Hub,2021,2026-03-11,Rock,,Studio,10,0.081
+ALB_0961,ART_0021,Advanced Neutral Open Architecture,2020,2022-11-19,Electronic,Jazz,Studio,16,0.058
+ALB_0962,ART_0108,Storm Analysis,2021,2023-05-02,Rock,,Live,10,0.071
+ALB_0963,ART_0631,Journey Pick,2024,2026-04-27,Metal,,EP,10,0.085
+ALB_0964,ART_0154,Reactive Attitude-Oriented Function,2022,2024-09-26,Indie,Country,Studio,14,0.074
+ALB_0965,ART_0296,User-Centric Uniform Hardware,2017,2020-10-19,Metal,,Studio,14,0.069
+ALB_0966,ART_0409,World Western,2023,2025-12-18,Hip-Hop,,Studio,10,0.55
+ALB_0967,ART_0072,Revolution Music,2004,2009-03-02,Rock,Metal,Live,10,0.143
+ALB_0968,ART_0027,Enterprise-Wide Directional Pricing Structure,2022,2025-12-27,Pop,Metal,Studio,16,0.085
+ALB_0969,ART_0146,Journey Daughter,1999,2004-03-08,Hip-Hop,Classical,EP,10,0.08
+ALB_0970,ART_0211,Synchronized Non-Volatile Application,2024,2026-04-27,Country,,Studio,12,0.085
+ALB_0971,ART_0381,Reactive Maximized Project,2021,2024-12-19,Electronic,Hip-Hop,EP,10,0.06
+ALB_0972,ART_0381,Implemented Static Architecture,2012,2017-04-29,Electronic,Hip-Hop,Live,12,0.068
+ALB_0973,ART_0627,Exclusive Uniform Paradigm,2024,2026-04-27,Electronic,,Studio,14,0.055
+ALB_0974,ART_0088,Managed Heuristic Capacity,2014,2023-01-12,Pop,Electronic,Compilation,12,0.073
+ALB_0975,ART_0493,Life Easy,2012,2015-07-09,Hip-Hop,,Live,10,0.078
+ALB_0976,ART_0102,Secured Asymmetric Core,2013,2018-10-24,Hip-Hop,,Studio,16,0.061
+ALB_0977,ART_0564,Organized Full-Range Pricing Structure,2022,2025-08-21,Hip-Hop,,Compilation,14,0.247
+ALB_0978,ART_0428,Soul Rule,2018,2023-10-28,Jazz,Country,Studio,14,0.162
+ALB_0979,ART_0475,Re-Contextualized Non-Volatile Hierarchy,2018,2025-03-01,Hip-Hop,,Studio,8,0.097
+ALB_0980,ART_0009,Optimized Composite Ability,2022,2024-12-10,Country,Indie,Studio,12,0.077
+ALB_0981,ART_0567,Storm Stock,2022,2024-10-04,Rock,,Studio,14,0.137
+ALB_0982,ART_0250,Journey Sister,2024,2026-04-27,Indie,,Studio,12,0.058
+ALB_0983,ART_0347,World Factor,2015,2024-11-17,Hip-Hop,,Studio,14,0.111
+ALB_0984,ART_0437,Devolved Systematic Superstructure,2024,2026-04-27,Rock,Jazz,Studio,10,0.058
+ALB_0985,ART_0460,Journey Media,2023,2025-10-12,Classical,,Studio,14,0.112
+ALB_0986,ART_0435,Multi-Channeled Zero-Defect Function,2010,2019-02-19,Jazz,Electronic,EP,10,0.063
+ALB_0987,ART_0141,Journey Boy,2022,2024-09-01,Hip-Hop,,EP,14,0.141
+ALB_0988,ART_0295,Thunder Policy,2013,2016-03-21,Rock,,Studio,12,0.202
+ALB_0989,ART_0297,Grass-Roots Client-Driven Monitoring,1995,2003-01-06,Country,R&B,Studio,14,0.059
+ALB_0990,ART_0601,Stories Similar,2005,2024-02-28,R&B,,Studio,14,0.072
+ALB_0991,ART_0219,Forever Ball,2018,2024-09-06,Pop,Classical,Studio,12,0.329
+ALB_0992,ART_0626,Stories Wait,2016,2018-06-20,Hip-Hop,R&B,Studio,10,0.073
+ALB_0993,ART_0096,Profit-Focused Responsive Algorithm,2020,2025-07-27,Classical,,EP,8,0.134
+ALB_0994,ART_0084,Reduced Impactful Throughput,2018,2023-11-10,Pop,Hip-Hop,Live,10,0.081
+ALB_0995,ART_0132,Journey What,2014,2016-09-06,Hip-Hop,,Studio,14,0.067
+ALB_0996,ART_0023,Journey Ever,2014,2021-10-02,Hip-Hop,,Live,10,0.063
+ALB_0997,ART_0291,Quality-Focused Methodical Projection,2022,2025-11-13,Jazz,Pop,Live,12,0.06
+ALB_0998,ART_0151,Multi-Lateral Hybrid Definition,1995,2023-03-04,Pop,,EP,14,0.104
+ALB_0999,ART_0090,Reverse-Engineered Upward-Trending Frame,2001,2006-05-25,R&B,,Studio,12,0.068
+ALB_1000,ART_0499,Profit-Focused Multimedia Array,2022,2025-02-10,Classical,Indie,Studio,12,0.075
+ALB_1001,ART_0063,Profit-Focused 24/7 Protocol,2021,2024-01-13,Electronic,Country,Studio,14,0.074
+ALB_1002,ART_0659,Seamless Systemic Concept,2018,2024-11-10,Electronic,Rock,Compilation,10,0.08
+ALB_1003,ART_0210,Devolved Local Complexity,2007,2012-05-12,R&B,,Studio,12,0.135
+ALB_1004,ART_0018,Re-Contextualized Stable Circuit,1999,2019-09-19,Pop,Jazz,Compilation,12,0.328
+ALB_1005,ART_0097,Polarized Heuristic Analyzer,2017,2020-11-06,Indie,,Compilation,10,0.069
+ALB_1006,ART_0439,Forever Method,2004,2010-12-14,Pop,Electronic,Live,8,0.121
+ALB_1007,ART_0331,Fundamental Holistic Emulation,2012,2014-10-31,Electronic,,Studio,14,0.105
+ALB_1008,ART_0028,Expanded Multi-State Utilization,2006,2014-10-27,Hip-Hop,Country,Studio,12,0.08
+ALB_1009,ART_0040,Neon Manager,2022,2026-02-25,Electronic,Rock,Studio,14,0.225
+ALB_1010,ART_0296,Balanced 6Thgeneration Projection,2014,2019-07-23,Metal,,Studio,12,0.06
+ALB_1011,ART_0425,Life Score,2015,2026-01-13,Hip-Hop,,Studio,10,0.057
+ALB_1012,ART_0643,Life Property,2012,2024-04-10,Classical,,Studio,10,0.13
+ALB_1013,ART_0071,User-Centric Empowering Paradigm,2024,2026-04-27,Electronic,,Live,14,0.071
+ALB_1014,ART_0014,Blue Contain,2024,2026-04-27,Jazz,Hip-Hop,EP,12,0.128
+ALB_1015,ART_0166,Forever Human,2000,2011-02-01,Pop,,EP,14,0.15
+ALB_1016,ART_0481,Streamlined Asynchronous Model,2018,2021-10-29,Pop,,Studio,12,0.056
+ALB_1017,ART_0085,Face-To-Face Multi-State Initiative,2018,2022-06-08,Rock,Country,Live,8,0.144
+ALB_1018,ART_0437,Monitored Mobile Utilization,2019,2023-09-23,Rock,Jazz,Studio,8,0.071
+ALB_1019,ART_0394,Robust 24Hour Middleware,2023,2026-03-14,Hip-Hop,,Studio,12,0.075
+ALB_1020,ART_0161,Organic Composite Emulation,2020,2022-08-17,Hip-Hop,Rock,Studio,12,0.085
+ALB_1021,ART_0015,Stand-Alone Even-Keeled Data-Warehouse,2022,2024-08-13,Pop,,Studio,10,0.178
+ALB_1022,ART_0160,Diverse High-Level Portal,2005,2020-12-12,Jazz,,Live,16,0.055
+ALB_1023,ART_0560,Neon By,2022,2025-08-22,Electronic,Metal,Live,16,0.073
+ALB_1024,ART_0053,Operative Full-Range Success,2019,2021-11-19,Metal,Electronic,Studio,12,0.092
+ALB_1025,ART_0518,Neon Republican,2021,2024-10-02,Electronic,,Studio,12,0.097
+ALB_1026,ART_0472,Expanded Optimizing Complexity,2019,2024-07-21,Hip-Hop,,Studio,12,0.093
+ALB_1027,ART_0666,Journey Item,2024,2026-04-27,Hip-Hop,,Studio,12,0.058
+ALB_1028,ART_0442,Balanced Clear-Thinking Orchestration,2017,2023-06-19,Indie,,Studio,12,0.064
+ALB_1029,ART_0437,Echo Center,2024,2026-04-27,Rock,Jazz,Studio,14,0.067
+ALB_1030,ART_0053,Stories Among,2018,2025-08-30,Metal,Electronic,Studio,8,0.114
+ALB_1031,ART_0338,Forever Choice,2022,2024-06-05,Pop,Jazz,Studio,12,0.063
+ALB_1032,ART_0374,Fundamental Contextually-Based Model,2007,2025-08-10,Pop,Hip-Hop,Studio,10,0.061
+ALB_1033,ART_0437,Right-Sized Non-Volatile Productivity,2024,2026-04-27,Rock,Jazz,EP,10,0.228
+ALB_1034,ART_0174,Wave Serve,2010,2022-07-05,Electronic,Hip-Hop,Studio,16,0.055
+ALB_1035,ART_0060,Horizontal Attitude-Oriented Data-Warehouse,2016,2021-11-29,Rock,Indie,Live,10,0.882
+ALB_1036,ART_0221,Phased Mission-Critical Concept,1998,2006-01-08,Indie,,Studio,8,0.091
+ALB_1037,ART_0437,Storm Item,2013,2021-12-05,Rock,Jazz,EP,10,0.121
+ALB_1038,ART_0691,World Study,2019,2024-03-25,Hip-Hop,Metal,Studio,8,0.064
+ALB_1039,ART_0104,Dreams Speak,2020,2023-01-17,Pop,,Studio,14,0.055
+ALB_1040,ART_0381,Circuit Receive,2020,2024-05-12,Electronic,Hip-Hop,EP,8,0.1
+ALB_1041,ART_0500,World Computer,2008,2021-11-27,R&B,Hip-Hop,Studio,12,0.123
+ALB_1042,ART_0263,Life Guess,2001,2024-07-13,Hip-Hop,Country,Studio,10,0.1
+ALB_1043,ART_0549,Journey Pick,2019,2024-04-09,Classical,,Studio,12,0.058
+ALB_1044,ART_0381,Focused Homogeneous Info-Mediaries,2012,2015-11-27,Electronic,Hip-Hop,Compilation,8,0.103
+ALB_1045,ART_0007,Ameliorated Dedicated Model,2022,2026-01-14,Rock,,Studio,10,0.106
+ALB_1046,ART_0148,Life Mother,2023,2026-01-01,Country,,Live,12,0.089
+ALB_1047,ART_0098,Life The,2002,2007-08-10,R&B,,Studio,8,0.105
+ALB_1048,ART_0174,Cross-Platform Context-Sensitive Leverage,1999,2023-11-10,Electronic,Hip-Hop,Studio,8,0.127
+ALB_1049,ART_0350,Life Plan,2002,2005-03-05,Hip-Hop,,Compilation,8,0.084
+ALB_1050,ART_0318,Public-Key Motivating System Engine,2023,2025-06-08,Rock,Pop,Studio,8,0.057
+ALB_1051,ART_0213,Life Meet,2021,2025-04-18,Indie,Country,Compilation,12,0.074
+ALB_1052,ART_0203,Robust Needs-Based Ability,2024,2026-04-27,Pop,,Studio,10,0.056
+ALB_1053,ART_0677,Vision-Oriented Systematic Projection,2021,2024-08-11,R&B,,Studio,8,0.069
+ALB_1054,ART_0351,Journey Kitchen,2023,2025-09-08,Indie,,Studio,12,0.069
+ALB_1055,ART_0511,Journey Animal,2023,2026-01-06,Indie,,Studio,10,0.056
+ALB_1056,ART_0019,Optimized Discrete Website,2023,2025-10-19,Indie,,Studio,8,0.066
+ALB_1057,ART_0063,Digital Specific,2015,2020-09-30,Electronic,Country,Live,8,0.057
+ALB_1058,ART_0402,Reverse-Engineered User-Facing Task-Force,2002,2022-09-26,Metal,,EP,16,0.115
+ALB_1059,ART_0347,Re-Engineered Bandwidth-Monitored Interface,2022,2024-08-01,Hip-Hop,,Studio,14,0.208
+ALB_1060,ART_0405,Polarized Zero Administration Emulation,2022,2026-02-20,Pop,,Studio,14,0.056
+ALB_1061,ART_0105,Configurable Executive Policy,2024,2026-04-27,Pop,Jazz,Studio,12,0.223
+ALB_1062,ART_0632,Open-Source Eco-Centric Core,2019,2021-05-05,Pop,,Live,12,0.076
+ALB_1063,ART_0372,User-Friendly 24Hour Orchestration,2024,2026-04-27,R&B,Hip-Hop,Studio,10,0.064
+ALB_1064,ART_0304,World Nature,2016,2018-05-18,R&B,,Studio,16,0.056
+ALB_1065,ART_0294,Stories Real,2011,2015-12-27,Metal,Hip-Hop,EP,12,0.075
+ALB_1066,ART_0056,Dreams Summer,2004,2012-08-20,Pop,,Studio,12,0.112
+ALB_1067,ART_0295,Multi-Lateral Bi-Directional Collaboration,2013,2020-01-02,Rock,,Studio,10,0.095
+ALB_1068,ART_0326,World Pay,2012,2017-05-12,Indie,Classical,Studio,14,0.056
+ALB_1069,ART_0377,World Top,2022,2025-05-22,Metal,,Studio,12,0.056
+ALB_1070,ART_0457,Digital Other,2014,2019-12-22,Electronic,,EP,8,0.069
+ALB_1071,ART_0178,World Fact,2012,2026-03-22,R&B,,Studio,10,0.064
+ALB_1072,ART_0437,Object-Based Web-Enabled Database,2020,2023-12-21,Rock,Jazz,Live,8,0.061
+ALB_1073,ART_0438,Realigned Mission-Critical Conglomeration,2006,2014-12-25,Rock,,Studio,16,0.063
+ALB_1074,ART_0344,Realigned Mission-Critical Extranet,2019,2026-04-06,Electronic,,Studio,8,0.114
+ALB_1075,ART_0428,Blue Participant,2024,2026-04-27,Jazz,Country,Studio,14,0.181
+ALB_1076,ART_0092,Journey Season,2020,2023-11-29,Country,,Studio,14,0.069
+ALB_1077,ART_0300,Thunder Certainly,2017,2025-04-21,Rock,Metal,Studio,14,0.159
+ALB_1078,ART_0381,Digital Receive,2013,2016-08-17,Electronic,Hip-Hop,Studio,8,0.065
+ALB_1079,ART_0570,Stories Drug,2021,2024-08-28,R&B,Pop,EP,10,0.073
+ALB_1080,ART_0673,Soul Scene,2023,2026-04-08,Jazz,,Live,14,0.061
+ALB_1081,ART_0230,Time Black,2016,2020-01-13,Metal,,Studio,10,0.087
+ALB_1082,ART_0087,World Institution,2015,2024-05-23,Country,,Studio,14,0.315
+ALB_1083,ART_0499,Reactive Reciprocal Standardization,2024,2026-04-27,Classical,Indie,Studio,10,0.083
+ALB_1084,ART_0230,Time Area,2012,2016-03-31,Metal,,Studio,8,0.067
+ALB_1085,ART_0076,Stories Provide,2023,2025-04-27,Hip-Hop,,Studio,12,0.087
+ALB_1086,ART_0314,Life Benefit,2022,2025-12-18,Classical,,Studio,16,0.058
+ALB_1087,ART_0138,Life Market,2016,2025-09-22,Metal,,Studio,8,0.148
+ALB_1088,ART_0360,Journey Learn,2013,2016-04-15,Country,,Studio,14,0.075
+ALB_1089,ART_0407,Fundamental Directional Hub,2013,2016-03-13,Pop,Rock,Studio,12,0.071
+ALB_1090,ART_0046,Forever Always,2010,2022-06-18,Pop,,Studio,8,0.081
+ALB_1091,ART_0191,Open-Architected Reciprocal Projection,2012,2020-07-27,Electronic,Indie,Compilation,14,0.085
+ALB_1092,ART_0630,Life Seek,2022,2026-03-31,Metal,,Studio,8,0.056
+ALB_1093,ART_0060,Centralized Zero-Defect Conglomeration,2015,2023-01-30,Rock,Indie,Studio,16,0.092
+ALB_1094,ART_0208,Organic 24/7 Customer Loyalty,2016,2025-02-14,Indie,Hip-Hop,Studio,14,0.062
+ALB_1095,ART_0172,Time Word,2020,2025-07-14,Classical,,Live,16,0.096
+ALB_1096,ART_0010,Blue Feeling,2022,2024-09-15,Jazz,,Live,16,0.119
+ALB_1097,ART_0438,Right-Sized Multimedia Model,2003,2019-12-26,Rock,,EP,10,0.114
+ALB_1098,ART_0381,Seamless Composite Service-Desk,2007,2009-12-05,Electronic,Hip-Hop,Studio,10,0.078
+ALB_1099,ART_0381,Pulse Edge,2015,2023-03-19,Electronic,Hip-Hop,Live,14,0.076
+ALB_1100,ART_0507,Diverse Background Focus Group,2017,2024-10-10,Metal,,Studio,16,0.058
+ALB_1101,ART_0284,Revolution Head,2019,2024-08-31,Rock,,Live,14,0.107
+ALB_1102,ART_0654,Open-Architected Optimizing Customer Loyalty,2024,2026-04-27,Metal,R&B,Studio,8,0.063
+ALB_1103,ART_0045,Time Since,2011,2022-06-19,Country,Classical,Studio,10,0.074
+ALB_1104,ART_0004,Cross-Group Neutral Forecast,2020,2025-03-22,Classical,,Studio,16,0.063
+ALB_1105,ART_0577,Realigned Optimal Hardware,2003,2012-08-12,Rock,Classical,EP,14,0.058
+ALB_1106,ART_0097,Life Team,2009,2015-06-19,Indie,,Compilation,10,0.085
+ALB_1107,ART_0282,Journey Police,2016,2026-01-09,Hip-Hop,,Compilation,12,0.056
+ALB_1108,ART_0379,Persevering Impactful Orchestration,2024,2026-04-27,Rock,,EP,10,0.102
+ALB_1109,ART_0690,Enhanced Incremental Middleware,2010,2013-10-22,Hip-Hop,Classical,Studio,10,0.065
+ALB_1110,ART_0273,Love Baby,2011,2019-11-10,Pop,,Studio,14,0.054
+ALB_1111,ART_0442,Journey Grow,2018,2025-12-31,Indie,,Studio,12,0.075
+ALB_1112,ART_0489,Profound Eco-Centric Monitoring,2011,2023-11-21,Pop,R&B,Studio,14,0.056
+ALB_1113,ART_0652,Time Paper,2011,2016-07-26,Classical,,Studio,8,0.063
+ALB_1114,ART_0487,Life Level,2017,2026-01-30,Classical,,Studio,12,0.095
+ALB_1115,ART_0601,Stories Order,2015,2021-09-02,R&B,,Studio,10,0.056
+ALB_1116,ART_0026,World Either,2011,2023-03-02,R&B,,Studio,8,0.125
+ALB_1117,ART_0574,Vision-Oriented Logistical Software,2021,2024-09-12,Rock,,Studio,14,0.054
+ALB_1118,ART_0335,Reverse-Engineered 4Thgeneration Matrices,1997,2002-06-16,Rock,,Live,12,0.062
+ALB_1119,ART_0393,Cloned Homogeneous Productivity,2005,2022-04-21,Pop,,Live,12,0.1
+ALB_1120,ART_0503,Dreams Discussion,2023,2025-12-29,Pop,,Studio,12,0.065
+ALB_1121,ART_0325,Focused Foreground Installation,2020,2026-02-20,Pop,Rock,Live,8,0.057
+ALB_1122,ART_0643,World Name,2011,2020-04-12,Classical,,Studio,12,0.067
+ALB_1123,ART_0166,Dreams School,2005,2023-02-17,Pop,,EP,10,0.063
+ALB_1124,ART_0438,Echo Energy,2019,2022-10-02,Rock,,Studio,12,0.126
+ALB_1125,ART_0069,Soul Inside,2015,2023-05-20,Jazz,Rock,Live,16,0.065
+ALB_1126,ART_0517,Journey Tend,2021,2024-05-05,Indie,,Live,12,0.11
+ALB_1127,ART_0627,Wave Once,2024,2026-04-27,Electronic,,Studio,14,0.149
+ALB_1128,ART_0673,Smooth Maybe,2021,2024-04-05,Jazz,,Studio,12,0.07
+ALB_1129,ART_0190,Extended Object-Oriented Flexibility,2005,2010-10-16,R&B,Hip-Hop,Live,16,0.162
+ALB_1130,ART_0068,Neon Skin,2015,2023-06-20,Electronic,Rock,Compilation,8,0.067
+ALB_1131,ART_0412,Journey Where,1998,2005-04-06,Classical,Electronic,Studio,12,0.247
+ALB_1132,ART_0414,User-Centric Dedicated Encoding,1995,2018-08-24,Hip-Hop,,Studio,12,0.057
+ALB_1133,ART_0423,Journey Turn,2003,2010-11-21,Classical,,Studio,14,0.092
+ALB_1134,ART_0242,Life Drop,2016,2019-12-10,Hip-Hop,,Studio,14,0.074
+ALB_1135,ART_0381,Fully-Configurable Regional Help-Desk,2014,2017-11-16,Electronic,Hip-Hop,EP,8,0.068
+ALB_1136,ART_0010,Customer-Focused Bottom-Line Artificial Intelligence,2023,2025-12-29,Jazz,,Studio,12,0.086
+ALB_1137,ART_0562,Journey Record,2012,2020-03-25,Indie,,Compilation,12,0.095
+ALB_1138,ART_0444,Life According,2014,2023-12-17,Metal,Electronic,Studio,10,0.054
+ALB_1139,ART_0497,Quality-Focused 6Thgeneration Matrices,2024,2026-04-27,Pop,,Studio,8,0.059
+ALB_1140,ART_0242,Time Forward,2021,2024-10-17,Hip-Hop,,Studio,14,0.096
+ALB_1141,ART_0205,Smooth Upon,2024,2026-04-27,Jazz,,Studio,10,0.09
+ALB_1142,ART_0369,Time Trouble,2017,2021-03-29,R&B,Country,EP,10,0.253
+ALB_1143,ART_0685,Enterprise-Wide Well-Modulated Migration,2009,2015-07-10,Jazz,,EP,10,0.104
+ALB_1144,ART_0475,Time Doctor,2011,2023-01-26,Hip-Hop,,Studio,12,0.214
+ALB_1145,ART_0639,Journey Career,2022,2024-06-04,Country,Indie,Studio,14,0.094
+ALB_1146,ART_0223,Wave Successful,2011,2018-10-26,Electronic,,EP,14,0.064
+ALB_1147,ART_0296,World Yard,2016,2022-08-24,Metal,,Studio,8,0.057
+ALB_1148,ART_0508,Profit-Focused Grid-Enabled Infrastructure,2021,2025-11-24,Pop,,Studio,14,0.109
+ALB_1149,ART_0482,Revolution Stand,2015,2018-11-21,Rock,,Studio,10,0.087
+ALB_1150,ART_0460,Decentralized Tangible Model,2018,2023-01-29,Classical,,Live,8,0.056
+ALB_1151,ART_0103,World Risk,2024,2026-04-27,Indie,,Studio,8,0.067
+ALB_1152,ART_0346,Journey Represent,2000,2007-05-18,R&B,,Studio,12,0.227
+ALB_1153,ART_0457,Digital Partner,2008,2011-12-06,Electronic,,Live,8,0.075
+ALB_1154,ART_0164,Multi-Lateral Reciprocal Firmware,2022,2024-09-09,Rock,,Live,8,0.07
+ALB_1155,ART_0437,Storm Everyone,2015,2019-06-14,Rock,Jazz,Studio,14,0.072
+ALB_1156,ART_0081,Phased Reciprocal Graphical User Interface,2024,2026-04-27,Rock,Country,Studio,12,0.061
+ALB_1157,ART_0686,Time Moment,2022,2025-03-01,R&B,,Compilation,10,0.067
+ALB_1158,ART_0075,Operative Tangible System Engine,2021,2024-06-08,Metal,,Studio,14,0.067
+ALB_1159,ART_0043,Life Too,2019,2023-04-27,Hip-Hop,,EP,12,0.056
+ALB_1160,ART_0437,Organized Contextually-Based Orchestration,2016,2019-05-15,Rock,Jazz,Studio,16,0.106
+ALB_1161,ART_0093,Re-Engineered Systemic Emulation,2006,2022-12-22,Rock,Electronic,Studio,12,0.069
+ALB_1162,ART_0450,Journey Set,2014,2019-01-07,R&B,,Studio,16,0.119
+ALB_1163,ART_0524,Star Eat,2020,2024-07-16,Pop,,Studio,12,0.129
+ALB_1164,ART_0207,Multi-Tiered Dedicated Circuit,2019,2025-04-26,Electronic,Rock,Studio,10,0.061
+ALB_1165,ART_0094,User-Centric Coherent Leverage,2024,2026-04-27,Pop,Hip-Hop,Studio,16,0.089
+ALB_1166,ART_0437,Thunder Control,2024,2026-04-27,Rock,Jazz,Studio,12,0.073
+ALB_1167,ART_0419,Devolved Responsive Model,2023,2025-11-07,R&B,,Studio,10,0.143
+ALB_1168,ART_0455,Life Four,2005,2022-03-29,Country,Electronic,Studio,12,0.061
+ALB_1169,ART_0294,Innovative Eco-Centric Open Architecture,2019,2025-08-11,Metal,Hip-Hop,Studio,10,0.091
+ALB_1170,ART_0098,Business-Focused Hybrid Attitude,2011,2022-04-18,R&B,,EP,10,0.083
+ALB_1171,ART_0626,Centralized Didactic Extranet,2024,2026-04-27,Hip-Hop,R&B,Studio,16,0.064
+ALB_1172,ART_0559,Self-Enabling Bandwidth-Monitored Knowledge User,2010,2022-09-28,Classical,Electronic,EP,12,0.058
+ALB_1173,ART_0563,Fundamental High-Level Hierarchy,2024,2026-04-27,Jazz,Pop,Compilation,8,0.088
+ALB_1174,ART_0578,Time Work,2024,2026-04-27,Indie,,Studio,16,0.1
+ALB_1175,ART_0503,Dreams Guy,2016,2018-06-23,Pop,,EP,10,0.065
+ALB_1176,ART_0142,Dreams Campaign,2023,2025-09-01,Pop,,Studio,12,0.087
+ALB_1177,ART_0404,Synergistic Real-Time Customer Loyalty,2016,2022-12-07,R&B,,Studio,10,0.068
+ALB_1178,ART_0101,Thunder Rate,2022,2025-08-13,Rock,Pop,Live,12,0.096
+ALB_1179,ART_0405,Enhanced Zero-Defect Forecast,1994,2006-12-21,Pop,,Studio,16,0.06
+ALB_1180,ART_0098,Synergistic Multimedia Matrix,2010,2023-03-02,R&B,,Studio,12,0.148
+ALB_1181,ART_0394,Time Likely,2023,2026-03-17,Hip-Hop,,Studio,12,0.063
+ALB_1182,ART_0182,Stories I,1996,2015-07-02,Country,Indie,Compilation,16,0.067
+ALB_1183,ART_0624,Midnight Major,2010,2021-02-28,Jazz,Metal,Studio,12,0.056
+ALB_1184,ART_0109,Stories Check,2023,2026-03-09,Country,,Studio,10,0.057
+ALB_1185,ART_0628,Light Push,2017,2024-12-21,Pop,Electronic,Studio,12,0.076
+ALB_1186,ART_0158,Thunder Green,2012,2019-05-19,Rock,,Studio,16,0.063
+ALB_1187,ART_0175,Seamless Object-Oriented Initiative,2005,2023-06-13,Electronic,Hip-Hop,Live,10,0.124
+ALB_1188,ART_0588,Stories Away,2004,2007-11-25,Metal,Pop,Studio,10,0.055
+ALB_1189,ART_0401,Mandatory Discrete Functionalities,2024,2026-04-27,Indie,Rock,Studio,10,0.068
+ALB_1190,ART_0100,Implemented Tertiary Flexibility,2021,2025-02-18,Country,Classical,Studio,14,0.066
+ALB_1191,ART_0399,Object-Based Encompassing Intranet,2009,2023-01-12,Country,,Studio,14,0.055
+ALB_1192,ART_0623,Multi-Lateral Value-Added Parallelism,2020,2024-05-27,Pop,Rock,Compilation,10,0.058
+ALB_1193,ART_0656,Organized Incremental Concept,2021,2023-11-14,Electronic,Rock,Studio,10,0.069
+ALB_1194,ART_0456,Ameliorated Clear-Thinking Superstructure,2015,2019-06-06,R&B,,Studio,12,0.074
+ALB_1195,ART_0486,Life Enter,2023,2026-04-05,Country,Rock,Studio,8,0.069
+ALB_1196,ART_0474,Total Value-Added Artificial Intelligence,2014,2018-06-04,Country,Rock,Studio,12,0.077
+ALB_1197,ART_0121,Object-Based Bi-Directional Attitude,2014,2016-12-15,Jazz,,Studio,16,0.082
+ALB_1198,ART_0671,Phased Neutral Application,2020,2022-06-04,Pop,Country,Studio,14,0.055
+ALB_1199,ART_0098,Journey Industry,1998,2013-12-10,R&B,,Compilation,12,0.072
+ALB_1200,ART_0052,Configurable Bi-Directional Firmware,2023,2025-12-08,Pop,,Live,12,0.245
+ALB_1201,ART_0626,Configurable Solution-Oriented Info-Mediaries,2007,2014-07-30,Hip-Hop,R&B,Studio,10,0.076
+ALB_1202,ART_0545,Fully-Configurable User-Facing Forecast,2015,2021-04-22,Pop,,Studio,12,0.091
+ALB_1203,ART_0289,De-Engineered Clear-Thinking Moderator,2023,2026-02-26,Indie,,Studio,14,0.064
+ALB_1204,ART_0084,Assimilated 5Thgeneration Protocol,2011,2017-12-15,Pop,Hip-Hop,EP,16,0.107
+ALB_1205,ART_0483,Journey Whole,2012,2018-03-22,Metal,,Studio,10,0.107
+ALB_1206,ART_0075,World Maybe,2019,2023-08-27,Metal,,EP,14,0.076
+ALB_1207,ART_0400,Quality-Focused Encompassing Neural-Net,2017,2022-06-07,Pop,,Studio,12,0.296
+ALB_1208,ART_0040,Pulse Save,2012,2020-10-15,Electronic,Rock,Live,12,0.058
+ALB_1209,ART_0142,Light Perhaps,2024,2026-04-27,Pop,,Live,10,0.055
+ALB_1210,ART_0401,Self-Enabling Value-Added Productivity,2018,2025-08-01,Indie,Rock,Studio,8,0.106
+ALB_1211,ART_0099,Life Learn,2018,2023-06-17,Hip-Hop,,Studio,10,0.115
+ALB_1212,ART_0437,Sharable National Function,2012,2025-03-23,Rock,Jazz,Studio,10,0.058
+ALB_1213,ART_0487,World Meet,2013,2021-04-03,Classical,,Studio,10,0.063
+ALB_1214,ART_0467,Journey Support,2009,2012-08-29,R&B,Rock,EP,10,0.055
+ALB_1215,ART_0466,Integrated High-Level Installation,2006,2012-12-29,Hip-Hop,,Studio,12,0.064
+ALB_1216,ART_0270,Velvet Floor,2019,2021-05-15,Jazz,Country,EP,12,0.107
+ALB_1217,ART_0662,Life Necessary,2022,2025-12-13,Classical,,Live,10,0.076
+ALB_1218,ART_0229,Journey Thus,2016,2019-05-30,Metal,Rock,Studio,14,0.066
+ALB_1219,ART_0520,Blue Few,1997,2011-12-27,Jazz,,Live,8,0.067
+ALB_1220,ART_0483,Advanced System-Worthy Matrix,2005,2025-04-23,Metal,,Studio,8,0.054
+ALB_1221,ART_0045,Polarized Exuding Access,2023,2026-01-31,Country,Classical,Studio,14,0.064
+ALB_1222,ART_0643,Journey Success,2001,2010-01-20,Classical,,Studio,14,0.087
+ALB_1223,ART_0442,Focused 24Hour Neural-Net,2017,2021-12-07,Indie,,Studio,14,0.287
+ALB_1224,ART_0379,Thunder Its,2024,2026-04-27,Rock,,Studio,10,0.128
+ALB_1225,ART_0305,Optional Hybrid Encryption,2024,2026-04-27,Hip-Hop,,Studio,16,0.055
+ALB_1226,ART_0572,Stories Since,2006,2019-12-12,Classical,,Studio,10,0.154
+ALB_1227,ART_0500,Stories Them,2008,2016-05-16,R&B,Hip-Hop,Studio,12,0.109
+ALB_1228,ART_0446,Life Everyone,2010,2013-06-05,Indie,Hip-Hop,Studio,8,0.108
+ALB_1229,ART_0441,Life Process,2023,2025-07-22,Hip-Hop,,Studio,10,0.072
+ALB_1230,ART_0136,Light South,2005,2022-07-08,Pop,,Live,12,0.069
+ALB_1231,ART_0270,Seamless System-Worthy Software,1993,2003-09-30,Jazz,Country,Studio,10,0.064
+ALB_1232,ART_0290,World Range,2020,2025-04-16,Metal,Jazz,EP,10,0.056
+ALB_1233,ART_0631,Time Table,2013,2018-04-11,Metal,,Compilation,16,0.061
+ALB_1234,ART_0217,Ergonomic Asymmetric Contingency,2019,2021-12-31,Metal,Pop,Studio,10,0.062
+ALB_1235,ART_0161,Customizable Scalable Knowledgebase,2021,2025-03-04,Hip-Hop,Rock,Studio,10,0.073
+ALB_1236,ART_0229,Time Expert,2023,2026-01-07,Metal,Rock,Live,12,0.102
+ALB_1237,ART_0649,Blue Million,2018,2021-06-11,Jazz,,Compilation,14,0.073
+ALB_1238,ART_0272,Ameliorated Coherent Application,2016,2026-01-28,Rock,,Live,10,0.056
+ALB_1239,ART_0222,Ameliorated Contextually-Based Benchmark,2000,2009-02-02,Rock,,Studio,10,0.229
+ALB_1240,ART_0615,De-Engineered Transitional Intranet,2002,2020-04-25,Indie,Country,Studio,14,0.2
+ALB_1241,ART_0010,Focused Background Collaboration,2023,2025-05-01,Jazz,,Studio,12,0.109
+ALB_1242,ART_0064,Pulse Director,2024,2026-04-27,Electronic,,Live,12,0.471
+ALB_1243,ART_0097,Integrated Zero Tolerance Website,2023,2025-10-25,Indie,,Compilation,10,0.078
+ALB_1244,ART_0520,Multi-Layered Maximized Standardization,2008,2022-12-25,Jazz,,Studio,10,0.243
+ALB_1245,ART_0299,Managed Attitude-Oriented System Engine,2020,2026-02-15,Electronic,,Live,14,0.056
+ALB_1246,ART_0616,Thunder Arrive,2013,2018-04-01,Rock,,Studio,16,0.067
+ALB_1247,ART_0692,Object-Based Asynchronous Moratorium,2022,2025-04-04,Hip-Hop,Pop,Studio,12,0.061
+ALB_1248,ART_0270,Ergonomic Eco-Centric Implementation,2017,2025-02-11,Jazz,Country,Studio,16,0.06
+ALB_1249,ART_0611,Decentralized Zero Administration Structure,2002,2009-10-17,Electronic,,Studio,14,0.058
+ALB_1250,ART_0212,Visionary Leadingedge Encryption,2001,2020-04-13,Classical,,Studio,10,0.085
+ALB_1251,ART_0494,Automated Dedicated Knowledgebase,2002,2020-06-30,Pop,,Studio,10,0.109
+ALB_1252,ART_0153,World Between,2018,2023-06-12,Indie,,Studio,14,0.081
+ALB_1253,ART_0093,Revolution Detail,2009,2018-05-30,Rock,Electronic,Studio,12,0.058
+ALB_1254,ART_0246,Pulse Responsibility,2021,2026-03-15,Electronic,,Studio,8,0.116
+ALB_1255,ART_0103,Life Would,2024,2026-04-27,Indie,,Studio,12,0.086
+ALB_1256,ART_0123,Self-Enabling Upward-Trending Analyzer,2023,2026-01-23,Metal,Electronic,Studio,10,0.068
+ALB_1257,ART_0447,World Often,1995,2012-06-04,R&B,Country,Studio,10,0.091
+ALB_1258,ART_0321,Function-Based Mission-Critical Productivity,1992,2003-11-18,Country,Indie,Studio,12,0.062
+ALB_1259,ART_0217,Multi-Lateral Actuating Secured Line,2019,2022-05-28,Metal,Pop,Compilation,16,0.066
+ALB_1260,ART_0320,Life Budget,2019,2022-07-01,Country,Rock,Studio,14,0.169
+ALB_1261,ART_0183,Optional Fresh-Thinking Access,2024,2026-04-27,Pop,,Compilation,14,0.064
+ALB_1262,ART_0195,Grass-Roots Optimal Capability,2022,2025-02-09,R&B,,Studio,14,0.073
+ALB_1263,ART_0566,Fully-Configurable 24/7 Analyzer,2014,2022-02-16,Indie,,Compilation,12,0.148
+ALB_1264,ART_0530,Stories Rock,1999,2013-03-14,Metal,,Studio,12,0.095
+ALB_1265,ART_0433,Stories Pick,2007,2011-12-14,Hip-Hop,Pop,Studio,12,0.056
+ALB_1266,ART_0437,Visionary Background Encryption,2012,2016-03-18,Rock,Jazz,Studio,8,0.058
+ALB_1267,ART_0103,Cross-Group Systemic Process Improvement,2024,2026-04-27,Indie,,Studio,8,0.055
+ALB_1268,ART_0148,Virtual Responsive Approach,2015,2017-11-08,Country,,Studio,10,0.086
+ALB_1269,ART_0437,Echo Quite,2011,2015-04-26,Rock,Jazz,Live,8,0.071
+ALB_1270,ART_0307,Life Not,2023,2026-02-09,Metal,Jazz,Studio,14,0.058
+ALB_1271,ART_0167,De-Engineered Mobile Emulation,2017,2021-07-14,Country,,Studio,8,0.23
+ALB_1272,ART_0377,Realigned Zero Tolerance Project,2015,2024-02-17,Metal,,Studio,14,0.077
+ALB_1273,ART_0201,Star Support,2007,2024-06-24,Pop,,Studio,12,0.062
+ALB_1274,ART_0181,Upgradable Content-Based Adapter,2022,2025-09-11,Rock,Classical,Compilation,12,0.075
+ALB_1275,ART_0001,Life Help,2023,2026-01-16,Indie,Metal,Studio,14,0.091
+ALB_1276,ART_0213,Time Enough,2020,2025-11-29,Indie,Country,Studio,8,0.056
+ALB_1277,ART_0322,Love Memory,2002,2019-11-12,Pop,,Studio,8,0.063
+ALB_1278,ART_0255,Realigned Explicit Moratorium,2020,2025-02-08,Pop,R&B,Studio,8,0.115
+ALB_1279,ART_0013,Life Customer,2011,2020-09-07,Indie,,EP,10,0.072
+ALB_1280,ART_0252,Storm Of,2024,2026-04-27,Rock,,Compilation,12,0.078
+ALB_1281,ART_0384,Upgradable Maximized Focus Group,2016,2025-04-05,R&B,,Studio,14,0.07
+ALB_1282,ART_0208,Right-Sized Neutral Complexity,2020,2022-08-05,Indie,Hip-Hop,Studio,14,0.056
+ALB_1283,ART_0613,Stories Clear,2000,2013-02-07,R&B,Electronic,Studio,12,0.059
+ALB_1284,ART_0094,Fundamental Needs-Based Hierarchy,2024,2026-04-27,Pop,Hip-Hop,Studio,16,0.071
+ALB_1285,ART_0335,Vision-Oriented Scalable Middleware,1997,2009-07-21,Rock,,EP,10,0.061
+ALB_1286,ART_0395,Enterprise-Wide 3Rdgeneration Process Improvement,2020,2025-09-29,Classical,R&B,Live,8,0.056
+ALB_1287,ART_0352,Vision-Oriented Regional Encoding,2021,2024-04-12,R&B,Metal,Compilation,14,0.126
+ALB_1288,ART_0479,Cloned Stable Monitoring,2003,2022-07-08,Pop,Electronic,EP,16,0.331
+ALB_1289,ART_0314,Stories Customer,2022,2025-05-14,Classical,,Compilation,8,0.111
+ALB_1290,ART_0680,Proactive Zero Administration Neural-Net,2014,2017-11-10,Hip-Hop,,Studio,12,0.13
+ALB_1291,ART_0476,Horizontal Fresh-Thinking Installation,2024,2026-04-27,Classical,,Live,8,0.062
+ALB_1292,ART_0358,Stories Bring,2013,2016-05-17,Classical,,EP,16,0.237
+ALB_1293,ART_0537,Life Reason,2009,2012-04-26,Classical,Electronic,Studio,12,0.06
+ALB_1294,ART_0217,De-Engineered Context-Sensitive Alliance,2021,2023-12-04,Metal,Pop,Compilation,10,0.215
+ALB_1295,ART_0677,Journey Mention,2018,2021-06-20,R&B,,Studio,14,0.595
+ALB_1296,ART_0369,Time Almost,2012,2021-03-03,R&B,Country,Studio,8,0.096
+ALB_1297,ART_0132,Stories Think,2023,2025-09-15,Hip-Hop,,EP,12,0.331
+ALB_1298,ART_0527,Revolution Might,2024,2026-04-27,Rock,,Studio,12,0.08
+ALB_1299,ART_0146,Stories Science,2002,2017-04-21,Hip-Hop,Classical,Studio,12,0.062
+ALB_1300,ART_0457,Business-Focused High-Level Definition,2022,2025-07-12,Electronic,,Studio,16,0.071
+ALB_1301,ART_0467,Compatible 24/7 Database,2018,2024-04-02,R&B,Rock,Studio,12,0.082
+ALB_1302,ART_0585,Stories Without,2021,2025-12-27,Country,,Live,12,0.056
+ALB_1303,ART_0093,Configurable Maximized Website,2001,2018-01-05,Rock,Electronic,Studio,14,0.085
+ALB_1304,ART_0176,World Herself,2021,2024-12-28,Country,,Studio,10,0.331
+ALB_1305,ART_0642,Time Writer,2010,2024-10-13,Hip-Hop,,Studio,12,0.06
+ALB_1306,ART_0437,Revolution Term,2013,2019-05-18,Rock,Jazz,Compilation,12,0.111
+ALB_1307,ART_0388,Stories Section,1997,2000-11-21,Country,,Studio,14,0.161
+ALB_1308,ART_0677,Seamless Encompassing Moderator,2020,2022-06-25,R&B,,Studio,12,0.201
+ALB_1309,ART_0465,Journey Avoid,2024,2026-04-27,Country,,Compilation,12,0.235
+ALB_1310,ART_0621,Compatible Didactic Model,2011,2014-07-31,Metal,R&B,Studio,10,0.076
+ALB_1311,ART_0045,Life Share,2000,2007-11-12,Country,Classical,Compilation,14,0.304
+ALB_1312,ART_0484,Networked Content-Based Core,2007,2018-04-06,Pop,Rock,Studio,10,0.104
+ALB_1313,ART_0677,Stories Energy,2023,2025-11-20,R&B,,Studio,10,0.059
+ALB_1314,ART_0084,Love Yourself,2020,2023-01-13,Pop,Hip-Hop,Compilation,16,0.073
+ALB_1315,ART_0601,Life So,2017,2023-03-24,R&B,,Studio,14,0.097
+ALB_1316,ART_0563,User-Friendly Bi-Directional Throughput,2023,2025-12-15,Jazz,Pop,Studio,14,0.062
+ALB_1317,ART_0154,Multi-Channeled Systematic Knowledgebase,2022,2025-09-21,Indie,Country,Studio,10,0.087
+ALB_1318,ART_0170,Optimized Bi-Directional Concept,2019,2025-04-12,Hip-Hop,,Live,8,0.09
+ALB_1319,ART_0623,Reactive Impactful Middleware,2015,2020-05-09,Pop,Rock,Studio,12,0.059
+ALB_1320,ART_0347,Diverse National Policy,2017,2022-06-02,Hip-Hop,,Studio,10,0.079
+ALB_1321,ART_0365,Dreams He,2002,2024-03-04,Pop,,Studio,8,0.106
+ALB_1322,ART_0231,Wave Oil,2006,2026-03-01,Electronic,Rock,Studio,14,0.074
+ALB_1323,ART_0147,Inverse Holistic Installation,2010,2023-01-07,Electronic,,Studio,8,0.055
+ALB_1324,ART_0179,Echo Law,2024,2026-04-27,Rock,,Studio,14,0.055
+ALB_1325,ART_0079,Inverse Real-Time Encoding,2024,2026-04-27,Jazz,Classical,Studio,10,0.066
+ALB_1326,ART_0500,Journey Difficult,2001,2011-12-11,R&B,Hip-Hop,Studio,10,0.178
+ALB_1327,ART_0294,Time Oil,1999,2024-06-21,Metal,Hip-Hop,Studio,14,0.061
+ALB_1328,ART_0103,Function-Based High-Level Knowledge User,2024,2026-04-27,Indie,,Live,12,0.086
+ALB_1329,ART_0651,Thunder Industry,1993,1995-04-29,Rock,,Studio,12,0.061
+ALB_1330,ART_0665,World Already,2024,2026-04-27,Country,R&B,Studio,10,0.065
+ALB_1331,ART_0585,Right-Sized 3Rdgeneration Model,2018,2021-02-16,Country,,Live,8,0.128
+ALB_1332,ART_0356,Life Voice,2012,2017-12-09,Classical,,EP,14,0.098
+ALB_1333,ART_0230,Innovative Directional Data-Warehouse,2017,2025-04-23,Metal,,Studio,12,0.057
+ALB_1334,ART_0045,Ameliorated Zero Administration Solution,2022,2025-12-18,Country,Classical,Compilation,8,0.07
+ALB_1335,ART_0394,Time Wide,2020,2024-07-13,Hip-Hop,,Studio,12,0.055
+ALB_1336,ART_0395,Journey Only,2016,2022-11-19,Classical,R&B,Live,14,0.073
+ALB_1337,ART_0110,Re-Engineered Coherent Attitude,2019,2021-07-03,Jazz,Country,Studio,14,0.089
+ALB_1338,ART_0318,Multi-Channeled Coherent Challenge,2008,2014-07-23,Rock,Pop,Compilation,14,0.058
+ALB_1339,ART_0214,Thunder Visit,2024,2026-04-27,Rock,,Studio,10,0.064
+ALB_1340,ART_0367,Focused Eco-Centric Workforce,2014,2019-04-28,Pop,Metal,EP,10,0.068
+ALB_1341,ART_0664,Re-Engineered Impactful Open System,2021,2026-01-26,Rock,,Studio,8,0.171
+ALB_1342,ART_0437,Upgradable Asynchronous Success,2011,2017-07-15,Rock,Jazz,Live,10,0.528
+ALB_1343,ART_0640,Light Meeting,2011,2015-07-26,Pop,,Studio,10,0.056
+ALB_1344,ART_0119,Soul That,2009,2024-10-20,Jazz,,EP,12,0.104
+ALB_1345,ART_0143,Total Object-Oriented Attitude,2017,2023-06-27,Indie,,Studio,10,0.067
+ALB_1346,ART_0438,Edge First,2011,2013-10-20,Rock,,Studio,14,0.068
+ALB_1347,ART_0267,Re-Engineered Homogeneous Artificial Intelligence,2020,2025-06-09,Metal,Rock,Studio,16,0.103
+ALB_1348,ART_0371,Time Will,2024,2026-04-27,R&B,,Studio,12,0.17
+ALB_1349,ART_0536,Digital Happen,2020,2025-11-02,Electronic,Indie,Live,10,0.214
+ALB_1350,ART_0242,Optional Intangible Capability,2017,2025-05-29,Hip-Hop,,Live,12,0.08
+ALB_1351,ART_0543,Time Dream,2016,2024-04-19,Classical,,Studio,10,0.066
+ALB_1352,ART_0414,Robust 24/7 Productivity,2018,2024-12-25,Hip-Hop,,EP,12,0.11
+ALB_1353,ART_0069,Multi-Tiered Actuating Function,2009,2019-03-09,Jazz,Rock,Studio,10,0.062
+ALB_1354,ART_0295,Intuitive Needs-Based Open System,2018,2021-03-19,Rock,,Studio,10,0.079
+ALB_1355,ART_0356,World Morning,2007,2021-03-07,Classical,,EP,10,0.067
+ALB_1356,ART_0107,Star Claim,2017,2019-09-03,Pop,Metal,Compilation,10,0.088
+ALB_1357,ART_0314,Journey Sign,2023,2026-04-26,Classical,,Live,8,0.062
+ALB_1358,ART_0386,Organized Web-Enabled Policy,2006,2018-09-03,Metal,,Studio,16,0.06
+ALB_1359,ART_0416,Smooth Believe,2023,2025-07-16,Jazz,,Studio,16,0.17
+ALB_1360,ART_0463,Implemented Zero Tolerance Infrastructure,2011,2015-03-29,Electronic,Indie,Live,16,0.057
+ALB_1361,ART_0154,Mandatory Attitude-Oriented Leverage,2016,2022-11-21,Indie,Country,Studio,10,0.075
+ALB_1362,ART_0352,Time Appear,2001,2015-12-05,R&B,Metal,Studio,10,0.061
+ALB_1363,ART_0629,Forever Everybody,2020,2022-08-29,Pop,,Studio,8,0.055
+ALB_1364,ART_0220,Stories More,2001,2013-04-24,Classical,,Live,12,0.055
+ALB_1365,ART_0677,Total Clear-Thinking Task-Force,2021,2023-09-21,R&B,,Studio,8,0.059
+ALB_1366,ART_0568,Time Operation,1997,2004-08-31,Country,,Studio,12,0.136
+ALB_1367,ART_0669,Object-Based Solution-Oriented Orchestration,2019,2022-04-19,Country,,Studio,8,0.063
+ALB_1368,ART_0023,Seamless User-Facing Moderator,2024,2026-04-27,Hip-Hop,,Compilation,16,0.213
+ALB_1369,ART_0045,Time Away,2003,2010-11-28,Country,Classical,Live,10,0.081
+ALB_1370,ART_0352,Time Law,2016,2020-11-27,R&B,Metal,Live,12,0.071
+ALB_1371,ART_0115,Re-Engineered Background Budgetary Management,2020,2025-01-02,Hip-Hop,Country,Studio,12,0.081
+ALB_1372,ART_0060,Echo Land,2023,2025-09-06,Rock,Indie,Studio,10,0.076
+ALB_1373,ART_0118,Ergonomic Fresh-Thinking Hardware,2013,2021-11-07,Country,,Compilation,12,0.104
+ALB_1374,ART_0109,World Agent,2024,2026-04-27,Country,,Compilation,12,0.063
+ALB_1375,ART_0351,Down-Sized Grid-Enabled Pricing Structure,2022,2025-12-17,Indie,,Studio,16,0.066
+ALB_1376,ART_0437,Organic Regional Circuit,2010,2018-06-26,Rock,Jazz,Live,12,0.151
+ALB_1377,ART_0123,Focused Dedicated Software,2024,2026-04-27,Metal,Electronic,EP,16,0.206
+ALB_1378,ART_0501,Versatile Upward-Trending Artificial Intelligence,2016,2019-03-21,Rock,,Studio,12,0.15
+ALB_1379,ART_0299,Pulse Arm,2022,2024-10-20,Electronic,,Studio,14,0.07
+ALB_1380,ART_0403,Secured Client-Server Forecast,2020,2022-05-17,Metal,,EP,14,0.108
+ALB_1381,ART_0412,Journey Rule,2009,2023-05-20,Classical,Electronic,Studio,10,0.073
+ALB_1382,ART_0646,Stories Focus,2017,2022-06-20,Metal,,Studio,12,0.074
+ALB_1383,ART_0289,Journey Agency,2023,2025-08-25,Indie,,Live,10,0.06
+ALB_1384,ART_0437,User-Centric National Data-Warehouse,2013,2017-07-23,Rock,Jazz,EP,16,0.082
+ALB_1385,ART_0567,Thunder Necessary,2022,2025-10-26,Rock,,Compilation,10,0.06
+ALB_1386,ART_0562,Reactive Mission-Critical Process Improvement,2017,2024-06-05,Indie,,Studio,14,0.065
+ALB_1387,ART_0437,Revolution Chance,2016,2023-11-17,Rock,Jazz,Studio,8,0.131
+ALB_1388,ART_0045,Life Relate,2011,2013-07-22,Country,Classical,Studio,16,0.06
+ALB_1389,ART_0202,Reduced Stable Moderator,2008,2011-01-06,Indie,R&B,Studio,14,0.056
+ALB_1390,ART_0428,Down-Sized Analyzing Forecast,2019,2022-04-27,Jazz,Country,Studio,14,0.056
+ALB_1391,ART_0211,Total Regional Flexibility,2024,2026-04-27,Country,,Studio,10,0.197
+ALB_1392,ART_0424,Life Real,2020,2026-02-05,Country,Jazz,Compilation,8,0.075
+ALB_1393,ART_0401,Cloned Human-Resource Protocol,2007,2013-12-05,Indie,Rock,Live,10,0.069
+ALB_1394,ART_0065,Star Together,1994,2023-09-15,Pop,Jazz,Studio,12,0.116
+ALB_1395,ART_0039,Multi-Lateral Bi-Directional Adapter,2012,2017-10-30,Rock,,Studio,8,0.124
+ALB_1396,ART_0230,Journey Use,2015,2023-03-01,Metal,,Studio,16,0.065
+ALB_1397,ART_0372,World During,2023,2026-04-19,R&B,Hip-Hop,EP,14,0.093
+ALB_1398,ART_0679,Profound Tertiary Attitude,2008,2024-10-12,Hip-Hop,,Studio,10,0.106
+ALB_1399,ART_0621,Life Memory,1999,2022-12-27,Metal,R&B,EP,12,0.088
+ALB_1400,ART_0021,Public-Key Background Contingency,2020,2023-02-11,Electronic,Jazz,Studio,16,0.059
+ALB_1401,ART_0419,Persevering Next Generation Structure,2019,2021-06-04,R&B,,Studio,14,0.14
+ALB_1402,ART_0120,Fully-Configurable Multi-Tasking Function,2022,2024-12-25,Electronic,,EP,16,0.077
+ALB_1403,ART_0437,Object-Based Value-Added Complexity,2021,2023-05-17,Rock,Jazz,Studio,10,0.063
+ALB_1404,ART_0162,Digital Return,2000,2010-10-06,Electronic,,Studio,8,0.07
+ALB_1405,ART_0695,Soul Process,2010,2016-07-20,Jazz,,Studio,14,0.055
+ALB_1406,ART_0437,Echo More,2024,2026-04-27,Rock,Jazz,Studio,8,0.058
+ALB_1407,ART_0533,Centralized Responsive Extranet,2005,2024-01-06,R&B,Rock,Studio,16,0.105
+ALB_1408,ART_0437,Assimilated Next Generation Focus Group,2016,2020-02-15,Rock,Jazz,Studio,12,0.054
+ALB_1409,ART_0473,Mandatory Hybrid Protocol,2021,2023-09-24,Electronic,Pop,Compilation,16,0.069
+ALB_1410,ART_0157,Life Show,2016,2021-05-17,Country,Pop,Studio,10,0.076
+ALB_1411,ART_0407,Synergistic Reciprocal Product,2022,2025-09-09,Pop,Rock,Studio,8,0.056
+ALB_1412,ART_0015,Dreams Key,2022,2024-10-18,Pop,,EP,12,0.281
+ALB_1413,ART_0370,Distributed Interactive Function,2024,2026-04-27,Rock,Pop,Compilation,12,0.061
+ALB_1414,ART_0648,Managed Local Moratorium,2001,2006-05-08,Country,,Live,12,0.064
+ALB_1415,ART_0414,Streamlined Client-Driven Paradigm,2006,2018-01-23,Hip-Hop,,Studio,14,0.064
+ALB_1416,ART_0141,Exclusive Client-Driven Function,2020,2025-01-26,Hip-Hop,,Studio,10,0.061
+ALB_1417,ART_0352,Journey Way,2005,2017-04-09,R&B,Metal,Studio,8,0.054
+ALB_1418,ART_0437,Storm Central,2012,2019-06-24,Rock,Jazz,EP,12,0.099
+ALB_1419,ART_0362,Echo When,2023,2026-04-18,Rock,,Compilation,12,0.256
+ALB_1420,ART_0307,Digitized Solution-Oriented Open System,2022,2026-02-25,Metal,Jazz,Live,12,0.061
+ALB_1421,ART_0378,World Friend,2017,2019-10-17,Country,Pop,Compilation,12,0.089
+ALB_1422,ART_0063,Circuit No,2017,2025-12-16,Electronic,Country,Studio,12,0.101
+ALB_1423,ART_0608,Decentralized Contextually-Based Functionalities,2024,2026-04-27,Pop,Metal,Studio,12,0.128
+ALB_1424,ART_0682,Life Child,2004,2020-11-10,R&B,Rock,Studio,8,0.07
+ALB_1425,ART_0460,Virtual Foreground Installation,2018,2026-01-31,Classical,,Compilation,8,0.064
+ALB_1426,ART_0586,Innovative Leadingedge Synergy,2021,2026-02-13,Rock,Indie,Studio,10,0.065
+ALB_1427,ART_0410,Sharable User-Facing Focus Group,2007,2011-11-25,Electronic,Metal,Studio,14,0.096
+ALB_1428,ART_0605,Ergonomic Bi-Directional Capacity,2010,2014-11-26,Classical,,Studio,12,0.118
+ALB_1429,ART_0351,Journey Sound,2024,2026-04-27,Indie,,Compilation,16,0.06
+ALB_1430,ART_0087,Journey Practice,2004,2011-08-28,Country,,Studio,14,0.067
+ALB_1431,ART_0519,Re-Contextualized Reciprocal Emulation,2007,2019-06-16,R&B,,Studio,14,0.156
+ALB_1432,ART_0050,Star During,2024,2026-04-27,Pop,Indie,Studio,8,0.115
+ALB_1433,ART_0160,Multi-Channeled Attitude-Oriented Solution,2021,2025-08-28,Jazz,,Studio,12,0.365
+ALB_1434,ART_0343,Devolved Motivating Portal,2011,2019-05-31,Electronic,,Studio,12,0.103
+ALB_1435,ART_0351,Streamlined Holistic Contingency,2021,2025-11-15,Indie,,Live,12,0.068
+ALB_1436,ART_0026,Time Million,2015,2021-08-01,R&B,,Live,12,0.082
+ALB_1437,ART_0650,Journey Common,2024,2026-04-27,Indie,,Compilation,10,0.089
+ALB_1438,ART_0161,Journey Alone,2015,2020-12-29,Hip-Hop,Rock,Studio,12,0.056
+ALB_1439,ART_0201,Advanced Encompassing Installation,2019,2022-06-06,Pop,,Studio,10,0.078
+ALB_1440,ART_0109,Synchronized Dedicated System Engine,2023,2025-07-09,Country,,Studio,14,0.095
+ALB_1441,ART_0222,Enhanced Leadingedge Pricing Structure,2019,2023-10-08,Rock,,Compilation,10,0.059
+ALB_1442,ART_0315,Edge Garden,2023,2026-03-09,Rock,,Studio,12,0.108
+ALB_1443,ART_0146,Fully-Configurable Interactive Initiative,1998,2020-07-01,Hip-Hop,Classical,Studio,12,0.081
+ALB_1444,ART_0623,Love Political,2019,2024-12-29,Pop,Rock,Studio,12,0.217
+ALB_1445,ART_0131,Star Husband,2018,2024-08-21,Pop,,Studio,16,0.055
+ALB_1446,ART_0352,Journey Indeed,2019,2024-05-17,R&B,Metal,Studio,12,0.063
+ALB_1447,ART_0271,Stories Situation,2024,2026-04-27,R&B,,Compilation,16,0.083
+ALB_1448,ART_0531,Public-Key Multi-Tasking Project,2019,2025-09-12,Hip-Hop,,Live,12,0.064
+ALB_1449,ART_0480,Circuit Stop,2023,2025-05-10,Electronic,,Studio,12,0.096
+ALB_1450,ART_0438,Customer-Focused Local Knowledgebase,2012,2024-03-29,Rock,,Studio,10,0.104
+ALB_1451,ART_0621,Balanced Dynamic Model,2002,2016-02-25,Metal,R&B,EP,10,0.057
+ALB_1452,ART_0237,User-Centric 6Thgeneration Open Architecture,2022,2025-02-03,Country,,EP,10,0.075
+ALB_1453,ART_0480,Digital Southern,2022,2025-07-31,Electronic,,Studio,12,0.075
+ALB_1454,ART_0437,Thunder Appear,2020,2023-01-29,Rock,Jazz,Studio,12,0.067
+ALB_1455,ART_0030,Pulse Less,2024,2026-04-27,Electronic,,Studio,10,0.186
+ALB_1456,ART_0457,Digital Fly,2000,2020-11-20,Electronic,,Studio,12,0.121
+ALB_1457,ART_0267,Stories Feeling,2021,2024-09-13,Metal,Rock,Studio,14,0.094
+ALB_1458,ART_0664,Thunder Knowledge,2021,2024-03-14,Rock,,Studio,10,0.096
+ALB_1459,ART_0226,Time Wide,2024,2026-04-27,Classical,Hip-Hop,Live,16,0.072
+ALB_1460,ART_0460,Journey Nation,2021,2026-01-11,Classical,,Studio,12,0.172
+ALB_1461,ART_0309,Journey Major,2021,2025-10-22,Metal,R&B,EP,8,0.093
+ALB_1462,ART_0381,Organized Background Success,2017,2022-10-28,Electronic,Hip-Hop,Studio,12,0.098
+ALB_1463,ART_0137,Enterprise-Wide Zero-Defect Paradigm,2011,2025-07-05,R&B,,Studio,12,0.134
+ALB_1464,ART_0402,Journey Safe,2001,2015-11-20,Metal,,Studio,16,0.063
+ALB_1465,ART_0212,Stories Increase,2020,2023-12-22,Classical,,Studio,12,0.115
+ALB_1466,ART_0651,Thunder Little,1999,2001-12-10,Rock,,Live,14,0.06
+ALB_1467,ART_0069,Midnight Long,2005,2018-07-14,Jazz,Rock,Studio,12,0.066
+ALB_1468,ART_0083,Stories Seem,2024,2026-04-27,Country,,Studio,14,0.065
+ALB_1469,ART_0079,Blue Us,2023,2025-10-09,Jazz,Classical,Studio,10,0.312
+ALB_1470,ART_0438,Function-Based Fresh-Thinking Solution,2015,2023-02-26,Rock,,Studio,16,0.131
+ALB_1471,ART_0525,Universal Cohesive Structure,2015,2023-12-01,Pop,Indie,Live,14,0.094
+ALB_1472,ART_0589,Cross-Group Bifurcated Strategy,1998,2012-01-01,Rock,,Studio,10,0.098
+ALB_1473,ART_0540,Multi-Lateral Attitude-Oriented Moderator,2016,2023-12-23,Metal,Rock,Studio,10,0.079
+ALB_1474,ART_0566,Upgradable Multimedia Pricing Structure,2020,2026-02-12,Indie,,Studio,10,0.207
+ALB_1475,ART_0287,Love Human,2017,2023-03-04,Pop,,EP,14,0.074
+ALB_1476,ART_0611,Balanced Zero Administration Concept,2006,2024-09-27,Electronic,,Studio,10,0.068
+ALB_1477,ART_0623,Dreams Others,2020,2025-10-20,Pop,Rock,Live,8,0.059
+ALB_1478,ART_0622,Distributed Cohesive Circuit,2023,2025-06-30,Pop,,Studio,14,0.11
+ALB_1479,ART_0023,Universal Actuating Instruction Set,2019,2022-11-09,Hip-Hop,,Live,10,0.099
+ALB_1480,ART_0562,Upgradable Zero Administration Knowledge User,2022,2024-11-23,Indie,,Studio,12,0.068
+ALB_1481,ART_0134,Life Course,2024,2026-04-27,Country,,Studio,12,0.055
+ALB_1482,ART_0404,De-Engineered Dedicated Ability,2018,2024-01-20,R&B,,Live,10,0.125
+ALB_1483,ART_0437,Function-Based 24/7 Knowledgebase,2023,2025-10-25,Rock,Jazz,Studio,14,0.055
+ALB_1484,ART_0646,Proactive Needs-Based Workforce,2019,2021-05-06,Metal,,Studio,16,0.095
+ALB_1485,ART_0437,Proactive Disintermediate Data-Warehouse,2021,2025-01-31,Rock,Jazz,Studio,14,0.269
+ALB_1486,ART_0623,Phased Logistical Installation,2022,2025-03-15,Pop,Rock,EP,14,0.071
+ALB_1487,ART_0170,Stories Plant,2000,2016-09-20,Hip-Hop,,EP,8,0.061
+ALB_1488,ART_0532,Storm Election,2024,2026-04-27,Rock,,Live,14,0.095
+ALB_1489,ART_0126,Grass-Roots Regional Product,2020,2024-07-19,Indie,Pop,Compilation,10,0.118
+ALB_1490,ART_0072,Expanded Actuating Contingency,2014,2017-10-19,Rock,Metal,Studio,14,0.078
+ALB_1491,ART_0520,Streamlined Grid-Enabled Alliance,2001,2006-08-30,Jazz,,Studio,16,0.257
+ALB_1492,ART_0467,Time Alone,2004,2019-08-29,R&B,Rock,Studio,8,0.056
+ALB_1493,ART_0492,Love This,2024,2026-04-27,Pop,Metal,Studio,12,0.075
+ALB_1494,ART_0146,World Glass,2017,2025-10-05,Hip-Hop,Classical,EP,8,0.097
+ALB_1495,ART_0150,Business-Focused Bi-Directional Instruction Set,2022,2026-04-22,Rock,Classical,Studio,8,0.134
+ALB_1496,ART_0528,Diverse Systematic Forecast,2023,2025-12-05,Indie,,Studio,8,0.059
+ALB_1497,ART_0192,Team-Oriented Tangible Policy,2013,2021-08-12,Classical,Indie,Live,16,0.113
+ALB_1498,ART_0649,Realigned Context-Sensitive Knowledgebase,2019,2025-01-24,Jazz,,Studio,14,0.078
+ALB_1499,ART_0688,Multi-Lateral 5Thgeneration Array,2024,2026-04-27,Electronic,,Studio,12,0.068
+ALB_1500,ART_0642,Inverse Holistic Implementation,2000,2022-01-02,Hip-Hop,,Studio,12,0.058

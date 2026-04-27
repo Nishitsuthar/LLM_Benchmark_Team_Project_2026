@@ -1,0 +1,701 @@
+artist_id,name,country,primary_genre,secondary_genre,debut_year,label_id,is_active,popularity_score
+ART_0001,Philip Cannon,Brunei Darussalam,Indie,Metal,2002,LBL_0010,True,0.024
+ART_0002,The Kellers,USA,Metal,Electronic,2010,LBL_0032,True,0.024
+ART_0003,Arroyo,Germany,Electronic,Metal,2005,LBL_0037,True,0.022
+ART_0004,Joseph Obrien,USA,Classical,,1998,LBL_0043,True,0.017
+ART_0005,The Brandts,USA,Indie,Electronic,2017,LBL_0014,True,0.018
+ART_0006,The Hickmans,Germany,Classical,,2013,LBL_0029,False,0.017
+ART_0007,Melissa Marquez,France,Rock,,1991,LBL_0038,True,0.028
+ART_0008,Michael Brooks,USA,Electronic,,1993,LBL_0015,True,0.02
+ART_0009,Jocelyn Wright,USA,Country,Indie,2021,LBL_0014,True,0.024
+ART_0010,Alex Spencer,Namibia,Jazz,,2020,LBL_0027,True,0.055
+ART_0011,The Joness,UK,R&B,,2019,LBL_0047,True,0.019
+ART_0012,Crystal Whitehead,Tokelau,Metal,,1996,LBL_0016,True,0.022
+ART_0013,The Riveras,Germany,Indie,,1994,LBL_0029,True,0.034
+ART_0014,The Palmers,USA,Jazz,Hip-Hop,2024,LBL_0001,True,0.019
+ART_0015,The Ramirezs,USA,Pop,,2020,LBL_0014,False,0.017
+ART_0016,Storm Washington,Mauritius,Metal,Indie,2014,LBL_0017,True,0.02
+ART_0017,Laura Kennedy,Slovenia,R&B,Pop,2021,LBL_0010,True,0.018
+ART_0018,Jason Davis,UK,Pop,Jazz,1993,LBL_0004,False,0.063
+ART_0019,The Hopkinss,Guinea,Indie,,2022,LBL_0006,True,0.038
+ART_0020,The Hendersons,Canada,Indie,,2015,LBL_0008,False,0.028
+ART_0021,Owensxx,UK,Electronic,Jazz,1995,LBL_0027,True,0.047
+ART_0022,Megan Joyce,Bolivia,Country,Indie,2010,LBL_0016,True,0.038
+ART_0023,The Chandlers,USA,Hip-Hop,,1994,LBL_0001,True,0.019
+ART_0024,The Mcbrides,France,Pop,Classical,2006,LBL_0009,True,0.051
+ART_0025,Daniel,USA,Hip-Hop,,2018,LBL_0035,True,0.025
+ART_0026,The Herreras,France,R&B,,1996,LBL_0009,True,0.038
+ART_0027,Clifford Ford,USA,Pop,Metal,2003,LBL_0046,True,0.052
+ART_0028,Young Nancy,Belarus,Hip-Hop,Country,1993,LBL_0006,True,0.02
+ART_0029,Scott,Tokelau,Hip-Hop,Jazz,2018,LBL_0036,True,0.018
+ART_0030,Annette Pearson,Mauritius,Electronic,,2013,LBL_0038,True,0.019
+ART_0031,Tracy House,Thailand,Indie,,1992,LBL_0023,True,0.022
+ART_0032,Big Joel Baby,Germany,Hip-Hop,R&B,2016,LBL_0040,False,0.039
+ART_0033,Big Richard King,Liberia,Hip-Hop,R&B,2011,LBL_0027,True,0.045
+ART_0034,The Moraless,USA,R&B,Jazz,2020,LBL_0015,True,0.017
+ART_0035,James Galloway,Canada,Jazz,Country,2002,LBL_0026,True,0.024
+ART_0036,The Bakers,Canada,Rock,,2022,LBL_0026,False,0.022
+ART_0037,Jordan Henderson,UK,Jazz,,2006,LBL_0012,True,0.019
+ART_0038,The Bernards,UK,Pop,Hip-Hop,2012,LBL_0047,True,0.018
+ART_0039,Kristi Higgins MD,UK,Rock,,2002,LBL_0017,True,0.021
+ART_0040,The Phillipss,UK,Electronic,Rock,2002,LBL_0024,True,0.07
+ART_0041,Lauren Daniels,USA,Jazz,,2009,LBL_0033,True,0.02
+ART_0042,Amy Silva,USA,Indie,Hip-Hop,1998,LBL_0013,True,0.024
+ART_0043,Lil Wesley King,Timor-Leste,Hip-Hop,,2009,LBL_0026,True,0.031
+ART_0044,Amy Romero,Japan,Country,,2010,LBL_0030,True,0.021
+ART_0045,Andrea Jones,USA,Country,Classical,2000,LBL_0043,False,0.1
+ART_0046,Jennifer David,UK,Pop,,2005,LBL_0044,False,0.087
+ART_0047,The Hudsons,Mozambique,Country,,2020,LBL_0040,True,0.019
+ART_0048,The Wheelers,USA,Rock,,2002,LBL_0046,True,0.024
+ART_0049,Blood Harvey,Canada,Metal,,1990,LBL_0049,True,0.02
+ART_0050,Kevin Mills,Vietnam,Pop,Indie,2023,LBL_0030,False,0.02
+ART_0051,Michael Edwards,USA,Jazz,,2019,LBL_0043,True,0.017
+ART_0052,The Bakers,Germany,Pop,,2018,LBL_0040,True,0.027
+ART_0053,Storm Anderson,USA,Metal,Electronic,2018,LBL_0011,True,0.024
+ART_0054,Brewerx,USA,Electronic,Jazz,2023,LBL_0032,True,0.017
+ART_0055,Timothy Walls,Algeria,Country,,2010,LBL_0035,True,0.02
+ART_0056,Zachary Ferrell,USA,Pop,,2003,LBL_0005,False,0.055
+ART_0057,Charles,Japan,R&B,Classical,2016,LBL_0025,True,0.019
+ART_0058,The Lewiss,France,Rock,R&B,2012,LBL_0020,True,0.018
+ART_0059,The Bakers,USA,Indie,,2024,LBL_0039,True,0.024
+ART_0060,The Mahoneys,USA,Rock,Indie,2014,LBL_0022,True,0.14
+ART_0061,The Ibarras,France,Rock,Hip-Hop,2024,LBL_0002,True,0.019
+ART_0062,Jaclyn Moore,Syrian Arab Republic,Pop,,1998,LBL_0030,True,0.029
+ART_0063,Danielsx,Canada,Electronic,Country,2011,LBL_0049,True,0.034
+ART_0064,Turner,France,Electronic,,2020,LBL_0002,True,0.019
+ART_0065,Dr. Kendra Contreras,Micronesia,Pop,Jazz,1992,LBL_0049,True,0.032
+ART_0066,The Alvarados,USA,R&B,,2020,LBL_0043,True,0.021
+ART_0067,The Mcmillans,UK,Jazz,,1997,LBL_0050,False,0.028
+ART_0068,Taylorx,Germany,Electronic,Rock,2009,LBL_0037,True,0.028
+ART_0069,The Wilsons,Japan,Jazz,Rock,2005,LBL_0007,True,0.025
+ART_0070,Young Daniel,UK,Hip-Hop,,1992,LBL_0023,True,0.018
+ART_0071,Denise Jacobs,Japan,Electronic,,2021,LBL_0007,True,0.041
+ART_0072,Christina Walters,UK,Rock,Metal,2001,LBL_0047,True,0.02
+ART_0073,The Bakers,USA,Rock,,2019,LBL_0028,True,0.019
+ART_0074,The Freemans,United Kingdom,Indie,,1995,LBL_0018,True,0.017
+ART_0075,The Odonnells,Austria,Metal,,2014,LBL_0022,True,0.026
+ART_0076,Young Christopher,USA,Hip-Hop,,2011,LBL_0018,True,0.03
+ART_0077,Big Rodney Prince,USA,Hip-Hop,,2016,LBL_0032,True,0.017
+ART_0078,Aaron Wise,USA,Country,,1995,LBL_0019,True,0.024
+ART_0079,Deborah Figueroa,UK,Jazz,Classical,2020,LBL_0036,True,0.019
+ART_0080,Jessica Smith,Belarus,Pop,Classical,2019,LBL_0018,False,0.028
+ART_0081,The Landrys,Portugal,Rock,Country,2024,LBL_0049,True,0.018
+ART_0082,Kimberly Davenport,Myanmar,Classical,,2023,LBL_0039,True,0.03
+ART_0083,Jessica Williams,France,Country,,2001,LBL_0020,True,0.021
+ART_0084,The Diazs,USA,Pop,Hip-Hop,2008,LBL_0045,True,0.067
+ART_0085,Valerie Williams,Japan,Rock,Country,2008,LBL_0031,True,0.018
+ART_0086,The Howards,Canada,Rock,,2020,LBL_0008,True,0.021
+ART_0087,Mary Gomez,USA,Country,,1993,LBL_0010,True,0.018
+ART_0088,The Castros,UK,Pop,Electronic,1997,LBL_0036,True,0.061
+ART_0089,The Baxters,Niger,Pop,,2014,LBL_0029,True,0.048
+ART_0090,Lil Kara Baby,Germany,R&B,,1993,LBL_0040,False,0.02
+ART_0091,Cynthia Martin,South Georgia and the South Sandwich Islands,Rock,,2005,LBL_0012,True,0.029
+ART_0092,Sierra Johnson,Saint Pierre and Miquelon,Country,,2020,LBL_0019,True,0.039
+ART_0093,Rachel Jenkins,Paraguay,Rock,Electronic,1994,LBL_0044,True,0.025
+ART_0094,The Shieldss,USA,Pop,Hip-Hop,2024,LBL_0015,False,0.024
+ART_0095,The Cochrans,USA,Rock,,2009,LBL_0039,False,0.019
+ART_0096,Richard Rodriguez,Tunisia,Classical,,2009,LBL_0045,True,0.018
+ART_0097,The Williamss,USA,Indie,,1992,LBL_0028,True,0.052
+ART_0098,Young Thomas,Canada,R&B,,1991,LBL_0049,True,0.053
+ART_0099,Hannah Hoover,USA,Hip-Hop,,2018,LBL_0018,False,0.028
+ART_0100,Courtney Keller,UK,Country,Classical,2012,LBL_0027,True,0.021
+ART_0101,The Rosss,USA,Rock,Pop,2021,LBL_0019,True,0.021
+ART_0102,The Joness,UK,Hip-Hop,,2010,LBL_0017,True,0.032
+ART_0103,Heather Hicks,Philippines,Indie,,2024,LBL_0030,True,0.052
+ART_0104,Ms. Teresa Wilson,Eritrea,Pop,,2018,LBL_0049,True,0.05
+ART_0105,Victor Baker,Canada,Pop,Jazz,2021,LBL_0008,True,0.036
+ART_0106,Jeffrey Chandler,Germany,Rock,Hip-Hop,1990,LBL_0036,True,0.028
+ART_0107,The Grahams,USA,Pop,Metal,1997,LBL_0042,True,0.018
+ART_0108,The Joyces,Brazil,Rock,,2016,LBL_0031,True,0.018
+ART_0109,The Cruzs,UK,Country,,2022,LBL_0048,True,0.053
+ART_0110,The Rays,USA,Jazz,Country,2016,LBL_0022,True,0.027
+ART_0111,Michael Smith,USA,Indie,,2021,LBL_0010,True,0.017
+ART_0112,Big Sara Baby,Japan,R&B,,2014,LBL_0030,True,0.018
+ART_0113,DJ Amanda Prince,Germany,Hip-Hop,Jazz,1992,LBL_0021,True,0.029
+ART_0114,Natalie Lambert,France,Rock,Indie,1992,LBL_0009,False,0.017
+ART_0115,DJ Michael Baby,Bangladesh,Hip-Hop,Country,2019,LBL_0001,True,0.018
+ART_0116,Tammie Hanson,USA,Country,Metal,2015,LBL_0042,True,0.025
+ART_0117,DJ Elizabeth,Canada,Hip-Hop,,2010,LBL_0041,True,0.03
+ART_0118,The Martinezs,USA,Country,,2008,LBL_0015,True,0.028
+ART_0119,Katie Estrada,Greece,Jazz,,1996,LBL_0029,True,0.019
+ART_0120,Edward Martinez,Italy,Electronic,,1993,LBL_0019,True,0.031
+ART_0121,Jamie Adkins,USA,Jazz,,2001,LBL_0011,True,0.019
+ART_0122,Jennifer Bass,Gabon,Hip-Hop,,2021,LBL_0038,False,0.02
+ART_0123,Iron Mitchell,Jersey,Metal,Electronic,2019,LBL_0019,True,0.033
+ART_0124,The Lawsons,Gibraltar,R&B,,2017,LBL_0045,True,0.028
+ART_0125,Jeremy Lewis,Japan,Pop,Country,2005,LBL_0025,False,0.043
+ART_0126,Steven Flynn,USA,Indie,Pop,2015,LBL_0018,True,0.029
+ART_0127,Jackson,USA,Electronic,,2021,LBL_0019,True,0.026
+ART_0128,The Millers,UK,Indie,Hip-Hop,2006,LBL_0044,True,0.018
+ART_0129,Lil Zachary King,France,R&B,,1992,LBL_0020,True,0.021
+ART_0130,Frances Cardenas,UK,Jazz,Classical,2016,LBL_0012,True,0.02
+ART_0131,Megan Walker,USA,Pop,,2007,LBL_0011,True,0.019
+ART_0132,David Alvarez,Canada,Hip-Hop,,2011,LBL_0008,True,0.102
+ART_0133,The Atkinsons,Barbados,Electronic,,2015,LBL_0036,True,0.022
+ART_0134,Stephen Johnston,France,Country,,2006,LBL_0038,True,0.051
+ART_0135,The Higginss,France,Rock,,2020,LBL_0002,True,0.028
+ART_0136,The Cruzs,Canada,Pop,,1994,LBL_0041,True,0.037
+ART_0137,Young Reginald Prince,Cameroon,R&B,,1998,LBL_0003,True,0.024
+ART_0138,The Douglass,Japan,Metal,,2014,LBL_0030,True,0.026
+ART_0139,Smithx,UK,Electronic,Country,1999,LBL_0027,False,0.024
+ART_0140,Patricia Rodriguez,USA,Rock,Hip-Hop,2013,LBL_0014,True,0.019
+ART_0141,Young Ronald,USA,Hip-Hop,,2013,LBL_0035,False,0.032
+ART_0142,The Thompsons,USA,Pop,,2019,LBL_0006,False,0.02
+ART_0143,The Rubios,Germany,Indie,,2011,LBL_0016,True,0.017
+ART_0144,Amber Wright,France,Pop,,2003,LBL_0038,False,0.028
+ART_0145,Charles,USA,Electronic,,1990,LBL_0018,True,0.019
+ART_0146,Big Stephen,USA,Hip-Hop,Classical,1997,LBL_0043,False,0.069
+ART_0147,Mary Travis,Nepal,Electronic,,2006,LBL_0004,True,0.078
+ART_0148,Pedro Ramos,USA,Country,,2013,LBL_0033,True,0.058
+ART_0149,The Mcclains,Japan,R&B,,2023,LBL_0020,True,0.021
+ART_0150,The Rivass,USA,Rock,Classical,1996,LBL_0032,True,0.017
+ART_0151,Stephanie Manning,France,Pop,,1994,LBL_0009,True,0.063
+ART_0152,David Wright,USA,Pop,,2023,LBL_0019,True,0.022
+ART_0153,Pamela Boyd,Niue,Indie,,2003,LBL_0028,True,0.092
+ART_0154,Jeremiah Reeves,UK,Indie,Country,2016,LBL_0047,True,0.088
+ART_0155,George Orozco,Belgium,Country,,2020,LBL_0005,True,0.044
+ART_0156,David Benson,France,Country,,2013,LBL_0009,True,0.02
+ART_0157,Amy Russell,UK,Country,Pop,1997,LBL_0027,True,0.021
+ART_0158,Jennifer Clark,UK,Rock,,2009,LBL_0023,True,0.044
+ART_0159,The Fishers,UK,Indie,Jazz,1996,LBL_0023,True,0.02
+ART_0160,The Steins,USA,Jazz,,1991,LBL_0039,True,0.018
+ART_0161,Shannon Cannon,Hong Kong,Hip-Hop,Rock,2009,LBL_0022,False,0.025
+ART_0162,Woods,USA,Electronic,,1991,LBL_0006,True,0.066
+ART_0163,Elizabeth Price,UK,Pop,,2009,LBL_0047,True,0.03
+ART_0164,The Snows,Syrian Arab Republic,Rock,,1999,LBL_0011,True,0.026
+ART_0165,DJ Robert King,San Marino,R&B,,2017,LBL_0032,True,0.018
+ART_0166,The Navarros,USA,Pop,,1997,LBL_0019,True,0.027
+ART_0167,The Marshs,Ukraine,Country,,2004,LBL_0026,True,0.168
+ART_0168,Daniel Graham,Canada,Rock,,1998,LBL_0049,True,0.018
+ART_0169,The Rogerss,France,Hip-Hop,Classical,2001,LBL_0009,False,0.024
+ART_0170,The Powells,USA,Hip-Hop,,1992,LBL_0028,True,0.048
+ART_0171,Cameron Dean,USA,Hip-Hop,Indie,2016,LBL_0019,True,0.033
+ART_0172,James Elliott,Anguilla,Classical,,2013,LBL_0006,True,0.031
+ART_0173,Young Christopher Baby,Canada,Hip-Hop,,1995,LBL_0026,True,0.031
+ART_0174,The Pattersons,USA,Electronic,Hip-Hop,1997,LBL_0034,True,0.021
+ART_0175,The Camachos,UK,Electronic,Hip-Hop,1999,LBL_0017,True,0.02
+ART_0176,The Whites,Japan,Country,,2021,LBL_0030,True,0.038
+ART_0177,Garrett Gibson,Canada,Metal,Electronic,2010,LBL_0041,True,0.039
+ART_0178,Diana Bean,Italy,R&B,,2012,LBL_0033,True,0.046
+ART_0179,Bradley Smith,Germany,Rock,,1995,LBL_0040,True,0.057
+ART_0180,The Ryans,Germany,Pop,,1992,LBL_0029,True,0.024
+ART_0181,The Cookes,USA,Rock,Classical,2022,LBL_0010,True,0.024
+ART_0182,The Bells,Pakistan,Country,Indie,1995,LBL_0033,True,0.037
+ART_0183,Tyler Williams,Antarctica (the territory South of 60 deg S),Pop,,2000,LBL_0024,True,0.028
+ART_0184,Herring,Canada,Electronic,,1993,LBL_0041,True,0.031
+ART_0185,The Gonzalezs,UK,Country,Hip-Hop,2006,LBL_0047,True,0.037
+ART_0186,The Hernandezs,UK,Hip-Hop,,1999,LBL_0023,True,0.051
+ART_0187,Young David Baby,France,R&B,Metal,1995,LBL_0020,False,0.021
+ART_0188,Kristy Robinson,USA,Pop,,2017,LBL_0033,True,0.021
+ART_0189,Pamela Jackson,New Caledonia,Pop,,2021,LBL_0013,True,0.018
+ART_0190,Tamara,USA,R&B,Hip-Hop,1996,LBL_0033,True,0.026
+ART_0191,The Higginss,USA,Electronic,Indie,1999,LBL_0011,False,0.017
+ART_0192,The Stricklands,UK,Classical,Indie,2013,LBL_0044,True,0.023
+ART_0193,The Martins,France,Jazz,Electronic,2005,LBL_0020,True,0.025
+ART_0194,The Collinss,Japan,Rock,,2018,LBL_0030,True,0.02
+ART_0195,Big Beth King,Vanuatu,R&B,,2000,LBL_0013,True,0.026
+ART_0196,Lil Larry King,Philippines,R&B,,1996,LBL_0046,True,0.017
+ART_0197,The Odonnells,Honduras,Classical,Indie,2022,LBL_0010,True,0.017
+ART_0198,Angela Vaughn,Niue,Hip-Hop,Classical,1991,LBL_0027,True,0.04
+ART_0199,The Sanchezs,Japan,Country,Hip-Hop,2010,LBL_0007,False,0.021
+ART_0200,DJ Heidi Prince,USA,Hip-Hop,Pop,2020,LBL_0045,True,0.018
+ART_0201,The Turners,UK,Pop,,1999,LBL_0036,True,0.024
+ART_0202,Renee Hogan,Mongolia,Indie,R&B,2005,LBL_0020,False,0.035
+ART_0203,Hannah Patterson,USA,Pop,,2021,LBL_0039,True,0.019
+ART_0204,Jonathan Peterson,USA,Metal,,2008,LBL_0028,True,0.027
+ART_0205,Samantha Garcia,UK,Jazz,,2023,LBL_0024,True,0.018
+ART_0206,The Yus,North Macedonia,Rock,,1991,LBL_0025,True,0.017
+ART_0207,Snowx,Kuwait,Electronic,Rock,1991,LBL_0023,True,0.025
+ART_0208,Jessica Gross,France,Indie,Hip-Hop,2011,LBL_0009,True,0.025
+ART_0209,Robert Medina,Liberia,R&B,Indie,2019,LBL_0045,False,0.028
+ART_0210,Lil Steven King,Canada,R&B,,2002,LBL_0003,True,0.032
+ART_0211,Leslie Morris,Japan,Country,,2024,LBL_0031,True,0.108
+ART_0212,Timothy Ramirez,Korea,Classical,,1993,LBL_0042,True,0.024
+ART_0213,John Bishop,Hong Kong,Indie,Country,2018,LBL_0025,True,0.02
+ART_0214,The Rogerss,USA,Rock,,2023,LBL_0018,True,0.037
+ART_0215,Frederick Freeman MD,USA,Electronic,,2001,LBL_0035,True,0.02
+ART_0216,The Greens,USA,Rock,,2017,LBL_0011,True,0.022
+ART_0217,Black Ramirez,Germany,Metal,Pop,2012,LBL_0040,False,0.018
+ART_0218,Iron Carlson,UK,Metal,,2015,LBL_0024,True,0.017
+ART_0219,Kristi Black,Comoros,Pop,Classical,2018,LBL_0003,True,0.087
+ART_0220,Nathan Freeman,USA,Classical,,1992,LBL_0039,True,0.041
+ART_0221,Melissa Brewer,Germany,Indie,,1994,LBL_0037,True,0.03
+ART_0222,The Henrys,France,Rock,,1997,LBL_0002,True,0.022
+ART_0223,Anna Walker,UK,Electronic,,2006,LBL_0050,True,0.018
+ART_0224,Elizabeth Perkins,USA,Indie,,2021,LBL_0013,True,0.018
+ART_0225,The Kennedys,USA,Pop,Classical,2018,LBL_0006,True,0.019
+ART_0226,The Schmidts,USA,Classical,Hip-Hop,2024,LBL_0019,True,0.025
+ART_0227,Erin Warner,Faroe Islands,Hip-Hop,Pop,2022,LBL_0015,True,0.031
+ART_0228,The Parkers,Japan,Indie,Rock,2013,LBL_0030,False,0.029
+ART_0229,Grave Hall,USA,Metal,Rock,2015,LBL_0046,False,0.02
+ART_0230,Emily Newton,USA,Metal,,2010,LBL_0042,True,0.079
+ART_0231,Tapiax,UK,Electronic,Rock,2001,LBL_0050,True,0.033
+ART_0232,Cheryl Rodgers,USA,Indie,,2009,LBL_0011,True,0.025
+ART_0233,The Hills,Namibia,Indie,Metal,2023,LBL_0019,True,0.027
+ART_0234,Tiffany Baby,Germany,Hip-Hop,,2009,LBL_0040,True,0.022
+ART_0235,The Campbells,Bolivia,R&B,Electronic,2011,LBL_0037,True,0.019
+ART_0236,The Walls,Germany,Pop,Country,2016,LBL_0040,True,0.021
+ART_0237,Isaac Turner,Japan,Country,,2009,LBL_0031,True,0.034
+ART_0238,Beth Williams,USA,Rock,,1993,LBL_0011,True,0.017
+ART_0239,Edgar Raymond,USA,Pop,,2010,LBL_0046,True,0.018
+ART_0240,Nicole Garcia,USA,Pop,,2013,LBL_0033,True,0.017
+ART_0241,Duane Mendoza,Guam,Classical,,2005,LBL_0010,True,0.017
+ART_0242,Jack King,Austria,Hip-Hop,,2005,LBL_0011,True,0.044
+ART_0243,The Kings,USA,Classical,,2019,LBL_0032,True,0.031
+ART_0244,Ashley Jones,Germany,Pop,,2019,LBL_0016,True,0.023
+ART_0245,Lil Travis Prince,Morocco,Hip-Hop,,2020,LBL_0019,True,0.018
+ART_0246,Amy Hernandez,UK,Electronic,,2015,LBL_0024,True,0.024
+ART_0247,Xavier Wilson,USA,R&B,Rock,2014,LBL_0033,False,0.023
+ART_0248,The Obriens,Canada,Hip-Hop,,1996,LBL_0026,False,0.018
+ART_0249,Courtney Mills,Korea,Country,,2022,LBL_0026,True,0.022
+ART_0250,Elizabeth Chapman,USA,Indie,,2020,LBL_0034,True,0.022
+ART_0251,Keith Brown,USA,Country,Classical,2010,LBL_0011,True,0.027
+ART_0252,Annette Farmer,USA,Rock,,2022,LBL_0035,False,0.028
+ART_0253,Deborah Miller,UK,Pop,,2011,LBL_0044,True,0.017
+ART_0254,Juan Moore,USA,Indie,Jazz,1991,LBL_0039,True,0.021
+ART_0255,Michael Harrison,USA,Pop,R&B,2020,LBL_0011,False,0.027
+ART_0256,Dwayne Campbell,Canada,Indie,,2005,LBL_0003,True,0.024
+ART_0257,Andrea Hall,USA,Electronic,Indie,2016,LBL_0010,True,0.044
+ART_0258,Rick Lawrence,USA,Metal,Indie,1993,LBL_0046,True,0.029
+ART_0259,Young Linda King,Japan,R&B,Electronic,2001,LBL_0030,True,0.018
+ART_0260,Brian Walker,Germany,Metal,Electronic,2002,LBL_0016,True,0.017
+ART_0261,Charles Brown,Germany,Hip-Hop,Country,2021,LBL_0021,False,0.028
+ART_0262,DJ Laura King,Japan,R&B,Electronic,2024,LBL_0025,False,0.017
+ART_0263,Young Brooke Prince,Sweden,Hip-Hop,Country,1995,LBL_0023,True,0.026
+ART_0264,The Carrolls,France,Electronic,,2007,LBL_0009,True,0.069
+ART_0265,John Torres,Iraq,Country,,2004,LBL_0041,True,0.026
+ART_0266,The Benders,USA,Indie,,1998,LBL_0001,True,0.021
+ART_0267,Black Mason,Japan,Metal,Rock,2020,LBL_0031,True,0.028
+ART_0268,Lil Troy Baby,USA,R&B,Pop,2004,LBL_0035,True,0.023
+ART_0269,Andrew Reynolds,USA,Jazz,Country,2015,LBL_0032,True,0.025
+ART_0270,David Davis,Peru,Jazz,Country,1990,LBL_0020,True,0.069
+ART_0271,The Johnstons,USA,R&B,,2024,LBL_0034,True,0.021
+ART_0272,Yvonne Chambers,USA,Rock,,1997,LBL_0022,True,0.085
+ART_0273,Andrew Avila,USA,Pop,,2011,LBL_0019,True,0.055
+ART_0274,Lil Thomas Prince,USA,Hip-Hop,,2015,LBL_0028,False,0.019
+ART_0275,Catherine Richards,Germany,Hip-Hop,,2010,LBL_0016,True,0.017
+ART_0276,Big Cynthia,UK,Hip-Hop,,1990,LBL_0017,True,0.018
+ART_0277,The Vasquezs,USA,Rock,Country,2022,LBL_0046,True,0.017
+ART_0278,The Daviss,USA,Pop,,2004,LBL_0015,True,0.018
+ART_0279,The Baileys,UK,Pop,Electronic,2013,LBL_0027,True,0.03
+ART_0280,The Cooks,Paraguay,Metal,,1995,LBL_0034,False,0.017
+ART_0281,Christopher Jenkins,Lithuania,Jazz,,2022,LBL_0013,True,0.02
+ART_0282,Robin Pierce,Korea,Hip-Hop,,1997,LBL_0044,True,0.043
+ART_0283,David Wilson,France,Classical,,2019,LBL_0009,True,0.017
+ART_0284,Sharon Bryan,Afghanistan,Rock,,2009,LBL_0047,True,0.039
+ART_0285,The Sandovals,Canada,Metal,,1994,LBL_0003,True,0.02
+ART_0286,Cody Cox,Saudi Arabia,R&B,Classical,2020,LBL_0003,True,0.018
+ART_0287,The Jimenezs,Germany,Pop,,2014,LBL_0029,True,0.031
+ART_0288,The Ramoss,France,Jazz,,2024,LBL_0009,True,0.028
+ART_0289,The Williamss,Ethiopia,Indie,,2023,LBL_0009,False,0.048
+ART_0290,Grave Dunn,Japan,Metal,Jazz,2009,LBL_0030,True,0.033
+ART_0291,Jessica Wolfe,USA,Jazz,Pop,1999,LBL_0018,True,0.038
+ART_0292,The Martinezs,Germany,Country,,2016,LBL_0040,True,0.02
+ART_0293,Lisa Allen,USA,Rock,Pop,1996,LBL_0039,True,0.019
+ART_0294,Juan Tran,Canada,Metal,Hip-Hop,1992,LBL_0026,True,0.034
+ART_0295,The Daviss,USA,Rock,,2008,LBL_0015,True,0.038
+ART_0296,Susan Murray MD,Germany,Metal,,2010,LBL_0016,True,0.172
+ART_0297,The Colliers,UK,Country,R&B,1993,LBL_0036,True,0.022
+ART_0298,The Jimenezs,UK,Country,Classical,1993,LBL_0023,True,0.021
+ART_0299,Katrina Hill,USA,Electronic,,2016,LBL_0010,True,0.036
+ART_0300,The Davenports,Japan,Rock,Metal,1999,LBL_0030,True,0.021
+ART_0301,Mrs. Kristen Reyes,Germany,Rock,,2014,LBL_0016,True,0.064
+ART_0302,Katie Suarez,USA,Rock,,2013,LBL_0006,True,0.045
+ART_0303,Desiree Tyler,USA,Rock,Metal,1992,LBL_0005,True,0.022
+ART_0304,The Villas,Madagascar,R&B,,2003,LBL_0022,True,0.034
+ART_0305,Big Joseph Prince,Germany,Hip-Hop,,2020,LBL_0016,True,0.034
+ART_0306,Nicholas Monroe,Japan,Pop,,2014,LBL_0030,True,0.018
+ART_0307,The Carpenters,Japan,Metal,Jazz,2021,LBL_0030,True,0.054
+ART_0308,Sharon Griffin,Liberia,Indie,,2016,LBL_0003,True,0.024
+ART_0309,Juan Daniels,USA,Metal,R&B,2016,LBL_0019,True,0.04
+ART_0310,Storm Gibson,UK,Metal,R&B,2011,LBL_0017,True,0.02
+ART_0311,Colin Terry,USA,Rock,,2012,LBL_0011,True,0.052
+ART_0312,The Halls,USA,Hip-Hop,Pop,1993,LBL_0034,True,0.021
+ART_0313,Lil Kimberly Baby,USA,R&B,,2004,LBL_0005,True,0.017
+ART_0314,Patrick Thornton,Sudan,Classical,,2020,LBL_0043,False,0.055
+ART_0315,William Sparks,UK,Rock,,2023,LBL_0047,True,0.018
+ART_0316,Vincent Martinez,Nauru,R&B,,2017,LBL_0012,True,0.02
+ART_0317,The Riveras,Bolivia,Rock,Indie,2012,LBL_0018,True,0.075
+ART_0318,The Sawyers,France,Rock,Pop,2004,LBL_0020,False,0.076
+ART_0319,Joseph Bryant,Saint Helena,Electronic,,2014,LBL_0025,True,0.026
+ART_0320,The Thomass,USA,Country,Rock,2017,LBL_0042,True,0.028
+ART_0321,Tracy Jones,USA,Country,Indie,1992,LBL_0015,True,0.023
+ART_0322,The Harringtons,UK,Pop,,1994,LBL_0044,False,0.02
+ART_0323,The Bakers,France,Indie,Classical,2010,LBL_0002,True,0.021
+ART_0324,Cindy Prince,USA,Hip-Hop,,2009,LBL_0011,True,0.029
+ART_0325,The Sanderss,USA,Pop,Rock,1998,LBL_0045,False,0.034
+ART_0326,Gary Craig,USA,Indie,Classical,2004,LBL_0005,True,0.037
+ART_0327,Storm Ferguson,France,Metal,,2010,LBL_0002,True,0.037
+ART_0328,The Finleys,UK,Indie,,2017,LBL_0012,True,0.018
+ART_0329,Katherine Weaver,USA,R&B,Hip-Hop,2005,LBL_0046,True,0.024
+ART_0330,Cynthia Cohen,France,Country,,2010,LBL_0024,True,0.017
+ART_0331,Nicole Hamilton MD,Japan,Electronic,,2007,LBL_0007,True,0.025
+ART_0332,Shelia Wallace,Puerto Rico,Pop,,1991,LBL_0006,True,0.022
+ART_0333,Allen Nguyen,USA,Jazz,,2014,LBL_0001,True,0.05
+ART_0334,DJ Brian Baby,Guinea-Bissau,Hip-Hop,,2005,LBL_0037,True,0.021
+ART_0335,Charles Schmidt,USA,Rock,,1994,LBL_0011,False,0.018
+ART_0336,The Knights,Germany,Classical,Indie,2006,LBL_0016,False,0.018
+ART_0337,Sparksx,USA,Electronic,,2009,LBL_0001,True,0.034
+ART_0338,Bob Pitts,USA,Pop,Jazz,2018,LBL_0022,True,0.027
+ART_0339,Cynthia Durham,Japan,Rock,Country,2002,LBL_0031,True,0.018
+ART_0340,The Thomass,Germany,Classical,,2021,LBL_0037,True,0.018
+ART_0341,The Murrays,Equatorial Guinea,Pop,Jazz,2013,LBL_0008,True,0.031
+ART_0342,Michael Nolan,UK,Indie,,1991,LBL_0047,True,0.017
+ART_0343,Marshall,UK,Electronic,,1994,LBL_0027,True,0.04
+ART_0344,The Robertss,Japan,Electronic,,2017,LBL_0025,True,0.031
+ART_0345,Angela Landry,USA,Country,Metal,2016,LBL_0035,True,0.018
+ART_0346,Young Vanessa Baby,Japan,R&B,,1995,LBL_0007,True,0.018
+ART_0347,The Haydens,Portugal,Hip-Hop,,2015,LBL_0049,True,0.145
+ART_0348,Ryan Gonzalez,UK,Classical,,2023,LBL_0036,True,0.021
+ART_0349,John Young,Montserrat,Electronic,,2022,LBL_0010,True,0.021
+ART_0350,Michael Johnson,UK,Hip-Hop,,1997,LBL_0047,True,0.039
+ART_0351,Jennifer Smith,Japan,Indie,,2020,LBL_0007,True,0.073
+ART_0352,Lil Michelle Baby,France,R&B,Metal,1997,LBL_0002,True,0.142
+ART_0353,Valerie Lozano,USA,Country,,2000,LBL_0022,True,0.034
+ART_0354,The Mcgees,UK,Indie,,2001,LBL_0012,True,0.021
+ART_0355,Stephanie Parsons,Germany,Indie,Jazz,2002,LBL_0029,True,0.018
+ART_0356,Robert Robinson,Germany,Classical,,1994,LBL_0037,True,0.036
+ART_0357,The Kings,Canada,R&B,Classical,2019,LBL_0008,True,0.025
+ART_0358,Patricia Becker,UK,Classical,,1997,LBL_0023,True,0.022
+ART_0359,Brent Burton,Germany,Classical,,2009,LBL_0040,True,0.055
+ART_0360,Richard Johnson,Haiti,Country,,1997,LBL_0012,True,0.018
+ART_0361,The Daviss,USA,R&B,Hip-Hop,2014,LBL_0028,True,0.024
+ART_0362,Paul Thompson,USA,Rock,,2021,LBL_0019,False,0.017
+ART_0363,Joshua Mata,Marshall Islands,Indie,,2012,LBL_0001,True,0.023
+ART_0364,The Shaws,UK,Indie,R&B,2021,LBL_0027,True,0.017
+ART_0365,Christopher Sloan,Western Sahara,Pop,,1991,LBL_0049,True,0.018
+ART_0366,DJ Timothy,Germany,R&B,,2019,LBL_0037,True,0.018
+ART_0367,The Drakes,San Marino,Pop,Metal,2013,LBL_0035,True,0.028
+ART_0368,Big Monica King,Japan,Hip-Hop,,2017,LBL_0007,True,0.033
+ART_0369,Lil Linda Baby,Lao People's Democratic Republic,R&B,Country,1995,LBL_0029,True,0.026
+ART_0370,The Mccartys,USA,Rock,Pop,2017,LBL_0011,True,0.086
+ART_0371,Big Donald King,USA,R&B,,2024,LBL_0018,True,0.021
+ART_0372,Big Tammy Prince,UK,R&B,Hip-Hop,2022,LBL_0044,True,0.02
+ART_0373,Misty Whitney,Tanzania,Electronic,R&B,1998,LBL_0016,True,0.046
+ART_0374,Holly Gibbs,Canada,Pop,Hip-Hop,2007,LBL_0041,True,0.019
+ART_0375,Young Alexander Prince,USA,Hip-Hop,,2007,LBL_0045,False,0.088
+ART_0376,The Herreras,UK,Country,Rock,1995,LBL_0047,True,0.017
+ART_0377,Death Gibson,USA,Metal,,2015,LBL_0014,True,0.097
+ART_0378,The Chamberss,Germany,Country,Pop,1998,LBL_0037,False,0.017
+ART_0379,Lauren Carson,France,Rock,,2019,LBL_0002,False,0.051
+ART_0380,The Bentleys,USA,Country,Electronic,2017,LBL_0013,True,0.024
+ART_0381,Rodriguezx,Djibouti,Electronic,Hip-Hop,2007,LBL_0006,False,0.2
+ART_0382,Big Thomas Prince,UK,R&B,Pop,2009,LBL_0047,True,0.017
+ART_0383,Terri Murphy,France,Pop,,1994,LBL_0009,False,0.025
+ART_0384,DJ Chelsea Baby,Canada,R&B,,2011,LBL_0008,False,0.096
+ART_0385,The Hollands,North Macedonia,Electronic,Hip-Hop,1996,LBL_0007,True,0.024
+ART_0386,Dark Colon,USA,Metal,,1999,LBL_0005,True,0.028
+ART_0387,DJ Regina Prince,Canada,Hip-Hop,,2003,LBL_0041,False,0.03
+ART_0388,The Turners,France,Country,,1997,LBL_0038,True,0.023
+ART_0389,Death Ortiz,USA,Metal,Electronic,2005,LBL_0018,True,0.028
+ART_0390,The Taylors,Yemen,Pop,Electronic,1991,LBL_0043,True,0.026
+ART_0391,The Johnsons,USA,Metal,,2008,LBL_0042,False,0.053
+ART_0392,Audrey Young DDS,Canada,Classical,Country,2021,LBL_0041,True,0.017
+ART_0393,The Prices,Japan,Pop,,1998,LBL_0025,True,0.02
+ART_0394,Melissa Fernandez,Namibia,Hip-Hop,,2020,LBL_0050,True,0.075
+ART_0395,Brittany Perry,USA,Classical,R&B,2015,LBL_0033,True,0.051
+ART_0396,John Russell,Canada,Pop,,1995,LBL_0041,True,0.023
+ART_0397,The Lynns,Antigua and Barbuda,Country,,2022,LBL_0014,True,0.027
+ART_0398,Big Hannah,Cuba,Hip-Hop,Rock,1994,LBL_0020,True,0.02
+ART_0399,The Ramoss,France,Country,,1993,LBL_0020,False,0.019
+ART_0400,Savannah Garcia,USA,Pop,,1998,LBL_0045,True,0.023
+ART_0401,Kimberly Levine,USA,Indie,Rock,2006,LBL_0011,True,0.021
+ART_0402,Black Howard,USA,Metal,,1991,LBL_0022,True,0.026
+ART_0403,Colton Martinez,USA,Metal,,1994,LBL_0032,True,0.017
+ART_0404,Matthew May,UK,R&B,,2006,LBL_0050,True,0.105
+ART_0405,Alison Buchanan,USA,Pop,,1992,LBL_0001,True,0.143
+ART_0406,DJ John Baby,UK,R&B,,1992,LBL_0036,True,0.031
+ART_0407,Justin Jones,Serbia,Pop,Rock,2007,LBL_0005,True,0.025
+ART_0408,The Spencers,Namibia,Pop,,2023,LBL_0003,True,0.02
+ART_0409,Erin Hernandez,Germany,Hip-Hop,,2009,LBL_0021,True,0.039
+ART_0410,The Lesters,Japan,Electronic,Metal,2005,LBL_0030,True,0.03
+ART_0411,Brianna Anderson,El Salvador,R&B,,2005,LBL_0010,True,0.018
+ART_0412,Ashley Delacruz,USA,Classical,Electronic,1990,LBL_0022,False,0.056
+ART_0413,Hunter Kramer,Germany,Jazz,Hip-Hop,2023,LBL_0016,True,0.04
+ART_0414,Brianna Prince,Canada,Hip-Hop,,1995,LBL_0003,True,0.075
+ART_0415,Derek Martinez,France,Metal,,1995,LBL_0038,True,0.032
+ART_0416,The Fishers,Brazil,Jazz,,2017,LBL_0043,True,0.027
+ART_0417,The Reeses,USA,Jazz,,2015,LBL_0045,True,0.022
+ART_0418,The Alvarezs,France,Rock,,2002,LBL_0009,True,0.065
+ART_0419,Ashley Gordon,Germany,R&B,,2019,LBL_0021,True,0.046
+ART_0420,Amanda Logan,Canada,Classical,,2006,LBL_0008,True,0.017
+ART_0421,The Camachos,USA,Rock,,1992,LBL_0014,True,0.017
+ART_0422,Judith Maynard,Canada,Pop,,2012,LBL_0026,True,0.021
+ART_0423,The Browns,Canada,Classical,,1991,LBL_0026,False,0.039
+ART_0424,James Parks,Liechtenstein,Country,Jazz,1996,LBL_0009,False,0.149
+ART_0425,Lil Jennifer King,UK,Hip-Hop,,2015,LBL_0024,True,0.018
+ART_0426,Steven Morris,USA,Metal,Country,2002,LBL_0042,False,0.026
+ART_0427,Cameron Weber,UK,Rock,R&B,2019,LBL_0004,True,0.021
+ART_0428,Michelle James,UK,Jazz,Country,2014,LBL_0044,True,0.097
+ART_0429,Death Harper,Canada,Metal,,1999,LBL_0003,True,0.042
+ART_0430,Jonathan Jordan,UK,Jazz,,2020,LBL_0004,True,0.042
+ART_0431,The Mcguires,Germany,Country,R&B,2023,LBL_0016,True,0.023
+ART_0432,DJ Danny King,Japan,Hip-Hop,,2012,LBL_0031,True,0.022
+ART_0433,Kristen Glenn,France,Hip-Hop,Pop,2001,LBL_0002,True,0.02
+ART_0434,Stephen Gutierrez,Sweden,Metal,,2020,LBL_0034,True,0.017
+ART_0435,Jason Davis,USA,Jazz,Electronic,2005,LBL_0018,True,0.046
+ART_0436,The Simmonss,UK,Indie,,2014,LBL_0023,True,0.039
+ART_0437,The Ortegas,Holy See (Vatican City State),Rock,Jazz,2010,LBL_0003,True,1.0
+ART_0438,Melissa Wells,Bermuda,Rock,,2002,LBL_0032,False,0.29
+ART_0439,Anna Davis,Saint Vincent and the Grenadines,Pop,Electronic,2004,LBL_0002,True,0.025
+ART_0440,Carlos Brown,USA,Country,Pop,2011,LBL_0046,False,0.035
+ART_0441,Meagan Jenkins,UK,Hip-Hop,,1999,LBL_0050,True,0.071
+ART_0442,Teresa Henderson,France,Indie,,2015,LBL_0038,True,0.043
+ART_0443,Moonxx,Canada,Electronic,Metal,2017,LBL_0041,True,0.019
+ART_0444,Iron Williams,USA,Metal,Electronic,2012,LBL_0015,False,0.023
+ART_0445,The Robertss,USA,Rock,Pop,1990,LBL_0045,True,0.018
+ART_0446,Brian Romero,Germany,Indie,Hip-Hop,2010,LBL_0040,True,0.078
+ART_0447,Dr. Gregory Hawkins,Germany,R&B,Country,1994,LBL_0016,True,0.027
+ART_0448,Darrell Patterson,Monaco,R&B,,2006,LBL_0014,False,0.019
+ART_0449,The Villegass,Germany,Indie,R&B,2014,LBL_0029,True,0.029
+ART_0450,The Austins,USA,R&B,,2012,LBL_0035,True,0.027
+ART_0451,Allison Hickman,USA,Country,,2004,LBL_0011,False,0.021
+ART_0452,Debra White,Reunion,Pop,,2006,LBL_0007,True,0.018
+ART_0453,Tammy Bell,USA,Pop,,1995,LBL_0022,False,0.029
+ART_0454,The Whites,Cambodia,Indie,,2000,LBL_0039,True,0.024
+ART_0455,The Knights,UK,Country,Electronic,2002,LBL_0027,True,0.035
+ART_0456,Mark Johnson,Germany,R&B,,2009,LBL_0016,False,0.024
+ART_0457,The Reeses,USA,Electronic,,1990,LBL_0028,False,0.044
+ART_0458,The Lewiss,USA,Pop,,2003,LBL_0011,False,0.025
+ART_0459,Glen Wood,Japan,Pop,,2015,LBL_0031,True,0.025
+ART_0460,The Griffiths,UK,Classical,,2001,LBL_0024,True,0.048
+ART_0461,Latoya Miller,Austria,Jazz,,2019,LBL_0017,True,0.022
+ART_0462,The Moores,USA,Rock,,1996,LBL_0006,True,0.018
+ART_0463,Amber Miller,UK,Electronic,Indie,2004,LBL_0036,True,0.017
+ART_0464,Jeff Lawson,Japan,Pop,Rock,2005,LBL_0031,True,0.034
+ART_0465,The Perrys,Germany,Country,,2023,LBL_0037,True,0.027
+ART_0466,Big Jason Baby,Malaysia,Hip-Hop,,2001,LBL_0011,True,0.031
+ART_0467,Douglas Gregory,Canada,R&B,Rock,2002,LBL_0041,False,0.019
+ART_0468,Amber Foster,UK,Hip-Hop,Metal,2015,LBL_0036,True,0.018
+ART_0469,Aimee Turner,UK,Jazz,,1997,LBL_0027,True,0.017
+ART_0470,Chad Scott,Greece,Pop,,1996,LBL_0007,True,0.021
+ART_0471,Jonathan Jordan,UK,Pop,,2012,LBL_0027,True,0.026
+ART_0472,The Patels,USA,Hip-Hop,,2001,LBL_0018,True,0.022
+ART_0473,The Halls,USA,Electronic,Pop,2011,LBL_0045,True,0.022
+ART_0474,Mary Gomez,France,Country,Rock,2009,LBL_0020,True,0.054
+ART_0475,The Harmons,France,Hip-Hop,,2004,LBL_0009,True,0.021
+ART_0476,Joe Miller,USA,Classical,,1995,LBL_0013,True,0.024
+ART_0477,The Edwardss,UK,Indie,,2023,LBL_0024,True,0.036
+ART_0478,The Sullivans,Canada,R&B,,2022,LBL_0026,True,0.022
+ART_0479,Donna Sullivan,UK,Pop,Electronic,2002,LBL_0004,True,0.027
+ART_0480,The Burchs,USA,Electronic,,2019,LBL_0033,True,0.045
+ART_0481,The Jacksons,UK,Pop,,2018,LBL_0012,True,0.075
+ART_0482,The Mezas,Kuwait,Rock,,2006,LBL_0048,False,0.018
+ART_0483,Death Collier,Uruguay,Metal,,2003,LBL_0015,False,0.062
+ART_0484,The Coxs,Japan,Pop,Rock,1990,LBL_0031,True,0.024
+ART_0485,Kimxx,Botswana,Electronic,Classical,2009,LBL_0046,True,0.02
+ART_0486,Kevin Warren,Japan,Country,Rock,2003,LBL_0030,False,0.023
+ART_0487,The Fosters,UK,Classical,,2013,LBL_0036,False,0.119
+ART_0488,Collinsxx,USA,Electronic,,1994,LBL_0022,True,0.024
+ART_0489,Gary Jackson,USA,Pop,R&B,2009,LBL_0013,True,0.021
+ART_0490,Jordan Bullock,Guernsey,Hip-Hop,R&B,1998,LBL_0047,True,0.028
+ART_0491,Bellxx,France,Electronic,,1992,LBL_0038,True,0.019
+ART_0492,The Mullens,Canada,Pop,Metal,2024,LBL_0041,True,0.017
+ART_0493,Big Debbie King,Cameroon,Hip-Hop,,2000,LBL_0043,True,0.018
+ART_0494,The Youngs,UK,Pop,,2001,LBL_0044,True,0.018
+ART_0495,The Thomass,UK,Pop,,2009,LBL_0027,True,0.018
+ART_0496,The Morrisons,Japan,Hip-Hop,Indie,1997,LBL_0031,True,0.018
+ART_0497,The Wolfs,Canada,Pop,,2022,LBL_0008,False,0.028
+ART_0498,Riosx,France,Electronic,,1999,LBL_0009,True,0.019
+ART_0499,Raymond Snyder,USA,Classical,Indie,2019,LBL_0010,True,0.021
+ART_0500,Lil Karen Prince,Senegal,R&B,Hip-Hop,2001,LBL_0021,True,0.052
+ART_0501,The Rileys,USA,Rock,,2000,LBL_0032,True,0.023
+ART_0502,Sonia Day,Canada,Rock,,2017,LBL_0026,True,0.029
+ART_0503,The Downss,USA,Pop,,2013,LBL_0001,False,0.018
+ART_0504,The Morriss,Niue,Country,Electronic,1990,LBL_0041,False,0.019
+ART_0505,Jeremiah Harrison,Norfolk Island,Classical,Electronic,2014,LBL_0033,True,0.017
+ART_0506,Donald Brown,UK,Pop,,2019,LBL_0047,True,0.018
+ART_0507,Storm Romero,USA,Metal,,1998,LBL_0022,True,0.02
+ART_0508,Jesse Brown,France,Pop,,2015,LBL_0002,True,0.019
+ART_0509,The Deckers,USA,Electronic,,2022,LBL_0011,True,0.018
+ART_0510,Sean Wyatt,Germany,Classical,Pop,2024,LBL_0040,False,0.018
+ART_0511,Katie Ford,Micronesia,Indie,,1997,LBL_0027,True,0.023
+ART_0512,The Bests,Saint Vincent and the Grenadines,Classical,,2003,LBL_0045,False,0.019
+ART_0513,Big Paula Prince,USA,R&B,,2023,LBL_0018,True,0.021
+ART_0514,Marissa Morris,Lebanon,Hip-Hop,,1997,LBL_0019,True,0.024
+ART_0515,Joanna Shepherd,Taiwan,R&B,,2023,LBL_0013,True,0.03
+ART_0516,Miguel Wagner,China,Pop,,2020,LBL_0022,False,0.017
+ART_0517,The Williamss,USA,Indie,,2021,LBL_0010,True,0.038
+ART_0518,The Zimmermans,Kazakhstan,Electronic,,2006,LBL_0042,False,0.028
+ART_0519,Young Alexandria King,Canada,R&B,,2001,LBL_0003,True,0.018
+ART_0520,The Bishops,USA,Jazz,,1992,LBL_0001,True,0.047
+ART_0521,Thomas Hughes,Germany,Country,,2018,LBL_0040,True,0.06
+ART_0522,Meghan Williams,Canada,Electronic,Indie,1997,LBL_0026,True,0.017
+ART_0523,The Cooks,Canada,R&B,Rock,2000,LBL_0008,True,0.02
+ART_0524,The Riveras,Moldova,Pop,,2020,LBL_0037,True,0.038
+ART_0525,The Gregorys,UK,Pop,Indie,1991,LBL_0044,True,0.033
+ART_0526,Nathaniel Douglas,United States of America,Rock,Pop,1997,LBL_0027,True,0.019
+ART_0527,The Morrisons,UK,Rock,,2023,LBL_0050,True,0.019
+ART_0528,Brad Alvarado,USA,Indie,,2011,LBL_0034,True,0.021
+ART_0529,Emily Douglas,Japan,Rock,,2005,LBL_0031,True,0.023
+ART_0530,Iron Bates,USA,Metal,,1993,LBL_0001,True,0.027
+ART_0531,Young David Baby,USA,Hip-Hop,,2000,LBL_0005,True,0.021
+ART_0532,The Fletchers,Belize,Rock,,2014,LBL_0026,True,0.023
+ART_0533,Rickey Li,USA,R&B,Rock,1995,LBL_0032,True,0.033
+ART_0534,Sandra Rodgers,UK,Country,Electronic,1992,LBL_0036,True,0.017
+ART_0535,Jenningsx,USA,Electronic,,2003,LBL_0042,True,0.019
+ART_0536,The Foxs,USA,Electronic,Indie,2019,LBL_0022,False,0.031
+ART_0537,Jessica Cox,USA,Classical,Electronic,2004,LBL_0001,True,0.052
+ART_0538,Christopher Lewis,USA,Rock,,2013,LBL_0045,True,0.024
+ART_0539,Katelyn Perez,Burundi,Metal,Jazz,2016,LBL_0007,True,0.025
+ART_0540,The Moores,French Polynesia,Metal,Rock,2002,LBL_0046,True,0.018
+ART_0541,The Richards,Japan,Country,,2018,LBL_0030,True,0.023
+ART_0542,Randy Conley,UK,Rock,Indie,2023,LBL_0048,True,0.025
+ART_0543,Amanda Rogers,USA,Classical,,2001,LBL_0045,True,0.019
+ART_0544,The Mirandas,USA,Pop,Electronic,2010,LBL_0033,True,0.02
+ART_0545,James Martin,Switzerland,Pop,,2011,LBL_0019,True,0.021
+ART_0546,The Schwartzs,France,Rock,,2022,LBL_0020,True,0.017
+ART_0547,Stephanie Griffith,USA,Jazz,Hip-Hop,2003,LBL_0013,True,0.02
+ART_0548,Jackson Ball,USA,Indie,Country,2001,LBL_0033,True,0.019
+ART_0549,The Montess,UK,Classical,,2016,LBL_0044,True,0.02
+ART_0550,Rachel Young,Dominican Republic,R&B,,1990,LBL_0034,True,0.018
+ART_0551,The Collinss,Sudan,Jazz,,2000,LBL_0019,True,0.051
+ART_0552,Young Kristen Prince,United Kingdom,Hip-Hop,Metal,2003,LBL_0049,True,0.026
+ART_0553,Young Mary,Germany,Hip-Hop,,2014,LBL_0016,True,0.03
+ART_0554,The Richardsons,Yemen,Metal,R&B,2010,LBL_0036,True,0.037
+ART_0555,Jessica Hammond,Canada,Pop,,2013,LBL_0049,True,0.024
+ART_0556,Kathryn Barnes,USA,Indie,,2002,LBL_0019,True,0.018
+ART_0557,Curtis Jacobs,Canada,Country,,2022,LBL_0008,False,0.025
+ART_0558,Amy Castillo,USA,Jazz,,2006,LBL_0001,True,0.026
+ART_0559,Timothy Dawson,USA,Classical,Electronic,2010,LBL_0039,True,0.033
+ART_0560,Blackx,USA,Electronic,Metal,2012,LBL_0005,False,0.022
+ART_0561,Bradley Martin,USA,Indie,,2022,LBL_0011,True,0.018
+ART_0562,Jose Guerra,USA,Indie,,2003,LBL_0043,True,0.02
+ART_0563,The Daviss,Japan,Jazz,Pop,2023,LBL_0031,False,0.021
+ART_0564,The Velasquezs,Germany,Hip-Hop,,2012,LBL_0029,False,0.028
+ART_0565,The Wilkersons,Japan,Country,,2010,LBL_0025,True,0.026
+ART_0566,The Ariass,France,Indie,,2008,LBL_0002,True,0.021
+ART_0567,James Brooks,USA,Rock,,2018,LBL_0032,True,0.145
+ART_0568,The Hughess,USA,Country,,1996,LBL_0011,True,0.027
+ART_0569,The Millers,Czech Republic,Country,Rock,2003,LBL_0043,True,0.019
+ART_0570,Lil Anthony Baby,Venezuela,R&B,Pop,2017,LBL_0042,False,0.018
+ART_0571,The Garcias,UK,Pop,,1993,LBL_0012,True,0.018
+ART_0572,Gabriela Thomas,UK,Classical,,2006,LBL_0027,False,0.019
+ART_0573,Thomas Kennedy,USA,Indie,,1997,LBL_0035,True,0.018
+ART_0574,The Guerras,USA,Rock,,1992,LBL_0045,True,0.019
+ART_0575,Julie Gilbert,USA,Rock,,2009,LBL_0039,True,0.02
+ART_0576,Alicia Lewis,Japan,Metal,Indie,1991,LBL_0031,True,0.018
+ART_0577,The Hernandezs,France,Rock,Classical,1999,LBL_0020,True,0.052
+ART_0578,The Bentleys,New Caledonia,Indie,,1990,LBL_0036,True,0.018
+ART_0579,Ashley Roberts,Gabon,Electronic,Classical,2015,LBL_0035,True,0.024
+ART_0580,David Fowler,Nigeria,Rock,Electronic,2022,LBL_0010,False,0.022
+ART_0581,The Bryants,Canada,Indie,,1993,LBL_0049,True,0.127
+ART_0582,Taylor Carlson,Andorra,Jazz,Indie,2008,LBL_0043,True,0.018
+ART_0583,Chen,Morocco,Electronic,Jazz,2012,LBL_0009,True,0.022
+ART_0584,Young John Baby,USA,Hip-Hop,,2018,LBL_0022,True,0.096
+ART_0585,Jeffrey Mendez,Dominican Republic,Country,,2017,LBL_0011,True,0.046
+ART_0586,The Duncans,Colombia,Rock,Indie,2017,LBL_0018,True,0.039
+ART_0587,William Jones,Malta,Hip-Hop,Country,2012,LBL_0050,True,0.02
+ART_0588,The Stephenss,USA,Metal,Pop,1998,LBL_0035,True,0.018
+ART_0589,Katie Smith,France,Rock,,1991,LBL_0038,False,0.029
+ART_0590,The Markss,USA,Country,Hip-Hop,2006,LBL_0035,True,0.063
+ART_0591,Young Bradley Baby,UK,Hip-Hop,,2004,LBL_0050,True,0.025
+ART_0592,Paul Baby,USA,R&B,,2022,LBL_0001,True,0.026
+ART_0593,The Brookss,UK,Pop,,1999,LBL_0048,True,0.02
+ART_0594,Heather Jones,USA,Metal,,2004,LBL_0005,True,0.035
+ART_0595,The Allens,Japan,Jazz,,2014,LBL_0031,True,0.019
+ART_0596,The Sandovals,USA,Rock,,1996,LBL_0046,True,0.02
+ART_0597,Kevin Sherman,Germany,Pop,,2024,LBL_0037,True,0.022
+ART_0598,Harold Morgan,USA,Rock,,1994,LBL_0034,True,0.024
+ART_0599,Dayxx,Switzerland,Electronic,Indie,2012,LBL_0032,True,0.019
+ART_0600,Big Kimberly Baby,Kyrgyz Republic,Hip-Hop,,1994,LBL_0033,True,0.018
+ART_0601,The Mendozas,USA,R&B,,1997,LBL_0043,True,0.027
+ART_0602,Chad Baldwin,France,Jazz,,2003,LBL_0038,False,0.02
+ART_0603,The Acevedos,Argentina,Rock,,2000,LBL_0009,False,0.026
+ART_0604,Andrew Gonzalez,UK,Country,Pop,2006,LBL_0012,True,0.018
+ART_0605,Timothy Robertson,USA,Classical,,2008,LBL_0006,True,0.023
+ART_0606,The Hayss,UK,Rock,Jazz,2004,LBL_0027,True,0.025
+ART_0607,Dawn Mullins,UK,Rock,Hip-Hop,2022,LBL_0017,True,0.017
+ART_0608,Howard Norman,Tonga,Pop,Metal,2014,LBL_0009,True,0.021
+ART_0609,Robert Kim,USA,R&B,,1999,LBL_0039,True,0.018
+ART_0610,Jeremiah Huber,Canada,Country,,2022,LBL_0049,True,0.017
+ART_0611,Morganx,UK,Electronic,,1990,LBL_0050,False,0.168
+ART_0612,Michael Richardson,USA,Indie,Classical,2023,LBL_0028,True,0.02
+ART_0613,Bradley Coleman,Jersey,R&B,Electronic,1996,LBL_0028,True,0.039
+ART_0614,Samantha Gardner,Gibraltar,Country,Pop,2024,LBL_0027,True,0.019
+ART_0615,Garrett Phillips,USA,Indie,Country,1997,LBL_0034,True,0.03
+ART_0616,Mitchell Jackson,USA,Rock,,1996,LBL_0010,True,0.034
+ART_0617,Jeremy Acosta,Germany,Pop,R&B,2013,LBL_0040,True,0.026
+ART_0618,Jessica Fowler,Somalia,Hip-Hop,,2020,LBL_0012,True,0.023
+ART_0619,Angela Walsh,UK,Pop,,2015,LBL_0048,True,0.022
+ART_0620,Robert Shelton,Japan,Electronic,,2000,LBL_0007,True,0.021
+ART_0621,The Cisneross,USA,Metal,R&B,1993,LBL_0011,True,0.063
+ART_0622,Lawrence Harrington,Antigua and Barbuda,Pop,,2017,LBL_0006,False,0.041
+ART_0623,The Martinezs,Canada,Pop,Rock,2014,LBL_0026,True,0.09
+ART_0624,Matthew Cox,Zambia,Jazz,Metal,2001,LBL_0041,True,0.018
+ART_0625,Death Bradley,USA,Metal,Country,1992,LBL_0039,True,0.032
+ART_0626,Tiffany Watson,USA,Hip-Hop,R&B,1990,LBL_0011,True,0.068
+ART_0627,Hines,USA,Electronic,,2023,LBL_0001,True,0.019
+ART_0628,The Berrys,Marshall Islands,Pop,Electronic,2012,LBL_0023,True,0.017
+ART_0629,Ernest Ramirez,Brazil,Pop,,2015,LBL_0037,True,0.033
+ART_0630,Cody Holmes,USA,Metal,,2022,LBL_0019,True,0.026
+ART_0631,Autumn Hampton,USA,Metal,,2006,LBL_0045,True,0.042
+ART_0632,Cindy Carr,UK,Pop,,2019,LBL_0044,False,0.018
+ART_0633,Death Benson,Japan,Metal,,1994,LBL_0025,True,0.037
+ART_0634,Mrs. Brandy Jones MD,USA,Country,,2012,LBL_0034,True,0.019
+ART_0635,The Reevess,UK,Indie,,2015,LBL_0044,True,0.018
+ART_0636,Rita Ponce DVM,UK,Jazz,,2010,LBL_0023,True,0.018
+ART_0637,Contreras,USA,Electronic,Jazz,2002,LBL_0032,True,0.039
+ART_0638,The Mckinneys,Mexico,Electronic,,2005,LBL_0040,True,0.029
+ART_0639,Stephanie York,Germany,Country,Indie,2021,LBL_0040,True,0.024
+ART_0640,The Josephs,USA,Pop,,2010,LBL_0032,True,0.021
+ART_0641,The Hos,Northern Mariana Islands,Pop,,2001,LBL_0049,True,0.048
+ART_0642,DJ Grant,USA,Hip-Hop,,1993,LBL_0034,True,0.022
+ART_0643,The Wards,Japan,Classical,,2001,LBL_0030,True,0.039
+ART_0644,William Conner,UK,Rock,,1990,LBL_0044,True,0.022
+ART_0645,Johnny Ward,Montserrat,Country,,2006,LBL_0012,True,0.021
+ART_0646,Robert Arnold,UK,Metal,,2013,LBL_0012,True,0.023
+ART_0647,Angelica Parker,Saint Barthelemy,Pop,,2007,LBL_0029,True,0.02
+ART_0648,Kelly Hammond,Swaziland,Country,,1996,LBL_0047,True,0.033
+ART_0649,Beth Stewart,UK,Jazz,,1999,LBL_0048,True,0.024
+ART_0650,The Joness,USA,Indie,,2023,LBL_0035,True,0.019
+ART_0651,Joseph Anderson,Switzerland,Rock,,1993,LBL_0026,True,0.053
+ART_0652,The Deleons,Northern Mariana Islands,Classical,,1996,LBL_0029,True,0.021
+ART_0653,Betty Shaw,UK,R&B,Jazz,2006,LBL_0023,True,0.025
+ART_0654,Black Oneill,UK,Metal,R&B,2024,LBL_0012,True,0.055
+ART_0655,Kelly Torres,Central African Republic,Classical,Hip-Hop,2018,LBL_0006,True,0.027
+ART_0656,Morrisxx,UK,Electronic,Rock,2011,LBL_0027,True,0.018
+ART_0657,Hannah Everett,Ukraine,Country,,2004,LBL_0021,True,0.069
+ART_0658,The Campbells,Germany,Indie,Metal,2007,LBL_0029,True,0.028
+ART_0659,Craig Huber,USA,Electronic,Rock,2016,LBL_0011,True,0.021
+ART_0660,Mario Mendez,Japan,Pop,,2015,LBL_0007,False,0.018
+ART_0661,Blood Davis,Norway,Metal,Rock,2015,LBL_0034,True,0.037
+ART_0662,Todd Moore,France,Classical,,2014,LBL_0020,False,0.027
+ART_0663,Michelle Jacobs,USA,Country,Classical,2023,LBL_0011,True,0.025
+ART_0664,The Kirbys,USA,Rock,,2019,LBL_0035,True,0.052
+ART_0665,Samantha Johnson,UK,Country,R&B,2024,LBL_0012,True,0.037
+ART_0666,DJ Brandon Baby,France,Hip-Hop,,2024,LBL_0020,True,0.018
+ART_0667,Laura Curtis,Seychelles,Country,Hip-Hop,2006,LBL_0010,True,0.02
+ART_0668,Lisa Johnson,USA,Pop,Indie,2020,LBL_0035,True,0.019
+ART_0669,Kimberly May,USA,Country,,2017,LBL_0019,True,0.033
+ART_0670,The Turners,Canada,Metal,Jazz,2017,LBL_0026,True,0.017
+ART_0671,Robert Sullivan,Canada,Pop,Country,2017,LBL_0041,True,0.026
+ART_0672,The Chavezs,Portugal,Metal,,2024,LBL_0018,True,0.034
+ART_0673,The Browns,USA,Jazz,,2018,LBL_0018,True,0.048
+ART_0674,John Harris,New Caledonia,Indie,,2024,LBL_0002,True,0.021
+ART_0675,Emma Travis,Guatemala,R&B,,1990,LBL_0015,True,0.04
+ART_0676,The Hesters,UK,Electronic,Hip-Hop,2021,LBL_0024,False,0.018
+ART_0677,Big David Baby,USA,R&B,,2015,LBL_0005,True,0.043
+ART_0678,The Woods,Canada,Indie,,1990,LBL_0008,True,0.018
+ART_0679,Big Anna Prince,UK,Hip-Hop,,2005,LBL_0048,True,0.022
+ART_0680,The Owenss,Japan,Hip-Hop,,2003,LBL_0031,True,0.037
+ART_0681,David Davis,Canada,Country,,2023,LBL_0008,True,0.018
+ART_0682,Luis Wright,Tonga,R&B,Rock,2003,LBL_0008,True,0.019
+ART_0683,Rachel Prince,USA,R&B,,2005,LBL_0001,True,0.032
+ART_0684,The Pecks,USA,R&B,Pop,2005,LBL_0011,False,0.032
+ART_0685,Cheryl Moore,Malaysia,Jazz,,1999,LBL_0045,True,0.028
+ART_0686,Lil Steven Prince,Germany,R&B,,2012,LBL_0029,True,0.03
+ART_0687,Kathleen Davis,India,Pop,Electronic,2021,LBL_0046,True,0.025
+ART_0688,Tracy Lewis,UK,Electronic,,2024,LBL_0023,True,0.019
+ART_0689,Anthony Simpson,USA,Pop,Metal,2000,LBL_0005,True,0.021
+ART_0690,DJ Nicole Baby,UK,Hip-Hop,Classical,1990,LBL_0050,True,0.019
+ART_0691,Destiny Prince,Latvia,Hip-Hop,Metal,2005,LBL_0021,True,0.056
+ART_0692,Brian Anderson,Estonia,Hip-Hop,Pop,2008,LBL_0021,True,0.026
+ART_0693,The Lunas,Serbia,Classical,,1998,LBL_0012,False,0.022
+ART_0694,The Williamss,USA,Hip-Hop,,2014,LBL_0043,True,0.023
+ART_0695,The Williamss,Monaco,Jazz,,1994,LBL_0001,True,0.073
+ART_0696,The Lees,Micronesia,Rock,,1995,LBL_0030,True,0.018
+ART_0697,Lil Keith King,UK,Hip-Hop,Country,2016,LBL_0024,False,0.026
+ART_0698,Jerry Pierce,USA,Rock,,2003,LBL_0034,True,0.024
+ART_0699,Lisa Carr,USA,Pop,,2023,LBL_0043,True,0.027
+ART_0700,Brent Brooks,UK,Country,,2016,LBL_0048,True,0.017

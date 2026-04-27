@@ -1,0 +1,501 @@
+award_id,artist_id,track_id,award_name,category,year,won
+AWD_0001,ART_0105,TRK_00652,Sound & Vision Prize,Best Album,2024,True
+AWD_0002,ART_0389,,Streaming Record Award,Top Producer,2024,True
+AWD_0003,ART_0496,TRK_04832,Billboard Award,Breakthrough Artist,2024,True
+AWD_0004,ART_0414,,Global Music Award,Best Collaboration,2019,True
+AWD_0005,ART_0438,TRK_01222,Global Music Award,Best Rock Album,2017,True
+AWD_0006,ART_0618,,Sound & Vision Prize,Best Collaboration,2021,True
+AWD_0007,ART_0415,TRK_04034,Streaming Record Award,Breakthrough Artist,2012,True
+AWD_0008,ART_0296,,Global Music Award,Breakthrough Artist,2018,True
+AWD_0009,ART_0650,,Golden Mic,Best Rock Album,2023,False
+AWD_0010,ART_0305,TRK_02646,Global Music Award,Best Rock Album,2023,True
+AWD_0011,ART_0167,,Billboard Award,Best Pop Artist,2010,False
+AWD_0012,ART_0437,TRK_05279,Sound & Vision Prize,Best Collaboration,2023,True
+AWD_0013,ART_0437,,Global Music Award,Best New Artist,2016,True
+AWD_0014,ART_0437,,Billboard Award,Best Album,2023,True
+AWD_0015,ART_0272,TRK_04393,Sound & Vision Prize,Breakthrough Artist,2015,True
+AWD_0016,ART_0437,,Golden Mic,Best Album,2019,True
+AWD_0017,ART_0293,,Streaming Record Award,Best Collaboration,2013,False
+AWD_0018,ART_0437,,Sound & Vision Prize,Best Album,2019,False
+AWD_0019,ART_0391,,Artist of the Year,Best Rock Album,2022,True
+AWD_0020,ART_0144,TRK_00038,Global Music Award,Breakthrough Artist,2020,True
+AWD_0021,ART_0437,,Sound & Vision Prize,Song of the Year,2023,True
+AWD_0022,ART_0129,,Billboard Award,Top Producer,2012,True
+AWD_0023,ART_0437,TRK_01904,Golden Mic,Top Producer,2011,True
+AWD_0024,ART_0202,TRK_05770,Global Music Award,Best Rock Album,2020,True
+AWD_0025,ART_0437,TRK_00090,Billboard Award,Best New Artist,2019,False
+AWD_0026,ART_0377,TRK_05208,Golden Mic,Best Pop Artist,2016,True
+AWD_0027,ART_0405,TRK_00392,Sound & Vision Prize,Breakthrough Artist,2011,True
+AWD_0028,ART_0437,,Global Music Award,Best Rock Album,2012,True
+AWD_0029,ART_0438,,Sound & Vision Prize,Best Collaboration,2021,True
+AWD_0030,ART_0437,,Artist of the Year,Best New Artist,2024,True
+AWD_0031,ART_0032,TRK_03424,Artist of the Year,Best Rock Album,2019,False
+AWD_0032,ART_0680,,Artist of the Year,Best Rock Album,2018,True
+AWD_0033,ART_0437,,Streaming Record Award,Breakthrough Artist,2020,True
+AWD_0034,ART_0437,,Streaming Record Award,Top Producer,2019,True
+AWD_0035,ART_0404,,Streaming Record Award,Best Album,2010,True
+AWD_0036,ART_0437,,Sound & Vision Prize,Best Rock Album,2017,True
+AWD_0037,ART_0272,TRK_02344,Global Music Award,Best Rock Album,2016,False
+AWD_0038,ART_0437,,Global Music Award,Breakthrough Artist,2016,True
+AWD_0039,ART_0437,TRK_02136,Global Music Award,Best Rock Album,2021,False
+AWD_0040,ART_0412,,Golden Mic,Breakthrough Artist,2015,True
+AWD_0041,ART_0437,,Golden Mic,Top Producer,2021,True
+AWD_0042,ART_0437,,Billboard Award,Best Pop Artist,2010,False
+AWD_0043,ART_0437,,Streaming Record Award,Best New Artist,2011,True
+AWD_0044,ART_0301,TRK_04628,Artist of the Year,Song of the Year,2022,True
+AWD_0045,ART_0567,TRK_04764,Artist of the Year,Song of the Year,2020,True
+AWD_0046,ART_0437,TRK_03916,Streaming Record Award,Best Collaboration,2013,True
+AWD_0047,ART_0438,,Golden Mic,Song of the Year,2021,False
+AWD_0048,ART_0213,TRK_00361,Billboard Award,Top Producer,2022,True
+AWD_0049,ART_0623,TRK_05925,Sound & Vision Prize,Best New Artist,2019,True
+AWD_0050,ART_0301,,Streaming Record Award,Song of the Year,2018,True
+AWD_0051,ART_0621,TRK_00612,Golden Mic,Best New Artist,2023,True
+AWD_0052,ART_0404,TRK_03918,Golden Mic,Best Rock Album,2012,True
+AWD_0053,ART_0136,TRK_01026,Sound & Vision Prize,Top Producer,2018,False
+AWD_0054,ART_0437,,Golden Mic,Best Album,2018,True
+AWD_0055,ART_0423,TRK_05816,Golden Mic,Best Rock Album,2023,True
+AWD_0056,ART_0437,,Golden Mic,Best Pop Artist,2020,True
+AWD_0057,ART_0251,,Sound & Vision Prize,Best Rock Album,2021,False
+AWD_0058,ART_0219,TRK_03951,Golden Mic,Breakthrough Artist,2021,False
+AWD_0059,ART_0437,,Billboard Award,Top Producer,2021,True
+AWD_0060,ART_0437,,Global Music Award,Best New Artist,2014,True
+AWD_0061,ART_0438,TRK_03582,Billboard Award,Best Collaboration,2017,False
+AWD_0062,ART_0412,,Streaming Record Award,Best Pop Artist,2013,False
+AWD_0063,ART_0125,TRK_01747,Global Music Award,Best New Artist,2011,False
+AWD_0064,ART_0437,,Artist of the Year,Best New Artist,2018,True
+AWD_0065,ART_0437,TRK_02489,Sound & Vision Prize,Breakthrough Artist,2010,True
+AWD_0066,ART_0437,TRK_00035,Sound & Vision Prize,Best New Artist,2017,False
+AWD_0067,ART_0437,TRK_04573,Streaming Record Award,Top Producer,2020,True
+AWD_0068,ART_0437,,Artist of the Year,Breakthrough Artist,2019,True
+AWD_0069,ART_0437,TRK_02739,Global Music Award,Song of the Year,2011,True
+AWD_0070,ART_0437,,Artist of the Year,Top Producer,2012,False
+AWD_0071,ART_0437,TRK_01543,Golden Mic,Song of the Year,2012,False
+AWD_0072,ART_0437,,Golden Mic,Top Producer,2010,True
+AWD_0073,ART_0437,,Global Music Award,Best New Artist,2018,False
+AWD_0074,ART_0611,,Billboard Award,Song of the Year,2015,False
+AWD_0075,ART_0521,TRK_02740,Artist of the Year,Best New Artist,2019,True
+AWD_0076,ART_0384,TRK_02957,Billboard Award,Best Collaboration,2023,True
+AWD_0077,ART_0437,,Artist of the Year,Top Producer,2021,True
+AWD_0078,ART_0428,TRK_04598,Golden Mic,Best Rock Album,2016,True
+AWD_0079,ART_0438,TRK_03159,Artist of the Year,Best Rock Album,2024,True
+AWD_0080,ART_0437,TRK_05419,Sound & Vision Prize,Best Pop Artist,2018,False
+AWD_0081,ART_0437,,Global Music Award,Breakthrough Artist,2020,True
+AWD_0082,ART_0167,TRK_02686,Global Music Award,Best Pop Artist,2023,False
+AWD_0083,ART_0695,,Billboard Award,Best Collaboration,2016,True
+AWD_0084,ART_0522,,Billboard Award,Song of the Year,2012,False
+AWD_0085,ART_0438,,Streaming Record Award,Best Pop Artist,2013,True
+AWD_0086,ART_0457,TRK_00181,Sound & Vision Prize,Best Pop Artist,2013,True
+AWD_0087,ART_0437,TRK_04331,Golden Mic,Best Rock Album,2013,True
+AWD_0088,ART_0302,,Artist of the Year,Best Rock Album,2022,False
+AWD_0089,ART_0381,TRK_04557,Billboard Award,Top Producer,2014,False
+AWD_0090,ART_0040,TRK_04887,Sound & Vision Prize,Best Rock Album,2015,False
+AWD_0091,ART_0437,,Global Music Award,Song of the Year,2016,True
+AWD_0092,ART_0437,TRK_04815,Artist of the Year,Best Collaboration,2023,False
+AWD_0093,ART_0295,,Billboard Award,Best Collaboration,2016,True
+AWD_0094,ART_0581,,Artist of the Year,Best Album,2024,True
+AWD_0095,ART_0153,TRK_04240,Sound & Vision Prize,Best Pop Artist,2015,False
+AWD_0096,ART_0438,TRK_00209,Streaming Record Award,Best Album,2014,True
+AWD_0097,ART_0437,TRK_03664,Billboard Award,Breakthrough Artist,2020,False
+AWD_0098,ART_0018,TRK_03814,Global Music Award,Best Collaboration,2021,False
+AWD_0099,ART_0437,TRK_01753,Golden Mic,Best Rock Album,2018,False
+AWD_0100,ART_0437,,Billboard Award,Top Producer,2015,True
+AWD_0101,ART_0437,TRK_02044,Global Music Award,Breakthrough Artist,2015,False
+AWD_0102,ART_0437,,Streaming Record Award,Best Collaboration,2024,True
+AWD_0103,ART_0437,TRK_01049,Artist of the Year,Top Producer,2020,True
+AWD_0104,ART_0441,,Sound & Vision Prize,Best New Artist,2011,True
+AWD_0105,ART_0059,,Global Music Award,Top Producer,2024,True
+AWD_0106,ART_0219,TRK_03877,Streaming Record Award,Top Producer,2020,True
+AWD_0107,ART_0365,TRK_04617,Golden Mic,Song of the Year,2014,True
+AWD_0108,ART_0291,TRK_01319,Global Music Award,Best Collaboration,2023,False
+AWD_0109,ART_0381,TRK_01254,Golden Mic,Best Collaboration,2012,True
+AWD_0110,ART_0437,TRK_01761,Sound & Vision Prize,Best New Artist,2011,True
+AWD_0111,ART_0437,TRK_05600,Streaming Record Award,Best Rock Album,2011,True
+AWD_0112,ART_0437,TRK_02623,Billboard Award,Best Collaboration,2010,True
+AWD_0113,ART_0437,TRK_05908,Artist of the Year,Top Producer,2018,True
+AWD_0114,ART_0230,TRK_05382,Streaming Record Award,Best New Artist,2019,True
+AWD_0115,ART_0581,,Billboard Award,Best New Artist,2021,True
+AWD_0116,ART_0437,TRK_01288,Golden Mic,Best Pop Artist,2022,False
+AWD_0117,ART_0395,TRK_02861,Streaming Record Award,Breakthrough Artist,2017,True
+AWD_0118,ART_0370,TRK_04920,Streaming Record Award,Best New Artist,2023,True
+AWD_0119,ART_0437,TRK_04677,Global Music Award,Best Album,2021,True
+AWD_0120,ART_0608,TRK_00731,Sound & Vision Prize,Song of the Year,2023,True
+AWD_0121,ART_0438,TRK_03159,Golden Mic,Best Collaboration,2013,True
+AWD_0122,ART_0296,,Global Music Award,Best New Artist,2013,False
+AWD_0123,ART_0437,TRK_04128,Streaming Record Award,Best Pop Artist,2016,True
+AWD_0124,ART_0585,TRK_05306,Golden Mic,Best Album,2017,True
+AWD_0125,ART_0437,,Golden Mic,Best Rock Album,2023,False
+AWD_0126,ART_0301,,Artist of the Year,Best New Artist,2018,True
+AWD_0127,ART_0132,TRK_01073,Sound & Vision Prize,Song of the Year,2020,True
+AWD_0128,ART_0386,TRK_01714,Golden Mic,Top Producer,2016,True
+AWD_0129,ART_0437,,Artist of the Year,Best Album,2014,True
+AWD_0130,ART_0438,,Artist of the Year,Best New Artist,2020,True
+AWD_0131,ART_0212,TRK_03892,Golden Mic,Breakthrough Artist,2012,True
+AWD_0132,ART_0060,,Global Music Award,Best Collaboration,2021,True
+AWD_0133,ART_0487,TRK_05452,Artist of the Year,Top Producer,2023,True
+AWD_0134,ART_0643,,Streaming Record Award,Best Collaboration,2019,True
+AWD_0135,ART_0437,TRK_04287,Sound & Vision Prize,Best Album,2023,True
+AWD_0136,ART_0437,,Global Music Award,Best Collaboration,2021,False
+AWD_0137,ART_0437,,Artist of the Year,Best Album,2015,False
+AWD_0138,ART_0022,TRK_05479,Artist of the Year,Best New Artist,2011,False
+AWD_0139,ART_0437,TRK_03192,Global Music Award,Top Producer,2017,False
+AWD_0140,ART_0296,TRK_02191,Golden Mic,Best New Artist,2012,True
+AWD_0141,ART_0437,,Artist of the Year,Breakthrough Artist,2020,True
+AWD_0142,ART_0296,,Global Music Award,Best Pop Artist,2023,True
+AWD_0143,ART_0599,,Artist of the Year,Best Album,2023,True
+AWD_0144,ART_0437,,Billboard Award,Best Collaboration,2017,True
+AWD_0145,ART_0437,,Golden Mic,Best New Artist,2016,True
+AWD_0146,ART_0405,TRK_04120,Global Music Award,Best Pop Artist,2015,False
+AWD_0147,ART_0437,TRK_03371,Artist of the Year,Breakthrough Artist,2010,True
+AWD_0148,ART_0149,,Artist of the Year,Best New Artist,2023,True
+AWD_0149,ART_0381,TRK_05425,Streaming Record Award,Breakthrough Artist,2016,False
+AWD_0150,ART_0437,TRK_01871,Global Music Award,Best Collaboration,2018,True
+AWD_0151,ART_0297,TRK_01591,Global Music Award,Breakthrough Artist,2010,False
+AWD_0152,ART_0611,,Golden Mic,Top Producer,2024,True
+AWD_0153,ART_0595,,Artist of the Year,Best Album,2024,False
+AWD_0154,ART_0437,,Sound & Vision Prize,Top Producer,2023,True
+AWD_0155,ART_0437,TRK_03874,Global Music Award,Best Collaboration,2014,False
+AWD_0156,ART_0567,TRK_04509,Streaming Record Award,Best Collaboration,2022,True
+AWD_0157,ART_0437,,Golden Mic,Top Producer,2013,False
+AWD_0158,ART_0381,,Billboard Award,Best Rock Album,2016,False
+AWD_0159,ART_0437,,Sound & Vision Prize,Best Collaboration,2016,False
+AWD_0160,ART_0405,TRK_01154,Billboard Award,Best New Artist,2019,True
+AWD_0161,ART_0437,TRK_05632,Sound & Vision Prize,Best Rock Album,2010,True
+AWD_0162,ART_0296,,Sound & Vision Prize,Top Producer,2015,True
+AWD_0163,ART_0296,TRK_01345,Global Music Award,Breakthrough Artist,2017,True
+AWD_0164,ART_0437,,Sound & Vision Prize,Best Collaboration,2018,True
+AWD_0165,ART_0437,,Streaming Record Award,Breakthrough Artist,2017,True
+AWD_0166,ART_0358,TRK_04855,Streaming Record Award,Best Pop Artist,2018,True
+AWD_0167,ART_0438,TRK_02121,Artist of the Year,Best Collaboration,2021,True
+AWD_0168,ART_0438,,Artist of the Year,Best Pop Artist,2016,True
+AWD_0169,ART_0451,,Billboard Award,Song of the Year,2020,True
+AWD_0170,ART_0381,,Global Music Award,Best Album,2024,True
+AWD_0171,ART_0045,TRK_04185,Golden Mic,Breakthrough Artist,2022,True
+AWD_0172,ART_0611,TRK_00293,Global Music Award,Best Collaboration,2014,True
+AWD_0173,ART_0437,TRK_05221,Global Music Award,Top Producer,2010,True
+AWD_0174,ART_0437,TRK_04594,Sound & Vision Prize,Top Producer,2012,True
+AWD_0175,ART_0437,TRK_03120,Billboard Award,Best Collaboration,2021,True
+AWD_0176,ART_0437,TRK_01417,Streaming Record Award,Song of the Year,2013,True
+AWD_0177,ART_0437,,Global Music Award,Top Producer,2021,False
+AWD_0178,ART_0437,,Golden Mic,Best Album,2015,True
+AWD_0179,ART_0480,TRK_01511,Billboard Award,Breakthrough Artist,2020,True
+AWD_0180,ART_0219,TRK_03877,Sound & Vision Prize,Best New Artist,2021,True
+AWD_0181,ART_0581,TRK_00205,Streaming Record Award,Best Rock Album,2017,False
+AWD_0182,ART_0438,,Billboard Award,Best Pop Artist,2011,True
+AWD_0183,ART_0186,TRK_03570,Artist of the Year,Best Collaboration,2019,True
+AWD_0184,ART_0352,TRK_00360,Streaming Record Award,Breakthrough Artist,2016,False
+AWD_0185,ART_0437,,Billboard Award,Breakthrough Artist,2021,False
+AWD_0186,ART_0381,,Streaming Record Award,Best Album,2012,False
+AWD_0187,ART_0506,TRK_02875,Streaming Record Award,Best New Artist,2019,False
+AWD_0188,ART_0046,,Streaming Record Award,Best Collaboration,2022,True
+AWD_0189,ART_0423,TRK_04251,Golden Mic,Best Pop Artist,2017,True
+AWD_0190,ART_0437,TRK_01721,Sound & Vision Prize,Best Rock Album,2023,True
+AWD_0191,ART_0438,,Global Music Award,Best Rock Album,2020,True
+AWD_0192,ART_0437,,Streaming Record Award,Song of the Year,2010,True
+AWD_0193,ART_0437,TRK_05433,Golden Mic,Breakthrough Artist,2014,True
+AWD_0194,ART_0347,,Streaming Record Award,Best Collaboration,2021,True
+AWD_0195,ART_0384,TRK_02957,Global Music Award,Best Rock Album,2019,False
+AWD_0196,ART_0437,,Golden Mic,Top Producer,2018,True
+AWD_0197,ART_0654,TRK_00076,Artist of the Year,Best New Artist,2024,False
+AWD_0198,ART_0347,,Artist of the Year,Song of the Year,2017,True
+AWD_0199,ART_0133,,Sound & Vision Prize,Breakthrough Artist,2024,False
+AWD_0200,ART_0437,,Streaming Record Award,Best New Artist,2020,True
+AWD_0201,ART_0239,,Billboard Award,Song of the Year,2022,True
+AWD_0202,ART_0057,,Sound & Vision Prize,Best Pop Artist,2019,False
+AWD_0203,ART_0437,,Billboard Award,Best Pop Artist,2019,False
+AWD_0204,ART_0437,TRK_02465,Billboard Award,Best New Artist,2020,True
+AWD_0205,ART_0617,TRK_01208,Streaming Record Award,Best Album,2017,True
+AWD_0206,ART_0375,TRK_01066,Sound & Vision Prize,Breakthrough Artist,2024,True
+AWD_0207,ART_0437,TRK_00684,Global Music Award,Best New Artist,2010,True
+AWD_0208,ART_0437,TRK_04934,Sound & Vision Prize,Top Producer,2014,True
+AWD_0209,ART_0381,TRK_03723,Sound & Vision Prize,Breakthrough Artist,2020,False
+AWD_0210,ART_0581,TRK_05732,Golden Mic,Top Producer,2024,True
+AWD_0211,ART_0437,TRK_05269,Golden Mic,Best Rock Album,2024,True
+AWD_0212,ART_0437,,Billboard Award,Breakthrough Artist,2013,False
+AWD_0213,ART_0438,TRK_05179,Streaming Record Award,Best Pop Artist,2012,True
+AWD_0214,ART_0377,,Sound & Vision Prize,Best Album,2019,True
+AWD_0215,ART_0437,TRK_04573,Golden Mic,Top Producer,2024,True
+AWD_0216,ART_0437,TRK_00062,Sound & Vision Prize,Breakthrough Artist,2012,False
+AWD_0217,ART_0567,TRK_00808,Sound & Vision Prize,Best Rock Album,2022,True
+AWD_0218,ART_0437,TRK_04052,Global Music Award,Best Album,2014,True
+AWD_0219,ART_0438,TRK_05633,Billboard Award,Song of the Year,2024,False
+AWD_0220,ART_0437,TRK_03874,Golden Mic,Best Collaboration,2024,True
+AWD_0221,ART_0438,TRK_01270,Global Music Award,Best Pop Artist,2021,False
+AWD_0222,ART_0381,TRK_03237,Streaming Record Award,Top Producer,2011,True
+AWD_0223,ART_0437,TRK_04249,Streaming Record Award,Best Collaboration,2022,True
+AWD_0224,ART_0584,TRK_04596,Global Music Award,Breakthrough Artist,2022,True
+AWD_0225,ART_0437,TRK_02544,Billboard Award,Best Album,2022,True
+AWD_0226,ART_0437,TRK_00380,Golden Mic,Top Producer,2020,False
+AWD_0227,ART_0381,TRK_04093,Global Music Award,Breakthrough Artist,2023,True
+AWD_0228,ART_0019,,Global Music Award,Best Pop Artist,2024,True
+AWD_0229,ART_0372,TRK_00773,Billboard Award,Breakthrough Artist,2023,True
+AWD_0230,ART_0438,TRK_02579,Streaming Record Award,Best Pop Artist,2010,True
+AWD_0231,ART_0437,,Artist of the Year,Breakthrough Artist,2016,False
+AWD_0232,ART_0314,,Global Music Award,Top Producer,2023,True
+AWD_0233,ART_0437,TRK_03756,Streaming Record Award,Best Collaboration,2016,True
+AWD_0234,ART_0653,,Sound & Vision Prize,Best New Artist,2012,True
+AWD_0235,ART_0437,TRK_04456,Golden Mic,Top Producer,2019,True
+AWD_0236,ART_0486,,Global Music Award,Top Producer,2019,False
+AWD_0237,ART_0384,TRK_03792,Golden Mic,Best Pop Artist,2021,True
+AWD_0238,ART_0437,TRK_05419,Golden Mic,Best Rock Album,2021,True
+AWD_0239,ART_0132,TRK_01718,Streaming Record Award,Breakthrough Artist,2020,True
+AWD_0240,ART_0437,,Streaming Record Award,Top Producer,2016,False
+AWD_0241,ART_0134,TRK_02807,Billboard Award,Top Producer,2015,True
+AWD_0242,ART_0352,,Artist of the Year,Best Rock Album,2012,False
+AWD_0243,ART_0046,,Artist of the Year,Breakthrough Artist,2013,False
+AWD_0244,ART_0437,,Artist of the Year,Breakthrough Artist,2013,False
+AWD_0245,ART_0437,,Golden Mic,Top Producer,2017,True
+AWD_0246,ART_0085,,Global Music Award,Top Producer,2018,True
+AWD_0247,ART_0437,,Golden Mic,Best Collaboration,2013,True
+AWD_0248,ART_0438,,Billboard Award,Best Pop Artist,2023,True
+AWD_0249,ART_0274,,Sound & Vision Prize,Best Pop Artist,2022,True
+AWD_0250,ART_0424,,Global Music Award,Best Rock Album,2011,True
+AWD_0251,ART_0652,TRK_04152,Golden Mic,Best Pop Artist,2018,True
+AWD_0252,ART_0437,TRK_04465,Global Music Award,Best New Artist,2019,True
+AWD_0253,ART_0437,TRK_05469,Global Music Award,Best Album,2011,True
+AWD_0254,ART_0437,TRK_05794,Global Music Award,Best New Artist,2024,False
+AWD_0255,ART_0405,,Artist of the Year,Best Collaboration,2022,True
+AWD_0256,ART_0623,TRK_00032,Global Music Award,Best Album,2023,False
+AWD_0257,ART_0384,,Artist of the Year,Best Album,2018,False
+AWD_0258,ART_0437,,Streaming Record Award,Best Pop Artist,2014,True
+AWD_0259,ART_0310,,Artist of the Year,Song of the Year,2011,True
+AWD_0260,ART_0437,TRK_00552,Artist of the Year,Best New Artist,2023,False
+AWD_0261,ART_0027,,Golden Mic,Song of the Year,2016,False
+AWD_0262,ART_0043,,Billboard Award,Best New Artist,2016,True
+AWD_0263,ART_0459,,Billboard Award,Best New Artist,2020,True
+AWD_0264,ART_0437,TRK_05052,Global Music Award,Breakthrough Artist,2023,False
+AWD_0265,ART_0353,,Billboard Award,Best Pop Artist,2015,True
+AWD_0266,ART_0438,TRK_01016,Billboard Award,Top Producer,2021,True
+AWD_0267,ART_0296,,Streaming Record Award,Best New Artist,2021,True
+AWD_0268,ART_0347,TRK_00965,Golden Mic,Best Pop Artist,2016,True
+AWD_0269,ART_0264,,Billboard Award,Breakthrough Artist,2012,True
+AWD_0270,ART_0437,,Streaming Record Award,Top Producer,2014,True
+AWD_0271,ART_0438,,Streaming Record Award,Top Producer,2024,True
+AWD_0272,ART_0641,TRK_02241,Billboard Award,Top Producer,2015,True
+AWD_0273,ART_0437,TRK_04488,Artist of the Year,Song of the Year,2017,True
+AWD_0274,ART_0487,TRK_01977,Golden Mic,Best Album,2023,False
+AWD_0275,ART_0437,TRK_03056,Billboard Award,Best New Artist,2017,False
+AWD_0276,ART_0404,TRK_05635,Artist of the Year,Top Producer,2012,False
+AWD_0277,ART_0524,,Artist of the Year,Best Collaboration,2023,True
+AWD_0278,ART_0437,TRK_01504,Golden Mic,Best Pop Artist,2023,True
+AWD_0279,ART_0585,TRK_04758,Global Music Award,Breakthrough Artist,2017,True
+AWD_0280,ART_0621,TRK_04708,Global Music Award,Best Collaboration,2012,True
+AWD_0281,ART_0581,,Sound & Vision Prize,Song of the Year,2018,True
+AWD_0282,ART_0437,,Billboard Award,Breakthrough Artist,2014,False
+AWD_0283,ART_0437,TRK_05224,Sound & Vision Prize,Top Producer,2016,True
+AWD_0284,ART_0060,,Global Music Award,Best Rock Album,2022,False
+AWD_0285,ART_0332,TRK_05569,Artist of the Year,Best New Artist,2020,True
+AWD_0286,ART_0437,,Golden Mic,Song of the Year,2014,True
+AWD_0287,ART_0437,TRK_00552,Sound & Vision Prize,Song of the Year,2017,True
+AWD_0288,ART_0437,TRK_05032,Global Music Award,Best Album,2018,True
+AWD_0289,ART_0437,TRK_03139,Global Music Award,Best Rock Album,2013,True
+AWD_0290,ART_0567,,Artist of the Year,Top Producer,2018,True
+AWD_0291,ART_0437,,Global Music Award,Song of the Year,2021,True
+AWD_0292,ART_0336,,Artist of the Year,Best Pop Artist,2019,True
+AWD_0293,ART_0437,TRK_03075,Global Music Award,Song of the Year,2015,False
+AWD_0294,ART_0132,TRK_00854,Artist of the Year,Breakthrough Artist,2021,True
+AWD_0295,ART_0437,TRK_02709,Global Music Award,Best Collaboration,2017,False
+AWD_0296,ART_0437,TRK_01137,Golden Mic,Song of the Year,2021,True
+AWD_0297,ART_0391,TRK_00366,Billboard Award,Top Producer,2015,True
+AWD_0298,ART_0437,TRK_00380,Artist of the Year,Best Collaboration,2019,True
+AWD_0299,ART_0657,TRK_04390,Streaming Record Award,Top Producer,2010,True
+AWD_0300,ART_0437,TRK_05892,Artist of the Year,Best New Artist,2010,False
+AWD_0301,ART_0060,,Streaming Record Award,Best Rock Album,2018,False
+AWD_0302,ART_0155,,Artist of the Year,Breakthrough Artist,2021,True
+AWD_0303,ART_0437,TRK_01290,Artist of the Year,Best Album,2013,True
+AWD_0304,ART_0147,,Sound & Vision Prize,Best Pop Artist,2013,False
+AWD_0305,ART_0581,TRK_04004,Sound & Vision Prize,Best Album,2018,True
+AWD_0306,ART_0437,TRK_02709,Golden Mic,Best Album,2014,False
+AWD_0307,ART_0437,TRK_01907,Golden Mic,Best Collaboration,2011,True
+AWD_0308,ART_0437,TRK_01145,Sound & Vision Prize,Best Album,2013,True
+AWD_0309,ART_0437,,Sound & Vision Prize,Best New Artist,2021,True
+AWD_0310,ART_0567,TRK_04032,Billboard Award,Best Collaboration,2022,False
+AWD_0311,ART_0437,,Streaming Record Award,Best Collaboration,2014,True
+AWD_0312,ART_0437,,Global Music Award,Best Pop Artist,2013,True
+AWD_0313,ART_0437,TRK_02501,Sound & Vision Prize,Best New Artist,2010,False
+AWD_0314,ART_0483,,Global Music Award,Best New Artist,2024,True
+AWD_0315,ART_0296,,Golden Mic,Breakthrough Artist,2020,False
+AWD_0316,ART_0136,TRK_03053,Sound & Vision Prize,Best Rock Album,2015,True
+AWD_0317,ART_0437,TRK_04967,Global Music Award,Best Pop Artist,2015,False
+AWD_0318,ART_0352,TRK_03284,Golden Mic,Best Collaboration,2018,True
+AWD_0319,ART_0437,TRK_02402,Global Music Award,Breakthrough Artist,2022,True
+AWD_0320,ART_0438,TRK_02499,Streaming Record Award,Best Collaboration,2019,False
+AWD_0321,ART_0437,,Global Music Award,Best Collaboration,2024,True
+AWD_0322,ART_0487,TRK_05067,Sound & Vision Prize,Song of the Year,2023,True
+AWD_0323,ART_0567,,Billboard Award,Best Collaboration,2024,False
+AWD_0324,ART_0663,,Sound & Vision Prize,Breakthrough Artist,2023,True
+AWD_0325,ART_0147,TRK_01742,Billboard Award,Best Album,2018,True
+AWD_0326,ART_0437,TRK_04052,Streaming Record Award,Top Producer,2010,False
+AWD_0327,ART_0437,TRK_04815,Streaming Record Award,Song of the Year,2022,True
+AWD_0328,ART_0437,,Global Music Award,Best Pop Artist,2023,True
+AWD_0329,ART_0424,TRK_04844,Global Music Award,Best New Artist,2020,True
+AWD_0330,ART_0437,TRK_05221,Sound & Vision Prize,Best New Artist,2023,True
+AWD_0331,ART_0437,TRK_04375,Artist of the Year,Best Collaboration,2015,False
+AWD_0332,ART_0437,TRK_03099,Streaming Record Award,Best Rock Album,2023,True
+AWD_0333,ART_0584,TRK_02722,Artist of the Year,Best Collaboration,2024,True
+AWD_0334,ART_0437,TRK_05225,Billboard Award,Song of the Year,2018,True
+AWD_0335,ART_0437,TRK_00531,Golden Mic,Best Pop Artist,2024,True
+AWD_0336,ART_0651,TRK_05737,Golden Mic,Best New Artist,2013,True
+AWD_0337,ART_0437,TRK_00098,Billboard Award,Best Rock Album,2011,False
+AWD_0338,ART_0437,TRK_00045,Artist of the Year,Breakthrough Artist,2021,True
+AWD_0339,ART_0437,,Billboard Award,Breakthrough Artist,2012,False
+AWD_0340,ART_0437,,Golden Mic,Best New Artist,2015,True
+AWD_0341,ART_0437,,Billboard Award,Best Collaboration,2011,True
+AWD_0342,ART_0377,,Sound & Vision Prize,Best Rock Album,2019,True
+AWD_0343,ART_0435,TRK_03493,Artist of the Year,Best New Artist,2020,True
+AWD_0344,ART_0437,TRK_04194,Streaming Record Award,Top Producer,2024,True
+AWD_0345,ART_0437,TRK_01482,Sound & Vision Prize,Best Rock Album,2024,True
+AWD_0346,ART_0437,TRK_02895,Golden Mic,Best Collaboration,2010,True
+AWD_0347,ART_0424,TRK_05312,Global Music Award,Best Collaboration,2013,True
+AWD_0348,ART_0437,TRK_05600,Billboard Award,Best New Artist,2015,True
+AWD_0349,ART_0291,,Billboard Award,Top Producer,2010,True
+AWD_0350,ART_0437,,Artist of the Year,Best New Artist,2019,True
+AWD_0351,ART_0296,TRK_02379,Sound & Vision Prize,Breakthrough Artist,2013,True
+AWD_0352,ART_0487,TRK_03387,Sound & Vision Prize,Best Rock Album,2021,True
+AWD_0353,ART_0581,,Global Music Award,Best Album,2012,True
+AWD_0354,ART_0611,TRK_05746,Golden Mic,Breakthrough Artist,2023,True
+AWD_0355,ART_0164,,Streaming Record Award,Best New Artist,2020,True
+AWD_0356,ART_0437,,Golden Mic,Best Pop Artist,2018,True
+AWD_0357,ART_0437,TRK_01288,Global Music Award,Top Producer,2019,True
+AWD_0358,ART_0437,TRK_05101,Golden Mic,Best Album,2012,False
+AWD_0359,ART_0437,,Streaming Record Award,Breakthrough Artist,2024,True
+AWD_0360,ART_0132,TRK_02902,Billboard Award,Best Collaboration,2012,True
+AWD_0361,ART_0067,TRK_04498,Artist of the Year,Top Producer,2023,False
+AWD_0362,ART_0437,TRK_02840,Sound & Vision Prize,Best Album,2021,False
+AWD_0363,ART_0568,TRK_05258,Golden Mic,Breakthrough Artist,2024,True
+AWD_0364,ART_0437,TRK_00087,Artist of the Year,Song of the Year,2015,True
+AWD_0365,ART_0270,,Streaming Record Award,Best Rock Album,2016,True
+AWD_0366,ART_0227,TRK_01578,Sound & Vision Prize,Top Producer,2024,False
+AWD_0367,ART_0446,TRK_05341,Billboard Award,Best Collaboration,2016,True
+AWD_0368,ART_0296,,Streaming Record Award,Song of the Year,2022,True
+AWD_0369,ART_0405,TRK_04120,Billboard Award,Top Producer,2018,True
+AWD_0370,ART_0438,TRK_01599,Artist of the Year,Best New Artist,2013,True
+AWD_0371,ART_0272,,Artist of the Year,Best Rock Album,2014,True
+AWD_0372,ART_0437,,Global Music Award,Top Producer,2012,True
+AWD_0373,ART_0407,,Sound & Vision Prize,Song of the Year,2015,True
+AWD_0374,ART_0437,TRK_02380,Golden Mic,Best Album,2017,True
+AWD_0375,ART_0104,,Golden Mic,Breakthrough Artist,2021,False
+AWD_0376,ART_0437,,Billboard Award,Top Producer,2018,True
+AWD_0377,ART_0347,,Streaming Record Award,Breakthrough Artist,2023,True
+AWD_0378,ART_0309,TRK_00888,Global Music Award,Best Rock Album,2018,True
+AWD_0379,ART_0631,,Sound & Vision Prize,Song of the Year,2024,True
+AWD_0380,ART_0437,TRK_05249,Artist of the Year,Best Pop Artist,2014,True
+AWD_0381,ART_0437,,Golden Mic,Song of the Year,2010,True
+AWD_0382,ART_0437,,Streaming Record Award,Best Album,2016,True
+AWD_0383,ART_0611,,Artist of the Year,Best Collaboration,2016,True
+AWD_0384,ART_0437,TRK_05966,Artist of the Year,Breakthrough Artist,2018,True
+AWD_0385,ART_0613,TRK_00524,Sound & Vision Prize,Best New Artist,2010,True
+AWD_0386,ART_0437,,Artist of the Year,Best Album,2024,True
+AWD_0387,ART_0438,,Golden Mic,Breakthrough Artist,2018,False
+AWD_0388,ART_0437,,Golden Mic,Best Collaboration,2023,True
+AWD_0389,ART_0352,TRK_04036,Sound & Vision Prize,Best New Artist,2020,False
+AWD_0390,ART_0438,TRK_03946,Global Music Award,Best New Artist,2024,True
+AWD_0391,ART_0625,TRK_04552,Artist of the Year,Best Pop Artist,2011,False
+AWD_0392,ART_0483,,Streaming Record Award,Song of the Year,2011,False
+AWD_0393,ART_0437,TRK_03419,Artist of the Year,Best Rock Album,2023,True
+AWD_0394,ART_0414,TRK_02707,Sound & Vision Prize,Breakthrough Artist,2021,False
+AWD_0395,ART_0123,TRK_03647,Golden Mic,Best Collaboration,2019,True
+AWD_0396,ART_0437,TRK_05048,Streaming Record Award,Best Pop Artist,2015,False
+AWD_0397,ART_0437,TRK_00325,Sound & Vision Prize,Best New Artist,2022,False
+AWD_0398,ART_0069,TRK_05212,Global Music Award,Best Rock Album,2016,True
+AWD_0399,ART_0437,,Golden Mic,Best Pop Artist,2021,False
+AWD_0400,ART_0251,,Global Music Award,Best Collaboration,2023,True
+AWD_0401,ART_0377,TRK_04478,Global Music Award,Best Rock Album,2016,True
+AWD_0402,ART_0438,TRK_02101,Streaming Record Award,Best Rock Album,2019,True
+AWD_0403,ART_0147,,Sound & Vision Prize,Breakthrough Artist,2021,True
+AWD_0404,ART_0437,TRK_05266,Streaming Record Award,Best Album,2011,True
+AWD_0405,ART_0089,TRK_02223,Artist of the Year,Top Producer,2016,True
+AWD_0406,ART_0437,TRK_01092,Global Music Award,Best Pop Artist,2021,True
+AWD_0407,ART_0424,TRK_04690,Streaming Record Award,Best New Artist,2016,True
+AWD_0408,ART_0437,TRK_01904,Golden Mic,Best Album,2010,False
+AWD_0409,ART_0437,TRK_04918,Artist of the Year,Best Pop Artist,2012,False
+AWD_0410,ART_0437,TRK_03664,Global Music Award,Best Pop Artist,2017,True
+AWD_0411,ART_0437,TRK_00266,Sound & Vision Prize,Best New Artist,2018,True
+AWD_0412,ART_0438,,Streaming Record Award,Top Producer,2022,False
+AWD_0413,ART_0437,TRK_05931,Streaming Record Award,Best Album,2024,True
+AWD_0414,ART_0437,TRK_05279,Golden Mic,Best Pop Artist,2010,True
+AWD_0415,ART_0437,TRK_04110,Global Music Award,Breakthrough Artist,2011,False
+AWD_0416,ART_0080,,Sound & Vision Prize,Best Collaboration,2023,True
+AWD_0417,ART_0153,,Billboard Award,Best Rock Album,2018,False
+AWD_0418,ART_0041,TRK_01413,Billboard Award,Best Album,2016,True
+AWD_0419,ART_0437,,Golden Mic,Breakthrough Artist,2019,True
+AWD_0420,ART_0273,TRK_04555,Artist of the Year,Best Pop Artist,2015,True
+AWD_0421,ART_0437,TRK_02797,Billboard Award,Best Pop Artist,2018,False
+AWD_0422,ART_0438,TRK_03822,Streaming Record Award,Best New Artist,2017,True
+AWD_0423,ART_0437,,Artist of the Year,Best Pop Artist,2016,False
+AWD_0424,ART_0437,TRK_05356,Global Music Award,Best Album,2015,False
+AWD_0425,ART_0602,,Artist of the Year,Best Album,2015,True
+AWD_0426,ART_0437,TRK_04128,Billboard Award,Best Album,2021,True
+AWD_0427,ART_0437,,Golden Mic,Best New Artist,2023,True
+AWD_0428,ART_0132,,Artist of the Year,Top Producer,2022,True
+AWD_0429,ART_0603,,Global Music Award,Best Collaboration,2020,False
+AWD_0430,ART_0045,,Sound & Vision Prize,Best Collaboration,2023,True
+AWD_0431,ART_0437,,Global Music Award,Best Rock Album,2024,True
+AWD_0432,ART_0617,TRK_04288,Billboard Award,Best Rock Album,2014,True
+AWD_0433,ART_0234,,Golden Mic,Best Pop Artist,2015,False
+AWD_0434,ART_0103,TRK_05914,Golden Mic,Best Collaboration,2024,True
+AWD_0435,ART_0467,,Artist of the Year,Song of the Year,2013,False
+AWD_0436,ART_0437,,Golden Mic,Best New Artist,2019,False
+AWD_0437,ART_0022,TRK_05479,Golden Mic,Breakthrough Artist,2019,False
+AWD_0438,ART_0581,TRK_04043,Artist of the Year,Top Producer,2016,True
+AWD_0439,ART_0352,TRK_02298,Streaming Record Award,Best Album,2016,True
+AWD_0440,ART_0437,TRK_05632,Global Music Award,Best Rock Album,2017,True
+AWD_0441,ART_0350,TRK_05958,Billboard Award,Song of the Year,2013,False
+AWD_0442,ART_0437,TRK_00850,Sound & Vision Prize,Top Producer,2020,True
+AWD_0443,ART_0381,TRK_05717,Artist of the Year,Best Collaboration,2023,True
+AWD_0444,ART_0623,,Artist of the Year,Top Producer,2016,True
+AWD_0445,ART_0437,,Billboard Award,Best Album,2018,True
+AWD_0446,ART_0437,,Artist of the Year,Song of the Year,2012,False
+AWD_0447,ART_0437,TRK_02938,Sound & Vision Prize,Best Pop Artist,2024,True
+AWD_0448,ART_0405,TRK_01582,Streaming Record Award,Best Collaboration,2018,True
+AWD_0449,ART_0209,,Golden Mic,Top Producer,2019,False
+AWD_0450,ART_0060,,Artist of the Year,Best Pop Artist,2022,True
+AWD_0451,ART_0642,TRK_05767,Billboard Award,Top Producer,2011,True
+AWD_0452,ART_0662,TRK_01744,Streaming Record Award,Best Album,2024,True
+AWD_0453,ART_0525,TRK_02830,Billboard Award,Top Producer,2018,True
+AWD_0454,ART_0424,TRK_03865,Sound & Vision Prize,Best New Artist,2014,True
+AWD_0455,ART_0437,TRK_02938,Streaming Record Award,Song of the Year,2012,False
+AWD_0456,ART_0441,TRK_01766,Global Music Award,Best New Artist,2024,False
+AWD_0457,ART_0083,,Billboard Award,Best Pop Artist,2018,True
+AWD_0458,ART_0611,TRK_04501,Streaming Record Award,Best Album,2011,True
+AWD_0459,ART_0437,TRK_00552,Golden Mic,Best Pop Artist,2011,True
+AWD_0460,ART_0437,TRK_05121,Sound & Vision Prize,Breakthrough Artist,2021,False
+AWD_0461,ART_0424,TRK_02615,Sound & Vision Prize,Breakthrough Artist,2017,False
+AWD_0462,ART_0257,,Artist of the Year,Top Producer,2018,True
+AWD_0463,ART_0611,TRK_03765,Billboard Award,Song of the Year,2021,False
+AWD_0464,ART_0438,,Billboard Award,Best Rock Album,2022,True
+AWD_0465,ART_0347,TRK_01135,Golden Mic,Best Album,2020,True
+AWD_0466,ART_0611,TRK_05189,Golden Mic,Best New Artist,2024,False
+AWD_0467,ART_0554,,Global Music Award,Top Producer,2019,True
+AWD_0468,ART_0167,,Streaming Record Award,Top Producer,2017,True
+AWD_0469,ART_0437,TRK_01833,Streaming Record Award,Best Album,2023,False
+AWD_0470,ART_0154,,Golden Mic,Best Pop Artist,2018,True
+AWD_0471,ART_0352,TRK_04725,Billboard Award,Best Pop Artist,2020,False
+AWD_0472,ART_0317,TRK_05395,Golden Mic,Song of the Year,2014,True
+AWD_0473,ART_0038,,Billboard Award,Best Album,2023,True
+AWD_0474,ART_0437,,Sound & Vision Prize,Best Album,2017,True
+AWD_0475,ART_0437,TRK_02376,Billboard Award,Best Rock Album,2012,False
+AWD_0476,ART_0437,,Billboard Award,Best New Artist,2021,False
+AWD_0477,ART_0437,,Sound & Vision Prize,Best Collaboration,2011,True
+AWD_0478,ART_0557,,Streaming Record Award,Best Pop Artist,2022,True
+AWD_0479,ART_0520,,Global Music Award,Best New Artist,2022,False
+AWD_0480,ART_0437,TRK_01272,Golden Mic,Best Album,2016,True
+AWD_0481,ART_0437,,Global Music Award,Best Collaboration,2020,True
+AWD_0482,ART_0437,,Artist of the Year,Song of the Year,2011,False
+AWD_0483,ART_0167,,Streaming Record Award,Best New Artist,2018,True
+AWD_0484,ART_0318,,Global Music Award,Top Producer,2021,True
+AWD_0485,ART_0167,TRK_03579,Artist of the Year,Song of the Year,2013,True
+AWD_0486,ART_0437,TRK_05419,Global Music Award,Best Collaboration,2023,True
+AWD_0487,ART_0060,,Billboard Award,Best Collaboration,2015,True
+AWD_0488,ART_0464,,Artist of the Year,Best New Artist,2015,True
+AWD_0489,ART_0437,,Sound & Vision Prize,Song of the Year,2021,True
+AWD_0490,ART_0437,,Billboard Award,Best Rock Album,2024,False
+AWD_0491,ART_0437,TRK_01749,Global Music Award,Breakthrough Artist,2012,True
+AWD_0492,ART_0437,TRK_03075,Billboard Award,Best New Artist,2016,False
+AWD_0493,ART_0437,TRK_00210,Streaming Record Award,Top Producer,2021,True
+AWD_0494,ART_0438,,Artist of the Year,Best Album,2019,False
+AWD_0495,ART_0167,TRK_00609,Streaming Record Award,Song of the Year,2024,True
+AWD_0496,ART_0167,,Streaming Record Award,Breakthrough Artist,2016,True
+AWD_0497,ART_0094,TRK_05147,Artist of the Year,Best Rock Album,2024,True
+AWD_0498,ART_0428,,Sound & Vision Prize,Best New Artist,2024,False
+AWD_0499,ART_0237,,Artist of the Year,Best Rock Album,2016,True
+AWD_0500,ART_0524,TRK_02864,Streaming Record Award,Best Collaboration,2021,True
