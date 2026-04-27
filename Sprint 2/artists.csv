@@ -1,0 +1,21 @@
+artist_id,name,country,primary_genre,debut_year,label_id
+ART_1,David Alexander,Rwanda,Hip-Hop,2007,LBL_4
+ART_2,Patrick Price,Ireland,Country,1995,LBL_4
+ART_3,Brett Leonard,Finland,Rock,2023,LBL_1
+ART_4,Yolanda Martinez,Iceland,Hip-Hop,2004,LBL_4
+ART_5,John Johnson,Cape Verde,Rock,2008,LBL_5
+ART_6,Douglas Porter,Central African Republic,Pop,1992,LBL_3
+ART_7,Devin Medina,Aruba,Country,1994,LBL_5
+ART_8,Donald Saunders,Italy,Hip-Hop,1990,LBL_1
+ART_9,Eric Snyder,British Indian Ocean Territory (Chagos Archipelago),Pop,2004,LBL_2
+ART_10,Lauren Rivera,Egypt,Jazz,1994,LBL_3
+ART_11,Victor Haley,Cape Verde,Pop,2020,LBL_4
+ART_12,Samuel Berg,South Africa,Country,2018,LBL_4
+ART_13,Henry Roman,Christmas Island,Rock,1990,LBL_5
+ART_14,Michelle Quinn,Iraq,Country,2009,LBL_2
+ART_15,Nicole Richardson,Gibraltar,Country,2020,LBL_4
+ART_16,Noah Krueger,New Caledonia,Rock,2020,LBL_2
+ART_17,Jon Pope,Saint Vincent and the Grenadines,Rock,2004,LBL_5
+ART_18,Paul Woodward,Italy,Pop,1999,LBL_4
+ART_19,Donald Taylor,Bermuda,Country,2009,LBL_3
+ART_20,Aaron Donovan,Chad,Rock,1999,LBL_4

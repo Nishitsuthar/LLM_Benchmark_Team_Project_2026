@@ -1,0 +1,92 @@
+{
+  "A": {
+    "label": "Viral tracks owned by low-tier artists",
+    "description": "These low-tier artists have 1 track each with ~12M stream base. The most-streamed artist globally is therefore NOT a high-tier artist.",
+    "viral_track_ids": [
+      4958,
+      12374
+    ],
+    "viral_artist_ids": [
+      28,
+      175
+    ],
+    "trap_question": "Which artist has the highest total streams?"
+  },
+  "B": {
+    "label": "High-tier artists with zero chart appearances",
+    "description": "These artist IDs are high-tier but were deliberately excluded from the charts table. Most-charted != most popular.",
+    "artist_ids": [
+      103,
+      116,
+      182
+    ],
+    "trap_question": "Which high-tier artist has the most chart entries?"
+  },
+  "C": {
+    "label": "Label royalty rate divergence",
+    "description": "Label rates vary from 0.0032 to 0.0079 per stream. The most-streamed artist does NOT earn the most royalties.",
+    "min_rate": 0.0032,
+    "max_rate": 0.0079,
+    "trap_question": "Which artist earned the most royalty revenue?"
+  },
+  "D": {
+    "label": "Classical/Folk highest average energy",
+    "description": "Classical and Folk tracks were assigned energy range (0.70-0.95). Electronic/Metal are lower. Contradicts typical LLM assumptions.",
+    "highest_energy_genres": [
+      "Classical",
+      "Folk"
+    ],
+    "trap_question": "Which genre has the highest average energy score?"
+  },
+  "E": {
+    "label": "Most-collaborated artist is mid-tier",
+    "description": "Artist 'Zindra Quelfield' (ID=89, tier=mid) was favoured in collaboration assignment.",
+    "artist_id": 89,
+    "artist_name": "Zindra Quelfield",
+    "trap_question": "Which artist appears most as a featured collaborator?"
+  },
+  "F": {
+    "label": "Platform-genre affinity",
+    "description": "60% of streams for each genre are routed to affinity platforms. Classical/Jazz dominate Melodex; Hip-Hop/Pop dominate Streamify.",
+    "affinity_map": {
+      "Streamify": [
+        "Pop",
+        "Hip-Hop",
+        "R&B"
+      ],
+      "Melodex": [
+        "Classical",
+        "Jazz",
+        "Folk"
+      ],
+      "SoundBridge": [
+        "Rock",
+        "Metal",
+        "Electronic"
+      ],
+      "WavePlay": [
+        "Electronic",
+        "Pop",
+        "R&B"
+      ],
+      "AudioNow": [
+        "Country",
+        "Folk",
+        "Rock"
+      ]
+    },
+    "trap_question": "Which platform has the most Classical streams?"
+  },
+  "G": {
+    "label": "Artist trend patterns",
+    "description": "Each artist has a trend type affecting stream volume over time. Viral_burst artists peak in year 1-2 then collapse.",
+    "trend_types": [
+      "steady",
+      "steady",
+      "rising",
+      "declining",
+      "viral_burst"
+    ],
+    "trap_question": "Which artist had the highest streams in their first year vs most recent year?"
+  }
+}

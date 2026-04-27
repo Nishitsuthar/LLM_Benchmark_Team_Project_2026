@@ -1,0 +1,1501 @@
+album_id,artist_id,title,release_year,genre,total_tracks
+1,1,Under Golden Spectra,2012,Rock,12
+2,2,Currents of Signals,2020,Electronic,9
+3,3,Under Weightless Archives,2005,R&B,10
+4,4,The Hollow Pulses EP,2014,Metal,14
+5,5,Mirrors of Echoes,2000,Rock,16
+6,6,Restless (Deluxe),2020,R&B,12
+7,7,Undertones of Signals,1995,R&B,10
+8,8,Under Velvet Vaults,2022,Country,8
+9,9,Drifting,2023,Pop,13
+10,10,Fragments & Ruins,2021,R&B,9
+11,11,Blinding Shadows Revisited,2019,Rock,8
+12,12,The Vanished Margins,2004,Hip-Hop,9
+13,13,Velvet,2015,Classical,15
+14,14,Neon Ruins Sessions,2021,Country,17
+15,15,Restless Ruins (Deluxe),2020,Pop,17
+16,16,Under Burning Circuits,2015,Metal,9
+17,17,Under Scattered Currents,2005,R&B,10
+18,18,Restless Bridges (Deluxe),2019,Jazz,15
+19,19,Bridges of Tides,2018,R&B,9
+20,20,Wavelengths & Ruins,2020,Electronic,14
+21,21,Undertones of Embers,2021,R&B,12
+22,22,Under Drifting Overtones,2012,Hip-Hop,9
+23,23,Burning Vol. I,1997,Metal,14
+24,24,Static,2019,Jazz,10
+25,25,The Shattered Fragments,1995,Hip-Hop,10
+26,26,Orbits & Mirrors,2021,Electronic,11
+27,27,Golden Reverb Vol. I,2017,Country,11
+28,28,The Hollow Pulses,2017,Classical,11
+29,29,Bridges & Orbits,2021,Metal,7
+30,30,Horizons of Reverb,2023,Country,7
+31,31,Intervals & Mirrors,2019,Metal,15
+32,32,The Shattered Signals (Deluxe),2024,Electronic,12
+33,33,Vaults & Flickers,2023,Rock,8
+34,34,Blinding EP,2022,Hip-Hop,13
+35,35,Resonance of Embers,2016,Classical,14
+36,36,Undertones of Intervals,2024,Classical,15
+37,37,Burning Thresholds EP,2021,Pop,9
+38,38,Shadows & Spectra,2020,Folk,16
+39,39,Hollow Resonance EP,2015,Classical,8
+40,40,Under Vanished Signals,2000,Metal,7
+41,41,Dissonance & Drifts,2010,Classical,14
+42,42,Static Embers Sessions,2016,Jazz,13
+43,43,Burning Thresholds,2018,Classical,12
+44,44,The Burning Vaults (Deluxe),2020,Jazz,9
+45,45,Vanished Thresholds Revisited,2022,Pop,14
+46,46,Margins & Tides,2016,Country,8
+47,47,Resonance & Tides,2018,Rock,15
+48,48,The Muted Shadows,2008,Electronic,9
+49,49,Flickers & Shadows,2012,Folk,9
+50,50,Distant Spectra (Deluxe),1996,Jazz,13
+51,51,Vaults & Bridges,2021,Country,7
+52,52,The Blinding Reverb Revisited,2023,Country,6
+53,53,Overtones & Orbits,2019,Rock,13
+54,54,Fading,2013,Classical,8
+55,55,Dissonance of Frequencies,2007,Jazz,11
+56,56,The Vanished Orbits EP,2004,Metal,14
+57,57,Mirrors of Resonance,2018,Electronic,9
+58,58,Pale Thresholds Revisited,2024,Electronic,10
+59,59,Under Endless Contours,2024,Metal,4
+60,60,The Silent Thresholds Vol. I,2009,Country,17
+61,61,Embers & Spectra,2024,Rock,12
+62,62,Hollow Wavelengths Revisited,2024,Folk,14
+63,63,Under Blinding Spectra,1999,Jazz,11
+64,64,The Crimson Shadows,2007,Pop,10
+65,65,Glowing Revisited,2023,R&B,10
+66,66,Silent Margins,2007,Country,11
+67,67,Silent EP,2003,Pop,8
+68,68,Broken Drifts,2017,Metal,8
+69,69,Archives of Fragments,2021,Country,11
+70,70,The Pale Overtones,2016,Pop,11
+71,71,Under Silent Vaults,2008,Electronic,8
+72,72,Echoes & Contours,2022,Folk,12
+73,73,Spectra of Bridges,2015,Country,12
+74,74,Vaults of Contours,2023,Rock,16
+75,75,Frozen Reverb Revisited,2019,Hip-Hop,7
+76,76,Under Restless Flickers,2019,R&B,13
+77,77,Broken,2007,Folk,14
+78,78,The Blinding Contours (Deluxe),2002,Electronic,8
+79,79,The Pale Dissonance,2023,Metal,3
+80,80,Vanished Vaults Vol. II,2012,Country,9
+81,81,Under Broken Orbits,2005,Rock,13
+82,82,Embers & Fragments,2015,Metal,9
+83,83,Scattered Dissonance Vol. I,2020,Classical,10
+84,84,Under Weightless Resonance,2022,Electronic,9
+85,85,Golden Orbits Revisited,2015,R&B,6
+86,86,Under Hollow Dissonance,2005,Folk,9
+87,87,The Blinding Archives Revisited,2012,Classical,8
+88,88,The Shattered Embers Vol. I,2022,R&B,7
+89,89,Crimson Spectra,2020,Country,10
+90,90,Weightless Undertones (Deluxe),2012,Rock,12
+91,91,Intervals of Flickers,2012,Pop,7
+92,92,Undertones & Ruins,2022,Hip-Hop,9
+93,93,Vanished Revisited,2017,Metal,9
+94,94,Currents & Frequencies,2022,Electronic,13
+95,95,Scattered,2024,Hip-Hop,10
+96,96,Blinding Vol. I,2019,Rock,7
+97,97,Fragments & Vaults,1996,Hip-Hop,14
+98,98,Under Silent Margins,2022,Jazz,8
+99,99,Golden Contours Sessions,2021,Rock,6
+100,100,Vaults of Ruins,2018,Rock,8
+101,101,The Restless Mirrors Vol. II,2024,Pop,7
+102,102,The Shattered Contours Revisited,2020,Classical,10
+103,103,Currents & Undertones,2023,Folk,7
+104,104,Weightless Revisited,2024,Pop,5
+105,105,Velvet Vol. I,2012,Jazz,11
+106,106,The Weightless Contours (Deluxe),2019,Classical,8
+107,107,Under Drifting Echoes,2022,R&B,19
+108,108,Distant Resonance Revisited,2019,Pop,9
+109,109,Endless Signals Revisited,2011,Electronic,12
+110,110,Trembling Signals,2001,Country,7
+111,111,Under Scattered Frequencies,2000,Classical,9
+112,112,Under Drifting Pulses,2017,R&B,6
+113,113,Static (Deluxe),1997,Rock,10
+114,114,Vanished Contours Vol. II,1995,Classical,8
+115,115,Burning Margins,2020,R&B,7
+116,116,Tides & Drifts,2021,Folk,11
+117,117,The Silver Spectra,2022,R&B,8
+118,118,The Silent Embers Sessions,2011,Rock,11
+119,119,Resonance & Frequencies,2018,Metal,7
+120,120,Distant Vol. I,2017,Classical,8
+121,121,Muted,2017,Jazz,3
+122,122,The Pale Pulses,2020,R&B,6
+123,123,Undertones of Echoes,2005,Jazz,14
+124,124,Fading Vol. II,2018,Folk,10
+125,125,Hollow Revisited,1996,Hip-Hop,11
+126,126,Bridges of Shadows,2017,Pop,14
+127,127,Drifting Vol. I,2013,R&B,12
+128,128,Burning Spectra,2014,Country,9
+129,129,The Trembling Overtones Sessions,2010,Folk,9
+130,130,Echoes & Spectra,2014,Country,14
+131,131,Spectra of Currents,2009,Rock,12
+132,132,The Restless Tides,2021,Jazz,17
+133,133,The Blinding Resonance Vol. II,2024,Classical,13
+134,134,Pale Bridges Sessions,2017,Electronic,9
+135,135,Under Fading Pulses,2018,Classical,10
+136,136,Blinding,2020,Rock,7
+137,137,Margins of Shadows,2020,Pop,14
+138,138,Silver Vaults,2008,Pop,15
+139,139,Intervals & Undertones,2016,Electronic,12
+140,140,Under Fading Undertones,2016,Metal,10
+141,141,Drifting Currents (Deluxe),2010,Metal,9
+142,142,The Frozen Contours Vol. II,2022,R&B,13
+143,143,The Static Archives Revisited,2007,Classical,11
+144,144,Blinding Intervals,2020,Classical,14
+145,145,Shadows of Shadows,2003,Folk,13
+146,146,The Fading Flickers Revisited,2009,Rock,13
+147,147,Orbits of Fragments,2022,Electronic,9
+148,148,Distant Tides,2022,Folk,8
+149,149,Undertones & Currents,1998,Pop,11
+150,150,The Distant Bridges Vol. II,2009,Jazz,14
+151,151,Under Vanished Drifts,2015,Metal,13
+152,152,Neon Shadows Vol. I,2023,Pop,11
+153,153,Glowing Intervals Vol. I,2019,Folk,12
+154,154,Pale Vaults Vol. II,2022,Jazz,11
+155,155,Weightless Overtones EP,2010,Rock,10
+156,156,Under Burning Bridges,2021,R&B,14
+157,157,The Broken Currents,2023,Rock,13
+158,158,The Endless Currents Vol. II,2006,Rock,8
+159,159,Mirrors & Margins,2024,Country,7
+160,160,Under Glowing Embers,2022,Folk,10
+161,161,Broken Ruins,2019,Country,11
+162,162,Resonance & Intervals,2019,Rock,9
+163,163,Thresholds & Fragments,2008,R&B,13
+164,164,Intervals of Signals,2004,Folk,9
+165,165,Intervals & Flickers,2001,Hip-Hop,12
+166,166,Restless,2007,Hip-Hop,10
+167,167,Ruins & Margins,2022,Hip-Hop,8
+168,168,Circuits of Archives,2020,Folk,10
+169,169,The Restless Orbits,2018,Classical,11
+170,170,Horizons & Spectra,2019,Hip-Hop,18
+171,171,The Muted Contours,2017,Jazz,16
+172,172,Under Neon Margins,2018,Pop,10
+173,173,Embers of Thresholds,2021,Electronic,7
+174,174,Resonance & Flickers,2021,Metal,10
+175,175,The Drifting Ruins,2007,Hip-Hop,14
+176,176,Signals of Flickers,2016,Jazz,8
+177,177,Distant (Deluxe),2022,Electronic,10
+178,178,Under Fading Contours,2020,R&B,10
+179,179,Frozen Flickers EP,2015,Folk,10
+180,180,Spectra of Shadows,2021,Rock,14
+181,181,The Static Pulses Vol. I,2021,Country,11
+182,182,Intervals of Echoes,2013,Jazz,16
+183,183,Pulses of Reverb,2014,Jazz,7
+184,184,Wavelengths & Vaults,2009,Pop,10
+185,185,Silver Currents,2011,Pop,6
+186,186,Drifts of Contours,2022,Folk,10
+187,187,Frozen Vol. II,2017,Pop,9
+188,188,Archives of Flickers,2024,Country,6
+189,189,The Frozen Tides (Deluxe),1998,Classical,7
+190,190,Vaults & Spectra,2021,Rock,8
+191,191,Weightless Signals Vol. I,2004,Metal,8
+192,192,Thresholds & Wavelengths,2013,Pop,6
+193,193,Under Shattered Frequencies,2024,Folk,9
+194,194,Scattered Margins (Deluxe),2022,Hip-Hop,8
+195,195,Pale Echoes,1995,Country,6
+196,196,Reverb & Horizons,2021,R&B,7
+197,197,Mirrors of Drifts,2011,Electronic,12
+198,198,Under Velvet Fragments,2023,Jazz,5
+199,199,The Drifting Pulses Vol. II,2022,Country,13
+200,200,Weightless Intervals,2013,Classical,10
+201,201,Under Endless Orbits,2007,R&B,10
+202,202,Embers of Embers,2003,Country,13
+203,203,Wavelengths of Wavelengths,1997,Pop,5
+204,204,Under Silver Wavelengths,2024,Hip-Hop,8
+205,205,The Frozen Fragments,2009,Classical,19
+206,206,Golden Pulses (Deluxe),2012,Rock,15
+207,207,Fragments of Intervals,2022,Hip-Hop,7
+208,208,Under Fading Archives,2017,R&B,12
+209,209,Frequencies & Dissonance,2009,Hip-Hop,7
+210,210,Under Velvet Resonance,2016,Jazz,14
+211,211,Wavelengths of Ruins,2020,Hip-Hop,9
+212,212,Under Distant Pulses,1999,Country,19
+213,213,Horizons & Mirrors,2005,Metal,9
+214,214,Velvet Frequencies,2024,Country,16
+215,215,Glowing,2022,Rock,7
+216,216,Velvet (Deluxe),2019,Folk,7
+217,217,Under Trembling Spectra,2022,Rock,18
+218,218,Under Velvet Circuits,2014,Electronic,10
+219,219,The Velvet Fragments (Deluxe),2024,Metal,13
+220,220,Frozen Tides (Deluxe),2001,Hip-Hop,10
+221,221,The Fading Contours EP,2015,Pop,9
+222,222,Endless Revisited,2010,Folk,8
+223,223,Trembling (Deluxe),2022,Classical,12
+224,224,The Distant Archives,2020,Country,8
+225,225,Echoes & Currents,2013,Jazz,6
+226,226,Under Pale Bridges,2017,Jazz,14
+227,227,Under Weightless Undertones,2019,Rock,12
+228,228,Vanished EP,2011,Hip-Hop,13
+229,229,Under Silver Currents,2022,Metal,11
+230,230,Under Blinding Echoes,2024,Metal,12
+231,231,Under Crimson Vaults,2019,R&B,14
+232,232,Resonance of Reverb,2018,Rock,19
+233,233,Dissonance & Echoes,2009,Classical,12
+234,234,Scattered Dissonance,2024,Rock,6
+235,235,The Crimson Wavelengths Sessions,2024,Rock,9
+236,236,Dissonance & Flickers,2024,Folk,11
+237,237,Vaults of Bridges,2022,Jazz,11
+238,238,The Crimson Resonance,2009,Folk,11
+239,239,Under Frozen Contours,2023,Metal,13
+240,240,Under Vanished Bridges,2005,Jazz,13
+241,241,Ruins of Ruins,2020,Folk,14
+242,242,Resonance of Horizons,2014,Folk,7
+243,243,Hollow,2018,Pop,8
+244,244,Dissonance of Signals,2019,Metal,10
+245,245,The Trembling Fragments,2024,Jazz,7
+246,246,Orbits of Circuits,2013,Metal,11
+247,247,Under Drifting Currents,2020,R&B,13
+248,248,Wavelengths of Overtones,2022,Country,9
+249,249,Fading Drifts,2023,Metal,9
+250,250,Thresholds & Circuits,2005,R&B,9
+251,149,Blinding Dissonance,2018,Pop,15
+252,249,Drifting Revisited,2023,Metal,9
+253,92,Vanished Orbits,2022,Hip-Hop,9
+254,212,The Shattered Currents Vol. I,2021,Country,7
+255,73,Contours & Archives,1999,Country,9
+256,145,Restless Revisited,2019,Folk,8
+257,13,Silver Reverb (Deluxe),2003,Classical,9
+258,32,The Scattered Thresholds,2018,Electronic,10
+259,52,Spectra of Signals,2021,Country,14
+260,41,Shadows & Reverb,2007,Classical,7
+261,65,Frozen Pulses Revisited,2019,R&B,9
+262,14,Flickers of Undertones,2009,Country,12
+263,110,Shadows of Flickers,1998,Country,15
+264,1,The Shattered Shadows,2013,Rock,8
+265,58,Under Static Thresholds,2013,Electronic,4
+266,3,Fragments of Resonance,2001,R&B,8
+267,221,Trembling,2010,Pop,13
+268,19,The Fading Shadows,1998,R&B,18
+269,81,Overtones & Ruins,2002,Rock,11
+270,98,The Drifting Pulses,2022,Jazz,6
+271,136,Under Neon Intervals,2015,Rock,10
+272,43,Frozen,2024,Classical,6
+273,192,The Endless Intervals Revisited,2017,Pop,11
+274,221,The Distant Overtones,1999,Pop,9
+275,193,Muted Margins Vol. II,2020,Folk,11
+276,247,The Golden Reverb,2014,R&B,10
+277,142,Under Glowing Margins,2018,R&B,11
+278,200,Tides of Dissonance,2020,Classical,9
+279,225,Embers & Drifts,2019,Jazz,11
+280,131,The Weightless Orbits,2009,Rock,20
+281,201,The Shattered Orbits,2014,R&B,5
+282,128,Intervals of Shadows,2019,Country,8
+283,228,Frozen Spectra Vol. I,2012,Hip-Hop,12
+284,100,Under Endless Frequencies,2024,Rock,11
+285,175,The Blinding Circuits,1999,Hip-Hop,10
+286,151,Neon Currents,2003,Metal,7
+287,237,Flickers of Drifts,2024,Jazz,7
+288,107,Trembling Vol. II,2008,R&B,14
+289,164,Under Vanished Intervals,1999,Folk,10
+290,72,Pale Shadows EP,2019,Folk,13
+291,250,The Vanished Fragments Vol. II,2013,R&B,16
+292,163,Pale Flickers Vol. II,2018,R&B,7
+293,245,The Hollow Mirrors,2021,Jazz,10
+294,30,Glowing Sessions,2021,Country,11
+295,80,Margins of Pulses,2018,Country,13
+296,45,Neon Flickers,2019,Pop,7
+297,3,The Shattered Frequencies EP,2014,R&B,15
+298,201,Currents of Bridges,2018,R&B,13
+299,33,Undertones of Dissonance,2014,Rock,9
+300,188,Blinding Overtones,2023,Country,10
+301,207,Golden EP,2019,Hip-Hop,9
+302,68,Archives of Reverb,2015,Metal,8
+303,128,Shattered Dissonance Sessions,2013,Country,12
+304,95,The Golden Undertones,2023,Hip-Hop,10
+305,173,Horizons of Mirrors,2019,Electronic,10
+306,131,Hollow Dissonance,2015,Rock,11
+307,12,The Velvet Spectra,2016,Hip-Hop,11
+308,206,Margins of Reverb,2009,Rock,10
+309,58,Mirrors & Vaults,2024,Electronic,8
+310,82,Resonance & Shadows,2013,Metal,12
+311,96,Burning Pulses,2018,Rock,12
+312,58,Under Hollow Orbits,2014,Electronic,6
+313,225,Pale,2015,Jazz,12
+314,23,Under Scattered Tides,2006,Metal,9
+315,52,Archives & Wavelengths,2021,Country,11
+316,190,Under Silent Thresholds,2023,Rock,10
+317,152,Overtones of Contours,2018,Pop,11
+318,39,Endless Tides,2020,Classical,9
+319,163,Overtones of Tides,2005,R&B,14
+320,1,Orbits of Dissonance,2018,Rock,8
+321,187,Horizons & Embers,2019,Pop,11
+322,61,Shattered,2022,Rock,8
+323,183,Shadows & Echoes,2009,Jazz,14
+324,230,Under Endless Flickers,2022,Metal,12
+325,118,Shadows of Archives,1998,Rock,8
+326,130,The Drifting Resonance Vol. II,2014,Country,10
+327,152,Under Hollow Vaults,2017,Pop,6
+328,61,Currents & Dissonance,2023,Rock,17
+329,238,Trembling Vol. I,2018,Folk,6
+330,116,Mirrors & Shadows,2014,Folk,9
+331,35,Under Silver Signals,2012,Classical,7
+332,43,Scattered Vol. I,2017,Classical,8
+333,31,Under Frozen Undertones,2019,Metal,7
+334,116,Thresholds & Currents,2011,Folk,11
+335,24,The Static Ruins Sessions,2017,Jazz,7
+336,56,Signals & Shadows,2022,Metal,16
+337,64,Orbits & Drifts,2007,Pop,9
+338,174,Currents & Resonance,2022,Metal,12
+339,8,Scattered EP,2023,Country,8
+340,64,Scattered Horizons,2009,Pop,10
+341,4,Blinding Mirrors,2013,Metal,13
+342,211,Frozen Revisited,2021,Hip-Hop,13
+343,241,Neon Shadows,2022,Folk,10
+344,114,The Distant Overtones Vol. I,1998,Classical,8
+345,11,Under Endless Resonance,2021,Rock,8
+346,102,Neon Vol. II,2020,Classical,10
+347,110,The Frozen Embers,2003,Country,10
+348,72,Under Glowing Intervals,2019,Folk,6
+349,166,Circuits & Vaults,2023,Hip-Hop,10
+350,141,Orbits & Signals,2008,Metal,18
+351,52,Overtones of Wavelengths,2020,Country,5
+352,162,Under Neon Orbits,2018,Rock,8
+353,123,Under Burning Fragments,2015,Jazz,7
+354,70,The Neon Fragments Sessions,2002,Pop,11
+355,8,Echoes & Wavelengths,2022,Country,20
+356,136,Undertones & Archives,2002,Rock,9
+357,250,The Silver Mirrors Revisited,2002,R&B,6
+358,69,Under Weightless Echoes,2019,Country,7
+359,148,The Silent Archives Vol. I,2024,Folk,16
+360,179,Spectra & Archives,1996,Folk,5
+361,181,Frequencies of Archives,2024,Country,5
+362,37,Under Crimson Resonance,2022,Pop,10
+363,226,Vanished,2008,Jazz,11
+364,126,Distant Echoes,2019,Pop,11
+365,57,Burning Circuits,2020,Electronic,12
+366,235,Under Crimson Wavelengths,2015,Rock,8
+367,88,Bridges of Spectra,2022,R&B,15
+368,16,Broken Archives,2014,Metal,8
+369,217,Under Frozen Shadows,2023,Rock,14
+370,181,Orbits of Archives,2020,Country,8
+371,87,Fragments & Signals,2000,Classical,13
+372,188,Drifting (Deluxe),2024,Country,6
+373,82,The Trembling Contours Sessions,2020,Metal,9
+374,92,The Static Archives,2022,Hip-Hop,16
+375,79,Flickers of Ruins,2018,Metal,4
+376,46,Tides of Flickers,2022,Country,9
+377,101,Under Hollow Bridges,2016,Pop,11
+378,236,Under Silent Reverb,2024,Folk,7
+379,27,Broken Vol. I,2018,Country,10
+380,20,Overtones of Shadows,2024,Electronic,11
+381,182,Reverb of Margins,2023,Jazz,12
+382,86,Neon,2009,Folk,12
+383,64,Shadows of Frequencies,2014,Pop,7
+384,202,Weightless Tides,2007,Country,9
+385,113,Shattered Vol. II,2008,Rock,6
+386,140,Silver (Deluxe),2023,Metal,8
+387,222,Under Drifting Undertones,2016,Folk,11
+388,58,The Scattered Shadows,2017,Electronic,10
+389,6,Currents & Horizons,2020,R&B,14
+390,88,The Fading Bridges,2024,R&B,6
+391,242,Restless Intervals Sessions,2019,Folk,12
+392,181,Endless Reverb,2024,Country,14
+393,228,Restless Embers,2021,Hip-Hop,7
+394,179,Under Weightless Spectra,2019,Folk,10
+395,139,Pulses & Ruins,2006,Electronic,13
+396,61,Hollow Orbits Sessions,2024,Rock,9
+397,216,Tides & Vaults,2001,Folk,13
+398,76,Reverb of Intervals,2020,R&B,10
+399,52,Neon Embers,2021,Country,9
+400,21,Silver,2023,R&B,12
+401,121,Drifting Contours Vol. II,2000,Jazz,11
+402,95,The Golden Archives,2020,Hip-Hop,17
+403,193,Pulses of Horizons,2011,Folk,16
+404,172,Wavelengths & Contours,2017,Pop,11
+405,249,Under Silent Contours,2012,Metal,8
+406,216,Burning Vol. II,2016,Folk,10
+407,176,Under Muted Overtones,2019,Jazz,8
+408,205,Under Static Intervals,1999,Classical,11
+409,31,The Crimson Signals,2022,Metal,7
+410,21,Vaults of Embers,2021,R&B,9
+411,214,Under Golden Fragments,2021,Country,7
+412,23,Vanished Vol. II,2012,Metal,8
+413,84,Drifts & Thresholds,2021,Electronic,8
+414,202,Intervals of Archives,2011,Country,9
+415,201,Silver Vol. II,2011,R&B,14
+416,38,Under Muted Archives,2005,Folk,18
+417,237,Muted Undertones,2024,Jazz,9
+418,74,Under Frozen Overtones,2023,Rock,11
+419,68,Under Glowing Circuits,2014,Metal,14
+420,45,Under Glowing Pulses,2019,Pop,7
+421,103,Fading Overtones Vol. I,2019,Folk,9
+422,61,Weightless Circuits,2023,Rock,12
+423,6,Resonance & Wavelengths,2022,R&B,6
+424,80,Resonance & Circuits,2022,Country,4
+425,179,Horizons of Dissonance,2003,Folk,11
+426,35,Margins & Thresholds,2019,Classical,8
+427,69,Vaults of Intervals,2017,Country,13
+428,49,Crimson Vol. II,2018,Folk,14
+429,125,Under Frozen Resonance,1997,Hip-Hop,7
+430,132,The Distant Ruins EP,2018,Jazz,10
+431,35,Under Muted Tides,2014,Classical,9
+432,50,Hollow Vol. I,2017,Jazz,11
+433,51,Frequencies & Resonance,2011,Country,14
+434,130,Tides of Mirrors,2018,Country,10
+435,126,Under Scattered Bridges,2023,Pop,12
+436,122,Under Vanished Frequencies,2011,R&B,8
+437,42,Margins & Resonance,2023,Jazz,5
+438,24,Tides & Orbits,2017,Jazz,8
+439,42,Under Blinding Embers,2008,Jazz,9
+440,166,The Static Embers,2015,Hip-Hop,9
+441,105,Under Neon Dissonance,2007,Jazz,13
+442,122,The Drifting Bridges Sessions,2000,R&B,9
+443,58,Intervals & Wavelengths,2017,Electronic,11
+444,183,Reverb of Currents,2015,Jazz,11
+445,230,Frozen (Deluxe),2021,Metal,12
+446,56,Pale Revisited,2016,Metal,12
+447,212,Neon Drifts Revisited,2021,Country,11
+448,215,Contours & Reverb,2020,Rock,9
+449,77,Horizons of Circuits,1997,Folk,13
+450,87,Reverb & Fragments,2022,Classical,7
+451,71,Reverb & Flickers,2019,Electronic,9
+452,77,The Broken Drifts,2023,Folk,13
+453,15,Pulses & Signals,2023,Pop,12
+454,7,Circuits of Ruins,2003,R&B,6
+455,233,Echoes of Archives,2017,Classical,8
+456,147,The Restless Margins,2024,Electronic,12
+457,164,Static Vol. I,2011,Folk,7
+458,77,The Static Overtones EP,2000,Folk,10
+459,76,Shattered Signals,2024,R&B,9
+460,207,The Static Overtones Vol. I,2024,Hip-Hop,12
+461,23,The Frozen Mirrors,2008,Metal,6
+462,202,Frequencies & Currents,2013,Country,12
+463,76,Drifting Archives Sessions,2022,R&B,7
+464,19,Crimson EP,1998,R&B,8
+465,223,Orbits of Drifts,2016,Classical,6
+466,106,Broken Signals,2020,Classical,10
+467,105,Under Scattered Signals,2017,Jazz,8
+468,221,Bridges of Undertones,1997,Pop,10
+469,125,Reverb & Bridges,2006,Hip-Hop,15
+470,163,Neon Thresholds,2001,R&B,7
+471,195,The Muted Undertones,2010,Country,5
+472,202,Broken Intervals Vol. II,2015,Country,9
+473,110,Endless (Deluxe),2007,Country,12
+474,2,Vanished Embers Vol. I,2020,Electronic,12
+475,229,Undertones & Resonance,2020,Metal,12
+476,5,Tides of Reverb,2020,Rock,11
+477,64,The Trembling Overtones Vol. I,2015,Pop,15
+478,34,Fading Drifts Sessions,2006,Hip-Hop,9
+479,43,Hollow Ruins,2018,Classical,8
+480,187,Under Glowing Drifts,2013,Pop,8
+481,112,Signals of Fragments,2013,R&B,12
+482,92,The Velvet Spectra Vol. II,2016,Hip-Hop,14
+483,59,The Weightless Signals,2021,Metal,13
+484,151,Under Velvet Horizons,2013,Metal,7
+485,183,Wavelengths of Echoes,2014,Jazz,9
+486,225,Currents of Undertones,2018,Jazz,4
+487,160,Glowing Echoes Revisited,2011,Folk,9
+488,168,Hollow Flickers,2008,Folk,8
+489,114,Silver EP,2003,Classical,10
+490,122,Signals of Embers,2022,R&B,5
+491,176,Tides of Ruins,2016,Jazz,6
+492,170,Static Drifts,2019,Hip-Hop,12
+493,156,Signals of Vaults,2012,R&B,9
+494,131,Intervals of Horizons,2017,Rock,6
+495,30,Shattered Embers Sessions,2022,Country,11
+496,200,Resonance & Drifts,2005,Classical,17
+497,92,The Hollow Contours (Deluxe),2019,Hip-Hop,13
+498,177,Neon Pulses,2010,Electronic,7
+499,214,Under Static Circuits,2022,Country,10
+500,244,Blinding Drifts,2023,Metal,11
+501,186,Golden Reverb,2024,Folk,12
+502,76,Thresholds & Echoes,2014,R&B,8
+503,209,The Hollow Dissonance,2006,Hip-Hop,7
+504,206,Fragments of Vaults,2019,Rock,16
+505,30,Broken Pulses Revisited,2022,Country,11
+506,85,Overtones & Thresholds,2015,R&B,9
+507,69,Bridges & Horizons,2022,Country,14
+508,103,Golden Vol. II,2019,Folk,5
+509,218,The Silver Signals,2023,Electronic,12
+510,41,Endless Spectra Sessions,2011,Classical,7
+511,206,The Glowing Orbits Vol. I,2015,Rock,16
+512,8,Overtones of Resonance,2017,Country,3
+513,124,Trembling Dissonance Revisited,2017,Folk,10
+514,197,Archives of Margins,2024,Electronic,11
+515,58,Dissonance of Fragments,2021,Electronic,16
+516,134,Flickers of Intervals,2015,Electronic,6
+517,111,Margins of Mirrors,2014,Classical,11
+518,89,Broken EP,2016,Country,12
+519,14,Drifting Spectra,2018,Country,8
+520,218,Blinding Circuits Vol. I,2013,Electronic,10
+521,85,Echoes & Drifts,2003,R&B,7
+522,141,Orbits of Orbits,2021,Metal,11
+523,61,Scattered Thresholds Sessions,2023,Rock,15
+524,23,Shattered Margins Revisited,1995,Metal,10
+525,27,Endless,2012,Country,8
+526,141,Distant Wavelengths Sessions,2014,Metal,8
+527,164,Overtones & Drifts,2012,Folk,10
+528,53,Pulses of Thresholds,2015,Rock,10
+529,94,Silent Dissonance (Deluxe),2019,Electronic,14
+530,144,Pulses of Frequencies,2024,Classical,11
+531,30,Blinding Pulses,2021,Country,6
+532,88,Resonance & Reverb,2022,R&B,8
+533,141,Under Frozen Flickers,1998,Metal,10
+534,12,The Shattered Signals Vol. II,2002,Hip-Hop,8
+535,66,Under Crimson Embers,1998,Country,10
+536,239,Crimson (Deluxe),2022,Metal,11
+537,184,Horizons & Undertones,2019,Pop,21
+538,12,Resonance of Pulses,2017,Hip-Hop,10
+539,32,Scattered Revisited,2023,Electronic,9
+540,245,Under Broken Circuits,2018,Jazz,12
+541,136,Echoes of Contours,2024,Rock,9
+542,111,Under Shattered Spectra,2015,Classical,7
+543,200,The Trembling Archives,2022,Classical,7
+544,209,The Silver Orbits Revisited,2014,Hip-Hop,11
+545,156,Drifts & Overtones,2021,R&B,15
+546,108,Under Trembling Undertones,2020,Pop,10
+547,71,Glowing EP,2008,Electronic,5
+548,216,Contours of Dissonance,2009,Folk,11
+549,183,Spectra of Contours,2022,Jazz,12
+550,56,The Crimson Intervals,2021,Metal,11
+551,89,Bridges of Drifts,2014,Country,9
+552,178,Fragments of Flickers,2013,R&B,11
+553,195,Contours & Circuits,2013,Country,11
+554,147,Flickers of Vaults,2024,Electronic,8
+555,74,Neon EP,2022,Rock,10
+556,7,Echoes of Embers,2003,R&B,13
+557,193,The Hollow Flickers,2015,Folk,14
+558,193,Under Hollow Frequencies,2023,Folk,8
+559,27,Under Static Margins,2012,Country,9
+560,222,The Weightless Reverb EP,2007,Folk,9
+561,61,Under Trembling Ruins,2024,Rock,10
+562,171,Fading Orbits Vol. II,2021,Jazz,10
+563,250,Fragments of Contours,1996,R&B,12
+564,4,Currents of Embers,2021,Metal,6
+565,213,The Drifting Flickers Revisited,2007,Metal,8
+566,194,Under Vanished Margins,2020,Hip-Hop,10
+567,199,Embers of Ruins,2022,Country,5
+568,46,Shadows of Bridges,2009,Country,8
+569,189,Under Silver Orbits,1996,Classical,15
+570,110,Contours & Currents,1999,Country,16
+571,42,Under Golden Tides,2011,Jazz,12
+572,120,Broken Spectra Vol. I,2024,Classical,11
+573,14,Intervals of Resonance,2023,Country,15
+574,78,Muted EP,2006,Electronic,8
+575,19,Fragments of Drifts,2002,R&B,11
+576,245,The Burning Shadows EP,2019,Jazz,8
+577,107,Under Vanished Orbits,2008,R&B,9
+578,90,The Crimson Pulses Vol. I,2015,Rock,9
+579,93,Embers & Undertones,2021,Metal,15
+580,136,Silver Pulses Vol. I,2009,Rock,12
+581,62,Intervals of Spectra,2022,Folk,9
+582,246,Static Overtones Vol. I,2021,Metal,10
+583,235,Fading Currents EP,2024,Rock,7
+584,73,Burning Resonance Vol. I,2011,Country,7
+585,206,Under Scattered Circuits,1997,Rock,10
+586,76,Embers of Fragments,2021,R&B,7
+587,22,Velvet Undertones EP,2017,Hip-Hop,13
+588,2,Shadows of Embers,2021,Electronic,7
+589,222,Vaults of Resonance,1998,Folk,12
+590,53,Under Trembling Overtones,2018,Rock,9
+591,166,Weightless Pulses,1995,Hip-Hop,10
+592,118,Fragments of Echoes,1997,Rock,9
+593,19,Velvet Wavelengths,2012,R&B,11
+594,19,Under Silent Spectra,2003,R&B,8
+595,105,Endless Vol. I,2007,Jazz,9
+596,100,Horizons of Contours,2016,Rock,8
+597,165,Archives of Echoes,2017,Hip-Hop,11
+598,218,Frozen Spectra EP,2011,Electronic,10
+599,75,Ruins of Intervals,2009,Hip-Hop,11
+600,73,Tides of Circuits,2000,Country,4
+601,137,The Broken Margins Vol. II,2018,Pop,10
+602,246,Signals of Ruins,2020,Metal,8
+603,246,Vanished Dissonance EP,2013,Metal,8
+604,32,Neon Archives Sessions,2017,Electronic,10
+605,138,Under Distant Ruins,2012,Pop,9
+606,192,Overtones of Margins,2015,Pop,12
+607,55,Drifting EP,2008,Jazz,11
+608,42,The Silent Intervals,2007,Jazz,13
+609,30,The Static Wavelengths Sessions,2021,Country,8
+610,218,Under Scattered Reverb,2018,Electronic,9
+611,19,Pulses & Shadows,2003,R&B,14
+612,26,The Weightless Archives (Deluxe),2017,Electronic,11
+613,92,The Static Reverb,2017,Hip-Hop,8
+614,73,Under Distant Overtones,2001,Country,12
+615,82,Under Static Ruins,2017,Metal,14
+616,150,The Muted Archives Vol. I,2020,Jazz,10
+617,81,Mirrors & Wavelengths,2005,Rock,10
+618,183,Reverb of Vaults,2010,Jazz,14
+619,216,Signals & Pulses,2022,Folk,8
+620,85,Scattered (Deluxe),2007,R&B,4
+621,199,Circuits & Contours,2019,Country,10
+622,45,Dissonance & Resonance,2001,Pop,11
+623,229,Under Crimson Currents,2018,Metal,9
+624,187,Neon Dissonance EP,2023,Pop,7
+625,8,Under Muted Orbits,2024,Country,10
+626,55,Vanished Currents EP,2021,Jazz,6
+627,121,Under Weightless Dissonance,2004,Jazz,8
+628,35,Burning EP,2011,Classical,9
+629,102,Drifts & Tides,2020,Classical,9
+630,62,Under Static Bridges,2022,Folk,12
+631,115,The Velvet Archives Sessions,2022,R&B,7
+632,224,The Weightless Margins (Deluxe),2022,Country,14
+633,11,Golden Frequencies,2010,Rock,6
+634,172,The Burning Spectra Vol. I,2017,Pop,14
+635,121,Fragments of Horizons,2017,Jazz,13
+636,248,Under Drifting Resonance,2014,Country,20
+637,214,Currents of Archives,2022,Country,13
+638,97,Orbits of Frequencies,2013,Hip-Hop,13
+639,168,Burning Currents Vol. II,2024,Folk,13
+640,58,Under Fading Frequencies,2018,Electronic,12
+641,125,Under Broken Thresholds,2001,Hip-Hop,4
+642,59,Burning Reverb,2022,Metal,13
+643,39,The Velvet Frequencies Sessions,2012,Classical,11
+644,170,The Endless Wavelengths Vol. I,2021,Hip-Hop,9
+645,30,Crimson Sessions,2022,Country,12
+646,166,Broken Archives Sessions,2000,Hip-Hop,16
+647,35,Drifts of Echoes,2013,Classical,11
+648,15,The Golden Spectra,2016,Pop,12
+649,246,Tides of Overtones,2018,Metal,10
+650,243,Crimson Thresholds Sessions,2023,Pop,12
+651,223,Under Blinding Bridges,2023,Classical,4
+652,68,The Weightless Pulses Vol. I,2021,Metal,8
+653,153,Under Distant Mirrors,2019,Folk,8
+654,99,The Silver Tides,2019,Rock,10
+655,221,Under Static Vaults,2021,Pop,15
+656,39,Under Silver Bridges,2024,Classical,14
+657,231,Under Glowing Echoes,2023,R&B,6
+658,129,Distant Circuits Revisited,1999,Folk,12
+659,231,Under Vanished Resonance,2019,R&B,12
+660,230,Trembling Drifts Vol. II,2020,Metal,13
+661,241,Blinding Vol. II,2013,Folk,13
+662,151,Spectra of Undertones,2024,Metal,11
+663,148,Endless Signals,2022,Folk,14
+664,197,The Distant Ruins Sessions,2023,Electronic,7
+665,105,Embers & Tides,2007,Jazz,7
+666,148,Under Silver Drifts,2019,Folk,10
+667,97,Embers of Flickers,2020,Hip-Hop,9
+668,81,The Endless Reverb Sessions,2006,Rock,8
+669,67,Under Endless Archives,2008,Pop,9
+670,157,Pulses & Orbits,2022,Rock,11
+671,106,Under Vanished Circuits,2019,Classical,12
+672,95,Ruins & Archives,2021,Hip-Hop,11
+673,199,Orbits of Margins,2020,Country,12
+674,219,Horizons of Margins,2012,Metal,8
+675,115,Bridges of Horizons,2015,R&B,9
+676,131,Restless EP,2009,Rock,10
+677,42,Broken Circuits Sessions,2014,Jazz,12
+678,23,Golden Mirrors Vol. I,1997,Metal,9
+679,156,Weightless Orbits Vol. II,2018,R&B,6
+680,183,Under Hollow Undertones,2007,Jazz,8
+681,164,The Static Spectra EP,2004,Folk,7
+682,50,Glowing Drifts EP,2017,Jazz,12
+683,60,Under Velvet Pulses,2006,Country,7
+684,93,The Drifting Tides,2013,Metal,10
+685,71,Fading Sessions,2005,Electronic,10
+686,133,Weightless Flickers,2024,Classical,5
+687,24,Under Pale Margins,2022,Jazz,10
+688,89,Mirrors & Intervals,2003,Country,11
+689,117,Bridges & Vaults,2022,R&B,17
+690,28,Under Distant Drifts,2012,Classical,14
+691,88,Burning Currents EP,2024,R&B,10
+692,65,Thresholds of Orbits,2022,R&B,11
+693,124,The Blinding Fragments (Deluxe),2022,Folk,8
+694,118,Under Neon Circuits,1998,Rock,12
+695,67,Fading Reverb,2018,Pop,11
+696,180,The Restless Vaults Vol. I,2021,Rock,8
+697,180,Mirrors & Ruins,2021,Rock,10
+698,103,Margins of Resonance,2007,Folk,10
+699,20,Frequencies & Embers,2020,Electronic,7
+700,69,The Weightless Pulses,2023,Country,10
+701,189,The Silent Margins,2022,Classical,6
+702,68,The Silent Embers,2023,Metal,13
+703,92,The Blinding Horizons,2017,Hip-Hop,9
+704,174,Circuits of Intervals,2021,Metal,15
+705,196,Frozen Sessions,2022,R&B,8
+706,127,Under Golden Circuits,2000,R&B,10
+707,196,Under Golden Orbits,2021,R&B,9
+708,193,Under Broken Echoes,2022,Folk,11
+709,123,Under Hollow Drifts,2014,Jazz,8
+710,101,Undertones of Bridges,2020,Pop,7
+711,250,Trembling Drifts (Deluxe),2005,R&B,8
+712,177,Frequencies & Intervals,2015,Electronic,9
+713,48,Under Golden Mirrors,2003,Electronic,8
+714,121,Under Restless Frequencies,2000,Jazz,11
+715,128,Undertones of Frequencies,2016,Country,8
+716,219,Golden (Deluxe),2010,Metal,7
+717,147,The Muted Pulses,2020,Electronic,12
+718,185,Wavelengths & Mirrors,2012,Pop,9
+719,111,Crimson,2024,Classical,8
+720,246,Signals of Circuits,2009,Metal,8
+721,46,Fragments of Wavelengths,2019,Country,13
+722,77,Contours & Dissonance,2013,Folk,3
+723,13,Crimson Resonance,2018,Classical,12
+724,215,Horizons of Thresholds,2021,Rock,16
+725,67,Frequencies & Contours,2014,Pop,9
+726,239,Frequencies & Tides,2023,Metal,11
+727,32,Dissonance & Pulses,2024,Electronic,10
+728,51,Under Muted Reverb,2017,Country,9
+729,138,The Blinding Ruins Vol. I,2016,Pop,9
+730,173,Under Shattered Undertones,2019,Electronic,9
+731,115,Fading Intervals,2019,R&B,13
+732,162,The Velvet Reverb Vol. I,2020,Rock,9
+733,162,Distant Bridges Vol. I,2014,Rock,8
+734,81,Reverb & Ruins,2020,Rock,15
+735,69,Under Drifting Orbits,2020,Country,5
+736,228,Archives of Drifts,2022,Hip-Hop,5
+737,106,The Velvet Dissonance,2019,Classical,8
+738,187,The Static Currents,2009,Pop,10
+739,43,Shattered Contours,2004,Classical,8
+740,198,Burning,2016,Jazz,13
+741,68,Under Broken Shadows,2024,Metal,12
+742,239,The Weightless Ruins (Deluxe),2024,Metal,6
+743,33,The Burning Resonance,2006,Rock,7
+744,9,Frequencies of Dissonance,2016,Pop,9
+745,222,Contours & Thresholds,1999,Folk,10
+746,249,Contours of Bridges,2021,Metal,11
+747,153,Under Endless Drifts,2023,Folk,10
+748,164,Under Pale Spectra,2006,Folk,11
+749,124,Under Silent Wavelengths,2003,Folk,10
+750,114,Frequencies & Vaults,2003,Classical,9
+751,40,Tides & Tides,2011,Metal,6
+752,209,The Frozen Ruins (Deluxe),2012,Hip-Hop,5
+753,3,Spectra of Circuits,2022,R&B,11
+754,123,Tides & Undertones,2016,Jazz,11
+755,205,Vanished Frequencies,2008,Classical,8
+756,226,The Velvet Flickers Revisited,2015,Jazz,4
+757,213,Silent,1998,Metal,12
+758,109,Under Trembling Pulses,2012,Electronic,9
+759,73,Margins of Contours,2020,Country,8
+760,69,The Broken Ruins,2023,Country,5
+761,159,Golden Sessions,2024,Country,10
+762,49,Tides & Signals,1996,Folk,7
+763,249,Under Neon Bridges,2013,Metal,4
+764,73,Signals & Flickers,2009,Country,12
+765,187,Silent Shadows,2003,Pop,13
+766,127,The Restless Vaults,2020,R&B,7
+767,205,Shadows & Resonance,2019,Classical,12
+768,244,The Hollow Currents Vol. II,2018,Metal,12
+769,140,Resonance & Orbits,2024,Metal,5
+770,4,Blinding Flickers,2019,Metal,11
+771,198,The Scattered Margins,2023,Jazz,13
+772,171,The Shattered Orbits Revisited,2005,Jazz,8
+773,240,Bridges & Reverb,2018,Jazz,5
+774,11,The Frozen Overtones,2023,Rock,12
+775,171,Muted Wavelengths (Deluxe),2018,Jazz,8
+776,153,The Frozen Undertones,2016,Folk,11
+777,41,Distant Revisited,2015,Classical,9
+778,87,Echoes of Echoes,2006,Classical,10
+779,166,The Trembling Contours,1999,Hip-Hop,9
+780,125,The Restless Contours Revisited,2020,Hip-Hop,11
+781,89,Weightless,1997,Country,6
+782,177,Overtones & Echoes,2022,Electronic,5
+783,181,Under Trembling Circuits,2021,Country,5
+784,146,The Vanished Frequencies Vol. I,2019,Rock,14
+785,71,Burning Signals (Deluxe),2008,Electronic,8
+786,210,Contours & Frequencies,2009,Jazz,8
+787,1,Drifts of Orbits,2018,Rock,16
+788,48,Glowing Dissonance Vol. I,2019,Electronic,9
+789,159,Contours of Resonance,2023,Country,11
+790,49,Under Broken Intervals,2004,Folk,5
+791,83,Silver Drifts Revisited,2020,Classical,10
+792,12,The Silver Circuits,2002,Hip-Hop,6
+793,9,Under Glowing Flickers,2020,Pop,9
+794,66,Frozen Mirrors Sessions,2017,Country,10
+795,19,Crimson Reverb (Deluxe),2024,R&B,11
+796,228,Scattered Wavelengths Revisited,2009,Hip-Hop,10
+797,93,Under Weightless Overtones,2018,Metal,10
+798,211,Wavelengths & Flickers,2011,Hip-Hop,11
+799,211,Under Golden Drifts,2011,Hip-Hop,10
+800,188,Pale Shadows,2024,Country,16
+801,25,Weightless Mirrors EP,2007,Hip-Hop,12
+802,49,The Burning Pulses,2013,Folk,12
+803,161,The Vanished Margins EP,2020,Country,9
+804,192,Blinding Reverb Sessions,2015,Pop,10
+805,173,Trembling Revisited,2009,Electronic,4
+806,227,Under Fading Drifts,2005,Rock,8
+807,169,The Vanished Intervals (Deluxe),2017,Classical,6
+808,232,Contours & Fragments,2020,Rock,10
+809,106,Currents of Frequencies,2021,Classical,9
+810,115,Intervals & Tides,2020,R&B,9
+811,35,Tides & Ruins,2016,Classical,8
+812,55,Resonance of Currents,2021,Jazz,8
+813,131,Under Muted Spectra,2012,Rock,8
+814,25,Scattered Frequencies,1999,Hip-Hop,9
+815,68,Overtones & Archives,2017,Metal,10
+816,60,Muted Orbits Sessions,2011,Country,8
+817,188,Weightless Fragments (Deluxe),2022,Country,4
+818,125,Flickers of Archives,2022,Hip-Hop,8
+819,233,Glowing Reverb,1996,Classical,5
+820,188,Under Fading Shadows,2022,Country,14
+821,236,Frequencies & Overtones,2023,Folk,10
+822,107,Blinding Mirrors Revisited,2006,R&B,10
+823,163,Orbits of Echoes,2004,R&B,6
+824,135,Restless Contours Sessions,2012,Classical,9
+825,84,Under Trembling Mirrors,2022,Electronic,9
+826,13,Margins of Orbits,2017,Classical,15
+827,193,Under Muted Drifts,2011,Folk,10
+828,57,Pale Vol. II,2019,Electronic,8
+829,34,Shadows & Circuits,2015,Hip-Hop,8
+830,191,Fading Drifts Vol. II,2019,Metal,13
+831,179,The Blinding Signals (Deluxe),2013,Folk,14
+832,51,Fading Revisited,2015,Country,10
+833,51,Under Silent Mirrors,1999,Country,13
+834,69,Under Distant Horizons,2022,Country,10
+835,109,Tides of Undertones,2013,Electronic,15
+836,44,Intervals & Resonance,2016,Jazz,12
+837,160,The Scattered Echoes,2014,Folk,9
+838,176,Signals & Undertones,2005,Jazz,10
+839,29,Echoes of Mirrors,2019,Metal,13
+840,223,Tides & Fragments,2010,Classical,14
+841,79,Embers & Margins,2024,Metal,8
+842,55,The Vanished Drifts,2021,Jazz,9
+843,124,Under Weightless Signals,2023,Folk,11
+844,179,Tides of Orbits,2014,Folk,9
+845,232,Bridges & Echoes,2019,Rock,13
+846,52,Intervals of Currents,2017,Country,12
+847,120,Tides of Shadows,2017,Classical,4
+848,170,Pulses & Dissonance,2024,Hip-Hop,9
+849,169,Dissonance & Horizons,2006,Classical,12
+850,75,Orbits of Mirrors,2019,Hip-Hop,8
+851,131,Horizons of Overtones,2018,Rock,10
+852,125,Under Vanished Shadows,2001,Hip-Hop,10
+853,51,Under Scattered Contours,2019,Country,15
+854,6,Silent Spectra EP,2022,R&B,11
+855,86,Frozen Pulses Vol. I,2014,Folk,9
+856,161,Mirrors & Drifts,2015,Country,9
+857,208,Drifting Currents Vol. II,2016,R&B,11
+858,242,The Restless Overtones Vol. II,2022,Folk,12
+859,36,Weightless Orbits EP,2022,Classical,10
+860,157,Pulses of Mirrors,2024,Rock,9
+861,62,Under Broken Vaults,2023,Folk,7
+862,233,Under Restless Thresholds,2012,Classical,12
+863,34,The Drifting Signals Sessions,2014,Hip-Hop,12
+864,176,The Broken Ruins EP,2007,Jazz,9
+865,111,The Drifting Spectra Sessions,2004,Classical,12
+866,82,Vanished Contours,2000,Metal,14
+867,82,The Weightless Tides Vol. I,2023,Metal,10
+868,250,Blinding Intervals Sessions,2003,R&B,10
+869,156,Under Glowing Mirrors,2016,R&B,10
+870,60,Tides of Frequencies,2007,Country,13
+871,177,Under Shattered Flickers,2018,Electronic,8
+872,48,Shattered (Deluxe),1999,Electronic,15
+873,42,The Silent Echoes Vol. II,2001,Jazz,10
+874,237,Vaults & Mirrors,2023,Jazz,11
+875,172,The Blinding Embers,2013,Pop,8
+876,238,Glowing (Deluxe),2018,Folk,9
+877,222,Silent Vol. II,2007,Folk,19
+878,199,Glowing Margins Vol. II,2024,Country,11
+879,81,Overtones of Flickers,2023,Rock,9
+880,10,Under Silver Thresholds,2018,R&B,9
+881,212,Silent Drifts EP,2007,Country,9
+882,189,Vanished Orbits EP,2019,Classical,7
+883,162,Crimson Ruins (Deluxe),2019,Rock,8
+884,227,Thresholds & Bridges,2008,Rock,11
+885,76,Under Hollow Flickers,2021,R&B,7
+886,232,The Scattered Resonance Revisited,2022,Rock,11
+887,24,Drifts of Horizons,2019,Jazz,7
+888,200,Under Trembling Contours,2003,Classical,11
+889,101,Velvet Thresholds Sessions,2012,Pop,15
+890,226,Distant,2013,Jazz,8
+891,178,Spectra of Flickers,2024,R&B,9
+892,42,Margins of Horizons,2003,Jazz,15
+893,30,Thresholds of Reverb,2023,Country,12
+894,22,Under Trembling Orbits,2023,Hip-Hop,12
+895,203,Under Glowing Bridges,2007,Pop,11
+896,141,Archives & Dissonance,2016,Metal,9
+897,221,The Blinding Flickers,2008,Pop,12
+898,79,Margins & Undertones,2023,Metal,10
+899,74,The Crimson Tides Sessions,2023,Rock,9
+900,4,Glowing Intervals,2014,Metal,11
+901,226,Under Golden Intervals,2023,Jazz,7
+902,143,The Hollow Bridges,1996,Classical,10
+903,168,Echoes & Signals,2022,Folk,7
+904,9,Archives of Resonance,2020,Pop,10
+905,77,Spectra & Shadows,1996,Folk,7
+906,28,Flickers of Flickers,2022,Classical,13
+907,147,Under Velvet Thresholds,2024,Electronic,10
+908,93,Distant Undertones,2017,Metal,8
+909,95,Distant Vol. II,2023,Hip-Hop,12
+910,17,Circuits & Signals,2002,R&B,9
+911,178,Fragments & Drifts,2018,R&B,14
+912,135,The Trembling Embers Sessions,2009,Classical,9
+913,28,Under Weightless Reverb,2019,Classical,10
+914,23,Weightless Sessions,2024,Metal,7
+915,202,Ruins of Vaults,2014,Country,6
+916,218,Currents & Drifts,2019,Electronic,8
+917,160,Spectra & Signals,2023,Folk,10
+918,134,Reverb of Circuits,2021,Electronic,9
+919,207,The Glowing Mirrors,2020,Hip-Hop,10
+920,1,Neon Thresholds Revisited,2020,Rock,9
+921,31,Dissonance of Embers,2022,Metal,9
+922,106,Restless Frequencies EP,2024,Classical,9
+923,164,The Neon Reverb,2017,Folk,9
+924,73,Wavelengths & Shadows,2004,Country,9
+925,77,Under Vanished Fragments,2019,Folk,8
+926,2,Static Fragments Vol. I,2023,Electronic,10
+927,186,Under Glowing Tides,2022,Folk,12
+928,50,Resonance & Fragments,2024,Jazz,12
+929,173,The Drifting Thresholds EP,2024,Electronic,8
+930,86,Under Pale Archives,2024,Folk,12
+931,81,Under Vanished Tides,2004,Rock,12
+932,148,Shadows & Signals,2021,Folk,6
+933,216,Restless Orbits Revisited,2016,Folk,8
+934,216,The Muted Intervals Vol. II,2004,Folk,10
+935,153,Blinding Ruins Vol. I,2024,Folk,13
+936,9,Vaults & Shadows,2018,Pop,11
+937,225,The Frozen Thresholds,2013,Jazz,8
+938,135,Wavelengths & Echoes,2014,Classical,15
+939,234,Scattered Drifts,2024,Rock,11
+940,124,Under Broken Embers,2011,Folk,8
+941,237,Weightless EP,2020,Jazz,9
+942,199,The Weightless Echoes (Deluxe),2022,Country,5
+943,183,Under Silver Tides,2011,Jazz,10
+944,239,Static Dissonance Sessions,2022,Metal,8
+945,86,Under Blinding Pulses,2012,Folk,6
+946,6,Under Blinding Ruins,2021,R&B,13
+947,83,The Crimson Ruins,2024,Classical,9
+948,82,Signals & Bridges,2003,Metal,9
+949,30,Glowing Contours EP,2021,Country,10
+950,53,Currents & Signals,2014,Rock,7
+951,147,The Velvet Shadows,2024,Electronic,14
+952,229,Broken Tides (Deluxe),2017,Metal,7
+953,28,Intervals of Overtones,2021,Classical,10
+954,162,Flickers of Thresholds,2018,Rock,10
+955,80,Resonance & Embers,2017,Country,5
+956,195,Wavelengths of Contours,1997,Country,13
+957,250,Trembling Thresholds,2009,R&B,11
+958,80,Reverb of Flickers,2019,Country,15
+959,120,The Glowing Currents Vol. I,2017,Classical,11
+960,47,Spectra of Pulses,2005,Rock,7
+961,202,Distant Circuits,2006,Country,9
+962,123,Intervals & Archives,2007,Jazz,10
+963,131,Fading Resonance,2018,Rock,13
+964,143,Shadows of Wavelengths,2004,Classical,11
+965,137,Silent Sessions,2016,Pop,12
+966,141,Embers & Resonance,2017,Metal,15
+967,152,Endless Sessions,2020,Pop,12
+968,140,Mirrors of Bridges,2021,Metal,9
+969,172,Weightless Spectra Sessions,2024,Pop,8
+970,125,Muted Intervals (Deluxe),2006,Hip-Hop,11
+971,143,Scattered Bridges,2007,Classical,10
+972,18,Under Silver Pulses,2024,Jazz,11
+973,198,Pulses of Echoes,2016,Jazz,12
+974,56,The Muted Overtones Revisited,2000,Metal,11
+975,194,The Static Signals (Deluxe),2021,Hip-Hop,16
+976,100,Under Muted Thresholds,2019,Rock,10
+977,53,Overtones of Fragments,2014,Rock,12
+978,146,Ruins of Spectra,2018,Rock,7
+979,184,Shadows & Archives,2006,Pop,8
+980,157,Under Fading Dissonance,2022,Rock,14
+981,219,Echoes & Frequencies,2022,Metal,10
+982,248,Neon Flickers EP,2023,Country,8
+983,92,Pale Dissonance,2019,Hip-Hop,15
+984,111,Archives of Orbits,2019,Classical,11
+985,82,Endless EP,2001,Metal,10
+986,170,The Shattered Signals,2018,Hip-Hop,17
+987,99,Resonance & Vaults,2007,Rock,8
+988,74,Signals of Signals,2022,Rock,9
+989,19,Tides of Signals,2018,R&B,10
+990,227,Static Vol. II,1999,Rock,10
+991,22,The Drifting Wavelengths Vol. II,2014,Hip-Hop,13
+992,229,Under Scattered Orbits,2022,Metal,10
+993,58,The Endless Intervals,2022,Electronic,15
+994,128,Mirrors of Flickers,2019,Country,12
+995,69,Vanished Sessions,2021,Country,7
+996,9,Muted Circuits Vol. I,2012,Pop,9
+997,149,The Weightless Margins EP,2022,Pop,6
+998,193,Thresholds & Drifts,2011,Folk,9
+999,134,Shadows of Pulses,2024,Electronic,12
+1000,139,Under Pale Intervals,1998,Electronic,14
+1001,232,Contours & Undertones,2015,Rock,9
+1002,121,Burning (Deluxe),2013,Jazz,17
+1003,188,Vaults & Frequencies,2023,Country,5
+1004,75,The Hollow Flickers Sessions,2016,Hip-Hop,9
+1005,187,Under Golden Echoes,2023,Pop,6
+1006,122,Under Velvet Archives,2001,R&B,10
+1007,169,Wavelengths & Margins,2006,Classical,9
+1008,74,Under Distant Dissonance,2023,Rock,11
+1009,65,The Glowing Currents,2024,R&B,10
+1010,66,Weightless Horizons Sessions,2000,Country,8
+1011,233,Thresholds of Frequencies,2020,Classical,9
+1012,45,The Shattered Bridges EP,2024,Pop,7
+1013,9,Under Broken Resonance,2018,Pop,9
+1014,193,The Static Thresholds Revisited,2014,Folk,6
+1015,54,Echoes & Reverb,2017,Classical,11
+1016,194,Hollow Bridges (Deluxe),2023,Hip-Hop,9
+1017,122,Circuits & Margins,2024,R&B,15
+1018,237,Under Silent Orbits,2023,Jazz,12
+1019,181,The Burning Dissonance Vol. II,2020,Country,5
+1020,74,Drifts & Pulses,2022,Rock,8
+1021,25,Under Drifting Frequencies,2022,Hip-Hop,8
+1022,111,Under Drifting Dissonance,2007,Classical,12
+1023,86,Currents & Wavelengths,2006,Folk,6
+1024,66,Blinding Revisited,2018,Country,10
+1025,62,Pulses of Archives,2022,Folk,13
+1026,134,Pulses & Flickers,2016,Electronic,11
+1027,81,Under Neon Pulses,1998,Rock,11
+1028,213,Neon Vaults,2012,Metal,8
+1029,27,The Weightless Ruins,2001,Country,16
+1030,9,Glowing Shadows,2020,Pop,7
+1031,169,The Glowing Reverb,2009,Classical,11
+1032,23,Undertones of Overtones,2015,Metal,8
+1033,145,The Silver Flickers,2003,Folk,8
+1034,76,Thresholds of Spectra,2017,R&B,5
+1035,197,Currents & Bridges,2008,Electronic,10
+1036,71,Fading Orbits Vol. I,2000,Electronic,10
+1037,67,Bridges & Thresholds,1999,Pop,13
+1038,126,The Glowing Orbits,2020,Pop,7
+1039,126,Broken Contours Vol. II,2013,Pop,9
+1040,158,Horizons of Spectra,2011,Rock,10
+1041,184,Horizons & Echoes,2008,Pop,9
+1042,19,Under Weightless Currents,2019,R&B,12
+1043,115,Shattered Signals Revisited,2022,R&B,8
+1044,1,Static Orbits,1999,Rock,14
+1045,180,Under Neon Drifts,2024,Rock,8
+1046,123,Under Silent Tides,2015,Jazz,12
+1047,245,Resonance of Undertones,2021,Jazz,16
+1048,32,Under Vanished Spectra,2016,Electronic,12
+1049,86,Ruins of Orbits,2004,Folk,9
+1050,162,Under Restless Shadows,2021,Rock,10
+1051,195,Reverb & Embers,2000,Country,8
+1052,142,Fading Pulses,2018,R&B,11
+1053,179,Silver Revisited,2018,Folk,10
+1054,92,The Hollow Embers,2019,Hip-Hop,7
+1055,126,Distant EP,2020,Pop,11
+1056,79,Vanished (Deluxe),2016,Metal,10
+1057,10,Echoes & Fragments,2023,R&B,7
+1058,185,Fading Horizons,2020,Pop,15
+1059,168,Drifts of Thresholds,2016,Folk,7
+1060,223,Under Broken Margins,2014,Classical,9
+1061,237,Hollow Margins,2021,Jazz,6
+1062,168,Shattered Spectra Sessions,1996,Folk,7
+1063,63,Reverb of Signals,1999,Jazz,12
+1064,45,Echoes of Overtones,2006,Pop,8
+1065,211,Scattered Intervals,2024,Hip-Hop,12
+1066,152,Silver Horizons (Deluxe),2024,Pop,6
+1067,205,Under Silent Shadows,2020,Classical,17
+1068,52,Archives of Contours,2019,Country,8
+1069,83,The Blinding Echoes Sessions,2021,Classical,7
+1070,86,The Muted Echoes,2006,Folk,13
+1071,203,Intervals of Orbits,2019,Pop,10
+1072,41,Shattered Shadows,1996,Classical,7
+1073,46,Trembling Reverb Sessions,2013,Country,8
+1074,107,The Broken Reverb,2022,R&B,7
+1075,116,Under Trembling Echoes,2013,Folk,11
+1076,184,Resonance of Wavelengths,2015,Pop,12
+1077,90,The Crimson Horizons EP,2008,Rock,10
+1078,159,Dissonance & Undertones,2020,Country,12
+1079,119,Pulses of Embers,2018,Metal,10
+1080,14,The Silver Wavelengths,2023,Country,8
+1081,217,The Static Spectra,2021,Rock,11
+1082,166,Ruins & Embers,2008,Hip-Hop,12
+1083,65,Echoes of Spectra,2022,R&B,13
+1084,46,The Neon Circuits EP,2007,Country,10
+1085,19,The Weightless Thresholds Sessions,2013,R&B,11
+1086,84,Crimson Revisited,2023,Electronic,13
+1087,59,Restless Mirrors,2022,Metal,10
+1088,189,The Distant Circuits Sessions,2010,Classical,12
+1089,14,Frequencies of Currents,2008,Country,4
+1090,86,Golden Signals,2017,Folk,11
+1091,118,The Pale Intervals,2020,Rock,8
+1092,204,Endless Dissonance EP,2023,Hip-Hop,10
+1093,221,The Muted Circuits (Deluxe),2003,Pop,6
+1094,4,Vaults of Margins,2014,Metal,16
+1095,64,Vaults & Archives,2013,Pop,8
+1096,229,Under Broken Spectra,2017,Metal,10
+1097,107,Hollow Circuits EP,2007,R&B,8
+1098,109,Under Fading Circuits,2007,Electronic,13
+1099,116,Under Blinding Tides,2021,Folk,8
+1100,244,The Broken Frequencies,2019,Metal,7
+1101,166,Neon Circuits Revisited,2004,Hip-Hop,11
+1102,42,Thresholds of Dissonance,2019,Jazz,7
+1103,192,Under Neon Thresholds,2017,Pop,6
+1104,198,The Trembling Orbits,2020,Jazz,10
+1105,161,Drifting Shadows Vol. II,2017,Country,5
+1106,136,Pale Vaults,2017,Rock,13
+1107,243,Under Vanished Archives,2019,Pop,13
+1108,202,Shadows of Intervals,2023,Country,10
+1109,86,Spectra of Echoes,2019,Folk,14
+1110,243,Frequencies of Overtones,2016,Pop,7
+1111,29,Under Trembling Shadows,2020,Metal,13
+1112,36,Mirrors & Contours,2013,Classical,5
+1113,167,Embers of Undertones,2022,Hip-Hop,11
+1114,195,The Restless Frequencies,2011,Country,11
+1115,175,Golden,2001,Hip-Hop,5
+1116,96,Under Burning Resonance,2017,Rock,12
+1117,121,Contours of Pulses,2021,Jazz,15
+1118,137,Thresholds & Intervals,2020,Pop,9
+1119,205,Flickers of Wavelengths,2023,Classical,8
+1120,17,Silver Bridges,2002,R&B,9
+1121,179,Under Drifting Tides,2005,Folk,11
+1122,107,Contours of Spectra,2010,R&B,9
+1123,122,Vaults & Thresholds,2023,R&B,10
+1124,166,Pale Embers,1995,Hip-Hop,6
+1125,224,The Burning Reverb Vol. I,2023,Country,7
+1126,149,Reverb & Reverb,2020,Pop,11
+1127,84,Muted Revisited,2024,Electronic,11
+1128,118,Archives & Signals,2023,Rock,10
+1129,203,Bridges & Wavelengths,2003,Pop,7
+1130,59,Broken Frequencies,2024,Metal,13
+1131,245,The Glowing Spectra,2023,Jazz,8
+1132,138,Bridges & Bridges,2010,Pop,15
+1133,42,The Silver Echoes Vol. I,2019,Jazz,8
+1134,33,Golden Vol. I,2011,Rock,10
+1135,53,Fragments of Frequencies,2009,Rock,11
+1136,96,Under Pale Horizons,2016,Rock,5
+1137,104,Weightless Contours EP,2022,Pop,7
+1138,166,Ruins of Circuits,2023,Hip-Hop,8
+1139,75,Under Static Signals,2021,Hip-Hop,9
+1140,87,Contours of Horizons,2004,Classical,9
+1141,7,Echoes & Intervals,2015,R&B,9
+1142,50,Under Burning Mirrors,2020,Jazz,13
+1143,240,Vanished Dissonance (Deluxe),2016,Jazz,6
+1144,172,Burning Orbits,2018,Pop,8
+1145,82,Static Frequencies Vol. II,1999,Metal,13
+1146,184,Frequencies & Ruins,2020,Pop,13
+1147,224,Under Distant Embers,2024,Country,6
+1148,190,The Weightless Overtones Vol. II,2024,Rock,11
+1149,36,Under Glowing Shadows,2014,Classical,4
+1150,54,Circuits & Dissonance,2019,Classical,14
+1151,17,Under Blinding Orbits,2001,R&B,9
+1152,2,Velvet EP,2023,Electronic,10
+1153,182,The Crimson Bridges Vol. II,2004,Jazz,9
+1154,142,Under Pale Circuits,2023,R&B,8
+1155,58,Neon Signals,2017,Electronic,11
+1156,245,Overtones of Ruins,2021,Jazz,6
+1157,46,The Neon Horizons,2019,Country,13
+1158,249,Glowing Margins Vol. I,2021,Metal,5
+1159,124,Under Endless Dissonance,2009,Folk,5
+1160,161,Circuits of Flickers,2010,Country,6
+1161,96,Golden Bridges Sessions,2016,Rock,8
+1162,38,Thresholds & Overtones,2024,Folk,10
+1163,35,Spectra of Frequencies,2010,Classical,16
+1164,75,Drifts & Reverb,2009,Hip-Hop,7
+1165,132,The Blinding Reverb,2024,Jazz,9
+1166,25,Under Restless Dissonance,2005,Hip-Hop,14
+1167,212,Frequencies of Horizons,2012,Country,10
+1168,149,Resonance & Signals,1995,Pop,13
+1169,36,Under Pale Frequencies,2024,Classical,8
+1170,125,Crimson Signals EP,2003,Hip-Hop,13
+1171,213,The Vanished Intervals EP,2023,Metal,9
+1172,137,Contours of Flickers,2012,Pop,7
+1173,107,The Neon Circuits Vol. I,2015,R&B,8
+1174,177,Signals & Resonance,2021,Electronic,10
+1175,228,Under Burning Undertones,2018,Hip-Hop,10
+1176,45,Ruins of Tides,2020,Pop,13
+1177,209,Silent Signals,2017,Hip-Hop,7
+1178,59,Signals & Embers,2022,Metal,9
+1179,21,Neon Undertones (Deluxe),2023,R&B,5
+1180,11,The Silver Echoes Revisited,2018,Rock,10
+1181,152,Shattered Horizons,2015,Pop,14
+1182,17,Pulses & Tides,2023,R&B,7
+1183,25,Glowing Embers Sessions,2023,Hip-Hop,8
+1184,52,The Static Frequencies,2018,Country,13
+1185,38,Frequencies & Bridges,2018,Folk,6
+1186,200,Intervals of Mirrors,2015,Classical,8
+1187,146,Silver Resonance Sessions,2005,Rock,9
+1188,136,The Trembling Embers,2000,Rock,10
+1189,231,Crimson Spectra EP,2024,R&B,12
+1190,122,Flickers & Archives,2005,R&B,11
+1191,113,Horizons of Bridges,2023,Rock,8
+1192,91,Blinding Fragments,2020,Pop,6
+1193,29,Flickers & Ruins,2017,Metal,10
+1194,22,Circuits & Horizons,2012,Hip-Hop,18
+1195,73,Resonance of Thresholds,2002,Country,9
+1196,142,The Distant Overtones (Deluxe),2020,R&B,5
+1197,46,Static Circuits Revisited,2007,Country,12
+1198,102,Burning Revisited,2020,Classical,9
+1199,22,Broken Orbits Vol. II,2022,Hip-Hop,8
+1200,152,Weightless Spectra,2016,Pop,11
+1201,94,The Restless Embers Sessions,2020,Electronic,9
+1202,32,The Endless Margins (Deluxe),2013,Electronic,10
+1203,196,Undertones of Archives,2024,R&B,10
+1204,70,Static Sessions,2007,Pop,16
+1205,125,Under Golden Signals,2020,Hip-Hop,8
+1206,117,Silver Currents (Deluxe),2021,R&B,8
+1207,60,Signals of Tides,2008,Country,6
+1208,189,Velvet Orbits Sessions,2016,Classical,10
+1209,84,The Pale Intervals Sessions,2021,Electronic,12
+1210,195,Static Undertones EP,2019,Country,8
+1211,127,Circuits of Circuits,2011,R&B,10
+1212,67,Under Restless Wavelengths,2024,Pop,7
+1213,139,Under Neon Undertones,1998,Electronic,10
+1214,111,Fading Thresholds Vol. I,2011,Classical,9
+1215,114,The Vanished Pulses,2023,Classical,15
+1216,181,The Shattered Vaults,2022,Country,15
+1217,184,Under Muted Circuits,2021,Pop,13
+1218,144,The Burning Echoes Vol. II,2021,Classical,8
+1219,127,Under Fading Intervals,2016,R&B,7
+1220,91,Fragments & Echoes,2006,Pop,8
+1221,152,Broken Resonance Vol. I,2020,Pop,11
+1222,208,Archives of Tides,2021,R&B,12
+1223,98,Endless Frequencies Vol. I,2023,Jazz,10
+1224,90,Static Mirrors,2012,Rock,7
+1225,166,Archives & Shadows,2024,Hip-Hop,9
+1226,177,Pale Horizons Vol. I,2012,Electronic,11
+1227,6,Under Restless Echoes,2023,R&B,10
+1228,169,Restless Orbits Sessions,2018,Classical,14
+1229,83,The Restless Circuits EP,2022,Classical,9
+1230,43,Dissonance of Wavelengths,2006,Classical,12
+1231,216,Under Crimson Ruins,2007,Folk,12
+1232,13,Archives & Orbits,2010,Classical,13
+1233,160,Under Silver Archives,2018,Folk,9
+1234,70,Muted Wavelengths EP,2010,Pop,13
+1235,110,The Frozen Wavelengths,2015,Country,11
+1236,211,Drifts & Wavelengths,2015,Hip-Hop,10
+1237,111,Contours of Fragments,2005,Classical,7
+1238,107,Under Scattered Pulses,2023,R&B,8
+1239,47,Drifting Flickers EP,2022,Rock,7
+1240,48,Under Shattered Embers,2016,Electronic,12
+1241,247,Thresholds of Currents,2024,R&B,6
+1242,208,Burning Embers Vol. I,2023,R&B,6
+1243,38,The Broken Margins Revisited,2011,Folk,13
+1244,217,Drifting Embers Vol. II,2023,Rock,12
+1245,211,Pulses & Intervals,2014,Hip-Hop,9
+1246,104,Silent Wavelengths,2024,Pop,8
+1247,125,Under Endless Vaults,2016,Hip-Hop,13
+1248,232,Crimson Bridges,2017,Rock,9
+1249,8,Wavelengths & Wavelengths,2019,Country,11
+1250,169,Under Velvet Reverb,2007,Classical,6
+1251,247,Circuits of Wavelengths,2007,R&B,6
+1252,15,Restless Intervals,2002,Pop,10
+1253,231,The Silver Archives EP,2019,R&B,6
+1254,134,Resonance of Archives,2022,Electronic,9
+1255,65,Under Silver Undertones,2024,R&B,5
+1256,81,Resonance & Archives,2021,Rock,9
+1257,100,Velvet Embers,2023,Rock,8
+1258,105,Dissonance & Archives,2008,Jazz,7
+1259,126,Restless Contours Vol. II,2017,Pop,6
+1260,175,The Golden Overtones,2010,Hip-Hop,9
+1261,122,Frequencies of Resonance,2009,R&B,10
+1262,6,Overtones of Intervals,2020,R&B,13
+1263,216,Pulses of Wavelengths,2000,Folk,6
+1264,177,Mirrors of Currents,2024,Electronic,13
+1265,99,Overtones & Wavelengths,2024,Rock,9
+1266,32,Under Silent Dissonance,2019,Electronic,12
+1267,100,Fading Spectra,2020,Rock,11
+1268,24,The Pale Embers,2024,Jazz,6
+1269,162,Vaults of Wavelengths,2008,Rock,9
+1270,71,Blinding Circuits (Deluxe),2022,Electronic,10
+1271,106,Flickers & Vaults,2024,Classical,6
+1272,26,The Trembling Currents EP,2009,Electronic,9
+1273,91,Fragments of Thresholds,2006,Pop,10
+1274,196,Drifting Reverb,2023,R&B,10
+1275,203,Fragments & Archives,1997,Pop,8
+1276,29,The Silent Drifts Revisited,2019,Metal,11
+1277,217,Signals of Currents,2022,Rock,7
+1278,176,Embers & Shadows,2016,Jazz,7
+1279,95,The Fading Overtones Vol. II,2023,Hip-Hop,15
+1280,58,Neon Spectra EP,2023,Electronic,11
+1281,157,Mirrors of Spectra,2021,Rock,4
+1282,250,Dissonance of Bridges,1996,R&B,12
+1283,103,Under Endless Intervals,2005,Folk,5
+1284,39,Frozen Bridges Sessions,2012,Classical,7
+1285,4,Drifts of Vaults,2021,Metal,7
+1286,212,Circuits of Horizons,2002,Country,10
+1287,183,The Crimson Dissonance,2011,Jazz,8
+1288,192,The Pale Margins Revisited,2013,Pop,10
+1289,108,The Endless Wavelengths,2019,Pop,14
+1290,75,Silent Vol. I,2021,Hip-Hop,10
+1291,22,Shattered Signals Vol. I,2022,Hip-Hop,10
+1292,102,Silver Contours,2000,Classical,8
+1293,86,The Shattered Spectra Vol. I,2022,Folk,7
+1294,241,Wavelengths of Intervals,2024,Folk,7
+1295,192,Neon Currents EP,2019,Pop,7
+1296,98,Orbits & Pulses,2023,Jazz,7
+1297,34,Under Hollow Archives,2002,Hip-Hop,8
+1298,67,The Burning Circuits Vol. I,2011,Pop,8
+1299,34,Restless Flickers EP,2010,Hip-Hop,13
+1300,37,Horizons & Fragments,2010,Pop,14
+1301,33,Drifts & Fragments,2019,Rock,17
+1302,229,The Restless Margins (Deluxe),2019,Metal,8
+1303,143,Reverb of Wavelengths,2009,Classical,6
+1304,14,The Broken Echoes,2007,Country,7
+1305,10,Thresholds of Vaults,2012,R&B,9
+1306,230,Hollow (Deluxe),2022,Metal,8
+1307,182,Under Shattered Thresholds,2010,Jazz,8
+1308,29,Frozen Shadows,2021,Metal,10
+1309,47,The Weightless Drifts,2013,Rock,10
+1310,229,Archives of Embers,2017,Metal,9
+1311,135,Silent Undertones (Deluxe),2011,Classical,12
+1312,228,Restless Signals,2010,Hip-Hop,9
+1313,118,Pulses of Circuits,2009,Rock,11
+1314,161,Intervals & Pulses,2007,Country,7
+1315,85,Drifting Intervals (Deluxe),2006,R&B,12
+1316,243,Margins of Spectra,2018,Pop,8
+1317,55,Drifting Ruins Vol. I,2005,Jazz,12
+1318,191,Vanished Intervals Vol. II,1997,Metal,14
+1319,103,Bridges & Mirrors,2021,Folk,6
+1320,222,The Velvet Orbits Vol. II,2004,Folk,9
+1321,166,Signals of Horizons,2004,Hip-Hop,9
+1322,126,Pulses & Horizons,2023,Pop,14
+1323,95,Under Crimson Circuits,2022,Hip-Hop,9
+1324,227,Under Glowing Vaults,1997,Rock,11
+1325,194,The Endless Reverb Vol. II,2018,Hip-Hop,5
+1326,11,Mirrors of Reverb,2020,Rock,13
+1327,183,The Shattered Drifts Revisited,2022,Jazz,6
+1328,135,Pale Thresholds Vol. II,2010,Classical,10
+1329,233,The Static Overtones,2021,Classical,9
+1330,64,Under Endless Ruins,2024,Pop,10
+1331,13,Under Distant Spectra,2004,Classical,9
+1332,132,Burning Vaults Vol. II,2013,Jazz,14
+1333,119,Margins of Archives,2018,Metal,8
+1334,91,Under Neon Horizons,2020,Pop,5
+1335,46,The Fading Echoes,2017,Country,9
+1336,225,Ruins of Fragments,2019,Jazz,9
+1337,186,Spectra & Dissonance,2022,Folk,6
+1338,55,The Distant Margins Sessions,2012,Jazz,9
+1339,224,Horizons of Vaults,2017,Country,7
+1340,2,The Drifting Circuits (Deluxe),2023,Electronic,8
+1341,223,Margins of Intervals,2022,Classical,8
+1342,78,Under Glowing Frequencies,2017,Electronic,9
+1343,173,Pulses of Orbits,2021,Electronic,7
+1344,78,The Silver Resonance,2017,Electronic,7
+1345,249,The Neon Embers (Deluxe),2022,Metal,10
+1346,38,Mirrors of Vaults,2022,Folk,14
+1347,220,Under Crimson Shadows,2006,Hip-Hop,10
+1348,198,Broken (Deluxe),2021,Jazz,9
+1349,6,Velvet Overtones,2023,R&B,10
+1350,247,The Pale Archives Vol. II,2008,R&B,10
+1351,86,Silver Reverb Vol. II,2016,Folk,14
+1352,218,Under Weightless Contours,2014,Electronic,9
+1353,10,Fading (Deluxe),2019,R&B,8
+1354,152,Under Neon Vaults,2024,Pop,7
+1355,81,Under Distant Currents,2018,Rock,13
+1356,107,Velvet Ruins,2021,R&B,12
+1357,89,The Muted Spectra Revisited,2007,Country,12
+1358,236,Flickers of Orbits,2023,Folk,8
+1359,214,Wavelengths & Circuits,2022,Country,11
+1360,160,The Pale Flickers,2023,Folk,18
+1361,34,The Crimson Bridges Sessions,2012,Hip-Hop,9
+1362,26,The Crimson Contours,2007,Electronic,11
+1363,92,Frequencies & Pulses,2018,Hip-Hop,10
+1364,45,Under Hollow Wavelengths,1999,Pop,8
+1365,87,Silver Sessions,2002,Classical,8
+1366,31,Under Silent Circuits,2020,Metal,11
+1367,88,Undertones & Echoes,2024,R&B,11
+1368,69,The Trembling Dissonance EP,2017,Country,13
+1369,181,Scattered Wavelengths (Deluxe),2020,Country,6
+1370,250,Velvet Reverb,2022,R&B,10
+1371,53,Bridges & Margins,2014,Rock,15
+1372,182,The Drifting Frequencies Vol. I,2021,Jazz,11
+1373,36,Crimson Thresholds Vol. II,2024,Classical,8
+1374,197,Silent Resonance (Deluxe),2016,Electronic,10
+1375,74,Under Velvet Shadows,2023,Rock,16
+1376,96,Undertones of Vaults,2021,Rock,15
+1377,162,Mirrors of Signals,2023,Rock,8
+1378,108,The Broken Wavelengths Vol. II,2022,Pop,6
+1379,236,Frequencies of Tides,2023,Folk,14
+1380,38,Trembling Wavelengths EP,2004,Folk,5
+1381,22,Fragments & Orbits,2024,Hip-Hop,14
+1382,43,Hollow Vol. II,2005,Classical,10
+1383,170,Signals of Overtones,2019,Hip-Hop,10
+1384,15,Overtones of Drifts,2009,Pop,11
+1385,108,Static EP,2021,Pop,10
+1386,185,Fragments of Spectra,2006,Pop,9
+1387,3,Under Broken Flickers,2010,R&B,12
+1388,115,Embers of Overtones,2020,R&B,8
+1389,160,Under Drifting Thresholds,2019,Folk,15
+1390,228,Orbits of Undertones,2014,Hip-Hop,7
+1391,226,Under Restless Orbits,2007,Jazz,17
+1392,134,Under Pale Embers,2015,Electronic,12
+1393,131,Under Pale Drifts,2018,Rock,10
+1394,194,Vanished Archives,2020,Hip-Hop,8
+1395,214,Margins & Vaults,2021,Country,5
+1396,188,Frozen Currents Revisited,2024,Country,6
+1397,91,Hollow Undertones Revisited,2009,Pop,11
+1398,115,Archives & Margins,2012,R&B,8
+1399,117,Archives of Archives,2024,R&B,8
+1400,171,Ruins & Ruins,2017,Jazz,7
+1401,201,Archives of Pulses,2011,R&B,15
+1402,183,Restless Drifts Sessions,2008,Jazz,13
+1403,211,Thresholds & Horizons,2013,Hip-Hop,8
+1404,183,Hollow Vaults,2017,Jazz,11
+1405,55,Drifting Vol. II,2018,Jazz,8
+1406,177,Weightless Vol. II,2012,Electronic,11
+1407,37,Thresholds of Signals,2021,Pop,7
+1408,132,Under Silver Flickers,2015,Jazz,16
+1409,117,Under Frozen Spectra,2015,R&B,15
+1410,155,Archives & Ruins,2004,Rock,4
+1411,134,The Silver Frequencies,2019,Electronic,8
+1412,78,Circuits & Tides,2020,Electronic,7
+1413,37,The Muted Vaults,2024,Pop,12
+1414,229,The Velvet Resonance (Deluxe),2017,Metal,16
+1415,32,Endless Circuits Sessions,2014,Electronic,5
+1416,145,Restless Vol. II,2010,Folk,9
+1417,214,Resonance of Intervals,2022,Country,7
+1418,196,The Burning Reverb (Deluxe),2023,R&B,11
+1419,171,Glowing Pulses Sessions,2009,Jazz,11
+1420,100,The Fading Fragments EP,2016,Rock,15
+1421,246,Overtones of Thresholds,2017,Metal,12
+1422,166,Velvet Flickers,2013,Hip-Hop,9
+1423,162,Ruins of Contours,2010,Rock,16
+1424,165,Muted Drifts,2019,Hip-Hop,11
+1425,122,The Neon Currents,2007,R&B,6
+1426,213,Resonance of Overtones,2014,Metal,15
+1427,114,Vanished Intervals Vol. I,2007,Classical,12
+1428,151,Shattered Dissonance,2012,Metal,14
+1429,112,The Endless Tides EP,2008,R&B,12
+1430,98,Shadows & Horizons,2022,Jazz,13
+1431,139,The Pale Signals,2005,Electronic,4
+1432,197,Broken Ruins Vol. II,2011,Electronic,14
+1433,16,Under Restless Bridges,2013,Metal,9
+1434,183,Pale Orbits,2012,Jazz,10
+1435,37,The Silent Undertones Sessions,2019,Pop,9
+1436,61,Restless Thresholds EP,2023,Rock,8
+1437,17,Under Drifting Wavelengths,2003,R&B,3
+1438,78,Under Endless Thresholds,1997,Electronic,10
+1439,217,Drifts of Embers,2022,Rock,10
+1440,96,Under Velvet Wavelengths,2019,Rock,8
+1441,138,Neon Resonance (Deluxe),2015,Pop,11
+1442,168,The Neon Echoes (Deluxe),2003,Folk,12
+1443,154,Resonance & Pulses,2010,Jazz,15
+1444,90,Embers of Archives,2021,Rock,3
+1445,73,Velvet Margins EP,2013,Country,5
+1446,18,Shadows & Orbits,2016,Jazz,8
+1447,213,The Weightless Contours,2024,Metal,13
+1448,111,The Glowing Drifts Vol. I,2020,Classical,9
+1449,243,Reverb & Currents,2023,Pop,9
+1450,70,The Static Fragments Vol. I,2001,Pop,15
+1451,118,Under Restless Tides,2024,Rock,12
+1452,178,The Drifting Spectra,2021,R&B,13
+1453,122,Reverb of Shadows,2017,R&B,17
+1454,8,Thresholds of Pulses,2016,Country,9
+1455,91,Glowing Vol. I,2018,Pop,14
+1456,46,Tides of Horizons,2018,Country,9
+1457,95,The Scattered Tides,2024,Hip-Hop,8
+1458,6,Pulses & Spectra,2022,R&B,9
+1459,50,Mirrors of Mirrors,2010,Jazz,9
+1460,248,Trembling Sessions,2013,Country,7
+1461,2,The Drifting Orbits,2022,Electronic,9
+1462,146,Under Shattered Bridges,2022,Rock,10
+1463,50,Pulses of Intervals,2013,Jazz,4
+1464,45,Muted Signals,2001,Pop,13
+1465,67,Under Silent Overtones,2013,Pop,14
+1466,187,Embers & Dissonance,2024,Pop,15
+1467,6,Pulses of Contours,2024,R&B,10
+1468,65,Contours of Overtones,2021,R&B,11
+1469,1,Echoes of Dissonance,2005,Rock,9
+1470,111,Frozen EP,2023,Classical,8
+1471,12,Spectra & Vaults,2016,Hip-Hop,8
+1472,115,The Restless Shadows Sessions,2024,R&B,17
+1473,7,The Velvet Fragments,1997,R&B,8
+1474,161,Horizons of Tides,2022,Country,7
+1475,111,Muted Wavelengths Revisited,2009,Classical,13
+1476,216,Mirrors & Horizons,2014,Folk,8
+1477,62,Resonance & Echoes,2023,Folk,8
+1478,134,The Distant Undertones Sessions,2023,Electronic,12
+1479,113,Drifting Thresholds Sessions,2000,Rock,7
+1480,22,Hollow Orbits Vol. I,2022,Hip-Hop,13
+1481,17,The Hollow Spectra (Deluxe),2000,R&B,7
+1482,78,Under Drifting Vaults,1997,Electronic,10
+1483,27,Pale Dissonance Vol. II,2007,Country,8
+1484,25,Under Blinding Vaults,2002,Hip-Hop,9
+1485,222,Scattered Orbits (Deluxe),2020,Folk,6
+1486,110,Under Glowing Horizons,2005,Country,10
+1487,167,Wavelengths of Tides,2018,Hip-Hop,15
+1488,133,Archives & Embers,1998,Classical,9
+1489,27,Glowing Flickers,2013,Country,5
+1490,203,The Muted Signals Revisited,2011,Pop,12
+1491,66,Vaults & Circuits,2018,Country,15
+1492,159,The Hollow Echoes,2021,Country,8
+1493,150,Under Blinding Signals,1999,Jazz,15
+1494,121,Intervals & Fragments,2004,Jazz,10
+1495,95,Burning Archives Revisited,2024,Hip-Hop,11
+1496,38,Endless Frequencies,2008,Folk,13
+1497,164,The Distant Fragments,2016,Folk,13
+1498,122,Under Trembling Fragments,2018,R&B,13
+1499,145,Intervals & Ruins,2008,Folk,5
+1500,85,The Silver Thresholds,2011,R&B,9

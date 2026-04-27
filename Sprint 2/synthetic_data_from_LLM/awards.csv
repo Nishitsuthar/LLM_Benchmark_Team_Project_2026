@@ -1,0 +1,801 @@
+award_id,artist_id,award_name,category,year
+1,148,Melodex Artist Award,Best Album,2019
+2,14,Melodex Artist Award,Best New Artist,2016
+3,146,Crestwick Prize,Best New Artist,2024
+4,136,Streamify Annual Award,Best Collaboration,2017
+5,222,Golden Frequency Award,Best Track,2015
+6,29,Crestwick Prize,Best Collaboration,2023
+7,114,Harmonic Award,Best Track,2024
+8,86,Streamify Annual Award,Best New Artist,2022
+9,29,Stonfeld Honours,Best Artist,2017
+10,15,Stonfeld Honours,Best Collaboration,2015
+11,124,Golden Frequency Award,Best Album,2024
+12,137,Velvet Mic Award,Best Album,2015
+13,156,Stonfeld Honours,Best Collaboration,2016
+14,70,Melodex Artist Award,Best New Artist,2022
+15,183,Golden Frequency Award,Best Live Performance,2024
+16,154,Stonfeld Honours,Best Artist,2018
+17,95,Velvet Mic Award,Best New Artist,2016
+18,149,Golden Frequency Award,Best Collaboration,2023
+19,121,Golden Frequency Award,Best New Artist,2017
+20,137,Velvet Mic Award,Best Track,2021
+21,214,Crestwick Prize,Best New Artist,2023
+22,47,Crestwick Prize,Best New Artist,2016
+23,59,Solvern Music Prize,Best Album,2018
+24,63,Harmonic Award,Best Live Performance,2018
+25,146,Harmonic Award,Best Track,2016
+26,99,Crestwick Prize,Best New Artist,2018
+27,143,Stonfeld Honours,Best Artist,2015
+28,170,Solvern Music Prize,Best Artist,2024
+29,168,Stonfeld Honours,Best New Artist,2021
+30,117,Crestwick Prize,Best Artist,2019
+31,27,Harmonic Award,Best Track,2015
+32,172,Velvet Mic Award,Best Live Performance,2016
+33,230,Crestwick Prize,Breakthrough Artist,2016
+34,12,Harmonic Award,Best Album,2020
+35,154,Streamify Annual Award,Best Track,2018
+36,45,Stonfeld Honours,Best New Artist,2016
+37,173,Velvet Mic Award,Best New Artist,2016
+38,34,Harmonic Award,Breakthrough Artist,2023
+39,159,Streamify Annual Award,Best Artist,2017
+40,123,Streamify Annual Award,Best New Artist,2018
+41,152,Velvet Mic Award,Best New Artist,2023
+42,135,Streamify Annual Award,Best Collaboration,2017
+43,45,Melodex Artist Award,Best Album,2023
+44,14,Harmonic Award,Best Artist,2024
+45,166,Harmonic Award,Best Live Performance,2017
+46,243,Streamify Annual Award,Best Collaboration,2020
+47,159,Harmonic Award,Best Artist,2020
+48,172,Crestwick Prize,Best New Artist,2015
+49,233,Crestwick Prize,Best Track,2021
+50,132,Streamify Annual Award,Breakthrough Artist,2022
+51,143,Stonfeld Honours,Best Track,2018
+52,48,Stonfeld Honours,Best Track,2021
+53,238,Melodex Artist Award,Best Track,2016
+54,33,Velvet Mic Award,Best New Artist,2015
+55,246,Melodex Artist Award,Breakthrough Artist,2021
+56,150,Golden Frequency Award,Best Artist,2020
+57,232,Golden Frequency Award,Breakthrough Artist,2017
+58,9,Stonfeld Honours,Best Artist,2015
+59,75,Velvet Mic Award,Best Album,2018
+60,9,Stonfeld Honours,Best Artist,2024
+61,135,Crestwick Prize,Best New Artist,2015
+62,75,Stonfeld Honours,Best Live Performance,2021
+63,39,Stonfeld Honours,Best Album,2016
+64,149,Harmonic Award,Best Artist,2019
+65,89,Streamify Annual Award,Best Track,2023
+66,18,Streamify Annual Award,Best Artist,2017
+67,120,Crestwick Prize,Best Artist,2019
+68,216,Solvern Music Prize,Best Album,2017
+69,115,Stonfeld Honours,Breakthrough Artist,2024
+70,142,Crestwick Prize,Best Artist,2015
+71,149,Stonfeld Honours,Best Collaboration,2023
+72,71,Golden Frequency Award,Best Artist,2017
+73,227,Stonfeld Honours,Best Album,2017
+74,160,Golden Frequency Award,Breakthrough Artist,2017
+75,129,Velvet Mic Award,Breakthrough Artist,2024
+76,55,Crestwick Prize,Best New Artist,2024
+77,3,Golden Frequency Award,Best Live Performance,2019
+78,17,Crestwick Prize,Breakthrough Artist,2024
+79,109,Melodex Artist Award,Best New Artist,2018
+80,34,Stonfeld Honours,Best New Artist,2017
+81,47,Velvet Mic Award,Best New Artist,2022
+82,19,Crestwick Prize,Breakthrough Artist,2016
+83,204,Melodex Artist Award,Best Live Performance,2024
+84,224,Golden Frequency Award,Breakthrough Artist,2024
+85,70,Solvern Music Prize,Best Track,2021
+86,7,Stonfeld Honours,Best Collaboration,2021
+87,14,Velvet Mic Award,Best Live Performance,2020
+88,111,Streamify Annual Award,Breakthrough Artist,2017
+89,105,Stonfeld Honours,Best Album,2015
+90,166,Velvet Mic Award,Breakthrough Artist,2016
+91,133,Stonfeld Honours,Best Live Performance,2021
+92,79,Crestwick Prize,Best New Artist,2022
+93,102,Crestwick Prize,Best Track,2018
+94,196,Stonfeld Honours,Best Collaboration,2015
+95,9,Melodex Artist Award,Best Album,2016
+96,205,Velvet Mic Award,Best Artist,2022
+97,24,Melodex Artist Award,Best Track,2016
+98,74,Crestwick Prize,Best Artist,2017
+99,62,Stonfeld Honours,Best Artist,2021
+100,144,Stonfeld Honours,Best Album,2023
+101,235,Crestwick Prize,Breakthrough Artist,2022
+102,204,Harmonic Award,Breakthrough Artist,2024
+103,249,Golden Frequency Award,Breakthrough Artist,2022
+104,111,Crestwick Prize,Best New Artist,2015
+105,170,Solvern Music Prize,Best Collaboration,2021
+106,169,Harmonic Award,Best Collaboration,2021
+107,7,Harmonic Award,Best Album,2015
+108,130,Solvern Music Prize,Best New Artist,2018
+109,190,Golden Frequency Award,Best Live Performance,2022
+110,67,Solvern Music Prize,Best Live Performance,2024
+111,176,Melodex Artist Award,Best Album,2019
+112,116,Velvet Mic Award,Best Album,2024
+113,68,Streamify Annual Award,Best Album,2021
+114,195,Solvern Music Prize,Best Artist,2023
+115,239,Streamify Annual Award,Best New Artist,2023
+116,180,Melodex Artist Award,Best Artist,2024
+117,14,Streamify Annual Award,Best Album,2022
+118,228,Velvet Mic Award,Best Artist,2019
+119,183,Crestwick Prize,Best Live Performance,2022
+120,235,Solvern Music Prize,Best Album,2022
+121,128,Streamify Annual Award,Best Album,2023
+122,108,Golden Frequency Award,Best New Artist,2024
+123,245,Streamify Annual Award,Best Track,2016
+124,19,Golden Frequency Award,Best Album,2018
+125,216,Streamify Annual Award,Best New Artist,2017
+126,81,Solvern Music Prize,Best Album,2019
+127,157,Streamify Annual Award,Best New Artist,2019
+128,50,Golden Frequency Award,Best Artist,2020
+129,9,Melodex Artist Award,Best Album,2020
+130,163,Stonfeld Honours,Best Track,2018
+131,71,Harmonic Award,Best New Artist,2015
+132,136,Golden Frequency Award,Best Artist,2017
+133,219,Velvet Mic Award,Best Live Performance,2018
+134,134,Streamify Annual Award,Best New Artist,2021
+135,70,Melodex Artist Award,Best Collaboration,2020
+136,163,Stonfeld Honours,Best Artist,2020
+137,26,Stonfeld Honours,Best New Artist,2023
+138,98,Solvern Music Prize,Best Artist,2017
+139,224,Velvet Mic Award,Best Artist,2023
+140,113,Golden Frequency Award,Best Artist,2019
+141,152,Streamify Annual Award,Best Album,2017
+142,129,Streamify Annual Award,Best Album,2020
+143,31,Melodex Artist Award,Best Collaboration,2018
+144,169,Solvern Music Prize,Breakthrough Artist,2024
+145,244,Stonfeld Honours,Best Track,2018
+146,131,Crestwick Prize,Breakthrough Artist,2023
+147,118,Harmonic Award,Best Track,2017
+148,237,Crestwick Prize,Best Album,2017
+149,110,Melodex Artist Award,Best Live Performance,2020
+150,186,Streamify Annual Award,Best Track,2019
+151,204,Crestwick Prize,Best New Artist,2020
+152,38,Velvet Mic Award,Breakthrough Artist,2019
+153,119,Golden Frequency Award,Breakthrough Artist,2021
+154,184,Golden Frequency Award,Best New Artist,2016
+155,42,Stonfeld Honours,Best Album,2018
+156,135,Streamify Annual Award,Best Album,2015
+157,11,Crestwick Prize,Breakthrough Artist,2015
+158,208,Stonfeld Honours,Best New Artist,2023
+159,188,Golden Frequency Award,Best New Artist,2024
+160,148,Harmonic Award,Best Collaboration,2015
+161,192,Velvet Mic Award,Best Artist,2015
+162,217,Streamify Annual Award,Best New Artist,2024
+163,123,Melodex Artist Award,Best Album,2016
+164,195,Golden Frequency Award,Breakthrough Artist,2021
+165,31,Melodex Artist Award,Best New Artist,2017
+166,145,Streamify Annual Award,Best Live Performance,2018
+167,170,Golden Frequency Award,Best Track,2019
+168,223,Golden Frequency Award,Best Collaboration,2020
+169,31,Solvern Music Prize,Best New Artist,2023
+170,59,Solvern Music Prize,Breakthrough Artist,2017
+171,120,Melodex Artist Award,Best Track,2019
+172,193,Solvern Music Prize,Best New Artist,2016
+173,59,Golden Frequency Award,Best Album,2018
+174,21,Melodex Artist Award,Best Album,2024
+175,147,Melodex Artist Award,Best Track,2015
+176,150,Golden Frequency Award,Breakthrough Artist,2024
+177,73,Velvet Mic Award,Best New Artist,2016
+178,108,Golden Frequency Award,Best New Artist,2024
+179,116,Golden Frequency Award,Breakthrough Artist,2023
+180,212,Solvern Music Prize,Best Artist,2024
+181,196,Stonfeld Honours,Best Artist,2020
+182,94,Harmonic Award,Best Live Performance,2021
+183,111,Stonfeld Honours,Best Album,2022
+184,197,Melodex Artist Award,Breakthrough Artist,2018
+185,54,Harmonic Award,Best New Artist,2018
+186,214,Velvet Mic Award,Best Album,2024
+187,120,Streamify Annual Award,Best Track,2020
+188,57,Stonfeld Honours,Best Album,2020
+189,62,Velvet Mic Award,Best Album,2015
+190,93,Velvet Mic Award,Best Collaboration,2021
+191,52,Solvern Music Prize,Best Live Performance,2023
+192,36,Stonfeld Honours,Best New Artist,2023
+193,225,Crestwick Prize,Best Live Performance,2024
+194,228,Stonfeld Honours,Best Artist,2021
+195,205,Golden Frequency Award,Best Live Performance,2022
+196,52,Golden Frequency Award,Best Track,2023
+197,90,Streamify Annual Award,Best Collaboration,2016
+198,101,Melodex Artist Award,Best Artist,2021
+199,99,Velvet Mic Award,Best Artist,2016
+200,225,Crestwick Prize,Best Album,2016
+201,197,Crestwick Prize,Best Live Performance,2023
+202,8,Harmonic Award,Best New Artist,2015
+203,57,Velvet Mic Award,Best Track,2024
+204,153,Harmonic Award,Best Artist,2015
+205,145,Velvet Mic Award,Best Collaboration,2018
+206,24,Melodex Artist Award,Best Artist,2022
+207,53,Crestwick Prize,Best Track,2016
+208,171,Melodex Artist Award,Best Live Performance,2021
+209,128,Crestwick Prize,Best Collaboration,2016
+210,187,Harmonic Award,Best Collaboration,2022
+211,149,Velvet Mic Award,Breakthrough Artist,2020
+212,233,Crestwick Prize,Best Album,2017
+213,233,Golden Frequency Award,Best Artist,2018
+214,51,Golden Frequency Award,Best Track,2020
+215,61,Velvet Mic Award,Best Artist,2023
+216,184,Harmonic Award,Best Live Performance,2016
+217,117,Crestwick Prize,Best Live Performance,2024
+218,10,Harmonic Award,Best Artist,2023
+219,123,Melodex Artist Award,Best New Artist,2018
+220,248,Melodex Artist Award,Best Track,2015
+221,193,Solvern Music Prize,Best Track,2016
+222,192,Solvern Music Prize,Best Album,2019
+223,111,Velvet Mic Award,Best Artist,2020
+224,45,Velvet Mic Award,Best Track,2022
+225,52,Crestwick Prize,Best New Artist,2017
+226,231,Velvet Mic Award,Best New Artist,2020
+227,126,Stonfeld Honours,Best Album,2020
+228,115,Melodex Artist Award,Best Live Performance,2022
+229,175,Melodex Artist Award,Best Collaboration,2019
+230,248,Harmonic Award,Best Live Performance,2024
+231,54,Melodex Artist Award,Best Artist,2023
+232,193,Velvet Mic Award,Best Collaboration,2020
+233,224,Crestwick Prize,Best Artist,2017
+234,69,Melodex Artist Award,Best Track,2022
+235,47,Golden Frequency Award,Breakthrough Artist,2024
+236,186,Harmonic Award,Breakthrough Artist,2015
+237,79,Crestwick Prize,Best Collaboration,2024
+238,118,Golden Frequency Award,Best Album,2019
+239,236,Harmonic Award,Best Album,2019
+240,134,Crestwick Prize,Best Live Performance,2018
+241,243,Velvet Mic Award,Best Live Performance,2018
+242,209,Velvet Mic Award,Best Live Performance,2024
+243,143,Solvern Music Prize,Best Collaboration,2017
+244,169,Melodex Artist Award,Best Collaboration,2019
+245,161,Velvet Mic Award,Best New Artist,2017
+246,7,Stonfeld Honours,Breakthrough Artist,2015
+247,226,Harmonic Award,Breakthrough Artist,2024
+248,138,Crestwick Prize,Best Artist,2022
+249,78,Golden Frequency Award,Best Track,2023
+250,8,Crestwick Prize,Best Artist,2024
+251,36,Solvern Music Prize,Best Live Performance,2018
+252,243,Crestwick Prize,Breakthrough Artist,2024
+253,129,Melodex Artist Award,Best Artist,2020
+254,13,Melodex Artist Award,Best Album,2016
+255,115,Melodex Artist Award,Best Track,2021
+256,104,Melodex Artist Award,Best Track,2015
+257,13,Stonfeld Honours,Best Collaboration,2016
+258,135,Melodex Artist Award,Best Collaboration,2023
+259,169,Harmonic Award,Breakthrough Artist,2017
+260,20,Streamify Annual Award,Best Album,2018
+261,103,Streamify Annual Award,Best Album,2024
+262,123,Golden Frequency Award,Best Track,2016
+263,117,Velvet Mic Award,Best New Artist,2019
+264,114,Harmonic Award,Best New Artist,2023
+265,116,Crestwick Prize,Best Live Performance,2018
+266,110,Harmonic Award,Best Artist,2022
+267,9,Melodex Artist Award,Best Track,2023
+268,201,Crestwick Prize,Best New Artist,2017
+269,185,Stonfeld Honours,Best New Artist,2019
+270,224,Melodex Artist Award,Breakthrough Artist,2020
+271,201,Golden Frequency Award,Best Track,2019
+272,110,Melodex Artist Award,Best Artist,2023
+273,79,Crestwick Prize,Best Live Performance,2022
+274,29,Solvern Music Prize,Best Artist,2016
+275,144,Stonfeld Honours,Best Live Performance,2022
+276,143,Golden Frequency Award,Best Artist,2018
+277,112,Velvet Mic Award,Best Live Performance,2021
+278,66,Solvern Music Prize,Best Album,2015
+279,151,Velvet Mic Award,Best Artist,2018
+280,176,Streamify Annual Award,Best New Artist,2017
+281,43,Stonfeld Honours,Breakthrough Artist,2019
+282,197,Golden Frequency Award,Best Live Performance,2020
+283,108,Velvet Mic Award,Breakthrough Artist,2019
+284,48,Harmonic Award,Best Artist,2022
+285,195,Streamify Annual Award,Best New Artist,2022
+286,65,Solvern Music Prize,Best Track,2023
+287,15,Solvern Music Prize,Best Track,2022
+288,175,Streamify Annual Award,Best Track,2023
+289,221,Harmonic Award,Best Live Performance,2022
+290,19,Melodex Artist Award,Best Collaboration,2020
+291,211,Stonfeld Honours,Best Track,2022
+292,139,Streamify Annual Award,Best Artist,2021
+293,31,Harmonic Award,Best New Artist,2023
+294,45,Crestwick Prize,Best Artist,2019
+295,228,Melodex Artist Award,Best Album,2024
+296,164,Velvet Mic Award,Best Live Performance,2015
+297,116,Golden Frequency Award,Best Artist,2023
+298,85,Streamify Annual Award,Breakthrough Artist,2018
+299,175,Velvet Mic Award,Best Live Performance,2021
+300,13,Velvet Mic Award,Best Live Performance,2021
+301,215,Harmonic Award,Best Album,2019
+302,47,Harmonic Award,Best Track,2023
+303,124,Stonfeld Honours,Best Album,2021
+304,203,Solvern Music Prize,Best Live Performance,2018
+305,148,Solvern Music Prize,Best Collaboration,2018
+306,91,Melodex Artist Award,Best Collaboration,2023
+307,227,Golden Frequency Award,Best Live Performance,2020
+308,192,Streamify Annual Award,Best Album,2017
+309,227,Melodex Artist Award,Best Collaboration,2023
+310,216,Velvet Mic Award,Best Live Performance,2024
+311,213,Streamify Annual Award,Best New Artist,2020
+312,149,Harmonic Award,Best Artist,2023
+313,170,Golden Frequency Award,Best New Artist,2015
+314,190,Harmonic Award,Best Track,2021
+315,83,Velvet Mic Award,Best Live Performance,2018
+316,30,Solvern Music Prize,Breakthrough Artist,2017
+317,85,Solvern Music Prize,Best Collaboration,2023
+318,33,Solvern Music Prize,Best New Artist,2020
+319,10,Solvern Music Prize,Best Track,2019
+320,72,Streamify Annual Award,Best Track,2019
+321,239,Melodex Artist Award,Best Album,2021
+322,161,Solvern Music Prize,Breakthrough Artist,2017
+323,164,Crestwick Prize,Best Artist,2017
+324,228,Stonfeld Honours,Breakthrough Artist,2020
+325,228,Crestwick Prize,Best Track,2015
+326,125,Velvet Mic Award,Best Live Performance,2015
+327,234,Stonfeld Honours,Best Track,2019
+328,98,Melodex Artist Award,Best Album,2019
+329,16,Streamify Annual Award,Best Album,2015
+330,155,Golden Frequency Award,Best Track,2021
+331,71,Melodex Artist Award,Best Track,2017
+332,193,Crestwick Prize,Best New Artist,2015
+333,198,Melodex Artist Award,Best New Artist,2019
+334,220,Streamify Annual Award,Best Album,2021
+335,28,Streamify Annual Award,Best Artist,2016
+336,102,Golden Frequency Award,Breakthrough Artist,2022
+337,15,Melodex Artist Award,Best Collaboration,2024
+338,119,Solvern Music Prize,Best Live Performance,2020
+339,103,Streamify Annual Award,Best Artist,2017
+340,67,Melodex Artist Award,Best Album,2021
+341,57,Stonfeld Honours,Best Collaboration,2020
+342,232,Golden Frequency Award,Best Collaboration,2016
+343,118,Solvern Music Prize,Best New Artist,2024
+344,100,Golden Frequency Award,Best Track,2021
+345,197,Melodex Artist Award,Best Live Performance,2021
+346,15,Harmonic Award,Best Live Performance,2021
+347,142,Stonfeld Honours,Best Live Performance,2024
+348,63,Solvern Music Prize,Best Artist,2020
+349,227,Melodex Artist Award,Best New Artist,2023
+350,182,Stonfeld Honours,Best Artist,2024
+351,152,Golden Frequency Award,Best Track,2022
+352,66,Velvet Mic Award,Best New Artist,2019
+353,238,Solvern Music Prize,Best Album,2020
+354,31,Velvet Mic Award,Breakthrough Artist,2018
+355,26,Golden Frequency Award,Best New Artist,2020
+356,141,Solvern Music Prize,Breakthrough Artist,2022
+357,49,Crestwick Prize,Best Track,2015
+358,201,Crestwick Prize,Best Live Performance,2018
+359,141,Stonfeld Honours,Breakthrough Artist,2017
+360,168,Harmonic Award,Best Album,2019
+361,180,Harmonic Award,Best Live Performance,2019
+362,245,Harmonic Award,Breakthrough Artist,2024
+363,25,Harmonic Award,Best New Artist,2016
+364,198,Stonfeld Honours,Best Collaboration,2019
+365,76,Solvern Music Prize,Breakthrough Artist,2017
+366,22,Velvet Mic Award,Best Album,2021
+367,143,Stonfeld Honours,Breakthrough Artist,2022
+368,116,Harmonic Award,Best Artist,2019
+369,15,Stonfeld Honours,Best Album,2018
+370,144,Golden Frequency Award,Best New Artist,2024
+371,202,Crestwick Prize,Best New Artist,2018
+372,155,Velvet Mic Award,Best Collaboration,2021
+373,106,Streamify Annual Award,Best Artist,2017
+374,116,Golden Frequency Award,Best Track,2020
+375,32,Golden Frequency Award,Best Collaboration,2017
+376,122,Solvern Music Prize,Best Live Performance,2024
+377,142,Streamify Annual Award,Best Collaboration,2023
+378,61,Harmonic Award,Breakthrough Artist,2022
+379,77,Harmonic Award,Best New Artist,2018
+380,236,Streamify Annual Award,Best Album,2016
+381,172,Streamify Annual Award,Best Artist,2024
+382,59,Harmonic Award,Best Live Performance,2015
+383,126,Melodex Artist Award,Best Album,2024
+384,40,Velvet Mic Award,Best New Artist,2017
+385,71,Melodex Artist Award,Best Collaboration,2019
+386,184,Harmonic Award,Best Album,2018
+387,133,Stonfeld Honours,Best Album,2018
+388,7,Melodex Artist Award,Best Live Performance,2020
+389,46,Golden Frequency Award,Best New Artist,2021
+390,100,Melodex Artist Award,Best Track,2018
+391,127,Crestwick Prize,Breakthrough Artist,2021
+392,102,Melodex Artist Award,Best Album,2015
+393,1,Velvet Mic Award,Best New Artist,2018
+394,158,Golden Frequency Award,Best Collaboration,2022
+395,170,Velvet Mic Award,Best Live Performance,2016
+396,141,Melodex Artist Award,Best Live Performance,2017
+397,186,Crestwick Prize,Best Album,2020
+398,119,Melodex Artist Award,Best Album,2024
+399,140,Melodex Artist Award,Best Album,2022
+400,168,Velvet Mic Award,Best Collaboration,2022
+401,190,Golden Frequency Award,Breakthrough Artist,2023
+402,6,Solvern Music Prize,Best Track,2018
+403,220,Solvern Music Prize,Best Artist,2018
+404,162,Melodex Artist Award,Best Live Performance,2015
+405,50,Streamify Annual Award,Breakthrough Artist,2020
+406,66,Stonfeld Honours,Best New Artist,2017
+407,217,Harmonic Award,Best Live Performance,2022
+408,49,Solvern Music Prize,Best Album,2016
+409,211,Harmonic Award,Best Collaboration,2020
+410,114,Streamify Annual Award,Best New Artist,2019
+411,45,Melodex Artist Award,Best New Artist,2024
+412,248,Solvern Music Prize,Best Live Performance,2022
+413,93,Melodex Artist Award,Best Track,2019
+414,203,Velvet Mic Award,Best Track,2016
+415,227,Melodex Artist Award,Best Artist,2019
+416,91,Streamify Annual Award,Best Track,2020
+417,192,Harmonic Award,Best Track,2015
+418,98,Stonfeld Honours,Best Live Performance,2017
+419,215,Melodex Artist Award,Best Album,2016
+420,219,Stonfeld Honours,Best Live Performance,2024
+421,241,Streamify Annual Award,Best Track,2018
+422,138,Melodex Artist Award,Best New Artist,2019
+423,20,Crestwick Prize,Best Artist,2021
+424,167,Melodex Artist Award,Best Collaboration,2022
+425,220,Melodex Artist Award,Best Track,2019
+426,215,Stonfeld Honours,Best Track,2020
+427,140,Crestwick Prize,Best Album,2019
+428,115,Streamify Annual Award,Best Track,2023
+429,175,Crestwick Prize,Best New Artist,2022
+430,51,Melodex Artist Award,Best Album,2015
+431,245,Stonfeld Honours,Best Live Performance,2022
+432,133,Velvet Mic Award,Best Live Performance,2020
+433,152,Golden Frequency Award,Best Track,2019
+434,17,Streamify Annual Award,Best Collaboration,2016
+435,210,Harmonic Award,Best Artist,2022
+436,4,Stonfeld Honours,Best Album,2016
+437,9,Golden Frequency Award,Best Collaboration,2017
+438,89,Crestwick Prize,Best Collaboration,2018
+439,30,Golden Frequency Award,Best Album,2019
+440,234,Stonfeld Honours,Best Artist,2023
+441,76,Golden Frequency Award,Best Artist,2016
+442,138,Velvet Mic Award,Best Track,2020
+443,167,Golden Frequency Award,Best Live Performance,2022
+444,130,Solvern Music Prize,Breakthrough Artist,2024
+445,193,Solvern Music Prize,Breakthrough Artist,2019
+446,165,Solvern Music Prize,Best Track,2017
+447,7,Solvern Music Prize,Best Album,2018
+448,49,Golden Frequency Award,Best Artist,2022
+449,32,Melodex Artist Award,Breakthrough Artist,2015
+450,156,Streamify Annual Award,Best Track,2017
+451,83,Streamify Annual Award,Breakthrough Artist,2018
+452,138,Crestwick Prize,Best Artist,2017
+453,92,Velvet Mic Award,Breakthrough Artist,2019
+454,115,Solvern Music Prize,Best Track,2017
+455,224,Streamify Annual Award,Best Album,2016
+456,218,Velvet Mic Award,Best New Artist,2018
+457,70,Stonfeld Honours,Best Track,2017
+458,153,Solvern Music Prize,Best Live Performance,2019
+459,211,Stonfeld Honours,Best Collaboration,2016
+460,54,Stonfeld Honours,Best Album,2018
+461,115,Melodex Artist Award,Breakthrough Artist,2017
+462,123,Velvet Mic Award,Best Track,2021
+463,12,Melodex Artist Award,Best Collaboration,2016
+464,25,Harmonic Award,Best New Artist,2021
+465,237,Crestwick Prize,Best New Artist,2019
+466,80,Stonfeld Honours,Best New Artist,2020
+467,132,Streamify Annual Award,Best Artist,2023
+468,145,Golden Frequency Award,Best Collaboration,2021
+469,192,Harmonic Award,Best Collaboration,2023
+470,226,Crestwick Prize,Best Track,2022
+471,15,Velvet Mic Award,Best Collaboration,2022
+472,68,Crestwick Prize,Best New Artist,2024
+473,111,Velvet Mic Award,Best Album,2022
+474,191,Velvet Mic Award,Best Collaboration,2019
+475,180,Crestwick Prize,Best Track,2021
+476,84,Harmonic Award,Best New Artist,2023
+477,193,Melodex Artist Award,Breakthrough Artist,2017
+478,137,Crestwick Prize,Breakthrough Artist,2024
+479,81,Stonfeld Honours,Breakthrough Artist,2018
+480,217,Velvet Mic Award,Best Live Performance,2023
+481,171,Stonfeld Honours,Best New Artist,2020
+482,18,Crestwick Prize,Breakthrough Artist,2021
+483,13,Melodex Artist Award,Best Track,2024
+484,57,Harmonic Award,Best Album,2021
+485,91,Streamify Annual Award,Best Live Performance,2018
+486,238,Solvern Music Prize,Best Collaboration,2023
+487,126,Crestwick Prize,Best Collaboration,2021
+488,87,Harmonic Award,Best New Artist,2017
+489,113,Solvern Music Prize,Best Track,2023
+490,151,Stonfeld Honours,Best Live Performance,2016
+491,101,Velvet Mic Award,Breakthrough Artist,2021
+492,71,Crestwick Prize,Best Artist,2015
+493,168,Melodex Artist Award,Best New Artist,2016
+494,6,Melodex Artist Award,Best Live Performance,2024
+495,211,Melodex Artist Award,Breakthrough Artist,2019
+496,151,Melodex Artist Award,Best Album,2021
+497,98,Stonfeld Honours,Best Track,2023
+498,69,Crestwick Prize,Best Track,2024
+499,13,Golden Frequency Award,Best Live Performance,2018
+500,137,Stonfeld Honours,Best Live Performance,2019
+501,17,Streamify Annual Award,Best New Artist,2019
+502,171,Melodex Artist Award,Best Live Performance,2022
+503,158,Velvet Mic Award,Best Collaboration,2024
+504,143,Crestwick Prize,Breakthrough Artist,2024
+505,19,Solvern Music Prize,Best Live Performance,2018
+506,172,Melodex Artist Award,Best Track,2019
+507,129,Harmonic Award,Best Live Performance,2017
+508,115,Golden Frequency Award,Best Live Performance,2016
+509,47,Velvet Mic Award,Best New Artist,2020
+510,9,Solvern Music Prize,Breakthrough Artist,2016
+511,8,Stonfeld Honours,Breakthrough Artist,2017
+512,243,Solvern Music Prize,Best New Artist,2019
+513,101,Solvern Music Prize,Best Collaboration,2016
+514,87,Melodex Artist Award,Best New Artist,2024
+515,47,Velvet Mic Award,Best New Artist,2018
+516,50,Stonfeld Honours,Best Album,2021
+517,139,Solvern Music Prize,Breakthrough Artist,2018
+518,111,Golden Frequency Award,Best Album,2015
+519,111,Melodex Artist Award,Best Artist,2016
+520,224,Crestwick Prize,Breakthrough Artist,2020
+521,89,Crestwick Prize,Best Track,2015
+522,119,Streamify Annual Award,Best Collaboration,2017
+523,182,Streamify Annual Award,Best Live Performance,2018
+524,245,Harmonic Award,Best Live Performance,2017
+525,145,Golden Frequency Award,Breakthrough Artist,2016
+526,135,Velvet Mic Award,Breakthrough Artist,2019
+527,198,Stonfeld Honours,Best Artist,2023
+528,71,Velvet Mic Award,Best Track,2018
+529,169,Solvern Music Prize,Best Album,2019
+530,213,Stonfeld Honours,Best Artist,2024
+531,42,Streamify Annual Award,Best New Artist,2024
+532,226,Melodex Artist Award,Best Album,2024
+533,64,Streamify Annual Award,Best Artist,2015
+534,247,Melodex Artist Award,Best Artist,2018
+535,151,Solvern Music Prize,Breakthrough Artist,2017
+536,134,Stonfeld Honours,Best Live Performance,2020
+537,43,Harmonic Award,Breakthrough Artist,2021
+538,225,Melodex Artist Award,Best Artist,2020
+539,141,Crestwick Prize,Best Collaboration,2017
+540,237,Harmonic Award,Best New Artist,2023
+541,169,Crestwick Prize,Best New Artist,2015
+542,154,Harmonic Award,Best Artist,2022
+543,145,Melodex Artist Award,Best Track,2021
+544,160,Streamify Annual Award,Best Live Performance,2021
+545,238,Golden Frequency Award,Best Artist,2021
+546,13,Solvern Music Prize,Best Album,2022
+547,16,Melodex Artist Award,Best Collaboration,2024
+548,111,Crestwick Prize,Best Album,2018
+549,45,Harmonic Award,Breakthrough Artist,2020
+550,174,Velvet Mic Award,Best Artist,2016
+551,214,Crestwick Prize,Best New Artist,2015
+552,204,Crestwick Prize,Best New Artist,2018
+553,15,Velvet Mic Award,Best Track,2024
+554,184,Velvet Mic Award,Best New Artist,2016
+555,54,Stonfeld Honours,Best Track,2020
+556,127,Streamify Annual Award,Best Artist,2022
+557,119,Golden Frequency Award,Best Collaboration,2016
+558,217,Golden Frequency Award,Best Album,2017
+559,33,Streamify Annual Award,Best Collaboration,2016
+560,95,Velvet Mic Award,Best New Artist,2015
+561,158,Harmonic Award,Best New Artist,2019
+562,87,Melodex Artist Award,Best New Artist,2020
+563,25,Velvet Mic Award,Best Album,2021
+564,134,Stonfeld Honours,Best Live Performance,2024
+565,133,Crestwick Prize,Best Live Performance,2020
+566,211,Streamify Annual Award,Best Collaboration,2020
+567,159,Stonfeld Honours,Breakthrough Artist,2024
+568,179,Melodex Artist Award,Best Live Performance,2022
+569,149,Velvet Mic Award,Best Track,2024
+570,84,Stonfeld Honours,Best Collaboration,2017
+571,211,Crestwick Prize,Breakthrough Artist,2024
+572,12,Streamify Annual Award,Best Album,2016
+573,235,Stonfeld Honours,Best Artist,2017
+574,13,Stonfeld Honours,Breakthrough Artist,2020
+575,23,Streamify Annual Award,Best Collaboration,2020
+576,118,Stonfeld Honours,Best New Artist,2021
+577,124,Solvern Music Prize,Best Album,2021
+578,168,Velvet Mic Award,Breakthrough Artist,2016
+579,172,Solvern Music Prize,Best Artist,2016
+580,116,Solvern Music Prize,Best New Artist,2017
+581,249,Stonfeld Honours,Best Collaboration,2019
+582,205,Golden Frequency Award,Best New Artist,2015
+583,29,Melodex Artist Award,Best New Artist,2024
+584,139,Stonfeld Honours,Best Track,2023
+585,93,Streamify Annual Award,Best Artist,2020
+586,61,Solvern Music Prize,Breakthrough Artist,2020
+587,41,Velvet Mic Award,Best New Artist,2022
+588,18,Stonfeld Honours,Best Album,2024
+589,212,Solvern Music Prize,Best New Artist,2018
+590,157,Harmonic Award,Best Album,2015
+591,125,Stonfeld Honours,Best Track,2015
+592,13,Solvern Music Prize,Best Artist,2016
+593,40,Harmonic Award,Best Collaboration,2021
+594,55,Melodex Artist Award,Breakthrough Artist,2023
+595,157,Solvern Music Prize,Best Artist,2017
+596,183,Harmonic Award,Best Live Performance,2015
+597,119,Solvern Music Prize,Best Collaboration,2015
+598,122,Harmonic Award,Best New Artist,2017
+599,77,Solvern Music Prize,Best Track,2021
+600,175,Golden Frequency Award,Best Artist,2024
+601,136,Crestwick Prize,Best Artist,2018
+602,7,Stonfeld Honours,Best Artist,2018
+603,97,Melodex Artist Award,Best Live Performance,2023
+604,249,Harmonic Award,Best Track,2019
+605,98,Melodex Artist Award,Best Artist,2017
+606,31,Crestwick Prize,Best New Artist,2018
+607,147,Melodex Artist Award,Best Collaboration,2018
+608,54,Solvern Music Prize,Best Collaboration,2018
+609,161,Harmonic Award,Best Live Performance,2020
+610,83,Solvern Music Prize,Best Collaboration,2018
+611,8,Harmonic Award,Best Album,2024
+612,205,Stonfeld Honours,Best Track,2018
+613,34,Harmonic Award,Best Artist,2022
+614,172,Streamify Annual Award,Best New Artist,2018
+615,153,Velvet Mic Award,Best Album,2021
+616,123,Golden Frequency Award,Best Collaboration,2018
+617,151,Velvet Mic Award,Best Collaboration,2016
+618,152,Crestwick Prize,Best Track,2018
+619,89,Stonfeld Honours,Best Track,2019
+620,233,Melodex Artist Award,Breakthrough Artist,2017
+621,23,Golden Frequency Award,Best Collaboration,2023
+622,232,Stonfeld Honours,Breakthrough Artist,2021
+623,170,Crestwick Prize,Best Collaboration,2022
+624,197,Golden Frequency Award,Best Artist,2021
+625,214,Harmonic Award,Best Collaboration,2023
+626,121,Melodex Artist Award,Best Artist,2023
+627,149,Velvet Mic Award,Best Live Performance,2019
+628,123,Velvet Mic Award,Best Track,2015
+629,103,Velvet Mic Award,Best Album,2018
+630,247,Stonfeld Honours,Best Live Performance,2015
+631,229,Golden Frequency Award,Breakthrough Artist,2021
+632,234,Velvet Mic Award,Best Track,2022
+633,72,Velvet Mic Award,Breakthrough Artist,2018
+634,140,Melodex Artist Award,Best Live Performance,2024
+635,80,Crestwick Prize,Best Live Performance,2016
+636,240,Stonfeld Honours,Best Track,2018
+637,145,Melodex Artist Award,Best Live Performance,2015
+638,91,Velvet Mic Award,Best Artist,2016
+639,135,Harmonic Award,Breakthrough Artist,2022
+640,250,Stonfeld Honours,Best Track,2016
+641,102,Solvern Music Prize,Best Artist,2019
+642,135,Solvern Music Prize,Best New Artist,2015
+643,62,Golden Frequency Award,Breakthrough Artist,2015
+644,152,Solvern Music Prize,Best Album,2017
+645,103,Melodex Artist Award,Best Track,2019
+646,16,Velvet Mic Award,Best Album,2020
+647,171,Melodex Artist Award,Best Track,2018
+648,211,Streamify Annual Award,Breakthrough Artist,2020
+649,140,Streamify Annual Award,Best Collaboration,2022
+650,216,Solvern Music Prize,Best New Artist,2021
+651,109,Stonfeld Honours,Best Collaboration,2019
+652,155,Golden Frequency Award,Best Collaboration,2024
+653,51,Harmonic Award,Breakthrough Artist,2023
+654,129,Melodex Artist Award,Best New Artist,2017
+655,139,Melodex Artist Award,Breakthrough Artist,2021
+656,217,Streamify Annual Award,Breakthrough Artist,2024
+657,75,Golden Frequency Award,Best Live Performance,2015
+658,149,Golden Frequency Award,Best Collaboration,2016
+659,4,Melodex Artist Award,Best Track,2015
+660,134,Velvet Mic Award,Best New Artist,2023
+661,208,Velvet Mic Award,Best Live Performance,2023
+662,110,Solvern Music Prize,Breakthrough Artist,2015
+663,32,Solvern Music Prize,Best Live Performance,2021
+664,176,Velvet Mic Award,Breakthrough Artist,2022
+665,172,Crestwick Prize,Best Artist,2023
+666,146,Crestwick Prize,Best New Artist,2022
+667,153,Crestwick Prize,Best Album,2023
+668,101,Crestwick Prize,Best Live Performance,2020
+669,149,Crestwick Prize,Best Album,2016
+670,185,Solvern Music Prize,Best Live Performance,2020
+671,186,Solvern Music Prize,Best Collaboration,2023
+672,207,Melodex Artist Award,Breakthrough Artist,2023
+673,111,Velvet Mic Award,Best Album,2023
+674,124,Stonfeld Honours,Best Album,2016
+675,101,Golden Frequency Award,Best Live Performance,2024
+676,169,Melodex Artist Award,Best Album,2018
+677,73,Velvet Mic Award,Best Album,2023
+678,227,Solvern Music Prize,Breakthrough Artist,2019
+679,111,Crestwick Prize,Best New Artist,2018
+680,139,Stonfeld Honours,Best Artist,2019
+681,101,Velvet Mic Award,Best New Artist,2019
+682,126,Melodex Artist Award,Breakthrough Artist,2022
+683,172,Solvern Music Prize,Best Collaboration,2019
+684,50,Melodex Artist Award,Best New Artist,2020
+685,124,Streamify Annual Award,Best Album,2021
+686,123,Harmonic Award,Best Live Performance,2022
+687,168,Crestwick Prize,Best Album,2016
+688,13,Stonfeld Honours,Best Album,2016
+689,40,Velvet Mic Award,Best Album,2015
+690,141,Streamify Annual Award,Best Live Performance,2016
+691,184,Melodex Artist Award,Breakthrough Artist,2022
+692,49,Solvern Music Prize,Breakthrough Artist,2019
+693,168,Solvern Music Prize,Best New Artist,2019
+694,161,Harmonic Award,Best Live Performance,2015
+695,108,Streamify Annual Award,Best Live Performance,2020
+696,123,Crestwick Prize,Best Collaboration,2023
+697,219,Solvern Music Prize,Best New Artist,2017
+698,20,Melodex Artist Award,Best Collaboration,2018
+699,217,Golden Frequency Award,Best Artist,2016
+700,20,Harmonic Award,Best Track,2021
+701,194,Stonfeld Honours,Best Album,2022
+702,68,Harmonic Award,Breakthrough Artist,2016
+703,246,Harmonic Award,Best Track,2018
+704,94,Golden Frequency Award,Breakthrough Artist,2020
+705,45,Harmonic Award,Best Artist,2016
+706,238,Melodex Artist Award,Breakthrough Artist,2022
+707,110,Stonfeld Honours,Best Artist,2022
+708,196,Velvet Mic Award,Best Album,2015
+709,200,Stonfeld Honours,Best Live Performance,2019
+710,23,Crestwick Prize,Best Artist,2024
+711,166,Harmonic Award,Best Track,2023
+712,243,Crestwick Prize,Breakthrough Artist,2016
+713,198,Golden Frequency Award,Best New Artist,2020
+714,180,Streamify Annual Award,Best Live Performance,2019
+715,7,Velvet Mic Award,Best Album,2017
+716,115,Melodex Artist Award,Best Live Performance,2021
+717,43,Streamify Annual Award,Best New Artist,2016
+718,62,Streamify Annual Award,Best New Artist,2018
+719,25,Melodex Artist Award,Best Track,2023
+720,182,Solvern Music Prize,Best Artist,2019
+721,177,Melodex Artist Award,Best New Artist,2023
+722,243,Crestwick Prize,Best Track,2024
+723,132,Golden Frequency Award,Breakthrough Artist,2017
+724,37,Solvern Music Prize,Best Live Performance,2020
+725,36,Harmonic Award,Best Track,2018
+726,33,Harmonic Award,Best Artist,2019
+727,1,Streamify Annual Award,Best Artist,2018
+728,185,Crestwick Prize,Best Track,2022
+729,150,Solvern Music Prize,Best Artist,2016
+730,157,Stonfeld Honours,Best Album,2022
+731,15,Streamify Annual Award,Best Collaboration,2018
+732,54,Harmonic Award,Best Collaboration,2024
+733,132,Golden Frequency Award,Best Collaboration,2022
+734,15,Harmonic Award,Best Track,2018
+735,100,Melodex Artist Award,Breakthrough Artist,2016
+736,141,Melodex Artist Award,Best Collaboration,2019
+737,109,Crestwick Prize,Best Collaboration,2015
+738,47,Solvern Music Prize,Best Track,2022
+739,144,Stonfeld Honours,Best Track,2016
+740,65,Melodex Artist Award,Best Album,2020
+741,164,Golden Frequency Award,Best Live Performance,2017
+742,157,Solvern Music Prize,Best Collaboration,2022
+743,109,Crestwick Prize,Best New Artist,2023
+744,86,Crestwick Prize,Best Live Performance,2023
+745,11,Stonfeld Honours,Best Album,2020
+746,29,Stonfeld Honours,Best Track,2018
+747,117,Melodex Artist Award,Best New Artist,2017
+748,156,Melodex Artist Award,Best Album,2018
+749,1,Solvern Music Prize,Best Album,2017
+750,249,Stonfeld Honours,Breakthrough Artist,2020
+751,139,Melodex Artist Award,Best Track,2018
+752,247,Streamify Annual Award,Best Track,2020
+753,103,Solvern Music Prize,Best Track,2019
+754,42,Stonfeld Honours,Best New Artist,2021
+755,157,Stonfeld Honours,Best Live Performance,2022
+756,140,Harmonic Award,Best Album,2019
+757,222,Crestwick Prize,Best Live Performance,2015
+758,144,Harmonic Award,Best Track,2023
+759,138,Harmonic Award,Best New Artist,2018
+760,9,Solvern Music Prize,Best Track,2024
+761,23,Melodex Artist Award,Best Collaboration,2019
+762,37,Crestwick Prize,Best Live Performance,2015
+763,228,Melodex Artist Award,Best New Artist,2024
+764,135,Melodex Artist Award,Best Collaboration,2021
+765,86,Melodex Artist Award,Best Collaboration,2024
+766,162,Streamify Annual Award,Best Track,2022
+767,239,Crestwick Prize,Best Collaboration,2017
+768,247,Melodex Artist Award,Best Album,2019
+769,195,Solvern Music Prize,Best New Artist,2017
+770,144,Melodex Artist Award,Best Album,2023
+771,49,Crestwick Prize,Best Album,2017
+772,114,Solvern Music Prize,Best Album,2019
+773,154,Solvern Music Prize,Best Album,2017
+774,126,Streamify Annual Award,Best Album,2023
+775,67,Solvern Music Prize,Best Album,2021
+776,126,Streamify Annual Award,Best Artist,2023
+777,191,Velvet Mic Award,Breakthrough Artist,2016
+778,5,Harmonic Award,Best Track,2020
+779,179,Golden Frequency Award,Best Album,2017
+780,246,Stonfeld Honours,Breakthrough Artist,2019
+781,43,Stonfeld Honours,Best Artist,2023
+782,236,Stonfeld Honours,Best Track,2023
+783,144,Melodex Artist Award,Best New Artist,2017
+784,3,Streamify Annual Award,Best Track,2016
+785,93,Crestwick Prize,Best Album,2019
+786,211,Golden Frequency Award,Best Track,2016
+787,177,Golden Frequency Award,Best Artist,2016
+788,111,Crestwick Prize,Best Track,2016
+789,102,Solvern Music Prize,Best Track,2015
+790,49,Stonfeld Honours,Best Track,2017
+791,233,Streamify Annual Award,Best Collaboration,2018
+792,103,Golden Frequency Award,Best Collaboration,2016
+793,144,Solvern Music Prize,Best Track,2021
+794,13,Harmonic Award,Best New Artist,2018
+795,3,Melodex Artist Award,Best Collaboration,2022
+796,25,Solvern Music Prize,Breakthrough Artist,2017
+797,156,Velvet Mic Award,Best Artist,2022
+798,20,Velvet Mic Award,Best Live Performance,2016
+799,71,Streamify Annual Award,Breakthrough Artist,2024
+800,161,Solvern Music Prize,Best Track,2018
