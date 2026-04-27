@@ -473,10 +473,15 @@ while len(awards_data) < NUM_AWARDS and attempts < max_attempts:
     award_key = (artist['artist_id'], award_name, category, year)
     if award_key not in award_set:
         award_set.add(award_key)
+
+        # Get artist's tracks (if any)
+        artist_tracks = [t['track_id'] for t in tracks_data if t['artist_id'] == artist['artist_id']]
+        track_id = random.choice(artist_tracks) if artist_tracks and random.random() > 0.4 else None
+
         awards_data.append({
             'award_id': f'AWD_{len(awards_data)+1:04d}',
             'artist_id': artist['artist_id'],
-            'track_id': random.choice([t['track_id'] for t in tracks_data if t['artist_id'] == artist['artist_id']]) if random.random() > 0.4 else None,
+            'track_id': track_id,
             'award_name': award_name,
             'category': category,
             'year': year,
