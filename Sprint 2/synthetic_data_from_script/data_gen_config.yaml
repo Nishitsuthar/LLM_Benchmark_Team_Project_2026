@@ -1,0 +1,120 @@
+# Configuration file for high-quality synthetic data generation
+# Adjust these settings to control data volume and characteristics
+
+# === DATA VOLUMES ===
+volumes:
+  labels: 50
+  artists: 700
+  albums: 1500
+  tracks: 6000
+  streams: 10000
+  playlist_entries: 3000
+  collaborations: 800
+  royalties: 2000
+  awards: 500
+  chart_entries: 2000
+
+# === DISTRIBUTION PARAMETERS ===
+distributions:
+  # Power-law alpha (lower = more inequality, higher = more uniform)
+  artist_popularity_alpha: 2.0  # Controls how "viral" hits dominate
+  album_popularity_alpha: 2.2
+  track_popularity_alpha: 2.3
+
+  # Platform market shares (must sum to 1.0)
+  platforms:
+    Spotify: 0.35
+    Apple Music: 0.25
+    YouTube Music: 0.20
+    Amazon Music: 0.15
+    Tidal: 0.05
+
+# === GENRE SETTINGS ===
+genres:
+  Pop:
+    popularity: 0.9
+    tempo_mean: 120
+    energy_mean: 0.7
+    danceability_mean: 0.75
+
+  Hip-Hop:
+    popularity: 0.85
+    tempo_mean: 95
+    energy_mean: 0.75
+    danceability_mean: 0.8
+
+  Rock:
+    popularity: 0.7
+    tempo_mean: 125
+    energy_mean: 0.8
+    danceability_mean: 0.6
+
+  Electronic:
+    popularity: 0.65
+    tempo_mean: 128
+    energy_mean: 0.85
+    danceability_mean: 0.8
+
+  R&B:
+    popularity: 0.7
+    tempo_mean: 100
+    energy_mean: 0.65
+    danceability_mean: 0.7
+
+  Country:
+    popularity: 0.6
+    tempo_mean: 105
+    energy_mean: 0.6
+    danceability_mean: 0.65
+
+  Indie:
+    popularity: 0.5
+    tempo_mean: 115
+    energy_mean: 0.6
+    danceability_mean: 0.6
+
+  Metal:
+    popularity: 0.45
+    tempo_mean: 140
+    energy_mean: 0.9
+    danceability_mean: 0.4
+
+  Jazz:
+    popularity: 0.4
+    tempo_mean: 110
+    energy_mean: 0.5
+    danceability_mean: 0.5
+
+  Classical:
+    popularity: 0.3
+    tempo_mean: 90
+    energy_mean: 0.4
+    danceability_mean: 0.3
+
+# === TEMPORAL SETTINGS ===
+temporal:
+  artist_debut_year_start: 1990
+  artist_debut_year_end: 2024
+  label_founding_major: [1950, 1980]
+  label_founding_indie: [1980, 2020]
+  streams_lookback_years: 2
+  charts_lookback_years: 1
+
+# === QUALITY CONTROLS ===
+quality:
+  seed: 42  # For reproducibility
+  prevent_duplicates: true
+  validate_referential_integrity: true
+  validate_temporal_consistency: true
+  active_artist_percentage: 0.85
+  explicit_content_hiphop: 0.25
+  explicit_content_other: 0.10
+
+# === OUTPUT SETTINGS ===
+output:
+  format: csv
+  include_headers: true
+  date_format: "%Y-%m-%d"
+  float_precision: 3
+  compression: null  # Options: null, 'gzip', 'bz2', 'zip'
+  output_directory: "."
