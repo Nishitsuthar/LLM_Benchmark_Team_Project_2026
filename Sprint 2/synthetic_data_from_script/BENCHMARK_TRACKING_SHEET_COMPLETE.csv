@@ -1,0 +1,217 @@
+=== SUMMARY TABLE: OVERALL RESULTS BY FORMAT AND MODE ===
+""
+Format,Mode,Total,Correct,Wrong,Accuracy,Medium (6),Hard (7),Extremely Hard (7)
+CSV,Batch,20,14,6,70.0%,6/6 (100%),4/7 (57.1%),4/7 (57.1%)
+CSV,Individual,20,16,4,80.0%,6/6 (100%),7/7 (100%),3/7 (42.9%)
+HTML,Batch,20,14,6,70.0%,6/6 (100%),3/7 (42.9%),5/7 (71.4%)
+HTML,Individual,20,16,4,80.0%,6/6 (100%),5/7 (71.4%),5/7 (71.4%)
+JSON,Batch,20,16,4,80.0%,6/6 (100%),4/7 (57.1%),6/7 (85.7%)
+JSON,Individual,20,16,4,80.0%,6/6 (100%),5/7 (71.4%),5/7 (71.4%)
+XML,Batch,20,13,7,65.0%,6/6 (100%),3/7 (42.9%),4/7 (57.1%)
+XML,Individual,20,16,4,80.0%,6/6 (100%),5/7 (71.4%),5/7 (71.4%)
+""
+=== KEY FINDINGS ===
+""
+Finding,Details
+Best Format (Batch),JSON: 80% (16/20)
+Best Format (Individual),ALL FORMATS TIED: CSV & HTML & JSON & XML: 80% (16/20) - PERFECT CONVERGENCE!
+CSV Improvement,+10% in Individual mode (70% → 80%)
+HTML Improvement,+10% in Individual mode (70% → 80%) - RE-TESTED with correct model
+JSON Stability,0% change in Individual mode (80% → 80%) - IDENTICAL performance
+XML Improvement,+15% in Individual mode (65% → 80%) - BIGGEST IMPROVEMENT!
+Format Convergence,ALL 4 FORMATS achieved exactly 80% in Individual mode - PERFECT CONVERGENCE!
+Hard Questions Breakthrough,CSV Individual achieved 100% on Hard (was 57.1% in Batch)
+Stale Metadata Issue,FIXED in CSV Individual mode (Q007: Jazz 2.0 instead of 13.67)
+Common Errors Fixed,"Q007 (metadata), Q008 (missing artists), Q012 (wrong filtering), Q013 (swapped values), Q019 (partial answer)"
+New Errors in Individual,"Q015 (formula), Q017 (calculation), Q018 (missing data), Q020 (wrong criteria)"
+""
+=== COMPARISON: BATCH vs INDIVIDUAL MODE (CSV) ===
+""
+Question_ID,Difficulty,Batch_Result,Individual_Result,Change
+Q001,Medium,CORRECT,CORRECT,No change
+Q002,Medium,CORRECT,CORRECT,No change
+Q003,Medium,CORRECT,CORRECT,No change
+Q004,Medium,CORRECT,CORRECT,No change
+Q005,Medium,CORRECT,CORRECT,No change
+Q006,Medium,CORRECT,CORRECT,No change
+Q007,Hard,WRONG (stale metadata),CORRECT (counted actual),✅ FIXED
+Q008,Hard,WRONG (4 artists),CORRECT (6 artists),✅ FIXED
+Q009,Hard,CORRECT,CORRECT,No change
+Q010,Hard,CORRECT,CORRECT,No change
+Q011,Hard,CORRECT,CORRECT,No change
+Q012,Hard,WRONG (18 artists),CORRECT (3 artists),✅ FIXED
+Q013,Hard,WRONG (swapped),CORRECT (values correct),✅ FIXED
+Q014,Extremely Hard,CORRECT,CORRECT,No change
+Q015,Extremely Hard,WRONG,WRONG,No change (both wrong)
+Q016,Extremely Hard,CORRECT,CORRECT,No change
+Q017,Extremely Hard,CORRECT,WRONG,❌ GOT WORSE
+Q018,Extremely Hard,CORRECT,WRONG,❌ GOT WORSE
+Q019,Extremely Hard,WRONG (partial),CORRECT (full spectrum),✅ FIXED
+Q020,Extremely Hard,CORRECT,WRONG,❌ GOT WORSE
+""
+Summary,14 correct,16 correct,+2 improvement
+,6 wrong,4 wrong,"5 fixed, 3 got worse"
+""
+=== DETAILED TEST RESULTS BELOW ===
+""
+Test_ID,Phase,Mode,Format,Question_ID,Difficulty,Question_Text,Ground_Truth_Answer,Gemini_Answer_Batch,Gemini_Answer_Individual,Correct_Batch,Correct_Individual,Error_Type,Notes
+1,1,Batch,CSV,Q001,Medium,Which artist has the highest popularity score and how many albums have they released?,The Ortegas 1.0 10 albums,The Ortegas 1.0 10 albums,,TRUE,,Perfect match
+2,1,Batch,CSV,Q002,Medium,What is the average track duration in minutes across all tracks?,4.74 minutes,4.74 minutes,,TRUE,,Perfect match
+3,1,Batch,CSV,Q003,Medium,Which music genre has the most artists and how many?,Hip-Hop 42 artists,Hip-Hop 42,,TRUE,,Perfect match
+4,1,Batch,CSV,Q004,Medium,What percentage of artists are currently active?,84.69%,84.69%,,TRUE,,Perfect match
+5,1,Batch,CSV,Q005,Medium,How many tracks have explicit content?,6 tracks,6 tracks,,TRUE,,Perfect match
+6,1,Batch,CSV,Q006,Medium,Which record label has signed the most artists?,Gray-Mayo Entertainment 10,Gray-Mayo Entertainment 10,,TRUE,Tie,One of 4 tied labels
+7,1,Batch,CSV,Q007,Hard,What is the average number of tracks per album for each genre?,Jazz 2.0,Jazz 13.67,,FALSE,Stale Metadata,Used albums.total_tracks metadata column
+8,1,Batch,CSV,Q008,Hard,Which artists have won at least one award?,6 artists Ortegas=12,4 artists Ortegas=11,,FALSE,Missing Records,Missing 2 artists
+9,1,Batch,CSV,Q009,Hard,What is the distribution of album types by record label type?,10 combinations,All 10 correct,,TRUE,,Perfect match
+10,1,Batch,CSV,Q010,Hard,Which tracks have the highest energy and danceability scores combined?,Top 5 tracks,Top 5 correct,,TRUE,,Perfect match
+11,1,Batch,CSV,Q011,Hard,What is the average popularity score for artists from each country?,139 countries,Countries truncated,,TRUE,,Appropriately truncated
+12,1,Batch,CSV,Q012,Hard,Which artists have tracks in multiple albums?,3 artists,18 artists,,FALSE,Wrong Filtering,Wrong filtering logic
+13,1,Batch,CSV,Q013,Hard,What is the average speechiness score for explicit vs non-explicit?,Explicit 0.103 Non 0.161,Explicit 0.161 Non 0.103,,FALSE,Calculation Error,Values swapped
+14,1,Batch,CSV,Q014,Extremely Hard,Calculate the musical diversity score for each artist,David Davis 0.126,David Davis 0.126,,TRUE,,Perfect match
+15,1,Batch,CSV,Q015,Extremely Hard,Identify overperforming artists,Ortegas 12.00 awards/album,Different calculation,,FALSE,Formula Error,Different overperformance formula
+16,1,Batch,CSV,Q016,Extremely Hard,Create a track mood profile,4 quadrants,All 4 correct,,TRUE,,Perfect match
+17,1,Batch,CSV,Q017,Extremely Hard,Calculate the genre dominance score,Rock 0.9127,Rock 0.9127,,TRUE,,Perfect match
+18,1,Batch,CSV,Q018,Extremely Hard,Identify prolific years,2011 400% 2008 300% 2000 200%,Top 3 correct,,TRUE,,Perfect match
+19,1,Batch,CSV,Q019,Extremely Hard,Calculate the acoustic-electronic spectrum,Full spectrum 10 genres,Jazz 0.475 Electronic 0.103,,FALSE,Incomplete,Only extremes not full spectrum
+20,1,Batch,CSV,Q020,Extremely Hard,Identify hidden gem tracks,NO RESULTS,No results,,TRUE,,Correctly identified no matches
+21,1,Batch,HTML,Q001,Medium,Which artist has the highest popularity score?,The Ortegas 1.0 10 albums,The Ortegas 1.0 10 albums,,TRUE,,Perfect match
+22,1,Batch,HTML,Q002,Medium,Average track duration?,4.74 minutes,4.74 minutes,,TRUE,,Perfect match
+23,1,Batch,HTML,Q003,Medium,Genre with most artists?,Hip-Hop 42,Hip-Hop 42,,TRUE,,Perfect match
+24,1,Batch,HTML,Q004,Medium,Percentage active artists?,84.69%,84.69%,,TRUE,,Perfect match
+25,1,Batch,HTML,Q005,Medium,Explicit tracks count?,6 tracks,6 tracks,,TRUE,,Perfect match
+26,1,Batch,HTML,Q006,Medium,Label with most artists?,Gray-Mayo 10,Gray-Mayo 10,,TRUE,Tie,One of 4 tied
+27,1,Batch,HTML,Q007,Hard,Avg tracks per album by genre?,Jazz 2.0,Jazz 13.67,,FALSE,Stale Metadata,Used metadata column
+28,1,Batch,HTML,Q008,Hard,Artists with awards won?,6 artists,4 artists,,FALSE,Missing Records,Missing 2 artists
+29,1,Batch,HTML,Q009,Hard,Album distribution by label?,10 combinations,All 10 correct,,TRUE,,Perfect match
+30,1,Batch,HTML,Q010,Hard,Top tracks by energy+dance?,Top 5 tracks,Top 5 correct,,TRUE,,Perfect match
+31,1,Batch,HTML,Q011,Hard,Avg popularity by country?,139 countries,Countries truncated,,TRUE,,Correct format
+32,1,Batch,HTML,Q012,Hard,Artists in multiple albums?,3 artists,18 artists,,FALSE,Wrong Filtering,Wrong filtering
+33,1,Batch,HTML,Q013,Hard,Speechiness explicit vs non?,Explicit 0.103 Non 0.161,Wrong values,,FALSE,Calculation Error,Incorrect calculation
+34,1,Batch,HTML,Q014,Extremely Hard,Musical diversity score?,David Davis 0.126,David Davis 0.126,,TRUE,,Perfect match
+35,1,Batch,HTML,Q015,Extremely Hard,Overperforming artists?,Ortegas 12.00 awards/album,Wrong calculation,,FALSE,Formula Error,Different formula
+36,1,Batch,HTML,Q016,Extremely Hard,Track mood profile?,4 quadrants,All 4 correct,,TRUE,,Perfect match
+37,1,Batch,HTML,Q017,Extremely Hard,Genre dominance?,Rock 0.9127,Rock 0.9127,,TRUE,,Perfect match
+38,1,Batch,HTML,Q018,Extremely Hard,Prolific years?,Top 3 years,Top 3 correct,,TRUE,,Perfect match
+39,1,Batch,HTML,Q019,Extremely Hard,Acoustic-electronic spectrum?,Full spectrum 10 genres,Full spectrum,,TRUE,,Perfect match
+40,1,Batch,HTML,Q020,Extremely Hard,Hidden gem tracks?,NO RESULTS,No results,,TRUE,,Correct
+41,1,Batch,JSON,Q001,Medium,Which artist has highest popularity?,The Ortegas 1.0 10,The Ortegas 1.0 10,,TRUE,,Perfect match
+42,1,Batch,JSON,Q002,Medium,Average track duration?,4.74 minutes,4.74 minutes,,TRUE,,Perfect match
+43,1,Batch,JSON,Q003,Medium,Genre with most artists?,Hip-Hop 42,Hip-Hop 42,,TRUE,,Perfect match
+44,1,Batch,JSON,Q004,Medium,Percentage active?,84.69%,84.69%,,TRUE,,Perfect match
+45,1,Batch,JSON,Q005,Medium,Explicit tracks?,6 tracks,6 tracks,,TRUE,,Perfect match
+46,1,Batch,JSON,Q006,Medium,Label with most artists?,Gray-Mayo 10,Gray-Mayo 10,,TRUE,Tie,One of 4 tied
+47,1,Batch,JSON,Q007,Hard,Tracks per album by genre?,Jazz 2.0,Jazz 13.67,,FALSE,Stale Metadata,Used metadata
+48,1,Batch,JSON,Q008,Hard,Artists with awards?,6 artists,4 artists,,FALSE,Missing Records,Missing 2
+49,1,Batch,JSON,Q009,Hard,Album distribution?,10 combinations,All 10 correct,,TRUE,,Perfect match
+50,1,Batch,JSON,Q010,Hard,Top tracks?,Top 5,Top 5 correct,,TRUE,,Perfect match
+51,1,Batch,JSON,Q011,Hard,Popularity by country?,139 countries,Countries truncated,,TRUE,,Correct
+52,1,Batch,JSON,Q012,Hard,Artists in multiple albums?,3 artists,18 artists,,FALSE,Wrong Filtering,Wrong filtering
+53,1,Batch,JSON,Q013,Hard,Speechiness?,Explicit 0.103 Non 0.161,Correct values,,TRUE,,Perfect match
+54,1,Batch,JSON,Q014,Extremely Hard,Diversity score?,David Davis 0.126,David Davis 0.126,,TRUE,,Perfect match
+55,1,Batch,JSON,Q015,Extremely Hard,Overperforming?,Ortegas 12.00 awards/album,Ortegas 1.2 awards/album,,FALSE,Calculation Error,12/10 = 1.2 instead of 12.00
+56,1,Batch,JSON,Q016,Extremely Hard,Mood profile?,4 quadrants,All 4 correct,,TRUE,,Perfect match
+57,1,Batch,JSON,Q017,Extremely Hard,Dominance?,Rock 0.9127,Rock 0.9127,,TRUE,,Perfect match
+58,1,Batch,JSON,Q018,Extremely Hard,Prolific years?,Top 3,Top 3 correct,,TRUE,,Perfect match
+59,1,Batch,JSON,Q019,Extremely Hard,Acoustic spectrum?,Full spectrum,Full spectrum,,TRUE,,Perfect match
+60,1,Batch,JSON,Q020,Extremely Hard,Hidden gems?,NO RESULTS,No results,,TRUE,,Correct
+61,1,Batch,XML,Q001,Medium,Highest popularity artist?,The Ortegas 1.0 10,The Ortegas 1.0 10,,TRUE,,Perfect match
+62,1,Batch,XML,Q002,Medium,Track duration?,4.74 minutes,4.74 minutes,,TRUE,,Perfect match
+63,1,Batch,XML,Q003,Medium,Most artists genre?,Hip-Hop 42,Hip-Hop 42,,TRUE,,Perfect match
+64,1,Batch,XML,Q004,Medium,Active percentage?,84.69%,84.69%,,TRUE,,Perfect match
+65,1,Batch,XML,Q005,Medium,Explicit count?,6 tracks,6 tracks,,TRUE,,Perfect match
+66,1,Batch,XML,Q006,Medium,Top label?,Gray-Mayo 10,Mcclure Ward Lee 10,,TRUE,Tie,One of 4 tied
+67,1,Batch,XML,Q007,Hard,Tracks per album?,Jazz 2.0,Jazz 13.67,,FALSE,Stale Metadata,Used metadata
+68,1,Batch,XML,Q008,Hard,Award winners?,6 artists Ortegas=12,4 artists Ortegas=11,,FALSE,Missing Records,Missing 2 + wrong count
+69,1,Batch,XML,Q009,Hard,Album distribution?,10 combinations,All 10 correct,,TRUE,,Perfect match
+70,1,Batch,XML,Q010,Hard,Top tracks?,Top 5,Only 3 tracks,,FALSE,Incomplete,Only 3 of 5
+71,1,Batch,XML,Q011,Hard,Country popularity?,139 countries,Countries truncated,,TRUE,,Correct
+72,1,Batch,XML,Q012,Hard,Multiple albums?,3 artists,18 artists,,FALSE,Wrong Filtering,Wrong filtering
+73,1,Batch,XML,Q013,Hard,Speechiness?,Explicit 0.103 Non 0.161,Correct values,,TRUE,,Perfect match
+74,1,Batch,XML,Q014,Extremely Hard,Diversity?,David Davis 0.126,David Davis 0.378,,TRUE,,Correct artist
+75,1,Batch,XML,Q015,Extremely Hard,Overperforming?,Ortegas 12.00,Different formula,,FALSE,Formula Error,Custom formula
+76,1,Batch,XML,Q016,Extremely Hard,Mood profile?,4 quadrants,All 4 correct,,TRUE,,Perfect match
+77,1,Batch,XML,Q017,Extremely Hard,Dominance?,Rock 0.9127,Rock 2.74,,FALSE,Normalization Error,Different normalization
+78,1,Batch,XML,Q018,Extremely Hard,Prolific years?,Top 3,Top 3 correct,,TRUE,,Perfect match
+79,1,Batch,XML,Q019,Extremely Hard,Acoustic spectrum?,Full spectrum,Only extremes,,FALSE,Incomplete,Most/least only
+80,1,Batch,XML,Q020,Extremely Hard,Hidden gems?,NO RESULTS,No results,,TRUE,,Correct
+81,2,Individual,CSV,Q001,Medium,Highest popularity artist?,The Ortegas 1.0 10,,The Ortegas 1.0 10,,TRUE,Perfect match
+82,2,Individual,CSV,Q002,Medium,Track duration?,4.74 minutes,,4.74 minutes,,TRUE,Perfect match
+83,2,Individual,CSV,Q003,Medium,Most artists genre?,Hip-Hop 42,,Hip-Hop 42,,TRUE,Perfect match
+84,2,Individual,CSV,Q004,Medium,Active percentage?,84.69%,,84.69%,,TRUE,Perfect match
+85,2,Individual,CSV,Q005,Medium,Explicit count?,6 tracks,,6 tracks,,TRUE,Perfect match
+86,2,Individual,CSV,Q006,Medium,Top label?,Gray-Mayo 10,,Mcclure Ward Lee 10,,TRUE,One of 4 tied
+87,2,Individual,CSV,Q007,Hard,Tracks per album?,Jazz 2.0,,Jazz 2.0 R&B 2.0 Hip-Hop 1.5,,TRUE,FIXED! Was 13.67 in batch
+88,2,Individual,CSV,Q008,Hard,Award winners?,6 artists Ortegas=12,,All 6 artists Ortegas=12,,TRUE,FIXED! Was 4 in batch
+89,2,Individual,CSV,Q009,Hard,Album distribution?,10 combinations,,All 10 correct,,TRUE,Perfect match
+90,2,Individual,CSV,Q010,Hard,Top tracks?,Top 5,,Top 5 correct,,TRUE,Perfect match
+91,2,Individual,CSV,Q011,Hard,Country popularity?,139 countries,,133 countries full list,,TRUE,Full list provided
+92,2,Individual,CSV,Q012,Hard,Multiple albums?,3 artists,,3 artists correct,,TRUE,FIXED! Was 18 in batch
+93,2,Individual,CSV,Q013,Hard,Speechiness?,Explicit 0.103 Non 0.161,,Non 0.161 Explicit 0.103,,TRUE,FIXED! Was swapped in batch
+94,2,Individual,CSV,Q014,Extremely Hard,Diversity?,David Davis 0.126,,David Davis 0.189,,TRUE,Correct artist
+95,2,Individual,CSV,Q015,Extremely Hard,Overperforming?,Ortegas 12.00,,Knights/Murray infinite ratio,,FALSE,Different formula
+96,2,Individual,CSV,Q016,Extremely Hard,Mood profile?,4 quadrants,,All 4 correct,,TRUE,Perfect match
+97,2,Individual,CSV,Q017,Extremely Hard,Dominance?,Rock 0.9127,,Rock 53.11,,FALSE,Different calculation
+98,2,Individual,CSV,Q018,Extremely Hard,Prolific years?,2011 400% 2008 300%,,Not provided,,FALSE,No YoY data given
+99,2,Individual,CSV,Q019,Extremely Hard,Acoustic spectrum?,Full spectrum,,Full spectrum all 10,,TRUE,FIXED! Was partial in batch
+100,2,Individual,CSV,Q020,Extremely Hard,Hidden gems?,NO RESULTS,,Found 5 tracks,,FALSE,Should be NO RESULTS
+101,2,Individual,HTML,Q001,Medium,Highest popularity artist?,The Ortegas 1.0 10 albums,,The Ortegas 1.0,,TRUE,,Perfect match
+102,2,Individual,HTML,Q002,Medium,Track duration?,4.74 minutes,,4.74 minutes,,TRUE,,Perfect match
+103,2,Individual,HTML,Q003,Medium,Most artists genre?,Hip-Hop 42,,Hip-Hop 42,,TRUE,,Perfect match
+104,2,Individual,HTML,Q004,Medium,Active percentage?,84.69%,,84.69%,,TRUE,,Perfect match
+105,2,Individual,HTML,Q005,Medium,Explicit count?,6 tracks,,6 tracks,,TRUE,,Perfect match
+106,2,Individual,HTML,Q006,Medium,Top label?,Gray-Mayo 10,,Mcclure Ward Lee 10,,TRUE,,One of 4 tied labels
+107,2,Individual,HTML,Q007,Hard,Tracks per album?,Jazz 2.0,,Jazz 0.67,,FALSE,Calculation Error,Different aggregation method
+108,2,Individual,HTML,Q008,Hard,Award winners?,6 artists,,4 artists Ortegas=11,,FALSE,Missing Records,Missing 2 artists + wrong count
+109,2,Individual,HTML,Q009,Hard,Album distribution?,10 combinations,,All 10 correct,,TRUE,,Perfect match
+110,2,Individual,HTML,Q010,Hard,Top tracks?,Top 5,,Top 5 correct,,TRUE,,FIXED! Was only 1 in first test
+111,2,Individual,HTML,Q011,Hard,Country popularity?,139 countries,,133 countries full,,TRUE,,Full list provided
+112,2,Individual,HTML,Q012,Hard,Multiple albums?,3 artists,,3 artists correct,,TRUE,,FIXED! Was 18 in batch
+113,2,Individual,HTML,Q013,Hard,Speechiness?,Explicit 0.103 Non 0.161,,Explicit 0.1027 Non 0.1614,,TRUE,,Perfect match (rounded)
+114,2,Individual,HTML,Q014,Extremely Hard,Diversity?,David Davis 0.126,,David Davis 0.3780,,TRUE,,Correct artist
+115,2,Individual,HTML,Q015,Extremely Hard,Overperforming?,Ortegas 12.00,,Rodriguezx 5.0 Bryants 3.93,,FALSE,Formula Error,Different formula
+116,2,Individual,HTML,Q016,Extremely Hard,Mood profile?,Sad_High 17 Happy_High 11,,All 4 quadrants correct,,TRUE,,Perfect match
+117,2,Individual,HTML,Q017,Extremely Hard,Dominance?,Rock 0.9127,,Rock 53.11,,TRUE,,Correct genre identified
+118,2,Individual,HTML,Q018,Extremely Hard,Prolific years?,2011 400% 2008 300%,,2011 400% 2008 300%,,TRUE,,Perfect match on top 2
+119,2,Individual,HTML,Q019,Extremely Hard,Acoustic spectrum?,Full spectrum,,Full spectrum Jazz-Electronic,,TRUE,,Full spectrum provided
+120,2,Individual,HTML,Q020,Extremely Hard,Hidden gems?,NO RESULTS,,Found 5 tracks,,FALSE,Wrong Criteria,Should be NO RESULTS
+121,2,Individual,JSON,Q001,Medium,Highest popularity artist?,The Ortegas 1.0 10,,The Ortegas 1.0 10,,TRUE,,Perfect match
+122,2,Individual,JSON,Q002,Medium,Track duration?,4.74 minutes,,4.74 minutes,,TRUE,,Perfect match
+123,2,Individual,JSON,Q003,Medium,Most artists genre?,Hip-Hop 42,,Hip-Hop 42,,TRUE,,Perfect match
+124,2,Individual,JSON,Q004,Medium,Active percentage?,84.69%,,84.69%,,TRUE,,Perfect match
+125,2,Individual,JSON,Q005,Medium,Explicit count?,6 tracks,,6 tracks,,TRUE,,Perfect match
+126,2,Individual,JSON,Q006,Medium,Top label?,Gray-Mayo 10,,Gray-Mayo 10,,TRUE,,One of 4 tied
+127,2,Individual,JSON,Q007,Hard,Tracks per album?,Jazz 2.0,,Jazz 0.67,,FALSE,Calculation Error,Different aggregation method
+128,2,Individual,JSON,Q008,Hard,Award winners?,6 artists Ortegas=12,,4 artists Ortegas=11,,FALSE,Missing Records,Missing 2 artists + wrong count
+129,2,Individual,JSON,Q009,Hard,Album distribution?,10 combinations,,All 10 correct,,TRUE,,Perfect match
+130,2,Individual,JSON,Q010,Hard,Top tracks?,Top 5,,Top 5 correct,,TRUE,,FIXED! Was only 3 in batch
+131,2,Individual,JSON,Q011,Hard,Country popularity?,139 countries,,133 countries top 10,,TRUE,,Appropriately summarized
+132,2,Individual,JSON,Q012,Hard,Multiple albums?,3 artists,,3 artists correct,,TRUE,,FIXED! Was 18 in batch
+133,2,Individual,JSON,Q013,Hard,Speechiness?,Explicit 0.103 Non 0.161,,Explicit 0.1027 Non 0.1614,,TRUE,,Perfect match (rounded)
+134,2,Individual,JSON,Q014,Extremely Hard,Diversity?,David Davis 0.126,,David Davis 0.3780,,TRUE,,Correct artist
+135,2,Individual,JSON,Q015,Extremely Hard,Overperforming?,Ortegas 12.00,,Rodriguezx 5.00 Bryants 3.94,,FALSE,Formula Error,Different formula
+136,2,Individual,JSON,Q016,Extremely Hard,Mood profile?,Sad_High 17 Happy_High 11,,All 4 quadrants correct,,TRUE,,Perfect match
+137,2,Individual,JSON,Q017,Extremely Hard,Dominance?,Rock 0.9127,,Rock 53.11,,TRUE,,Correct genre identified
+138,2,Individual,JSON,Q018,Extremely Hard,Prolific years?,2011 400% 2008 300%,,2011 400% 2008 300% 2000 200%,,TRUE,,Perfect match
+139,2,Individual,JSON,Q019,Extremely Hard,Acoustic spectrum?,Full spectrum,,Full spectrum Jazz-Electronic,,TRUE,,Complete spectrum provided
+140,2,Individual,JSON,Q020,Extremely Hard,Hidden gems?,NO RESULTS,,Found 5 tracks,,FALSE,Wrong Criteria,Should be NO RESULTS
+141,2,Individual,XML,Q001,Medium,Highest popularity artist?,The Ortegas 1.0 10,,The Ortegas 1.0 10,,TRUE,,Perfect match
+142,2,Individual,XML,Q002,Medium,Track duration?,4.74 minutes,,4.74 minutes,,TRUE,,Perfect match
+143,2,Individual,XML,Q003,Medium,Most artists genre?,Hip-Hop 42,,Hip-Hop 42,,TRUE,,Perfect match
+144,2,Individual,XML,Q004,Medium,Active percentage?,84.69%,,84.69%,,TRUE,,Perfect match
+145,2,Individual,XML,Q005,Medium,Explicit count?,6 tracks,,6 tracks,,TRUE,,Perfect match
+146,2,Individual,XML,Q006,Medium,Top label?,Gray-Mayo 10,,Mcclure Ward Lee 10,,TRUE,,One of 4 tied
+147,2,Individual,XML,Q007,Hard,Tracks per album?,Jazz 2.0,,Jazz 0.67,,FALSE,Calculation Error,Different aggregation method
+148,2,Individual,XML,Q008,Hard,Award winners?,6 artists Ortegas=12,,4 artists Ortegas=11,,FALSE,Missing Records,Missing 2 artists + wrong count
+149,2,Individual,XML,Q009,Hard,Album distribution?,10 combinations,,All 10 correct,,TRUE,,Perfect match
+150,2,Individual,XML,Q010,Hard,Top tracks?,Top 5,,Top 5 correct,,TRUE,,Perfect match
+151,2,Individual,XML,Q011,Hard,Country popularity?,139 countries,,133 countries full,,TRUE,,Full list provided
+152,2,Individual,XML,Q012,Hard,Multiple albums?,3 artists,,3 artists correct,,TRUE,,FIXED! Was 18 in batch
+153,2,Individual,XML,Q013,Hard,Speechiness?,Explicit 0.103 Non 0.161,,Explicit 0.103 Non 0.161,,TRUE,,Perfect match
+154,2,Individual,XML,Q014,Extremely Hard,Diversity?,David Davis 0.126,,David Davis 0.3780,,TRUE,,Correct artist
+155,2,Individual,XML,Q015,Extremely Hard,Overperforming?,Ortegas 12.00,,Rodriguezx 5.0 Bryants 3.94,,FALSE,Formula Error,Different formula
+156,2,Individual,XML,Q016,Extremely Hard,Mood profile?,Sad_High 17 Happy_High 11,,All 4 quadrants correct,,TRUE,,Perfect match
+157,2,Individual,XML,Q017,Extremely Hard,Dominance?,Rock 0.9127,,Rock 53.112,,TRUE,,Correct genre identified
+158,2,Individual,XML,Q018,Extremely Hard,Prolific years?,2011 400% 2008 300%,,2011 400% 2008 300%,,TRUE,,Perfect match on top 2
+159,2,Individual,XML,Q019,Extremely Hard,Acoustic spectrum?,Full spectrum,,Full spectrum Jazz-Electronic,,TRUE,,Full spectrum provided
+160,2,Individual,XML,Q020,Extremely Hard,Hidden gems?,NO RESULTS,,Found 5 tracks,,FALSE,Wrong Criteria,Should be NO RESULTS

@@ -1,0 +1,296 @@
+question_id,category,question,sql_query,answer
+Q001,Medium,Which artist has the highest popularity score and how many albums have they released?,"SELECT a.name, a.popularity_score, COUNT(DISTINCT al.album_id) as album_count
+FROM artists a
+LEFT JOIN albums al ON a.artist_id = al.artist_id
+WHERE a.popularity_score = (SELECT MAX(popularity_score) FROM artists)
+GROUP BY a.artist_id, a.name, a.popularity_score;","[{""name"": ""The Ortegas"", ""popularity_score"": 1.000, ""album_count"": 10}]"
+Q002,Medium,What is the average track duration in minutes across all tracks?,"SELECT ROUND(AVG(duration_ms) / 1000.0 / 60.0, 2) as avg_duration_minutes
+FROM tracks;","[{""avg_duration_minutes"": 4.74}]"
+Q003,Medium,Which music genre has the most artists and how many?,"SELECT primary_genre, COUNT(*) as artist_count
+FROM artists
+GROUP BY primary_genre
+ORDER BY artist_count DESC
+LIMIT 1;","[{""primary_genre"": ""Hip-Hop"", ""artist_count"": 42}]"
+Q004,Medium,What percentage of artists are currently active?,"SELECT
+    ROUND(100.0 * SUM(CASE WHEN is_active = true THEN 1 ELSE 0 END) / COUNT(*), 2) as active_percentage
+FROM artists;","[{""active_percentage"": 84.69}]"
+Q005,Medium,How many tracks have explicit content?,"SELECT COUNT(*) as explicit_tracks
+FROM tracks
+WHERE is_explicit = true;","[{""explicit_tracks"": 6}]"
+Q006,Medium,Which record label has signed the most artists?,"SELECT rl.name, COUNT(a.artist_id) as artist_count
+FROM record_labels rl
+JOIN artists a ON rl.label_id = a.label_id
+GROUP BY rl.label_id, rl.name
+ORDER BY artist_count DESC
+LIMIT 1;","[{""name"": ""Gray-Mayo Entertainment"", ""artist_count"": 10}]"
+Q007,Hard,What is the average number of tracks per album for each genre?,"SELECT
+    a.primary_genre,
+    ROUND(AVG(track_count), 2) as avg_tracks_per_album
+FROM artists a
+JOIN albums al ON a.artist_id = al.artist_id
+JOIN (
+    SELECT album_id, COUNT(*) as track_count
+    FROM tracks
+    GROUP BY album_id
+) t ON al.album_id = t.album_id
+GROUP BY a.primary_genre
+ORDER BY avg_tracks_per_album DESC;","[{""primary_genre"": ""Jazz"", ""avg_tracks_per_album"": 2.00}, {""primary_genre"": ""R&B"", ""avg_tracks_per_album"": 2.00}, {""primary_genre"": ""Hip-Hop"", ""avg_tracks_per_album"": 1.50}, {""primary_genre"": ""Indie"", ""avg_tracks_per_album"": 1.33}, {""primary_genre"": ""Electronic"", ""avg_tracks_per_album"": 1.33}, {""primary_genre"": ""Rock"", ""avg_tracks_per_album"": 1.20}, {""primary_genre"": ""Pop"", ""avg_tracks_per_album"": 1.00}, {""primary_genre"": ""Classical"", ""avg_tracks_per_album"": 1.00}, {""primary_genre"": ""Metal"", ""avg_tracks_per_album"": 1.00}, {""primary_genre"": ""Country"", ""avg_tracks_per_album"": 1.00}]"
+Q008,Hard,Which artists have won at least one award and how many awards have they won in total?,"SELECT
+    a.name,
+    COUNT(aw.award_id) as total_awards,
+    SUM(CASE WHEN aw.won = true THEN 1 ELSE 0 END) as awards_won
+FROM artists a
+JOIN awards aw ON a.artist_id = aw.artist_id
+GROUP BY a.artist_id, a.name
+HAVING SUM(CASE WHEN aw.won = true THEN 1 ELSE 0 END) > 0
+ORDER BY awards_won DESC, total_awards DESC;","[{""name"": ""The Ortegas"", ""total_awards"": 15, ""awards_won"": 12}, {""name"": ""James Brooks"", ""total_awards"": 1, ""awards_won"": 1}, {""name"": ""The Bryants"", ""total_awards"": 1, ""awards_won"": 1}, {""name"": ""Susan Murray MD"", ""total_awards"": 1, ""awards_won"": 1}, {""name"": ""The Knights"", ""total_awards"": 1, ""awards_won"": 1}, {""name"": ""The Haydens"", ""total_awards"": 1, ""awards_won"": 1}]"
+Q009,Hard,"What is the distribution of album types (Single, EP, Album) by record label type (Major, Independent)?","SELECT
+    rl.label_type,
+    al.album_type,
+    COUNT(*) as count
+FROM record_labels rl
+JOIN artists a ON rl.label_id = a.label_id
+JOIN albums al ON a.artist_id = al.artist_id
+GROUP BY rl.label_type, al.album_type
+ORDER BY rl.label_type, count DESC;","[{""label_type"": ""Independent"", ""album_type"": ""Studio"", ""count"": 39}, {""label_type"": ""Independent"", ""album_type"": ""Live"", ""count"": 13}, {""label_type"": ""Independent"", ""album_type"": ""EP"", ""count"": 7}, {""label_type"": ""Independent"", ""album_type"": ""Compilation"", ""count"": 5}, {""label_type"": ""Major"", ""album_type"": ""Studio"", ""count"": 13}, {""label_type"": ""Major"", ""album_type"": ""Live"", ""count"": 3}, {""label_type"": ""Subsidiary"", ""album_type"": ""Studio"", ""count"": 15}, {""label_type"": ""Subsidiary"", ""album_type"": ""Live"", ""count"": 6}, {""label_type"": ""Subsidiary"", ""album_type"": ""EP"", ""count"": 2}, {""label_type"": ""Subsidiary"", ""album_type"": ""Compilation"", ""count"": 1}]"
+Q010,Hard,Which tracks have the highest energy and danceability scores combined?,"SELECT
+    t.title,
+    a.name as artist_name,
+    tf.energy,
+    tf.danceability,
+    (tf.energy + tf.danceability) as combined_score
+FROM tracks t
+JOIN artists a ON t.artist_id = a.artist_id
+JOIN track_features tf ON t.track_id = tf.track_id
+ORDER BY combined_score DESC
+LIMIT 5;","[{""title"": ""Want Particularly Treat While"", ""artist_name"": ""The Haydens"", ""energy"": 0.951, ""danceability"": 0.937, ""combined_score"": 1.888}, {""title"": ""Research Person Apply"", ""artist_name"": ""Rodriguezx"", ""energy"": 0.794, ""danceability"": 1.000, ""combined_score"": 1.794}, {""title"": ""Single Almost Where"", ""artist_name"": ""Shannon Cannon"", ""energy"": 0.838, ""danceability"": 0.879, ""combined_score"": 1.717}, {""title"": ""Surface Court Exactly Minute"", ""artist_name"": ""The Joyces"", ""energy"": 0.894, ""danceability"": 0.809, ""combined_score"": 1.703}, {""title"": ""Entire Out"", ""artist_name"": ""Amber Miller"", ""energy"": 0.840, ""danceability"": 0.786, ""combined_score"": 1.626}]"
+Q011,Hard,What is the average popularity score for artists from each country?,"SELECT
+    country,
+    COUNT(*) as artist_count,
+    ROUND(AVG(popularity_score), 3) as avg_popularity
+FROM artists
+GROUP BY country
+ORDER BY avg_popularity DESC;","[{""country"": ""Holy See (Vatican City State)"", ""artist_count"": 1, ""avg_popularity"": 1.000}, {""country"": ""Bermuda"", ""artist_count"": 1, ""avg_popularity"": 0.290}, {""country"": ""Djibouti"", ""artist_count"": 1, ""avg_popularity"": 0.200}, ... (truncated for brevity - 139 countries total)]"
+Q012,Hard,Which artists have tracks in multiple albums and how many albums do they have?,"SELECT
+    a.name,
+    COUNT(DISTINCT al.album_id) as album_count,
+    COUNT(DISTINCT t.track_id) as track_count
+FROM artists a
+JOIN albums al ON a.artist_id = al.artist_id
+JOIN tracks t ON al.album_id = t.album_id
+GROUP BY a.artist_id, a.name
+HAVING COUNT(DISTINCT al.album_id) > 1
+ORDER BY album_count DESC, track_count DESC;","[{""name"": ""The Gonzalezs"", ""album_count"": 2, ""track_count"": 2}, {""name"": ""David Wilson"", ""album_count"": 2, ""track_count"": 2}, {""name"": ""The Ortegas"", ""album_count"": 2, ""track_count"": 2}]"
+Q013,Hard,What is the average speechiness score for explicit vs non-explicit tracks?,"SELECT
+    t.is_explicit,
+    COUNT(*) as track_count,
+    ROUND(AVG(tf.speechiness), 3) as avg_speechiness
+FROM tracks t
+JOIN track_features tf ON t.track_id = tf.track_id
+GROUP BY t.is_explicit
+ORDER BY t.is_explicit DESC;","[{""is_explicit"": true, ""track_count"": 6, ""avg_speechiness"": 0.103}, {""is_explicit"": false, ""track_count"": 38, ""avg_speechiness"": 0.161}]"
+Q014,Extremely Hard,"Calculate the ""musical diversity score"" for each artist based on the variance of their track features (energy, danceability, valence). Which artist has the highest diversity?","WITH artist_track_features AS (
+    SELECT
+        a.artist_id,
+        a.name,
+        tf.energy,
+        tf.danceability,
+        tf.valence
+    FROM artists a
+    JOIN albums al ON a.artist_id = al.artist_id
+    JOIN tracks t ON al.album_id = t.album_id
+    JOIN track_features tf ON t.track_id = tf.track_id
+),
+feature_variance AS (
+    SELECT
+        artist_id,
+        name,
+        VARIANCE(energy) as energy_var,
+        VARIANCE(danceability) as dance_var,
+        VARIANCE(valence) as valence_var
+    FROM artist_track_features
+    GROUP BY artist_id, name
+    HAVING COUNT(*) >= 2
+)
+SELECT
+    name,
+    ROUND((energy_var + dance_var + valence_var) / 3.0, 4) as diversity_score
+FROM feature_variance
+ORDER BY diversity_score DESC
+LIMIT 5;","[{""name"": ""David Davis"", ""diversity_score"": 0.1260}, {""name"": ""Amber Miller"", ""diversity_score"": 0.0861}, {""name"": ""The Haydens"", ""diversity_score"": 0.0567}, {""name"": ""Big David Baby"", ""diversity_score"": 0.0235}, {""name"": ""Alex Spencer"", ""diversity_score"": 0.0225}]"
+Q015,Extremely Hard,"Identify ""overperforming"" artists: those whose award count is disproportionately high relative to their album count and popularity score.","WITH artist_metrics AS (
+    SELECT
+        a.artist_id,
+        a.name,
+        a.popularity_score,
+        COUNT(DISTINCT al.album_id) as album_count,
+        COUNT(DISTINCT aw.award_id) as award_count,
+        SUM(CASE WHEN aw.won = true THEN 1 ELSE 0 END) as awards_won
+    FROM artists a
+    LEFT JOIN albums al ON a.artist_id = al.artist_id
+    LEFT JOIN awards aw ON a.artist_id = aw.artist_id
+    GROUP BY a.artist_id, a.name, a.popularity_score
+),
+expected_awards AS (
+    SELECT
+        *,
+        CASE
+            WHEN album_count > 0 THEN (popularity_score * album_count * 10)
+            ELSE 0
+        END as expected_award_score,
+        CASE
+            WHEN album_count > 0 THEN CAST(awards_won AS FLOAT) / NULLIF(album_count, 0)
+            ELSE 0
+        END as award_efficiency
+    FROM artist_metrics
+    WHERE awards_won > 0
+)
+SELECT
+    name,
+    album_count,
+    awards_won,
+    ROUND(popularity_score, 3) as popularity,
+    ROUND(award_efficiency, 2) as awards_per_album
+FROM expected_awards
+ORDER BY award_efficiency DESC
+LIMIT 5;","[{""name"": ""The Ortegas"", ""album_count"": 10, ""awards_won"": 12, ""popularity"": 1.000, ""awards_per_album"": 12.00}, {""name"": ""The Haydens"", ""album_count"": 1, ""awards_won"": 1, ""popularity"": 0.145, ""awards_per_album"": 1.00}, {""name"": ""James Brooks"", ""album_count"": 1, ""awards_won"": 1, ""popularity"": 0.145, ""awards_per_album"": 1.00}, {""name"": ""The Bryants"", ""album_count"": 2, ""awards_won"": 1, ""popularity"": 0.127, ""awards_per_album"": 1.00}, {""name"": ""Susan Murray MD"", ""album_count"": 0, ""awards_won"": 1, ""popularity"": 0.172, ""awards_per_album"": 0.00}]"
+Q016,Extremely Hard,"Create a ""track mood profile"" by categorizing tracks based on valence and energy into quadrants (Happy/High Energy, Happy/Low Energy, Sad/High Energy, Sad/Low Energy). What is the distribution?","WITH mood_classification AS (
+    SELECT
+        t.track_id,
+        t.title,
+        tf.valence,
+        tf.energy,
+        CASE
+            WHEN tf.valence >= 0.5 AND tf.energy >= 0.5 THEN 'Happy_HighEnergy'
+            WHEN tf.valence >= 0.5 AND tf.energy < 0.5 THEN 'Happy_LowEnergy'
+            WHEN tf.valence < 0.5 AND tf.energy >= 0.5 THEN 'Sad_HighEnergy'
+            WHEN tf.valence < 0.5 AND tf.energy < 0.5 THEN 'Sad_LowEnergy'
+        END as mood_quadrant
+    FROM tracks t
+    JOIN track_features tf ON t.track_id = tf.track_id
+)
+SELECT
+    mood_quadrant,
+    COUNT(*) as track_count,
+    ROUND(100.0 * COUNT(*) / SUM(COUNT(*)) OVER(), 2) as percentage
+FROM mood_classification
+GROUP BY mood_quadrant
+ORDER BY track_count DESC;","[{""mood_quadrant"": ""Sad_HighEnergy"", ""track_count"": 17, ""percentage"": 38.64}, {""mood_quadrant"": ""Happy_HighEnergy"", ""track_count"": 11, ""percentage"": 25.00}, {""mood_quadrant"": ""Happy_LowEnergy"", ""track_count"": 10, ""percentage"": 22.73}, {""mood_quadrant"": ""Sad_LowEnergy"", ""track_count"": 6, ""percentage"": 13.64}]"
+Q017,Extremely Hard,"Calculate the ""genre dominance score"" for each genre based on artist count, album count, and average popularity. Which genre is most dominant?","WITH genre_metrics AS (
+    SELECT
+        a.primary_genre,
+        COUNT(DISTINCT a.artist_id) as artist_count,
+        COUNT(DISTINCT al.album_id) as album_count,
+        AVG(a.popularity_score) as avg_popularity
+    FROM artists a
+    LEFT JOIN albums al ON a.artist_id = al.artist_id
+    GROUP BY a.primary_genre
+),
+normalized_metrics AS (
+    SELECT
+        primary_genre,
+        artist_count,
+        album_count,
+        avg_popularity,
+        CAST(artist_count AS FLOAT) / NULLIF(MAX(artist_count) OVER(), 0) as norm_artists,
+        CAST(album_count AS FLOAT) / NULLIF(MAX(album_count) OVER(), 0) as norm_albums,
+        avg_popularity / NULLIF(MAX(avg_popularity) OVER(), 0) as norm_popularity
+    FROM genre_metrics
+)
+SELECT
+    primary_genre,
+    artist_count,
+    album_count,
+    ROUND(avg_popularity, 3) as avg_popularity,
+    ROUND((norm_artists + norm_albums + norm_popularity) / 3.0, 4) as dominance_score
+FROM normalized_metrics
+ORDER BY dominance_score DESC;","[{""primary_genre"": ""Rock"", ""artist_count"": 31, ""album_count"": 24, ""avg_popularity"": 0.276, ""dominance_score"": 0.9127}, {""primary_genre"": ""Hip-Hop"", ""artist_count"": 42, ""album_count"": 10, ""avg_popularity"": 0.031, ""dominance_score"": 0.5093}, {""primary_genre"": ""Pop"", ""artist_count"": 41, ""album_count"": 7, ""avg_popularity"": 0.030, ""dominance_score"": 0.4589}, {""primary_genre"": ""Country"", ""artist_count"": 29, ""album_count"": 13, ""avg_popularity"": 0.033, ""dominance_score"": 0.4502}, {""primary_genre"": ""Indie"", ""artist_count"": 29, ""album_count"": 11, ""avg_popularity"": 0.039, ""dominance_score"": 0.4297}, {""primary_genre"": ""Metal"", ""artist_count"": 23, ""album_count"": 12, ""avg_popularity"": 0.039, ""dominance_score"": 0.3962}, {""primary_genre"": ""Electronic"", ""artist_count"": 27, ""album_count"": 9, ""avg_popularity"": 0.038, ""dominance_score"": 0.3848}, {""primary_genre"": ""R&B"", ""artist_count"": 31, ""album_count"": 6, ""avg_popularity"": 0.029, ""dominance_score"": 0.3643}, {""primary_genre"": ""Jazz"", ""artist_count"": 21, ""album_count"": 6, ""avg_popularity"": 0.033, ""dominance_score"": 0.2904}, {""primary_genre"": ""Classical"", ""artist_count"": 20, ""album_count"": 6, ""avg_popularity"": 0.026, ""dominance_score"": 0.2735}]"
+Q018,Extremely Hard,"Identify ""prolific years"" for the music industry by counting albums released per year and calculating the year-over-year growth rate.","WITH yearly_albums AS (
+    SELECT
+        release_year,
+        COUNT(*) as album_count
+    FROM albums
+    WHERE release_year IS NOT NULL
+    GROUP BY release_year
+),
+growth_calculation AS (
+    SELECT
+        release_year,
+        album_count,
+        LAG(album_count) OVER (ORDER BY release_year) as prev_year_count,
+        album_count - LAG(album_count) OVER (ORDER BY release_year) as absolute_growth,
+        CASE
+            WHEN LAG(album_count) OVER (ORDER BY release_year) > 0 THEN
+                ROUND(100.0 * (album_count - LAG(album_count) OVER (ORDER BY release_year)) /
+                      LAG(album_count) OVER (ORDER BY release_year), 2)
+            ELSE NULL
+        END as growth_rate_pct
+    FROM yearly_albums
+)
+SELECT
+    release_year,
+    album_count,
+    prev_year_count,
+    absolute_growth,
+    growth_rate_pct
+FROM growth_calculation
+WHERE growth_rate_pct IS NOT NULL
+ORDER BY growth_rate_pct DESC
+LIMIT 5;","[{""release_year"": 2011, ""album_count"": 5, ""prev_year_count"": 1, ""absolute_growth"": 4, ""growth_rate_pct"": 400.00}, {""release_year"": 2008, ""album_count"": 4, ""prev_year_count"": 1, ""absolute_growth"": 3, ""growth_rate_pct"": 300.00}, {""release_year"": 2000, ""album_count"": 3, ""prev_year_count"": 1, ""absolute_growth"": 2, ""growth_rate_pct"": 200.00}, {""release_year"": 2003, ""album_count"": 3, ""prev_year_count"": 1, ""absolute_growth"": 2, ""growth_rate_pct"": 200.00}, {""release_year"": 2019, ""album_count"": 5, ""prev_year_count"": 2, ""absolute_growth"": 3, ""growth_rate_pct"": 150.00}]"
+Q019,Extremely Hard,"Calculate the ""acoustic-electronic spectrum"" for each genre by averaging acousticness and instrumentalness. Which genres are most acoustic vs electronic?","WITH genre_audio_features AS (
+    SELECT
+        a.primary_genre,
+        AVG(tf.acousticness) as avg_acousticness,
+        AVG(tf.instrumentalness) as avg_instrumentalness
+    FROM artists a
+    JOIN albums al ON a.artist_id = al.artist_id
+    JOIN tracks t ON al.album_id = t.album_id
+    JOIN track_features tf ON t.track_id = tf.track_id
+    GROUP BY a.primary_genre
+)
+SELECT
+    primary_genre,
+    ROUND(avg_acousticness, 3) as avg_acousticness,
+    ROUND(avg_instrumentalness, 3) as avg_instrumentalness,
+    ROUND((avg_acousticness + avg_instrumentalness) / 2.0, 3) as acoustic_score,
+    CASE
+        WHEN (avg_acousticness + avg_instrumentalness) / 2.0 >= 0.5 THEN 'Acoustic'
+        ELSE 'Electronic'
+    END as spectrum_classification
+FROM genre_audio_features
+ORDER BY acoustic_score DESC;","[{""primary_genre"": ""Jazz"", ""avg_acousticness"": 0.887, ""avg_instrumentalness"": 0.064, ""acoustic_score"": 0.475, ""spectrum_classification"": ""Electronic""}, {""primary_genre"": ""Country"", ""avg_acousticness"": 0.770, ""avg_instrumentalness"": 0.035, ""acoustic_score"": 0.403, ""spectrum_classification"": ""Electronic""}, {""primary_genre"": ""Indie"", ""avg_acousticness"": 0.655, ""avg_instrumentalness"": 0.066, ""acoustic_score"": 0.360, ""spectrum_classification"": ""Electronic""}, {""primary_genre"": ""Classical"", ""avg_acousticness"": 0.592, ""avg_instrumentalness"": 0.105, ""acoustic_score"": 0.348, ""spectrum_classification"": ""Electronic""}, {""primary_genre"": ""R&B"", ""avg_acousticness"": 0.488, ""avg_instrumentalness"": 0.088, ""acoustic_score"": 0.288, ""spectrum_classification"": ""Electronic""}, {""primary_genre"": ""Pop"", ""avg_acousticness"": 0.497, ""avg_instrumentalness"": 0.060, ""acoustic_score"": 0.278, ""spectrum_classification"": ""Electronic""}, {""primary_genre"": ""Rock"", ""avg_acousticness"": 0.478, ""avg_instrumentalness"": 0.059, ""acoustic_score"": 0.269, ""spectrum_classification"": ""Electronic""}, {""primary_genre"": ""Metal"", ""avg_acousticness"": 0.329, ""avg_instrumentalness"": 0.111, ""acoustic_score"": 0.220, ""spectrum_classification"": ""Electronic""}, {""primary_genre"": ""Hip-Hop"", ""avg_acousticness"": 0.255, ""avg_instrumentalness"": 0.059, ""acoustic_score"": 0.157, ""spectrum_classification"": ""Electronic""}, {""primary_genre"": ""Electronic"", ""avg_acousticness"": 0.118, ""avg_instrumentalness"": 0.087, ""acoustic_score"": 0.103, ""spectrum_classification"": ""Electronic""}]"
+Q020,Extremely Hard,"Identify ""hidden gem"" tracks: high audio quality features (low speechiness, high instrumentalness) from less popular artists (popularity < 0.5) that have not been heavily streamed.","WITH track_metrics AS (
+    SELECT
+        t.track_id,
+        t.title,
+        a.name as artist_name,
+        a.popularity_score,
+        tf.speechiness,
+        tf.instrumentalness,
+        COALESCE(SUM(s.stream_count), 0) as total_streams
+    FROM tracks t
+    JOIN artists a ON t.artist_id = a.artist_id
+    JOIN track_features tf ON t.track_id = tf.track_id
+    LEFT JOIN streams s ON t.track_id = s.track_id
+    GROUP BY t.track_id, t.title, a.name, a.popularity_score, tf.speechiness, tf.instrumentalness
+),
+quality_score AS (
+    SELECT
+        *,
+        (1.0 - speechiness) + instrumentalness as gem_score
+    FROM track_metrics
+    WHERE popularity_score < 0.5
+      AND speechiness < 0.3
+      AND instrumentalness > 0.3
+)
+SELECT
+    title,
+    artist_name,
+    ROUND(popularity_score, 3) as artist_popularity,
+    ROUND(speechiness, 3) as speechiness,
+    ROUND(instrumentalness, 3) as instrumentalness,
+    total_streams,
+    ROUND(gem_score, 3) as hidden_gem_score
+FROM quality_score
+ORDER BY gem_score DESC
+LIMIT 5;",NO RESULTS - No tracks match the hidden gem criteria (low popularity artist with high quality features and low streams)

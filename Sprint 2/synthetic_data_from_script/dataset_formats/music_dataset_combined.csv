@@ -1,0 +1,599 @@
+### TABLE: record_labels ###
+label_id,name,country,founding_year,label_type,royalty_rate_per_stream
+LBL_0001,Universal Records,USA,1970,Major,0.00456
+LBL_0002,Sony Records,France,1973,Major,0.00538
+LBL_0003,Warner Records,Canada,1957,Major,0.0047
+LBL_0004,Capitol Records,UK,1953,Major,0.00738
+LBL_0005,Columbia Records,USA,1978,Major,0.00673
+LBL_0006,"Rodriguez, Figueroa and Sanchez Music",USA,2017,Independent,0.00313
+LBL_0007,Doyle Ltd Records,Japan,1985,Independent,0.00393
+LBL_0008,"Mcclain, Miller and Henderson Records",Canada,2018,Independent,0.00524
+LBL_0009,Davis and Sons Music,France,2014,Subsidiary,0.00388
+LBL_0010,"Guzman, Hoffman and Baldwin Music",USA,2017,Independent,0.00624
+LBL_0011,"Gardner, Robinson and Lawrence Records",USA,1980,Independent,0.00579
+LBL_0012,Blake and Sons Music,UK,2001,Independent,0.00362
+LBL_0013,"Henderson, Ramirez and Lewis Records",USA,2001,Independent,0.00337
+LBL_0014,Garcia-James Music,USA,1986,Independent,0.00639
+LBL_0015,Abbott-Munoz Music,USA,2018,Independent,0.00623
+LBL_0016,Blair PLC Entertainment,Germany,2009,Independent,0.0035
+LBL_0017,Dudley Group Records,UK,2004,Independent,0.00521
+LBL_0018,Arnold Ltd Entertainment,USA,2020,Independent,0.00654
+LBL_0019,"Mcclure, Ward and Lee Entertainment",USA,2003,Independent,0.00377
+LBL_0020,Williams and Sons Records,France,1984,Subsidiary,0.00565
+LBL_0021,Galloway-Wyatt Records,Germany,1998,Independent,0.00642
+LBL_0022,James Group Music,USA,1986,Independent,0.00411
+LBL_0023,"Flowers, Martin and Kelly Music",UK,2020,Independent,0.00365
+LBL_0024,"Adams, Zuniga and Wong Records",UK,2002,Independent,0.00568
+LBL_0025,"Reid, Ferguson and Sanchez Entertainment",Japan,1984,Independent,0.00554
+LBL_0026,Gray-Mayo Entertainment,Canada,2014,Independent,0.00398
+LBL_0027,"Watts, Robinson and Nguyen Music",UK,2009,Independent,0.00408
+LBL_0028,Perez Inc Entertainment,USA,2020,Subsidiary,0.00523
+LBL_0029,Morales-Jones Records,Germany,2000,Subsidiary,0.00392
+LBL_0030,"Walter, Edwards and Rios Music",Japan,1982,Independent,0.0046
+LBL_0031,Wilkerson-Day Records,Japan,1984,Independent,0.00665
+LBL_0032,Baker and Sons Entertainment,USA,2016,Independent,0.00426
+LBL_0033,"Hoffman, Baker and Richards Music",USA,2011,Independent,0.00654
+LBL_0034,"Ross, Robinson and Bright Records",USA,2009,Subsidiary,0.00406
+LBL_0035,"Snyder, Campos and Callahan Entertainment",USA,1995,Independent,0.00525
+LBL_0036,Burton Ltd Entertainment,UK,1996,Independent,0.00534
+LBL_0037,Carlson-Cruz Music,Germany,2017,Independent,0.00445
+LBL_0038,"Ferrell, Rice and Maddox Entertainment",France,1988,Subsidiary,0.00497
+LBL_0039,Frazier Inc Records,USA,1983,Independent,0.00361
+LBL_0040,"Dyer, Potter and Mack Entertainment",Germany,1990,Subsidiary,0.00469
+LBL_0041,Rodriguez-Graham Music,Canada,1984,Subsidiary,0.00453
+LBL_0042,Smith-Bowen Entertainment,USA,2009,Independent,0.00401
+LBL_0043,"Baker, Mason and White Records",USA,2015,Subsidiary,0.00572
+LBL_0044,Harrell LLC Entertainment,UK,1987,Independent,0.00654
+LBL_0045,"Romero, Gonzalez and Brooks Entertainment",USA,1997,Independent,0.00436
+LBL_0046,Ryan PLC Music,USA,1998,Subsidiary,0.00363
+LBL_0047,George Group Entertainment,UK,1980,Subsidiary,0.0065
+LBL_0048,Rodriguez LLC Entertainment,UK,1996,Independent,0.00605
+LBL_0049,Allen-Allen Records,Canada,2012,Subsidiary,0.00648
+LBL_0050,"Arroyo, Miller and Tucker Entertainment",UK,1999,Subsidiary,0.00503
+
+### TABLE: artists ###
+artist_id,name,country,primary_genre,secondary_genre,debut_year,label_id,is_active,popularity_score
+ART_0172,James Elliott,Anguilla,Classical,,2013,LBL_0006,True,0.031
+ART_0423,The Browns,Canada,Classical,,1991,LBL_0026,False,0.039
+ART_0655,Kelly Torres,Central African Republic,Classical,Hip-Hop,2018,LBL_0006,True,0.027
+ART_0283,David Wilson,France,Classical,,2019,LBL_0009,True,0.017
+ART_0662,Todd Moore,France,Classical,,2014,LBL_0020,False,0.027
+ART_0336,The Knights,Germany,Classical,Indie,2006,LBL_0016,False,0.018
+ART_0241,Duane Mendoza,Guam,Classical,,2005,LBL_0010,True,0.017
+ART_0197,The Odonnells,Honduras,Classical,Indie,2022,LBL_0010,True,0.017
+ART_0643,The Wards,Japan,Classical,,2001,LBL_0030,True,0.039
+ART_0212,Timothy Ramirez,Korea,Classical,,1993,LBL_0042,True,0.024
+ART_0082,Kimberly Davenport,Myanmar,Classical,,2023,LBL_0039,True,0.03
+ART_0505,Jeremiah Harrison,Norfolk Island,Classical,Electronic,2014,LBL_0033,True,0.017
+ART_0652,The Deleons,Northern Mariana Islands,Classical,,1996,LBL_0029,True,0.021
+ART_0512,The Bests,Saint Vincent and the Grenadines,Classical,,2003,LBL_0045,False,0.019
+ART_0693,The Lunas,Serbia,Classical,,1998,LBL_0012,False,0.022
+ART_0314,Patrick Thornton,Sudan,Classical,,2020,LBL_0043,False,0.055
+ART_0096,Richard Rodriguez,Tunisia,Classical,,2009,LBL_0045,True,0.018
+ART_0572,Gabriela Thomas,UK,Classical,,2006,LBL_0027,False,0.019
+ART_0348,Ryan Gonzalez,UK,Classical,,2023,LBL_0036,True,0.021
+ART_0395,Brittany Perry,USA,Classical,R&B,2015,LBL_0033,True,0.051
+ART_0055,Timothy Walls,Algeria,Country,,2010,LBL_0035,True,0.02
+ART_0397,The Lynns,Antigua and Barbuda,Country,,2022,LBL_0014,True,0.027
+ART_0155,George Orozco,Belgium,Country,,2020,LBL_0005,True,0.044
+ART_0022,Megan Joyce,Bolivia,Country,Indie,2010,LBL_0016,True,0.038
+ART_0557,Curtis Jacobs,Canada,Country,,2022,LBL_0008,False,0.025
+ART_0569,The Millers,Czech Republic,Country,Rock,2003,LBL_0043,True,0.019
+ART_0585,Jeffrey Mendez,Dominican Republic,Country,,2017,LBL_0011,True,0.046
+ART_0378,The Chamberss,Germany,Country,Pop,1998,LBL_0037,False,0.017
+ART_0465,The Perrys,Germany,Country,,2023,LBL_0037,True,0.027
+ART_0521,Thomas Hughes,Germany,Country,,2018,LBL_0040,True,0.06
+ART_0614,Samantha Gardner,Gibraltar,Country,Pop,2024,LBL_0027,True,0.019
+ART_0360,Richard Johnson,Haiti,Country,,1997,LBL_0012,True,0.018
+ART_0265,John Torres,Iraq,Country,,2004,LBL_0041,True,0.026
+ART_0199,The Sanchezs,Japan,Country,Hip-Hop,2010,LBL_0007,False,0.021
+ART_0249,Courtney Mills,Korea,Country,,2022,LBL_0026,True,0.022
+ART_0424,James Parks,Liechtenstein,Country,Jazz,1996,LBL_0009,False,0.149
+ART_0645,Johnny Ward,Montserrat,Country,,2006,LBL_0012,True,0.021
+ART_0047,The Hudsons,Mozambique,Country,,2020,LBL_0040,True,0.019
+ART_0504,The Morriss,Niue,Country,Electronic,1990,LBL_0041,False,0.019
+ART_0182,The Bells,Pakistan,Country,Indie,1995,LBL_0033,True,0.037
+ART_0092,Sierra Johnson,Saint Pierre and Miquelon,Country,,2020,LBL_0019,True,0.039
+ART_0667,Laura Curtis,Seychelles,Country,Hip-Hop,2006,LBL_0010,True,0.02
+ART_0648,Kelly Hammond,Swaziland,Country,,1996,LBL_0047,True,0.033
+ART_0534,Sandra Rodgers,UK,Country,Electronic,1992,LBL_0036,True,0.017
+ART_0157,Amy Russell,UK,Country,Pop,1997,LBL_0027,True,0.021
+ART_0185,The Gonzalezs,UK,Country,Hip-Hop,2006,LBL_0047,True,0.037
+ART_0078,Aaron Wise,USA,Country,,1995,LBL_0019,True,0.024
+ART_0118,The Martinezs,USA,Country,,2008,LBL_0015,True,0.028
+ART_0148,Pedro Ramos,USA,Country,,2013,LBL_0033,True,0.058
+ART_0133,The Atkinsons,Barbados,Electronic,,2015,LBL_0036,True,0.022
+ART_0485,Kimxx,Botswana,Electronic,Classical,2009,LBL_0046,True,0.02
+ART_0381,Rodriguezx,Djibouti,Electronic,Hip-Hop,2007,LBL_0006,False,0.2
+ART_0264,The Carrolls,France,Electronic,,2007,LBL_0009,True,0.069
+ART_0579,Ashley Roberts,Gabon,Electronic,Classical,2015,LBL_0035,True,0.024
+ART_0003,Arroyo,Germany,Electronic,Metal,2005,LBL_0037,True,0.022
+ART_0068,Taylorx,Germany,Electronic,Rock,2009,LBL_0037,True,0.028
+ART_0120,Edward Martinez,Italy,Electronic,,1993,LBL_0019,True,0.031
+ART_0620,Robert Shelton,Japan,Electronic,,2000,LBL_0007,True,0.021
+ART_0071,Denise Jacobs,Japan,Electronic,,2021,LBL_0007,True,0.041
+ART_0518,The Zimmermans,Kazakhstan,Electronic,,2006,LBL_0042,False,0.028
+ART_0207,Snowx,Kuwait,Electronic,Rock,1991,LBL_0023,True,0.025
+ART_0030,Annette Pearson,Mauritius,Electronic,,2013,LBL_0038,True,0.019
+ART_0638,The Mckinneys,Mexico,Electronic,,2005,LBL_0040,True,0.029
+ART_0349,John Young,Montserrat,Electronic,,2022,LBL_0010,True,0.021
+ART_0583,Chen,Morocco,Electronic,Jazz,2012,LBL_0009,True,0.022
+ART_0147,Mary Travis,Nepal,Electronic,,2006,LBL_0004,True,0.078
+ART_0385,The Hollands,North Macedonia,Electronic,Hip-Hop,1996,LBL_0007,True,0.024
+ART_0319,Joseph Bryant,Saint Helena,Electronic,,2014,LBL_0025,True,0.026
+ART_0599,Dayxx,Switzerland,Electronic,Indie,2012,LBL_0032,True,0.019
+ART_0373,Misty Whitney,Tanzania,Electronic,R&B,1998,LBL_0016,True,0.046
+ART_0463,Amber Miller,UK,Electronic,Indie,2004,LBL_0036,True,0.017
+ART_0231,Tapiax,UK,Electronic,Rock,2001,LBL_0050,True,0.033
+ART_0040,The Phillipss,UK,Electronic,Rock,2002,LBL_0024,True,0.07
+ART_0054,Brewerx,USA,Electronic,Jazz,2023,LBL_0032,True,0.017
+ART_0008,Michael Brooks,USA,Electronic,,1993,LBL_0015,True,0.02
+ART_0162,Woods,USA,Electronic,,1991,LBL_0006,True,0.066
+ART_0242,Jack King,Austria,Hip-Hop,,2005,LBL_0011,True,0.044
+ART_0115,DJ Michael Baby,Bangladesh,Hip-Hop,Country,2019,LBL_0001,True,0.018
+ART_0028,Young Nancy,Belarus,Hip-Hop,Country,1993,LBL_0006,True,0.02
+ART_0493,Big Debbie King,Cameroon,Hip-Hop,,2000,LBL_0043,True,0.018
+ART_0248,The Obriens,Canada,Hip-Hop,,1996,LBL_0026,False,0.018
+ART_0398,Big Hannah,Cuba,Hip-Hop,Rock,1994,LBL_0020,True,0.02
+ART_0692,Brian Anderson,Estonia,Hip-Hop,Pop,2008,LBL_0021,True,0.026
+ART_0227,Erin Warner,Faroe Islands,Hip-Hop,Pop,2022,LBL_0015,True,0.031
+ART_0666,DJ Brandon Baby,France,Hip-Hop,,2024,LBL_0020,True,0.018
+ART_0122,Jennifer Bass,Gabon,Hip-Hop,,2021,LBL_0038,False,0.02
+ART_0275,Catherine Richards,Germany,Hip-Hop,,2010,LBL_0016,True,0.017
+ART_0234,Tiffany Baby,Germany,Hip-Hop,,2009,LBL_0040,True,0.022
+ART_0261,Charles Brown,Germany,Hip-Hop,Country,2021,LBL_0021,False,0.028
+ART_0490,Jordan Bullock,Guernsey,Hip-Hop,R&B,1998,LBL_0047,True,0.028
+ART_0334,DJ Brian Baby,Guinea-Bissau,Hip-Hop,,2005,LBL_0037,True,0.021
+ART_0161,Shannon Cannon,Hong Kong,Hip-Hop,Rock,2009,LBL_0022,False,0.025
+ART_0496,The Morrisons,Japan,Hip-Hop,Indie,1997,LBL_0031,True,0.018
+ART_0432,DJ Danny King,Japan,Hip-Hop,,2012,LBL_0031,True,0.022
+ART_0368,Big Monica King,Japan,Hip-Hop,,2017,LBL_0007,True,0.033
+ART_0680,The Owenss,Japan,Hip-Hop,,2003,LBL_0031,True,0.037
+ART_0282,Robin Pierce,Korea,Hip-Hop,,1997,LBL_0044,True,0.043
+ART_0600,Big Kimberly Baby,Kyrgyz Republic,Hip-Hop,,1994,LBL_0033,True,0.018
+ART_0691,Destiny Prince,Latvia,Hip-Hop,Metal,2005,LBL_0021,True,0.056
+ART_0514,Marissa Morris,Lebanon,Hip-Hop,,1997,LBL_0019,True,0.024
+ART_0033,Big Richard King,Liberia,Hip-Hop,R&B,2011,LBL_0027,True,0.045
+ART_0466,Big Jason Baby,Malaysia,Hip-Hop,,2001,LBL_0011,True,0.031
+ART_0587,William Jones,Malta,Hip-Hop,Country,2012,LBL_0050,True,0.02
+ART_0245,Lil Travis Prince,Morocco,Hip-Hop,,2020,LBL_0019,True,0.018
+ART_0394,Melissa Fernandez,Namibia,Hip-Hop,,2020,LBL_0050,True,0.075
+ART_0198,Angela Vaughn,Niue,Hip-Hop,Classical,1991,LBL_0027,True,0.04
+ART_0347,The Haydens,Portugal,Hip-Hop,,2015,LBL_0049,True,0.145
+ART_0618,Jessica Fowler,Somalia,Hip-Hop,,2020,LBL_0012,True,0.023
+ART_0263,Young Brooke Prince,Sweden,Hip-Hop,Country,1995,LBL_0023,True,0.026
+ART_0043,Lil Wesley King,Timor-Leste,Hip-Hop,,2009,LBL_0026,True,0.031
+ART_0029,Scott,Tokelau,Hip-Hop,Jazz,2018,LBL_0036,True,0.018
+ART_0276,Big Cynthia,UK,Hip-Hop,,1990,LBL_0017,True,0.018
+ART_0679,Big Anna Prince,UK,Hip-Hop,,2005,LBL_0048,True,0.022
+ART_0077,Big Rodney Prince,USA,Hip-Hop,,2016,LBL_0032,True,0.017
+ART_0472,The Patels,USA,Hip-Hop,,2001,LBL_0018,True,0.022
+ART_0025,Daniel,USA,Hip-Hop,,2018,LBL_0035,True,0.025
+ART_0170,The Powells,USA,Hip-Hop,,1992,LBL_0028,True,0.048
+ART_0552,Young Kristen Prince,United Kingdom,Hip-Hop,Metal,2003,LBL_0049,True,0.026
+ART_0001,Philip Cannon,Brunei Darussalam,Indie,Metal,2002,LBL_0010,True,0.024
+ART_0454,The Whites,Cambodia,Indie,,2000,LBL_0039,True,0.024
+ART_0678,The Woods,Canada,Indie,,1990,LBL_0008,True,0.018
+ART_0256,Dwayne Campbell,Canada,Indie,,2005,LBL_0003,True,0.024
+ART_0020,The Hendersons,Canada,Indie,,2015,LBL_0008,False,0.028
+ART_0581,The Bryants,Canada,Indie,,1993,LBL_0049,True,0.127
+ART_0289,The Williamss,Ethiopia,Indie,,2023,LBL_0009,False,0.048
+ART_0208,Jessica Gross,France,Indie,Hip-Hop,2011,LBL_0009,True,0.025
+ART_0442,Teresa Henderson,France,Indie,,2015,LBL_0038,True,0.043
+ART_0221,Melissa Brewer,Germany,Indie,,1994,LBL_0037,True,0.03
+ART_0446,Brian Romero,Germany,Indie,Hip-Hop,2010,LBL_0040,True,0.078
+ART_0019,The Hopkinss,Guinea,Indie,,2022,LBL_0006,True,0.038
+ART_0213,John Bishop,Hong Kong,Indie,Country,2018,LBL_0025,True,0.02
+ART_0228,The Parkers,Japan,Indie,Rock,2013,LBL_0030,False,0.029
+ART_0351,Jennifer Smith,Japan,Indie,,2020,LBL_0007,True,0.073
+ART_0308,Sharon Griffin,Liberia,Indie,,2016,LBL_0003,True,0.024
+ART_0363,Joshua Mata,Marshall Islands,Indie,,2012,LBL_0001,True,0.023
+ART_0511,Katie Ford,Micronesia,Indie,,1997,LBL_0027,True,0.023
+ART_0202,Renee Hogan,Mongolia,Indie,R&B,2005,LBL_0020,False,0.035
+ART_0233,The Hills,Namibia,Indie,Metal,2023,LBL_0019,True,0.027
+ART_0578,The Bentleys,New Caledonia,Indie,,1990,LBL_0036,True,0.018
+ART_0674,John Harris,New Caledonia,Indie,,2024,LBL_0002,True,0.021
+ART_0153,Pamela Boyd,Niue,Indie,,2003,LBL_0028,True,0.092
+ART_0103,Heather Hicks,Philippines,Indie,,2024,LBL_0030,True,0.052
+ART_0031,Tracy House,Thailand,Indie,,1992,LBL_0023,True,0.022
+ART_0328,The Finleys,UK,Indie,,2017,LBL_0012,True,0.018
+ART_0111,Michael Smith,USA,Indie,,2021,LBL_0010,True,0.017
+ART_0562,Jose Guerra,USA,Indie,,2003,LBL_0043,True,0.02
+ART_0074,The Freemans,United Kingdom,Indie,,1995,LBL_0018,True,0.017
+ART_0582,Taylor Carlson,Andorra,Jazz,Indie,2008,LBL_0043,True,0.018
+ART_0461,Latoya Miller,Austria,Jazz,,2019,LBL_0017,True,0.022
+ART_0416,The Fishers,Brazil,Jazz,,2017,LBL_0043,True,0.027
+ART_0035,James Galloway,Canada,Jazz,Country,2002,LBL_0026,True,0.024
+ART_0602,Chad Baldwin,France,Jazz,,2003,LBL_0038,False,0.02
+ART_0413,Hunter Kramer,Germany,Jazz,Hip-Hop,2023,LBL_0016,True,0.04
+ART_0119,Katie Estrada,Greece,Jazz,,1996,LBL_0029,True,0.019
+ART_0595,The Allens,Japan,Jazz,,2014,LBL_0031,True,0.019
+ART_0563,The Daviss,Japan,Jazz,Pop,2023,LBL_0031,False,0.021
+ART_0069,The Wilsons,Japan,Jazz,Rock,2005,LBL_0007,True,0.025
+ART_0281,Christopher Jenkins,Lithuania,Jazz,,2022,LBL_0013,True,0.02
+ART_0685,Cheryl Moore,Malaysia,Jazz,,1999,LBL_0045,True,0.028
+ART_0695,The Williamss,Monaco,Jazz,,1994,LBL_0001,True,0.073
+ART_0010,Alex Spencer,Namibia,Jazz,,2020,LBL_0027,True,0.055
+ART_0270,David Davis,Peru,Jazz,Country,1990,LBL_0020,True,0.069
+ART_0551,The Collinss,Sudan,Jazz,,2000,LBL_0019,True,0.051
+ART_0079,Deborah Figueroa,UK,Jazz,Classical,2020,LBL_0036,True,0.019
+ART_0067,The Mcmillans,UK,Jazz,,1997,LBL_0050,False,0.028
+ART_0051,Michael Edwards,USA,Jazz,,2019,LBL_0043,True,0.017
+ART_0333,Allen Nguyen,USA,Jazz,,2014,LBL_0001,True,0.05
+ART_0624,Matthew Cox,Zambia,Jazz,Metal,2001,LBL_0041,True,0.018
+ART_0075,The Odonnells,Austria,Metal,,2014,LBL_0022,True,0.026
+ART_0539,Katelyn Perez,Burundi,Metal,Jazz,2016,LBL_0007,True,0.025
+ART_0670,The Turners,Canada,Metal,Jazz,2017,LBL_0026,True,0.017
+ART_0294,Juan Tran,Canada,Metal,Hip-Hop,1992,LBL_0026,True,0.034
+ART_0415,Derek Martinez,France,Metal,,1995,LBL_0038,True,0.032
+ART_0327,Storm Ferguson,France,Metal,,2010,LBL_0002,True,0.037
+ART_0540,The Moores,French Polynesia,Metal,Rock,2002,LBL_0046,True,0.018
+ART_0296,Susan Murray MD,Germany,Metal,,2010,LBL_0016,True,0.172
+ART_0576,Alicia Lewis,Japan,Metal,Indie,1991,LBL_0031,True,0.018
+ART_0123,Iron Mitchell,Jersey,Metal,Electronic,2019,LBL_0019,True,0.033
+ART_0016,Storm Washington,Mauritius,Metal,Indie,2014,LBL_0017,True,0.02
+ART_0661,Blood Davis,Norway,Metal,Rock,2015,LBL_0034,True,0.037
+ART_0280,The Cooks,Paraguay,Metal,,1995,LBL_0034,False,0.017
+ART_0672,The Chavezs,Portugal,Metal,,2024,LBL_0018,True,0.034
+ART_0434,Stephen Gutierrez,Sweden,Metal,,2020,LBL_0034,True,0.017
+ART_0012,Crystal Whitehead,Tokelau,Metal,,1996,LBL_0016,True,0.022
+ART_0218,Iron Carlson,UK,Metal,,2015,LBL_0024,True,0.017
+ART_0654,Black Oneill,UK,Metal,R&B,2024,LBL_0012,True,0.055
+ART_0053,Storm Anderson,USA,Metal,Electronic,2018,LBL_0011,True,0.024
+ART_0625,Death Bradley,USA,Metal,Country,1992,LBL_0039,True,0.032
+ART_0230,Emily Newton,USA,Metal,,2010,LBL_0042,True,0.079
+ART_0483,Death Collier,Uruguay,Metal,,2003,LBL_0015,False,0.062
+ART_0554,The Richardsons,Yemen,Metal,R&B,2010,LBL_0036,True,0.037
+ART_0183,Tyler Williams,Antarctica (the territory South of 60 deg S),Pop,,2000,LBL_0024,True,0.028
+ART_0622,Lawrence Harrington,Antigua and Barbuda,Pop,,2017,LBL_0006,False,0.041
+ART_0080,Jessica Smith,Belarus,Pop,Classical,2019,LBL_0018,False,0.028
+ART_0629,Ernest Ramirez,Brazil,Pop,,2015,LBL_0037,True,0.033
+ART_0516,Miguel Wagner,China,Pop,,2020,LBL_0022,False,0.017
+ART_0219,Kristi Black,Comoros,Pop,Classical,2018,LBL_0003,True,0.087
+ART_0341,The Murrays,Equatorial Guinea,Pop,Jazz,2013,LBL_0008,True,0.031
+ART_0104,Ms. Teresa Wilson,Eritrea,Pop,,2018,LBL_0049,True,0.05
+ART_0508,Jesse Brown,France,Pop,,2015,LBL_0002,True,0.019
+ART_0236,The Walls,Germany,Pop,Country,2016,LBL_0040,True,0.021
+ART_0470,Chad Scott,Greece,Pop,,1996,LBL_0007,True,0.021
+ART_0687,Kathleen Davis,India,Pop,Electronic,2021,LBL_0046,True,0.025
+ART_0125,Jeremy Lewis,Japan,Pop,Country,2005,LBL_0025,False,0.043
+ART_0628,The Berrys,Marshall Islands,Pop,Electronic,2012,LBL_0023,True,0.017
+ART_0065,Dr. Kendra Contreras,Micronesia,Pop,Jazz,1992,LBL_0049,True,0.032
+ART_0524,The Riveras,Moldova,Pop,,2020,LBL_0037,True,0.038
+ART_0408,The Spencers,Namibia,Pop,,2023,LBL_0003,True,0.02
+ART_0189,Pamela Jackson,New Caledonia,Pop,,2021,LBL_0013,True,0.018
+ART_0089,The Baxters,Niger,Pop,,2014,LBL_0029,True,0.048
+ART_0641,The Hos,Northern Mariana Islands,Pop,,2001,LBL_0049,True,0.048
+ART_0332,Shelia Wallace,Puerto Rico,Pop,,1991,LBL_0006,True,0.022
+ART_0452,Debra White,Reunion,Pop,,2006,LBL_0007,True,0.018
+ART_0647,Angelica Parker,Saint Barthelemy,Pop,,2007,LBL_0029,True,0.02
+ART_0439,Anna Davis,Saint Vincent and the Grenadines,Pop,Electronic,2004,LBL_0002,True,0.025
+ART_0367,The Drakes,San Marino,Pop,Metal,2013,LBL_0035,True,0.028
+ART_0407,Justin Jones,Serbia,Pop,Rock,2007,LBL_0005,True,0.025
+ART_0545,James Martin,Switzerland,Pop,,2011,LBL_0019,True,0.021
+ART_0062,Jaclyn Moore,Syrian Arab Republic,Pop,,1998,LBL_0030,True,0.029
+ART_0608,Howard Norman,Tonga,Pop,Metal,2014,LBL_0009,True,0.021
+ART_0038,The Bernards,UK,Pop,Hip-Hop,2012,LBL_0047,True,0.018
+ART_0322,The Harringtons,UK,Pop,,1994,LBL_0044,False,0.02
+ART_0279,The Baileys,UK,Pop,Electronic,2013,LBL_0027,True,0.03
+ART_0046,Jennifer David,UK,Pop,,2005,LBL_0044,False,0.087
+ART_0503,The Downss,USA,Pop,,2013,LBL_0001,False,0.018
+ART_0107,The Grahams,USA,Pop,Metal,1997,LBL_0042,True,0.018
+ART_0640,The Josephs,USA,Pop,,2010,LBL_0032,True,0.021
+ART_0166,The Navarros,USA,Pop,,1997,LBL_0019,True,0.027
+ART_0056,Zachary Ferrell,USA,Pop,,2003,LBL_0005,False,0.055
+ART_0050,Kevin Mills,Vietnam,Pop,Indie,2023,LBL_0030,False,0.02
+ART_0365,Christopher Sloan,Western Sahara,Pop,,1991,LBL_0049,True,0.018
+ART_0390,The Taylors,Yemen,Pop,Electronic,1991,LBL_0043,True,0.026
+ART_0235,The Campbells,Bolivia,R&B,Electronic,2011,LBL_0037,True,0.019
+ART_0137,Young Reginald Prince,Cameroon,R&B,,1998,LBL_0003,True,0.024
+ART_0550,Rachel Young,Dominican Republic,R&B,,1990,LBL_0034,True,0.018
+ART_0411,Brianna Anderson,El Salvador,R&B,,2005,LBL_0010,True,0.018
+ART_0366,DJ Timothy,Germany,R&B,,2019,LBL_0037,True,0.018
+ART_0419,Ashley Gordon,Germany,R&B,,2019,LBL_0021,True,0.046
+ART_0124,The Lawsons,Gibraltar,R&B,,2017,LBL_0045,True,0.028
+ART_0675,Emma Travis,Guatemala,R&B,,1990,LBL_0015,True,0.04
+ART_0178,Diana Bean,Italy,R&B,,2012,LBL_0033,True,0.046
+ART_0112,Big Sara Baby,Japan,R&B,,2014,LBL_0030,True,0.018
+ART_0149,The Mcclains,Japan,R&B,,2023,LBL_0020,True,0.021
+ART_0613,Bradley Coleman,Jersey,R&B,Electronic,1996,LBL_0028,True,0.039
+ART_0369,Lil Linda Baby,Lao People's Democratic Republic,R&B,Country,1995,LBL_0029,True,0.026
+ART_0209,Robert Medina,Liberia,R&B,Indie,2019,LBL_0045,False,0.028
+ART_0304,The Villas,Madagascar,R&B,,2003,LBL_0022,True,0.034
+ART_0448,Darrell Patterson,Monaco,R&B,,2006,LBL_0014,False,0.019
+ART_0316,Vincent Martinez,Nauru,R&B,,2017,LBL_0012,True,0.02
+ART_0196,Lil Larry King,Philippines,R&B,,1996,LBL_0046,True,0.017
+ART_0165,DJ Robert King,San Marino,R&B,,2017,LBL_0032,True,0.018
+ART_0286,Cody Cox,Saudi Arabia,R&B,Classical,2020,LBL_0003,True,0.018
+ART_0500,Lil Karen Prince,Senegal,R&B,Hip-Hop,2001,LBL_0021,True,0.052
+ART_0017,Laura Kennedy,Slovenia,R&B,Pop,2021,LBL_0010,True,0.018
+ART_0515,Joanna Shepherd,Taiwan,R&B,,2023,LBL_0013,True,0.03
+ART_0682,Luis Wright,Tonga,R&B,Rock,2003,LBL_0008,True,0.019
+ART_0372,Big Tammy Prince,UK,R&B,Hip-Hop,2022,LBL_0044,True,0.02
+ART_0404,Matthew May,UK,R&B,,2006,LBL_0050,True,0.105
+ART_0247,Xavier Wilson,USA,R&B,Rock,2014,LBL_0033,False,0.023
+ART_0190,Tamara,USA,R&B,Hip-Hop,1996,LBL_0033,True,0.026
+ART_0677,Big David Baby,USA,R&B,,2015,LBL_0005,True,0.043
+ART_0195,Big Beth King,Vanuatu,R&B,,2000,LBL_0013,True,0.026
+ART_0570,Lil Anthony Baby,Venezuela,R&B,Pop,2017,LBL_0042,False,0.018
+ART_0284,Sharon Bryan,Afghanistan,Rock,,2009,LBL_0047,True,0.039
+ART_0603,The Acevedos,Argentina,Rock,,2000,LBL_0009,False,0.026
+ART_0532,The Fletchers,Belize,Rock,,2014,LBL_0026,True,0.023
+ART_0438,Melissa Wells,Bermuda,Rock,,2002,LBL_0032,False,0.29
+ART_0317,The Riveras,Bolivia,Rock,Indie,2012,LBL_0018,True,0.075
+ART_0108,The Joyces,Brazil,Rock,,2016,LBL_0031,True,0.018
+ART_0168,Daniel Graham,Canada,Rock,,1998,LBL_0049,True,0.018
+ART_0502,Sonia Day,Canada,Rock,,2017,LBL_0026,True,0.029
+ART_0586,The Duncans,Colombia,Rock,Indie,2017,LBL_0018,True,0.039
+ART_0061,The Ibarras,France,Rock,Hip-Hop,2024,LBL_0002,True,0.019
+ART_0222,The Henrys,France,Rock,,1997,LBL_0002,True,0.022
+ART_0379,Lauren Carson,France,Rock,,2019,LBL_0002,False,0.051
+ART_0106,Jeffrey Chandler,Germany,Rock,Hip-Hop,1990,LBL_0036,True,0.028
+ART_0437,The Ortegas,Holy See (Vatican City State),Rock,Jazz,2010,LBL_0003,True,1.0
+ART_0482,The Mezas,Kuwait,Rock,,2006,LBL_0048,False,0.018
+ART_0696,The Lees,Micronesia,Rock,,1995,LBL_0030,True,0.018
+ART_0580,David Fowler,Nigeria,Rock,Electronic,2022,LBL_0010,False,0.022
+ART_0206,The Yus,North Macedonia,Rock,,1991,LBL_0025,True,0.017
+ART_0093,Rachel Jenkins,Paraguay,Rock,Electronic,1994,LBL_0044,True,0.025
+ART_0081,The Landrys,Portugal,Rock,Country,2024,LBL_0049,True,0.018
+ART_0091,Cynthia Martin,South Georgia and the South Sandwich Islands,Rock,,2005,LBL_0012,True,0.029
+ART_0651,Joseph Anderson,Switzerland,Rock,,1993,LBL_0026,True,0.053
+ART_0164,The Snows,Syrian Arab Republic,Rock,,1999,LBL_0011,True,0.026
+ART_0072,Christina Walters,UK,Rock,Metal,2001,LBL_0047,True,0.02
+ART_0158,Jennifer Clark,UK,Rock,,2009,LBL_0023,True,0.044
+ART_0462,The Moores,USA,Rock,,1996,LBL_0006,True,0.018
+ART_0421,The Camachos,USA,Rock,,1992,LBL_0014,True,0.017
+ART_0501,The Rileys,USA,Rock,,2000,LBL_0032,True,0.023
+ART_0048,The Wheelers,USA,Rock,,2002,LBL_0046,True,0.024
+ART_0567,James Brooks,USA,Rock,,2018,LBL_0032,True,0.145
+ART_0526,Nathaniel Douglas,United States of America,Rock,Pop,1997,LBL_0027,True,0.019
+
+### TABLE: albums ###
+album_id,artist_id,title,release_year,release_date,primary_genre,secondary_genre,album_type,total_tracks,popularity_score
+ALB_0329,ART_0016,Digitized Multimedia Info-Mediaries,2021,2024-07-28,Metal,Indie,Compilation,10,0.107
+ALB_1065,ART_0294,Stories Real,2011,2015-12-27,Metal,Hip-Hop,EP,12,0.075
+ALB_0845,ART_0580,Thunder Local,2024,2026-04-27,Rock,Electronic,Live,10,0.07
+ALB_0323,ART_0672,Stories People,2024,2026-04-27,Metal,,Studio,10,0.106
+ALB_0654,ART_0212,Managed System-Worthy Encoding,2000,2003-07-03,Classical,,Live,16,0.074
+ALB_0435,ART_0483,Journey People,2016,2018-11-10,Metal,,Studio,10,0.056
+ALB_0481,ART_0270,Re-Contextualized Zero Tolerance Framework,1995,2018-10-07,Jazz,Country,EP,14,0.196
+ALB_0577,ART_0438,Storm Include,2020,2025-09-20,Rock,,Live,12,0.076
+ALB_0606,ART_0539,Upgradable Needs-Based Firmware,2021,2025-04-20,Metal,Jazz,Studio,12,0.167
+ALB_0741,ART_0120,Digital Me,2019,2023-03-27,Electronic,,Studio,12,0.082
+ALB_1423,ART_0608,Decentralized Contextually-Based Functionalities,2024,2026-04-27,Pop,Metal,Studio,12,0.128
+ALB_0669,ART_0334,Profit-Focused Impactful Challenge,2017,2024-10-12,Hip-Hop,,Studio,8,0.126
+ALB_0412,ART_0283,Time Seven,2020,2023-03-04,Classical,,Compilation,14,0.23
+ALB_0154,ART_0404,Persistent Analyzing Open Architecture,2006,2015-09-30,R&B,,Studio,16,0.109
+ALB_1269,ART_0437,Echo Quite,2011,2015-04-26,Rock,Jazz,Live,8,0.071
+ALB_1208,ART_0040,Pulse Save,2012,2020-10-15,Electronic,Rock,Live,12,0.058
+ALB_0949,ART_0567,Echo According,2024,2026-04-27,Rock,,Studio,8,0.123
+ALB_1079,ART_0570,Stories Drug,2021,2024-08-28,R&B,Pop,EP,10,0.073
+ALB_1331,ART_0585,Right-Sized 3Rdgeneration Model,2018,2021-02-16,Country,,Live,8,0.128
+ALB_1283,ART_0613,Stories Clear,2000,2013-02-07,R&B,Electronic,Studio,12,0.059
+ALB_0749,ART_0677,De-Engineered Bi-Directional Info-Mediaries,2021,2024-10-29,R&B,,Studio,12,0.63
+ALB_0695,ART_0551,Profound Stable Hub,2002,2016-09-01,Jazz,,Compilation,12,0.089
+ALB_1411,ART_0407,Synergistic Reciprocal Product,2022,2025-09-09,Pop,Rock,Studio,8,0.056
+ALB_0578,ART_0185,Visionary Non-Volatile Alliance,2008,2013-03-26,Country,Hip-Hop,Studio,14,0.06
+ALB_0565,ART_0089,Vision-Oriented Bifurcated Moderator,2017,2025-05-05,Pop,,Live,16,0.078
+ALB_0674,ART_0645,Stories Decide,2022,2024-11-12,Country,,Compilation,8,0.091
+ALB_1027,ART_0666,Journey Item,2024,2026-04-27,Hip-Hop,,Studio,12,0.058
+ALB_0104,ART_0022,Life Not,2017,2020-05-14,Country,Indie,Studio,12,0.057
+ALB_0507,ART_0579,Integrated Maximized Firmware,2022,2026-01-09,Electronic,Classical,Live,12,0.062
+ALB_0457,ART_0629,Decentralized Zero Administration Algorithm,2020,2023-08-29,Pop,,Studio,10,0.061
+ALB_0282,ART_0454,World Senior,2021,2024-08-02,Indie,,Studio,12,0.092
+ALB_1360,ART_0463,Implemented Zero Tolerance Infrastructure,2011,2015-03-29,Electronic,Indie,Live,16,0.057
+ALB_0286,ART_0055,Multi-Lateral Tangible Workforce,2024,2026-04-27,Country,,Studio,14,0.055
+ALB_0221,ART_0462,Echo To,2008,2015-05-08,Rock,,Studio,10,0.597
+ALB_0380,ART_0379,Adaptive Zero-Defect Superstructure,2024,2026-04-27,Rock,,Studio,12,0.099
+ALB_0920,ART_0148,World Best,2019,2023-01-24,Country,,Studio,10,0.075
+ALB_1167,ART_0419,Devolved Responsive Model,2023,2025-11-07,R&B,,Studio,10,0.143
+ALB_1036,ART_0221,Phased Mission-Critical Concept,1998,2006-01-08,Indie,,Studio,8,0.091
+ALB_1097,ART_0438,Right-Sized Multimedia Model,2003,2019-12-26,Rock,,EP,10,0.114
+ALB_0281,ART_0437,Echo Entire,2024,2026-04-27,Rock,Jazz,Studio,12,0.065
+ALB_0371,ART_0016,Fully-Configurable Well-Modulated Service-Desk,2024,2026-04-27,Metal,Indie,Live,12,0.192
+ALB_0138,ART_0381,Vision-Oriented Analyzing Challenge,2022,2025-04-29,Electronic,Hip-Hop,Studio,12,0.089
+ALB_0516,ART_0437,Storm Enjoy,2011,2014-07-19,Rock,Jazz,Studio,14,0.055
+ALB_1223,ART_0442,Focused 24Hour Neural-Net,2017,2021-12-07,Indie,,Studio,14,0.287
+ALB_1383,ART_0289,Journey Agency,2023,2025-08-25,Indie,,Live,10,0.06
+ALB_1266,ART_0437,Visionary Background Encryption,2012,2016-03-18,Rock,Jazz,Studio,8,0.058
+ALB_1408,ART_0437,Assimilated Next Generation Focus Group,2016,2020-02-15,Rock,Jazz,Studio,12,0.054
+ALB_0733,ART_0628,Star Travel,2014,2023-06-23,Pop,Electronic,Studio,12,0.082
+ALB_0151,ART_0347,Journey Material,2023,2025-07-23,Hip-Hop,,Studio,8,0.103
+ALB_0304,ART_0360,Cross-Platform Leadingedge Success,2017,2024-03-12,Country,,Studio,12,0.056
+ALB_0712,ART_0369,Down-Sized Stable Open Architecture,2015,2018-12-12,R&B,Country,Studio,8,0.063
+ALB_0174,ART_0242,Proactive Maximized Attitude,2011,2023-10-03,Hip-Hop,,Studio,12,0.058
+ALB_1402,ART_0120,Fully-Configurable Multi-Tasking Function,2022,2024-12-25,Electronic,,EP,16,0.077
+ALB_0018,ART_0539,Focused Uniform Application,2018,2023-10-27,Metal,Jazz,Studio,12,0.224
+ALB_0123,ART_0579,Public-Key Hybrid Moderator,2019,2021-12-14,Electronic,Classical,Studio,12,0.089
+ALB_1350,ART_0242,Optional Intangible Capability,2017,2025-05-29,Hip-Hop,,Live,12,0.08
+ALB_1376,ART_0437,Organic Regional Circuit,2010,2018-06-26,Rock,Jazz,Live,12,0.151
+ALB_0363,ART_0182,Stories Toward,2008,2018-07-20,Country,Indie,Studio,10,0.072
+ALB_0518,ART_0438,Storm Then,2017,2024-10-13,Rock,,Live,10,0.16
+ALB_1410,ART_0157,Life Show,2016,2021-05-17,Country,Pop,Studio,10,0.076
+ALB_0060,ART_0638,User-Centric Uniform Alliance,2014,2025-06-14,Electronic,,Studio,8,0.061
+ALB_0771,ART_0115,Time Recently,2022,2024-07-08,Hip-Hop,Country,Studio,12,0.086
+ALB_1212,ART_0437,Sharable National Function,2012,2025-03-23,Rock,Jazz,Studio,10,0.058
+ALB_0152,ART_0532,Thunder Down,2020,2023-07-10,Rock,,Studio,8,0.058
+ALB_1133,ART_0423,Journey Turn,2003,2010-11-21,Classical,,Studio,14,0.092
+ALB_1159,ART_0043,Life Too,2019,2023-04-27,Hip-Hop,,EP,12,0.056
+ALB_0434,ART_0551,Virtual Methodical Throughput,2009,2012-05-30,Jazz,,Studio,12,0.087
+ALB_0106,ART_0454,Time Describe,2022,2025-10-02,Indie,,Compilation,14,0.06
+ALB_0285,ART_0046,Team-Oriented Intangible Moratorium,2013,2015-09-21,Pop,,Studio,12,0.125
+ALB_1421,ART_0378,World Friend,2017,2019-10-17,Country,Pop,Compilation,12,0.089
+ALB_0701,ART_0317,Programmable Well-Modulated Encoding,2013,2025-03-19,Rock,Indie,Studio,14,0.071
+ALB_0005,ART_0581,Journey Summer,2019,2023-09-08,Indie,,Studio,12,0.134
+ALB_0463,ART_0415,Diverse Eco-Centric Throughput,2021,2023-08-17,Metal,,EP,14,0.07
+ALB_0158,ART_0147,Circuit Throw,2009,2016-11-19,Electronic,,Live,12,0.062
+ALB_1020,ART_0161,Organic Composite Emulation,2020,2022-08-17,Hip-Hop,Rock,Studio,12,0.085
+ALB_1483,ART_0437,Function-Based 24/7 Knowledgebase,2023,2025-10-25,Rock,Jazz,Studio,14,0.055
+ALB_1406,ART_0437,Echo More,2024,2026-04-27,Rock,Jazz,Studio,8,0.058
+ALB_1286,ART_0395,Enterprise-Wide 3Rdgeneration Process Improvement,2020,2025-09-29,Classical,R&B,Live,8,0.056
+ALB_0250,ART_0185,Inverse Human-Resource Access,2014,2019-03-28,Country,Hip-Hop,Live,14,0.069
+ALB_0626,ART_0010,Midnight North,2021,2025-05-19,Jazz,,Studio,16,0.114
+ALB_0422,ART_0108,Horizontal Zero-Defect Solution,2024,2026-04-27,Rock,,EP,8,0.146
+ALB_0502,ART_0327,Time Bad,2020,2026-02-03,Metal,,Studio,10,0.226
+ALB_1466,ART_0651,Thunder Little,1999,2001-12-10,Rock,,Live,14,0.06
+ALB_0540,ART_0289,Re-Contextualized Motivating Graphic Interface,2024,2026-04-27,Indie,,Live,12,0.083
+ALB_0280,ART_0185,Time Property,2020,2023-07-13,Country,Hip-Hop,Studio,12,0.11
+ALB_1450,ART_0438,Customer-Focused Local Knowledgebase,2012,2024-03-29,Rock,,Studio,10,0.104
+ALB_0118,ART_0421,Stand-Alone Intangible Hub,2022,2026-04-21,Rock,,Studio,10,0.077
+ALB_0625,ART_0283,Time Tell,2024,2026-04-27,Classical,,Studio,12,0.144
+ALB_0058,ART_0067,Midnight Artist,2003,2024-05-20,Jazz,,Studio,12,0.118
+ALB_0133,ART_0157,Cross-Platform Radical Alliance,1998,2011-12-04,Country,Pop,Studio,14,0.077
+ALB_1276,ART_0213,Time Enough,2020,2025-11-29,Indie,Country,Studio,8,0.056
+ALB_0826,ART_0662,Down-Sized Asynchronous System Engine,2022,2025-04-20,Classical,,Live,14,0.161
+ALB_0084,ART_0351,Innovative Optimal Success,2022,2025-06-18,Indie,,Studio,8,0.083
+ALB_1329,ART_0651,Thunder Industry,1993,1995-04-29,Rock,,Studio,12,0.061
+ALB_0134,ART_0483,Time Remember,2023,2026-01-08,Metal,,Studio,12,0.057
+ALB_1096,ART_0010,Blue Feeling,2022,2024-09-15,Jazz,,Live,16,0.119
+ALB_1389,ART_0202,Reduced Stable Moderator,2008,2011-01-06,Indie,R&B,Studio,14,0.056
+ALB_0510,ART_0691,Triple-Buffered Tangible Portal,2021,2023-06-10,Hip-Hop,Metal,Studio,10,0.063
+ALB_0432,ART_0230,Time Outside,2017,2022-04-07,Metal,,Studio,12,0.081
+ALB_0345,ART_0490,Visionary Modular Neural-Net,2015,2021-11-30,Hip-Hop,R&B,Live,10,0.061
+ALB_1015,ART_0166,Forever Human,2000,2011-02-01,Pop,,EP,14,0.15
+ALB_0341,ART_0581,Organic Mobile Concept,2023,2025-05-26,Indie,,Studio,10,0.088
+ALB_1081,ART_0230,Time Black,2016,2020-01-13,Metal,,Studio,10,0.087
+ALB_0658,ART_0437,Storm Million,2015,2025-01-15,Rock,Jazz,Studio,14,0.096
+
+### TABLE: tracks ###
+track_id,album_id,artist_id,title,track_number,duration_ms,explicit,release_date,isrc,popularity_score
+TRK_03893,ALB_0481,ART_0270,Need All Car,10,263761,False,2018-10-07,RU520DDS469,0.062
+TRK_02758,ALB_1350,ART_0242,Winnin Like,2,168594,False,2025-05-29,HR144YKN693,0.035
+TRK_00993,ALB_0018,ART_0539,Improve Analysis Level,2,336646,False,2023-10-27,SN118VNN723,0.04
+TRK_04234,ALB_0510,ART_0691,Indicate Draw,2,182322,False,2023-06-10,AR022NMS750,0.034
+TRK_00996,ALB_0749,ART_0677,Shoulder,3,272142,False,2024-10-29,AF736GLO511,0.109
+TRK_05633,ALB_1097,ART_0438,Suggest List Somebody School,4,308467,False,2019-12-26,GA747NAZ030,0.041
+TRK_04913,ALB_0565,ART_0089,Federal,3,198214,False,2025-05-05,VE408CAA091,0.039
+TRK_04735,ALB_1096,ART_0010,Turn Cut Leave Just,5,217255,False,2024-09-15,IT142RNQ013,0.047
+TRK_03791,ALB_1096,ART_0010,Figure Bring Reality Plant,3,347031,False,2024-09-15,CH567MDN695,0.058
+TRK_01994,ALB_1133,ART_0423,Sonata No. 14,3,730398,True,2010-11-21,CA250OCF186,0.06
+TRK_05826,ALB_1483,ART_0437,Unit Yes Nice Goal,3,324690,False,2025-10-25,TG369UUO570,0.093
+TRK_01062,ALB_0412,ART_0283,Bring Woman,2,755134,False,2023-03-04,MW831VBD139,0.062
+TRK_01654,ALB_1423,ART_0608,Sound Less Leader Trial,5,182935,False,2026-04-27,AF864ZLS942,0.036
+TRK_01457,ALB_0084,ART_0351,Never Look,2,276563,False,2025-06-18,TR083TFI521,0.039
+TRK_04292,ALB_0578,ART_0185,Truck Appear,3,285155,False,2013-03-26,NA449OVK035,0.039
+TRK_05784,ALB_0463,ART_0415,Where,7,214002,False,2023-08-17,BE852QVN056,0.071
+TRK_02279,ALB_1410,ART_0157,Whiskey Why,3,222282,False,2021-05-17,VA335CZT984,0.045
+TRK_03568,ALB_0151,ART_0347,Want Particularly Treat While,6,162243,False,2025-07-23,YE602XMZ769,0.051
+TRK_01028,ALB_0151,ART_0347,Share,1,200837,False,2025-07-23,CR790ROD504,0.123
+TRK_01492,ALB_0005,ART_0581,Work Tend,2,321720,False,2023-09-08,TR632FTY251,0.039
+TRK_00139,ALB_1360,ART_0463,Source Person When Response,1,216517,False,2015-03-29,TT195ZHE419,0.032
+TRK_02349,ALB_1402,ART_0120,Billion Lawyer,3,226729,True,2024-12-25,TN462TUJ487,0.04
+TRK_00804,ALB_0422,ART_0108,Surface Court Exactly Minute,1,225705,True,2026-04-27,AR752QCB034,0.032
+TRK_05340,ALB_0281,ART_0437,They Manager East Lot,7,232116,True,2026-04-27,GD973GTT095,0.033
+TRK_00470,ALB_0380,ART_0379,Minute,1,188458,False,2026-04-27,VA064XNG771,0.063
+TRK_01911,ALB_0749,ART_0677,Last Young Speech,8,323435,True,2024-10-29,CV304VOF532,0.25
+TRK_04571,ALB_0371,ART_0016,Suffer Stop Ahead,8,288184,True,2026-04-27,MG908BVF557,0.052
+TRK_02732,ALB_0250,ART_0185,Highway Impact,3,200382,False,2019-03-28,CA504LVH884,0.038
+TRK_05936,ALB_0304,ART_0360,Truck A,4,324388,False,2024-03-12,BH853UDV475,0.051
+TRK_01751,ALB_1223,ART_0442,Sister,4,192923,False,2021-12-07,VN550JAX493,0.045
+TRK_05472,ALB_0733,ART_0628,Never Hard Father,2,170190,False,2023-06-23,ST594GMZ004,0.032
+TRK_01077,ALB_0749,ART_0677,Concern Race Five Ahead,4,341385,False,2024-10-29,GT970UOB798,0.039
+TRK_00558,ALB_0380,ART_0379,Election,2,277904,False,2026-04-27,NE929UHF445,0.045
+TRK_04396,ALB_1411,ART_0407,Most Memory Full,2,152836,False,2025-09-09,VC558UQO364,0.079
+TRK_04137,ALB_0674,ART_0645,Join Its Information,3,271882,False,2024-11-12,KG449QZM810,0.034
+TRK_05698,ALB_0826,ART_0662,Hit Someone Practice,7,773304,False,2025-04-20,SD979DVD573,0.058
+TRK_01018,ALB_0138,ART_0381,Research Person Apply,1,354247,False,2025-04-29,GE369NWY987,0.035
+TRK_02093,ALB_0151,ART_0347,Winnin Necessary,3,234516,False,2025-07-23,FR009IJG954,0.054
+TRK_04084,ALB_1360,ART_0463,Entire Out,3,209041,False,2015-03-29,IT394PJI616,0.031
+TRK_04927,ALB_0084,ART_0351,Worry Process,3,274994,False,2025-06-18,IN090TKB544,0.045
+TRK_00980,ALB_0625,ART_0283,Nocturne No. 2,2,297314,False,2026-04-27,CG061JJU537,0.043
+TRK_02964,ALB_0481,ART_0270,Himself,7,286090,False,2018-10-07,BH499HIL887,0.046
+TRK_03819,ALB_1283,ART_0613,Region Back Character,3,281790,False,2013-02-07,AD447JMW120,0.059
+TRK_05413,ALB_1020,ART_0161,Single Almost Where,4,189503,False,2022-08-17,MM905HFW273,0.045
+
+### TABLE: track_features ###
+track_id,tempo_bpm,energy,danceability,valence,acousticness,loudness_db,instrumentalness,speechiness,liveness,key,mode,time_signature
+TRK_00139,116,0.185,0.502,0.666,0.065,-3.79,0.003,0.041,0.212,3,1,4
+TRK_00470,127,0.959,0.61,0.703,0.514,-6.99,0.012,0.079,0.022,8,1,4
+TRK_00558,121,0.919,0.498,0.453,0.339,-11.18,0.066,0.329,0.107,3,1,4
+TRK_00804,124,0.894,0.809,0.5,0.249,-4.72,0.18,0.044,0.18,10,0,6
+TRK_00980,90,0.506,0.683,0.578,0.425,-10.6,0.16,0.106,0.005,2,1,4
+TRK_00993,153,0.724,0.284,0.241,0.476,-13.73,0.245,0.071,0.114,10,0,4
+TRK_00996,117,0.442,0.705,0.721,0.444,-9.35,0.116,0.082,0.094,3,1,4
+TRK_01018,128,0.794,1.0,0.355,0.01,-12.14,0.194,0.236,0.1,3,1,4
+TRK_01028,88,0.628,0.509,0.444,0.194,-14.95,0.064,0.308,0.04,2,0,4
+TRK_01062,105,0.398,0.527,0.484,0.556,-3.97,0.052,0.1,0.239,1,1,4
+TRK_01077,77,0.722,0.57,0.656,0.525,-4.35,0.102,0.084,0.368,4,1,4
+TRK_01457,101,0.57,0.397,0.705,0.773,-8.55,0.062,0.079,0.45,11,0,4
+TRK_01492,98,0.493,0.708,0.418,0.769,-3.07,0.016,0.028,0.105,3,0,4
+TRK_01654,106,0.357,0.788,0.637,0.421,-12.71,0.005,0.091,0.33,11,1,4
+TRK_01751,126,0.125,0.631,0.129,0.606,-8.1,0.123,0.235,0.314,6,1,4
+TRK_01911,88,0.475,0.544,0.349,0.47,-4.2,0.123,0.158,0.302,1,1,4
+TRK_01994,40,0.363,0.217,0.842,0.774,-4.62,0.172,0.017,0.035,11,0,4
+TRK_02093,101,0.515,0.842,0.132,0.21,-10.33,0.037,0.385,0.109,11,1,4
+TRK_02279,121,0.35,0.531,0.551,0.741,-5.17,0.038,0.025,0.283,9,0,4
+TRK_02349,135,0.317,0.565,0.252,0.064,-3.75,0.111,0.184,0.054,9,1,4
+TRK_02732,86,0.166,0.457,0.881,0.845,-6.5,0.026,0.102,0.158,6,0,6
+TRK_02758,92,0.662,0.713,0.412,0.367,-3.51,0.017,0.709,0.026,0,1,4
+TRK_02964,99,0.098,0.14,0.619,0.897,-8.78,0.03,0.179,0.081,0,1,4
+TRK_03568,102,0.951,0.937,0.652,0.196,-5.54,0.036,0.156,0.026,1,0,4
+TRK_03791,104,0.642,0.665,0.502,0.89,-6.99,0.065,0.029,0.094,11,1,4
+TRK_03819,107,0.586,0.652,0.275,0.513,-6.41,0.01,0.161,0.696,1,1,4
+TRK_03893,113,0.799,0.461,0.217,0.916,-13.16,0.078,0.234,0.178,0,0,4
+TRK_04084,127,0.84,0.786,0.75,0.334,-3.09,0.04,0.183,0.058,8,0,4
+TRK_04137,106,0.535,0.576,0.267,0.695,-14.95,0.063,0.177,0.616,0,0,4
+TRK_04234,98,0.668,0.858,0.453,0.038,-10.84,0.085,0.787,0.038,7,0,4
+TRK_04292,98,0.144,0.566,0.931,0.64,-3.11,0.021,0.053,0.17,9,1,4
+TRK_04396,123,0.235,0.468,0.628,0.644,-12.7,0.005,0.09,0.137,0,0,4
+TRK_04571,200,0.559,0.305,0.542,0.144,-6.43,0.013,0.204,0.358,1,1,4
+TRK_04735,149,0.275,0.654,0.524,0.844,-12.91,0.081,0.008,0.462,6,1,4
+TRK_04913,125,0.524,0.905,0.377,0.281,-9.48,0.1,0.012,0.22,11,1,4
+TRK_04927,116,0.609,0.445,0.439,0.472,-13.08,0.061,0.018,0.012,7,0,5
+TRK_05340,146,0.879,0.563,0.318,0.401,-9.84,0.039,0.009,0.402,0,1,4
+TRK_05413,88,0.838,0.879,0.606,0.523,-14.11,0.113,0.393,0.345,1,0,4
+TRK_05472,119,0.573,0.753,0.356,0.642,-14.29,0.129,0.034,0.15,1,0,3
+TRK_05633,152,0.96,0.658,0.261,0.642,-13.03,0.004,0.045,0.105,2,0,4
+TRK_05698,113,0.059,0.135,0.418,0.612,-7.01,0.035,0.193,0.398,9,1,4
+TRK_05784,148,0.82,0.065,0.733,0.366,-10.39,0.076,0.002,0.221,9,1,4
+TRK_05826,113,0.722,0.665,0.147,0.725,-13.21,0.053,0.093,0.514,9,0,4
+TRK_05936,110,0.587,0.735,0.344,0.931,-14.05,0.026,0.197,0.022,5,0,4
+
+### TABLE: collaborations ###
+collab_id,track_id,primary_artist_id,featured_artist_id,collab_type
+COL_0341,TRK_05826,ART_0437,ART_0048,Featured
+
+### TABLE: streams ###
+stream_id,track_id,artist_id,region,platform,stream_date,stream_count,skip_rate,completion_rate
+STR_000512,TRK_01028,ART_0347,ES,Spotify,2025-09-22,123000,0.345,0.73
+STR_008077,TRK_04735,ART_0010,SI,Spotify,2025-03-06,47000,0.215,0.719
+STR_001332,TRK_00996,ART_0677,HT,Apple Music,2024-12-19,109000,0.09,0.846
+
+### TABLE: royalties ###
+royalty_id,track_id,artist_id,label_id,quarter,streams_credited,rate_per_stream,gross_revenue_usd,label_cut_usd,artist_payout_usd
+ROY_01332,TRK_01062,ART_0283,LBL_0009,Q2-2023,1550000,0.00388,6014.0,4209.8,1804.2
+
+### TABLE: playlists ###
+playlist_entry_id,user_id,playlist_name,track_id,platform,added_date,position,is_public
+PLE_02551,USR_00174,Mood Together,TRK_05826,Spotify,2026-04-19,72,True
+PLE_01693,USR_00332,Chill Small,TRK_00996,Amazon Music,2025-10-02,59,True
+
+### TABLE: awards ###
+award_id,artist_id,track_id,award_name,category,year,won
+AWD_0388,ART_0437,,Golden Mic,Best Collaboration,2023,True
+AWD_0141,ART_0437,,Artist of the Year,Breakthrough Artist,2020,True
+AWD_0417,ART_0153,,Billboard Award,Best Rock Album,2018,False
+AWD_0490,ART_0437,,Billboard Award,Best Rock Album,2024,False
+AWD_0270,ART_0437,,Streaming Record Award,Top Producer,2014,True
+AWD_0077,ART_0437,,Artist of the Year,Top Producer,2021,True
+AWD_0290,ART_0567,,Artist of the Year,Top Producer,2018,True
+AWD_0292,ART_0336,,Artist of the Year,Best Pop Artist,2019,True
+AWD_0286,ART_0437,,Golden Mic,Song of the Year,2014,True
+AWD_0431,ART_0437,,Global Music Award,Best Rock Album,2024,True
+AWD_0047,ART_0438,,Golden Mic,Song of the Year,2021,False
+AWD_0162,ART_0296,,Sound & Vision Prize,Top Producer,2015,True
+AWD_0038,ART_0437,,Global Music Award,Breakthrough Artist,2016,True
+AWD_0194,ART_0347,,Streaming Record Award,Best Collaboration,2021,True
+AWD_0064,ART_0437,,Artist of the Year,Best New Artist,2018,True
+AWD_0081,ART_0437,,Global Music Award,Breakthrough Artist,2020,True
+AWD_0376,ART_0437,,Billboard Award,Top Producer,2018,True
+AWD_0339,ART_0437,,Billboard Award,Breakthrough Artist,2012,False
+AWD_0281,ART_0581,,Sound & Vision Prize,Song of the Year,2018,True
+AWD_0186,ART_0381,,Streaming Record Award,Best Album,2012,False
+AWD_0476,ART_0437,,Billboard Award,Best New Artist,2021,False
+AWD_0043,ART_0437,,Streaming Record Award,Best New Artist,2011,True
+AWD_0034,ART_0437,,Streaming Record Award,Top Producer,2019,True
+
+### TABLE: charts ###
+chart_id,track_id,artist_id,chart_name,week_date,peak_position,current_position,weeks_on_chart,movement
+CHT_00226,TRK_01911,ART_0677,Top Streaming,2026-04-21,66,80,4,-22

@@ -1,0 +1,313 @@
+"question_id","category","question","sql_query","answer"
+"Q001","Medium","Which artist has the highest popularity score and how many albums have they released?","SELECT a.name, a.popularity_score, COUNT(DISTINCT al.album_id) as album_count
+FROM artists a
+LEFT JOIN albums al ON a.artist_id = al.artist_id
+WHERE a.popularity_score = (SELECT MAX(popularity_score) FROM artists)
+GROUP BY a.artist_id, a.name, a.popularity_score;","{""name"": ""The Ortegas"", ""popularity_score"": 1.000, ""album_count"": 65}"
+"Q002","Medium","What is the total revenue generated from royalties in Q4-2024?","SELECT SUM(gross_revenue_usd) as total_revenue
+FROM royalties
+WHERE quarter = 'Q4-2024';","{""total_revenue"": 2901599.63}"
+"Q003","Medium","Which music genre has the most tracks and how many?","SELECT a.primary_genre, COUNT(t.track_id) as track_count
+FROM tracks t
+JOIN artists a ON t.artist_id = a.artist_id
+GROUP BY a.primary_genre
+ORDER BY track_count DESC
+LIMIT 1;","{""primary_genre"": ""Rock"", ""track_count"": 1066}"
+"Q004","Medium","What percentage of artists are currently inactive?","SELECT 
+    ROUND(100.0 * SUM(CASE WHEN is_active = false THEN 1 ELSE 0 END) / COUNT(*), 2) as inactive_percentage
+FROM artists;","{""inactive_percentage"": 14.86}"
+"Q005","Medium","Which streaming platform has the highest total stream count?","SELECT platform, SUM(stream_count) as total_streams
+FROM streams
+GROUP BY platform
+ORDER BY total_streams DESC
+LIMIT 1;","{""platform"": ""Spotify"", ""total_streams"": 842031747}"
+"Q006","Medium","What is the average track duration in minutes across all tracks?","SELECT ROUND(AVG(duration_ms) / 1000.0 / 60.0, 2) as avg_duration_minutes
+FROM tracks;","{""avg_duration_minutes"": 4.65}"
+"Q007","Medium","How many collaborations involve Hip-Hop artists as the primary artist?","SELECT COUNT(c.collab_id) as hiphop_collaborations
+FROM collaborations c
+JOIN artists a ON c.primary_artist_id = a.artist_id
+WHERE a.primary_genre = 'Hip-Hop';","{""hiphop_collaborations"": 88}"
+"Q008","Medium","Which record label has signed the most artists and what type of label is it?","SELECT rl.name, rl.label_type, COUNT(a.artist_id) as artist_count
+FROM record_labels rl
+JOIN artists a ON rl.label_id = a.label_id
+GROUP BY rl.label_id, rl.name, rl.label_type
+ORDER BY artist_count DESC
+LIMIT 1;","{""name"": ""Gardner, Robinson and Lawrence Records"", ""label_type"": ""Independent"", ""artist_count"": 28}"
+"Q009","Medium","What is the average energy level of Electronic music tracks?","SELECT ROUND(AVG(tf.energy), 3) as avg_energy
+FROM track_features tf
+JOIN tracks t ON tf.track_id = t.track_id
+JOIN artists a ON t.artist_id = a.artist_id
+WHERE a.primary_genre = 'Electronic';","{""avg_energy"": 0.708}"
+"Q010","Medium","How many awards has the most awarded artist won (not just nominated)?","SELECT a.name, COUNT(*) as awards_won
+FROM awards aw
+JOIN artists a ON aw.artist_id = a.artist_id
+WHERE aw.won = true
+GROUP BY aw.artist_id, a.name
+ORDER BY awards_won DESC
+LIMIT 1;","{""name"": ""The Ortegas"", ""awards_won"": 146}"
+"Q011","Medium","What is the total number of streams for tracks released in 2024?","SELECT SUM(s.stream_count) as total_streams_2024
+FROM streams s
+JOIN tracks t ON s.track_id = t.track_id
+WHERE EXTRACT(YEAR FROM t.release_date) = 2024;","{""total_streams_2024"": 290618884}"
+"Q012","Medium","Which country has produced the most Rock artists?","SELECT country, COUNT(*) as rock_artist_count
+FROM artists
+WHERE primary_genre = 'Rock'
+GROUP BY country
+ORDER BY rock_artist_count DESC
+LIMIT 1;","{""country"": ""USA"", ""rock_artist_count"": 35}"
+"Q013","Medium","What percentage of tracks have explicit content?","SELECT ROUND(100.0 * SUM(CASE WHEN explicit = true THEN 1 ELSE 0 END) / COUNT(*), 2) as explicit_percentage
+FROM tracks;","{""explicit_percentage"": 12.17}"
+"Q014","Medium","How many unique users have created playlists on Spotify?","SELECT COUNT(DISTINCT user_id) as unique_spotify_users
+FROM playlists
+WHERE platform = 'Spotify';","{""unique_spotify_users"": 430}"
+"Q015","Medium","What is the average tempo (BPM) of Pop music tracks?","SELECT ROUND(AVG(tf.tempo_bpm), 2) as avg_pop_tempo
+FROM track_features tf
+JOIN tracks t ON tf.track_id = t.track_id
+JOIN artists a ON t.artist_id = a.artist_id
+WHERE a.primary_genre = 'Pop';","{""avg_pop_tempo"": 119.19}"
+"Q016","Hard","Which artist has the best streams-to-awards ratio (total streams divided by number of awards won), considering only artists with at least 5 awards won?","SELECT a.name, 
+    SUM(s.stream_count) as total_streams,
+    COUNT(DISTINCT CASE WHEN aw.won = true THEN aw.award_id END) as awards_won,
+    ROUND(SUM(s.stream_count)::numeric / COUNT(DISTINCT CASE WHEN aw.won = true THEN aw.award_id END), 2) as streams_per_award
+FROM artists a
+JOIN streams s ON a.artist_id = s.artist_id
+JOIN awards aw ON a.artist_id = aw.artist_id
+WHERE aw.won = true
+GROUP BY a.artist_id, a.name
+HAVING COUNT(DISTINCT CASE WHEN aw.won = true THEN aw.award_id END) >= 5
+ORDER BY streams_per_award DESC
+LIMIT 1;","{""name"": ""The Ortegas"", ""total_streams"": 12473361372, ""awards_won"": 146, ""streams_per_award"": 85433982.00}"
+"Q017","Hard","What is the correlation between track danceability and average stream count? Show the average stream count for tracks grouped by danceability ranges (0-0.3, 0.3-0.6, 0.6-1.0).","SELECT 
+    CASE 
+        WHEN tf.danceability < 0.3 THEN 'Low (0-0.3)'
+        WHEN tf.danceability < 0.6 THEN 'Medium (0.3-0.6)'
+        ELSE 'High (0.6-1.0)'
+    END as danceability_range,
+    COUNT(DISTINCT t.track_id) as track_count,
+    ROUND(AVG(s.stream_count), 0) as avg_streams
+FROM track_features tf
+JOIN tracks t ON tf.track_id = t.track_id
+JOIN streams s ON t.track_id = s.track_id
+GROUP BY danceability_range
+ORDER BY danceability_range;","[{""danceability_range"": ""High (0.6-1.0)"", ""track_count"": 1889, ""avg_streams"": 260231}, {""danceability_range"": ""Low (0-0.3)"", ""track_count"": 205, ""avg_streams"": 169477}, {""danceability_range"": ""Medium (0.3-0.6)"", ""track_count"": 1112, ""avg_streams"": 216826}]"
+"Q018","Hard","Which label generates the highest average revenue per artist, and what is that amount? Include only labels with at least 10 artists.","SELECT rl.name, rl.label_type,
+    COUNT(DISTINCT a.artist_id) as artist_count,
+    ROUND(SUM(r.gross_revenue_usd) / COUNT(DISTINCT a.artist_id), 2) as avg_revenue_per_artist
+FROM record_labels rl
+JOIN artists a ON rl.label_id = a.label_id
+JOIN royalties r ON a.artist_id = r.artist_id
+GROUP BY rl.label_id, rl.name, rl.label_type
+HAVING COUNT(DISTINCT a.artist_id) >= 10
+ORDER BY avg_revenue_per_artist DESC
+LIMIT 1;","{""name"": ""Gardner, Robinson and Lawrence Records"", ""label_type"": ""Independent"", ""artist_count"": 16, ""avg_revenue_per_artist"": 118875.94}"
+"Q019","Hard","Find the top 3 most ""collaborative"" genres - genres where artists have the highest average number of collaborations per artist.","SELECT a.primary_genre,
+    COUNT(DISTINCT a.artist_id) as total_artists,
+    COUNT(c.collab_id) as total_collaborations,
+    ROUND(COUNT(c.collab_id)::numeric / COUNT(DISTINCT a.artist_id), 2) as avg_collabs_per_artist
+FROM artists a
+LEFT JOIN collaborations c ON a.artist_id = c.primary_artist_id
+GROUP BY a.primary_genre
+HAVING COUNT(DISTINCT a.artist_id) >= 30
+ORDER BY avg_collabs_per_artist DESC
+LIMIT 3;","[{""primary_genre"": ""Rock"", ""total_artists"": 87, ""total_collaborations"": 133, ""avg_collabs_per_artist"": 1.53}, {""primary_genre"": ""Indie"", ""total_artists"": 66, ""total_collaborations"": 89, ""avg_collabs_per_artist"": 1.35}, {""primary_genre"": ""Electronic"", ""total_artists"": 66, ""total_collaborations"": 88, ""avg_collabs_per_artist"": 1.33}]"
+"Q020","Hard","Which track has been on the charts for the longest cumulative time across all chart types, and how many total weeks?","SELECT t.title, t.track_id, a.name as artist_name,
+    COUNT(DISTINCT c.chart_name) as chart_appearances,
+    SUM(c.weeks_on_chart) as total_weeks_on_charts
+FROM charts c
+JOIN tracks t ON c.track_id = t.track_id
+JOIN artists a ON t.artist_id = a.artist_id
+GROUP BY t.track_id, t.title, a.name
+ORDER BY total_weeks_on_charts DESC
+LIMIT 1;","{""title"": ""Plan Career Significant Single"", ""track_id"": ""TRK_04955"", ""artist_name"": ""The Baxters"", ""chart_appearances"": 7, ""total_weeks_on_charts"": 5315}"
+"Q021","Hard","What is the month-over-month growth rate of streaming in 2024? Show the total streams for each month and the percentage change from the previous month.","WITH monthly_streams AS (
+    SELECT 
+        DATE_TRUNC('month', stream_date) as month,
+        SUM(stream_count) as total_streams
+    FROM streams
+    WHERE EXTRACT(YEAR FROM stream_date) = 2024
+    GROUP BY DATE_TRUNC('month', stream_date)
+)
+SELECT 
+    TO_CHAR(month, 'YYYY-MM') as month,
+    total_streams,
+    LAG(total_streams) OVER (ORDER BY month) as prev_month_streams,
+    ROUND(100.0 * (total_streams - LAG(total_streams) OVER (ORDER BY month)) / 
+          NULLIF(LAG(total_streams) OVER (ORDER BY month), 0), 2) as growth_rate_pct
+FROM monthly_streams
+ORDER BY month;","[{""month"": ""2024-01"", ""total_streams"": 18782991, ""prev_month_streams"": null, ""growth_rate_pct"": null}, {""month"": ""2024-02"", ""total_streams"": 14672995, ""prev_month_streams"": 18782991, ""growth_rate_pct"": -21.88}, {""month"": ""2024-03"", ""total_streams"": 13059989, ""prev_month_streams"": 14672995, ""growth_rate_pct"": -10.99}, {""month"": ""2024-04"", ""total_streams"": 12590993, ""prev_month_streams"": 13059989, ""growth_rate_pct"": -3.59}, {""month"": ""2024-05"", ""total_streams"": 15699997, ""prev_month_streams"": 12590993, ""growth_rate_pct"": 24.69}, {""month"": ""2024-06"", ""total_streams"": 21828992, ""prev_month_streams"": 15699997, ""growth_rate_pct"": 39.04}, {""month"": ""2024-07"", ""total_streams"": 20890994, ""prev_month_streams"": 21828992, ""growth_rate_pct"": -4.30}, {""month"": ""2024-08"", ""total_streams"": 22457989, ""prev_month_streams"": 20890994, ""growth_rate_pct"": 7.50}, {""month"": ""2024-09"", ""total_streams"": 21564992, ""prev_month_streams"": 22457989, ""growth_rate_pct"": -3.98}, {""month"": ""2024-10"", ""total_streams"": 33698989, ""prev_month_streams"": 21564992, ""growth_rate_pct"": 56.27}, {""month"": ""2024-11"", ""total_streams"": 28909987, ""prev_month_streams"": 33698989, ""growth_rate_pct"": -14.21}, {""month"": ""2024-12"", ""total_streams"": 27749987, ""prev_month_streams"": 28909987, ""growth_rate_pct"": -4.01}]"
+"Q022","Hard","Identify artists who have albums in at least 3 different album types (Studio, Live, EP, Compilation). List their names and the count of album types.","SELECT a.name, a.artist_id,
+    COUNT(DISTINCT al.album_type) as album_type_diversity,
+    STRING_AGG(DISTINCT al.album_type, ', ' ORDER BY al.album_type) as album_types
+FROM artists a
+JOIN albums al ON a.artist_id = al.artist_id
+GROUP BY a.artist_id, a.name
+HAVING COUNT(DISTINCT al.album_type) >= 3
+ORDER BY album_type_diversity DESC, a.name;","[{""name"": ""Big Stephen"", ""artist_id"": ""ART_0146"", ""album_type_diversity"": 4, ""album_types"": ""Compilation, EP, Live, Studio""}, {""name"": ""David Alvarez"", ""artist_id"": ""ART_0132"", ""album_type_diversity"": 4, ""album_types"": ""Compilation, EP, Live, Studio""}, {""name"": ""James Brooks"", ""artist_id"": ""ART_0567"", ""album_type_diversity"": 4, ""album_types"": ""Compilation, EP, Live, Studio""}, {""name"": ""Melissa Wells"", ""artist_id"": ""ART_0438"", ""album_type_diversity"": 4, ""album_types"": ""Compilation, EP, Live, Studio""}, {""name"": ""Rodriguezx"", ""artist_id"": ""ART_0381"", ""album_type_diversity"": 4, ""album_types"": ""Compilation, EP, Live, Studio""}, {""name"": ""The Castros"", ""artist_id"": ""ART_0088"", ""album_type_diversity"": 4, ""album_types"": ""Compilation, EP, Live, Studio""}, {""name"": ""The Cruzs"", ""artist_id"": ""ART_0109"", ""album_type_diversity"": 4, ""album_types"": ""Compilation, EP, Live, Studio""}, {""name"": ""The Martinezs"", ""artist_id"": ""ART_0623"", ""album_type_diversity"": 4, ""album_types"": ""Compilation, EP, Live, Studio""}, {""name"": ""The Ortegas"", ""artist_id"": ""ART_0437"", ""album_type_diversity"": 4, ""album_types"": ""Compilation, EP, Live, Studio""}, {""name"": ""Young Alexander Prince"", ""artist_id"": ""ART_0375"", ""album_type_diversity"": 4, ""album_types"": ""Compilation, EP, Live, Studio""}, {""name"": ""Young Thomas"", ""artist_id"": ""ART_0098"", ""album_type_diversity"": 4, ""album_types"": ""Compilation, EP, Live, Studio""}, (56 more artists with 3 album types...)]"
+"Q023","Extremely Hard","Calculate the ""virality coefficient"" for each genre: (average chart peak position × average weeks on chart × total awards won) / average completion rate. Which genre has the highest coefficient?","WITH genre_metrics AS (
+    SELECT a.primary_genre,
+        AVG(ch.peak_position) as avg_peak_position,
+        AVG(ch.weeks_on_chart) as avg_weeks_on_chart,
+        COUNT(DISTINCT CASE WHEN aw.won = true THEN aw.award_id END) as total_awards_won,
+        AVG(s.completion_rate) as avg_completion_rate
+    FROM artists a
+    LEFT JOIN tracks t ON a.artist_id = t.artist_id
+    LEFT JOIN charts ch ON t.track_id = ch.track_id
+    LEFT JOIN awards aw ON a.artist_id = aw.artist_id
+    LEFT JOIN streams s ON t.track_id = s.track_id
+    WHERE s.completion_rate IS NOT NULL
+    GROUP BY a.primary_genre
+    HAVING COUNT(DISTINCT t.track_id) >= 100
+)
+SELECT primary_genre,
+    ROUND(avg_peak_position, 2) as avg_peak,
+    ROUND(avg_weeks_on_chart, 2) as avg_weeks,
+    total_awards_won,
+    ROUND(avg_completion_rate, 3) as avg_completion,
+    ROUND((avg_peak_position * avg_weeks_on_chart * total_awards_won) / NULLIF(avg_completion_rate, 0), 2) as virality_coefficient
+FROM genre_metrics
+ORDER BY virality_coefficient DESC
+LIMIT 1;","{""primary_genre"": ""Rock"", ""avg_peak"": 57.31, ""avg_weeks"": 11.39, ""total_awards_won"": 186, ""avg_completion"": 0.820, ""virality_coefficient"": 148050.90}"
+"Q024","Extremely Hard","Find the ""hidden gems"" - tracks with high completion rates (>85%) but low popularity scores (<0.05) that have never charted. How many such tracks exist and what is their total stream count?","WITH track_metrics AS (
+    SELECT t.track_id, t.title, t.popularity_score,
+        AVG(s.completion_rate) as avg_completion_rate,
+        SUM(s.stream_count) as total_streams,
+        COUNT(DISTINCT ch.chart_id) as chart_count
+    FROM tracks t
+    JOIN streams s ON t.track_id = s.track_id
+    LEFT JOIN charts ch ON t.track_id = ch.track_id
+    GROUP BY t.track_id, t.title, t.popularity_score
+    HAVING AVG(s.completion_rate) > 0.85 
+        AND t.popularity_score < 0.05
+        AND COUNT(DISTINCT ch.chart_id) = 0
+)
+SELECT 
+    COUNT(*) as hidden_gem_count,
+    SUM(total_streams) as total_hidden_gem_streams,
+    ROUND(AVG(avg_completion_rate), 3) as avg_completion_rate,
+    ROUND(AVG(popularity_score), 4) as avg_popularity
+FROM track_metrics;","{""hidden_gem_count"": 611, ""total_hidden_gem_streams"": 29396900, ""avg_completion_rate"": 0.907, ""avg_popularity"": 0.0384}"
+"Q025","Extremely Hard","Analyze the ""collaboration network effect"": For artists with 10+ collaborations, calculate the average popularity boost (difference between their popularity and the average popularity of artists they collaborated with). Which artist has the highest positive network effect?","WITH artist_collab_metrics AS (
+    SELECT c.primary_artist_id,
+        a1.name as primary_artist_name,
+        a1.popularity_score as primary_popularity,
+        COUNT(c.collab_id) as collab_count,
+        AVG(a2.popularity_score) as avg_collaborator_popularity
+    FROM collaborations c
+    JOIN artists a1 ON c.primary_artist_id = a1.artist_id
+    JOIN artists a2 ON c.featured_artist_id = a2.artist_id
+    GROUP BY c.primary_artist_id, a1.name, a1.popularity_score
+    HAVING COUNT(c.collab_id) >= 10
+)
+SELECT primary_artist_name,
+    collab_count,
+    ROUND(primary_popularity, 4) as own_popularity,
+    ROUND(avg_collaborator_popularity, 4) as avg_collab_popularity,
+    ROUND(primary_popularity - avg_collaborator_popularity, 4) as network_effect
+FROM artist_collab_metrics
+ORDER BY network_effect DESC
+LIMIT 1;","{""primary_artist_name"": ""The Ortegas"", ""collab_count"": 42, ""own_popularity"": 1.0000, ""avg_collab_popularity"": 0.0353, ""network_effect"": 0.9647}"
+"Q026","Extremely Hard","Calculate the ""revenue efficiency ratio"" for each label type (Major/Independent/Subsidiary): total artist payout divided by (number of artists × average years active). Which label type is most efficient?","WITH label_metrics AS (
+    SELECT rl.label_type,
+        COUNT(DISTINCT a.artist_id) as artist_count,
+        SUM(r.artist_payout_usd) as total_artist_payout,
+        AVG(2024 - a.debut_year) as avg_years_active
+    FROM record_labels rl
+    JOIN artists a ON rl.label_id = a.label_id
+    JOIN royalties r ON a.artist_id = r.artist_id
+    GROUP BY rl.label_type
+)
+SELECT label_type,
+    artist_count,
+    ROUND(total_artist_payout, 2) as total_payout,
+    ROUND(avg_years_active, 2) as avg_years_active,
+    ROUND(total_artist_payout / (artist_count * avg_years_active), 2) as efficiency_ratio
+FROM label_metrics
+ORDER BY efficiency_ratio DESC;","[{""label_type"": ""Major"", ""artist_count"": 45, ""total_payout"": 1007675.55, ""avg_years_active"": 16.24, ""efficiency_ratio"": 1379.00}, {""label_type"": ""Independent"", ""artist_count"": 309, ""total_payout"": 3817165.08, ""avg_years_active"": 14.48, ""efficiency_ratio"": 853.27}, {""label_type"": ""Subsidiary"", ""artist_count"": 123, ""total_payout"": 1668356.76, ""avg_years_active"": 18.26, ""efficiency_ratio"": 742.81}]"
+"Q027","Extremely Hard","Identify the ""Midas touch"" producer - the featured artist in ""Producer"" type collaborations whose tracks have the highest average chart peak position (lower is better). Include only producers involved in at least 5 collaborations.","WITH producer_performance AS (
+    SELECT a.name as producer_name,
+        a.artist_id,
+        COUNT(DISTINCT c.collab_id) as production_count,
+        AVG(ch.peak_position) as avg_peak_position,
+        COUNT(DISTINCT ch.chart_id) as charting_tracks
+    FROM collaborations c
+    JOIN artists a ON c.featured_artist_id = a.artist_id
+    JOIN tracks t ON c.track_id = t.track_id
+    LEFT JOIN charts ch ON t.track_id = ch.track_id
+    WHERE c.collab_type = 'Producer'
+    GROUP BY a.artist_id, a.name
+    HAVING COUNT(DISTINCT c.collab_id) >= 5
+        AND COUNT(DISTINCT ch.chart_id) > 0
+)
+SELECT producer_name,
+    production_count,
+    charting_tracks,
+    ROUND(avg_peak_position, 2) as avg_peak_position
+FROM producer_performance
+ORDER BY avg_peak_position ASC
+LIMIT 1;","NO RESULTS - No producers with 5+ collaborations have charting tracks"
+"Q028","Extremely Hard","Create a ""genre evolution timeline"": For each genre, calculate the average popularity score of artists by their debut decade (1990s, 2000s, 2010s, 2020s). Which genre shows the most consistent growth (highest correlation between decade and popularity)?","WITH genre_decade_popularity AS (
+    SELECT primary_genre,
+        CASE 
+            WHEN debut_year BETWEEN 1990 AND 1999 THEN '1990s'
+            WHEN debut_year BETWEEN 2000 AND 2009 THEN '2000s'
+            WHEN debut_year BETWEEN 2010 AND 2019 THEN '2010s'
+            WHEN debut_year BETWEEN 2020 AND 2029 THEN '2020s'
+        END as debut_decade,
+        AVG(popularity_score) as avg_popularity,
+        COUNT(*) as artist_count
+    FROM artists
+    WHERE debut_year >= 1990
+    GROUP BY primary_genre, debut_decade
+    HAVING COUNT(*) >= 5
+)
+SELECT primary_genre,
+    STRING_AGG(debut_decade || ': ' || ROUND(avg_popularity, 4)::text, ', ' ORDER BY debut_decade) as popularity_by_decade,
+    MAX(CASE WHEN debut_decade = '2020s' THEN avg_popularity ELSE 0 END) - 
+    MIN(CASE WHEN debut_decade = '1990s' THEN avg_popularity ELSE 999 END) as growth_indicator
+FROM genre_decade_popularity
+GROUP BY primary_genre
+HAVING COUNT(DISTINCT debut_decade) >= 3
+ORDER BY growth_indicator DESC
+LIMIT 1;","{""primary_genre"": ""Metal"", ""popularity_by_decade"": ""1990s: 0.0279, 2000s: 0.0341, 2010s: 0.0388, 2020s: 0.0357"", ""growth_indicator"": 0.0078}"
+"Q029","Extremely Hard","Calculate the ""playlist power index"" for each platform: (number of public playlists × average position in playlist) / total unique users. Which platform has the highest index, indicating better playlist curation?","WITH platform_metrics AS (
+    SELECT platform,
+        COUNT(CASE WHEN is_public = true THEN 1 END) as public_playlist_count,
+        AVG(position) as avg_position,
+        COUNT(DISTINCT user_id) as unique_users,
+        COUNT(*) as total_entries
+    FROM playlists
+    GROUP BY platform
+)
+SELECT platform,
+    public_playlist_count,
+    ROUND(avg_position, 2) as avg_position,
+    unique_users,
+    ROUND((public_playlist_count * avg_position)::numeric / unique_users, 2) as playlist_power_index
+FROM platform_metrics
+ORDER BY playlist_power_index DESC
+LIMIT 1;","{""platform"": ""Spotify"", ""public_playlist_count"": 706, ""avg_position"": 50.37, ""unique_users"": 430, ""playlist_power_index"": 82.71}"
+"Q030","Extremely Hard","Find the ""undervalued"" label - the label with the highest ratio of (total streams generated by their artists) to (total royalties paid to those artists), considering only labels with at least 15 artists. This indicates which label is getting the most streaming value for their investment.","WITH label_performance AS (
+    SELECT rl.label_id,
+        rl.name as label_name,
+        rl.label_type,
+        COUNT(DISTINCT a.artist_id) as artist_count,
+        SUM(s.stream_count) as total_streams,
+        SUM(r.artist_payout_usd) as total_artist_payout,
+        SUM(r.label_cut_usd) as total_label_revenue
+    FROM record_labels rl
+    JOIN artists a ON rl.label_id = a.label_id
+    JOIN streams s ON a.artist_id = s.artist_id
+    JOIN royalties r ON a.artist_id = r.artist_id
+    GROUP BY rl.label_id, rl.name, rl.label_type
+    HAVING COUNT(DISTINCT a.artist_id) >= 15
+)
+SELECT label_name,
+    label_type,
+    artist_count,
+    total_streams,
+    ROUND(total_artist_payout, 2) as total_payout,
+    ROUND(total_label_revenue, 2) as label_revenue,
+    ROUND(total_streams::numeric / NULLIF(total_artist_payout, 0), 2) as streams_per_dollar_paid
+FROM label_performance
+ORDER BY streams_per_dollar_paid DESC
+LIMIT 1;","{""label_name"": ""Mcclure, Ward and Lee Entertainment"", ""label_type"": ""Independent"", ""artist_count"": 15, ""total_streams"": 124063771, ""total_payout"": 2602965.59, ""label_revenue"": 6073589.49, ""streams_per_dollar_paid"": 47.66}"

@@ -1,0 +1,41 @@
+
+
+Q001. [Medium] Which artist has the highest popularity score and how many albums have they released?
+
+Q002. [Medium] What is the average track duration in minutes across all tracks?
+
+Q003. [Medium] Which music genre has the most artists and how many?
+
+Q004. [Medium] What percentage of artists are currently active?
+
+Q005. [Medium] How many tracks have explicit content?
+
+Q006. [Medium] Which record label has signed the most artists?
+
+Q007. [Hard] What is the average number of tracks per album for each genre?
+
+Q008. [Hard] Which artists have won at least one award and how many awards have they won in total?
+
+Q009. [Hard] What is the distribution of album types (Single, EP, Album) by record label type (Major, Independent)?
+
+Q010. [Hard] Which tracks have the highest energy and danceability scores combined?
+
+Q011. [Hard] What is the average popularity score for artists from each country?
+
+Q012. [Hard] Which artists have tracks in multiple albums and how many albums do they have?
+
+Q013. [Hard] What is the average speechiness score for explicit vs non-explicit tracks?
+
+Q014. [Extremely Hard] Calculate the "musical diversity score" for each artist based on the variance of their track features (energy, danceability, valence). Which artist has the highest diversity?
+
+Q015. [Extremely Hard] Identify "overperforming" artists: those whose award count is disproportionately high relative to their album count and popularity score.
+
+Q016. [Extremely Hard] Create a "track mood profile" by categorizing tracks based on valence and energy into quadrants (Happy/High Energy, Happy/Low Energy, Sad/High Energy, Sad/Low Energy). What is the distribution?
+
+Q017. [Extremely Hard] Calculate the "genre dominance score" for each genre based on artist count, album count, and average popularity. Which genre is most dominant?
+
+Q018. [Extremely Hard] Identify "prolific years" for the music industry by counting albums released per year and calculating the year-over-year growth rate.
+
+Q019. [Extremely Hard] Calculate the "acoustic-electronic spectrum" for each genre by averaging acousticness and instrumentalness. Which genres are most acoustic vs electronic?
+
+Q020. [Extremely Hard] Identify "hidden gem" tracks: high audio quality features (low speechiness, high instrumentalness) from less popular artists (popularity < 0.5) that have not been heavily streamed.
