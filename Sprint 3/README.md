@@ -67,9 +67,15 @@ Results will be saved in:
 
 ### ✅ Phase 1: Baseline Evaluation (READY)
 - **Goal:** Establish baseline performance on example documents
-- **Scope:** All 6 datasets, ~30-50 Q&A pairs
+- **Scope:** All 6 datasets, **294 Q&A pairs across 17 documents**
+  - FinHybrid: 47 Q&A (4 docs)
+  - TatHybrid: 162 Q&A (4 docs)
+  - PaperTab: 2 Q&A (2 docs)
+  - PaperText: 7 Q&A (3 docs)
+  - FetaTab: 6 Q&A (2 docs)
+  - NqText: 70 Q&A (2 docs)
 - **Time:** 1-2 hours
-- **Cost:** ~$5-10
+- **Cost:** ~$10-20
 - **Notebook:** `nemotron_phase1_experiment.ipynb`
 
 ### ⏳ Phase 2: Parameter Optimization (OPTIONAL)

@@ -47,19 +47,21 @@ Sprint 3 evaluates NVIDIA Nemotron on **real-world document analysis** using the
 **Scope:**
 - Use **example documents only** (dataset/src_doc_files_example/)
 - Test all 6 sub-datasets
+- **Total: 294 Q&A pairs across 17 documents**
 - Default parameters:
   - `chunk_size=3000` characters
   - `chunk_overlap=300` (10%)
   - `top_k=5` retrieved chunks
   - `temperature=0.1` (deterministic)
 
-**Expected Results:**
-- FinHybrid: 5-10 example Q&A pairs
-- TatHybrid: 5-10 example Q&A pairs
-- PaperTab: 3-5 example Q&A pairs
-- PaperText: 3-5 example Q&A pairs
-- FetaTab: 3-5 example Q&A pairs
-- NqText: 3-5 example Q&A pairs
+**Actual Coverage:**
+- FinHybrid: 4 docs, **47 Q&A pairs** (financial reports)
+- TatHybrid: 4 docs, **162 Q&A pairs** (financial reports)
+- PaperTab: 2 docs, **2 Q&A pairs** (academic tables)
+- PaperText: 3 docs, **7 Q&A pairs** (academic text)
+- FetaTab: 2 docs, **6 Q&A pairs** (Wikipedia tables)
+- NqText: 2 docs, **70 Q&A pairs** (Wikipedia text)
+- **Total: 294 Q&A pairs** (primarily financial: 209/294 = 71%)
 
 **Output:**
 - `PHASE1_BASELINE_RESULTS.md` - Performance breakdown by dataset
@@ -203,12 +205,12 @@ pip install together langchain chromadb sentence-transformers PyPDF2 pandas tqdm
 
 ## Timeline Estimate
 
-| Phase | Estimated Time | Status |
-|-------|---------------|--------|
-| **Phase 1:** Baseline (examples) | 2-4 hours | 🔄 Ready to start |
-| **Phase 2:** Parameter tuning | 4-6 hours | ⏳ Optional |
-| **Phase 3:** Full evaluation | 8-12 hours runtime | ⏳ Future |
-| **Analysis & Documentation** | 3-5 hours | ⏳ After experiments |
+| Phase | Estimated Time | Cost | Status |
+|-------|---------------|------|--------|
+| **Phase 1:** Baseline (294 Q&A) | 1-2 hours | $10-20 | 🔄 Ready to start |
+| **Phase 2:** Parameter tuning | 4-6 hours | $20-30 | ⏳ Optional |
+| **Phase 3:** Full evaluation (29,590 Q&A) | 8-12 hours | $30-50 | ⏳ Requires 5.88 GB download |
+| **Analysis & Documentation** | 3-5 hours | — | ⏳ After experiments |
 
 ---
 
