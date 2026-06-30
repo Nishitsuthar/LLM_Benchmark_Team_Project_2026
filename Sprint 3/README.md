@@ -146,98 +146,12 @@ PROMPTS = {
 
 ---
 
-## File Structure
-
-```
-Sprint 3/
-├── README.md (this file)
-│
-├── documentation/
-│   ├── 1_planning/
-│   │   ├── SPRINT3_EXPERIMENT_PLAN.md
-│   │   └── PHASE1_BASELINE_RESULTS.md
-│   ├── 2_final_results/
-│   │   ├── FINAL_RESULTS_PHASE3C.md ⭐ (THE MAIN RESULTS)
-│   │   └── PHASE3B_ABANDONED.md
-│   ├── 3_presentation/
-│   │   ├── PRESENTATION_GUIDE.md
-│   │   ├── PRESENTATION_SUMMARY.md
-│   │   └── VISUAL_INDEX.md
-│   └── 4_reference/
-│       ├── PHASE2_DOCUMENT_LISTS.md
-│       └── AGGRESSIVE_CLEANUP_SUMMARY.md
-│
-├── notebooks/
-│   ├── demos/
-│   │   ├── basic_demo.ipynb
-│   │   └── basic_demo_together.ipynb
-│   └── archive/
-│       ├── phase1/
-│       └── complete_tests/
-│
-├── scripts/
-│   ├── run_simple_test.py
-│   └── run_experiment.sh
-│
-├── results/
-│   └── phase1_archive/
-│
-└── UDA-Benchmark/
-    ├── presentation_visuals/ (7 PNG charts)
-    ├── experiments/
-    │   └── nemotron-3-ultra-550b/
-    │       └── 3_advanced_optimization/
-    │           └── 3_prompts/
-    │               ├── notebooks/ ⭐ (4 final notebooks)
-    │               └── results/ ⭐ (4 final CSV files)
-    ├── dataset/
-    ├── uda/
-    ├── requirements.txt
-    └── LICENSE
-```
-
----
-
-## Custom Skills
-
-Six custom skills created in `.claude/skills/` for easy navigation:
-
-```bash
-/sprint3-results      # Quick results summary
-/sprint3-present      # Presentation materials
-/sprint3-cleanup      # Clean up files (already used)
-/sprint3-organize     # Reorganize structure (already used)
-/sprint3-notebook     # Find notebooks
-/sprint3-experiment   # Explain phases
-```
-
----
-
-## Presentation Materials
-
-7 High-Resolution Charts (300 DPI):
-1. Overall performance by dataset
-2. Empty rate comparison vs target
-3. Phase progression (35% to 12.2%)
-4. Prompt strategy comparison
-5. Hyperparameter tuning impact
-6. Phase 3B failure analysis
-7. Executive dashboard
-
-Location: `UDA-Benchmark/presentation_visuals/`
-
----
-
 ## Key Achievements
 
 - 87.8% success rate (274/312 questions answered)  
 - 65% reduction in empty responses (35% to 12.2%)  
 - Optimal RAG configuration identified and documented  
-- Dataset-specific prompts discovered (CoT vs Few-shot)  
-- Comprehensive documentation created  
-- 7 presentation visuals generated  
-- 6 custom skills for navigation  
-- Clean, organized structure ready for sharing  
+- Dataset-specific prompts discovered (CoT vs Few-shot)
 
 ---
 
@@ -255,14 +169,6 @@ Insight: RAG on real documents (87.8%) outperformed direct table analysis (80%) 
 
 ---
 
-## Documentation
-
-**Main Results:** `documentation/2_final_results/FINAL_RESULTS_PHASE3C.md`  
-**Presentation Guide:** `documentation/3_presentation/PRESENTATION_GUIDE.md`  
-**Executive Summary:** `documentation/3_presentation/PRESENTATION_SUMMARY.md`
-
----
-
 ## Future Work
 
 1. Break 12% ceiling: Try hybrid search (semantic + keyword)
@@ -270,17 +176,3 @@ Insight: RAG on real documents (87.8%) outperformed direct table analysis (80%) 
 3. Full dataset: Scale to all 29,590 Q&A pairs
 4. Fine-tuning: Train embeddings on domain data
 5. Query expansion: Rephrase questions multiple ways
-
----
-
-**Created:** June 2026  
-**Last Updated:** June 30, 2026  
-**Status:** Complete
-
----
-
-Sprint 3 Highlights:
-- Reduced empty responses by 65%
-- Achieved 87.8% success rate
-- Comprehensive testing: 2,855 test questions
-- Professional: Clean, documented, presentation-ready

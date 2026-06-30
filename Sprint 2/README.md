@@ -206,18 +206,6 @@ Sprint 2/
 
 ---
 
-## Visualizations
-
-Three comprehensive visualizations created:
-
-1. Benchmark Comparison - Format performance side-by-side
-2. Comprehensive Analysis - Batch vs Individual, Difficulty breakdown
-3. Difficulty Distribution - Performance by question complexity
-
-All visualizations available in PNG format for presentations.
-
----
-
 ## Impact & Next Steps
 
 ### Impact on Project
@@ -234,24 +222,10 @@ All visualizations available in PNG format for presentations.
 
 ---
 
-## Documentation
-
-**Detailed Report:** `Individual_Work_Report_Nishit_Suthar_Sprint 2.docx`  
-**Presentation:** `Sprint2_Presentation_Nishit_Suthar.pptx`
-
----
-
 ## Key Achievements
 
 - Comprehensive 4-format benchmark (80 total tests)  
 - Identified JSON as optimal batch format  
 - Discovered format-agnostic 80% ceiling  
 - Established baseline for future comparisons  
-- Created reusable test methodology  
-- Generated professional visualizations  
-
----
-
-**Created:** May 2026  
-**Last Updated:** June 2026  
-**Status:** Complete - Foundation for Sprint 3 RAG experiments
+- Created reusable test methodology
