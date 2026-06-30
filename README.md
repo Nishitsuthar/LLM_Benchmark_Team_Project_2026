@@ -30,8 +30,10 @@ Comprehensive benchmarking study evaluating Large Language Model (LLM) performan
 | [Sprint 1](#sprint-1-data-preparation--sampling) | Data Preparation | Complete | 870 movies | Sampled & formatted |
 | [Sprint 2](#sprint-2-llm-format-comparison-benchmark) | Format Benchmark | Complete | 80% accuracy | JSON best format |
 | [Sprint 3](#sprint-3-rag-optimization-on-uda-benchmark) | RAG Optimization | Complete | 87.8% success | 65% improvement |
+| Sprint 4 | Planning | Pending | TBD | TBD |
+| Sprint 5 | Planning | Pending | TBD | TBD |
 
-Overall: 3/3 Sprints Complete. All objectives met.
+Completed: 3/5 Sprints
 
 ---
 
@@ -257,35 +259,11 @@ LLM_Benchmark_Team_Project_2026/
 
 ---
 
-## Quick Start
+## Navigate by Sprint
 
-### Navigate by Sprint
 - Sprint 1: `cd "Sprint 1"` - See [README](./Sprint%201/README.md)
 - Sprint 2: `cd "Sprint 2"` - See [README](./Sprint%202/README.md)
 - Sprint 3: `cd "Sprint 3"` - See [README](./Sprint%203/README.md)
-
-### View Key Results
-- Sprint 2 Results: `Sprint 2/comprehensive_benchmark_analysis.png`
-- Sprint 3 Results: `Sprint 3/documentation/2_final_results/FINAL_RESULTS_PHASE3C.md`
-- Sprint 3 Visuals: `Sprint 3/UDA-Benchmark/presentation_visuals/`
-
-### Run Experiments
-- Sprint 2: See `Sprint 2/README.md` for dataset access
-- Sprint 3 Demo: `Sprint 3/notebooks/demos/basic_demo_together.ipynb`
-- Sprint 3 Final: `Sprint 3/UDA-Benchmark/experiments/.../3_prompts/notebooks/`
-
----
-
-## Presentation Materials
-
-### Sprint 2
-- PowerPoint: `Sprint 2/Sprint2_Presentation_Nishit_Suthar.pptx`
-- Charts: `Sprint 2/` (PNG visualizations)
-
-### Sprint 3
-- Presentation Guide: `Sprint 3/documentation/3_presentation/PRESENTATION_GUIDE.md`
-- Executive Summary: `Sprint 3/documentation/3_presentation/PRESENTATION_SUMMARY.md`
-- 7 High-Res Charts: `Sprint 3/UDA-Benchmark/presentation_visuals/`
 
 ---
 
@@ -311,7 +289,7 @@ LLM_Benchmark_Team_Project_2026/
 
 ## Project Achievements
 
-- 3 comprehensive sprints completed on schedule  
+- 3 sprints completed (out of 5 total sprints)
 - 2 LLM models benchmarked (Gemini, Nemotron)  
 - 4 data formats compared (CSV, HTML, JSON, XML)  
 - 2,935 total tests conducted  
@@ -328,25 +306,14 @@ LLM_Benchmark_Team_Project_2026/
 - April 2026: Sprint 1 - Data Preparation
 - May 2026: Sprint 2 - Format Comparison
 - June 2026: Sprint 3 - RAG Optimization
+- July 2026: Sprint 4 - Planning Phase
+- August 2026: Sprint 5 - Planning Phase
 
-Total Duration: 3 months  
-Status: All sprints complete
-
----
-
-## Future Work
-
-1. Model Expansion: Test GPT-4, Claude, Llama models
-2. Format Extension: Test more formats (Parquet, Avro, Protocol Buffers)
-3. Scale Up: Test on full UDA-QA dataset (29,590 Q&A)
-4. Fine-Tuning: Train custom models on domain data
-5. Hybrid Approaches: Combine RAG with fine-tuning
-6. Real-World Deployment: Production testing and monitoring
+Total Project Duration: 5 months (April - August 2026)  
+Completed Sprints: 3/5
 
 ---
 
-**Last Updated:** June 30, 2026  
-**Project Status:** Complete  
 **Repository:** https://github.com/Nishitsuthar/LLM_Benchmark_Team_Project_2026
 
 ---
