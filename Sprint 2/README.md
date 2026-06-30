@@ -69,121 +69,6 @@ Result: All formats achieved 80% when tested individually.
 
 ---
 
-## Key Findings
-
-### 1. Context Window Impact
-- Batch Mode: Format structure affects performance (JSON > HTML > XML > CSV)
-- Individual Mode: Format differences disappear (all reach 80%)
-- Insight: Large context windows (all data + 20 questions) favor structured formats
-
-### 2. Format Characteristics
-
-JSON (Best in Batch):
-- Self-documenting (key-value pairs)
-- Hierarchical structure natural for LLMs
-- Easy to parse relationships
-
-HTML:
-- Visual structure hints (tables, headers)
-- More verbose than JSON
-
-XML:
-- Hierarchical like JSON
-- More verbose, harder to parse
-
-CSV (Worst in Batch):
-- Minimal structure (just commas)
-- No relationship hints
-- Most compact format
-
-### 3. Question Difficulty
-
-Medium Questions: 67-100% accuracy (easier)
-- Simple filtering, counting
-- Single table queries
-
-Hard Questions: 57-86% accuracy
-- Multi-table joins
-- Aggregations with conditions
-
-Extremely Hard: 43-57% accuracy (hardest)
-- Complex multi-hop reasoning
-- Multiple aggregations
-- Edge case handling
-
-### 4. Error Analysis
-
-Common Errors:
-- Stale metadata (old column values)
-- Complex filtering mistakes
-- Multi-table join errors
-- Calculation errors
-
-Empty Responses:
-- Only 1/80 tests (CSV batch mode)
-- 99% response rate overall
-
----
-
-## File Structure
-
-```
-Sprint 2/
-├── README.md (this file)
-│
-├── synthetic_data_from_LLM/
-│   ├── albums.csv
-│   ├── artists.csv
-│   ├── tracks.csv
-│   ├── streams.csv
-│   ├── playlists.csv
-│   ├── royalties.csv
-│   ├── awards.csv
-│   ├── collaborations.csv
-│   ├── charts.csv
-│   ├── track_features.csv
-│   ├── record_labels.csv
-│   └── anomalies.json
-│
-├── synthetic_data_from_script/
-│   └── (alternative data generation approach)
-│
-├── Visualizations/
-│   ├── benchmark_comparison_graph.png
-│   ├── comprehensive_benchmark_analysis.png
-│   ├── difficulty_distribution.png
-│   ├── create_benchmark_visualization.py
-│   ├── create_comprehensive_visualization.py
-│   └── create_difficulty_visualization.py
-│
-├── Sprint2_Presentation_Nishit_Suthar.pptx
-└── Individual_Work_Report_Nishit_Suthar_Sprint 2.docx
-```
-
----
-
-## Lessons Learned
-
-### Technical Insights
-1. Format matters in batch mode - JSON 45% better than CSV
-2. Individual mode eliminates format bias - All formats converge to 80%
-3. Context window size is critical - Smaller contexts benefit all formats
-4. Gemini handles tabular data well - 80% baseline without training
-
-### Methodological Insights
-1. Ground truth essential - NeonDB validation critical
-2. Question difficulty calibration - Need balanced distribution
-3. Stale metadata issue - Data sampling must preserve currency
-4. Multiple test modes needed - Batch vs individual reveals different patterns
-
-### Practical Recommendations
-1. For batch processing: Use JSON
-2. For individual queries: Any format works (80% ceiling)
-3. For production: Balance format choice with existing infrastructure
-4. For future work: Test with examples (few-shot) to break 80% ceiling
-
----
-
 ## Methodology
 
 ### Phase 1: Batch Mode Testing
@@ -206,26 +91,37 @@ Sprint 2/
 
 ---
 
-## Impact & Next Steps
+## Key Results
 
-### Impact on Project
-- Established 80% baseline for Gemini on tabular data
-- Proved JSON best for batch processing
-- Showed format-agnostic performance in individual mode
-- Identified 80% ceiling for zero-shot prompting
+### Batch Mode Results
+- JSON: 80% accuracy (Best)
+- HTML: 70% accuracy
+- XML: 65% accuracy
+- CSV: 55% accuracy
 
-### Recommendations for Sprint 3
+### Individual Mode Results
+- All Formats: 80% accuracy (format-agnostic)
+
+### Key Findings
+- JSON 45% better than CSV in batch mode
+- Individual mode eliminates format differences
+- 80% accuracy ceiling for zero-shot prompting
+- Context window size critical for performance
+
+---
+
+## Key Learnings
+1. Format matters in batch mode - JSON 45% better than CSV
+2. Individual mode eliminates format bias - All formats converge to 80%
+3. Context window size is critical - Smaller contexts benefit all formats
+4. Ground truth validation essential - NeonDB critical for accuracy verification
+5. Multiple test modes needed - Batch vs individual reveals different patterns
+
+---
+
+## Next Steps
+
 1. Test RAG (Retrieval Augmented Generation) on unstructured documents
 2. Try few-shot prompting to break 80% ceiling
 3. Test different LLM models (GPT-4, Claude, Nemotron)
 4. Focus on complex financial documents
-
----
-
-## Key Achievements
-
-- Comprehensive 4-format benchmark (80 total tests)  
-- Identified JSON as optimal batch format  
-- Discovered format-agnostic 80% ceiling  
-- Established baseline for future comparisons  
-- Created reusable test methodology

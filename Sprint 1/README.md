@@ -67,41 +67,13 @@ Unstructured Formats:
 
 ---
 
-## Results
+## Key Results
 
-### Dataset Statistics
 - Total Movies: 870 records
 - Format Coverage: 100% (all movies in all formats)
 - Data Quality: Validated through adversarial review
 - Missing Data: Less than 5% across all fields
-
-### Key Achievements
-- Successfully sampled representative subset  
-- Maintained referential integrity across formats  
-- Generated multiple test formats  
-- Validated data quality  
-- Created reusable sampling scripts  
-
----
-
-## File Structure
-
-```
-Sprint 1/
-├── README.md (this file)
-├── Sampled_870_Movies.csv
-├── Sampled_870_Movies.xlsx
-├── Final_Movies_With_Cast.xlsx
-├── Unstructured_870_Movies.txt
-├── Unstructured_870_Movies_v2.txt
-├── Adversarial_10_Records_Review.txt
-├── sample_movies.py
-├── merge_cast.py
-├── create_text_file.py
-├── unstructured_output.txt
-├── Response.md
-└── Individual_Work_Report_Nishit_Suthar_Sprint 1.docx
-```
+- Successfully maintained referential integrity across formats
 
 ---
 
@@ -117,7 +89,6 @@ Sprint 1/
 
 ## Next Steps
 
-Sprint 1 data serves as foundation for:
 - Sprint 2: LLM benchmark testing on structured data
 - Sprint 3: Advanced RAG testing on unstructured documents
 - Future: Expansion to larger datasets
