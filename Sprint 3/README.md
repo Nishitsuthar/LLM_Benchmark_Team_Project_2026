@@ -1,83 +1,83 @@
 # Sprint 3: RAG Optimization on UDA-Benchmark
 
 **Duration:** June 2026  
-**Status:** ✅ Complete  
+**Status:** Complete  
 **Team Member:** Nishit Suthar
 
 ---
 
-## 📋 Objective
+## Objective
 
-Optimize **NVIDIA Nemotron-3 Ultra 550B** performance on real-world document analysis using **Retrieval Augmented Generation (RAG)** and advanced prompting techniques on the UDA-Benchmark dataset.
-
----
-
-## 🎯 Goals
-
-1. **Establish Baseline:** Test Nemotron on real financial/academic PDFs
-2. **Optimize RAG Pipeline:** Tune hyperparameters (TOP_K, CHUNK_SIZE)
-3. **Advanced Prompting:** Test Chain-of-Thought, Few-shot, Self-consistency
-4. **Achieve Target:** Reduce empty responses to <12%
+Optimize NVIDIA Nemotron-3 Ultra 550B performance on real-world document analysis using Retrieval Augmented Generation (RAG) and advanced prompting techniques on the UDA-Benchmark dataset.
 
 ---
 
-## 📊 Experiment Phases & Results
+## Goals
+
+1. Establish Baseline: Test Nemotron on real financial/academic PDFs
+2. Optimize RAG Pipeline: Tune hyperparameters (TOP_K, CHUNK_SIZE)
+3. Advanced Prompting: Test Chain-of-Thought, Few-shot, Self-consistency
+4. Achieve Target: Reduce empty responses to <12%
+
+---
+
+## Experiment Phases & Results
 
 ### Phase 1: Baseline Evaluation
-**Status:** ✅ Complete  
-**Result:** 35% empty response rate
+Status: Complete  
+Result: 35% empty response rate
 
-- **Scope:** 312 Q&A pairs across 6 datasets
-- **Method:** Zero-shot prompts, default parameters
-- **Finding:** Poor performance - significant optimization needed
+- Scope: 312 Q&A pairs across 6 datasets
+- Method: Zero-shot prompts, default parameters
+- Finding: Poor performance - significant optimization needed
 
 ---
 
 ### Phase 2: Hyperparameter Optimization
-**Status:** ✅ Complete  
-**Result:** 16.7% empty response rate (↓18.3% improvement)
+Status: Complete  
+Result: 16.7% empty response rate (18.3% improvement)
 
-**Variables Tested:**
-- **TOP_K:** 3, 5, 10 chunks → **Optimal: 10**
-- **CHUNK_SIZE:** 500, 1000, 1500 characters → **Optimal: 1500**
+Variables Tested:
+- TOP_K: 3, 5, 10 chunks - Optimal: 10
+- CHUNK_SIZE: 500, 1000, 1500 characters - Optimal: 1500
 
-**Key Insight:** Retrieving more, larger chunks significantly improves accuracy
+Key Insight: Retrieving more, larger chunks significantly improves accuracy
 
 ---
 
 ### Phase 3A: PDFPlumber Extraction
-**Status:** ❌ ABANDONED  
-**Result:** No significant improvement
+Status: ABANDONED  
+Result: No significant improvement
 
-- **Goal:** Better PDF text extraction vs PyPDF2
-- **Finding:** Added complexity without performance gain
-- **Decision:** Stick with PyPDF2
+- Goal: Better PDF text extraction vs PyPDF2
+- Finding: Added complexity without performance gain
+- Decision: Stick with PyPDF2
 
 ---
 
 ### Phase 3B: FinBERT Domain Embeddings
-**Status:** ❌ FAILED  
-**Result:** 14.4% empty (REGRESSION from 12.2%)
+Status: FAILED  
+Result: 14.4% empty (REGRESSION from 12.2%)
 
-- **Goal:** Domain-specific financial embeddings
-- **Model Used:** `yiyanghkust/finbert-tone`
-- **Problem:** Sentiment model (not retrieval model)
-- **Finding:** Domain-specific ≠ Always better
-- **Lesson:** Match model purpose to use case
+- Goal: Domain-specific financial embeddings
+- Model Used: `yiyanghkust/finbert-tone`
+- Problem: Sentiment model (not retrieval model)
+- Finding: Domain-specific not always better
+- Lesson: Match model purpose to use case
 
 ---
 
-### Phase 3C: Prompt Optimization ⭐
-**Status:** ✅ COMPLETE (FINAL)  
-**Result:** 12.2% empty response rate (↓4.5% from Phase 2)
+### Phase 3C: Prompt Optimization
+Status: COMPLETE (FINAL)  
+Result: 12.2% empty response rate (4.5% improvement from Phase 2)
 
-**Overall Performance:**
-- Success Rate: **87.8%** (274/312 questions answered)
-- Empty Rate: **12.2%** (38/312 questions)
+Overall Performance:
+- Success Rate: 87.8% (274/312 questions answered)
+- Empty Rate: 12.2% (38/312 questions)
 - Target: <12% (missed by 0.2% / 2 questions)
-- **Total Improvement:** 65% reduction from baseline (35% → 12.2%)
+- Total Improvement: 65% reduction from baseline (35% to 12.2%)
 
-**Prompting Techniques Tested:**
+Prompting Techniques Tested:
 1. Zero-shot baseline
 2. Chain-of-Thought (CoT)
 3. Few-shot with examples
@@ -86,19 +86,19 @@ Optimize **NVIDIA Nemotron-3 Ultra 550B** performance on real-world document ana
 
 ---
 
-## 📈 Final Results by Dataset
+## Final Results by Dataset
 
 | Dataset | Domain | Q&A | Empty | % Empty | Best Prompt | Status |
 |---------|--------|-----|-------|---------|-------------|--------|
-| **NqText** | Wikipedia | 71 | 3 | **4.2%** | CoT | ✅ Excellent |
-| **FetaTab** | Wiki Tables | 32 | 2 | **6.2%** | CoT | ✅ Excellent |
-| **TatHybrid** | Finance Tables | 162 | 20 | **12.3%** | Few-shot | ⚠️ At target |
-| **FinHybrid** | Finance Reports | 47 | 13 | **27.7%** | CoT | ❌ Challenging |
-| **TOTAL** | **All** | **312** | **38** | **12.2%** | Mixed | ⚠️ Close |
+| NqText | Wikipedia | 71 | 3 | 4.2% | CoT | Excellent |
+| FetaTab | Wiki Tables | 32 | 2 | 6.2% | CoT | Excellent |
+| TatHybrid | Finance Tables | 162 | 20 | 12.3% | Few-shot | At target |
+| FinHybrid | Finance Reports | 47 | 13 | 27.7% | CoT | Challenging |
+| TOTAL | All | 312 | 38 | 12.2% | Mixed | Close |
 
 ---
 
-## 🔧 Optimal Configuration
+## Optimal Configuration
 
 ```python
 # RAG Parameters
@@ -123,47 +123,30 @@ PROMPTS = {
 
 ---
 
-## 💰 Cost Analysis
+## Key Learnings
 
-| Phase | Questions | Cost | Result |
-|-------|-----------|------|--------|
-| Phase 1 | 312 | $15 | 35% empty |
-| Phase 2 | 936 (312×3) | $45 | 16.7% empty |
-| Phase 3A-C | 1,560 (312×5) | $75 | 12.2% empty |
-| Phase 3B | 47 | $3 | 14.4% empty (failed) |
-| **Total** | **2,855** | **$138** | **87.8% success** |
+### What Worked
+1. Hyperparameter tuning: TOP_K=10 + CHUNK_SIZE=1500 gave 18.3% improvement
+2. Chain-of-Thought prompting: Best for complex reasoning (NqText, FetaTab, FinHybrid)
+3. Few-shot prompting: Best for structured data extraction (TatHybrid)
+4. Dataset-specific prompts: No one-size-fits-all solution
+5. Generic embeddings: all-MiniLM-L6-v2 outperformed domain-specific
 
-**Efficiency:**
-- Cost per question: **$0.048**
-- Cost per successful answer: **$0.50**
-- Development time: **15 hours**
+### What Didn't Work
+1. FinBERT embeddings: Wrong model type (sentiment vs retrieval)
+2. PDFPlumber extraction: Complexity without benefit
+3. Self-consistency: No significant improvement vs CoT
+4. One prompt for all: Different datasets need different strategies
 
----
-
-## 🎓 Key Learnings
-
-### What Worked ✅
-1. **Hyperparameter tuning:** TOP_K=10 + CHUNK_SIZE=1500 gave 18.3% improvement
-2. **Chain-of-Thought prompting:** Best for complex reasoning (NqText, FetaTab, FinHybrid)
-3. **Few-shot prompting:** Best for structured data extraction (TatHybrid)
-4. **Dataset-specific prompts:** No one-size-fits-all solution
-5. **Generic embeddings:** all-MiniLM-L6-v2 outperformed domain-specific
-
-### What Didn't Work ❌
-1. **FinBERT embeddings:** Wrong model type (sentiment vs retrieval)
-2. **PDFPlumber extraction:** Complexity without benefit
-3. **Self-consistency:** No significant improvement vs CoT
-4. **One prompt for all:** Different datasets need different strategies
-
-### Surprises 🤔
-1. **Generic > Domain-specific:** General embeddings beat financial-specific
-2. **Format differences matter:** FinHybrid 4× harder than NqText
-3. **Diminishing returns:** Phase 2→3 only gained 4.5% for similar effort
-4. **Close to ceiling:** 12.2% likely near model's practical limit
+### Surprises
+1. Generic > Domain-specific: General embeddings beat financial-specific
+2. Format differences matter: FinHybrid 4x harder than NqText
+3. Diminishing returns: Phase 2 to 3 only gained 4.5% for similar effort
+4. Close to ceiling: 12.2% likely near model's practical limit
 
 ---
 
-## 📁 Project Structure
+## File Structure
 
 ```
 Sprint 3/
@@ -215,7 +198,7 @@ Sprint 3/
 
 ---
 
-## 🚀 Custom Skills
+## Custom Skills
 
 Six custom skills created in `.claude/skills/` for easy navigation:
 
@@ -230,49 +213,49 @@ Six custom skills created in `.claude/skills/` for easy navigation:
 
 ---
 
-## 📊 Presentation Materials
+## Presentation Materials
 
-**7 High-Resolution Charts (300 DPI):**
+7 High-Resolution Charts (300 DPI):
 1. Overall performance by dataset
 2. Empty rate comparison vs target
-3. Phase progression (35% → 12.2%)
+3. Phase progression (35% to 12.2%)
 4. Prompt strategy comparison
 5. Hyperparameter tuning impact
 6. Phase 3B failure analysis
 7. Executive dashboard
 
-**Location:** `UDA-Benchmark/presentation_visuals/`
+Location: `UDA-Benchmark/presentation_visuals/`
 
 ---
 
-## 🏆 Key Achievements
+## Key Achievements
 
-✅ **87.8% success rate** (274/312 questions answered)  
-✅ **65% reduction** in empty responses (35% → 12.2%)  
-✅ **Optimal RAG configuration** identified and documented  
-✅ **Dataset-specific prompts** discovered (CoT vs Few-shot)  
-✅ **Comprehensive documentation** created  
-✅ **7 presentation visuals** generated  
-✅ **6 custom skills** for navigation  
-✅ **Clean, organized structure** ready for sharing  
+- 87.8% success rate (274/312 questions answered)  
+- 65% reduction in empty responses (35% to 12.2%)  
+- Optimal RAG configuration identified and documented  
+- Dataset-specific prompts discovered (CoT vs Few-shot)  
+- Comprehensive documentation created  
+- 7 presentation visuals generated  
+- 6 custom skills for navigation  
+- Clean, organized structure ready for sharing  
 
 ---
 
-## 🔍 Comparison with Sprint 2
+## Comparison with Sprint 2
 
 | Metric | Sprint 2 (Gemini) | Sprint 3 (Nemotron) |
 |--------|------------------|---------------------|
-| **Task** | Direct table analysis | RAG on PDFs |
-| **Data** | Clean CSV/JSON | Raw financial reports |
-| **Best Result** | 80% accuracy | 87.8% success rate |
-| **Challenge** | Stale metadata | Context retrieval |
-| **Format** | Structured tables | Unstructured documents |
+| Task | Direct table analysis | RAG on PDFs |
+| Data | Clean CSV/JSON | Raw financial reports |
+| Best Result | 80% accuracy | 87.8% success rate |
+| Challenge | Stale metadata | Context retrieval |
+| Format | Structured tables | Unstructured documents |
 
-**Insight:** RAG on real documents (87.8%) outperformed direct table analysis (80%) when optimized!
+Insight: RAG on real documents (87.8%) outperformed direct table analysis (80%) when optimized.
 
 ---
 
-## 📞 Documentation
+## Documentation
 
 **Main Results:** `documentation/2_final_results/FINAL_RESULTS_PHASE3C.md`  
 **Presentation Guide:** `documentation/3_presentation/PRESENTATION_GUIDE.md`  
@@ -280,25 +263,24 @@ Six custom skills created in `.claude/skills/` for easy navigation:
 
 ---
 
-## 🎯 Future Work
+## Future Work
 
-1. **Break 12% ceiling:** Try hybrid search (semantic + keyword)
-2. **Test other models:** GPT-4, Claude, Gemini for comparison
-3. **Full dataset:** Scale to all 29,590 Q&A pairs
-4. **Fine-tuning:** Train embeddings on domain data
-5. **Query expansion:** Rephrase questions multiple ways
+1. Break 12% ceiling: Try hybrid search (semantic + keyword)
+2. Test other models: GPT-4, Claude, Gemini for comparison
+3. Full dataset: Scale to all 29,590 Q&A pairs
+4. Fine-tuning: Train embeddings on domain data
+5. Query expansion: Rephrase questions multiple ways
 
 ---
 
 **Created:** June 2026  
 **Last Updated:** June 30, 2026  
-**Status:** Complete - Production-ready RAG baseline established
+**Status:** Complete
 
 ---
 
-**🎉 Sprint 3 Highlights:**
-- Reduced empty responses by **65%**
-- Achieved **87.8% success rate**
-- Cost-effective: **$0.048 per question**
-- Comprehensive: **2,855 test questions**
-- Professional: **Clean, documented, presentation-ready**
+Sprint 3 Highlights:
+- Reduced empty responses by 65%
+- Achieved 87.8% success rate
+- Comprehensive testing: 2,855 test questions
+- Professional: Clean, documented, presentation-ready

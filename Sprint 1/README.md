@@ -1,27 +1,27 @@
 # Sprint 1: Data Preparation & Sampling
 
 **Duration:** April 2026  
-**Status:** ✅ Complete  
+**Status:** Complete  
 **Team Member:** Nishit Suthar
 
 ---
 
-## 📋 Objective
+## Objective
 
 Prepare and sample movie dataset for LLM benchmarking by creating both structured and unstructured data formats for testing LLM capabilities in data processing and analysis.
 
 ---
 
-## 🎯 Goals
+## Goals
 
-1. **Data Sampling:** Create a manageable subset from large movie dataset
-2. **Format Conversion:** Generate multiple data formats (CSV, Excel, Text)
-3. **Data Enrichment:** Merge cast information with movie data
-4. **Quality Validation:** Ensure data integrity and completeness
+1. Data Sampling: Create a manageable subset from large movie dataset
+2. Format Conversion: Generate multiple data formats (CSV, Excel, Text)
+3. Data Enrichment: Merge cast information with movie data
+4. Quality Validation: Ensure data integrity and completeness
 
 ---
 
-## 📊 Deliverables
+## Deliverables
 
 ### Input Data
 - Full movies dataset with comprehensive metadata
@@ -44,12 +44,12 @@ Prepare and sample movie dataset for LLM benchmarking by creating both structure
 
 ---
 
-## 🔬 Methodology
+## Methodology
 
 ### 1. Data Sampling
-- **Sample Size:** 870 movies
-- **Sampling Method:** Random stratified sampling
-- **Criteria:** Diverse genres, release years, ratings
+- Sample Size: 870 movies
+- Sampling Method: Random stratified sampling
+- Criteria: Diverse genres, release years, ratings
 
 ### 2. Data Enrichment
 - Merged cast and crew information
@@ -57,34 +57,34 @@ Prepare and sample movie dataset for LLM benchmarking by creating both structure
 - Enriched with financial data (budget, revenue)
 
 ### 3. Format Generation
-**Structured Formats:**
+Structured Formats:
 - CSV for database import
 - Excel for human review
 
-**Unstructured Formats:**
+Unstructured Formats:
 - Natural language descriptions
 - Narrative style text for LLM testing
 
 ---
 
-## 📈 Results
+## Results
 
 ### Dataset Statistics
-- **Total Movies:** 870 records
-- **Format Coverage:** 100% (all movies in all formats)
-- **Data Quality:** Validated through adversarial review
-- **Missing Data:** < 5% across all fields
+- Total Movies: 870 records
+- Format Coverage: 100% (all movies in all formats)
+- Data Quality: Validated through adversarial review
+- Missing Data: Less than 5% across all fields
 
 ### Key Achievements
-✅ Successfully sampled representative subset  
-✅ Maintained referential integrity across formats  
-✅ Generated multiple test formats  
-✅ Validated data quality  
-✅ Created reusable sampling scripts  
+- Successfully sampled representative subset  
+- Maintained referential integrity across formats  
+- Generated multiple test formats  
+- Validated data quality  
+- Created reusable sampling scripts  
 
 ---
 
-## 📁 File Structure
+## File Structure
 
 ```
 Sprint 1/
@@ -105,26 +105,26 @@ Sprint 1/
 
 ---
 
-## 🔑 Key Learnings
+## Key Learnings
 
-1. **Sampling Strategy:** Random sampling maintains dataset characteristics
-2. **Format Diversity:** Multiple formats essential for comprehensive LLM testing
-3. **Data Quality:** Validation crucial before benchmark testing
-4. **Referential Integrity:** Cast merging requires careful handling
-5. **Unstructured Generation:** Natural language format most challenging
+1. Sampling Strategy: Random sampling maintains dataset characteristics
+2. Format Diversity: Multiple formats essential for comprehensive LLM testing
+3. Data Quality: Validation crucial before benchmark testing
+4. Referential Integrity: Cast merging requires careful handling
+5. Unstructured Generation: Natural language format most challenging
 
 ---
 
-## 🚀 Next Steps
+## Next Steps
 
 Sprint 1 data serves as foundation for:
-- **Sprint 2:** LLM benchmark testing on structured data
-- **Sprint 3:** Advanced RAG testing on unstructured documents
+- Sprint 2: LLM benchmark testing on structured data
+- Sprint 3: Advanced RAG testing on unstructured documents
 - Future: Expansion to larger datasets
 
 ---
 
-## 📞 Documentation
+## Documentation
 
 **Detailed Report:** `Individual_Work_Report_Nishit_Suthar_Sprint 1.docx`
 
