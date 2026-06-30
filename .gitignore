@@ -1,1 +1,25 @@
+# OS files
 **/.DS_Store
+
+# Ignore all markdown files
+*.md
+
+# Except README files
+!README.md
+!**/README.md
+
+# Claude context and cache
+.claude_context/
+**/.claude_context/
+
+# Python cache
+__pycache__/
+*.pyc
+*.pyo
+
+# Jupyter notebook checkpoints
+.ipynb_checkpoints/
+
+# ChromaDB database
+chroma_db/
+*.chroma
