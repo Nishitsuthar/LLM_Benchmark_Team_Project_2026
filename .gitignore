@@ -8,7 +8,8 @@
 !README.md
 !**/README.md
 
-# Claude context and cache
+# Claude context, cache, and configuration
+.claude/
 .claude_context/
 **/.claude_context/
 
