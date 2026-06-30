@@ -1,191 +1,362 @@
-# LLM Data Extraction Benchmark: Structured vs. Unstructured Data
+# LLM Benchmark Team Project 2026
 
-This repository contains a benchmark test designed to evaluate the ability of Large Language Models (LLMs) to accurately extract and compute data from completely unstructured text files. 
-
-The dataset consists of 1,000 random movies (stratified by year and rating) from the IMDb database, formatted into natural language paragraphs. Below are the 5 benchmark questions, the PostgreSQL queries used to establish the "ground truth" answer key from the structured CSV, and the results.
+**Project Duration:** April - June 2026  
+**Team:** LLM Benchmark Research Team  
+**Team Member:** Nishit Suthar  
+**GitHub:** https://github.com/Nishitsuthar/LLM_Benchmark_Team_Project_2026
 
 ---
 
-### 1. The "Frequent Collaborators" Benchmark (Multi-Entity Co-occurrence)
+## 📋 Project Overview
 
-**Question:** Which pair of actors or directors appear together in the most movies in this dataset? Name the pair and list the titles of the movies they collaborated on.
+Comprehensive benchmarking study evaluating Large Language Model (LLM) performance across multiple data formats, document types, and optimization techniques. The project spans three sprints, progressing from data preparation through structured data benchmarking to advanced RAG optimization.
 
-#### The SQL Query
-```sql
-WITH unnested_cast AS (
-    SELECT DISTINCT tconst, primaryTitle, TRIM(person) AS person_name
-    FROM benchmark_movies, 
-    unnest(string_to_array(Cast_and_Crew, ',')) AS person
-    WHERE Cast_and_Crew != 'No Cast Data'
-),
-pairs AS (
-    SELECT 
-        a.person_name AS person1, 
-        b.person_name AS person2, 
-        COUNT(*) as movie_count, 
-        STRING_AGG(a.primaryTitle, ', ') as movies
-    FROM unnested_cast a
-    JOIN unnested_cast b 
-      ON a.tconst = b.tconst AND a.person_name < b.person_name
-    GROUP BY 1, 2
-)
-SELECT person1, person2, movie_count, movies
-FROM pairs
-ORDER BY movie_count DESC
-LIMIT 1;
+---
+
+## 🎯 Project Objectives
+
+1. **Establish LLM Baselines:** Measure LLM performance on tabular and document analysis
+2. **Format Comparison:** Identify optimal data formats for LLM processing
+3. **RAG Optimization:** Optimize Retrieval Augmented Generation pipelines
+4. **Methodology Development:** Create reusable benchmarking frameworks
+5. **Practical Insights:** Provide actionable recommendations for LLM deployment
+
+---
+
+## 📈 Quick Progress Summary
+
+| Sprint | Focus | Status | Key Metric | Achievement |
+|--------|-------|--------|------------|-------------|
+| **[Sprint 1](#sprint-1-data-preparation--sampling)** | Data Preparation | ✅ Complete | 870 movies | Sampled & formatted |
+| **[Sprint 2](#sprint-2-llm-format-comparison-benchmark)** | Format Benchmark | ✅ Complete | 80% accuracy | JSON best format |
+| **[Sprint 3](#sprint-3-rag-optimization-on-uda-benchmark)** | RAG Optimization | ✅ Complete | 87.8% success | 65% improvement |
+
+**Overall:** 3/3 Sprints Complete | All Objectives Met | Production-Ready Results
+
+---
+
+## 🚀 Sprint Summaries
+
+### Sprint 1: Data Preparation & Sampling
+
+**📁 Directory:** [`Sprint 1/`](./Sprint%201/) | **[Full README](./Sprint%201/README.md)**
+
+**Objective:** Prepare movie dataset for LLM benchmarking
+
+**Key Deliverables:**
+- 870 sampled movie records
+- Multiple formats: CSV, Excel, Unstructured Text
+- Cast/crew enrichment
+- Quality validation
+
+**Outputs:**
+- `Sampled_870_Movies.csv` - Structured data
+- `Final_Movies_With_Cast.xlsx` - Enriched dataset  
+- `Unstructured_870_Movies.txt` - Natural language format
+- Python sampling and merging scripts
+
+**Status:** ✅ Complete
+
+---
+
+### Sprint 2: LLM Format Comparison Benchmark
+
+**📁 Directory:** [`Sprint 2/`](./Sprint%202/) | **[Full README](./Sprint%202/README.md)**
+
+**Objective:** Benchmark Google Gemini 3.1 Pro Extended across data formats
+
+**Test Configuration:**
+- **Model:** Google Gemini 3.1 Pro Extended
+- **Formats:** CSV, HTML, JSON, XML
+- **Questions:** 20 (Medium, Hard, Extremely Hard)
+- **Modes:** Batch (all questions) + Individual (one at a time)
+
+**Key Results:**
+
+**Batch Mode:**
+- **JSON:** 80% accuracy ✅ (WINNER)
+- **HTML:** 70% accuracy
+- **XML:** 65% accuracy  
+- **CSV:** 55% accuracy
+
+**Individual Mode:**
+- **All Formats:** 80% accuracy (format-agnostic ceiling)
+
+**Key Findings:**
+1. JSON 45% better than CSV in batch mode
+2. Individual mode eliminates format differences
+3. 80% accuracy ceiling for zero-shot prompting
+4. Context window size critical for performance
+
+**Visualizations:**
+- Benchmark comparison charts
+- Difficulty distribution analysis
+- Format performance heatmaps
+
+**Status:** ✅ Complete
+
+---
+
+### Sprint 3: RAG Optimization on UDA-Benchmark
+
+**📁 Directory:** [`Sprint 3/`](./Sprint%203/) | **[Full README](./Sprint%203/README.md)**
+
+**Objective:** Optimize NVIDIA Nemotron-3 Ultra 550B on real-world documents using RAG
+
+**Test Configuration:**
+- **Model:** NVIDIA Nemotron-3 Ultra 550B (via Together AI)
+- **Benchmark:** UDA-QA (financial reports, academic papers, Wikipedia)
+- **Scope:** 312 Q&A pairs across 6 datasets
+- **Optimization:** 5 phases testing hyperparameters and prompts
+
+**Experiment Phases:**
+
+| Phase | Focus | Result | Status |
+|-------|-------|--------|--------|
+| **Phase 1** | Baseline | 35% empty | ✅ Complete |
+| **Phase 2** | Hyperparameters | 16.7% empty (↓18.3%) | ✅ Complete |
+| **Phase 3A** | PDFPlumber | No improvement | ❌ Abandoned |
+| **Phase 3B** | FinBERT | 14.4% empty (regression) | ❌ Failed |
+| **Phase 3C** | Prompts | **12.2% empty** (↓4.5%) | ✅ FINAL |
+
+**Final Results:**
+- **Success Rate:** 87.8% (274/312 questions)
+- **Empty Rate:** 12.2% (38/312 questions)
+- **Improvement:** 65% reduction from baseline
+- **Cost:** $0.048 per question
+
+**Performance by Dataset:**
+- NqText (Wikipedia): 4.2% empty ✅
+- FetaTab (Tables): 6.2% empty ✅
+- TatHybrid (Finance): 12.3% empty ⚠️
+- FinHybrid (Complex): 27.7% empty ❌
+
+**Optimal Configuration:**
+```python
+TOP_K = 10                    # Retrieve 10 chunks
+CHUNK_SIZE = 1500             # 1500 characters per chunk
+EMBEDDING = "all-MiniLM-L6-v2"  # Generic embeddings
+PROMPTS = {
+    "complex_reasoning": "Chain-of-Thought",
+    "extraction_tasks": "Few-shot with examples"
+}
 ```
 
-#### Query 1 Result
-| person1 | person2 | movie_count | movies |
-| :--- | :--- | :--- | :--- |
-| Deborah Aquila (casting_director) | Tricia Wood (casting_director) | 7 | The A-Team, Good Boy, Evan Almighty, Devil's Knot, R.I.P.D., The Spirit, Red State |
+**Key Learnings:**
+1. Hyperparameter tuning crucial (18.3% improvement)
+2. Dataset-specific prompts essential (no universal solution)
+3. Generic embeddings beat domain-specific (FinBERT failed)
+4. Diminishing returns beyond Phase 2
+
+**Deliverables:**
+- 7 presentation visuals (300 DPI)
+- 6 custom Claude Code skills
+- Comprehensive documentation
+- Clean, organized structure
+
+**Status:** ✅ Complete
 
 ---
 
-### 2. The "Conditional Average" Benchmark (Running Mathematics)
+## 📊 Project-Wide Metrics
 
-**Question:** Calculate the exact average user rating for all movies categorized as 'Comedy' that were released strictly between the years 2000 and 2005.
+### Models Tested
+1. **Google Gemini 3.1 Pro Extended** (Sprint 2)
+2. **NVIDIA Nemotron-3 Ultra 550B** (Sprint 3)
 
-#### The SQL Query
-```sql
-SELECT 
-    ROUND(AVG(averageRating), 2) AS exact_avg_rating,
-    COUNT(*) as total_comedies_found
-FROM benchmark_movies
-WHERE genres LIKE '%Comedy%' 
-  AND startYear BETWEEN 2000 AND 2005;
+### Data Coverage
+- **Structured Data:** 567 records, 12 tables (Sprint 2)
+- **Unstructured Documents:** 312 Q&A, 6 datasets (Sprint 3)
+- **Total Test Cases:** 80 (Sprint 2) + 2,855 (Sprint 3) = 2,935
+
+### Cost Efficiency
+- **Sprint 2:** ~$10 (80 tests)
+- **Sprint 3:** ~$138 (2,855 tests)
+- **Total:** ~$148 for comprehensive benchmarking
+
+### Performance Achievements
+- **Structured Data:** 80% accuracy (JSON format)
+- **Document RAG:** 87.8% success rate (optimized)
+- **Improvement:** 65% reduction in failures (Sprint 3)
+
+---
+
+## 🔑 Key Insights Across Sprints
+
+### 1. Format Matters (Sprint 2)
+- JSON superior for batch processing (+45% vs CSV)
+- Format differences vanish in individual mode
+- Context window size determines format impact
+
+### 2. RAG Optimization Critical (Sprint 3)
+- Hyperparameters: 18.3% improvement
+- Prompting strategies: 4.5% improvement
+- Total optimization: 65% improvement
+
+### 3. Model-Specific Behavior
+- **Gemini:** Strong on structured data (80% ceiling)
+- **Nemotron:** Excellent on documents with RAG (87.8%)
+- Both benefit from optimization
+
+### 4. Practical Recommendations
+- **For tabular data:** Use JSON, test individually
+- **For documents:** Optimize RAG (TOP_K=10, CHUNK_SIZE=1500)
+- **For prompts:** Match strategy to task (CoT vs Few-shot)
+- **For embeddings:** Start with generic, test domain-specific
+
+---
+
+## 📁 Repository Structure
+
+```
+LLM_Benchmark_Team_Project_2026/
+├── README.md (this file)
+│
+├── Sprint 1/ (Data Preparation)
+│   ├── README.md
+│   ├── Sampled_870_Movies.csv
+│   ├── Final_Movies_With_Cast.xlsx
+│   ├── Unstructured_870_Movies.txt
+│   └── Scripts (sample_movies.py, merge_cast.py, etc.)
+│
+├── Sprint 2/ (Format Comparison)
+│   ├── README.md
+│   ├── synthetic_data_from_LLM/ (12 CSV tables)
+│   ├── Visualizations/
+│   └── Sprint2_Presentation_Nishit_Suthar.pptx
+│
+├── Sprint 3/ (RAG Optimization)
+│   ├── README.md
+│   ├── documentation/ (planning, results, presentation)
+│   ├── notebooks/ (demos + archives)
+│   ├── scripts/ (utilities)
+│   ├── results/ (archived data)
+│   └── UDA-Benchmark/
+│       ├── presentation_visuals/ (7 charts)
+│       └── experiments/ (notebooks + results)
+│
+└── .claude/
+    └── skills/ (6 custom Sprint 3 skills)
 ```
 
-#### Query 2 Result
-| exact_avg_rating | total_comedies_found |
-| :--- | :--- |
-| 5.99 | 101 |
+---
+
+## 🎓 Academic Contributions
+
+### Methodologies Developed
+1. **Multi-format LLM benchmarking** (Sprint 2)
+2. **Systematic RAG optimization** (Sprint 3)
+3. **Dataset-specific prompt selection** (Sprint 3)
+4. **Cost-effective testing strategies** (all sprints)
+
+### Reusable Frameworks
+- Format comparison test harness
+- RAG parameter tuning methodology
+- Prompt strategy selection guidelines
+- Quality validation procedures
+
+### Open Questions for Future Research
+1. Can we break the 12% empty response ceiling?
+2. Do results generalize to other LLM models?
+3. How does fine-tuning compare to prompt optimization?
+4. What's the optimal balance between cost and performance?
 
 ---
 
-### 3. The 3-Way Combinatorial
+## 🚀 Quick Start
 
-**Question:** Identify the maximum number of times any Actor/Director/Producer trio collaborated on Action or Drama movies between 2001 and 2010 with a rating between 5.0 and 8.0. Then, list all trios that achieved this maximum, along with the titles of the specific movies they collaborated on.
+### Navigate by Sprint
+- **Sprint 1:** [`cd "Sprint 1"` → See README](./Sprint%201/README.md)
+- **Sprint 2:** [`cd "Sprint 2"` → See README](./Sprint%202/README.md)
+- **Sprint 3:** [`cd "Sprint 3"` → See README](./Sprint%203/README.md)
 
-#### The SQL Query
-```sql
-WITH filtered_movies AS (
-    SELECT tconst, primaryTitle, genres
-    FROM benchmark_movies
-    WHERE startYear BETWEEN 2001 AND 2010
-      AND (genres LIKE '%Action%' OR genres LIKE '%Drama%')
-      AND averageRating > 5.0 
-      AND averageRating < 8.0
-),
-cast_list AS (
-    SELECT tconst, TRIM(person) AS person_name
-    FROM benchmark_movies,
-    unnest(string_to_array(Cast_and_Crew, ',')) AS person
-),
-trio_counts AS (
-    SELECT 
-        c1.person_name AS actor_actress, 
-        c2.person_name AS director, 
-        c3.person_name AS producer, 
-        COUNT(*) as collaboration_count,
-        STRING_AGG(f.primaryTitle, ', ') as movies
-    FROM filtered_movies f
-    JOIN cast_list c1 ON f.tconst = c1.tconst AND (c1.person_name LIKE '%(actor)%' OR c1.person_name LIKE '%(actress)%')
-    JOIN cast_list c2 ON f.tconst = c2.tconst AND c2.person_name LIKE '%(director)%'
-    JOIN cast_list c3 ON f.tconst = c3.tconst AND c3.person_name LIKE '%(producer)%'
-    GROUP BY 1, 2, 3
-)
-SELECT * FROM trio_counts
-WHERE collaboration_count = (SELECT MAX(collaboration_count) FROM trio_counts)
-ORDER BY actor_actress;
-```
+### View Key Results
+- **Sprint 2 Results:** `Sprint 2/comprehensive_benchmark_analysis.png`
+- **Sprint 3 Results:** `Sprint 3/documentation/2_final_results/FINAL_RESULTS_PHASE3C.md`
+- **Sprint 3 Visuals:** `Sprint 3/UDA-Benchmark/presentation_visuals/`
 
-#### Query 3 Result
-| actor_actress | director | producer | collaboration_count | movies |
-| :--- | :--- | :--- | :--- | :--- |
-| Alba Gaïa Bellugi (actress) | Jean-Pierre Améris (director) | Fabienne Vonier (producer) | 2 | Call Me Elisabeth, Call Me Elisabeth |
-| Ayesha Jhulka (actress) | Imtiaz Ali (director) | Dharmendra (producer) | 2 | Socha Na Tha, Socha Na Tha |
-| Birte Heribertson (actress) | Jan Troell (director) | Christer Nilson (producer) | 2 | Everlasting Moments, Everlasting Moments |
-| Birte Heribertson (actress) | Jan Troell (director) | Tero Kaukomaa (producer) | 2 | Everlasting Moments, Everlasting Moments |
-| Birte Heribertson (actress) | Jan Troell (director) | Thomas Stenderup (producer) | 2 | Everlasting Moments, Everlasting Moments |
-| Bruce Glover (actor) | Peter McGennis (director) | Peter McGennis (producer) | 2 | Buffalo Bushido, Buffalo Bushido |
-| Carrie-Anne Moss (actress) | Nick Guthe (director) | Dana Brunetti (producer) | 2 | Mini's First Time, Mini's First Time |
-| Carrie-Anne Moss (actress) | Nick Guthe (director) | Edward Bass (producer) | 2 | Mini's First Time, Mini's First Time |
-| Carrie-Anne Moss (actress) | Nick Guthe (director) | Evan Astrowsky (producer) | 2 | Mini's First Time, Mini's First Time |
-| Carrie-Anne Moss (actress) | Nick Guthe (director) | Kevin Spacey (producer) | 2 | Mini's First Time, Mini's First Time |
-| Inge Appelt (actress) | Vinko Bresan (director) | Ivan Maloca (producer) | 2 | Will Not End Here, Will Not End Here |
-| Kalabhavan Mani (actor) | Rajasenan (director) | B.Rakesh (producer) | 2 | Malayalimamanu Vanakkam, Malayalimamanu Vanakkam |
-| Kalabhavan Mani (actor) | Saran (director) | B. Gurunath (producer) | 2 | Gemini, Gemini |
-| Kalabhavan Mani (actor) | Saran (director) | Balasubramanian M. (producer) | 2 | Gemini, Gemini |
-| Kalabhavan Mani (actor) | Saran (director) | Guhan M.S. (producer) | 2 | Gemini, Gemini |
-| Kalabhavan Mani (actor) | Saran (director) | Saravanan M. (producer) | 2 | Gemini, Gemini |
-| Luke Wilson (actor) | Nick Guthe (director) | Dana Brunetti (producer) | 2 | Mini's First Time, Mini's First Time |
-| Luke Wilson (actor) | Nick Guthe (director) | Edward Bass (producer) | 2 | Mini's First Time, Mini's First Time |
-| Luke Wilson (actor) | Nick Guthe (director) | Evan Astrowsky (producer) | 2 | Mini's First Time, Mini's First Time |
-| Luke Wilson (actor) | Nick Guthe (director) | Kevin Spacey (producer) | 2 | Mini's First Time, Mini's First Time |
-| Yves Verhoeven (actor) | Jeanne Waltz (director) | Didier Haudepin (producer) | 2 | A Parting Shot, A Parting Shot |
-| Yves Verhoeven (actor) | Jeanne Waltz (director) | Pierre-Alain Meier (producer) | 2 | A Parting Shot, A Parting Shot |
+### Run Experiments
+- **Sprint 2:** See `Sprint 2/README.md` for dataset access
+- **Sprint 3 Demo:** `Sprint 3/notebooks/demos/basic_demo_together.ipynb`
+- **Sprint 3 Final:** `Sprint 3/UDA-Benchmark/experiments/.../3_prompts/notebooks/`
 
 ---
 
-### 4. The "Year-Over-Year Drop"
+## 📊 Presentation Materials
 
-**Question:** Looking exclusively at movies containing the 'Sci-Fi' genre, which specific release year saw the largest drop in the average rating compared to the year immediately preceding it? State the two years and the exact difference in the average rating.
+### Sprint 2
+- **PowerPoint:** `Sprint 2/Sprint2_Presentation_Nishit_Suthar.pptx`
+- **Charts:** `Sprint 2/` (PNG visualizations)
 
-#### The SQL Query
-```sql
-WITH yearly_averages AS (
-    SELECT startYear, AVG(averageRating) as avg_rating
-    FROM benchmark_movies
-    WHERE genres LIKE '%Sci-Fi%'
-    GROUP BY startYear
-),
-year_over_year AS (
-    SELECT 
-        startYear as current_year,
-        avg_rating as current_rating,
-        LAG(startYear) OVER (ORDER BY startYear) as previous_year,
-        LAG(avg_rating) OVER (ORDER BY startYear) as previous_rating,
-        (avg_rating - LAG(avg_rating) OVER (ORDER BY startYear)) as rating_delta
-    FROM yearly_averages
-)
-SELECT previous_year, current_year, ROUND(rating_delta, 2) AS largest_drop
-FROM year_over_year
-WHERE previous_year IS NOT NULL
-ORDER BY rating_delta ASC
-LIMIT 1;
-```
-
-#### Query 4 Result
-| previous_year | current_year | largest_drop |
-| :--- | :--- | :--- |
-| 2004 | 2005 | -2.85 |
+### Sprint 3
+- **Presentation Guide:** `Sprint 3/documentation/3_presentation/PRESENTATION_GUIDE.md`
+- **Executive Summary:** `Sprint 3/documentation/3_presentation/PRESENTATION_SUMMARY.md`
+- **7 High-Res Charts:** `Sprint 3/UDA-Benchmark/presentation_visuals/`
 
 ---
 
-### 5. The "Weighted Average"
+## 🛠️ Technologies Used
 
-**Question:** Calculate the weighted average rating of all 'Thriller' movies released in or after the year 2015, weighted by the total number of votes (numVotes). Round your final answer to two decimal places.
+### LLM Models
+- Google Gemini 3.1 Pro Extended
+- NVIDIA Nemotron-3 Ultra 550B (via Together AI)
 
-#### The SQL Query
-```sql
-SELECT 
-    ROUND(
-        SUM(averageRating * numVotes) / SUM(numVotes), 
-    2) AS weighted_avg_rating
-FROM benchmark_movies
-WHERE genres LIKE '%Thriller%'
-  AND startYear >= 2015;
-```
+### Frameworks & Libraries
+- LangChain (RAG pipeline)
+- ChromaDB (vector storage)
+- Sentence-Transformers (embeddings)
+- PyPDF2 (PDF extraction)
+- Pandas (data processing)
 
-#### Query 5 Result
-| weighted_avg_rating |
-| :--- |
+### Infrastructure
+- NeonDB (PostgreSQL) for ground truth
+- Together AI API (model access)
+- Jupyter Notebooks (experiments)
 
 ---
-## Response Summaries
-Check out the [response](Sprint%201/Response.md) from various LLMs.
 
-## References
+## 🏆 Project Achievements
 
-- IMDb Movie Dataset: [Non-Commercial Datasets](https://developer.imdb.com/non-commercial-datasets/)
+✅ **3 Comprehensive Sprints** completed on schedule  
+✅ **2 LLM Models** benchmarked (Gemini, Nemotron)  
+✅ **4 Data Formats** compared (CSV, HTML, JSON, XML)  
+✅ **2,935 Total Tests** conducted  
+✅ **87.8% Success Rate** achieved on RAG  
+✅ **65% Improvement** through optimization  
+✅ **13 Visualizations** created  
+✅ **6 Custom Skills** developed  
+✅ **Professional Documentation** for all sprints  
+
+---
+
+## 📅 Timeline
+
+- **April 2026:** Sprint 1 - Data Preparation
+- **May 2026:** Sprint 2 - Format Comparison
+- **June 2026:** Sprint 3 - RAG Optimization
+
+**Total Duration:** 3 months  
+**Status:** ✅ All Sprints Complete
+
+---
+
+## 🔮 Future Work
+
+1. **Model Expansion:** Test GPT-4, Claude, Llama models
+2. **Format Extension:** Test more formats (Parquet, Avro, Protocol Buffers)
+3. **Scale Up:** Test on full UDA-QA dataset (29,590 Q&A)
+4. **Fine-Tuning:** Train custom models on domain data
+5. **Hybrid Approaches:** Combine RAG with fine-tuning
+6. **Real-World Deployment:** Production testing and monitoring
+
+---
+
+**Last Updated:** June 30, 2026  
+**Project Status:** ✅ Complete & Production-Ready  
+**Repository:** https://github.com/Nishitsuthar/LLM_Benchmark_Team_Project_2026
+
+---
+
+**🎉 Thank you for exploring the LLM Benchmark Team Project 2026!**
+
+For detailed information about each sprint, please see the individual README files in each sprint directory.
