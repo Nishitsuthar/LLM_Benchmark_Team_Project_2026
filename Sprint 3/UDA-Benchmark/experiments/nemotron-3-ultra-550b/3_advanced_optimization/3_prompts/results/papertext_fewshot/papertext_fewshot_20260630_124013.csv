@@ -1,0 +1,39 @@
+question,response,doc,q_uid,answers,dataset,prompt_type
+which multilingual approaches do they compare with?,They compare with Multilingual NMT (MNMT) by Johnson et al. (2016) and MNMT Agreement by Al-Shedivat and Parikh (2019).,1912.01214,b6f15fb6279b82e34a5bf4828b7b5ddabfdf1d54,"['BIBREF19, BIBREF20', 'multilingual NMT (MNMT) BIBREF19', ' ']",paper,fewshot
+what are the pivot-based baselines?,"Based on the provided context, the pivot-based baselines used in the experiments are:
+
+1. **Pivoting** - The standard pivot-based method that translates source → pivot → target in two separate steps. This is used as a baseline in the Europarl experiments (Table 2).
+
+2. **Pivoting m**",1912.01214,f5e6f43454332e0521a778db0b769481e23e7682,"['pivoting, pivoting$_{\\rm m}$', 'firstly translates a source language into the pivot language which is later translated to the target language', ' ']",paper,fewshot
+which datasets did they experiment with?,The experiments were conducted on two public datasets: Europarl and MultiUN.,1912.01214,9a05a5f4351db75da371f7ac12eb0b03607c4b87,"['Europarl, MultiUN', 'Europarl BIBREF31, MultiUN BIBREF32', ' ']",paper,fewshot
+what ner models were evaluated?,"Based on the context, three named entity recognition models were evaluated:
+
+1. **Stanford NER** - a conditional random fields (CRF) classifier based on lexical and contextual features
+2. **spaCy 2.0** - uses a CNN-based transition system for named entity recognition
+3. **Char-biLSTM+biLSTM+CRF** - a recurrent model using bidirectional LSTM cells for character-based feature extraction with a CRF top layer (based on Guillaume Genthial's implementation)
+
+These are explicitly stated in the text: ""We trained and evaluated Stanford NER, spaCy 2.0, and a recurrent model similar to [14], [15] that uses bidirectional LSTM cells for character-based feature extraction and CRF.""",1810.08699,18c5d366b1da8447b5404eab71f4cc658ba12e6f,"['Stanford NER, spaCy 2.0 , recurrent model with a CRF top layer', 'Stanford NER, spaCy 2.0, recurrent model with a CRF top layer', ' ']",paper,fewshot
+what is the source of the news sentences?,The news sentences were selected from over 250 news texts from ilur.am (http://ilur.am/news/newsline.html).,1810.08699,b5e4866f0685299f1d7af267bbcc4afe2aab806f,"['ilur.am', 'links between Wikipedia articles to generate sequences of named-entity annotated tokens', ' ']",paper,fewshot
+did they use a crowdsourcing platform for manual annotations?,"No, the authors did not use a crowdsourcing platform for manual annotations. According to the text, ""we manually annotated a named entities dataset comprising 53453 tokens and 2566 sentences selected from over 250 news texts from ilur.am."" This indicates the annotation was performed by the authors/researchers themselves, not through a crowdsourcing platform.",1810.08699,1f085b9bb7bfd0d6c8cba1a9d73f08fcf2da7590,"['No', 'No', ' ']",paper,fewshot
+What crowdsourcing platform is used?,"Based on the provided context, the paper does not specify a crowdsourcing platform used for their own data collection. The authors mention hiring students directly for annotation: ""we randomly select 20K sentences as our pool and hire 43 students to annotate the sentences"" for the DL-PS dataset, and ""Five students participate the annotations for this domain"" for the EC datasets.
+
+The only crowdsourcing platform mentioned in the text is **Amazon Mechanical Turk**, but this is referenced in the context of prior work by Snow et al. (2008), not the current study.",1801.05147,2df4a045a9cd7b44874340b6fdf9308d3c55327a,"['They did not use any platform, instead they hired undergraduate students to do the annotation.', ' ', ' ']",paper,fewshot
+What types of social media did they consider?,"Based on the context, the researchers considered several types of social media:
+
+1. **Facebook** - They collected 3,268 random Facebook status update messages for their causal explanation dataset
+2. **MyPersonality dataset** - Used self-authored posts from 300 consenting users of this dataset (which appears to be Facebook-based)
+3. **Yelp** - Used the Yelp polarity dataset for sentiment analysis exploration
+4. **Twitter** - Used GLOVE word embeddings trained on Twitter data and mentioned pretrained models trained directly on tweets",1809.01202,a4d115220438c0ded06a91ad62337061389a6747,"['Facebook status update messages', 'Facebook status update messages', ' ']",paper,fewshot
+Do they perform error analysis?,"Based on the provided context, there is no mention of error analysis being performed. The paper focuses on comparative analysis of different feature extraction methods (Google Universal Sentence Encoder, FastText, DMD/HODMD) and classification approaches (traditional ML algorithms and RKS), reporting quantitative metrics (accuracy, precision, recall, F1-score) and comparing with top-performing teams from SemEval-2019 Task 6. There is no section or discussion dedicated to analyzing misclassifications, confusion matrices, or qualitative error analysis.",2001.03131,133eb4aa4394758be5f41744c60c99901b2bc01c,"['No', 'No', ' ']",paper,fewshot
+What is the Random Kitchen Sink approach?,"The Random Kitchen Sink (RKS) approach is a method that explicitly maps data vectors to a higher-dimensional space where they become linearly separable. It provides an approximate kernel function via explicit mapping, as described by the equation: K(x₁,x₂) = ⟨φ(x₁),φ(x₂)⟩ ≈ ⟨Z(x₁),Z(x₂)⟩, where φ is the implicit mapping function and Z is the explicit mapping function using RKS. In this work, RKS is used to map embedding vectors (from Google Universal Sentence Encoder and FastText) to dimensions of 100",2001.03131,a778b8204a415b295f73b93623d09599f242f202,"['Random Kitchen Sink method uses a kernel function to map data vectors to a space where linear separation is possible.', 'explicitly maps data vectors to a space where linear separation is possible, RKS method provides an approximate kernel function via explicit mapping', ' ']",paper,fewshot
+What are the performance metrics used?,"Based on the provided context, the following performance metrics are used:
+
+1. **Joint Goal Accuracy (JG Acc.)** - The primary metric for comparing models, which requires all predicted slots and values to exactly match the labels. Used on both WoZ2.0 and MultiWoZ datasets.
+
+2. **Joint Domain Accuracy (JD Acc.)** - Measures the probability that all domains generated in each turn exactly match the labels.
+
+3. **Joint Domain-Slot Accuracy (JDS Acc.)** - Measures the probability that all domains and slots generated are correct.
+
+4. **Inference Time Complexity (ITC)** - Used as a scalability metric, showing how inference time scales with the number of slots (n) and values (m). Models are categorized as",1909.00754,72ceeb58e783e3981055c70a3483ea706511fac3,"['joint goal accuracy', ' ', ' ']",paper,fewshot
+Which datasets are used to evaluate performance?,The model is evaluated on two datasets: **WoZ2.0** (a single-domain dataset for restaurant reservation) and **MultiWoZ** (a multi-domain dataset with 7 domains and 25 predefined slots).,1909.00754,9bfa46ad55136f2a365e090ce585fc012495393c,"['the single domain dataset, WoZ2.0 , the multi-domain dataset, MultiWoZ', ' ', ' ']",paper,fewshot
+how are multiple answers from multiple reformulated questions aggregated?,The multiple answers from reformulated questions are aggregated using a trained **CNN answer selector (selection model)** that picks the best answer from the candidate set. This selection model is trained as a binary classifier to distinguish,1705.07830,33d2919f3400cd3c6fbb6960d74187ec80b41cd6,"['The selection model selects the best answer from the set $\\lbrace a_i\\rbrace _{i=1}^N$ observed during the interaction by predicting the difference of the F1 score to the average F1 of all variants.', ' ', ' ']",paper,fewshot

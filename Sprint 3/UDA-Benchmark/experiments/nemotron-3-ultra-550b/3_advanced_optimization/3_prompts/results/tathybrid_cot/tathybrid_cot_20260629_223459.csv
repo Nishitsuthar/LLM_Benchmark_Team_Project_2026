@@ -1,0 +1,903 @@
+question,response,doc,q_uid,answers,dataset,prompt_type
+What benefits are provided by the company to qualifying domestic retirees and their eligible dependents?,"Based on the provided context, the Company provides the following benefits to qualifying domestic retirees and their eligible dependents:
+
+**Postretirement health care and life insurance benefits**
+
+Specific details include:
+- **Health care plan**: Contributory at retirement for shore-based employees and their dependents, and seagoing licensed deck officers (""Deck Officers"") and their dependents
+- **Life insurance plan**: Noncontributory for all employees
+- **Eligibility**: Generally provided to shore-based employees hired prior to January 1, 2005 and all Deck Officers who retire and have met minimum age and service requirements under a formula related to total years of service
+- **Limitation**: The Company no longer provides prescription drug coverage to retirees or their beneficiaries once they reach age 65",overseas-shipholding-group-inc_2019,bbdcf6da614f34fdb63995661c81613f,"{'answer': ['certain postretirement health care and life insurance benefits'], 'answer_type': 'span', 'scale': ''}",tat,cot
+"What is the change in Interest cost on benefit obligation for pension benefits from December 31, 2018 and 2019?","To answer this question, I need to find the ""Interest cost on benefit obligation"" for pension benefits for both 2018 and 2019, then calculate the change.
+
+From the ""Information for defined benefit pension plans and other postretirement benefit plans net periodic cost/(benefit) follows"" table:
+
+**Pension Benefits - Interest cost on benefit obligation:**
+- 2019: $1,802
+- 2018: $1,673
+
+This is also confirmed in the ""Change in benefit obligation"" table which shows the same values.
+
+Change = 2019 amount - 2018 amount = $1,802 - $1,673 = **$129 increase**
+
+The interest cost on benefit obligation for pension benefits increased by $129 from 2018 to 2019.",overseas-shipholding-group-inc_2019,0bf2a781ac6044d4d9dd94bd6cc1f790,"{'answer': ['129'], 'answer_type': 'arithmetic', 'scale': ''}",tat,cot
+"What is the average Interest cost on benefit obligation for pension benefits for December 31, 2018 and 2019?","To find the average interest cost on benefit obligation for pension benefits for December 31, 2018 and 2019, I need to locate the interest cost values for both years.
+
+From the ""Information for defined benefit pension plans and other postretirement benefit plans net periodic cost/(benefit)"" table:
+
+**Pension Benefits - Interest cost on benefit obligation:**
+- 2019: $1,802
+- 2018: $1,673
+
+This is also confirmed in the ""Change in benefit obligation"" table which shows the same values.
+
+Average = (1,802 + 1,673) / 2 = 3,475 / 2 = **1,737.5**
+
+**Answer: $1,737.5**",overseas-shipholding-group-inc_2019,0da3eed3b582066de46f7d62c8383aca,"{'answer': ['1737.5'], 'answer_type': 'arithmetic', 'scale': ''}",tat,cot
+"In which year was Benefit obligation at beginning of year for pension benefits less than 45,000?","Based on the ""Change in benefit obligation"" table in the context, the Benefit obligation at beginning of year for Pension Benefits was:
+
+- **2019**: $44,015
+- **2018**: $48,500
+
+The benefit obligation at the beginning of the year was less than $45,000 in **2019** ($44,015).",overseas-shipholding-group-inc_2019,097768406a84ad50931b8170bfb69b2b,"{'answer': ['2019'], 'answer_type': 'span', 'scale': ''}",tat,cot
+What was the Interest cost on benefit obligation in 2019 and 2018 respectively?,,overseas-shipholding-group-inc_2019,0bbedf7757da1e79b723f2641bea587c,"{'answer': ['1,802', '1,673'], 'answer_type': 'multi-span', 'scale': ''}",tat,cot
+What was the Benefit obligation at year end of 2019 for pension benefits?,"Based on the context provided, the Benefit obligation at year end of 2019 for pension benefits was **$46,936**.
+
+This information appears in the ""Change in benefit obligation"" table under ""Information with respect to the domestic pension and postretirement benefit plans"":
+
+| Pension Benefits | At December 31, 2019 |
+|------------------|----------------------|
+| Benefit obligation at year end | $46,936 |",overseas-shipholding-group-inc_2019,8d27bdfb3d39a13af1a5b555dab318ea,"{'answer': ['46,936'], 'answer_type': 'span', 'scale': ''}",tat,cot
+"When did the Company sold one ATB and one barge for $2,367?","On December 6, 2018, the Company sold one ATB and one barge for $2,367, net of broker commissions.",overseas-shipholding-group-inc_2019,cb5baa19e90999a25a7f5c3ff9f20f54,"{'answer': ['December 6, 2018'], 'answer_type': 'span', 'scale': ''}",tat,cot
+"What is the change in Total vessels and other property from Years Ended December 31, 2018 to 2019?",,overseas-shipholding-group-inc_2019,91049515811474e133c9aa282154424b,"{'answer': ['139553'], 'answer_type': 'arithmetic', 'scale': ''}",tat,cot
+"What is the average Total vessels and other property for Years Ended December 31, 2018 to 2019?","To calculate the average Total vessels and other property for Years Ended December 31, 2018 to 2019, I need to find the ""Total Vessels, Deferred Drydock and Other Property"" values from the Consolidated Balance Sheets for both years.
+
+From the Consolidated Balance Sheets:
+- **December 31, 2019**: Total Vessels, Deferred Drydock and Other Property = $760,946 (thousands)
+- **December 31, 2018**: Total Vessels, Deferred Drydock and Other Property = $623,758 (thousands)
+
+**Calculation:**
+Average = ($760,946 + $623,758) ÷ 2 = $",overseas-shipholding-group-inc_2019,bc34dea163e3501b82253f5756696192,"{'answer': ['667435.5'], 'answer_type': 'arithmetic', 'scale': ''}",tat,cot
+"In which year was Vessels, at cost less than 900,000?",,overseas-shipholding-group-inc_2019,a8ff2da9bb583e6dc74fe39e144a7049,"{'answer': ['2018'], 'answer_type': 'span', 'scale': ''}",tat,cot
+"What was the value of Vessels, net in 2019 and 2018 respectively?","Based on the Consolidated Balance Sheets in the context, the value of ""Vessels and other property, less accumulated depreciation and amortization"" (which represents the net book value of vessels) was:
+
+- **2019**: $737,212 thousand
+- **2018**: $597,659 thousand
+
+This information is found in the CONSOLIDATED BALANCE SHEETS section under ASSETS, with the line item ""Vessels and other property, less accumulated depreciation and amortization"" showing $737,212 for December 31, 2019 and $597,659 for December 31, 2018.",overseas-shipholding-group-inc_2019,ff06d83c2832cd8f43f1a6c350b5b7ae,"{'answer': ['644,312', '596,929'], 'answer_type': 'multi-span', 'scale': ''}",tat,cot
+"When did the company take the delivery of two 50,000 DWT class products?","Based on the context provided, the company took delivery of two 50,000 DWT class product and chemical tankers on **September 30, 2019**.
+
+This information is found in Note 5 — VESSELS, OTHER PROPERTY AND DEFERRED DRYDOCK, which states: ""On September 30, 2019, the Company took delivery of two 50,000 DWT class product and chemical tankers at Hyundai Mipo Dockyard Co., Ltd.""",overseas-shipholding-group-inc_2019,dc054f9fade3b3bf99e2a304abe5be71,"{'answer': ['September 30, 2019'], 'answer_type': 'span', 'scale': ''}",tat,cot
+Does the company believe that believe that further disaggregation would result in increased insight into the economic factors?,"No, the Company does not believe that further disaggregation would result in increased insight into the economic factors impacting revenue and cash flows.",overseas-shipholding-group-inc_2019,faa882a37c13bf158847ea6a5cf676ae,"{'answer': ['the Company does not believe that further disaggregation would result in increased insight into the economic factors impacting revenue and cash flows.'], 'answer_type': 'span', 'scale': ''}",tat,cot
+"What is the change in Time and bareboat charter revenues from Years Ended December 31, 2018 to 2019?","To answer this question, I need to find the Time and bareboat charter revenues for both 2018 and 2019, then calculate the change.
+
+From the context, in the table showing ""The following table shows the Company's shipping revenues disaggregated by nature of the charter arrangement for the years ended December 31, 2019 and 2018"":
+
+- Time and bareboat charter revenues for 2019: $263,683
+- Time and bareboat charter revenues for 2018: $213,923
+
+The change = 2019 amount - 2018 amount = $263,683 - $213,923 = $49,760
+
+The Time and bareboat charter revenues increased by $49,760 from 2018 to 2019.",overseas-shipholding-group-inc_2019,067cedaf057ae5787e7020df5890b145,"{'answer': ['49760'], 'answer_type': 'arithmetic', 'scale': ''}",tat,cot
+"What is the average Time and bareboat charter revenues for Years Ended December 31, 2018 to 2019?","To calculate the average Time and bareboat charter revenues for the years ended December 31, 2018 and 2019, I need to find the revenue figures for both years from the provided table.
+
+From the first table in the context:
+- **2019 Time and bareboat charter revenues**: $263,683
+- **2018 Time and bareboat charter revenues**: $213,923
+
+**Calculation",overseas-shipholding-group-inc_2019,409bd1782b125777fec8808366b0d9e1,"{'answer': ['238803'], 'answer_type': 'arithmetic', 'scale': ''}",tat,cot
+"In which year was Voyage charter revenues less than 50,000?",,overseas-shipholding-group-inc_2019,6051c7c6319c56f53bbe140382c6da24,"{'answer': ['2019'], 'answer_type': 'span', 'scale': ''}",tat,cot
+What was the Time and bareboat charter revenues revenues in 2019 and 2018 respectively?,"Based on the context provided, the Time and bareboat charter revenues were:
+
+- **2019**: $263,683 thousand
+- **2018**: $213,923 thousand
+
+This information is found in the first table under ""Shipping Revenues"" disaggregated by nature of the charter arrangement for the years ended December 31, 2019 and 2018.",overseas-shipholding-group-inc_2019,f7af7aebbd48ae1684ba8f8d7402c3fa,"{'answer': ['$263,683', '$213,923'], 'answer_type': 'multi-span', 'scale': ''}",tat,cot
+What was the Contracts of affreightment revenues in 2019 and 2018 respectively?,"Based on the shipping revenues disaggregation table in the context, the Contracts of affreightment revenues were:
+
+- **2019: $58,589**
+- **2018: $68,698**",overseas-shipholding-group-inc_2019,0edf2f7aeed2b8ca6a2e0ed95641bf15,"{'answer': ['58,589', '68,698'], 'answer_type': 'multi-span', 'scale': ''}",tat,cot
+How much did TCE revenues increased during 2019 from 2018?,"Based on the context provided, TCE revenues increased by **$8,426** (or **2.6%**) during 2019 from 2018.
+
+This is explicitly stated in the text: ""During 2019, TCE revenues increased by $8,426, or 2.6%, to $335,133 from $326,707 in 2018.""
+
+The table at the beginning also shows:
+- 2019 TCE revenues: $335,133
+- 2018 TCE revenues: $326,707
+- Difference: $335,133 - $326,707 = $8,426",overseas-shipholding-group-inc_2019,7fdaeb1ffd7907b170eb3941572cc133,"{'answer': ['$8,426'], 'answer_type': 'span', 'scale': ''}",tat,cot
+What led to the increase in TCE revenues?,"Based on the context provided, the increase in TCE revenues during 2019 was primarily driven by two factors:
+
+1. **An increase in average daily rates earned by the fleet**
+2. **Decreased spot market exposure**
+
+The company states: ""During 2019, TCE revenues increased by $8,426, or 2.6%, to $335,133 from $326,707 in 2018. The increase primarily resulted from an increase in average daily rates earned by our fleet and decreased spot market exposure.""
+
+Notably, this increase occurred despite a decrease in total revenue days (from 7,678 days in 2018 to 7,215 days in 2019) due to three fewer vessels in operation during most of 2019 compared to 2018.",overseas-shipholding-group-inc_2019,15c3b108d5f51d0b23d4d3c29904c9e6,"{'answer': ['an increase in average daily rates earned by our fleet and decreased spot market exposure.'], 'answer_type': 'span', 'scale': ''}",tat,cot
+What is the vessel expenses in 2019 and 2018 respectively?,"Based on the consolidated statements of operations in the context, the vessel expenses are:
+
+- **2019**: $134,618 thousand
+- **2018**: $134,956 thousand
+
+This is shown in the Operating Expenses section of the income statement and confirmed in the narrative: ""Vessel expenses remained stable at $134,618 in 2019 from $134,956 in 2018.""",overseas-shipholding-group-inc_2019,a9f15932f8850b4316919a187eca8479,"{'answer': ['$134,618', '$134,956'], 'answer_type': 'multi-span', 'scale': ''}",tat,cot
+What is the change in Jones Act Handysize Product Carriers: Average rate in Spot Earnings between 2018 and 2019?,"Based on the table provided in the context, the Jones Act Handysize Product Carriers Spot Earnings Average rates are:
+
+- **2019**: $25,036
+- **2018**: $31,254
+
+The change from 2018 to 2019 is: **$25,036 - $31,254 = -$6,218**
+
+This represents a **decrease of $6,218** in the average spot earnings rate for Jones Act Handysize Product Carriers between 2018 and 2019.",overseas-shipholding-group-inc_2019,8197ed82360b55cee945e9e3a0e75f07,"{'answer': ['-6218'], 'answer_type': 'arithmetic', 'scale': ''}",tat,cot
+What is the change in Jones Act Handysize Product Carriers: Revenue days in Spot Earnings between 2018 and 2019?,"Based on the table provided in the context, the Revenue days for Jones Act Handysize Product Carriers in Spot Earnings were:
+
+- **20",overseas-shipholding-group-inc_2019,883a6b16a4b0d32bc8b648da0129567e,"{'answer': ['-619'], 'answer_type': 'arithmetic', 'scale': ''}",tat,cot
+What is the change in Non-Jones Act Handysize Product Carriers: Average rate in Spot Earnings between 2018 and 2019?,"Based on the table provided in the context, the Non-Jones Act Handysize Product Carriers Spot Earnings average rates are:
+
+- **2019**: $30,671
+- **2018**: $25,925
+
+The change is **$4,746 increase** ($30,671 - $25,925 = $4,746).",overseas-shipholding-group-inc_2019,1fa1b79c44fb7405bc58b95dd92783fb,"{'answer': ['4746'], 'answer_type': 'arithmetic', 'scale': ''}",tat,cot
+"How much was the lease expense relating to charters-in for the year ended December 31, 2018?","Based on the context provided, the lease expense relating to charters-in for the year ended December 31, 2018 was **$91,350**.
+
+This information is explicitly stated in the text: ""For the year ended December 31, 2018, lease expense relating to charters-in was $91,350, which is included in charter hire expense on the consolidated statements of operations.""",overseas-shipholding-group-inc_2019,3f6892dbbab16b3aa58061b34ff6a44a,"{'answer': ['$91,350'], 'answer_type': 'span', 'scale': ''}",tat,cot
+What is the change in future minimum commitments of Operating Leases from 2020 to 2021?,,overseas-shipholding-group-inc_2019,906e62e9964cf5440007ffc9c650a874,"{'answer': ['-1240'], 'answer_type': 'arithmetic', 'scale': ''}",tat,cot
+What is the average future minimum commitments of Operating Leases for 2020 to 2021?,"To find the average future minimum commitments of Operating Leases for 2020 to 2021, I need to locate the future minimum commitments table for operating leases.
+
+From the context, the table ""The future minimum commitments under these leases are as follows:"" shows:
+
+**Operating Leases:**
+- 2020: $92,404
+- 2021: $91,164
+
+Average = (92,404 + 91,164) / 2 = 183,568 / 2 = **$91,784**
+
+**Answer: $91,784**",overseas-shipholding-group-inc_2019,100a942206e315706a5fc2c314b9614f,"{'answer': ['91784'], 'answer_type': 'arithmetic', 'scale': ''}",tat,cot
+"In which year was Operating Leases greater than 100,000?",,overseas-shipholding-group-inc_2019,ccc7a9080e0fea2e3181976dc634e30f,"{'answer': ['2022'], 'answer_type': 'span', 'scale': ''}",tat,cot
+What was the Finance Lease in 2020 and 2021 respectively?,"Based on the future minimum commitments table in the lease note, the Finance Lease amounts are:
+
+- **2020: $4,172**
+- **2021: $4,161**
+
+These figures appear in the table showing ""The future minimum commitments under these leases are as follows:"" at December 31, 2019, under the ""Finance Lease"" column for the respective years.",overseas-shipholding-group-inc_2019,bd6b76d0c551e67187a5a2310ffc22b7,"{'answer': ['$4,172', '4,161'], 'answer_type': 'multi-span', 'scale': ''}",tat,cot
+What was the Finance Lease in 2022 and 2023 respectively?,,overseas-shipholding-group-inc_2019,d014fbebfa1d081a6bce13d69d7a4d6d,"{'answer': ['4,161', '4,161'], 'answer_type': 'multi-span', 'scale': ''}",tat,cot
+"Was there weighted average shares of unvested Class A restricted common stock shares considered to be participating securities as of December 31, 2019 and 2018?","Based on the provided context, the answer is clearly stated in the text:
+
+""As of December 31, 2019 and 2018, there were no weighted average shares of unvested Class A restricted common stock shares considered to be participating securities.""
+
+**Answer: No, there were no weighted average shares of unvested Class A restricted common stock shares considered to be participating securities as of December 31, 2019 and 2018.**",overseas-shipholding-group-inc_2019,b94f5c918a468a7b1d2a4486b9e6ff92,"{'answer': ['As of December 31, 2019 and 2018, there were no weighted average shares of unvested Class A restricted common stock shares considered to be participating securities.'], 'answer_type': 'span', 'scale': ''}",tat,cot
+"How much was the shares of Class A restricted stock unit as of December 31, 2019?","Based on the context provided, as of December 31, 2019, there were **1,718,865 shares** of Class A restricted stock units outstanding.
+
+This figure is stated in two places in the text:
+1. In the earnings per share section: ""As of December 31, 2019, there were 1,718,865 shares of Class A restricted stock units and 1,478,756 Class A stock options outstanding and considered to be potentially dilutive securities.""
+2. In the RSU activity summary table: ""Nonvested Shares Outstanding at December 31, 2019   1,718,865""",overseas-shipholding-group-inc_2019,8e121976a26a4d5d53efd7a2efdc325b,"{'answer': ['1,718,865'], 'answer_type': 'span', 'scale': ''}",tat,cot
+"How much was the shares of Class A restricted stock unit as of December 31, 2018?","Based on the provided text, as of December 31, 2018, there were **912,315 shares of Class A restricted stock units** outstanding.
+
+This is stated in two places in the document:
+1. In the earnings per share section: ""As of December 31, 2018, there were 912,315 shares of Class A restricted stock units and 866",overseas-shipholding-group-inc_2019,35adde8b884b3837a1c434dc3e780327,"{'answer': ['912,315'], 'answer_type': 'span', 'scale': ''}",tat,cot
+"What is the change in Net income from Years Ended December 31, 2018 to 2019?","To find the change in Net income from 2018 to 2019, I need to locate the net income values for both years in the financial statements.
+
+From the CONSOLIDATED STATEMENTS OF COMPREHENSIVE INCOME (and confirmed in multiple places in the context):
+
+**Net income:**
+- Year Ended December 31, 2019: **$8,675** (thousand)
+- Year Ended December 31, 2018: **$13,489** (thousand)
+
+**Calculation:**
+Change = 2019 Net Income - 2018 Net Income
+Change = $8,675 - $13,489 = **-$4,814** (thousand)
+
+The net",overseas-shipholding-group-inc_2019,60832f30d7699c9e24155f5729855bcf,"{'answer': ['-4814'], 'answer_type': 'arithmetic', 'scale': ''}",tat,cot
+"What is the change in Weighted average common shares outstanding: Class A common stock – basic from Years Ended December 31, 2018 to 2019?","To answer this question, I need to find the weighted average common shares outstanding for Class A common stock - basic for both 2018 and 2019, then calculate the difference.
+
+From the context, under ""NOTE 3 — EARNINGS PER COMMON SHARE"", there's a table showing:
+
+**Weighted average common shares outstanding:**
+- Class A common stock - basic: 89,251,818 (2019) and 88,394,580 (2018)
+
+Change = 89,251,818 - 88,394,580 = 857,238
+
+The weighted average common shares outstanding for Class A common stock – basic increased by 857,238 shares from 2018 to 2019.",overseas-shipholding-group-inc_2019,fc628f9c7cd352e35c73fb179536ba96,"{'answer': ['857238'], 'answer_type': 'arithmetic', 'scale': ''}",tat,cot
+"What is the average Net income for Years Ended December 31, 2018 to 2019?","To calculate the average Net income for Years Ended December 31, 2018 to 2019, I need to find the net income values for both years from the financial statements.
+
+From the Consolidated Statements of Comprehensive Income (and confirmed in the Consolidated Statements of Operations):
+
+- **2019 Net income**: $8,675 thousand
+- **2018 Net income**: $13,489 thousand
+
+**Calculation:**
+Average Net income = (2019 Net income + 2018 Net income) ÷ 2
+= ($8,675 + $13,489) ÷ 2
+= $22,164 ÷ 2
+= **$11,082 thousand**
+
+The average Net income for the years ended December 31, 2018 to 2019 is **$11,082 thousand** (or $11,082,000).",overseas-shipholding-group-inc_2019,ed78c51011874fe47d3910ab9794cce6,"{'answer': ['11082'], 'answer_type': 'arithmetic', 'scale': ''}",tat,cot
+For which years did U.S. Internal Revenue Service completed exams on the Company's U.S. federal income tax returns?,The U.S. Internal Revenue Service completed exams on the Company's U.S. federal income tax returns for years 2012 - 2015.,overseas-shipholding-group-inc_2019,d4b5e468954928032e7ab1a4035b667c,"{'answer': ['2012 - 2015'], 'answer_type': 'span', 'scale': ''}",tat,cot
+"What is the change in Balance of unrecognized tax benefits as of January 1, from Years Ended December 31, 2018 to 2019?",,overseas-shipholding-group-inc_2019,856ccf4ce7242777ba844b2399436643,"{'answer': ['-36014'], 'answer_type': 'arithmetic', 'scale': ''}",tat,cot
+"What is the average Balance of unrecognized tax benefits as of January 1, for Years Ended December 31, 2018 to 2019?","To find the average Balance of unrecognized tax benefits as of January 1 for the years ended December 31, 2018 and 2019, I need to locate the beginning balances for both years.
+
+From the tabular reconciliation of unrecognized tax benefits:
+
+**Balance of unrecognized tax benefits as of January 1:**
+- For year ended December 31, 2019: **$1,226**
+- For year ended December 31, 2018: **$37,240**
+
+**Calculation:**
+Average",overseas-shipholding-group-inc_2019,1c529eaf3fabcc335b18db1dc8a9a444,"{'answer': ['19233'], 'answer_type': 'arithmetic', 'scale': ''}",tat,cot
+"In which year was Increases for positions taken in prior years less than 1,000?","Based on the provided context, there is no information about ""Increases for positions taken in prior years less than 1,000"" or any similar metric. The text appears to be from a Form 10-K filing for Overseas Shipholding Group, Inc. and contains:
+
+- Exhibit listings (employment agreements, amendments, and other contracts)
+- Accounting standards updates (ASC 842 Leases, ASU 2018-14, ASU 2018-13)
+- Financial statement table of contents
+- Executive officer information
+- Lease adoption details (right-of-use assets of $264,546 and lease liabilities of $280,407 at January 1, 2019)
+
+The context does not contain any data about positions taken in prior years, increases related to such positions, or any numerical thresholds of 1,000. This information may be in a different section of the filing (such as tax footnotes, risk factors, or management discussion) that is not included in the provided excerpt.",overseas-shipholding-group-inc_2019,70b9c20fdab23a9cd16c8474c2be6d9c,"{'answer': ['2018'], 'answer_type': 'span', 'scale': ''}",tat,cot
+What was the Rate change in 2019 and 2018 respectively?,,overseas-shipholding-group-inc_2019,918d6fb907a4ff383e5d8e9da7db2728,"{'answer': ['(84)', '0'], 'answer_type': 'multi-span', 'scale': ''}",tat,cot
+"What was the Balance of unrecognized tax benefits as of December 31, 2019?","The Balance of unrecognized tax benefits as of December 31, 2019 was **$2,495** (in thousands).",overseas-shipholding-group-inc_2019,498fcb0c8711f348dfc1391e552da81e,"{'answer': ['$2,495'], 'answer_type': 'span', 'scale': ''}",tat,cot
+"How much did revenues increased for the year ended December 31, 2018 as a result of applying ASC 606?","Based on the context provided, for the year ended December 31, 2018, revenues increased by **$1,418** as a result of applying ASC 606.
+
+This information is explicitly stated in the first paragraph of the context: ""For the year ended December 31, 2018, revenues increased by $1,418, net income increased by $1,101 and basic and diluted net income per share increased by $0.01 as a result of applying ASC 606.""",overseas-shipholding-group-inc_2019,36e8350f9f066fa3c5875dc9cb546bc2,"{'answer': ['$1,418'], 'answer_type': 'span', 'scale': ''}",tat,cot
+"How much did net income increased for the year ended December 31, 2018 as a result of applying ASC 606?","Based on the context provided, the net income increased by **$1,101** (in thousands) for the year ended December 31, 2018 as a result of applying ASC 606.
+
+This information is explicitly stated in the first paragraph of the context: ""For the year ended December 31, 2018, revenues increased by $1,418, net income increased by $1,101 and basic and diluted net income per share increased by $0.01 as a result of applying ASC 606.""",overseas-shipholding-group-inc_2019,666017c47ea6d36a5f1a142971929ee6,"{'answer': ['$1,101'], 'answer_type': 'span', 'scale': ''}",tat,cot
+"How much did basic and diluted income increased for the year ended December 31, 2018 as a result of applying ASC 606?","Based on the context provided, for the year ended December 31, 2018, **basic and diluted net income per share increased by $0.01** as a result of applying ASC 606.
+
+The text explicitly states: ""For the year ended December 31, 2018, revenues increased by $1,418, net income increased by $1,101 and basic and diluted net income per share increased by $0.01 as a result of applying ASC 606.""",overseas-shipholding-group-inc_2019,a2e47d5aa34c6d5c497606ad943c1404,"{'answer': ['$0.01'], 'answer_type': 'span', 'scale': ''}",tat,cot
+"What is the change in Assets: Voyage receivables from Balance at December 31, 2017 to January 1, 2018?","Based on the context provided, the change in Assets: Voyage receivables from December 31, 2017 to January 1, 2018 is **$1,336 thousand** (or $1,336 in thousands).
+
+This is shown in the adoption of ASC 606 table where:
+- Balance at December 31, 2017: $24,209 thousand
+- Adjustments Due to ASC 606: $1,336 thousand
+- Balance at January 1, 2018: $25,545 thousand
+
+The change equals the adjustment amount of $1,336",overseas-shipholding-group-inc_2019,4a7f1f7b7849dd862281675cd44a66e3,"{'answer': ['1336'], 'answer_type': 'arithmetic', 'scale': ''}",tat,cot
+"What is the change in Liabilities: Deferred income taxes from Balance at December 31, 2017 to January 1, 2018?",,overseas-shipholding-group-inc_2019,65dac64cb09b645dd52cc8f4a696544e,"{'answer': ['-108'], 'answer_type': 'arithmetic', 'scale': ''}",tat,cot
+"What is the average Assets: Voyage receivables for Balance at December 31, 2017 to January 1, 2018?","To calculate the average of Voyage receivables between December 31, 2017 and January 1, 2018, I need to find both values in the context.
+
+From the ASC 606 adoption table in the context:
+
+**Balance at December 31, 2017**: $24,209  
+**Balance at January 1, 2018**: $25,545
+
+Average = ($24,209 + $25,545) / 2 = $49,754 / 2 = **$24,877**
+
+$24,877 (in thousands)",overseas-shipholding-group-inc_2019,47de5ff31b0f887ca68128324e2bc981,"{'answer': ['24877'], 'answer_type': 'arithmetic', 'scale': ''}",tat,cot
+"How much did the company paid (net of refunds received) of income taxes during the years ended December 31, 2019 and 2018 respectively?","Based on the context provided, the company paid the following amounts (net of refunds received) for income taxes:
+
+- **Year ended December 31, 2019:** $1,293 thousand
+- **Year ended December 31, 2018:** $1,313 thousand
+
+This information is explicitly stated in the text: ""During the years ended December 31, 2019 and 2018, the Company paid (net of refunds received) $1,293 and $1,313, respectively, of income taxes.""",overseas-shipholding-group-inc_2019,3db311523025319e022d38381153a081,"{'answer': ['$1,293', '$1,313'], 'answer_type': 'multi-span', 'scale': ''}",tat,cot
+"What is the change in Net deferred tax liabilities from December 31, 2018 to 2019?",,overseas-shipholding-group-inc_2019,f1391674f685fc8a64561467a2a72578,"{'answer': ['-532'], 'answer_type': 'arithmetic', 'scale': ''}",tat,cot
+"What is the average Net deferred tax liabilities for December 31, 2018 to 2019?",,overseas-shipholding-group-inc_2019,557df27d862ca6bad16871d47118b8a9,"{'answer': ['73099'], 'answer_type': 'arithmetic', 'scale': ''}",tat,cot
+"In which year was Prepaid expenditures less than 6,000?",,overseas-shipholding-group-inc_2019,6122b1882bcd7b0a238a04bce284e40e,"{'answer': ['2019'], 'answer_type': 'span', 'scale': ''}",tat,cot
+What was the Prepaid expenditures in 2019 and 2018 respectively?,"Based on the provided context, there is no information about ""Prepaid expenditures"" for 2019 and 2018. The text contains financial data related to revenues, vessel expenses, depreciation, debt, pension benefits, interest expense, and other items, but does not mention prepaid expenditures or prepaid expenses anywhere in the provided excerpts.",overseas-shipholding-group-inc_2019,f0a1bd31aa64c790c41e42920619040b,"{'answer': ['5,621', '7,108'], 'answer_type': 'multi-span', 'scale': ''}",tat,cot
+What was the total deferred tax liabilities in 2019?,"Based on the context provided, the total deferred tax liabilities as of December 31, 2019 were **$205,947**.
+
+This is shown in the table under ""The significant components of the Company's deferred tax liabilities and assets follow:"" where it lists:
+- Vessels and other property: $128,026
+- Prepaid expenditures: $5,621
+- Operating lease right-of-use assets: $72,298
+- Other-net: $2
+- **Total deferred tax liabilities: $205,947**",overseas-shipholding-group-inc_2019,0a79d5cdef4dbfa5b6fa565e2e8f3d2c,"{'answer': ['205,947'], 'answer_type': 'span', 'scale': ''}",tat,cot
+"How much was Interest expense, including administrative and other fees for 2019?","Based on the context provided, the interest expense including administrative and other fees for 2019 was **$25,633**.
+
+This is explicitly stated in the ""INTEREST EXPENSE"" section: ""Interest expense, including administrative and other fees, was $25,633 for 2019 compared with $30,890 in 2018.""",overseas-shipholding-group-inc_2019,5588f44d7c6b68adc5b426b1476f6356,"{'answer': ['$25,633'], 'answer_type': 'span', 'scale': ''}",tat,cot
+"How much was Interest expense, including administrative and other fees for 2018?","Based on the context provided, the interest expense including administrative and other fees for 2018 was **$30,890**.
+
+This is explicitly stated in the ""INTEREST EXPENSE"" section: ""Interest expense, including administrative and other fees, was $25,633 for 2019 compared with $30,890 in 2018."" The accompanying table also confirms this with ""Interest expense $25,633 $30,890"" for 2019 and 2018 respectively.",overseas-shipholding-group-inc_2019,98769b3a9106ed5a8facd0428dc46359,"{'answer': ['$30,890'], 'answer_type': 'span', 'scale': ''}",tat,cot
+What led to the decrease in interest expense?,"Based on the context provided, the decrease in interest expense was primarily associated with two factors:
+
+1. **The impact of the refinancing of the term loan at the end of 2018**
+2. **Interest capitalized during 2019 due to vessels under construction**
+
+This information is explicitly stated in the ""INTEREST EXPENSE"" section: ""The decrease in interest expense was primarily associated with the impact of the refinancing of our term loan at the end of 2018 and interest capitalized during 2019 due to vessels under construction.""",overseas-shipholding-group-inc_2019,c79b7d1d989444d41bcb713a73e58607,"{'answer': ['primarily associated with the impact of the refinancing of our term loan at the end of 2018 and interest capitalized during 2019 due to vessels under construction.'], 'answer_type': 'span', 'scale': ''}",tat,cot
+"What is the change in Interest before impact of interest rate caps from Years Ended December 31, 2018 to 2019?","To answer this question, I need to find the ""Interest before impact of interest rate caps"" values for both 2018 and 20",overseas-shipholding-group-inc_2019,981e6c344db50ea5714042c9cb42bb1c,"{'answer': ['-5076'], 'answer_type': 'arithmetic', 'scale': ''}",tat,cot
+"What is the change in Interest expense from Years Ended December 31, 2018 to 2019?",,overseas-shipholding-group-inc_2019,368cb8e2d2ea86d8cbb6f76cfd6bb9b4,"{'answer': ['-5257'], 'answer_type': 'arithmetic', 'scale': ''}",tat,cot
+"What is the average Interest before impact of interest rate caps for Years Ended December 31, 2018 to 2019?","To calculate the average Interest before impact of interest rate caps for the years ended December 31, 2018 and 2019:
+
+1. **Locate the data**: In the ""INTEREST EXPENSE"" section, the table shows:
+   - 2019: $25,633
+   - 2018: $30,709
+
+2. **Calculate the average**: (25,633 + 30,709) ÷ 2 = 56,342 ÷ 2 = 28,171
+
+**Answer: $28,171**",overseas-shipholding-group-inc_2019,69977fcc3bdeb9ae684b21997c00ddab,"{'answer': ['28171'], 'answer_type': 'arithmetic', 'scale': ''}",tat,cot
+What was the low sale price per share for each quarters in 2018 in chronological order?,"Based on the Common Stock Price Range table for 2018 in the context, the low sale prices per share for each quarter in chronological order are:
+
+- **First Quarter**: $5.99
+- **Second Quarter**: $4.79  
+- **Third Quarter**: $2.66
+- **Fourth Quarter**: $1.88",lifeway-foods-inc_2019,f4c8e2d0155ac338249d0fe6feba49ac,"{'answer': ['$ 5.99', '$ 4.79', '$ 2.66', '$ 1.88'], 'answer_type': 'multi-span', 'scale': ''}",tat,cot
+What is the symbol of the company's common stock that is listed on the Nasdaq Global Market?,"The company's common stock is listed on the Nasdaq Global Market under the symbol ""LWAY.""",lifeway-foods-inc_2019,871af62021e2bd9a6ff15f9b1ba26d79,"{'answer': ['LWAY'], 'answer_type': 'span', 'scale': ''}",tat,cot
+When did trading commence?,"Trading commenced on March 29, 1988.",lifeway-foods-inc_2019,3a2082df3368ab1247a35cee9ac5e62b,"{'answer': ['March 29, 1988'], 'answer_type': 'span', 'scale': ''}",tat,cot
+"In 2018, how many quarters had stock prices lower than $2.00 during their lows?","Based on the 2018 Common Stock Price Range table in the context, the quarterly lows were:
+
+- First Quarter: $5.99
+- Second Quarter: $4.79  
+- Third Quarter: $2.66
+- Fourth Quarter: $1.88
+
+Only the Fourth Quarter had a low price below $2.00 ($1.88).
+
+Answer: 1 quarter",lifeway-foods-inc_2019,7130d53318fa3977ec3d448f54829163,"{'answer': ['1'], 'answer_type': 'count', 'scale': ''}",tat,cot
+"In the first quarter of 2018, what is the difference between the low and high price?","The difference between the low and high price in the first quarter of 2018 is $2.41.
+
+**Calculation:**
+- First Quarter 2018 Low: $5.99
+- First Quarter 2018 High: $8.40
+- Difference: $8.40 - $5.99 = $2.41",lifeway-foods-inc_2019,a9ab61dd0d95ff725f8d9bb48bb438b2,"{'answer': ['2.41'], 'answer_type': 'arithmetic', 'scale': ''}",tat,cot
+What is the average quarterly low price in 2018?,"To find the average quarterly low price in 2018, I need to locate the quarterly low prices for 2018 in the context and calculate their average.
+
+From the ""Common Stock Price Range"" table for 2018:
+- First Quarter Low: $5.99
+- Second Quarter Low: $4.79
+- Third Quarter Low: $2.66
+- Fourth Quarter Low: $1.88
+
+Calculation: ($5.99 + $4.79 + $2.66 + $1.88) ÷ 4 = $15.32 ÷ 4 = $3.83
+
+The average quarterly low price in 2018 was $3.83.",lifeway-foods-inc_2019,b637d36bf7fdb821c3aed000c4f38fe6,"{'answer': ['3.83'], 'answer_type': 'arithmetic', 'scale': ''}",tat,cot
+"What is the net sales for year ended December 31, 2019?","The net sales for the year ended December 31, 2019 were **$93,662** (in thousands).",lifeway-foods-inc_2019,4dfce6a0dde12d956bd0ba66a02e4b5a,"{'answer': ['$ 93,662'], 'answer_type': 'span', 'scale': 'thousand'}",tat,cot
+"What is the Cost of goods sold for year ended December 31, 2018?","Based on the consolidated statements of operations provided in the context, the Cost of goods sold for the year ended December 31, 2018 was **$74,646 thousand** (or $74,646,000).
+
+This can be found in the income statement where it shows:
+- Cost of goods sold: $68,367 (2019) and $74,646 (2018)
+
+It's also confirmed in the ""Results of Operations"" comparison table which shows:
+- Cost of goods sold: $68,367 (2019) vs $74,646 (2018)",lifeway-foods-inc_2019,2d5247aae6e51c55ce4210fc77864688,"{'answer': ['$ 74,646'], 'answer_type': 'span', 'scale': 'thousand'}",tat,cot
+"What is the total cost of goods sold for years ended December 31, 2018 and 2019 respectively?","Based on the Consolidated Statements of Operations in the provided context, the total cost of goods sold for each year is:
+
+**Year ended December 31, 2019:** $71,513 thousand  
+**Year ended December 31, 2018:** $77,492 thousand
+
+This is shown in the income statement where it lists ""Total cost of goods sold"" as $71,513 for 2019 and $77,492 for 2018 (in thousands).",lifeway-foods-inc_2019,d3ef8fd4b3583394a5552b6bf7d0a292,"{'answer': ['$ 77,492', '$ 71,513'], 'answer_type': 'multi-span', 'scale': 'thousand'}",tat,cot
+"What is the average amortization expense for years ended December 31, 2018 and 2019?","To find the average amortization expense for the years ended December 31, 2018 and 2019, I need to locate the amortization expense for each year from the Consolidated Statements of Operations.
+
+From the income statement data provided:
+- **2019 Amortization expense**: $192 thousand
+- **2018 Amortization expense**: $631 thousand
+
+This is also confirmed in the variance analysis section which shows:
+""Amortization expense    $ 192     $ 631     $ 439       69.6%""
+
+**Calculation:**
+Average = (2019 amount + 2018 amount) / 2",lifeway-foods-inc_2019,269130432b6ae71aa28a7c879b0dfba2,"{'answer': ['411.5'], 'answer_type': 'arithmetic', 'scale': 'thousand'}",tat,cot
+"What is the total gross profit altogether for years ended December 31, 2018 and 2019?","To find the total gross profit for both years combined, I need to add the gross profit from 2018 and 2019.
+
+From the Consolidated Statements of Operations (shown multiple times in the context):
+
+**2019 Gross profit:** $22,149 (in thousands)
+**2018 Gross profit:** $25,858 (in thousands)
+
+**Total gross profit for both years:** $22,149 + $25,858 = **$48,007 thousand** (or $48,007,000)",lifeway-foods-inc_2019,ef0eca56ee563b50849f725cce0a585e,"{'answer': ['48007'], 'answer_type': 'arithmetic', 'scale': 'thousand'}",tat,cot
+"What is the total selling expenses altogether for years ended December 31, 2018 and 2019?","To find the total selling expenses for both years, I need to locate the selling expenses for each year and add them together.
+
+From the Consolidated Statements of Operations:
+- **2019 Selling expenses**: $11,062 (in thousands)
+- **2018 Selling expenses**: $13,477 (in thousands)
+
+This is confirmed in multiple places in the context, including the variance analysis table and the narrative discussion: ""S",lifeway-foods-inc_2019,3d554e239feaac37bc0b52ace9c26146,"{'answer': ['24539'], 'answer_type': 'arithmetic', 'scale': 'thousand'}",tat,cot
+What is the provision (benefit) for total current income taxes for 2018 and 2019 respectively?,"Based on the income tax provision table in the context:
+
+**For 2018:** $236 thousand  
+**For 2019:** $249 thousand
+
+This is shown in the ""Total current"" line of the provision for income taxes breakdown:
+- 2019 Total current: $249
+- 2018 Total current: $236",lifeway-foods-inc_2019,4b7153cbb854c224d6bb0fb509fe74fe,"{'answer': ['236', '249'], 'answer_type': 'multi-span', 'scale': ''}",tat,cot
+What is the deferred provision (benefit) for income tax for 2018 and 2019 respectively?,"Based on the context provided, the deferred provision (benefit) for income taxes is shown in the first table under ""The provision (benefit) for income taxes consists of the following:""
+
+**Deferred provision (benefit) for income tax:**
+- **2019:** $533 thousand (provision)
+- **2018:** $(461) thousand (benefit)
+
+This can be found in the line item ""Deferred"" in the table showing the breakdown of current and deferred tax provisions for the years ended December 31, 2019 and 2018.",lifeway-foods-inc_2019,1098c97fef920d0f4107fa3be6f84e3a,"{'answer': ['(461)', '533'], 'answer_type': 'multi-span', 'scale': ''}",tat,cot
+What is the total provision (benefit) for income taxes in 2019?,"The total provision for income taxes in 2019 was $782,000 (as shown in the provision for income taxes table and the consolidated statements of operations).",lifeway-foods-inc_2019,02f7e36188fb5241c3b79c577969c9c1,"{'answer': ['782'], 'answer_type': 'span', 'scale': ''}",tat,cot
+What is the change in provision (benefit) for state and local income taxes between 2018 and 2019?,"Based on the provision for income taxes table in the context:
+
+**State and local income taxes:**
+- 2019: $276 thousand
+- 2018: $249 thousand
+
+**Change:** $276 - $249 = **$27 thousand increase**",lifeway-foods-inc_2019,0757aa24bf45a6d6e6d6669322b86129,"{'answer': ['27'], 'answer_type': 'arithmetic', 'scale': ''}",tat,cot
+What is the average total current provision (benefit) for income taxes for 2018 and 2019?,"To find the average total current provision (benefit) for income taxes for 2018 and 2019, I need to look at the ""Total current"" line in the provision for income taxes table.
+
+From the context:
+- 2019 Total current: $249 thousand
+- 2018 Total current: $236 thousand
+
+Average = (249 + 236) / 2 = 485 / 2 = 242.5
+
+The average total current provision for income taxes for 2018 and 2019 is **$242.5 thousand** (or $242,500).",lifeway-foods-inc_2019,fa0826e9da13dee9c708cf07e1887987,"{'answer': ['242.5'], 'answer_type': 'arithmetic', 'scale': ''}",tat,cot
+What is the percentage change in provisions (benefit) for state and local income taxes between 2018 and 2019?,"To calculate the percentage change in provisions for state and local income taxes between 2018 and 2019:
+
+1. **Identify the values from the table:**
+   - 2019 state and local tax provision: $27",lifeway-foods-inc_2019,5c0ddefaec11aaea7641c83b8e8ee365,"{'answer': ['10.84'], 'answer_type': 'arithmetic', 'scale': 'percent'}",tat,cot
+What is the value of real estate taxes in 2018?,"Based on the provided financial statements and notes, there is no specific line item or disclosure for ""real estate taxes"" or ""property taxes"" for 2018 (or 2019). The financial statements show summarized categories such as:
+
+- Cost of goods sold",lifeway-foods-inc_2019,f3f36466e3595177dee05fd432122387,"{'answer': ['398'], 'answer_type': 'span', 'scale': ''}",tat,cot
+What is the value of  Payroll and incentive compensation  in 2019?,"Based on the provided context, I cannot determine the value of ""Payroll and incentive compensation"" for 2019. The context includes:
+
+1. **Consolidated Balance Sheets** (page F-2) - showing assets, liabilities",lifeway-foods-inc_2019,42c150597a31cc2a2459139b7cf9bb80,"{'answer': ['3,009'], 'answer_type': 'span', 'scale': ''}",tat,cot
+What is the total accrued expenses in 2019?,"Based on the Consolidated Balance Sheets in the provided context, the total accrued expenses for December 31, 2019 is **$4,087 thousand** (or $4,087,000).
+
+This is shown in the Current liabilities section:
+- **Accrued expenses: $4,087** (2019) vs $2,777 (2018)
+
+Note 6 provides a partial breakdown of accrued expenses for 2019:
+- Payroll and incentive compensation: $3,009
+- Current portion of operating lease liabilities: $285
+- Total shown in note: $3,29",lifeway-foods-inc_2019,f63132271964495b894d5c59f7b50365,"{'answer': ['4,087'], 'answer_type': 'span', 'scale': ''}",tat,cot
+What is the average real estate taxes for 2018 and 2019?,"Based on the provided context, there is no information available about real estate taxes for 2018 and 2019. The financial statements and notes include details on income taxes (federal, state, and local), deferred taxes, and tax provisions, but do not contain any line items or disclosures specifically for real estate or property taxes.
+
+The tax-related information provided includes:
+- Provision (benefit) for income taxes: $782 (2019) and $(225) (2018)
+- Breakdown of current and deferred tax expenses
+- Effective tax rate reconciliation
+- Unrecognized tax benefits
+- Accru",lifeway-foods-inc_2019,75006d911eb541bafc8bfdfe43399b83,"{'answer': ['398'], 'answer_type': 'arithmetic', 'scale': ''}",tat,cot
+What is the change in payroll and incentive compensation between 2018 and 2019?,,lifeway-foods-inc_2019,4b33b977256836fc6c3fbda16ba5844d,"{'answer': ['1072'], 'answer_type': 'arithmetic', 'scale': ''}",tat,cot
+What is the percentage change in the total accrued expenses from 2018 to 2019?,,lifeway-foods-inc_2019,0e0ad7de3485110d26cb55f7d007c191,"{'answer': ['47.17'], 'answer_type': 'arithmetic', 'scale': 'percent'}",tat,cot
+What is the value of buildings and improvements in 2018 and 2019 respectively?,"Based on the context provided in ""Note 4 – Property, Plant and Equipment, net"", the values for buildings and improvements are:
+
+**2019: $17,332 thousand**  
+**2018: $17,520 thousand**
+
+These figures are from the consolidated balance sheet as of December 31 for each respective year, and are reported in thousands of dollars.",lifeway-foods-inc_2019,83cb95ba9efedd8346b5f66758f4ab85,"{'answer': ['17,520', '17,332'], 'answer_type': 'multi-span', 'scale': ''}",tat,cot
+What is the value of machinery and equipment in 2018 and 2019 respectively?,"Based on the context provided in Note 4 – Property, Plant and Equipment, net, the values for machinery and equipment are:
+
+- **2019**: $30,670 thousand
+- **2018**: $29,692 thousand
+
+These figures are listed in the Property, Plant and Equipment table under ""Machinery and equipment"" for December 31, 2019 and 2018 respectively.",lifeway-foods-inc_2019,21502e160cffea38beb6bfa69e88a8a4,"{'answer': ['29,692', '30,670'], 'answer_type': 'multi-span', 'scale': ''}",tat,cot
+What is the value of vehicles in 2018 and 2019 respectively?,"Based on the Property, Plant and Equipment note (Note 4), the values for Vehicles are:
+
+- **2019**: $778 thousand
+- **2018**: $937 thousand
+
+These figures are from the consolidated balance sheets as of December 31, 2019 and 2018, presented in thousands.",lifeway-foods-inc_2019,30e01bc5c375a0ca44ab4c0dd14e5e1e,"{'answer': ['937', '778'], 'answer_type': 'multi-span', 'scale': ''}",tat,cot
+What is the average value of vehicles for 2018 and 2019?,"To find the average value of vehicles for 2018 and 2019, I need to locate the vehicle values in the property, plant and equipment note.
+
+From Note 4 – Property, Plant and Equipment, net:
+- Vehicles (2019): $778 thousand
+- Vehicles (2018): $937 thousand
+
+Average = ($778 + $937) / 2 = $1,715 / 2 = $857.5 thousand
+
+The average value of vehicles for 2018 and 2019 is $857.5 thousand (or $857,500).",lifeway-foods-inc_2019,fe59aeaff2948f598d69f262c6464889,"{'answer': ['857.5'], 'answer_type': 'arithmetic', 'scale': ''}",tat,cot
+What is the change in the value of land between 2018 and 2019?,"Based on the context provided in Note 4 – Property, Plant and Equipment, net:
+
+**Land values:**
+- December 31, 2019: $1,565 thousand
+- December 31, 2018: $1,747 thousand
+
+**Change in value:** $1,565 - $1,747 = **-$182 thousand** (a decrease of $182,000)",lifeway-foods-inc_2019,f560afe7324f4c35e8f7da783c32aa22,"{'answer': ['-182'], 'answer_type': 'arithmetic', 'scale': ''}",tat,cot
+"Which year has a higher total property, plant and equipment, net value?","Based on the Consolidated Balance Sheets and Note 4 – Property, Plant and Equipment, net:
+
+- **2019**: $22,274 thousand
+- **2018**: $24,573 thousand
+
+**2018 has a higher total property, plant and equipment, net value.**",lifeway-foods-inc_2019,5a828e2230844940247c4dbe07bc8a41,"{'answer': ['2018'], 'answer_type': 'span', 'scale': ''}",tat,cot
+What is the percentage of net sales from Cheese in 2018 and 2019 respectively?,"Based on the context provided, the percentage of net sales from Cheese was:
+
+- **2019: 12%**
+- **2018: 11%**
+
+This information is found in the ""Net sales of products by category"" table, which shows Cheese at $11,459 (12%) for 2019 and $11,486 (11%) for 2018.",lifeway-foods-inc_2019,75e6ca02ab71725f685af6ab838f05d2,"{'answer': ['11%', '12%'], 'answer_type': 'multi-span', 'scale': ''}",tat,cot
+What is the amount of net sales from ProBugs Kelir in 2018 and 2019 respectively?,"Based on the context provided, I can find the net sales for ProBugs Kefir in the product category table that appears twice in the document.
+
+The table shows ""Net sales of products by category were as follows for the years ended December 31:"" with values noted as ""In thousands"".
+
+**ProBugs Kefir net sales:**
+- **2019:** $2,780 thousand (3% of total net sales)
+- **2018:** $2,795 thousand (3% of total net sales)
+
+This represents a slight decrease of $15 thousand from 2018 to 2019.",lifeway-foods-inc_2019,0022a9993b61830a838d232e2e840b27,"{'answer': ['2,795', '2,780'], 'answer_type': 'multi-span', 'scale': 'thousand'}",tat,cot
+What does the table show?,"Based on the context provided, there are several tables showing different financial information for Lifeway Foods, Inc. Here are the main tables:
+
+## 1. **Intangible Assets Table** (Note 5 - Finite-lived Intangible Assets)
+Shows the breakdown of intangible assets as of December 31, 2019 and 2018:
+- **Recipes**: $44 (both years)
+- **Customer lists and other customer related intangibles**: $4,529 (both years)
+- **",lifeway-foods-inc_2019,83a78d0daf6d8f9ce353ded1a0291a2d,"{'answer': ['Net sales of products by category were as follows for the years ended December 31'], 'answer_type': 'span', 'scale': ''}",tat,cot
+What is the difference in net sales between drinkable Kefir other than ProBugs and Cheese in 2019?,"To find the difference in net sales between Drinkable Kefir other than ProBugs and Cheese in 2019, I need to look at the net sales by category table for 2019.
+
+From the table:
+- **Drinkable Kefir other than ProBugs (2019)**: $71,822 thousand
+- **Cheese (2019)**: $11,459 thousand
+
+**Calculation**: $71,822 - $11,459 = $60,363 thousand
+
+**",lifeway-foods-inc_2019,d48d36b8b28ebabb0e63ac6a5a0039e2,"{'answer': ['60363'], 'answer_type': 'arithmetic', 'scale': 'thousand'}",tat,cot
+What is the average total net sales for both 2018 and 2019?,"To calculate the average total net sales for 2018 and 2019, I need the net sales figures for both years from the Consolidated Statements of Operations.
+
+From the context:
+- **2019 Net sales**: $93,662 (in thousands)
+- **2018 Net sales**: $103,350 (in thousands)
+
+**Calculation**:
+Average = (2019 Net sales + 2018 Net sales) ÷ 2
+Average = ($93,662 + $103,350) ÷ 2
+Average = $197,012 ÷ 2
+Average = **$98,506** (in thousands)
+
+The average total net sales for both 2018 and 2019 is **$98,506 thousand** (or $98,506,000).",lifeway-foods-inc_2019,20f24ba8ce1e550df381d2edf4359e70,"{'answer': ['98506'], 'answer_type': 'arithmetic', 'scale': 'thousand'}",tat,cot
+What is the percentage constitution of net sales from Frozen Kefir among the total net sales in 2019?,,lifeway-foods-inc_2019,5b53e0ca06203f7703b6c4f8057e3c87,"{'answer': ['1.73'], 'answer_type': 'arithmetic', 'scale': 'percent'}",tat,cot
+By how much did the fair value exceed the carrying value by?,"Based on the context provided, the fair value exceeded the carrying value by **2.4%**. This is stated multiple times in the text regarding the annual goodwill impairment analysis as of December 31, 2019.",lifeway-foods-inc_2019,808a65707eb0160408627b44eba7ff50,"{'answer': ['2.4%'], 'answer_type': 'span', 'scale': ''}",tat,cot
+What does the company use to estimate fair value?,"Based on the context provided, the company uses the following methods to estimate fair value:
+
+**For goodwill impairment testing (single reporting unit):**
+- **Income approach**: Discounted cash flows (present value of estimated future cash flows)
+- **Market approach**: Market multiples analysis using revenue and earnings multiples derived from comparable publicly-traded companies with similar operating and investment characteristics (guideline company comparisons)
+
+**For indefinite-lived intangible assets (brand names):**
+- **Relief from royalty method**: Comparing carrying value to fair value based on current revenue projections
+
+**Fair value hierarchy inputs:**
+- Level 1: Quoted prices in active markets for identical assets/liabilities
+- Level 2: Observable inputs other than quoted prices (quoted prices",lifeway-foods-inc_2019,753dac607eb78875a55eb7d8bd15cf8e,"{'answer': ['Widely accepted valuation techniques including discounted cash flows and market multiples analysis with respect to our single reporting unit'], 'answer_type': 'span', 'scale': ''}",tat,cot
+"What is the value of brand names as of December 31, 2019?","Based on the financial statements provided in the context, the value of brand names as of December 31, 2019 is **$3,700** (in thousands, as indicated by the financial statement format).
+
+This is shown in Note 5 – Goodwill and Intangible Assets, where the table lists ""Brand names"" as $3,700 for both 2019 and 2018. The note also explicitly states: ""We reviewed our indefinite lived intangible assets, which consist of brand names totaling $3,700 as of December 31, 2019...""",lifeway-foods-inc_2019,3bb89358397128cfbd5cdc0b0eaa1094,"{'answer': ['3,700'], 'answer_type': 'span', 'scale': ''}",tat,cot
+What is the change in the value of brand names between 2018 and 2019?,"Based on the financial statements in Note 5 – Goodwill and Intangible Assets, the value of brand names remained unchanged between 2018 and 2019.
+
+**Brand names value:**
+- December 31, 2019: $3,700 thousand
+- December 31, 2018: $3,700 thousand
+
+**Change:** $0 (no change)",lifeway-foods-inc_2019,ec84e524463dfd906ae9c37d739c610f,"{'answer': ['0'], 'answer_type': 'arithmetic', 'scale': ''}",tat,cot
+What is the average goodwill and indefinite lived intangible assets for 2018 and 2019?,"To calculate the average goodwill and indefinite lived intangible assets for 2018 and 2019, I need to find the total values for each year and then compute the average.
+
+From Note 5 – Goodwill and Intangible Assets in the context:
+
+**Goodwill and indefinite-lived intangible assets:**
+- December 31, 2019: $12,824 thousand
+- December 31, 2018: $12,824 thousand
+
+The calculation:
+- Average = ($12,824 + $12,824) ÷ 2 = $12,824 thousand
+
+Since the value remained unchanged at $12,824 thousand for both years, the average is the same as each individual year's value.
+
+**Answer: $12,824 thousand**",lifeway-foods-inc_2019,62f4bfdc1f449f4de18e2c8327cb18fd,"{'answer': ['12824'], 'answer_type': 'arithmetic', 'scale': ''}",tat,cot
+What is the percentage constitution of brand names among the total goodwill and indefinite lived intangible assets in 2019?,"To answer this question, I need to find the values for brand names and total goodwill and indefinite-lived intangible assets for 2019.
+
+From Note 5 – Goodwill and Intangible Assets in the context:
+
+**December 31, 2019:**
+- Brand names: $3,700
+- Goodwill and indefinite lived intangible assets (total): $12,824
+
+Calculation:
+Percentage = (Brand names ÷ Total goodwill and indefinite lived intangible assets) × 100
+Percentage = ($3,700 ÷ $12,824) × 100 = 28.85%
+
+**Answer",lifeway-foods-inc_2019,93bc597e64554174f2373c633c17af3e,"{'answer': ['28.85'], 'answer_type': 'arithmetic', 'scale': 'percent'}",tat,cot
+What is the value of ingredients in 2019?,"Based on the inventory data provided in the context (Note 3 - Inventories), the value of ingredients in 2019 was **$1,942 thousand** (or $1,942,000).
+
+This appears in the inventory breakdown table showing:
+- **Ingredients**: $1,942 (2019) vs $1,580 (2018)
+- Packaging: $2,230 (2019) vs $2,072 (2018)
+- Finished goods: $2,220 (2019) vs $2,165 (2018)
+- Total inventories, net: $6,392 (2019) vs $5,817 (2018)
+
+Note: The financial statements indicate values are presented in thousands.",lifeway-foods-inc_2019,6b41744c73e0634e3aeb6b4539b75742,"{'answer': ['1,942'], 'answer_type': 'span', 'scale': ''}",tat,cot
+What is the value of packaging in 2019?,"Based on the inventory table provided in the context, the value of packaging in 2019 was **$2,230 thousand** (or $2,230,000).
+
+This is shown in the inventory breakdown:
+- **Packaging: $2,230** (2019) vs $2,072 (2018)",lifeway-foods-inc_2019,02130d446b042f4200ca78052453993c,"{'answer': ['2,230'], 'answer_type': 'span', 'scale': ''}",tat,cot
+What is the value of finished goods in 2019?,"Based on the inventory breakdown provided in the context, the value of finished goods in 2019 was **$2,220 thousand** (or $2,220,000).
+
+This is shown in the inventory table:
+```
+2019      2018    
+Ingredients    $ 1,942      $ 1,580    
+Packaging      2,230        2,072    
+Finished goods      2,220        2,165    
+Total inventories, net    $ 6,392      $ 5,817
+```
+
+The financial statements are presented in thousands (as noted in multiple places: ""In thousands, except per share data"").",lifeway-foods-inc_2019,94d0b308be53d41130ab3d9a2dabaaad,"{'answer': ['2,220'], 'answer_type': 'span', 'scale': ''}",tat,cot
+What is the percentage change in ingredients between 2018 and 2019?,"Based on the inventory data provided in the context:
+
+**Ingredients values:**
+- 2019: $1,942 thousand
+- 2018: $1,580 thousand
+
+**Calculation:**
+Percentage change = ((2019 value - 2018 value) / 2018 value) × 100
+= (($1,942 - $1,580) / $1,580) × 100
+= ($362 / $1,580) × 100
+= 22.91%
+
+**Answer: The percentage change in ingredients between 2018 and 2019 was approximately 22.9% increase.**",lifeway-foods-inc_2019,077fac86dd9c8cd78b834fbdbe0885be,"{'answer': ['22.91'], 'answer_type': 'arithmetic', 'scale': 'percent'}",tat,cot
+What is the change in finished goods between 2018 and 2019?,"Based on the inventory data provided in the context:
+
+**Finished goods:**
+- 2019: $2,220 thousand
+- 2018: $2,165 thousand
+
+**Change:** $2,220 - $2,165 = **$55 thousand increase** (or $55,000)
+
+The data appears in the inventory breakdown table showing ""Finished goods"" for both years, with all figures reported in thousands as indicated throughout the financial statements.",lifeway-foods-inc_2019,fee41628b782d6cc850711ba205d0eb3,"{'answer': ['55'], 'answer_type': 'arithmetic', 'scale': ''}",tat,cot
+What is the average value of packaging for years 2018 and 2019?,"To find the average value of packaging for 2018 and 2019, I need to locate the packaging values for both years in the inventory data.
+
+From the context, the inventory table shows:
+- **2019 Packaging**: $2,230 thousand
+- **2018 Packaging**: $2,072 thousand
+
+**Calculation:**
+Average = (2019 value + 2018 value) ÷ 2
+Average = ($2,230 + $2,072) ÷ 2
+Average = $4,302 ÷ 2
+Average = **$2,151 thousand**
+
+**Answer:** The average value of packaging for 2018 and 2019 is **$2,151 thousand** (or $2,151,000).",lifeway-foods-inc_2019,ff6afb9d6b8d01ad451ccf6b9920ccb6,"{'answer': ['2151'], 'answer_type': 'arithmetic', 'scale': ''}",tat,cot
+"What is the value of the intangible asset at December 31, 2019 expected to be amortized in 2020?","The value of the intangible asset at December 31, 2019 expected to be amortized in 2020 is $152,000 (reported as $152 in thousands).",lifeway-foods-inc_2019,08c63eadfa7891718baf36ff4525beeb,"{'answer': ['$152'], 'answer_type': 'span', 'scale': ''}",tat,cot
+What is the value of recipes in 2018 and 2019 respectively?,"Based on the provided context, there is **no information about the value of recipes** for 2018 or 2019. The financial statements and notes include line items such as:
+
+- **Intangible assets**: Goodwill and indefinite-lived intangibles ($12,824 thousand in both years) and Other intangible assets, net ($152 thousand in 2019, $344 thousand in 2018)
+- **Product categories**: Drinkable Kefir, Cheese, Cream, ProBugs, Other dairy, Frozen Kefir
+- **Raw materials**: Conventional and organic raw milk
+
+However, ""recipes"" are not separately disclosed as an asset, expense, or valuation metric anywhere in the provided text.",lifeway-foods-inc_2019,4cb79dfe572f814f50c02a61639f2094,"{'answer': ['$ 44', '$ 44'], 'answer_type': 'multi-span', 'scale': ''}",tat,cot
+What is the value of customer relationships in 2018 and 2019 respectively?,"Based on the financial statements provided, the value of customer relationships is:
+
+**2018: $985 thousand**  
+**2019: $985 thousand**
+
+This information appears in the ""Finite-lived Intangible Assets"" section of the notes to the consolidated financial statements, where ""Customer relationships"" are listed at $985 for both December 31, 2019 and December 31, 2018.",lifeway-foods-inc_2019,719ef48aead1f283a692fedbeae4622a,"{'answer': ['985', '985'], 'answer_type': 'multi-span', 'scale': ''}",tat,cot
+What is the change in the value of customer relationships between 2018 and 2019?,,lifeway-foods-inc_2019,7622984778061cb2468425d5534a99e6,"{'answer': ['0'], 'answer_type': 'arithmetic', 'scale': ''}",tat,cot
+What is the average value of trade names for both 2018 and 2019?,"Based on the provided context, I cannot determine the average",lifeway-foods-inc_2019,3ead03b4712e86e15034c9fabc0f1b9b,"{'answer': ['2248'], 'answer_type': 'arithmetic', 'scale': ''}",tat,cot
+Which year has a higher value of net intangible assets?,"Based on the Consolidated Balance Sheets in the context, the net intangible assets values are:
+
+**2019:** Total intangible assets = $12,976 thousand
+- Goodwill and indefinite-lived intangibles: $12,824
+- Other intangible assets, net: $152
+
+**2018:** Total intangible assets = $13,168 thousand
+- Goodwill and indefinite-lived intangibles: $12,824
+- Other intangible assets, net: $344
+
+**2018 has a higher value of net intangible assets** ($13,168 thousand vs. $12,976 thousand).",lifeway-foods-inc_2019,2e75df802943b85f4f9e92bc20cfa689,"{'answer': ['2018'], 'answer_type': 'span', 'scale': ''}",tat,cot
+What is net sales from cheese in 2018 and 2019 respectively?,"Based on the context provided, the net sales from cheese for the years ended December 31 were:
+
+**2019:** $11,459 thousand (12% of total net sales)  
+**2018:** $11,486 thousand (11% of total net sales)
+
+These figures are from the ""Net sales of products by category"" table, which states values are ""In thousands.""",lifeway-foods-inc_2019,bc9c09b72c0915325eba413a8b9a1a3d,"{'answer': ['11,486', '11,459'], 'answer_type': 'multi-span', 'scale': 'thousand'}",tat,cot
+What is net sales from cream and other in 2018 and 2019 respectively?,"Based on the net sales by category table in the context:
+
+**Cream and other net sales:**
+- **2019:** $4,228 thousand (4% of total net sales)
+- **2018:** $5,276 thousand (5% of total net sales)
+
+*Note: Values are reported in thousands of dollars as indicated in the table header ""In thousands"".*",lifeway-foods-inc_2019,05d6f0b7266caa424d82675ec4d0ca2e,"{'answer': ['5,276', '4,228'], 'answer_type': 'multi-span', 'scale': 'thousand'}",tat,cot
+What is net sales from ProBugs Kefir in 2018 and 2019 respectively?,"Based on the net sales by category table in the context, the net sales for ProBugs Kefir were:
+
+**2019:** $2,780 thousand (3% of total net sales)  
+**2018:** $2,795 thousand (3% of total net sales)
+
+*Note: The table indicates values are ""In thousands"", so these represent $2.78 million and $2.795 million respectively.*",lifeway-foods-inc_2019,2f2b6b2954f6943f6d6da265a4c0d442,"{'answer': ['2,795', '2,780'], 'answer_type': 'multi-span', 'scale': 'thousand'}",tat,cot
+How many product categories are available?,"Based on the context provided, Lifeway Foods reports net sales across **6 product categories** as shown in the sales breakdown table for the years ended December 31, 2019 and 2018:
+
+1. **Drinkable Kefir other than ProBugs** (77% of 2019 sales)
+2. **Cheese** (12% of 2019 sales)
+3. **Cream and other** (4% of 2019 sales)
+4. **ProBugs Kefir** (3% of 2019 sales)
+5. **Other dairy** (2% of 2019 sales)
+6. **Frozen Kefir** (2% of 2019 sales, includes Lifeway Kefir Shop sales)
+
+These",lifeway-foods-inc_2019,35c34d8747c64c231b217c6682fc6123,"{'answer': ['6'], 'answer_type': 'count', 'scale': ''}",tat,cot
+What is the change in the net sales for cheese between 2018 and 2019?,,lifeway-foods-inc_2019,d3ec26df2ae21b522296822a9f25e846,"{'answer': ['-27'], 'answer_type': 'arithmetic', 'scale': 'thousand'}",tat,cot
+What is the percentage change in net sales from Frozen Kefir between 2018 and 2019?,"To calculate the percentage change in net sales for Frozen Kefir between 2018 and 2019:
+
+**Step 1: Identify the net sales figures from the table**
+- 2019 Frozen Kefir net sales: $1,617 thousand
+- 2018 Frozen Kefir net sales: $1,434 thousand
+
+**Step 2: Calculate the percentage change**
+Percentage change = ((2019 value - 2018 value) / 2018 value) × 100
+= (($1,617 - $1,4",lifeway-foods-inc_2019,0348eb3a1a522c486ac40488208708ff,"{'answer': ['12.76'], 'answer_type': 'arithmetic', 'scale': 'percent'}",tat,cot
+How much were Audit fees in 2019?,"Based on the context provided, the Audit fees for fiscal year 2019 were **$3,631,575**.
+
+This is shown in the ""Audit and Non-Audit Fees"" table under ""Fiscal 2019"" for ""Audit Fees (1)"".",viavi-solutions-inc_2019,1e6aad30f05774a94864c3f583e38cae,"{'answer': ['$3,631,575'], 'answer_type': 'span', 'scale': ''}",tat,cot
+How much were Tax Fees in 2019?,"Based on the fee table provided in the context, Tax Fees for fiscal year 2019 were **$169,776**.
+
+This is shown in the ""Audit and Non-Audit Fees"" table under the column ""Fiscal 2019"" for the row ""Tax Fees (3)"".",viavi-solutions-inc_2019,7cdc802372c5af5437ddcf061b734185,"{'answer': ['169,776'], 'answer_type': 'span', 'scale': ''}",tat,cot
+What is the change in Audit Fees as a percentage between 2018 and 2019?,"To calculate the change in Audit Fees as a percentage between 2018 and 2019:
+
+**Audit Fees from the table:**
+- Fiscal 2019: $3,631,575
+- Fiscal 2018: $3,784,488
+
+**Calculation:**
+Percentage Change = ((2019 Value - 2018 Value) / 2018 Value) × 100
+= (($3,631,575 - $3,784,488) / $3,784,488) × 100
+= (-$152,913 / $3,784,488) × 100
+= -4.04%
+
+**Answer:** Audit Fees decreased by **4.04%** from fiscal 2018 to fiscal 2019.",viavi-solutions-inc_2019,8939624e79668a97d484c68cec924fe3,"{'answer': ['-4.04'], 'answer_type': 'arithmetic', 'scale': 'percent'}",tat,cot
+What is the change in All Other Fees as a percentage between 2018 and 2019?,"To calculate the percentage change in All Other Fees between 2018 and 2019:
+
+**From the fee table:**
+- Fiscal 2019 All Other Fees: $4,500
+- Fiscal 2018 All Other Fees: $3,600
+
+**Calculation:**
+Percentage Change = ((2019 Value - 2018 Value) / 2018 Value) × 100
+= (($4,500 - $3,600) / $3,600) × 100
+= ($900 / $3,600) × 100
+= 0.25 × 100
+= **25% increase**
+
+The All Other Fees increased by 25% from fiscal 2018 to fiscal 2019.",viavi-solutions-inc_2019,f60e9d38b6711c488e0cbe5221285710,"{'answer': ['25'], 'answer_type': 'arithmetic', 'scale': 'percent'}",tat,cot
+What is the total of Tax Fees and All Other Fees in 2019?,"To find the total of Tax Fees and All Other Fees in 2019, I need to look at the fee table for fiscal year 2019.
+
+From the table:
+- Tax Fees (3) for Fiscal 2019: $169,776
+- All Other Fees (4) for Fiscal 2019: $4,500
+
+Adding these together: $169,776 + $4,500 = $174,276
+
+$174,276",viavi-solutions-inc_2019,0608763ee84c91150321c97071aea482,"{'answer': ['174276'], 'answer_type': 'arithmetic', 'scale': ''}",tat,cot
+What are Audit-Related fees related to?,"Based on the context provided, Audit-Related Fees are related to **due diligence services for acquisition activities incurred in fiscal 2018**.
+
+This is explicitly stated in footnote (2) below the fee table: ""(2) Audit-Related Fees are related to due diligence services for our acquisition activities incurred in fiscal 2018.""",viavi-solutions-inc_2019,fd0e208e17bab8e872774c623e895737,"{'answer': ['Audit-Related Fees are related to due diligence services for our acquisition activities incurred in fiscal 2018.'], 'answer_type': 'span', 'scale': ''}",tat,cot
+How much did Keith Barnes earn in cash?,"Based on the Director Compensation Table in the provided context, Keith Barnes earned **$102,500** in cash (listed under ""Fees Earned or Paid in Cash ($)"").",viavi-solutions-inc_2019,e5c6bfddbd32d79ccd752424c7e2cd5c,"{'answer': ['102,500'], 'answer_type': 'span', 'scale': ''}",tat,cot
+How much did Donald Colvin earn in cash?,"Based on the provided context, I cannot determine how much Donald Colvin earned in cash. The document contains information about Viavi Solutions Inc.'s executive compensation for Named Executive Officers (NEOs) and director equity awards, but does not include cash compensation details for Donald Colvin.
+
+The context shows:
+- Donald Colvin is listed as a director with 103,910 shares granted under the 2003 Equity Incentive Plan
+- He serves as Chair",viavi-solutions-inc_2019,d1a4ba4e1af05c60efa468f953a4f8ca,"{'answer': ['97,500'], 'answer_type': 'span', 'scale': ''}",tat,cot
+Why was Oleg Khaykin not included in the table?,"Based on the context provided, Oleg Khaykin **does appear in",viavi-solutions-inc_2019,709f074cedfe004a3ac89c260ec6f06a,"{'answer': ['he was an employee of the Company and as such received no compensation for his services as a director.'], 'answer_type': 'span', 'scale': ''}",tat,cot
+What is the difference between  Richard E. Belluzzo's total compensation as compared to Laura Black?,"Based on the Director Compensation Table in the proxy statement:
+
+- **Richard E. Belluzzo's total compensation**: $338,317
+- **Laura Black's total compensation**: $245,817
+
+**Difference**: $338,317 - $245,817 = **$92,500**",viavi-solutions-inc_2019,f1b63dd3002720ebbffa8f36d852d351,"{'answer': ['92500'], 'answer_type': 'arithmetic', 'scale': ''}",tat,cot
+What is the summed compensation for the top 3 most compensated directors?,,viavi-solutions-inc_2019,ddbeb443efa1bb2757619f4162915f89,"{'answer': ['894951'], 'answer_type': 'arithmetic', 'scale': ''}",tat,cot
+What is the percentage difference of the total compensation between Timothy Campos and Tor Braham?,,viavi-solutions-inc_2019,5cff0439063c6a496073ce4b55591d0b,"{'answer': ['4.07'], 'answer_type': 'arithmetic', 'scale': 'percent'}",tat,cot
+How much was Gary Staley's sign-on bonus when he joined the company in February 2017?,"Based on the context provided, specifically footnote (6) in the Summary Compensation Table notes:
+
+**Mr. Staley was awarded a $60,000 sign-on bonus when he joined the Company in February 2017.**",viavi-solutions-inc_2019,78317e9c82de1a46fd1d34b9a88fa14a,"{'answer': ['$60,000'], 'answer_type': 'span', 'scale': 'thousand'}",tat,cot
+What was the maximum possible value of MSU's using grant date fair value for Oleg Khaykin in 2018?,"Based on the table in the context, the maximum possible value of MSUs using grant date fair value for Oleg Khaykin in 2018 was **$2,457,750**.",viavi-solutions-inc_2019,96972078a5d90f3108d4d551a5862ac2,"{'answer': ['2,457,750'], 'answer_type': 'span', 'scale': ''}",tat,cot
+What was the maximum possible value of MSU's using grant date fair value for Paul McNab in 2019?,"Based on the table in the context showing ""Maximum Possible Value of MSUs Using Grant Date Fair Value,"" for Paul McNab in fiscal year 2019, the value is **591,150**.",viavi-solutions-inc_2019,4f1deea454898e37ff21e954bde22598,"{'answer': ['591,150'], 'answer_type': 'span', 'scale': ''}",tat,cot
+What was the change in maximum possible value of MSU's using grant date fair value for Paul McNab between 2017 and 2018 as a percentage?,,viavi-solutions-inc_2019,08fb8e9b29d951164cbe057f7a5030d2,"{'answer': ['18.47'], 'answer_type': 'arithmetic', 'scale': 'percent'}",tat,cot
+What is the difference between the maximum possible value of PSUs in 2018 between Oleg Khaykin and Amar Maletira?,"To answer this question, I need to find the maximum possible value of PSUs for both Oleg Khaykin and Amar Maletira in 2018 from the provided context.
+
+Looking at the first table in the context:
+
+**Oleg Khaykin 2018**: Maximum Possible Value of PSUs Using Grant Date Fair Value = **909,900**
+
+**Amar Maletira 2018**: Maximum Possible Value of PSUs Using Grant Date Fair Value = **454,950**
+
+The difference = 909,900 - 454,950 = **454,950**
+
+Answer: 454,950",viavi-solutions-inc_2019,8bb83716c00a106bec61fad2b0644331,"{'answer': ['454950'], 'answer_type': 'arithmetic', 'scale': ''}",tat,cot
+How much does the top 2 maximum possible value of MSUs in 2019 add up to?,,viavi-solutions-inc_2019,8da183c1a1a5e21b6fb5a1249cd2c661,"{'answer': ['5446876'], 'answer_type': 'arithmetic', 'scale': ''}",tat,cot
+When does the Compensation Committee review compensation levels?,The Compensation Committee reviews compensation levels at the beginning of each fiscal year.,viavi-solutions-inc_2019,a695bc5b361373ee2986ddd65be83da8,"{'answer': ['at the beginning of each fiscal year'], 'answer_type': 'span', 'scale': ''}",tat,cot
+What was Oleg Khaykin's base salary in 2018?,"Based on the context provided, Oleg Khaykin's base salary in fiscal year 2018 was **$750,000**.
+
+This is shown in two places in the document:
+1. In the base salary comparison table: ""Oleg Khaykin | $750,000 | $800,000 | 6.7%""
+2. In the Summary Compensation Table for 2018: ""Oleg Khaykin | President and Chief Executive Officer | 2018 | 750,000 | — | 4,064,900 | — | 135,000 | 4,000 | 4,953,900""",viavi-solutions-inc_2019,b5e0e7e1fa87c2fe72385a9685693a1d,"{'answer': ['$750,000'], 'answer_type': 'span', 'scale': ''}",tat,cot
+What was Gary Staley's base salary in 2018?,"Based on the compensation tables in the proxy statement, Gary Staley's base salary in fiscal year 2018 was **$360,000**.
+
+This is shown in two places in the document:
+1. In the base salary comparison table: ""Gary Staley | $360,000 | $375,000 | 4.2%""
+2. In the Summary Compensation Table for 2018: ""Gary Staley | 2018 | 360",viavi-solutions-inc_2019,2f8b1c4c2f237c0c7270a2defeb43521,"{'answer': ['$360,000'], 'answer_type': 'span', 'scale': ''}",tat,cot
+What was the total base salary of all Named Executive Officers in 2018?,"To find the total base salary of all Named Executive Officers (NEOs) in 2018, I need to sum the Fiscal Year 2018 base salaries from the compensation table provided in the text.
+
+From the table showing ""Named Executive Officer Fiscal Year 2018 Base Salary Fiscal Year 2019 Base Salary Percentage Increase"":
+
+- Oleg Khaykin: $750,000
+- Amar Maletira: $425,000
+- Paul McNab: $435,000
+- Luke Scrivanich: $372,000",viavi-solutions-inc_2019,905aa20987e1e1add72e937739fb5352,"{'answer': ['2342000'], 'answer_type': 'arithmetic', 'scale': ''}",tat,cot
+How much do the top 3 base salaries in 2019 add up to?,,viavi-solutions-inc_2019,e8eeb246e30ad819ff2b6b8a5ad098da,"{'answer': ['1735000'], 'answer_type': 'arithmetic', 'scale': ''}",tat,cot
+What is the difference in base salary between Paul McNab and Luke Scrivanch in 2018?,"Based on the context provided, I can find the 2018 base salaries for both executives in the first table:
+
+**Paul McNab**: $435,000 (Fiscal Year 2018 Base Salary)
+**Luke Scrivanich**: $372,000 (Fiscal Year 2018 Base Salary)
+
+The difference is: $435,000 - $372,000 = **$63,000**
+
+This is confirmed in the Summary Compensation Table where Paul McNab's 2018 salary is listed as $435,000 and Luke",viavi-solutions-inc_2019,bab357c32017c3f4e8266a11c15c97d3,"{'answer': ['63000'], 'answer_type': 'arithmetic', 'scale': ''}",tat,cot
+What was the weighted average remaining amortization period for the Company’s software development costs?,The weighted average remaining amortization period for the Company's software development costs is 1.61 years.,inpixon_2019,70567b5e026df5d365bad8f7ca96a742,"{'answer': ['1.61 years'], 'answer_type': 'span', 'scale': ''}",tat,cot
+What was the net software development costs in 2019?,"Based on Note 9 - Software Development Costs in the provided financial statements, the net software development costs as of December 31, 2019 were **$1,544,000** (or $1.544 million).
+
+This is shown in the table as ""Software development costs, net"" for 2019, calculated as:
+- Capitalized software development costs: $6,029,000
+- Less: Accumulated amortization: ($4,485,000)
+- **Software development costs, net: $1,544,000**",inpixon_2019,0f598bc309e0da15187f39e4881eed66,"{'answer': ['1,544'], 'answer_type': 'span', 'scale': 'thousand'}",tat,cot
+What was the Capitalized software development costs in 2019?,"Based on the context provided in Note 9 - Software Development Costs, the Capitalized software development costs as of December 31, 2019 were **$6,029 thousand** (or $6,029,000).
+
+This is shown in the table:
+- **2019: $6,029** (in thousands)
+- 2018: $5,102 (in thousands)",inpixon_2019,b89d7e9fa3fbc7eb5dc2d6bb688f52e0,"{'answer': ['$6,029'], 'answer_type': 'span', 'scale': 'thousand'}",tat,cot
+"In which year was Capitalized software development costs less than 6,000 thousands?","Based on the information in Note 9 - Software Development Costs, the capitalized software development costs were:
+
+- **2019**: $6,029 thousand
+- **2018**: $5,102 thousand
+
+The year when capitalized software development costs were less than 6,000 thousands was **2018** ($5,102 thousand).",inpixon_2019,26d4df10f38152a6d72af50918480afb,"{'answer': ['2018'], 'answer_type': 'span', 'scale': ''}",tat,cot
+"What was the average Software development costs, net for 2018 and 2019?","To calculate the average Software development costs, net for 2018 and 2019, I need to find the net amounts for both years from Note 9.
+
+From the table in Note 9:
+- **2019**: Software development costs, net = $1,544 thousand
+- **2018**: Software development costs, net = $1,690 thousand
+
+Average = ($1,544 + $1,690) / 2 = $3,234 / 2 = **$1,617 thousand** (or $1.617 million)",inpixon_2019,27fc4bb030b26d202cd8b18ba5c6993c,"{'answer': ['1617'], 'answer_type': 'arithmetic', 'scale': 'thousand'}",tat,cot
+What was the change in Accumulated amortization from 2018 to 2019?,"Based on the intangible assets table in the context, the Accumulated Amortization totals were:
+
+- **December 31, 2019**: $(18,808) thousand
+- **December 31, 2018**: $(15,175) thousand
+
+**Change from 2018",inpixon_2019,cf649b7b26933abd29572697283fbf67,"{'answer': ['-1073'], 'answer_type': 'arithmetic', 'scale': 'thousand'}",tat,cot
+What does cash and cash equivalents consist of?,"Based on the context provided, cash and cash equivalents consist of:
+
+**Cash, checking accounts, money market accounts and temporary investments with maturities of three months or less when purchased.**
+
+This definition is found in ""Note 2 - Summary of Significant Accounting Policies (continued)"" under the ""Cash and Cash Equivalents"" section.",inpixon_2019,c97f3158996e35cf911eec06d020badc,"{'answer': ['cash, checking accounts, money market accounts and temporary investments with maturities of three months or less when purchased.'], 'answer_type': 'span', 'scale': ''}",tat,cot
+What was the amount in escrow as restricted cash at 2019 and 2018 respectively?,,inpixon_2019,f14766d60aaa9fc5ad134af01d563db4,"{'answer': ['72,000', '140,000'], 'answer_type': 'multi-span', 'scale': ''}",tat,cot
+What was the Cash and cash equivalents in 2019 and 2018 respectively?,"Based on the financial statements provided in the context, the Cash and cash equivalents were:
+
+**As of December 31, 2019:** $4,777,000 (reported as $4,777 in thousands)
+
+**As of December 31, 2018:** $1,008,000 (reported as $1,008 in thousands)
+
+This information appears in the ""Liquidity and Capital Resources"" section under the balance sheet comparison table labeled ""As of December 31, 2019"" and ""As of December 31, 2018"" with the note that figures",inpixon_2019,e250c6d151f82129e6566ebaddc73842,"{'answer': ['$4,777', '$1,008'], 'answer_type': 'multi-span', 'scale': 'thousand'}",tat,cot
+"In which year  was Restricted cash included in other assets, noncurrent less than 70 thousands?","Based on the provided context, I can find the information in two places:
+
+1. In the reconciliation table at the beginning:
+```
+Restricted cash included in other assets, noncurrent
+--
+70
+```
+This shows 2019 (first column) as ""--"" (meaning $0) and 2018 (second column) as 70 (thousand).
+
+2. In Note 2 - Summary of Significant Accounting Policies, it explicitly states:
+""As of December 31, 2019 and 20",inpixon_2019,4c034fe335b977c2e3f2f25614ed980b,"{'answer': ['2019'], 'answer_type': 'span', 'scale': ''}",tat,cot
+What is the average Restricted cash for 2018 and 2019?,,inpixon_2019,075b7e72ffc091bf455c2538c63427fd,"{'answer': ['71'], 'answer_type': 'arithmetic', 'scale': 'thousand'}",tat,cot
+What was the change in the Cash and cash equivalents from 2018 to 2019?,"Based on the context provided, the Cash and cash equivalents values are:
+
+- **As of December 31, 2019**: $4,777 thousand
+- **As of December 31, 2018**: $1,008 thousand
+
+**Change from 2018 to 2019**: $4,777 - $1,008 = **$3,769 thousand increase**
+
+This is also reflected in the cash flow statement showing a ""Net increase (decrease) in cash"" of $3,701 thousand for 2019 (the slight difference of $68 thousand is attributed to ""Effect of foreign exchange rate changes on cash"").",inpixon_2019,6d15a96c5f27f3b233a271e83716f239,"{'answer': ['3769'], 'answer_type': 'arithmetic', 'scale': 'thousand'}",tat,cot
+How does the company account for options granted to employees?,"Based on the context provided, the company accounts for options granted to employees as follows:
+
+**Accounting Policy for Employee Stock Options:**
+
+1. **Fair Value at Grant Date**: Equity instruments issued to employees are recorded at their fair value on the date of grant.
+
+2. **Amortization Over Vesting Period**: The compensation cost is recognized over the requisite service period, which is generally the vesting term of the equity instrument issued.
+
+3. **Valuation Model**: The Black-Scholes option valuation model is used to estimate the fair value of the options granted.
+
+4. **Key Assumptions**: The model includes subjective input assumptions that can materially affect fair value estimates, including expected volatility (estimated based on average historical volatilities for industry peers).
+
+**From the text:**
+> ""We account for equity instruments issued to employees in accordance with accounting guidance that requires that awards are recorded at their fair value on the date of grant and are amortized over the vesting period of the award. We recognize compensation costs over the requisite service period of the award, which is generally the vesting term of the equity instrument issued.""
+
+> ""The Black-Scholes option valuation model is used to estimate the fair value of the options or the equivalent security granted.""
+
+**Recent Expense Recognition:**
+- Year ended December 31, 2019: $3,247,000 charge for amortization of employee stock options
+- Year ended December 31, 2018: $949,000 charge for amortization of employee stock options
+- As of December 31, 2019: $1,010,000 of fair value of non-vested options to be amortized over weighted average remaining term of 0.81 years",inpixon_2019,fde5598a4f22f1775d27e488f367cdb7,"{'answer': ['by measuring the cost of services received in exchange for the award of equity instruments based upon the fair value of the award on the date of grant.'], 'answer_type': 'span', 'scale': ''}",tat,cot
+How are options and warrants granted to consultants and other non-employees recorded?,"Options and warrants granted to consultants and other non-employees are recorded at fair value as of the grant date and subsequently adjusted to fair value at the end of each reporting period until such options and warrants vest. The fair value of such instruments, as adjusted, is expensed over the related vesting period.",inpixon_2019,939d522efba6ed71641b9e171202ade1,"{'answer': ['at fair value as of the grant date and subsequently adjusted to fair value at the end of each reporting period until such options and warrants vest, and the fair value of such instruments, as adjusted, is expensed over the related vesting period.'], 'answer_type': 'span', 'scale': ''}",tat,cot
+What was the Compensation and related benefits in 2019 and 2018 respectively?,,inpixon_2019,4a97a3a079b9d171bb3e3c05a5d558fa,"{'answer': ['$3,247', '$949'], 'answer_type': 'multi-span', 'scale': 'thousand'}",tat,cot
+In which year was Professional and legal fees less than 500 thousands?,"Based on the stock-based compensation charges table in the context, Professional and legal fees were:
+
+- **2019**: $242 thousand
+- **2018**: $545 thousand
+
+Since the values are reported in thousands, Professional and legal fees were less than $500 thousand in **2019** ($242,000).",inpixon_2019,5a3992fcbf566781e86fa2f601ee00c0,"{'answer': ['2019'], 'answer_type': 'span', 'scale': ''}",tat,cot
+What is the change in the Compensation and related benefits from 2018 to 2019?,,inpixon_2019,5054d45adbd840b3f404ea4a2066663d,"{'answer': ['2298'], 'answer_type': 'arithmetic', 'scale': 'thousand'}",tat,cot
+What was the average Professional and legal fees for 2018 and 2019?,,inpixon_2019,d7d2b6427fb0f566a3ac2e90d842dd06,"{'answer': ['393.5'], 'answer_type': 'arithmetic', 'scale': 'thousand'}",tat,cot

@@ -1,0 +1,76 @@
+question,response,doc,q_uid,answers,dataset,prompt_type
+what is the the interest expense in 2009?,,ADI_2009,ADI/2009/page_49.pdf-1,"{'str_answer': '380', 'exe_answer': '3.8'}",fin,fewshot
+what is the expected growth rate in amortization expense in 2010?,,ADI_2009,ADI/2009/page_59.pdf-2,"{'str_answer': '-27.0%', 'exe_answer': '-0.26689'}",fin,fewshot
+what is the net difference between in amounts used to as hedging instruments?,,ADI_2009,ADI/2009/page_60.pdf-2,"{'str_answer': '247', 'exe_answer': '247.0'}",fin,fewshot
+what is the growth rate in amortization expense in 2009?,,ADI_2009,ADI/2009/page_59.pdf-1,"{'str_answer': '-20.4%', 'exe_answer': '-0.2043'}",fin,fewshot
+what is the net change in the balance of total amounts of uncertain tax positions from 2007 to 2009?,,ADI_2009,ADI/2009/page_90.pdf-2,"{'str_answer': '8272', 'exe_answer': '8272.0'}",fin,fewshot
+what is the percentage increase in interest expanse and penalties in 2009?,,ADI_2009,ADI/2009/page_90.pdf-1,"{'str_answer': '30.8%', 'exe_answer': '0.30769'}",fin,fewshot
+"what is the lobor rate as of october 31 , 2009?",,ADI_2009,ADI/2009/page_49.pdf-2,"{'str_answer': '29.0%', 'exe_answer': '0.0029'}",fin,fewshot
+what percentage did the balance increase from 2007 to 2009?,"The balance increased from $9,889 thousand (November 3, 2007) to $18,161 thousand (October 31, 2009), which is an increase of $8,272 thousand. This represents a percentage increase of approximately **83.6%**.",ADI_2009,ADI/2009/page_90.pdf-3,"{'str_answer': '83.6%', 'exe_answer': '0.83648'}",fin,fewshot
+what would be the balance if the company suffered the potential total tax liability of the 2006 and 2007 irs examination?,,ADI_2009,ADI/2009/page_90.pdf-4,"{'str_answer': '$ 17966 million', 'exe_answer': '17966.0'}",fin,fewshot
+"during the 2012 year , did the equity awards in which the prescribed performance milestones were achieved exceed the equity award compensation expense for equity granted during the year?",,ABMD_2012,ABMD/2012/page_75.pdf-1,"{'str_answer': '', 'exe_answer': 'yes'}",fin,fewshot
+"for equity awards where the performance criteria has been met in 2012 , what is the average compensation expense per year over which the cost will be expensed?",,ABMD_2012,ABMD/2012/page_75.pdf-2,"{'str_answer': '1719526', 'exe_answer': '1714285.71429'}",fin,fewshot
+"what is the net change in the number of shares for restricted stock and restricted stock units during fiscal year ended march 31 , 2012?",,ABMD_2012,ABMD/2012/page_75.pdf-3,"{'str_answer': '464', 'exe_answer': '464.0'}",fin,fewshot
+"what is the total value of vested shares during the fiscal year ended march 31 , 2012 , in millions?",1.5,ABMD_2012,ABMD/2012/page_75.pdf-4,"{'str_answer': '1.46', 'exe_answer': '1.45792'}",fin,fewshot
+did abiomed outperform the nasdaq medical equipment index?,"Yes, Abiomed outperformed the Nasdaq Medical Equipment SIC Code 3840-3849 Index over the five-year period shown (March 31, 2007 to March 31, 2012).
+
+According to the cumulative total return data:
+- **Abiomed, Inc.**: Started at $100 (3/31/2007) and ended at **$162.45** (3/31/2012) — a **62.45% gain**
+- **Nasdaq Medical",ABMD_2012,ABMD/2012/page_41.pdf-2,"{'str_answer': 'yes', 'exe_answer': 'yes'}",fin,fewshot
+did abiomed outperform the nasdaq composite index?,"Yes, ABIOMED outperformed the Nasdaq Composite Index over the five-year period from March 31, 2007 to March 31, 2012. According to the cumulative total return data, a $100 investment in ABIOMED grew to $162.45 (a",ABMD_2012,ABMD/2012/page_41.pdf-1,"{'str_answer': 'yes', 'exe_answer': 'yes'}",fin,fewshot
+"what was total rent expense for fiscal years 2010 to 2012 , in millions?",,ABMD_2012,ABMD/2012/page_79.pdf-1,"{'str_answer': '6.6', 'exe_answer': '6.5'}",fin,fewshot
+how much of total future minimum lease payments are due currently?,"$1,473 thousand (for fiscal year 2013)",ABMD_2012,ABMD/2012/page_79.pdf-2,"{'str_answer': '35%', 'exe_answer': '2845.5'}",fin,fewshot
+"what is the percentage increase in base rent for danvers , massachusetts facility from the period 2008-2010 to 2010 - 2014?","The base rent for the Danvers, Massachusetts facility increased from $40,000 per month (November 2008 through June 2010) to $64,350 per month (July 2010 through February 2014).
+
+Percentage increase = (($64,350 - $40,",ABMD_2012,ABMD/2012/page_79.pdf-3,"{'str_answer': '60.9%', 'exe_answer': '0.60875'}",fin,fewshot
+"what is the percentage increase in base rent for danvers , massachusetts facility from the period 2010-2014 to 2014-2016?","The base rent increased from $64,350 per month (July 2010 through February 2014) to $66,000 per month (March 2014 through February 2016).
+
+Percentage increase = (($66,000 - $64,350) / $64,350) × 1",ABMD_2012,ABMD/2012/page_79.pdf-4,"{'str_answer': '2.6%', 'exe_answer': '0.02564'}",fin,fewshot
+what is the roi of an investment in abiomed inc from march 2007 to march 2010?,"Based on the cumulative total return data provided in the context, a $100 investment in ABIOMED, Inc. on March 31, 2007 would have been worth $75.55 on March 31, 2010.
+
+**ROI = -24.45%** (a loss of 24.45% over the 3-year period)",ABMD_2012,ABMD/2012/page_41.pdf-3,"{'str_answer': '-24.5%', 'exe_answer': '-0.2445'}",fin,fewshot
+what is the roi of an investment in nasdaq composite index from march 2007 to march 2010?,"Based on the cumulative total return data provided, the Nasdaq Composite Index had a value of 100 on March 31, 2007 and 99.02 on March 31, 2010.
+
+ROI = (99.02 - 100) / 100 × 100% = -0.98%
+
+The ROI of an investment in the Nasdaq Composite Index from March 20",ABMD_2012,ABMD/2012/page_41.pdf-4,"{'str_answer': '-1.0%', 'exe_answer': '-0.0098'}",fin,fewshot
+what percentage of total long-term assets under supervision are comprised of fixed income in 2015?,57.72% (calculated as $546 billion fixed income ÷ $946 billion total long-term assets under supervision in 2015),GS_2016,GS/2016/page_79.pdf-3,"{'str_answer': '57%', 'exe_answer': '0.57484'}",fin,fewshot
+what percentage of total long-term assets under supervision are comprised of fixed income in 2016?,"58.9% (calculated as $601 billion / $1,021 billion × 100)",GS_2016,GS/2016/page_79.pdf-1,"{'str_answer': '59%', 'exe_answer': '0.588'}",fin,fewshot
+what percentage of total loans receivable gross in 2016 were loans backed by commercial real estate?,9.49%,GS_2016,GS/2016/page_161.pdf-1,"{'str_answer': '9%', 'exe_answer': '0.09488'}",fin,fewshot
+what percentage of future minimum rental payments are due in 2018?,"Based on the table showing future minimum rental payments as of December 2016, the payment due in 2018 is $282 million out of a total of $1,941 million.
+
+Percentage = ($282 million / $1,941 million) × 100 ≈ 14.5%",GS_2016,GS/2016/page_183.pdf-3,"{'str_answer': '15%', 'exe_answer': '0.14529'}",fin,fewshot
+"in millions , for 2016 , 2015 , and 2014 what was the total amount of common share repurchases?",,GS_2016,GS/2016/page_186.pdf-2,"{'str_answer': '90.1', 'exe_answer': '90.5'}",fin,fewshot
+of the total aus net inflows/ ( outflows ) for 2014 were fixed income asset inflows in connection with our acquisition of deutsche asset & wealth management 2019s stable value business greater than the liquidity products inflows in connection with our acquisition of rbs asset management 2019s money market funds?,"Yes, the fixed income asset inflows of $19 billion were greater than the liquidity products inflows of $6 billion.",GS_2016,GS/2016/page_79.pdf-4,"{'str_answer': 'yes', 'exe_answer': 'yes'}",fin,fewshot
+"in billions , for 2016 , 2015 , and 2014 , what are total alternative investments?","Based on the table provided in the context:
+
+**Alternative investments (in billions):**
+- 2016: $154 billion
+- 2015: $148 billion  
+- 2014: $143 billion",GS_2016,GS/2016/page_79.pdf-2,"{'str_answer': '439', 'exe_answer': '439.0'}",fin,fewshot
+what was the difference in millions between the total cost of common shares repurchases from 2015 to 2016?,"1,874",GS_2016,GS/2016/page_186.pdf-1,"{'str_answer': '1874', 'exe_answer': '1874.0'}",fin,fewshot
+what percentage of future minimum rental payments are due in 2017?,"14.9% (approximately)
+
+Calculation: $290 million (2017 payment) ÷ $1,941 million (total future minimum rental payments) = 0.1494 = 14.94%",GS_2016,GS/2016/page_183.pdf-4,"{'str_answer': '15%', 'exe_answer': '0.14941'}",fin,fewshot
+what were total investment commitments in billions for 2016 and 2015 related to commitments to invest in funds managed by the firm?,$2.10 billion for 2016 and $2.86 billion for 2015,GS_2016,GS/2016/page_183.pdf-1,"{'str_answer': '4.96', 'exe_answer': '4.96'}",fin,fewshot
+what was the difference in millions between the total cost of common shares repurchases from 2015 to 2016?,"1,874",GS_2016,GS/2016/page_186.pdf-3,"{'str_answer': '-1274', 'exe_answer': '-1274.0'}",fin,fewshot
+"what was total shareholders 2019 equity common equity dividends declared per common share in 2016 , 2015 and 2014?",,GS_2016,GS/2016/page_186.pdf-4,"{'str_answer': '7.40', 'exe_answer': '7.4'}",fin,fewshot
+what is the debt-to-total asset ratio in 2015?,"Based on the balance sheet allocation table provided:
+
+- **Debt (2015)**: $23,216 million
+- **Total assets (2015)**: $861,395 million
+
+**Debt-to-total asset ratio (",GS_2016,GS/2016/page_81.pdf-2,"{'str_answer': '2.7%', 'exe_answer': '0.02695'}",fin,fewshot
+"for december 2016 and december 2015 , what was total fair value of loans receivable in billions?","As of December 2016 and December 2015, the fair value of loans receivable was $49.80 billion and $45.19 billion, respectively.",GS_2016,GS/2016/page_161.pdf-3,"{'str_answer': '94.99', 'exe_answer': '94.99'}",fin,fewshot
+"what was total rent charged to operating expense in millions for 2016 , 2015 and 2014?","Rent charged to operating expense was $244 million for 2016, $249 million for 2015, and $309 million for 2014.",GS_2016,GS/2016/page_183.pdf-2,"{'str_answer': '802', 'exe_answer': '802.0'}",fin,fewshot
+what is the debt-to-total asset ratio in 2016?,,GS_2016,GS/2016/page_81.pdf-1,"{'str_answer': '2.5%', 'exe_answer': '0.0252'}",fin,fewshot
+what percentage of total loans receivable gross in 2015 were loans backed by commercial real estate?,11.5%,GS_2016,GS/2016/page_161.pdf-2,"{'str_answer': '12%', 'exe_answer': '0.11503'}",fin,fewshot
+what percentage of total net revenue investing & lending segment is due to equity securities in 2015?,"69.6% (calculated as $3,781 million ÷ $5,436 million × 100)",GS_2016,GS/2016/page_77.pdf-4,"{'str_answer': '70%', 'exe_answer': '0.69555'}",fin,fewshot
+what is the net change in the number of staff in 2016?,"-2,400 (decrease from 36,800 in 2015 to 34,400 in 2016)",GS_2016,GS/2016/page_70.pdf-1,"{'str_answer': '-2400', 'exe_answer': '-2400.0'}",fin,fewshot
+what is the net change in the number of staff in 2015?,"The net change in staff during 2015 was an increase of 2,800 (from 34,000 at end of 2014 to 36,800 at end of 2015), representing an 8% increase.",GS_2016,GS/2016/page_70.pdf-2,"{'str_answer': '2800', 'exe_answer': '2800.0'}",fin,fewshot
+what percentage of total net revenue investing & lending segment is due to equity securities in 2016?,,GS_2016,GS/2016/page_77.pdf-1,"{'str_answer': '63%', 'exe_answer': '0.63064'}",fin,fewshot
+"in millions for 2016 2015 , and 2014 , what are total equity securities?",,GS_2016,GS/2016/page_77.pdf-2,"{'str_answer': '10933', 'exe_answer': '10933.0'}",fin,fewshot
+operating expenses were what multiple of pre-tax earnings in 2015?,,GS_2016,GS/2016/page_77.pdf-3,"{'str_answer': '11.52', 'exe_answer': '11.52066'}",fin,fewshot
+what was the percentage change in the 5 year annual performance of the peer group stock from 2010 to 2011,36.78%,JKHY_2015,JKHY/2015/page_20.pdf-2,"{'str_answer': '8.3%', 'exe_answer': '0.08276'}",fin,fewshot
+"in 2010 , what was the cumulative total return of the s&p 500?",,JKHY_2015,JKHY/2015/page_20.pdf-3,"{'str_answer': '30.69', 'exe_answer': '30.69'}",fin,fewshot
+"for the 2010 , what was the cumulative total return on jkhy?",100.00,JKHY_2015,JKHY/2015/page_20.pdf-1,"{'str_answer': '27.44', 'exe_answer': '27.44'}",fin,fewshot

@@ -1,0 +1,8 @@
+question,response,doc,q_uid,answers,dataset,prompt_type
+What accuracy does the proposed system achieve?,"The context does not report a single ""accuracy"" metric for the proposed ALCrowd system. Instead, it reports F1 scores across three datasets:
+
+- **DL-PS**: 85.99 F1
+- **EC-MT**: 75.15 F1  
+- **EC-UQ**: 71.53 F1
+
+The text states: ""Among all the systems, ALCrowd performs the best, and significantly better than all the other models (the p-value is below 10⁻⁵ by using t-test)."" The evaluation metrics used are Precision (P), Recall (R), and F1 score, not accuracy.",1801.05147,ef4dba073d24042f24886580ae77add5326f2130,"['F1 scores of 85.99 on the DL-PS data,  75.15 on the EC-MT data and 71.53 on the EC-UQ data ', 'F1 of 85.99 on the DL-PS dataset (dialog domain); 75.15 on EC-MT and 71.53 on EC-UQ (e-commerce domain)', ' ']",paper,fewshot

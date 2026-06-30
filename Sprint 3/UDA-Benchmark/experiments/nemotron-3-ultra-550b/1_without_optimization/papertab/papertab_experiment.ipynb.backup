@@ -1,0 +1,192 @@
+{
+ "cells": [
+  {
+   "cell_type": "markdown",
+   "metadata": {},
+   "source": [
+    "# PaperTab Dataset Experiment\\n\\n**Dataset:** PaperTab (Academic Papers - Tables)\\n\\n**Model:** NVIDIA Nemotron-3 Ultra 550B (via Together AI)\\n\\n**Metric:** Span F1\\n\\n**Description:** Academic papers with table extraction questions\\n\\n**Documents:** 7 example PDFs\\n- 1705.07830\n- 1801.05147\n- 1809.01202\n- 1810.08699\n- 1909.00754\n- 1912.01214\n- 2001.03131\\n\\n**Parameters:**\\n- Chunk size: 3000 characters\\n- Chunk overlap: 300 characters\\n- Top-K retrieval: 5\\n- Temperature: 0.1\\n- Max tokens: 512"
+   ]
+  },
+  {
+   "cell_type": "markdown",
+   "metadata": {},
+   "source": [
+    "## Setup and Imports"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": null,
+   "metadata": {},
+   "outputs": [],
+   "source": [
+    "import sys\\nimport os\\nsys.path.insert(0, os.path.abspath('../..'))\\n\\nimport pandas as pd\\nimport chromadb\\nimport PyPDF2\\nimport time\\nimport importlib.util\\nfrom datetime import datetime\\nfrom together import Together\\nfrom langchain.text_splitter import RecursiveCharacterTextSplitter\\nimport chromadb.utils.embedding_functions as embedding_functions\\nfrom uda.utils import preprocess, llm\\nfrom uda.eval.my_eval import eval_main\\n\\nprint(\"\u2713 All imports successful\")"
+   ]
+  },
+  {
+   "cell_type": "markdown",
+   "metadata": {},
+   "source": [
+    "## Configuration"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": null,
+   "metadata": {},
+   "outputs": [],
+   "source": [
+    "# Load API config\\n_spec = importlib.util.spec_from_file_location(\\n    \\\"access_config\\\",\\n    os.path.join(os.getcwd(), \\\"..\\\", \\\"..\\\", \\\"uda\\\", \\\"utils\\\", \\\"access_config.py\\\")\\n)\\naccess_config = importlib.util.module_from_spec(_spec)\\n_spec.loader.exec_module(access_config)\\n\\nprint(f\\\"Model: {access_config.TOGETHER_MODEL}\\\")\\nprint(f\\\"API Key: {access_config.TOGETHER_API_KEY[:20]}...\\\")"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": null,
+   "metadata": {},
+   "outputs": [],
+   "source": [
+    "# Experiment Parameters\\nDATASET_NAME = \\\"paper_tab\\\"\\nCHUNK_SIZE = 3000\\nCHUNK_OVERLAP = 300\\nTOP_K = 5\\nTEMPERATURE = 0.1\\nMAX_TOKENS = 512\\n\\n# Output settings\\nTIMESTAMP = datetime.now().strftime(\\\"%Y%m%d_%H%M%S\\\")\\nOUTPUT_DIR = \\\"./results\\\"\\nos.makedirs(OUTPUT_DIR, exist_ok=True)\\n\\nprint(f\\\"Dataset: {DATASET_NAME}\\\")\\nprint(f\\\"Chunk size: {CHUNK_SIZE}\\\")\\nprint(f\\\"Top-K: {TOP_K}\\\")\\nprint(f\\\"Output dir: {OUTPUT_DIR}\\\")"
+   ]
+  },
+  {
+   "cell_type": "markdown",
+   "metadata": {},
+   "source": [
+    "## Initialize Models"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": null,
+   "metadata": {},
+   "outputs": [],
+   "source": [
+    "# Together AI client\\ntogether_client = Together(api_key=access_config.TOGETHER_API_KEY)\\nprint(\\\"\u2713 Together AI client initialized\\\")\\n\\n# Embedding model (local, free)\\nef = embedding_functions.SentenceTransformerEmbeddingFunction(\\n    model_name=\\\"all-MiniLM-L6-v2\\\"\\n)\\nprint(\\\"\u2713 Embedding model loaded: all-MiniLM-L6-v2\\\")\\n\\n# Text splitter\\ntext_splitter = RecursiveCharacterTextSplitter(\\n    chunk_size=CHUNK_SIZE,\\n    chunk_overlap=CHUNK_OVERLAP,\\n)\\nprint(\\\"\u2713 Text splitter initialized\\\")"
+   ]
+  },
+  {
+   "cell_type": "markdown",
+   "metadata": {},
+   "source": [
+    "## Helper Functions"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": null,
+   "metadata": {},
+   "outputs": [],
+   "source": [
+    "def extract_pdf_text(pdf_path):\\n    \\\"\\\"\\\"Extract text from PDF\\\"\\\"\\\"\\n    pdf_text = \\\"\\\"\\n    with open(pdf_path, \\\"rb\\\") as file:\\n        reader = PyPDF2.PdfReader(file, strict=False)\\n        for page_num in range(len(reader.pages)):\\n            pdf_text += reader.pages[page_num].extract_text()\\n    return pdf_text\\n\\ndef build_index(text_chunks, collection_name=\\\"temp_collection\\\"):\\n    \\\"\\\"\\\"Build vector index\\\"\\\"\\\"\\n    chroma_client = chromadb.Client()\\n    \\n    # Delete if exists\\n    try:\\n        chroma_client.delete_collection(collection_name)\\n    except:\\n        pass\\n    \\n    # Create collection\\n    collection = chroma_client.create_collection(\\n        collection_name,\\n        embedding_function=ef,\\n        metadata={\\\"hnsw:space\\\": \\\"cosine\\\"}\\n    )\\n    \\n    # Add documents\\n    id_list = [str(i) for i in range(len(text_chunks))]\\n    collection.add(documents=text_chunks, ids=id_list)\\n    \\n    return collection\\n\\ndef answer_question(collection, question):\\n    \\\"\\\"\\\"Retrieve context and generate answer\\\"\\\"\\\"\\n    # Retrieve\\n    fetch_res = collection.query(query_texts=[question], n_results=TOP_K)\\n    context = \\\"\\\\n\\\".join(fetch_res[\\\"documents\\\"][0])\\n    \\n    # Build prompt\\n    llm_message = llm.make_prompt(\\n        question=question,\\n        context=context,\\n        task_name=DATASET_NAME,\\n        llm_type=\\\"gpt-4\\\"\\n    )\\n    \\n    # Generate\\n    response = together_client.chat.completions.create(\\n        model=access_config.TOGETHER_MODEL,\\n        messages=llm_message,\\n        temperature=TEMPERATURE,\\n        max_tokens=MAX_TOKENS,\\n    )\\n    \\n    return response.choices[0].message.content\\n\\nprint(\\\"\u2713 Helper functions defined\\\")"
+   ]
+  },
+  {
+   "cell_type": "markdown",
+   "metadata": {},
+   "source": [
+    "## Load Q&A Data"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": null,
+   "metadata": {},
+   "outputs": [],
+   "source": [
+    "# Load PaperTab Q&A\\ncsv_file = \\\"../../dataset/qa/paper_qa.csv\\\"\\ndf = pd.read_csv(csv_file, sep=\\\"|\\\", na_filter=False, dtype={\\\"doc_name\\\": str})\\nqas_dict = preprocess.qa_df_to_dict(DATASET_NAME, df)\\n\\n# Count Q&A per document\\ntotal_qa = 0\\nfor doc, qas in qas_dict.items():\\n    count = len(qas)\\n    total_qa += count\\n    print(f\\\"{doc}: {count} Q&A pairs\\\")\\n\\nprint(f\\\"\\\\nTotal: {total_qa} Q&A pairs\\\")"
+   ]
+  },
+  {
+   "cell_type": "markdown",
+   "metadata": {},
+   "source": [
+    "## Main Processing Loop\\n\\n**This will process all documents and Q&A pairs**\\n\\n**Expected runtime:** Variable based on Q&A count"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": null,
+   "metadata": {},
+   "outputs": [],
+   "source": [
+    "all_results = []\\n\\nfor doc_name, doc_qas in qas_dict.items():\\n    print(f\\\"\\\\n{{'='*80}}\\\")\\n    print(f\\\"Processing: {{doc_name}}\\\")\\n    print(f\\\"{{'='*80}}\\\")\\n    \\n    # Get PDF path\\n    pdf_path = preprocess.get_example_pdf_path(DATASET_NAME, doc_name)\\n    if not pdf_path:\\n        print(f\\\"\u274c PDF not found\\\")\\n        continue\\n    \\n    print(f\\\"PDF: {{pdf_path}}\\\")\\n    \\n    # Extract and chunk\\n    print(\\\"Extracting text...\\\")\\n    pdf_text = extract_pdf_text(pdf_path)\\n    text_chunks = text_splitter.split_text(pdf_text)\\n    print(f\\\"Created {{len(text_chunks)}} chunks\\\")\\n    \\n    # Build index\\n    print(\\\"Building vector index...\\\")\\n    collection = build_index(text_chunks, collection_name=f\\\"{dataset_key}_{{doc_name}}\\\")\\n    print(\\\"\u2713 Index built\\\")\\n    \\n    # Process each question\\n    print(f\\\"\\\\nAnswering {{len(doc_qas)}} questions...\\\")\\n    \\n    for idx, qa in enumerate(doc_qas, 1):\\n        question = qa[\\\"question\\\"]\\n        print(f\\\"\\\\n[{{idx}}/{{len(doc_qas)}}] {{question[:70]}}...\\\")\\n        \\n        try:\\n            answer = answer_question(collection, question)\\n            print(f\\\"   Answer: {{answer[:80]}}...\\\")\\n            \\n            all_results.append({\\n                \\\"question\\\": question,\\n                \\\"response\\\": answer,\\n                \\\"doc\\\": doc_name,\\n                \\\"q_uid\\\": qa[\\\"q_uid\\\"],\\n                \\\"answers\\\": qa[\\\"answers\\\"],\\n                \\\"dataset\\\": DATASET_NAME,\\n            })\\n            \\n            time.sleep(0.5)  # Rate limiting\\n            \\n        except Exception as e:\\n            print(f\\\"   \u274c Error: {{e}}\\\")\\n            continue\\n    \\n    print(f\\\"\\\\n\u2713 Completed {{doc_name}}: {{len([r for r in all_results if r['doc'] == doc_name])}} questions processed\\\")\\n\\nprint(f\\\"\\\\n{{'='*80}}\\\")\\nprint(f\\\"ALL DOCUMENTS PROCESSED\\\")\\nprint(f\\\"{{'='*80}}\\\")\\nprint(f\\\"Total Q&A processed: {{len(all_results)}}\\\")"
+   ]
+  },
+  {
+   "cell_type": "markdown",
+   "metadata": {},
+   "source": [
+    "## Evaluate Results"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": null,
+   "metadata": {},
+   "outputs": [],
+   "source": [
+    "if all_results:\\n    print(\\\"\\\\nEvaluating PaperTab results (Span F1)...\\\")\\n    eval_main(DATASET_NAME, all_results)\\nelse:\\n    print(\\\"\u274c No results to evaluate\\\")"
+   ]
+  },
+  {
+   "cell_type": "markdown",
+   "metadata": {},
+   "source": [
+    "## Save Results"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": null,
+   "metadata": {},
+   "outputs": [],
+   "source": [
+    "if all_results:\\n    # Save to CSV\\n    results_df = pd.DataFrame(all_results)\\n    output_file = os.path.join(OUTPUT_DIR, f\\\"papertab_results_{TIMESTAMP}.csv\\\")\\n    results_df.to_csv(output_file, index=False)\\n    \\n    print(f\\\"\\\\n\u2713 Results saved to: {{output_file}}\\\")\\n    print(f\\\"Total Q&A: {{len(results_df)}}\\\")\\n    \\n    # Summary by document\\n    print(\\\"\\\\nResults by document:\\\")\\n    for doc in results_df['doc'].unique():\\n        count = len(results_df[results_df['doc'] == doc])\\n        print(f\\\"  {{doc}}: {{count}} questions\\\")\\nelse:\\n    print(\\\"\u274c No results to save\\\")"
+   ]
+  },
+  {
+   "cell_type": "markdown",
+   "metadata": {},
+   "source": [
+    "## Summary Statistics"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": null,
+   "metadata": {},
+   "outputs": [],
+   "source": [
+    "if all_results:\\n    results_df = pd.DataFrame(all_results)\\n    \\n    # Count empty responses\\n    empty_count = results_df['response'].str.strip().eq('').sum()\\n    answered_count = len(results_df) - empty_count\\n    \\n    print(f\\\"\\\\n{{'='*80}}\\\")\\n    print(f\\\"STATISTICS\\\")\\n    print(f\\\"{{'='*80}}\\\")\\n    print(f\\\"Total questions: {{len(results_df)}}\\\")\\n    print(f\\\"Answered: {{answered_count}} ({{answered_count/len(results_df)*100:.1f}}%)\\\")\\n    print(f\\\"Empty responses: {{empty_count}} ({{empty_count/len(results_df)*100:.1f}}%)\\\")\\n    print(f\\\"Avg response length: {{results_df['response'].str.len().mean():.0f}} characters\\\")"
+   ]
+  },
+  {
+   "cell_type": "markdown",
+   "metadata": {},
+   "source": [
+    "---\\n\\n## Done!\\n\\n**Results saved to:** `./results/papertab_results_[timestamp].csv`\\n\\n**Metric:** Span F1\\n\\n**Next steps:**\\n1. Review the accuracy score\\n2. Compare with other datasets\\n3. Try parameter optimization (chunk_size, top_k, temperature)"
+   ]
+  }
+ ],
+ "metadata": {
+  "kernelspec": {
+   "display_name": "Python 3",
+   "language": "python",
+   "name": "python3"
+  },
+  "language_info": {
+   "codemirror_mode": {
+    "name": "ipython",
+    "version": 3
+   },
+   "file_extension": ".py",
+   "mimetype": "text/x-python",
+   "name": "python",
+   "nbconvert_exporter": "python",
+   "pygments_lexer": "ipython3",
+   "version": "3.9.0"
+  }
+ },
+ "nbformat": 4,
+ "nbformat_minor": 4
+}

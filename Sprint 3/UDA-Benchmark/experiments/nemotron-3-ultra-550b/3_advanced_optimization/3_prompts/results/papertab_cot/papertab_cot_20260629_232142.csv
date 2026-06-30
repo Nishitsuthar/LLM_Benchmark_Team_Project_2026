@@ -1,0 +1,4 @@
+question,response,doc,q_uid,answers,dataset,prompt_type
+What accuracy does the proposed system achieve?,"Based on the context provided, the proposed system (ALCrowd) achieves the following F1 scores (the primary evaluation metric used in the paper for NER tasks):
+
+**On DL-PS dataset:** 85.99 F",1801.05147,ef4dba073d24042f24886580ae77add5326f2130,"['F1 scores of 85.99 on the DL-PS data,  75.15 on the EC-MT data and 71.53 on the EC-UQ data ', 'F1 of 85.99 on the DL-PS dataset (dialog domain); 75.15 on EC-MT and 71.53 on EC-UQ (e-commerce domain)', ' ']",paper,cot

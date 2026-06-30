@@ -1,0 +1,29 @@
+question,response,doc,q_uid,answers,dataset,prompt_type
+When and in what play did Platt appear at the Music Box Theatre?,"Based on the context provided, Ben Platt appeared at the Music Box Theatre from **December 2016 to November 19, 2017** in the musical **Dear Evan Hansen**, where he originated the title role of Evan Hansen on Broadway.
+
+The text states: ""In December 2016, Platt originated the title role in Dear Evan Hansen on Broadway at the Music Box Theatre"" and ""Platt played his final performance on November 19, 2017."" The theater credits table also confirms ""2016–2017 Music Box Theatre Broadway"" for Dear Evan Hansen.",Ben Platt (actor),14717,"In 2016 and 2017, Platt played in Dear Evan Hansen on Broadway at the Music Box Theatre.",feta,cot
+Which role did Ben Platt play at the Second Stage Theatre in 2016?,Ben Platt played the role of Evan Hansen at Second Stage Theatre in 2016.,Ben Platt (actor),16743,"In 2016, Platt played the role of Evan Hansen at Second Stage Theatre.",feta,cot
+"What year did Philip I the Amorous become King of the Franks, what year did that run end, and what number king was he?","The user is asking about Philip I the Amorous (Philippe I). Let me find this information in the context.
+
+Looking at the Capetian dynasty section, I can see:
+""Philip I the Amorous (Philippe) 4 August 1060 29 July 1108 • Son of Henry I""
+
+So:
+- He became king on 4 August 1060
+- His reign ended on 29 July 1108
+- He is Philip I (the first Philip)
+
+Let me verify this is correct by checking the sequence:
+- Hugh Capet (987-996)
+- Robert II (996-1031)
+- Henry I (1031-1060)
+- Philip I (1060-1108)
+
+Yes, he is the first Philip, so Philip I.Based on the context provided:
+
+**Philip I the Amorous (Philippe I)** became King of the Franks on **4 August 1060**, his reign ended on **29 July 1108**, and he was the **first** King Philip (Philip I).",List of French monarchs,19148,"Philip I the Amorous, was King of the Franks from 1060 to 1108, the fourth from the House of Capet.",feta,cot
+During which years was Henry I king of the franks and which House of Capet lineage number was he?,"Based on the provided context, Henry I (Henri) was King of the Franks from **20 July 1031 to 4 August 1060**.
+
+He was the **third** king in the House of Capet lineage (following Hugh Capet as 1st and Robert II as 2nd). The table shows him as ""Son of Robert II"" and lists him third in the succession order.",List of French monarchs,18732,"Henry I was King of the Franks from 1031 to 1060, the third from the House of Capet.",feta,cot
+Who was the son of Louis X?,"Based on the provided context, the son of Louis X was **John I the Posthumous (Jean)**, who reigned from 15 November 1316 to 20 November 1316. The text explicitly lists him as ""Son of Louis X"" in the House of Capet section.",List of French monarchs,19108,"John I (15–20 November 1316), called the Posthumous, was King of France and Navarre, as the son and successor of Louis X.",feta,cot
+Who was King of the Franks from 1108 to 1137?,"Based on the provided context, there is no information about who was King of the Franks from 1108 to 1137. The text only covers Frankish rulers up to the election of Hugh Capet in 987 (following the death of Louis V in 987), ending with the beginning of the Capetian dynasty. The period 1108-1137 falls well after the timeline covered in this context.",List of French monarchs,20903,"Louis VI the Fat was King of the Franks from 1108 to 1137, the fifth from the House of Capet.",feta,cot

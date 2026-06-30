@@ -16,6 +16,11 @@ meta_data = {
         "pdf_dir": "dataset/src_doc_files/tat_docs",
         "bench_json_file": "dataset/extended_qa_info_bench/bench_tat_qa.json",
     },
+    "paper": {
+        "example_pdf_dir": "dataset/src_doc_files_example/paper_docs",
+        "pdf_dir": "dataset/src_doc_files/paper_docs",
+        "bench_json_file": "dataset/extended_qa_info_bench/bench_paper_tab_qa.json",
+    },
     "paper_tab": {
         "example_pdf_dir": "dataset/src_doc_files_example/paper_docs",
         "pdf_dir": "dataset/src_doc_files/paper_docs",
@@ -73,7 +78,7 @@ def _process_answer_enrtry(dataset_name, entry):
             "answer_type": entry["answer_type"],
             "scale": entry["answer_scale"],
         }
-    elif dataset_name in ["paper_tab", "paper_text"]:
+    elif dataset_name in ["paper_tab", "paper_text", "paper"]:
         answers = [entry["answer_1"], entry["answer_2"], entry["answer_3"]]
     elif dataset_name == "feta":
         answers = entry["answer"]

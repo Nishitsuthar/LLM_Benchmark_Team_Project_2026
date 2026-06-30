@@ -1,0 +1,7 @@
+Dataset,Domain,Q&A,Baseline Empty,Baseline Empty %,Optimized Empty,Optimized Empty %,Improvement,Improvement %,Status
+TatHybrid,Finance,162,37,22.839506172839506,34,20.98765432098765,3,1.8518518518518547,✅
+FinHybrid,Finance,47,21,44.680851063829785,19,40.42553191489361,2,4.255319148936174,✅
+NqText,Wikipedia,78,11,14.102564102564102,6,7.6923076923076925,5,6.41025641025641,✅
+FetaTab,Wikipedia,8,2,25.0,2,25.0,0,0.0,✅
+PaperText,Academic,13,1,7.6923076923076925,1,7.6923076923076925,0,0.0,✅
+PaperTab,Academic,4,3,75.0,1,25.0,2,50.0,✅

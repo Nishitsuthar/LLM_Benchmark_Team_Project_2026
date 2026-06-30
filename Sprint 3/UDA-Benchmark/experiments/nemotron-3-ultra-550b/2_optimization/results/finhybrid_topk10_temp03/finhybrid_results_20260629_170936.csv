@@ -1,0 +1,58 @@
+question,response,doc,q_uid,answers,dataset
+what is the the interest expense in 2009?,"The answer is: 4,094 (thousand dollars)",ADI_2009,ADI/2009/page_49.pdf-1,"{'str_answer': '380', 'exe_answer': '3.8'}",fin
+what is the expected growth rate in amortization expense in 2010?,,ADI_2009,ADI/2009/page_59.pdf-2,"{'str_answer': '-27.0%', 'exe_answer': '-0.26689'}",fin
+what is the net difference between in amounts used to as hedging instruments?,,ADI_2009,ADI/2009/page_60.pdf-2,"{'str_answer': '247', 'exe_answer': '247.0'}",fin
+what is the growth rate in amortization expense in 2009?,The answer is: -20.4% (decrease from $9.3 million in 2008 to $7.4 million in 2009),ADI_2009,ADI/2009/page_59.pdf-1,"{'str_answer': '-20.4%', 'exe_answer': '-0.2043'}",fin
+what is the net change in the balance of total amounts of uncertain tax positions from 2007 to 2009?,,ADI_2009,ADI/2009/page_90.pdf-2,"{'str_answer': '8272', 'exe_answer': '8272.0'}",fin
+what is the percentage increase in interest expanse and penalties in 2009?,,ADI_2009,ADI/2009/page_90.pdf-1,"{'str_answer': '30.8%', 'exe_answer': '0.30769'}",fin
+"what is the lobor rate as of october 31 , 2009?",The,ADI_2009,ADI/2009/page_49.pdf-2,"{'str_answer': '29.0%', 'exe_answer': '0.0029'}",fin
+what percentage did the balance increase from 2007 to 2009?,,ADI_2009,ADI/2009/page_90.pdf-3,"{'str_answer': '83.6%', 'exe_answer': '0.83648'}",fin
+what would be the balance if the company suffered the potential total tax liability of the 2006 and 2007 irs examination?,,ADI_2009,ADI/2009/page_90.pdf-4,"{'str_answer': '$ 17966 million', 'exe_answer': '17966.0'}",fin
+"during the 2012 year , did the equity awards in which the prescribed performance milestones were achieved exceed the equity award compensation expense for equity granted during the year?",,ABMD_2012,ABMD/2012/page_75.pdf-1,"{'str_answer': '', 'exe_answer': 'yes'}",fin
+"for equity awards where the performance criteria has been met in 2012 , what is the average compensation expense per year over which the cost will be expensed?",,ABMD_2012,ABMD/2012/page_75.pdf-2,"{'str_answer': '1719526', 'exe_answer': '1714285.71429'}",fin
+"what is the net change in the number of shares for restricted stock and restricted stock units during fiscal year ended march 31 , 2012?","The net change in the number of shares for restricted stock and restricted stock units during the fiscal year ended March 31, 2012, is calculated as follows:
+
+Beginning of year: 407,000 shares  
+End of year: 871,000 shares  
+Net change = 871,000 - 407,000 = 464,000 shares
+
+Alternatively, from the activity: Granted 607,000 - Vested 134,000 - Forfeited 9,000 = 464,000 shares.
+
+The answer is: 464,000 shares",ABMD_2012,ABMD/2012/page_75.pdf-3,"{'str_answer': '464', 'exe_answer': '464.0'}",fin
+"what is the total value of vested shares during the fiscal year ended march 31 , 2012 , in millions?",The answer is: 1.5,ABMD_2012,ABMD/2012/page_75.pdf-4,"{'str_answer': '1.46', 'exe_answer': '1.45792'}",fin
+did abiomed outperform the nasdaq medical equipment index?,The answer is: The provided context does not contain Abiomed's stock performance data to compare against the Nasdaq Medical Equipment index,ABMD_2012,ABMD/2012/page_41.pdf-2,"{'str_answer': 'yes', 'exe_answer': 'yes'}",fin
+did abiomed outperform the nasdaq composite index?,The answer,ABMD_2012,ABMD/2012/page_41.pdf-1,"{'str_answer': 'yes', 'exe_answer': 'yes'}",fin
+"what was total rent expense for fiscal years 2010 to 2012 , in millions?",The answer is: 6.5,ABMD_2012,ABMD/2012/page_79.pdf-1,"{'str_answer': '6.6', 'exe_answer': '6.5'}",fin
+how much of total future minimum lease payments are due currently?,,ABMD_2012,ABMD/2012/page_79.pdf-2,"{'str_answer': '35%', 'exe_answer': '2845.5'}",fin
+"what is the percentage increase in base rent for danvers , massachusetts facility from the period 2008-2010 to 2010 - 2014?","The base rent increased from $40,000 to $64,350 per month. The percentage increase is (($64,350 - $40,000) / $40,000) × 100 = 60.875%.
+
+The answer is: 60.875%",ABMD_2012,ABMD/2012/page_79.pdf-3,"{'str_answer': '60.9%', 'exe_answer': '0.60875'}",fin
+"what is the percentage increase in base rent for danvers , massachusetts facility from the period 2010-2014 to 2014-2016?",,ABMD_2012,ABMD/2012/page_79.pdf-4,"{'str_answer': '2.6%', 'exe_answer': '0.02564'}",fin
+what is the roi of an investment in abiomed inc from march 2007 to march 2010?,,ABMD_2012,ABMD/2012/page_41.pdf-3,"{'str_answer': '-24.5%', 'exe_answer': '-0.2445'}",fin
+what is the roi of an investment in nasdaq composite index from march 2007 to march 2010?,,ABMD_2012,ABMD/2012/page_41.pdf-4,"{'str_answer': '-1.0%', 'exe_answer': '-0.0098'}",fin
+what percentage of total long-term assets under supervision are comprised of fixed income in 2015?,The answer is: 57.7%,GS_2016,GS/2016/page_79.pdf-3,"{'str_answer': '57%', 'exe_answer': '0.57484'}",fin
+what percentage of total long-term assets under supervision are comprised of fixed income in 2016?,The answer is: 58.86%,GS_2016,GS/2016/page_79.pdf-1,"{'str_answer': '59%', 'exe_answer': '0.588'}",fin
+what percentage of total loans receivable gross in 2016 were loans backed by commercial real estate?,,GS_2016,GS/2016/page_161.pdf-1,"{'str_answer': '9%', 'exe_answer': '0.09488'}",fin
+what percentage of future minimum rental payments are due in 2018?,The answer is: 14.5%,GS_2016,GS/2016/page_183.pdf-3,"{'str_answer': '15%', 'exe_answer': '0.14529'}",fin
+"in millions , for 2016 , 2015 , and 2014 what was the total amount of common share repurchases?",,GS_2016,GS/2016/page_186.pdf-2,"{'str_answer': '90.1', 'exe_answer': '90.5'}",fin
+of the total aus net inflows/ ( outflows ) for 2014 were fixed income asset inflows in connection with our acquisition of deutsche asset & wealth management 2019s stable value business greater than the liquidity products inflows in connection with our acquisition of rbs asset management 2019s money market funds?,The answer is: The provided text does not contain information about Deutsche Asset & Wealth Management's stable value business acquisition or RBS Asset Management's money market funds acquisition in 2014. The only acquisition mentioned is Pacific Global Advisors' solutions business ($18 billion) in the 2015 context.,GS_2016,GS/2016/page_79.pdf-4,"{'str_answer': 'yes', 'exe_answer': 'yes'}",fin
+"in billions , for 2016 , 2015 , and 2014 , what are total alternative investments?","The answer is: 2016: 154, 2015: 148, 2014: 143",GS_2016,GS/2016/page_79.pdf-2,"{'str_answer': '439', 'exe_answer': '439.0'}",fin
+what was the difference in millions between the total cost of common shares repurchases from 2015 to 2016?,,GS_2016,GS/2016/page_186.pdf-1,"{'str_answer': '1874', 'exe_answer': '1874.0'}",fin
+what percentage of future minimum rental payments are due in 2017?,The answer is: 14.94%,GS_2016,GS/2016/page_183.pdf-4,"{'str_answer': '15%', 'exe_answer': '0.14941'}",fin
+what were total investment commitments in billions for 2016 and 2015 related to commitments to invest in funds managed by the firm?,The answer is: $2.10 billion for 2016 and $2.86 billion for 2015,GS_2016,GS/2016/page_183.pdf-1,"{'str_answer': '4.96', 'exe_answer': '4.96'}",fin
+what was the difference in millions between the total cost of common shares repurchases from 2015 to 2016?,,GS_2016,GS/2016/page_186.pdf-3,"{'str_answer': '-1274', 'exe_answer': '-1274.0'}",fin
+"what was total shareholders 2019 equity common equity dividends declared per common share in 2016 , 2015 and 2014?",,GS_2016,GS/2016/page_186.pdf-4,"{'str_answer': '7.40', 'exe_answer': '7.4'}",fin
+what is the debt-to-total asset ratio in 2015?,,GS_2016,GS/2016/page_81.pdf-2,"{'str_answer': '2.7%', 'exe_answer': '0.02695'}",fin
+"for december 2016 and december 2015 , what was total fair value of loans receivable in billions?",The answer is: $49.80 billion for December 2016 and $45.19 billion for December 2015,GS_2016,GS/2016/page_161.pdf-3,"{'str_answer': '94.99', 'exe_answer': '94.99'}",fin
+"what was total rent charged to operating expense in millions for 2016 , 2015 and 2014?","The answer is: 2016: $244 million, 2015: $249 million, 2014: $309 million",GS_2016,GS/2016/page_183.pdf-2,"{'str_answer': '802', 'exe_answer': '802.0'}",fin
+what is the debt-to-total asset ratio in 2016?,,GS_2016,GS/2016/page_81.pdf-1,"{'str_answer': '2.5%', 'exe_answer': '0.0252'}",fin
+what percentage of total loans receivable gross in 2015 were loans backed by commercial real estate?,,GS_2016,GS/2016/page_161.pdf-2,"{'str_answer': '12%', 'exe_answer': '0.11503'}",fin
+what percentage of total net revenue investing & lending segment is due to equity securities in 2015?,The answer is: 69.55%,GS_2016,GS/2016/page_77.pdf-4,"{'str_answer': '70%', 'exe_answer': '0.69555'}",fin
+what is the net change in the number of staff in 2016?,,GS_2016,GS/2016/page_70.pdf-1,"{'str_answer': '-2400', 'exe_answer': '-2400.0'}",fin
+what is the net change in the number of staff in 2015?,,GS_2016,GS/2016/page_70.pdf-2,"{'str_answer': '2800', 'exe_answer': '2800.0'}",fin
+what percentage of total net revenue investing & lending segment is due to equity securities in 2016?,The answer is: 63.06%,GS_2016,GS/2016/page_77.pdf-1,"{'str_answer': '63%', 'exe_answer': '0.63064'}",fin
+"in millions for 2016 2015 , and 2014 , what are total equity securities?","The answer is: 2016: $2,573 million; 2015: $3,781 million; 2014: $4,579 million",GS_2016,GS/2016/page_77.pdf-2,"{'str_answer': '10933', 'exe_answer': '10933.0'}",fin
+operating expenses were what multiple of pre-tax earnings in 2015?,,GS_2016,GS/2016/page_77.pdf-3,"{'str_answer': '11.52', 'exe_answer': '11.52066'}",fin
+what was the percentage change in the 5 year annual performance of the peer group stock from 2010 to 2011,The answer is: 36.78%,JKHY_2015,JKHY/2015/page_20.pdf-2,"{'str_answer': '8.3%', 'exe_answer': '0.08276'}",fin
+"in 2010 , what was the cumulative total return of the s&p 500?",The answer is: 100.00,JKHY_2015,JKHY/2015/page_20.pdf-3,"{'str_answer': '30.69', 'exe_answer': '30.69'}",fin
+"for the 2010 , what was the cumulative total return on jkhy?",,JKHY_2015,JKHY/2015/page_20.pdf-1,"{'str_answer': '27.44', 'exe_answer': '27.44'}",fin

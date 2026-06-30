@@ -1,0 +1,23 @@
+question,response,doc,q_uid,answers,dataset,prompt_type
+what language pairs are explored?,"Based on the context, the paper explores the following language pairs:
+
+**Europarl corpus** (with English as pivot language):
+- French → Spanish (Fr→Es) via English pivot
+- German → French (De→Fr) via English pivot  
+- Romanian → German (Ro→De) via English pivot
+
+**MultiUN corpus** (with English as pivot language, four languages total: En, Ar, Es, Ru):
+- Six zero-shot translation directions between Arabic (Ar), Spanish (Es), and Russian (Ru):",1912.01214,5eda469a8a77f028d0c5f1acd296111085614537,"['De-En, En-Fr, Fr-En, En-Es, Ro-En, En-De, Ar-En, En-Ru', 'French-English-Spanish (Fr-En-Es), German-English-French (De-En-Fr) and Romanian-English-German (Ro-En-De), Arabic (Ar), Spanish (Es), and Russian (Ru), and mutual translation between themselves constitutes six zero-shot translation', ' ']",paper,cot
+What accuracy does the proposed system achieve?,"The proposed system (ALCrowd) achieves the following F1 scores (the standard accuracy metric for NER) on the three datasets:
+
+- **DL-PS dataset**: 85.99 F1 (Precision: 89.56, Recall: 82.70)
+- **EC-MT dataset**: 75.15 F1 (Precision: 76.33, Recall: 74.00)
+- **EC-UQ dataset**: 71.53 F1 (Precision: 74.72, Recall:",1801.05147,ef4dba073d24042f24886580ae77add5326f2130,"['F1 scores of 85.99 on the DL-PS data,  75.15 on the EC-MT data and 71.53 on the EC-UQ data ', 'F1 of 85.99 on the DL-PS dataset (dialog domain); 75.15 on EC-MT and 71.53 on EC-UQ (e-commerce domain)', ' ']",paper,cot
+What baselines did they consider?,"Based on the context provided, the paper considered the following baselines for causality prediction:
+
+1. **State-of-the-art PDTB taggers** (explicitly mentioned as baselines):
+   - **Lin et al., 2014** - F1 = 0.638
+   - **Biran and McKeown, 2015** - F1 = 0.434
+
+These are described in the ""Model Evaluation"" section: ""We first use state-of-the-art PDTB taggers for our baseline (Lin et al",1809.01202,4cbe5a36b492b99f9f9fea8081fe4ba10a7a0e94,"['state-of-the-art PDTB taggers', 'Linear SVM, RBF SVM, and Random Forest', ' ']",paper,cot
+Does this approach perform better in the multi-domain or single-domain setting?,"Based on the joint goal accuracy results in Table 3, the COMER model performs better in the **single-domain setting** (WoZ2.0: 88.6%) compared to the multi-domain setting (MultiWoZ: 48.79%). The absolute accuracy is significantly higher on the single-domain dataset, though the MultiWoZ dataset is substantially more complex with 7 domains, 35 slots, and 4,510 values versus WoZ2.0's 1 domain, 3 slots, and 99 values.",1909.00754,ed7a3e7fc1672f85a768613e7d1b419475950ab4,"['single-domain setting', ' ', ' ']",paper,cot

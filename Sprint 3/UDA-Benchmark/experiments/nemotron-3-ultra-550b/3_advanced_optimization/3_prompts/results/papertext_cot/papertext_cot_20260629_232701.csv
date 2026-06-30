@@ -1,0 +1,8 @@
+question,response,doc,q_uid,answers,dataset,prompt_type
+What crowdsourcing platform is used?,"Based on the context provided, the paper does not use a standard crowdsourcing platform like Amazon Mechanical Turk for their own experiments. Instead, they **hired students directly** to perform the annotations:
+
+- For the **DL-PS dataset** (Dialog domain): They hired **43 students** to annotate sentences, with each sentence assigned to 3 annotators.
+- For the **EC-MT and EC-UQ datasets** (E-commerce domain): **5 students** participated in the annotations, with each sentence assigned to 2 annotators.
+
+The paper only references Amazon Mechanical Turk in the context of prior work (Snow et al., 2008), not for their own data collection.",1801.05147,2df4a045a9cd7b44874340b6fdf9308d3c55327a,"['They did not use any platform, instead they hired undergraduate students to do the annotation.', ' ', ' ']",paper,cot
+how are multiple answers from multiple reformulated questions aggregated?,"Based on the context provided, multiple answers from multiple reformulated questions are aggregated through a **trained answer selection model (CNN)** that selects the best answer from the candidate pool. Here's the step-by-step",1705.07830,33d2919f3400cd3c6fbb6960d74187ec80b41cd6,"['The selection model selects the best answer from the set $\\lbrace a_i\\rbrace _{i=1}^N$ observed during the interaction by predicting the difference of the F1 score to the average F1 of all variants.', ' ', ' ']",paper,cot

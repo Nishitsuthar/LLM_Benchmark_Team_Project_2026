@@ -1,0 +1,7 @@
+Dataset,Domain,Metric,Score,Q&A,Answered,Empty,Empty %
+TatHybrid,Finance,Numeracy F1,43.5,162,125,37,22.8
+FinHybrid,Finance,Exact Match ±1%,23.4,47,26,21,44.7
+NqText,Wikipedia,Span F1,27.6,78,67,11,14.1
+FetaTab,Wikipedia,Span F1,31.3,8,6,2,25.0
+PaperText,Academic,Span F1,43.0,13,12,1,7.7
+PaperTab,Academic,Span F1,38.0,4,1,3,75.0
