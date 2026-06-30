@@ -109,7 +109,7 @@ LLM_Benchmark_Team_Project_2026/
 **UDA-QA Benchmark**
 - Paper: "UDA: A Benchmark Suite for Retrieval Augmented Generation in Real-world Document Analysis"
 - Authors: Jialie Zeng, Yucheng Xu, Xiaoyu Zhang, et al.
-- Source: [UDA-QA GitHub Repository](https://github.com/qinchuanhui/UDA-QA)
+- Source: [UDA-Benchmark GitHub Repository](https://github.com/qinchuanhui/UDA-Benchmark)
 - Usage: Sprint 3 RAG optimization experiments
 
 **MovieLens Dataset**
