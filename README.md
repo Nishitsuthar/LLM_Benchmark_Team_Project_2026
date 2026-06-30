@@ -112,10 +112,6 @@ LLM_Benchmark_Team_Project_2026/
 - Source: [UDA-Benchmark GitHub Repository](https://github.com/qinchuanhui/UDA-Benchmark)
 - Usage: Sprint 3 RAG optimization experiments
 
-**MovieLens Dataset**
-- Source: GroupLens Research
-- Usage: Sprint 1 data preparation and sampling
-
 ### Frameworks & Libraries
 
 **LangChain**
