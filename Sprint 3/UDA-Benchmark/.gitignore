@@ -225,3 +225,6 @@ chroma_db/
 *.key
 credentials.json
 config.json
+
+# Claude context directory (for AI sessions only, not for users)
+.claude_context/
