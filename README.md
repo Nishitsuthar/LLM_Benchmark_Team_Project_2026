@@ -102,6 +102,60 @@ LLM_Benchmark_Team_Project_2026/
 
 ---
 
+## Credits & References
+
+### Datasets & Benchmarks
+
+**UDA-QA Benchmark**
+- Paper: "UDA: A Benchmark Suite for Retrieval Augmented Generation in Real-world Document Analysis"
+- Authors: Jialie Zeng, Yucheng Xu, Xiaoyu Zhang, et al.
+- Source: [UDA-QA GitHub Repository](https://github.com/qinchuanhui/UDA-QA)
+- Usage: Sprint 3 RAG optimization experiments
+
+**MovieLens Dataset**
+- Source: GroupLens Research
+- Usage: Sprint 1 data preparation and sampling
+
+### Frameworks & Libraries
+
+**LangChain**
+- Purpose: RAG pipeline implementation
+- Website: https://langchain.com
+- Usage: Document processing, retrieval, and LLM integration (Sprint 3)
+
+**ChromaDB**
+- Purpose: Vector database for embeddings
+- Website: https://www.trychroma.com
+- Usage: Semantic search and retrieval (Sprint 3)
+
+**Sentence-Transformers**
+- Paper: "Sentence-BERT: Sentence Embeddings using Siamese BERT-Networks"
+- Authors: Nils Reimers and Iryna Gurevych
+- Model Used: all-MiniLM-L6-v2
+- Usage: Document embeddings (Sprint 3)
+
+### LLM Models
+
+**Google Gemini 3.1 Pro Extended**
+- Provider: Google AI
+- Usage: Format comparison benchmark (Sprint 2)
+
+**NVIDIA Nemotron-3 Ultra 550B**
+- Provider: NVIDIA (via Together AI)
+- Usage: RAG optimization on document analysis (Sprint 3)
+
+### Tools & Infrastructure
+
+**NeonDB**
+- Purpose: Serverless PostgreSQL database
+- Usage: Ground truth validation (Sprint 2)
+
+**Together AI**
+- Purpose: LLM API access
+- Usage: NVIDIA Nemotron model deployment (Sprint 3)
+
+---
+
 ## Timeline
 
 - April 2026: Sprint 1 - Data Preparation
