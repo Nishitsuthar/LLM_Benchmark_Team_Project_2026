@@ -1,0 +1,12 @@
+question_id,sprint,dataset,doc_name,source_model,difficulty,question,ground_truth,failure_type,score,is_sprint4_hard_case,notes,response,context_snippet,model,prompt_strategy
+S3_PAPERTAB_ed7a3e7fc1672f85a768613e7d1b419475950ab4,3,papertab,1909.00754,Nemotron-3-Ultra-550B,medium,Does this approach perform better in the multi-domain or single-domain setting?,"['single-domain setting', ' ', ' ']",empty_response,max_f1=0.333; avg_f1=0.099,YES,phases_tested=5; q_uid=ed7a3e7fc1672f85a768613e7d1b419475950ab4,"The answer is: The paper does not explicitly state whether the approach performs better in one setting over the other, but notes that it reaches state-of-the-art performance on both.","MLP can improve the relational reasoning perfor-
+mance given a concatenation of multiple represen-
+tations from different sources.We also conduct the ablation study on the Mul-
+tiWoZ dataset for a more precise analysis on the
+hierarchical generation process. For joint domain
+accuracy, we calculate t",gemini-3.1-flash-lite,simple
+S3_PAPERTAB_5eda469a8a77f028d0c5f1acd296111085614537,3,papertab,1912.01214,Nemotron-3-Ultra-550B,medium,what language pairs are explored?,"['De-En, En-Fr, Fr-En, En-Es, Ro-En, En-De, Ar-En, En-Ru', 'French-English-Spanish (Fr-En-Es), German-English-French (De-En-Fr) and Romanian-English-German (Ro-En-De), Arabic (Ar), Spanish (Es), and Russian (Ru), and mutual translation between themselves constitutes six zero-shot translation', ' ']",partial_failure,max_f1=0.474; avg_f1=0.208,YES,phases_tested=5; q_uid=5eda469a8a77f028d0c5f1acd296111085614537,"The answer is: French-English-Spanish (Fr-En-Es), German-English-French (De-En-Fr), Romanian-English-German (Ro-En-De), Arabic-English (Ar-En), English-Spanish (En-Es), and English-Russian (En-Ru)","left side is the source language, and its right side is the target
+language. We remove the multi-parallel sentences between
+different training corpora to ensure zero-shot settings. We
+use the devtest2006 as the validation set and the test2006 as
+the test set for Fr!Es and De!Fr. For distant language",gemini-3.1-flash-lite,simple

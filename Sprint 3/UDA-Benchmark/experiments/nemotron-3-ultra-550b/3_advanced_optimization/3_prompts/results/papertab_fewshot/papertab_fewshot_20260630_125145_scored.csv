@@ -1,0 +1,23 @@
+question,response,doc,q_uid,answers,dataset,prompt_type,em_score,f1_score,is_empty,is_correct,is_partial,is_wrong
+what language pairs are explored?,"Based on the context, the following language pairs are explored:
+
+**Europarl corpus** (with English as pivot language):
+- Zero-shot directions: French→Spanish (Fr→Es), German→French (De→Fr), Romanian→German (Ro→De)
+- Supervised parent model directions: English→Spanish (En→Es), English→French (En→Fr), English→German (En→De)
+
+**MultiUN corpus** (with English as pivot language):
+- Four languages: English (En), Arabic (Ar), Spanish (Es), Russian (Ru)
+- Six zero-shot translation directions between the three non-pivot languages: Ar↔",1912.01214,5eda469a8a77f028d0c5f1acd296111085614537,"['De-En, En-Fr, Fr-En, En-Es, Ro-En, En-De, Ar-En, En-Ru', 'French-English-Spanish (Fr-En-Es), German-English-French (De-En-Fr) and Romanian-English-German (Ro-En-De), Arabic (Ar), Spanish (Es), and Russian (Ru), and mutual translation between themselves constitutes six zero-shot translation', ' ']",paper,fewshot,0.0,0.24390243902439024,False,False,False,True
+What accuracy does the proposed system achieve?,"The proposed system (ALCrowd) achieves the following F1 scores (the standard accuracy metric for NER tasks) across the three datasets:
+
+- **DL-PS**: 85.99 F1 (Precision: 89.56, Recall: 82.70)
+- **EC-MT**: 75.15 F1 (Precision: 76.33, Recall: 74.00)
+- **EC-UQ**: 71.53 F1 (Precision: 74.72, Recall: 68.60)
+
+Compared to the strong baseline LSTM-CRF, ALCrowd shows improvements of +1.08 F1 on DL-PS, +1",1801.05147,ef4dba073d24042f24886580ae77add5326f2130,"['F1 scores of 85.99 on the DL-PS data,  75.15 on the EC-MT data and 71.53 on the EC-UQ data ', 'F1 of 85.99 on the DL-PS dataset (dialog domain); 75.15 on EC-MT and 71.53 on EC-UQ (e-commerce domain)', ' ']",paper,fewshot,0.0,0.29850746268656714,False,False,False,True
+What baselines did they consider?,"The paper considered state-of-the-art PDTB taggers as baselines for causality prediction evaluation, specifically:
+- Lin et al., 2014 (F1 = 0.638)
+- Biran and McKeown, 2015 (F1 = 0.434)
+
+These are mentioned in the Model Evaluation section and shown in Table 3.",1809.01202,4cbe5a36b492b99f9f9fea8081fe4ba10a7a0e94,"['state-of-the-art PDTB taggers', 'Linear SVM, RBF SVM, and Random Forest', ' ']",paper,fewshot,0.0,0.15384615384615385,False,False,False,True
+Does this approach perform better in the multi-domain or single-domain setting?,Based on the joint goal accuracy results,1909.00754,ed7a3e7fc1672f85a768613e7d1b419475950ab4,"['single-domain setting', ' ', ' ']",paper,fewshot,0.0,0.0,False,False,False,False

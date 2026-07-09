@@ -1,0 +1,521 @@
+question_id,sprint,dataset,doc_name,source_model,difficulty,question,ground_truth,failure_type,score,is_sprint4_hard_case,notes,response,context_snippet,model,prompt_strategy,raw_quid,em_score,f1_score,is_empty
+S3_TATHYBRID_cf649b7b26933abd29572697283fbf67,3,tathybrid,inpixon_2019,Nemotron-3-Ultra-550B,hard,What was the change in Accumulated amortization from 2018 to 2019?,-1073,empty_response,max_f1=0.000; avg_f1=0.000,YES,phases_tested=6; q_uid=cf649b7b26933abd29572697283fbf67,"The answer is: 3,633","December 31,
+ 
+ 
+December 31,
+ 
+ 
+ 
+2019
+ 
+ 
+2018
+ 
+ 
+2019
+ 
+ 
+2018
+ 
+Trade Name/Trademarks
+ 
+$
+780
+ 
+ 
+$
+780
+ 
+ 
+$
+(724
+)
+ 
+$
+(574
+)
+Customer Relationships
+ 
+ 
+4,070
+ 
+ 
+ 
+2,620
+ 
+ 
+ 
+(2,574
+)
+ 
+ 
+(2,318
+)
+Developed Technology
+ 
+ 
+21,422
+ 
+ 
+ 
+15,871
+ 
+ 
+ 
+(14,996
+)
+ 
+ 
+(11,873
+)
+Non-compete Agreem",gemini-3.1-flash-lite,simple,cf649b7b26933abd29572697283fbf67,0.0,0.0,False
+S3_TATHYBRID_075b7e72ffc091bf455c2538c63427fd,3,tathybrid,inpixon_2019,Nemotron-3-Ultra-550B,hard,What is the average Restricted cash for 2018 and 2019?,71,empty_response,max_f1=0.000; avg_f1=0.000,YES,phases_tested=6; q_uid=075b7e72ffc091bf455c2538c63427fd,The answer is: 71,"(5
+)
+Net increase (decrease) in 
+cash
+ 
+$
+3,701
+ 
+ 
+$
+797
+ 
+ 
+ 
+ 
+As 
+of 
+December 31,
+2019
+ 
+ 
+As 
+of 
+December 31,
+2018
+ 
+Cash and cash equivalents
+ 
+$
+4,777
+ 
+ 
+$
+1,008
+ 
+Working capital (deficit)
+ 
+$
+(6,975
+)
+ 
+$
+(3,927
+)
+  
+56 
+Operating Activities for the year ended December 31, 2019
+ 
+Net cas",gemini-3.1-flash-lite,simple,075b7e72ffc091bf455c2538c63427fd,0.0,0.0,False
+S3_TATHYBRID_f14766d60aaa9fc5ad134af01d563db4,3,tathybrid,inpixon_2019,Nemotron-3-Ultra-550B,hard,What was the amount in escrow as restricted cash at 2019 and 2018 respectively?,"72,000, 140,000",severe_failure,max_f1=0.140; avg_f1=0.057,YES,phases_tested=6; q_uid=f14766d60aaa9fc5ad134af01d563db4,"[Assistant]: The provided text does not contain information regarding the amount in escrow as restricted cash for 2019 and 2018.
+
+The answer is: Not mentioned","31, 2018 was $29.0 million. During the year ended December 31, 2019, the Company received incoming cash flows of $20.7 million from the issuance of common stock, preferred stock and warrants,
+$1.8 million of repayments from a related party note, $7.5 million from promissory notes and $127,000 of net",gemini-3.1-flash-lite,simple,f14766d60aaa9fc5ad134af01d563db4,0.0,0.0,False
+S3_TATHYBRID_e250c6d151f82129e6566ebaddc73842,3,tathybrid,inpixon_2019,Nemotron-3-Ultra-550B,hard,What was the Cash and cash equivalents in 2019 and 2018 respectively?,"$4,777, $1,008",severe_failure,max_f1=0.170; avg_f1=0.065,YES,phases_tested=6; q_uid=e250c6d151f82129e6566ebaddc73842,"The answer is: 2019: $4,777; 2018: $1,008","(5
+)
+Net increase (decrease) in 
+cash
+ 
+$
+3,701
+ 
+ 
+$
+797
+ 
+ 
+ 
+ 
+As 
+of 
+December 31,
+2019
+ 
+ 
+As 
+of 
+December 31,
+2018
+ 
+Cash and cash equivalents
+ 
+$
+4,777
+ 
+ 
+$
+1,008
+ 
+Working capital (deficit)
+ 
+$
+(6,975
+)
+ 
+$
+(3,927
+)
+  
+56 
+Operating Activities for the year ended December 31, 2019
+ 
+Net cas",gemini-3.1-flash-lite,simple,e250c6d151f82129e6566ebaddc73842,0.0,0.0,False
+S3_TATHYBRID_4a97a3a079b9d171bb3e3c05a5d558fa,3,tathybrid,inpixon_2019,Nemotron-3-Ultra-550B,hard,What was the Compensation and related benefits in 2019 and 2018 respectively?,"$3,247, $949",partial_failure,max_f1=0.200; avg_f1=0.033,YES,phases_tested=6; q_uid=4a97a3a079b9d171bb3e3c05a5d558fa,"The answer is: 2019: $3,489,000; 2018: $1,494,000","became CEO in September 2011. Mr. Ali’s salary under the agreement was initially $240,000 per annum plus other benefits including a bonus plan, a housing allowance, health insurance, life insurance
+and other standard Inpixon employee benefits. If Mr. Ali’s employment is terminated without Cause (as ",gemini-3.1-flash-lite,simple,4a97a3a079b9d171bb3e3c05a5d558fa,0.0,0.0,False
+S3_TATHYBRID_5c0ddefaec11aaea7641c83b8e8ee365,3,tathybrid,lifeway-foods-inc_2019,Nemotron-3-Ultra-550B,hard,What is the percentage change in provisions (benefit) for state and local income taxes between 2018 and 2019?,10.84,complete_failure,max_f1=0.000; avg_f1=0.000,YES,phases_tested=6; q_uid=5c0ddefaec11aaea7641c83b8e8ee365,"To calculate the percentage change in the provision for state and local income taxes between 2018 and 2019:
+
+1.  Identify the values from the ""Note 10 – Income taxes"" table:
+    *   2018 State and local tax: $249
+    *   2019 State and local tax: $276
+2.  Calculate the difference: $276 - $249 = $27
+3.  Calculate the percentage change: ($27 / $249) * 100 ≈ 10.84%
+
+The answer is: 10.84%","awards, and the provision for unrecognized tax benefits. The increase in the effective tax rate from 2018 to 2019 is 
+due to the fact that the company has a number of items that are nondeductible or are discrete adjustments to tax 
+expense. Although similar items were reflected in 2018, the percenta",gemini-3.1-flash-lite,simple,5c0ddefaec11aaea7641c83b8e8ee365,1.0,1.0,False
+S3_TATHYBRID_f3f36466e3595177dee05fd432122387,3,tathybrid,lifeway-foods-inc_2019,Nemotron-3-Ultra-550B,hard,What is the value of real estate taxes in 2018?,398,empty_response,max_f1=0.000; avg_f1=0.000,YES,phases_tested=6; q_uid=f3f36466e3595177dee05fd432122387,"The provided report does not contain information regarding the value of real estate taxes for 2018.
+
+The answer is: Not available","Selling expenses      11,062        13,477    
+General and administrative      12,828        13,616    
+Goodwill and intangible asset impairment      –       1,244    
+Amortization expense      192       631   
+Total operating expenses      24,082        28,968    
+                  
+Loss from opera",gemini-3.1-flash-lite,simple,f3f36466e3595177dee05fd432122387,0.0,0.0,False
+S3_TATHYBRID_75006d911eb541bafc8bfdfe43399b83,3,tathybrid,lifeway-foods-inc_2019,Nemotron-3-Ultra-550B,hard,What is the average real estate taxes for 2018 and 2019?,398,complete_failure,max_f1=0.000; avg_f1=0.000,YES,phases_tested=6; q_uid=75006d911eb541bafc8bfdfe43399b83,"The provided report does not contain information regarding real estate taxes for 2018 and 2019.
+
+The answer is: Not available","2019      2018    
+Current assets                  
+Cash and cash equivalents    $ 3,836      $ 2,998    
+Accounts receivable, net of allowance for doubtful accounts and discounts & 
+allowances of $1,100 and $1,220 at December 31, 2019 and 2018, 
+respectively      6,692        6,276    
+Inventories,",gemini-3.1-flash-lite,simple,75006d911eb541bafc8bfdfe43399b83,0.0,0.0,False
+S3_TATHYBRID_4b33b977256836fc6c3fbda16ba5844d,3,tathybrid,lifeway-foods-inc_2019,Nemotron-3-Ultra-550B,hard,What is the change in payroll and incentive compensation between 2018 and 2019?,1072,empty_response,max_f1=0.000; avg_f1=0.000,YES,phases_tested=6; q_uid=4b33b977256836fc6c3fbda16ba5844d,"The provided report does not contain a specific line item for total ""payroll"" or a consolidated figure for ""incentive compensation"" that allows for a direct calculation of the change between 2018 and 2019. While the report details specific stock-based compensation expenses for various plans (e.g., 2017 Plan, 2019 Plan, Retention Award), it does not provide the total payroll or aggregate incentive compensation figures.
+
+The answer is: Not available","awards, and the provision for unrecognized tax benefits. The increase in the effective tax rate from 2018 to 2019 is 
+due to the fact that the company has a number of items that are nondeductible or are discrete adjustments to tax 
+expense. Although similar items were reflected in 2018, the percenta",gemini-3.1-flash-lite,simple,4b33b977256836fc6c3fbda16ba5844d,0.0,0.0,False
+S3_TATHYBRID_0e0ad7de3485110d26cb55f7d007c191,3,tathybrid,lifeway-foods-inc_2019,Nemotron-3-Ultra-550B,hard,What is the percentage change in the total accrued expenses from 2018 to 2019?,47.17,empty_response,max_f1=0.000; avg_f1=0.000,YES,phases_tested=6; q_uid=0e0ad7de3485110d26cb55f7d007c191,"To calculate the percentage change in total accrued expenses from 2018 to 2019:
+
+1.  Identify the accrued expenses for 2018: $2,777 (in thousands).
+2.  Identify the accrued expenses for 2019: $4,087 (in thousands).
+3.  Calculate the difference: $4,087 - $2,777 = $1,310.
+4.  Calculate the percentage change: ($1,310 / $2,777) * 100 ≈ 47.17%.
+
+The answer is: 47.17%","2019      2018    
+Current assets                  
+Cash and cash equivalents    $ 3,836      $ 2,998    
+Accounts receivable, net of allowance for doubtful accounts and discounts & 
+allowances of $1,100 and $1,220 at December 31, 2019 and 2018, 
+respectively      6,692        6,276    
+Inventories,",gemini-3.1-flash-lite,simple,0e0ad7de3485110d26cb55f7d007c191,1.0,1.0,False
+S3_TATHYBRID_5b53e0ca06203f7703b6c4f8057e3c87,3,tathybrid,lifeway-foods-inc_2019,Nemotron-3-Ultra-550B,hard,What is the percentage constitution of net sales from Frozen Kefir among the total net sales in 2019?,1.73,complete_failure,max_f1=0.000; avg_f1=0.000,YES,phases_tested=6; q_uid=5b53e0ca06203f7703b6c4f8057e3c87,The answer is: 2%,"20     
+  
+Net Sales  
+  
+Net sales were $93,662 for the year ended December 31, 2019, a decrease of $9,688 or 9.4% versus prior year. The 
+net sales softness continued to reflect the overall lower consumption in the dairy and cultured dairy product 
+categories. Versus prior year, the decline was pr",gemini-3.1-flash-lite,simple,5b53e0ca06203f7703b6c4f8057e3c87,0.0,0.0,False
+S3_TATHYBRID_93bc597e64554174f2373c633c17af3e,3,tathybrid,lifeway-foods-inc_2019,Nemotron-3-Ultra-550B,hard,What is the percentage constitution of brand names among the total goodwill and indefinite lived intangible assets in 2019?,28.85,empty_response,max_f1=0.000; avg_f1=0.000,YES,phases_tested=6; q_uid=93bc597e64554174f2373c633c17af3e,"[Assistant]: The total goodwill and indefinite-lived intangible assets are $12,824, and the brand names are $3,700. The percentage is 3,700 / 12,824, which is approximately 28.85%.
+
+The answer is: 28.85%","market multiples of reven ue and earnings derived from comparable publicly -traded companies with similar operating and investment characteristics. The resulting fair value, based on the income and market approaches, is 
+then compared to the carrying value to determine if impairment is necessary.  
+",gemini-3.1-flash-lite,simple,93bc597e64554174f2373c633c17af3e,1.0,1.0,False
+S3_TATHYBRID_077fac86dd9c8cd78b834fbdbe0885be,3,tathybrid,lifeway-foods-inc_2019,Nemotron-3-Ultra-550B,hard,What is the percentage change in ingredients between 2018 and 2019?,22.91,complete_failure,max_f1=0.000; avg_f1=0.000,YES,phases_tested=6; q_uid=077fac86dd9c8cd78b834fbdbe0885be,The answer is: Not mentioned,"believe Lifeway is well positioned for long -term growth and value creation with strong industry tailwinds to fuel our 
+business as we increasingly serve consumers looking for more self -care, immunity and gut health options during this 
+time of global health cri sis and uncertainty.”  
+  
+Lifeway e",gemini-3.1-flash-lite,simple,077fac86dd9c8cd78b834fbdbe0885be,0.0,0.0,False
+S3_TATHYBRID_4cb79dfe572f814f50c02a61639f2094,3,tathybrid,lifeway-foods-inc_2019,Nemotron-3-Ultra-550B,hard,What is the value of recipes in 2018 and 2019 respectively?,"$ 44, $ 44",complete_failure,max_f1=0.000; avg_f1=0.000,YES,phases_tested=6; q_uid=4cb79dfe572f814f50c02a61639f2094,"The provided text does not contain information regarding the value of recipes. The financial tables provided relate to a share repurchase program.
+
+The answer is: Not mentioned","operations could be adversely affected.  
+  
+One key element of our business strategy is to introduce timely, new, cost -effective, and appealing products and to 
+innovate successfully within our existing product categories. New items introduced through our innovation efforts 
+partially offset lower",gemini-3.1-flash-lite,simple,4cb79dfe572f814f50c02a61639f2094,0.0,0.0,False
+S3_TATHYBRID_7622984778061cb2468425d5534a99e6,3,tathybrid,lifeway-foods-inc_2019,Nemotron-3-Ultra-550B,hard,What is the change in the value of customer relationships between 2018 and 2019?,0,empty_response,max_f1=0.000; avg_f1=0.000,YES,phases_tested=6; q_uid=7622984778061cb2468425d5534a99e6,,"and results of operations.  
+  
+Customers, such as supermarkets and food distributors, cont inue to consolidate. This consolidation has produced 
+larger, more sophisticated organizations with increased negotiating and buying power that are able to resist price 
+increases or demand increased promotio",gemini-3.1-flash-lite,simple,7622984778061cb2468425d5534a99e6,0.0,0.0,True
+S3_TATHYBRID_3ead03b4712e86e15034c9fabc0f1b9b,3,tathybrid,lifeway-foods-inc_2019,Nemotron-3-Ultra-550B,hard,What is the average value of trade names for both 2018 and 2019?,2248,complete_failure,max_f1=0.000; avg_f1=0.000,YES,phases_tested=6; q_uid=3ead03b4712e86e15034c9fabc0f1b9b,"To determine the average value of trade names for 2018 and 2019, we look at the ""Issuer Purchases of Equity Securities"" table provided in the context, which lists the ""Average price paid per share"" for the share repurchase programs during those years.
+
+1.  For Fiscal Year 2018, the average price paid per share was $6.33.
+2.  For Fiscal Year 2019, the average price paid per share was $2.55.
+3.  The average of these two values is ($6.33 + $2.55) / 2 = $8.88 / 2 = $4.44.
+
+The answer is: 4.44","Plans or 
+Programs  
+($ in 
+thousands)    
+                          
+1/1/2018 to 1/31/2018      106,441      $ 8.22       106,441      $ 5,007    
+2/1/2018 to 2/28/2018      24,486      $ 7.21       24,486      $ 4,830    
+4/1/2018 to 4/30/2018      15,433      $ 6.09       15,433      $ 4,736    
+",gemini-3.1-flash-lite,simple,3ead03b4712e86e15034c9fabc0f1b9b,0.0,0.0,False
+S3_TATHYBRID_0348eb3a1a522c486ac40488208708ff,3,tathybrid,lifeway-foods-inc_2019,Nemotron-3-Ultra-550B,hard,What is the percentage change in net sales from Frozen Kefir between 2018 and 2019?,12.76,complete_failure,max_f1=0.000; avg_f1=0.000,YES,phases_tested=6; q_uid=0348eb3a1a522c486ac40488208708ff,The answer is: 12.76%,"20     
+  
+Net Sales  
+  
+Net sales were $93,662 for the year ended December 31, 2019, a decrease of $9,688 or 9.4% versus prior year. The 
+net sales softness continued to reflect the overall lower consumption in the dairy and cultured dairy product 
+categories. Versus prior year, the decline was pr",gemini-3.1-flash-lite,simple,0348eb3a1a522c486ac40488208708ff,1.0,1.0,False
+S3_TATHYBRID_30e01bc5c375a0ca44ab4c0dd14e5e1e,3,tathybrid,lifeway-foods-inc_2019,Nemotron-3-Ultra-550B,hard,What is the value of vehicles in 2018 and 2019 respectively?,"937, 778",severe_failure,max_f1=0.040; avg_f1=0.012,YES,phases_tested=6; q_uid=30e01bc5c375a0ca44ab4c0dd14e5e1e,"The provided report does not contain information regarding the value of vehicles.
+
+The answer is: Not available","Plans or 
+Programs  
+($ in 
+thousands)    
+                          
+1/1/2018 to 1/31/2018      106,441      $ 8.22       106,441      $ 5,007    
+2/1/2018 to 2/28/2018      24,486      $ 7.21       24,486      $ 4,830    
+4/1/2018 to 4/30/2018      15,433      $ 6.09       15,433      $ 4,736    
+",gemini-3.1-flash-lite,simple,30e01bc5c375a0ca44ab4c0dd14e5e1e,0.0,0.0,False
+S3_TATHYBRID_fe59aeaff2948f598d69f262c6464889,3,tathybrid,lifeway-foods-inc_2019,Nemotron-3-Ultra-550B,hard,What is the average value of vehicles for 2018 and 2019?,857.5,severe_failure,max_f1=0.060; avg_f1=0.010,YES,phases_tested=6; q_uid=fe59aeaff2948f598d69f262c6464889,"[Assistant]: The provided report does not contain information regarding the value of vehicles.
+
+The answer is: Not available","Plans or 
+Programs  
+($ in 
+thousands)    
+                          
+1/1/2018 to 1/31/2018      106,441      $ 8.22       106,441      $ 5,007    
+2/1/2018 to 2/28/2018      24,486      $ 7.21       24,486      $ 4,830    
+4/1/2018 to 4/30/2018      15,433      $ 6.09       15,433      $ 4,736    
+",gemini-3.1-flash-lite,simple,fe59aeaff2948f598d69f262c6464889,0.0,0.0,False
+S3_TATHYBRID_f4c8e2d0155ac338249d0fe6feba49ac,3,tathybrid,lifeway-foods-inc_2019,Nemotron-3-Ultra-550B,hard,What was the low sale price per share for each quarters in 2018 in chronological order?,"$ 5.99, $ 4.79, $ 2.66, $ 1.88",empty_response,max_f1=0.100; avg_f1=0.040,YES,phases_tested=6; q_uid=f4c8e2d0155ac338249d0fe6feba49ac,"[Assistant]: Based on the provided table of share repurchase programs for 2018, the prices per share listed in chronological order are: $8.22, $7.21, $6.09, $5.46, $3.96, $3.35, $2.99, and $2.25.
+
+The answer is: $8.22, $7.21, $6.09, $5.46, $3.96, $3.35, $2.99, $2.25","Plans or 
+Programs  
+($ in 
+thousands)    
+                          
+1/1/2018 to 1/31/2018      106,441      $ 8.22       106,441      $ 5,007    
+2/1/2018 to 2/28/2018      24,486      $ 7.21       24,486      $ 4,830    
+4/1/2018 to 4/30/2018      15,433      $ 6.09       15,433      $ 4,736    
+",gemini-3.1-flash-lite,simple,f4c8e2d0155ac338249d0fe6feba49ac,0.0,0.0,False
+S3_TATHYBRID_75e6ca02ab71725f685af6ab838f05d2,3,tathybrid,lifeway-foods-inc_2019,Nemotron-3-Ultra-550B,hard,What is the percentage of net sales from Cheese in 2018 and 2019 respectively?,"11%, 12%",severe_failure,max_f1=0.140; avg_f1=0.098,YES,phases_tested=6; q_uid=75e6ca02ab71725f685af6ab838f05d2,The answer is: 11% and 12%,"20     
+  
+Net Sales  
+  
+Net sales were $93,662 for the year ended December 31, 2019, a decrease of $9,688 or 9.4% versus prior year. The 
+net sales softness continued to reflect the overall lower consumption in the dairy and cultured dairy product 
+categories. Versus prior year, the decline was pr",gemini-3.1-flash-lite,simple,75e6ca02ab71725f685af6ab838f05d2,0.0,0.67,False
+S3_TATHYBRID_719ef48aead1f283a692fedbeae4622a,3,tathybrid,lifeway-foods-inc_2019,Nemotron-3-Ultra-550B,hard,What is the value of customer relationships in 2018 and 2019 respectively?,"985, 985",severe_failure,max_f1=0.140; avg_f1=0.042,YES,phases_tested=6; q_uid=719ef48aead1f283a692fedbeae4622a,"The provided text does not contain information regarding the specific value of customer relationships for the years 2018 and 2019.
+
+The answer is: Not mentioned","and results of operations.  
+  
+Customers, such as supermarkets and food distributors, cont inue to consolidate. This consolidation has produced 
+larger, more sophisticated organizations with increased negotiating and buying power that are able to resist price 
+increases or demand increased promotio",gemini-3.1-flash-lite,simple,719ef48aead1f283a692fedbeae4622a,0.0,0.0,False
+S3_TATHYBRID_d3ef8fd4b3583394a5552b6bf7d0a292,3,tathybrid,lifeway-foods-inc_2019,Nemotron-3-Ultra-550B,hard,"What is the total cost of goods sold for years ended December 31, 2018 and 2019 respectively?","$ 77,492, $ 71,513",severe_failure,max_f1=0.170; avg_f1=0.133,YES,phases_tested=6; q_uid=d3ef8fd4b3583394a5552b6bf7d0a292,"The total cost of goods sold for the year ended December 31, 2019 was $71,513 and for the year ended December 31, 2018 was $77,492.
+
+The answer is: 2019: $71,513; 2018: $77,492","20     
+  
+Net Sales  
+  
+Net sales were $93,662 for the year ended December 31, 2019, a decrease of $9,688 or 9.4% versus prior year. The 
+net sales softness continued to reflect the overall lower consumption in the dairy and cultured dairy product 
+categories. Versus prior year, the decline was pr",gemini-3.1-flash-lite,simple,d3ef8fd4b3583394a5552b6bf7d0a292,0.0,0.0,False
+S3_TATHYBRID_83cb95ba9efedd8346b5f66758f4ab85,3,tathybrid,lifeway-foods-inc_2019,Nemotron-3-Ultra-550B,hard,What is the value of buildings and improvements in 2018 and 2019 respectively?,"17,520, 17,332",empty_response,max_f1=0.170; avg_f1=0.068,YES,phases_tested=6; q_uid=83cb95ba9efedd8346b5f66758f4ab85,"The provided annual report context does not break down the ""Property, plant and equipment"" line item into specific categories such as buildings and improvements. Therefore, the value of buildings and improvements cannot be determined from the provided text.
+
+The answer is: Not available","Plans or 
+Programs  
+($ in 
+thousands)    
+                          
+1/1/2018 to 1/31/2018      106,441      $ 8.22       106,441      $ 5,007    
+2/1/2018 to 2/28/2018      24,486      $ 7.21       24,486      $ 4,830    
+4/1/2018 to 4/30/2018      15,433      $ 6.09       15,433      $ 4,736    
+",gemini-3.1-flash-lite,simple,83cb95ba9efedd8346b5f66758f4ab85,0.0,0.0,False
+S3_TATHYBRID_21502e160cffea38beb6bfa69e88a8a4,3,tathybrid,lifeway-foods-inc_2019,Nemotron-3-Ultra-550B,hard,What is the value of machinery and equipment in 2018 and 2019 respectively?,"29,692, 30,670",severe_failure,max_f1=0.170; avg_f1=0.068,YES,phases_tested=6; q_uid=21502e160cffea38beb6bfa69e88a8a4,"The provided report lists ""Property, plant and equipment, net"" as $22,274 for 2019 and $24,573 for 2018, but it does not provide a specific breakdown for the value of machinery and equipment.
+
+The answer is: Not available","2019      2018    
+Current assets                  
+Cash and cash equivalents    $ 3,836      $ 2,998    
+Accounts receivable, net of allowance for doubtful accounts and discounts & 
+allowances of $1,100 and $1,220 at December 31, 2019 and 2018, 
+respectively      6,692        6,276    
+Inventories,",gemini-3.1-flash-lite,simple,21502e160cffea38beb6bfa69e88a8a4,0.0,0.0,False
+S3_TATHYBRID_0022a9993b61830a838d232e2e840b27,3,tathybrid,lifeway-foods-inc_2019,Nemotron-3-Ultra-550B,hard,What is the amount of net sales from ProBugs Kelir in 2018 and 2019 respectively?,"2,795, 2,780",severe_failure,max_f1=0.170; avg_f1=0.122,YES,phases_tested=6; q_uid=0022a9993b61830a838d232e2e840b27,"The answer is: 2019: $2,780; 2018: $2,795","20     
+  
+Net Sales  
+  
+Net sales were $93,662 for the year ended December 31, 2019, a decrease of $9,688 or 9.4% versus prior year. The 
+net sales softness continued to reflect the overall lower consumption in the dairy and cultured dairy product 
+categories. Versus prior year, the decline was pr",gemini-3.1-flash-lite,simple,0022a9993b61830a838d232e2e840b27,0.0,0.0,False
+S3_TATHYBRID_bc9c09b72c0915325eba413a8b9a1a3d,3,tathybrid,lifeway-foods-inc_2019,Nemotron-3-Ultra-550B,hard,What is net sales from cheese in 2018 and 2019 respectively?,"11,486, 11,459",severe_failure,max_f1=0.170; avg_f1=0.123,YES,phases_tested=6; q_uid=bc9c09b72c0915325eba413a8b9a1a3d,"The answer is: 2019: $11,459; 2018: $11,486","20     
+  
+Net Sales  
+  
+Net sales were $93,662 for the year ended December 31, 2019, a decrease of $9,688 or 9.4% versus prior year. The 
+net sales softness continued to reflect the overall lower consumption in the dairy and cultured dairy product 
+categories. Versus prior year, the decline was pr",gemini-3.1-flash-lite,simple,bc9c09b72c0915325eba413a8b9a1a3d,0.0,0.0,False
+S3_TATHYBRID_05d6f0b7266caa424d82675ec4d0ca2e,3,tathybrid,lifeway-foods-inc_2019,Nemotron-3-Ultra-550B,hard,What is net sales from cream and other in 2018 and 2019 respectively?,"5,276, 4,228",severe_failure,max_f1=0.170; avg_f1=0.068,YES,phases_tested=6; q_uid=05d6f0b7266caa424d82675ec4d0ca2e,"The provided text does not contain the specific numerical breakdown of net sales for ""cream and other"" for the years 2018 and 2019.
+
+The answer is: Not mentioned","20     
+  
+Net Sales  
+  
+Net sales were $93,662 for the year ended December 31, 2019, a decrease of $9,688 or 9.4% versus prior year. The 
+net sales softness continued to reflect the overall lower consumption in the dairy and cultured dairy product 
+categories. Versus prior year, the decline was pr",gemini-3.1-flash-lite,simple,05d6f0b7266caa424d82675ec4d0ca2e,0.0,0.0,False
+S3_TATHYBRID_2f2b6b2954f6943f6d6da265a4c0d442,3,tathybrid,lifeway-foods-inc_2019,Nemotron-3-Ultra-550B,hard,What is net sales from ProBugs Kefir in 2018 and 2019 respectively?,"2,795, 2,780",severe_failure,max_f1=0.170; avg_f1=0.123,YES,phases_tested=6; q_uid=2f2b6b2954f6943f6d6da265a4c0d442,"The answer is: 2019: $2,780; 2018: $2,795","non-fat, whole milk, protein, and BioKefir (a 3.5 oz. kefir with additional probiotic cultures).  
+      
+  • European -style soft cheeses, including farmer cheese in resealable cups.  
+      
+  • Cream and other, which consists primarily of cream, a byproduct of making our kefir.  
+      
+  • ProBu",gemini-3.1-flash-lite,simple,2f2b6b2954f6943f6d6da265a4c0d442,0.0,0.0,False
+S3_TATHYBRID_1098c97fef920d0f4107fa3be6f84e3a,3,tathybrid,lifeway-foods-inc_2019,Nemotron-3-Ultra-550B,hard,What is the deferred provision (benefit) for income tax for 2018 and 2019 respectively?,"(461), 533",partial_failure,max_f1=0.200; avg_f1=0.098,YES,phases_tested=6; q_uid=1098c97fef920d0f4107fa3be6f84e3a,"The provided report does not explicitly state the deferred provision (benefit) for income tax for 2018 and 2019. While it mentions deferred income taxes in the balance sheet ($922 for 2019 and $390 for 2018), the specific provision (benefit) amounts are not provided in the text.
+
+The answer is: Not available","awards, and the provision for unrecognized tax benefits. The increase in the effective tax rate from 2018 to 2019 is 
+due to the fact that the company has a number of items that are nondeductible or are discrete adjustments to tax 
+expense. Although similar items were reflected in 2018, the percenta",gemini-3.1-flash-lite,simple,1098c97fef920d0f4107fa3be6f84e3a,0.0,0.0,False
+S3_TATHYBRID_83a78d0daf6d8f9ce353ded1a0291a2d,3,tathybrid,lifeway-foods-inc_2019,Nemotron-3-Ultra-550B,hard,What does the table show?,Net sales of products by category were as follows for the years ended December 31,empty_response,max_f1=0.210; avg_f1=0.057,YES,phases_tested=6; q_uid=83a78d0daf6d8f9ce353ded1a0291a2d,The answer is: The table shows the high and low sale prices per share of the company's common stock for each quarter during 2018 and 2019.,"preparing the consolidated financial statements include the reserve for promotional a llowances, the valuation of 
+goodwill and intangible assets, stock -based and incentive compensation, and deferred income taxes.  
+  
+Going Concern  
+  
+The Company follows the guidance in Accounting Standards Codi",gemini-3.1-flash-lite,simple,83a78d0daf6d8f9ce353ded1a0291a2d,0.0,0.12,False
+S3_TATHYBRID_4b7153cbb854c224d6bb0fb509fe74fe,3,tathybrid,lifeway-foods-inc_2019,Nemotron-3-Ultra-550B,medium,What is the provision (benefit) for total current income taxes for 2018 and 2019 respectively?,"236, 249",partial_failure,max_f1=0.330; avg_f1=0.085,YES,phases_tested=6; q_uid=4b7153cbb854c224d6bb0fb509fe74fe,"[Assistant]: The provided context does not contain the specific breakdown of the provision for total current income taxes for 2018 and 2019.
+
+The answer is: Not available","awards, and the provision for unrecognized tax benefits. The increase in the effective tax rate from 2018 to 2019 is 
+due to the fact that the company has a number of items that are nondeductible or are discrete adjustments to tax 
+expense. Although similar items were reflected in 2018, the percenta",gemini-3.1-flash-lite,simple,4b7153cbb854c224d6bb0fb509fe74fe,0.0,0.0,False
+S3_TATHYBRID_753dac607eb78875a55eb7d8bd15cf8e,3,tathybrid,lifeway-foods-inc_2019,Nemotron-3-Ultra-550B,medium,What does the company use to estimate fair value?,Widely accepted valuation techniques including discounted cash flows and market multiples analysis with respect to our single reporting unit,partial_failure,max_f1=0.470; avg_f1=0.233,YES,phases_tested=6; q_uid=753dac607eb78875a55eb7d8bd15cf8e,"The company uses a combination of the income approach (based on the present value of estimated future cash flows) and the market approach (based on market multiples of revenue and earnings derived from comparable publicly-traded companies).
+
+The answer is: A combination of the income approach and the market approach.","single reporting unit. These valuation approaches are dependent upon a number of factors, including estimates of 
+future grow th rates, our cost of capital, capital expenditures, income tax rates, and other variables. Assumptions used 
+in our valuations were consistent with our internal projections ",gemini-3.1-flash-lite,simple,753dac607eb78875a55eb7d8bd15cf8e,0.0,0.16,False
+S3_TATHYBRID_0bbedf7757da1e79b723f2641bea587c,3,tathybrid,overseas-shipholding-group-inc_2019,Nemotron-3-Ultra-550B,hard,What was the Interest cost on benefit obligation in 2019 and 2018 respectively?,"1,802, 1,673",empty_response,max_f1=0.000; avg_f1=0.000,YES,phases_tested=6; q_uid=0bbedf7757da1e79b723f2641bea587c,"The answer is: 1,802 and 1,673","Fair value of plan assets at year end   36,754   31,929   —   — 
+Unfunded status at December 31  $ (10,182) $ (12,086) $ (3,572) $ (3,401)
+ 
+Information for defined benefit pension plans with accumulated benefit obligations in excess of plan assets follows:
+ 
+At December 31,  2019   2018  
+Projected",gemini-3.1-flash-lite,simple,0bbedf7757da1e79b723f2641bea587c,0.0,0.67,False
+S3_TATHYBRID_ccc7a9080e0fea2e3181976dc634e30f,3,tathybrid,overseas-shipholding-group-inc_2019,Nemotron-3-Ultra-550B,hard,"In which year was Operating Leases greater than 100,000?",2022,empty_response,max_f1=0.000; avg_f1=0.000,YES,phases_tested=6; q_uid=ccc7a9080e0fea2e3181976dc634e30f,The answer is: 2019,"adjusted for risk based on the length of the lease term because the rate implicit in the lease is not readily determinable.
+ 
+The Company applied the package of practical expedients that allows companies not to reassess whether any expired or expiring
+contracts are or contain leases, lease classific",gemini-3.1-flash-lite,simple,ccc7a9080e0fea2e3181976dc634e30f,0.0,0.0,False
+S3_TATHYBRID_70b9c20fdab23a9cd16c8474c2be6d9c,3,tathybrid,overseas-shipholding-group-inc_2019,Nemotron-3-Ultra-550B,hard,"In which year was Increases for positions taken in prior years less than 1,000?",2018,empty_response,max_f1=0.000; avg_f1=0.000,YES,phases_tested=6; q_uid=70b9c20fdab23a9cd16c8474c2be6d9c,"The provided text does not contain information regarding ""Increases for positions taken in prior years.""
+
+The answer is: Not mentioned","Statement on Form S-1 filed on August 20, 2014 and incorporated herein by reference).
+  
+*10.30 Settlement, Release and Indemnity Agreement dated as of February 3, 2015 between the Registrant, certain subsidiaries
+of the Registrant and an executive (filed as Exhibit 10.27 to the Registrant’s Annual ",gemini-3.1-flash-lite,simple,70b9c20fdab23a9cd16c8474c2be6d9c,0.0,0.0,False
+S3_TATHYBRID_918d6fb907a4ff383e5d8e9da7db2728,3,tathybrid,overseas-shipholding-group-inc_2019,Nemotron-3-Ultra-550B,hard,What was the Rate change in 2019 and 2018 respectively?,"(84), 0",empty_response,max_f1=0.000; avg_f1=0.000,YES,phases_tested=6; q_uid=918d6fb907a4ff383e5d8e9da7db2728,"The provided text does not contain a single ""Rate change"" value for 2019 and 2018, but it does provide the ""Average rate"" for various vessel categories (Jones Act Handysize Product Carriers, Non-Jones Act Handysize Product Carriers, ATBs, and Lightering) for both years.
+
+The answer is: The average rates varied by vessel category and earnings type (Spot vs. Fixed) as detailed in the provided tables.","primarily resulted from three fewer vessels in operation during most of 2019 compared to 2018 and one less Government of Israel
+voyage in 2019 compared to 2018. This decrease was partially offset by the addition of two new vessels to our fleet at the
+beginning of the fourth quarter of 2019.
+ 
+Reconc",gemini-3.1-flash-lite,simple,918d6fb907a4ff383e5d8e9da7db2728,0.0,0.0,False
+S3_TATHYBRID_65dac64cb09b645dd52cc8f4a696544e,3,tathybrid,overseas-shipholding-group-inc_2019,Nemotron-3-Ultra-550B,hard,"What is the change in Liabilities: Deferred income taxes from Balance at December 31, 2017 to January 1, 2018?",-108,empty_response,max_f1=0.000; avg_f1=0.000,YES,phases_tested=6; q_uid=65dac64cb09b645dd52cc8f4a696544e,"The provided text does not contain information regarding the specific balance of ""Liabilities: Deferred income taxes"" at December 31, 2017, or January 1, 2018, nor does it provide a reconciliation that would allow for the calculation of a change between those two specific dates.
+
+The answer is: Not mentioned","in the financial statements. Under this method, deferred tax assets and liabilities are determined based on the differences
+between the financial statements and tax basis of assets and liabilities using enacted tax rates in effect for the year in
+which the differences are expected to reverse. The ef",gemini-3.1-flash-lite,simple,65dac64cb09b645dd52cc8f4a696544e,0.0,0.0,False
+S3_TATHYBRID_6122b1882bcd7b0a238a04bce284e40e,3,tathybrid,overseas-shipholding-group-inc_2019,Nemotron-3-Ultra-550B,hard,"In which year was Prepaid expenditures less than 6,000?",2019,complete_failure,max_f1=0.000; avg_f1=0.000,YES,phases_tested=6; q_uid=6122b1882bcd7b0a238a04bce284e40e,"The provided text does not contain information regarding ""Prepaid expenditures.""
+
+The answer is: Not mentioned","deferred finance costs, was not material.
+ 
+In August 2019, two of the Company’s subsidiaries entered into term loans in an aggregate principal amount of $50,000, due 2024,
+to finance the Overseas Gulf Coast and the Overseas Sun Coast. The loans are secured by first preferred ship mortgages on the
+v",gemini-3.1-flash-lite,simple,6122b1882bcd7b0a238a04bce284e40e,0.0,0.0,False
+S3_TATHYBRID_f0a1bd31aa64c790c41e42920619040b,3,tathybrid,overseas-shipholding-group-inc_2019,Nemotron-3-Ultra-550B,hard,What was the Prepaid expenditures in 2019 and 2018 respectively?,"5,621, 7,108",complete_failure,max_f1=0.000; avg_f1=0.000,YES,phases_tested=6; q_uid=f0a1bd31aa64c790c41e42920619040b,"The provided text does not contain information regarding ""Prepaid expenditures"" for 2019 and 2018.
+
+The answer is: Not mentioned","Years Ended December 31,  
+  2019   2018  
+Items not yet recognized as a component of net periodic benefit cost (pension and
+other postretirement benefit plans)   (6,409)  (7,192)
+  $ (6,409) $ (7,192)
+ 
+76 Overseas Shipholding Group, Inc. 
+ 
+The following tables present the changes in the balances ",gemini-3.1-flash-lite,simple,f0a1bd31aa64c790c41e42920619040b,0.0,0.0,False
+S3_TATHYBRID_0edf2f7aeed2b8ca6a2e0ed95641bf15,3,tathybrid,overseas-shipholding-group-inc_2019,Nemotron-3-Ultra-550B,hard,What was the Contracts of affreightment revenues in 2019 and 2018 respectively?,"58,589, 68,698",severe_failure,max_f1=0.140; avg_f1=0.070,YES,phases_tested=6; q_uid=0edf2f7aeed2b8ca6a2e0ed95641bf15,"The provided text does not contain information regarding ""Contracts of affreightment revenues"" for 2019 and 2018.
+
+The answer is: Not mentioned","primarily resulted from three fewer vessels in operation during most of 2019 compared to 2018 and one less Government of Israel
+voyage in 2019 compared to 2018. This decrease was partially offset by the addition of two new vessels to our fleet at the
+beginning of the fourth quarter of 2019.
+ 
+Reconc",gemini-3.1-flash-lite,simple,0edf2f7aeed2b8ca6a2e0ed95641bf15,0.0,0.0,False
+S3_TATHYBRID_3db311523025319e022d38381153a081,3,tathybrid,overseas-shipholding-group-inc_2019,Nemotron-3-Ultra-550B,hard,"How much did the company paid (net of refunds received) of income taxes during the years ended December 31, 2019 and 2018 respectively?","$1,293, $1,313",severe_failure,max_f1=0.140; avg_f1=0.083,YES,phases_tested=6; q_uid=3db311523025319e022d38381153a081,"The answer is: $1,293 and $1,313","recognized in net periodic cost: unrecognized prior service credits of $1,616 ($1,277 net of tax) and unrecognized actuarial losses
+$9,868 ($7,796 net of tax). The prior service credit and actuarial loss included in accumulated other comprehensive loss and
+expected to be recognized in net periodic c",gemini-3.1-flash-lite,simple,3db311523025319e022d38381153a081,0.0,0.67,False
+S3_TATHYBRID_ff06d83c2832cd8f43f1a6c350b5b7ae,3,tathybrid,overseas-shipholding-group-inc_2019,Nemotron-3-Ultra-550B,hard,"What was the value of Vessels, net in 2019 and 2018 respectively?","644,312, 596,929",severe_failure,max_f1=0.170; avg_f1=0.052,YES,phases_tested=6; q_uid=ff06d83c2832cd8f43f1a6c350b5b7ae,"The provided context lists ""Vessels and other property, less accumulated depreciation and amortization"" as $737,212 (in thousands) for 2019 and $597,659 (in thousands) for 2018.
+
+The answer is: 2019: $737,212; 2018: $597,659","primarily resulted from three fewer vessels in operation during most of 2019 compared to 2018 and one less Government of Israel
+voyage in 2019 compared to 2018. This decrease was partially offset by the addition of two new vessels to our fleet at the
+beginning of the fourth quarter of 2019.
+ 
+Reconc",gemini-3.1-flash-lite,simple,ff06d83c2832cd8f43f1a6c350b5b7ae,0.0,0.0,False
+S3_TATHYBRID_f7af7aebbd48ae1684ba8f8d7402c3fa,3,tathybrid,overseas-shipholding-group-inc_2019,Nemotron-3-Ultra-550B,hard,What was the Time and bareboat charter revenues revenues in 2019 and 2018 respectively?,"$263,683, $213,923",empty_response,max_f1=0.170; avg_f1=0.070,YES,phases_tested=6; q_uid=f7af7aebbd48ae1684ba8f8d7402c3fa,"The provided text does not explicitly state a single line item for ""Time and bareboat charter revenues."" However, it provides ""Time charter equivalent revenues"" of $335,133 for 2019 and $326,707 for 2018, and mentions that total time charter revenue for 2019 was $263,683 ($263,416 lease income + $267 adjustments). The report does not provide a specific breakdown for bareboat charter revenues.
+
+The answer is: Not provided","primarily resulted from three fewer vessels in operation during most of 2019 compared to 2018 and one less Government of Israel
+voyage in 2019 compared to 2018. This decrease was partially offset by the addition of two new vessels to our fleet at the
+beginning of the fourth quarter of 2019.
+ 
+Reconc",gemini-3.1-flash-lite,simple,f7af7aebbd48ae1684ba8f8d7402c3fa,0.0,0.0,False
+S3_TATHYBRID_a9f15932f8850b4316919a187eca8479,3,tathybrid,overseas-shipholding-group-inc_2019,Nemotron-3-Ultra-550B,hard,What is the vessel expenses in 2019 and 2018 respectively?,"$134,618, $134,956",partial_failure,max_f1=0.200; avg_f1=0.138,YES,phases_tested=6; q_uid=a9f15932f8850b4316919a187eca8479,"The answer is: 2019: $134,618; 2018: $134,956","Practical Expedients and Exemptions
+ 
+The Company’s voyage charter contracts and some of the Company’s COA have an original expected duration of one year or less;
+therefore, the Company has elected to apply the practical expedient, which permits the Company to not disclose the portion of the
+transac",gemini-3.1-flash-lite,simple,a9f15932f8850b4316919a187eca8479,0.0,0.67,False
+S3_TATHYBRID_bd6b76d0c551e67187a5a2310ffc22b7,3,tathybrid,overseas-shipholding-group-inc_2019,Nemotron-3-Ultra-550B,hard,What was the Finance Lease in 2020 and 2021 respectively?,"$4,172, 4,161",partial_failure,max_f1=0.200; avg_f1=0.105,YES,phases_tested=6; q_uid=bd6b76d0c551e67187a5a2310ffc22b7,"The answer is: 2020: $4,172; 2021: $4,161","adjusted for risk based on the length of the lease term because the rate implicit in the lease is not readily determinable.
+ 
+The Company applied the package of practical expedients that allows companies not to reassess whether any expired or expiring
+contracts are or contain leases, lease classific",gemini-3.1-flash-lite,simple,bd6b76d0c551e67187a5a2310ffc22b7,0.0,0.67,False
+S3_TATHYBRID_d014fbebfa1d081a6bce13d69d7a4d6d,3,tathybrid,overseas-shipholding-group-inc_2019,Nemotron-3-Ultra-550B,hard,What was the Finance Lease in 2022 and 2023 respectively?,"4,161, 4,161",partial_failure,max_f1=0.250; avg_f1=0.083,YES,phases_tested=6; q_uid=d014fbebfa1d081a6bce13d69d7a4d6d,"The answer is: 4,161","adjusted for risk based on the length of the lease term because the rate implicit in the lease is not readily determinable.
+ 
+The Company applied the package of practical expedients that allows companies not to reassess whether any expired or expiring
+contracts are or contain leases, lease classific",gemini-3.1-flash-lite,simple,d014fbebfa1d081a6bce13d69d7a4d6d,0.0,1.0,False
+S3_TATHYBRID_8939624e79668a97d484c68cec924fe3,3,tathybrid,viavi-solutions-inc_2019,Nemotron-3-Ultra-550B,hard,What is the change in Audit Fees as a percentage between 2018 and 2019?,-4.04,complete_failure,max_f1=0.000; avg_f1=0.000,YES,phases_tested=6; q_uid=8939624e79668a97d484c68cec924fe3,"The Audit Fees were $3,631,575 in 2019 and $3,784,488 in 2018. The change is a decrease of $152,913, which represents a percentage decrease of approximately 4.04%.
+
+The answer is: -4.04%","its discretion, may direct the appointment of a different independent registered public accounting firm at any time during the fiscal 
+year if the Audit Committee determines that such a change would be in the Company’ s and its stockholders’  best interests.
+Representatives of PricewaterhouseCoopers",gemini-3.1-flash-lite,simple,8939624e79668a97d484c68cec924fe3,1.0,1.0,False
+S3_TATHYBRID_5cff0439063c6a496073ce4b55591d0b,3,tathybrid,viavi-solutions-inc_2019,Nemotron-3-Ultra-550B,hard,What is the percentage difference of the total compensation between Timothy Campos and Tor Braham?,4.07,empty_response,max_f1=0.000; avg_f1=0.000,YES,phases_tested=6; q_uid=5cff0439063c6a496073ce4b55591d0b,"The total compensation for Timothy Campos is $255,817 and for Tor Braham is $245,817. The difference is $10,000. The percentage difference relative to Tor Braham is ($10,000 / $245,817) * 100, which is approximately 4.07%.
+
+The answer is: 4.07%","stock price prior to date of grantTable of Contents
+15Chair Member
+Committee Service Audit $ 30,000 $ 15,000
+(No meeting fees) Compensation $ 20,000 $ 10,000
+Governance/Corporate Development $ 15,000 $ 7,500
+Non-Employee Board Chair
+Additional Board Retainer $ 75,000
+Additional Equity NA
+The directo",gemini-3.1-flash-lite,simple,5cff0439063c6a496073ce4b55591d0b,1.0,1.0,False
+S3_TATHYBRID_08fb8e9b29d951164cbe057f7a5030d2,3,tathybrid,viavi-solutions-inc_2019,Nemotron-3-Ultra-550B,hard,What was the change in maximum possible value of MSU's using grant date fair value for Paul McNab between 2017 and 2018 as a percentage?,18.47,complete_failure,max_f1=0.000; avg_f1=0.000,YES,phases_tested=6; q_uid=08fb8e9b29d951164cbe057f7a5030d2,"To calculate the percentage change in the maximum possible value of MSUs for Paul McNab between 2017 and 2018:
+
+1.  **Identify the values from the table:**
+    *   2017 value: $373,425
+    *   2018 value: $442,395
+
+2.  **Calculate the change:**
+    *   Change = $442,395 - $373,425 = $68,970
+
+3.  **Calculate the percentage change:**
+    *   Percentage change = ($68,970 / $373,425) * 100 ≈ 18.47%
+
+The answer is: 18.47%","45(1) Amounts shown do not reflect compensation actually received by the NEO. Instead, the amounts shown in this column represent the grant 
+date fair values of RSUs issued pursuant to the Company’ s 2003 Equity Incentive Plan and certain inducement grants, computed in accordance 
+with FASB ASC Topi",gemini-3.1-flash-lite,simple,08fb8e9b29d951164cbe057f7a5030d2,1.0,1.0,False
+S3_TATHYBRID_f60e9d38b6711c488e0cbe5221285710,3,tathybrid,viavi-solutions-inc_2019,Nemotron-3-Ultra-550B,hard,What is the change in All Other Fees as a percentage between 2018 and 2019?,25,severe_failure,max_f1=0.070; avg_f1=0.012,YES,phases_tested=6; q_uid=f60e9d38b6711c488e0cbe5221285710,"The All Other Fees were $3,600 in 2018 and $4,500 in 2019. The increase is $900, which represents a 25% increase over the 2018 value.
+
+The answer is: 25%","its discretion, may direct the appointment of a different independent registered public accounting firm at any time during the fiscal 
+year if the Audit Committee determines that such a change would be in the Company’ s and its stockholders’  best interests.
+Representatives of PricewaterhouseCoopers",gemini-3.1-flash-lite,simple,f60e9d38b6711c488e0cbe5221285710,1.0,1.0,False

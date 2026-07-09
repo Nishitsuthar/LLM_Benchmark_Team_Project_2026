@@ -1,0 +1,124 @@
+
+Each of you has also some further, or next steps, or further steps. The thing is that we somehow need to combine the insights, let's say. And one is that I think finally it would be nice to specify the goal, to have some benchmark to evaluate something, where we do not have any examples where either all NLMs or most NLMs is somehow under some conditions able to produce the correct result.
+
+For those we don't care actually. So therefore we can throw away all things where most of the things work out, let's say, and just focus on those where each part, where we really say, okay, it's not working for, let's say, probably most of NLMs under certain conditions. Let's say, for example, to exclude, as you have done, to exclude the information extraction that happens behind it with SQL and whatnot.
+
+So an interesting part for me would be to, like, is it actually producing a database and making runs on or executes SQL queries on top of that? So when you use, for example, any, like, JetGPT or the other, or whatever, can you see that? Yeah. I think there are instructions when we are, like, writing a prompt or a task or a question, so there are instructions that the model is trying to compute something in the back end. Yeah.
+
+But most of the models, it is not at all transparent. Yeah. Actually, the API key you provided me, I've gone through all the lists of different NLMs, and some of them, so, for example, the one I tried, NVIDIA Open, they specifically mentioned that the model can actually generate the code, and I see how I can actually make it happen that there is a technique of, we specifically ask in the prompt to LLM to generate the code to come up with the answer, so we can make it happen.
+
+But it's just, like, the approach, and models should specifically have that ability to generate the code to fetch the answer. So, in the end, do you plan to, as soon as you implemented some framework to run it, do you plan to use it overall, or what is the goal there? I mean, I had that in mind because we have different kinds of data sets. Since I am working on a structured one, you guys can work on the unstructured one and the synthetically generated one that uses the same pipeline.
+
+And for benchmark tasks, I would say at least 50 tasks or more, that will be enough for the benchmark to run. Yeah, it really depends. Again, we don't need to execute and spend a lot of tokens for tasks when we know it mainly works.
+
+And I think it's really nice that we tried out different, like, you have also different data sets. You also have data sets that are sometimes quite huge, where we really need to specify and say, okay, those examples do not work, and we can show under certain conditions, like with the specific prompting or whatever. So also from your data set, I would just select some things where we clearly say, okay, this does not work easily.
+
+And even with more advanced approaches, we cannot solve them, let's say. I wouldn't work too much. Like, it's nice to see how you can improve and extract the PDF part, that of course we can always improve also on the system side in the end, which is nice.
+
+But I would just say, okay, given your kind of system that you implemented, or what is also in the paper, for example, that we just select a few examples where we say, okay, most of the time it doesn't work out. And if everybody is doing that, then we can come up with a kind of framework and benchmark. Then we also have to agree probably, or you have to agree on certain tasks such that you can easily run it in such a framework to just say, okay, now those three or four tasks and maybe examples can come from different data sets with different background information that you need to provide and different questions in the end.
+
+But it would be nice also for the next sprint to combine that again. Like now we have this phase of trying out different data sets, and I think now we need to combine them and see, okay, for each of those data sets, what did not work out in the sense that which examples are really difficult. I think also multi-hop is really crucial for many of the data sets.
+
+And then we can evaluate it as you have done to say, okay, we have some experiments to allow it to make SQL or any other kind of these detours. And the other ones where it's directly solving. I would just make these two distinctions then.
+
+And then you can even further say, okay, if we have serial shock, one-shot future, whatever. But to fix most of the parameters and just say, for example, okay, now this is our approach for going for detours. This is the approach for just letting the LLM do it.
+
+We have certain restrictions on the prompt and whatnot to restrict it further. And then we can have one kind of set of results finally with the data set. I agree on your point.
+
+And I also found some other interesting data set that we were working, like structure data sets. So they have the entire, I mean, maybe some there, but someone else's authors work. So they have the entire data set for the structure database.
+
+So we can also utilize that. We can have internal small teams who work on specific only unstructured and structured. Maybe just for now two different sets and follow the same framework.
+
+Maybe a bit of configuration according to how the different data sets are. But at the end of Spring 4, we can have the two different benchmarks for the structure and unstructured. And maybe we can also add synthetic data sets.
+
+Yeah, exactly. So you have now a lot. Also, again, how you can combine them and especially if the framework needs to be extended and in which ways.
+
+And also a bit like the metrics, how to extract the final information and evaluate them. So then we have finally the benchmark in a sense where we can say, okay, maybe in the future sprints, so after the next one we can still say if we increase it or not. But then we have at least a set where each of you say, okay, those are my examples where I had difficulties in finally answering them with the LLM.
+
+Yeah. I also was thinking that we should have maybe three or four different LLMs with different numbers of parameters. So we can have one group, let's say small LLMs.
+
+So we can see how good it is compared to the LLMs which have a bigger or more number of parameters. So is it performing well or better? Because I tried different data sets and there is no specific prompt approach. Different data sets are performing good with a different style of prompting.
+
+And also the number of, so if there is a small number of parameters, maybe it performs better with structured data. If it's bigger, then it has more parameters to do operations. So we can also have a specific.
+
+Yeah. In the end, I would really focus on the benchmarks and not too much on the system side. So of course, a lot of analysis are nice, but also tokens are kind of limited at some point at least.
+
+So I would rather go, for example, not to have many options, but to say we have a small and a large model, for example, to see the differences. But more work on, okay, we have examples where most of the things will not work. There is one company in Hyderabad called Aleph Alpha.
+
+Yeah. So I was thinking like they don't provide tokens openly. Can we contact them for the tokens to test on there as a small model because they are having a lot less parameters? I don't know.
+
+Because I just searched that they usually provide university with tokens to test their models. You can just send a request and say we're working on an IT project at the university here and ask for it. Okay.
+
+Should I keep it in CC? If you want, sure. Thank you. And also we need to also decrease the size of the data sets because for the LLM only approach, like the LLM needs to process the entire data set and it depends on the context size.
+
+So I also observed that the LLM was not able to give an error. It's not able to process them. It won't be able to generate the response.
+
+So we have to be careful on the context length as well. But it also depends on the model. Yeah.
+
+And I see that the framework we are following, talking about the system again, but it's always send data in chunks. So for LLM, even if you have a big data set, the LLM processes the data in small chunks and finds the relevant information based on the chunks. So again, if we have this direct LLM from the commercialized LLM, direct from the clouds and we can have a context window.
+
+I mean, of course, we also have a context window directly to LLM. But yeah, of course, we can utilize and agree on one specific numbers of patient answers and data set. So in the end, I think you also talked about this larger data set, right? That it does not necessarily fit into the context.
+
+So which in the end, so you would just argue, okay, if it doesn't fit into the context, you have a rack-based approach where you just select some snippets that works best. So the question is, if we include this to just say, okay, for the dimension where we think the size is the limiting factor, the question is if we have a very simple rack-based approach where you just say we index everything and make a very quick keyword search and fit not all things into the context, but just those that are relevant. And then the question is, is the retrieved information the one that is necessary to answer the question? So with this rack-based approach, that would also work.
+
+I would not, again, spend a lot of time in optimizing it, just saying, okay, we have a rack-based approach. And then still with the rack-based approach, it will still fail. So to just make that statement.
+
+So in my findings, I found the standard setup I used in the beginning, the rack-based approach, I think that provided the best results overall. Will it be better to use a rack-based approach in the model context? Because it also depends on the retrieval quality. And I have read that for model MCP, the retrieval quality remains consistent.
+
+Yes, still at some point, we need to say, okay, this is what we can do. And we still have sprints where we can explore things. But I would at some point also limit it.
+
+And to just say, okay, what would be, you can always say like, okay, MCP and this and this. And if you introduce functions, and if you allow the LLM to do this, this, this, and this, it would still work. So you can always make the LLM better and allow LLM more and more and more.
+
+But I think we should just make at some point some clear distinction and say, okay, so we have these different directions. We can say we have different forms. If we compile it into a PDF or into an image or whatever to make the extraction a bit more difficult, we have the direction to say we have more data, we have a lot of data.
+
+But when we're talking about this direction, about adding more data and a lot of data, then someone could just say, okay, but with a simple Rack approach, you can solve it. So I would actually cover this one, for example, to not make the statement too easy to just say, yeah, but with Rack, it works. But I would not have the last percentages and improving the system over and over again.
+
+But just say, here is a very simple, the most simple thing that I can think of, of a Rack approach, indexing in Elasticsearch, whatever, and just fetching keywords or documents which contain the keywords, and that's it. Not optimizing it too much. And then those examples where it still doesn't work, those should be included in the final benchmark.
+
+And then, of course, someone says, I have a crazy new idea where I can solve 50% of the examples that we collected where we already think it doesn't work. Of course, that system will exist and they will implement it, but it's actually nice to force people to think about it. Do you have more or next steps that you propose or want to do that we should discuss? I think that after all the discussion, first thing I think we need to constrain our findings.
+
+Because as you said, we have time, but it should be in a follow-up. So whatever we have done previously, we should follow the same work and at least come up with the different benchmarks for the different LLMs. So maybe I would say for the next sprint, we keep whatever the framework or whatever the Rack-based approach we have, just keep the same as it is, but rather focus more on the benchmark itself and collecting more questions.
+
+We already have a diverse domain, like movie data set or financial or different formats. So just set up the one final data set with all the diverse domain and number of questions, then we divide the work with the different team members. I have one question. 
+
+Should we move forward with diverse domains or just stick to one domain for creating the benchmark? Whatever you can achieve. Now you have this evaluation framework. I don't know if all the tasks from all different things will work in that framework.
+
+So maybe you have to say, okay, we have now this, this and this, those three and include all from different data sets. So that's really, I think, nice. And only those again, which don't work and include those.
+
+I don't think that all of them are really necessary. So if you think, okay, for this data set that we explored, it usually works. So I think also in the presentation somewhere it's like, yeah, in 90% of the cases it works.
+
+So maybe check if those 10% where it fails are really crucial, otherwise get completely rid of such a benchmark, for example, such a data set. And for the others where you have maybe 20, 30% where it doesn't work, then extract those where it doesn't work and include it in the benchmark. And then we can make the runs and see, okay, in how many cases will it work when the system or when the LLM is able to do this SQL transformation.
+
+Of course, then it should work more often, I expect at least. And then we have these restrictions at least. So also for this open source, you can further look how it's represented and if you need to put it in a prompt or if you can provide it in a structured way and say, okay, no, this LLM is not allowed to make any function calls, for example. 
+
+So how that finally works out. I have one question that is about the temperature I was looking at. So sometimes, I mean, I see the settings.
+
+I mean, we can just keep it as standard, but shall we do a change with the temperature? Because if we increase the temperature, it rather looks more like trying to guess. And if we keep it low, then it just looks for the conservative details or data it has. I think I have added that thing in the script.
+
+So I have tried it once. But you have made it static or is it like dynamic? No, no, it's just I have explicitly instructed that I have used the temperature setting. For the financial data set, so the overall F1 score actually degrades.
+
+For this control setup, so I collected the F1 score of 1. So it was around 0.2, 0.3, so I think it's working. I would again here, because it's more on the system side, I would restrict it as much as possible. So if you want to explore maybe, so I would definitely go for a low temperature or a zero temperature to make it very deterministic in the end.
+
+Because if you have a high temperature with every run, because you allow more tokens that can be randomly selected, which could be the next token. So in the end, every run will be completely different if you have a high temperature. And I would definitely set it to zero for one system, so to say.
+
+Maybe one with a higher temperature, but only one temperature, like 0.7, 1.0, I don't know. But only one, and not having kind of three, four different temperatures. How it evolves from a temperature, this is not our goal.
+
+Our goal is more to say, okay, for those two kind of extremes, let's say it doesn't work, or for one extreme it doesn't work, and we are fine with that. That is what we want to say. We don't want to evaluate which are the models.
+
+We don't have also to use a lot of models in the end, right? So also there we can restrict, let's say, a small model, a large model, or one open source, one closed source, and then a few temperatures. And even that combination of all this is making a lot of runs in the end. So therefore, I would on the system side restrict as much as possible.
+
+We have to be creative with respect to the benchmarking questions. Yes. That should be the end goal.
+
+Yeah. So each of you have already some experiences with the datasets, with the elements of it. And I would just extract the examples where it's not working, where you think it's not working, provide that into one benchmark, and then execute it and see what happens under certain conditions.
+
+But I would not on the system side explore too much. Like to say, for example, a few models, maybe include the rack, a very simple rack, and then only one or two temperatures maximum. But I would definitely include the, or close to zero, very close to zero, and then maybe one other, but not more.
+
+Because on the system side, we don't want to kind of invent new systems in the end and get the perfect system with one percentage point more, but we want to collect examples where overall it's quite difficult for an LLM without being able to extract information and run SQL queries, for example, so that we have a lot of examples like this. This is, I think, the way to go. Yeah.
+
+One small remark about presentations. It's really nice that everybody of you is also contributing to it, but also in that regard. I think it's, if you make the presentations, rather try to focus first, set up what you're doing, what data set, like in short headlines, what data sets you're using, what the idea was, and then a slide about the results.
+
+More like, not so many details, but more like, okay, what were your findings? Not a lot of sentences in the end, but rather bullet points that support you when presenting these things. So it's not that, yeah, it's mainly about your work, but also in the team project, it's nice to improve, and I think we have a lot of presentations now, and it's quite some work to do that, but I think it's also nice for you to try out things, how you present, how you prepare the presentations. And in that regard, I would rather focus more on having some bullet points, a short text, maybe more visuals to show, okay, or to say, okay, this is our process, what's the pipeline, things like that, so that, yeah, the presentation supports you, and the listeners do not have to read all the text and read a lot of details and things like that.
+
+Just as a remark. Okay, yeah, but overall really nice, I think. Again, you can send me a short list of what you plan to do for the next sprint, I think it's really nice, so that we can keep track of.
+
+And I think one of the most important things is now to combine the stuff again to one framework and to evaluate it. So, yeah, that's really nice. All right.

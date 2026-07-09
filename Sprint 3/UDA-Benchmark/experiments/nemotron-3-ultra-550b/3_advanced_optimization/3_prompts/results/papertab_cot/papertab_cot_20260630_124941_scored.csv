@@ -1,0 +1,17 @@
+question,response,doc,q_uid,answers,dataset,prompt_type,em_score,f1_score,is_empty,is_correct,is_partial,is_wrong
+what language pairs are explored?,"Based on the context, the paper explores the following language pairs:
+
+**Europarl corpus (with English as pivot language):**
+- **Zero-shot directions:** French→Spanish (Fr→Es), German→French (De→Fr), Romanian→German (Ro",1912.01214,5eda469a8a77f028d0c5f1acd296111085614537,"['De-En, En-Fr, Fr-En, En-Es, Ro-En, En-De, Ar-En, En-Ru', 'French-English-Spanish (Fr-En-Es), German-English-French (De-En-Fr) and Romanian-English-German (Ro-En-De), Arabic (Ar), Spanish (Es), and Russian (Ru), and mutual translation between themselves constitutes six zero-shot translation', ' ']",paper,cot,0.0,0.043478260869565216,False,False,False,True
+What accuracy does the proposed system achieve?,"Based on the context, the proposed system is **ALCrowd** (Adversarial Learning for Crowdsourcing). The paper reports **F1 scores** (the standard metric for NER tasks) rather than accuracy. Here are the results:
+
+**On DL-PS dataset (Table 2):**
+- **F1: 85.99** (Precision: 89.56, Recall: 82.70)
+
+**On EC-MT dataset (Table 3):**
+- **F1: 75.15** (Precision: 76.33, Recall: 74.00)
+
+**On EC-UQ dataset (Table 3):**
+- **F1:",1801.05147,ef4dba073d24042f24886580ae77add5326f2130,"['F1 scores of 85.99 on the DL-PS data,  75.15 on the EC-MT data and 71.53 on the EC-UQ data ', 'F1 of 85.99 on the DL-PS dataset (dialog domain); 75.15 on EC-MT and 71.53 on EC-UQ (e-commerce domain)', ' ']",paper,cot,0.0,0.2857142857142857,False,False,False,True
+What baselines did they consider?,,1809.01202,4cbe5a36b492b99f9f9fea8081fe4ba10a7a0e94,"['state-of-the-art PDTB taggers', 'Linear SVM, RBF SVM, and Random Forest', ' ']",paper,cot,0.0,0.0,True,False,False,False
+Does this approach perform better in the multi-domain or single-domain setting?,"Based on the reported joint goal accuracy metrics in Table 3, COMER performs better in the **single-domain setting** (WoZ2.0) with **88.6%** accuracy compared to **48.79%**",1909.00754,ed7a3e7fc1672f85a768613e7d1b419475950ab4,"['single-domain setting', ' ', ' ']",paper,cot,0.0,0.16,False,False,False,True

@@ -1,0 +1,42 @@
+question_id,sprint,dataset,doc_name,source_model,difficulty,question,ground_truth,failure_type,score,is_sprint4_hard_case,notes,response,context_snippet,model,prompt_strategy
+S3_FETATAB_19050,3,fetatab,Jennifer Jones,Nemotron-3-Ultra-550B,hard,In which film did Jennifer Jones star in 1995 and in which consequent film did she take on a role in 1956? ,"Jennifer Jones starred in Good Morning, Miss Dove in 1955, followed by a role in The Man in the Gray Flannel Suit.",empty_response,max_f1=0.182; avg_f1=0.067,YES,phases_tested=5; q_uid=19050,"The answer is: The provided text does not mention Jennifer Jones starring in a film in 1995, and in 1956, she starred in the film The Man in the Gray Flannel Suit.","Jennifer Jones
+Jones in 1947
+Born Phylis Lee Isley
+March 2, 1919
+Tulsa, Oklahoma, U.S.
+Died December 17, 2009 (aged 90)
+Malibu, California, U.S.
+Alma materNorthwestern University
+American Academy of
+Dramatic Arts
+Occupation(s)Actress, singer
+Years active1939–1974
+Spouse(s) Robert Walker
+  (m. 1939; ",gemini-3.1-flash-lite,simple
+S3_FETATAB_19148,3,fetatab,List of French monarchs,Nemotron-3-Ultra-550B,medium,"What year did Philip I the Amorous become King of the Franks, what year did that run end, and what number king was he?","Philip I the Amorous, was King of the Franks from 1060 to 1108, the fourth from the House of Capet.",empty_response,max_f1=0.474; avg_f1=0.207,YES,phases_tested=5; q_uid=19148,"The answer is: Philip I the Amorous became King of the Franks in 1060, his reign ended in 1108, and he was the third king listed in the provided context for the Capetian dynasty.","the
+Franks
+(Roi des
+Francs)
+Robert II the
+Pious, the
+Wise24
+October
+99620 July
+1031 • Son of Hugh
+Capet
+Henry I
+(Henri)20 July
+10314 August
+1060 • Son of Robert
+II
+Philip I the
+Amorous
+(Philippe)4 August
+106029 July
+1108 • Son of Henry
+I
+Louis VI the
+Fat29 July
+11081 August
+1137 • Son of Philip I
+Lo",gemini-3.1-flash-lite,simple

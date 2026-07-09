@@ -1,0 +1,2 @@
+question_id,question,doc_name,ground_truth,dataset,difficulty,failure_type,reasoning_steps
+TAT_001,"[Question text here]","inpixon_2019","[Ground truth answer]",tathybrid,hard,calculation,2

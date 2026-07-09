@@ -1,0 +1,44 @@
+question_id,sprint,dataset,doc_name,source_model,difficulty,question,ground_truth,failure_type,score,is_sprint4_hard_case,notes,response,context_snippet,model,prompt_strategy,raw_quid,em_score,f1_score,is_empty
+S3_PAPERTEXT_2df4a045a9cd7b44874340b6fdf9308d3c55327a,3,papertext,1801.05147,Nemotron-3-Ultra-550B,hard,What crowdsourcing platform is used?,"['They did not use any platform, instead they hired undergraduate students to do the annotation.', ' ', ' ']",partial_failure,max_f1=0.235; avg_f1=0.138,YES,phases_tested=5; q_uid=2df4a045a9cd7b44874340b6fdf9308d3c55327a,The answer is: Amazon Mechanical Turk,"on crowdsourcing learning, aiming to ﬁnd invariant features
+among different crowdsourcing workers.
+Crowdsourcing. Most NLP tasks require a massive amount
+of labeled training data which are annotated by experts.
+However, hiring experts is costly and non-scalable, both in
+terms of time and money. Inst",gemini-3.1-flash-lite,simple,2df4a045a9cd7b44874340b6fdf9308d3c55327a,0.0,0.0,False
+S3_PAPERTEXT_a4d115220438c0ded06a91ad62337061389a6747,3,papertext,1809.01202,Nemotron-3-Ultra-550B,hard,What types of social media did they consider?,"['Facebook status update messages', 'Facebook status update messages', ' ']",partial_failure,max_f1=0.267; avg_f1=0.135,YES,phases_tested=5; q_uid=a4d115220438c0ded06a91ad62337061389a6747,The answer is: Facebook status update messages,"ear model will not perform as well if the training
+size is increased substantially. However, a linear
+model could still be used to do a ﬁrst-pass, com-
+putationally efﬁcient labeling, in order to short-
+list social media posts for further labeling from an
+LSTM or more complex model.
+5 Exploration
+He",gemini-3.1-flash-lite,simple,a4d115220438c0ded06a91ad62337061389a6747,1.0,1.0,False
+S3_PAPERTEXT_72ceeb58e783e3981055c70a3483ea706511fac3,3,papertext,1909.00754,Nemotron-3-Ultra-550B,medium,What are the performance metrics used?,"['joint goal accuracy', ' ', ' ']",partial_failure,max_f1=0.400; avg_f1=0.222,YES,phases_tested=5; q_uid=72ceeb58e783e3981055c70a3483ea706511fac3,"The answer is: joint goal accuracy, joint domain accuracy, and joint domain-slot accuracy","Model Joint Acc.
+COMER 88.64%
+- Hierachical-Attn 86.69%
+- MLP 83.24%
+Table 4: The ablation study on the WoZ2.0 dataset
+with the joint goal accuracy on the test set. For “-
+Hierachical-Attn”, we remove the residual connections
+between the attention modules in the CMR decoders
+and all the attention me",gemini-3.1-flash-lite,simple,72ceeb58e783e3981055c70a3483ea706511fac3,0.0,0.4615384615384615,False
+S3_PAPERTEXT_9bfa46ad55136f2a365e090ce585fc012495393c,3,papertext,1909.00754,Nemotron-3-Ultra-550B,medium,Which datasets are used to evaluate performance?,"['the single domain dataset, WoZ2.0 , the multi-domain dataset, MultiWoZ', ' ', ' ']",partial_failure,max_f1=0.400; avg_f1=0.339,YES,phases_tested=5; q_uid=9bfa46ad55136f2a365e090ce585fc012495393c,The answer is: WoZ2.0 and MultiWoZ,"Model Joint Acc.
+COMER 88.64%
+- Hierachical-Attn 86.69%
+- MLP 83.24%
+Table 4: The ablation study on the WoZ2.0 dataset
+with the joint goal accuracy on the test set. For “-
+Hierachical-Attn”, we remove the residual connections
+between the attention modules in the CMR decoders
+and all the attention me",gemini-3.1-flash-lite,simple,9bfa46ad55136f2a365e090ce585fc012495393c,0.0,0.4,False
+S3_PAPERTEXT_b6f15fb6279b82e34a5bf4828b7b5ddabfdf1d54,3,papertext,1912.01214,Nemotron-3-Ultra-550B,hard,which multilingual approaches do they compare with?,"['BIBREF19, BIBREF20', 'multilingual NMT (MNMT) BIBREF19', ' ']",partial_failure,max_f1=0.261; avg_f1=0.111,YES,phases_tested=5; q_uid=b6f15fb6279b82e34a5bf4828b7b5ddabfdf1d54,"The answer is: traditional transfer learning, pivot-based method, and multilingual NMT (MNMT)","left side is the source language, and its right side is the target
+language. We remove the multi-parallel sentences between
+different training corpora to ensure zero-shot settings. We
+use the devtest2006 as the validation set and the test2006 as
+the test set for Fr!Es and De!Fr. For distant language",gemini-3.1-flash-lite,simple,b6f15fb6279b82e34a5bf4828b7b5ddabfdf1d54,0.0,0.46153846153846156,False
+S3_PAPERTEXT_f5e6f43454332e0521a778db0b769481e23e7682,3,papertext,1912.01214,Nemotron-3-Ultra-550B,medium,what are the pivot-based baselines?,"['pivoting, pivoting$_{\\rm m}$', 'firstly translates a source language into the pivot language which is later translated to the target language', ' ']",empty_response,max_f1=0.308; avg_f1=0.133,YES,phases_tested=5; q_uid=f5e6f43454332e0521a778db0b769481e23e7682,"The answer is: MNMT (Johnson et al. 2016), MNMT Agreement (Al-Shedivat and Parikh 2019), and Pivoting.","worst performance because of not using source $pivot par-
+allel data, which is utilized as beneﬁcial supervised signal
+for the other two baselines.
+Our best approach of MLM+BRLM-SA achieves the sig-
+niﬁcant superior performance to all baselines in the zero-
+shot directions, improving by 0.9-4.8 BLEU",gemini-3.1-flash-lite,simple,f5e6f43454332e0521a778db0b769481e23e7682,0.0,0.125,False

@@ -13,6 +13,13 @@
 .claude_context/
 **/.claude_context/
 
+# API keys — never commit
+Sprint 4/framework/api_keys.py
+
+# PDF source documents — large binary files, share via Google Drive
+Sprint 3/UDA-Benchmark/dataset/src_doc_files_example/
+Sprint 4/music_dataset.pdf
+
 # Python cache
 __pycache__/
 *.pyc
