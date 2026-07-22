@@ -1,0 +1,1090 @@
+no,question_id,dataset,difficulty,failure_type,question,ground_truth,llm_answer,doc_name,response,context_snippet,model,prompt_strategy,dataset_actual
+30,S3_FINHYBRID_ABMD/2012/page_75.pdf-1,finhybrid,hard,WRONG,"during the 2012 year , did the equity awards in which the prescribed performance milestones were achieved exceed the equity award compensation expense for equity granted during the year?",yes,"The provided text states that for the year ended March 31, 2012, the Company recorded $3.3 million in stock-based compensation expense for equity awards in which the prescribed performance milestones have been achieved or are probable of being achieved. Regarding equity awards granted during the year, the text notes that 607,000 restricted stock and restricted stock units were granted with a weighted-average grant date fair value of $18.13 per share, and 72,000 stock options were granted with a weighted-average exercise price of $17.53. The total compensation expense for all equity awards (including options, restricted stock, restricted stock units, and ESPP) for 2012 was $7.773 million. Since the $3.3 million figure specifically refers to performance-based awards and is a component of the total compensation expense, it does not exceed the total compensation expense for all equity awards granted or recognized during the year.
+
+The answer is: No",ABMD_2012,,"During the three months ended June 30, 2011, performance-based awards of restricted stock units for the potential issuance of 284,000 shares
+of common stock were issued to certain executive officers and members of the senior management, all of which would vest upon achievementof prescribed service m",mistral-small-2603,simple,finhybrid
+31,S3_FINHYBRID_ABMD/2012/page_75.pdf-2,finhybrid,hard,WRONG,"for equity awards where the performance criteria has been met in 2012 , what is the average compensation expense per year over which the cost will be expensed?",1719526 | 1714285.71429,"The provided text states that the remaining unrecognized compensation expense for equity awards as of March 31, 2012, is $3.6 million, and the weighted-average period over which this cost will be recognized is 2.1 years. Dividing the total expense by the number of years ($3.6 million / 2.1 years) results in approximately $1.71 million per year.
+
+The answer is: 1.71 million",ABMD_2012,,"During the three months ended June 30, 2011, performance-based awards of restricted stock units for the potential issuance of 284,000 shares
+of common stock were issued to certain executive officers and members of the senior management, all of which would vest upon achievementof prescribed service m",mistral-small-2603,simple,finhybrid
+32,S3_FINHYBRID_ABMD/2012/page_41.pdf-2,finhybrid,hard,REFUSED,did abiomed outperform the nasdaq medical equipment index?,yes | yes,"The provided text contains a graph description comparing the company's performance to the Nasdaq Medical Equipment index, but it does not provide a definitive conclusion on whether Abiomed outperformed the index.
+
+The answer is: Not specified",ABMD_2012,,"Corporate Background
+We are incorporated in Delaware and trade on the NASDAQ Global Select Market under the ticker symbol ABMD.Our principal executive offices are located at 22 Cherry Hill Drive, Danvers, Massachusetts 01923. Our telephone number is
+(978) 646-1400. We make available, free of charge ",mistral-small-2603,simple,finhybrid
+33,S3_FINHYBRID_ABMD/2012/page_41.pdf-1,finhybrid,hard,REFUSED,did abiomed outperform the nasdaq composite index?,yes | yes,"The provided context includes a graph index for the ""Nasdaq Composite Index"" and ""Nasdaq Medical Equipment"" but does not provide the specific performance data or a comparison analysis required to determine if Abiomed outperformed the index.
+
+The answer is: Not mentioned",ABMD_2012,,"Nasdaq Composite Index 100 94.11 63.12 99.02 114.84 127.66Nasdaq Medical Equipment SIC Code 3840-3849 100 82.91 41.56 77.93 94.54 74.40
+This graph is not “soliciting material” under Regulation 14A or 14C of the rules promulgated under the Securities Exchange Act of 1934,
+is not deemed filed with the",mistral-small-2603,simple,finhybrid
+34,S3_FINHYBRID_ABMD/2012/page_79.pdf-2,finhybrid,hard,WRONG,how much of total future minimum lease payments are due currently?,35% | 2845.5,"The answer is: 1,473",ABMD_2012,"The answer is: 1,473","(approximately U.S. $50,000 at March 31, 2012 exchange rates) per month and the lease term expires in December 2012.
+In July 2008, the Company entered into a lease agreement providing for the lease of a 33,000 square foot manufacturing facility in Athlone,
+Ireland. The lease agreement was for a term",mistral-small-2603,simple,finhybrid
+35,S3_FINHYBRID_ABMD/2012/page_41.pdf-3,finhybrid,hard,REFUSED,what is the roi of an investment in abiomed inc from march 2007 to march 2010?,-24.5% | -0.2445,"The provided context does not contain the specific stock price data for March 2007 and March 2010 required to calculate the exact ROI.
+
+The answer is: Not available",ABMD_2012,,"Indicate by check mark whether the registrant is a shell company (as defined in Rule 12b-2 of the Exchange Act). Yes ‘ NoÈ
+The aggregate market value of the registrant’s common stock as of September 30, 2011, held by non-affiliates of the registrant (without admitting tha t
+any person whose shares a",mistral-small-2603,simple,finhybrid
+36,S3_FINHYBRID_ABMD/2012/page_41.pdf-4,finhybrid,hard,REFUSED,what is the roi of an investment in nasdaq composite index from march 2007 to march 2010?,-1.0% | -0.0098,"The provided context does not contain the specific numerical data required to calculate the ROI for the Nasdaq Composite Index between March 2007 and March 2010. While a graph is mentioned, the specific index values for those years are not provided in the text.
+
+The answer is: Not available",ABMD_2012,,"March 31,
+2012 2011 2010
+(in $000’s)
+Diluted Net Income (Loss) Per ShareNet income (loss) $ 1,495 $(11,755) $(19,024)
+Weighted average shares used in computing basic net income per share 38,374 37,167 36,875
+Effect of dilutive securities 1,798 — —
+Weighted average shares used in computing diluted ne",mistral-small-2603,simple,finhybrid
+37,S3_FINHYBRID_ADI/2009/page_49.pdf-1,finhybrid,hard,WRONG,what is the the interest expense in 2009?,380 | 3.8,"The answer is: 4,094",ADI_2009,"The answer is: 4,094","Interest expense . . . ....................................... 4,094 — —
+Interest income . . . ....................................... (15,621) (41,041) (77,007)
+Other, net . . ............................................ (1,100) (36) (15,727)
+(12,627) (41,077) (92,734)
+Earnings
+Income from continui",mistral-small-2603,simple,finhybrid
+38,S3_FINHYBRID_ADI/2009/page_59.pdf-2,finhybrid,hard,REFUSED,what is the expected growth rate in amortization expense in 2010?,-27.0% | -0.26689,"The provided context does not contain information regarding the growth rate of amortization expense for 2010, only the expected total expense amount.
+
+The answer is: Not available",ADI_2009,The answer is: -41.03%,"Amortization expense from continuing operations, related to intangibles was $7.4 million, $9.3 million and
+$9.2 million in fiscal 2009, 2008 and 2007, respectively.
+The Company expects annual amortization expense for these intangible assets to be:
+Fiscal Years Amortization Expense
+2010 .............",mistral-small-2603,simple,finhybrid
+39,S3_FINHYBRID_ADI/2009/page_90.pdf-1,finhybrid,hard,REFUSED,what is the percentage increase in interest expanse and penalties in 2009?,30.8% | 0.30769,"The provided report does not contain information regarding ""penalties,"" and interest expense was $0 in 2008, making a percentage increase calculation mathematically undefined.
+
+The answer is: Not applicable",ADI_2009,,"settlement and a $7.9 million gain from the sale of an investment.
+Provision for Income Taxes
+2009 2008 2007Fiscal Year
+Provision for Income Taxes .................................... $50,036 $140,925 $159,553
+Effective Income Tax Rate .................................... 16.8% 21.2% 24.1%
+Our effec",mistral-small-2603,simple,finhybrid
+40,S3_FINHYBRID_ADI/2009/page_49.pdf-2,finhybrid,hard,WRONG,"what is the lobor rate as of october 31 , 2009?",29.0% | 0.0029,The answer is: 2.34%,ADI_2009,The answer is: Not available,"Other DSP .............. 6,208 0% (79)% 29,188 1% 33,430 1%
+Total DSP products ...... $ 173,341 9% (34)% $ 264,134 10% $ 247,769 10%
+Total Product Revenue .... $2,014,908 100% (22)% $2,582,931 100% $2,429,721 100%
+Revenue from one-time IP
+license ............... — — 35,000
+Total Revenue ........... ",mistral-small-2603,simple,finhybrid
+41,S3_FINHYBRID_ADI/2009/page_90.pdf-3,finhybrid,hard,REFUSED,what percentage did the balance increase from 2007 to 2009?,83.6% | 0.83648,"The provided text does not contain a specific ""balance"" figure to calculate a percentage increase from 2007 to 2009.
+
+The answer is: Not available",ADI_2009,,"Revenue ............................................... 14.1% 24.2% 23.1%
+The $340.2 million, or 54%, decrease in operating income from continuing operations in fiscal 2009 as
+compared to fiscal 2008 was primarily the result of a decrease in revenue of $568.0 million, a 560 basis point
+decrease in g",mistral-small-2603,simple,finhybrid
+42,S3_FINHYBRID_ADI/2009/page_90.pdf-4,finhybrid,hard,WRONG,what would be the balance if the company suffered the potential total tax liability of the 2006 and 2007 irs examination?,$ 17966 million | 17966.0,"The provided text states that the Company has not recorded any additional tax liability for the four items related to the 2006 and 2007 IRS examination, which have a potential total tax liability of $195 million. If the company were to suffer this liability, the balance would be reduced by $195 million.
+
+The answer is: $195 million",ADI_2009,The answer is: 195 million,"these proposed adjustments. There are four items with an additional potential total tax liability of $46 million. The
+Company has concluded, based on discussions with its tax advisors, that these four items are not likely to result in
+any additional tax liability. Therefore, the Company has not reco",mistral-small-2603,simple,finhybrid
+43,S3_FINHYBRID_GS/2016/page_186.pdf-2,finhybrid,hard,REFUSED,"in millions , for 2016 , 2015 , and 2014 what was the total amount of common share repurchases?",90.1 | 90.5,The answer is: Not provided,GS_2016,,"Excess tax benefit related to share-based
+awards 202 407 782
+Cash settlement of share-based awards — (2) (1)
+Net cash provided by financing activities 2,062 9,225 4,293
+Net increase in cash and cash equivalents 1,745
+1,294 25
+Cash and cash equivalents, beginning balance 1,336 42 17
+Cash and cash e q",mistral-small-2603,simple,finhybrid
+44,S3_FINHYBRID_GS/2016/page_79.pdf-4,finhybrid,hard,REFUSED,of the total aus net inflows/ ( outflows ) for 2014 were fixed income asset inflows in connection with our acquisition of deutsche asset & wealth management 2019s stable value business greater than the liquidity products inflows in connection with our acquisition of rbs asset management 2019s money market funds?,yes | yes,"The provided text does not contain information regarding acquisitions of Deutsche Asset & Wealth Management's stable value business or RBS Asset Management's money market funds, nor does it provide a breakdown of net inflows/outflows for 2014.
+
+The answer is: Not mentioned in the report",GS_2016,The answer is: Cannot be determined,"Alternative investments $ 149 $ 145 $ 145
+Equity 256 247 225
+Fixed income 578 530 499
+Total long-term assets under supervision 983 922 869
+Liquidity products 326 272 248
+Total assets under supervision $1,309 $1,194 $1,117
+Operating Environment. Following a challenging first
+quarter of 2016, market c",mistral-small-2603,simple,finhybrid
+45,S3_FINHYBRID_GS/2016/page_79.pdf-2,finhybrid,hard,WRONG,"in billions , for 2016 , 2015 , and 2014 , what are total alternative investments?",439 | 439.0,"The answer is: 2016: $154, 2015: $148, 2014: $143",GS_2016,"The answer is: 154, 148, 143","Investment Management segment.
+Year Ended December
+$ in millions 2016 2015 2014
+Management and other fees $4,798 $4,887 $4,800
+Incentive fees 421 780 776
+Transaction revenues 569 539 466
+Total net revenues 5,788 6,206 6,042
+Operating expenses 4,654 4,841 4,647
+Pre-tax earnings $1,134 $1,365 $1,395
+T",mistral-small-2603,simple,finhybrid
+46,S3_FINHYBRID_GS/2016/page_186.pdf-1,finhybrid,hard,REFUSED,what was the difference in millions between the total cost of common shares repurchases from 2015 to 2016?,1874 | 1874.0,"[Assistant]: To determine the difference in the total cost of common share repurchases between 2015 and 2016, we look at the provided data for share repurchases:
+
+1.  **2016 Data:**
+    *   October 2016: 2,650,628 shares at $172.13 = $456,256,665.64
+    *   November 2016: 3,164,013 shares at $198.20 = $627,107,376.60
+    *   December 2016: 1,768,622 shares at $235.57 = $416,636,664.54
+    *   Total for the period provided: $1,500,000,706.78 (approx. $1.5 billion).
+
+However, the report does not provide a full annual total for common share repurchases for 2015 or 2016 in the provided text, only the specific months of October, November, and December 2016. Based strictly on the provided context, there is insufficient information to calculate the total annual difference.
+
+The answer is: Insufficient information",GS_2016,,"Shares
+Purchased
+as Part of
+a Publicly
+Announced
+ProgramMaximum
+Shares
+That May
+Yet Be
+Purchased
+Under the
+Program
+October 2016 2,650,628 $172.13 2,650,628 31,545,097
+November 2016 3,164,013 $198.20 3,164,013 28,381,084
+December 2016 1,768,622 $235.57 1,768,622 26,612,462
+Total 7,583,263 7,583,263
+S",mistral-small-2603,simple,finhybrid
+47,S3_FINHYBRID_GS/2016/page_183.pdf-1,finhybrid,hard,WRONG,what were total investment commitments in billions for 2016 and 2015 related to commitments to invest in funds managed by the firm?,4.96 | 4.96,The answer is: 2.10 and 2.86,GS_2016,"The answer is: 2.10 billion (2016), 2.86 billion (2015)","Year Ended December
+$ in millions 2016 2015 2014
+Investment banking $ 6,273 $ 7,027 $ 6,464
+Investment management 5,407 5,868 5,748
+Commissions and fees 3,208 3,320 3,316
+Market making 9,933 9,523 8,365
+Other principal transactions 3,200 5,018 6,588
+Total non-interest revenues 28,021 30,756 30,481
+I",mistral-small-2603,simple,finhybrid
+48,S3_FINHYBRID_GS/2016/page_186.pdf-3,finhybrid,hard,REFUSED,what was the difference in millions between the total cost of common shares repurchases from 2015 to 2016?,-1274 | -1274.0,"[Assistant]: To determine the difference in the total cost of common share repurchases between 2015 and 2016, we look at the provided data for share repurchases:
+
+1.  **2016 Data:**
+    *   October 2016: 2,650,628 shares at $172.13 = $456,256,665.64
+    *   November 2016: 3,164,013 shares at $198.20 = $627,107,376.60
+    *   December 2016: 1,768,622 shares at $235.57 = $416,636,664.54
+    *   Total for the period provided: $1,500,000,706.78 (approx. $1.5 billion).
+
+However, the report does not provide a full annual total for common share repurchases for 2015 or 2016 in the provided text, only the specific months of October, November, and December 2016. Based strictly on the provided context, there is insufficient information to calculate the total annual difference.
+
+The answer is: Insufficient information",GS_2016,,"Shares
+Purchased
+as Part of
+a Publicly
+Announced
+ProgramMaximum
+Shares
+That May
+Yet Be
+Purchased
+Under the
+Program
+October 2016 2,650,628 $172.13 2,650,628 31,545,097
+November 2016 3,164,013 $198.20 3,164,013 28,381,084
+December 2016 1,768,622 $235.57 1,768,622 26,612,462
+Total 7,583,263 7,583,263
+S",mistral-small-2603,simple,finhybrid
+49,S3_FINHYBRID_GS/2016/page_186.pdf-4,finhybrid,hard,WRONG,"what was total shareholders 2019 equity common equity dividends declared per common share in 2016 , 2015 and 2014?",7.40 | 7.4,"The answer is: 2016: $2.60, 2015: $2.55, 2014: $2.25",GS_2016,"The answer is: 2.60, 2.55, 2.25","2016March
+2016
+Non-interest revenues $7,834 $7,554 $7,178 $ 5,455
+Interest income 2,424 2,389 2,530 2,348
+Interest expense 2,088 1,775 1,776 1,465
+Net interest income 336 614 754 883
+Net revenues, including net
+interest income 8,170 8,168 7,932 6,338
+Operating expenses 4,773 5,300 5,469 4,762
+Pre-ta",mistral-small-2603,simple,finhybrid
+50,S3_FINHYBRID_GS/2016/page_81.pdf-2,finhybrid,hard,REFUSED,what is the debt-to-total asset ratio in 2015?,2.7% | 0.02695,"To calculate the debt-to-total asset ratio for 2015, we use the provided data:
+1. Total assets in 2015 = $861,395 million.
+2. The context defines the leverage ratio as total assets divided by total shareholders' equity, but does not provide a specific ""total debt"" figure for the entire firm. However, the ""debt to equity ratio"" is defined as ""unsecured long-term borrowings divided by total shareholders’ equity.""
+3. Based on the provided tables, there is no explicit ""total debt"" line item provided to calculate a ""debt-to-total asset"" ratio.
+
+Given the information provided in the context, the specific debt-to-total asset ratio is not explicitly stated or calculable from the provided figures.
+
+The answer is: Not available",GS_2016,The answer is: 32.6%,"In the table above:
+‰The leverage ratio equals total assets divided by total
+shareholders’ equity and measures the proportion ofequity and debt we use to finance assets. This ratio isdifferent from the Tier 1 leverage ratio included inNote 20 to the consolidated financial statements.
+‰The debt to eq",mistral-small-2603,simple,finhybrid
+51,S3_FINHYBRID_GS/2016/page_161.pdf-3,finhybrid,hard,WRONG,"for december 2016 and december 2015 , what was total fair value of loans receivable in billions?",94.99 | 94.99,The answer is: $49.80 billion and $45.19 billion,GS_2016,The answer is: 49.80 billion and 45.19 billion,"Loans backed by residential real estate 3,865 2,316
+Other loans 2,890 3,533
+Total loans receivable, gross 50,181 45,821
+Allowance for loan losses (509) (414)
+Total loans receivable $49,672 $45,407
+As of December 2016 and December 2015, the fair value of
+loans receivable was $49.80 billion and $45.19",mistral-small-2603,simple,finhybrid
+52,S3_FINHYBRID_GS/2016/page_183.pdf-2,finhybrid,hard,WRONG,"what was total rent charged to operating expense in millions for 2016 , 2015 and 2014?",802 | 802.0,"The answer is: 2016: $244 million, 2015: $249 million, 2014: $309 million",GS_2016,"The answer is: 244, 249, 309","provisions of $3.37 billion recorded for the settlementagreement with the RMBS Working Group. See Note 27 tothe consolidated financial statements in Part II, Item 8 ofthe 2015 Form 10-K for further information.
+2016 versus 2015. Operating expenses in the consolidated
+statements of earnings were $20.",mistral-small-2603,simple,finhybrid
+53,S3_FINHYBRID_GS/2016/page_81.pdf-1,finhybrid,hard,REFUSED,what is the debt-to-total asset ratio in 2016?,2.5% | 0.0252,"To determine the debt-to-total asset ratio for 2016, we look at the provided financial data:
+
+1.  **Total Assets** for 2016: $860,165 million.
+2.  **Debt**: The context defines ""unsecured long-term borrowings"" as a component of debt, but does not provide a single ""Total Debt"" figure. However, the ""Funding Sources"" section lists various forms of debt. Looking at the provided tables, there is no explicit ""Total Debt"" line item to calculate a standard debt-to-asset ratio. 
+
+If we look at the provided ""Financial Overview"" and ""Balance Sheet"" tables, the information required to calculate a comprehensive ""debt-to-total asset ratio"" (which typically requires total liabilities or specific debt categories not fully aggregated in the provided text) is not explicitly stated as a single ratio.
+
+However, based strictly on the provided text, the data necessary to calculate this specific ratio is not available.
+
+The answer is: Not provided",GS_2016,The answer is: 0.90,"In the table above:
+‰The leverage ratio equals total assets divided by total
+shareholders’ equity and measures the proportion ofequity and debt we use to finance assets. This ratio isdifferent from the Tier 1 leverage ratio included inNote 20 to the consolidated financial statements.
+‰The debt to eq",mistral-small-2603,simple,finhybrid
+54,S3_FINHYBRID_GS/2016/page_70.pdf-1,finhybrid,hard,WRONG,what is the net change in the number of staff in 2016?,-2400 | -2400.0,"The provided text states that total staff decreased by 7% during 2016.
+
+The answer is: 7% decrease",GS_2016,The answer is: decreased by 7%,"The impact of our efforts can be seen by comparing our 
+results in 2016 to 2011. 2011 was an instructive year — as it was a tough net revenues year, similar to 2016. In 2011, we had net revenues of approximately $29 billion with operating expenses of approximately $23 billion. Our compensation and b",mistral-small-2603,simple,finhybrid
+55,S3_FINHYBRID_GS/2016/page_70.pdf-2,finhybrid,hard,REFUSED,what is the net change in the number of staff in 2015?,2800 | 2800.0,"The provided text states that total staff increased 8% during 2015, but it does not provide the specific numerical count of staff at the beginning or end of the year to calculate a net change in the number of individuals.
+
+The answer is: Not mentioned",GS_2016,The answer is: 8% increase,"Operating expenses were $4.65 billion for 2016, 4% lower
+than 2015, due to decreased compensation and benefitsexpenses, reflecting lower net revenues. Pre-tax earningswere $1.13 billion in 2016, 17% lower than 2015.
+2015 versus 2014. Net revenues in Investment
+Management were $6.21 billion for 2015,",mistral-small-2603,simple,finhybrid
+56,S3_FINHYBRID_GS/2016/page_77.pdf-2,finhybrid,hard,REFUSED,"in millions for 2016 2015 , and 2014 , what are total equity securities?",10933 | 10933.0,"The provided context does not contain information regarding the total value of equity securities for the years 2016, 2015, and 2014.
+
+The answer is: Not available",GS_2016,,"As of December
+$ in millions 2016 2015
+Total level 1 financial assets $135,401 $153,051
+Total level 2 financial assets 419,585 432,445
+Total level 3 financial assets 23,280 24,046
+Investments in funds at NAV 6,465 7,757
+Counterparty and cash collateral netting (87,038) (90,612)
+Total financial asset",mistral-small-2603,simple,finhybrid
+57,S3_FINHYBRID_GS/2016/page_77.pdf-3,finhybrid,hard,WRONG,operating expenses were what multiple of pre-tax earnings in 2015?,11.52 | 11.52066,The answer is: 2.85,GS_2016,The answer is: 2.85x,"provisions of $3.37 billion recorded for the settlementagreement with the RMBS Working Group. See Note 27 tothe consolidated financial statements in Part II, Item 8 ofthe 2015 Form 10-K for further information.
+2016 versus 2015. Operating expenses in the consolidated
+statements of earnings were $20.",mistral-small-2603,simple,finhybrid
+58,S3_FINHYBRID_JKHY/2015/page_20.pdf-2,finhybrid,hard,WRONG,what was the percentage change in the 5 year annual performance of the peer group stock from 2010 to 2011,8.3% | 0.08276,The answer is: 36.78%,JKHY_2015,"### Context: Total 150,146 65.87 150,100 8,147,984
+(1) 150,100 shares were purchased through a publicly announced repurchase plan. There were 46 shares surrendered to the Company to satisfy tax 
+withholding obligations in connection with employee restricted stock awards.
+(2) Total stock repurchase authorizations approved by the Company's Board of Directors as of February 17, 2015 were for 30.0 million shares, an increase  
+of 5.0 million shares. These authorizations have no specific dollar or share price targets and no expiration dates.18
+2015 annual  reportPERFORMANCE GRAPH
+The following chart presents a comparison for the five-year period ended June 30, 2015, of the market performance of the 
+Company’s common stock with the S&P 500 Index and an index of peer companies selected by the Company:
+COMPARISON OF 5 YEAR CUMULATIVE TOTAL RETURN
+Among Jack Henry & Associates, Inc., the S&P 500 Index, and a Peer Group
+The following information depicts a line graph with the following values:
+2010 2011 2012 2013 2014 2015
+JKHY 100.00 127.44 1","Total 150,146 65.87 150,100 8,147,984
+(1) 150,100 shares were purchased through a publicly announced repurchase plan. There were 46 shares surrendered to the Company to satisfy tax 
+withholding obligations in connection with employee restricted stock awards.
+(2) Total stock repurchase authorizations",mistral-small-2603,simple,finhybrid
+59,S3_FINHYBRID_JKHY/2015/page_20.pdf-3,finhybrid,hard,WRONG,"in 2010 , what was the cumulative total return of the s&p 500?",30.69 | 30.69,The answer is: 100.00,JKHY_2015,The answer is: 100.00,"Total 150,146 65.87 150,100 8,147,984
+(1) 150,100 shares were purchased through a publicly announced repurchase plan. There were 46 shares surrendered to the Company to satisfy tax 
+withholding obligations in connection with employee restricted stock awards.
+(2) Total stock repurchase authorizations",mistral-small-2603,simple,finhybrid
+60,S3_FINHYBRID_JKHY/2015/page_20.pdf-1,finhybrid,hard,WRONG,"for the 2010 , what was the cumulative total return on jkhy?",27.44 | 27.44,The answer is: 100.00,JKHY_2015,The answer is: 100.00,"Total 150,146 65.87 150,100 8,147,984
+(1) 150,100 shares were purchased through a publicly announced repurchase plan. There were 46 shares surrendered to the Company to satisfy tax 
+withholding obligations in connection with employee restricted stock awards.
+(2) Total stock repurchase authorizations",mistral-small-2603,simple,finhybrid
+61,S2_Q001,music_structured,medium,WRONG,Which artist has the highest popularity score and how many albums have they released?,The Ortegas 1.0 10 albums,"The answer is: The artist with the highest popularity score is The Haydens (ART_0347) with a score of 0.145, and they have released 1 album (ALB_0151).",music_dataset,"The answer is: Jessica Fowler, 1 album","2018
+True
+AWD_0081
+ART_0437
+Global	Music	Award
+Breakthrough	Artist
+2020
+True
+AWD_0382
+ART_0437
+Streaming	Record	Award
+Best	Album
+2016
+TrueAWD_0304
+ART_0147
+Sound	&	Vision	Prize
+Best	Pop	Artist
+2013
+False
+AWD_0286
+ART_0437
+Golden	Mic
+Song	of	the	Year
+2014
+True
+AWD_0041
+ART_0437
+Golden	Mic
+Top	Produce",mistral-small-2603,simple,music_structured
+62,S2_Q002,music_structured,medium,WRONG,What is the average track duration in minutes across all tracks?,4.74 minutes,The answer is: 4.38 minutes,music_dataset,,"2
+297314
+False
+2026-04-27
+CG061JJU537
+0.043
+TRK_02964
+ALB_0481
+ART_0270
+Himself
+7
+286090
+False
+2018-10-07
+BH499HIL887
+0.046
+TRK_03819
+ALB_1283
+ART_0613
+Region	Back	Character
+3
+281790
+False
+2013-02-07
+AD447JMW120
+0.059
+TRK_05413
+ALB_1020
+ART_0161
+Single	Almost	Where
+4
+189503
+False
+2022-08-17
+MM905HFW",mistral-small-2603,simple,music_structured
+63,S2_Q003,music_structured,medium,WRONG,Which music genre has the most artists and how many?,Hip-Hop 42 artists,"The answer is: The Hip-Hop genre has the most artists, with 41 artists listed in the provided context.",music_dataset,,"Electronic
+2014
+LBL_0025
+True
+0.026
+ART_0599
+Dayxx
+Switzerland
+Electronic
+Indie
+2012
+LBL_0032
+True
+0.019
+ART_0373
+Misty	Whitney
+Tanzania
+Electronic
+R&B
+1998
+LBL_0016
+True
+0.046
+ART_0463
+Amber	Miller
+UK
+Electronic
+Indie
+2004
+LBL_0036
+True
+0.017
+ART_0231
+Tapiax
+UK
+Electronic
+Rock
+2001
+LBL_0050
+True
+0.",mistral-small-2603,simple,music_structured
+64,S2_Q004,music_structured,medium,WRONG,What percentage of artists are currently active?,84.69%,The answer is: 80%,music_dataset,The answer is: The information is not explicitly provided in the context.,"Music	Industry	Dataset
+Record	Labels
+50	records
+label_id
+name
+country
+founding_year
+label_type
+royalty_rate_per_stream
+LBL_0001
+Universal	Records
+USA
+1970
+Major
+0.00456
+LBL_0002
+Sony	Records
+France
+1973
+Major
+0.00538
+LBL_0003
+Warner	Records
+Canada
+1957
+Major
+0.0047
+LBL_0004
+Capitol	Records
+UK
+1953
+M",mistral-small-2603,simple,music_structured
+65,S2_Q005,music_structured,medium,WRONG,How many tracks have explicit content?,6 tracks,The answer is: 0,music_dataset,The answer is: Not enough information,"2
+297314
+False
+2026-04-27
+CG061JJU537
+0.043
+TRK_02964
+ALB_0481
+ART_0270
+Himself
+7
+286090
+False
+2018-10-07
+BH499HIL887
+0.046
+TRK_03819
+ALB_1283
+ART_0613
+Region	Back	Character
+3
+281790
+False
+2013-02-07
+AD447JMW120
+0.059
+TRK_05413
+ALB_1020
+ART_0161
+Single	Almost	Where
+4
+189503
+False
+2022-08-17
+MM905HFW",mistral-small-2603,simple,music_structured
+66,S2_Q006,music_structured,medium,WRONG,Which record label has signed the most artists?,Gray-Mayo Entertainment 10,The answer is: LBL_0006,music_dataset,,"Music	Industry	Dataset
+Record	Labels
+50	records
+label_id
+name
+country
+founding_year
+label_type
+royalty_rate_per_stream
+LBL_0001
+Universal	Records
+USA
+1970
+Major
+0.00456
+LBL_0002
+Sony	Records
+France
+1973
+Major
+0.00538
+LBL_0003
+Warner	Records
+Canada
+1957
+Major
+0.0047
+LBL_0004
+Capitol	Records
+UK
+1953
+M",mistral-small-2603,simple,music_structured
+67,S2_Q007,music_structured,hard,REFUSED,What is the average number of tracks per album for each genre?,Jazz 2.0,"The answer is: Based on the provided dataset, the average number of tracks per album cannot be calculated because the ""Tracks"" table does not contain a complete list of tracks for every album, and the ""Albums"" table does not provide a track count for each entry.",music_dataset,,"Music	Industry	Dataset
+Record	Labels
+50	records
+label_id
+name
+country
+founding_year
+label_type
+royalty_rate_per_stream
+LBL_0001
+Universal	Records
+USA
+1970
+Major
+0.00456
+LBL_0002
+Sony	Records
+France
+1973
+Major
+0.00538
+LBL_0003
+Warner	Records
+Canada
+1957
+Major
+0.0047
+LBL_0004
+Capitol	Records
+UK
+1953
+M",mistral-small-2603,simple,music_structured
+68,S2_Q008,music_structured,hard,WRONG,Which artists have won at least one award and how many awards have they won in total?,6 artists Ortegas=12,"The answer is: ART_0437 has won 6 awards, ART_0147 has won 1 award, ART_0476 has won 1 award, and ART_0034 has won 1 award.",music_dataset,,"2018
+True
+AWD_0081
+ART_0437
+Global	Music	Award
+Breakthrough	Artist
+2020
+True
+AWD_0382
+ART_0437
+Streaming	Record	Award
+Best	Album
+2016
+TrueAWD_0304
+ART_0147
+Sound	&	Vision	Prize
+Best	Pop	Artist
+2013
+False
+AWD_0286
+ART_0437
+Golden	Mic
+Song	of	the	Year
+2014
+True
+AWD_0041
+ART_0437
+Golden	Mic
+Top	Produce",mistral-small-2603,simple,music_structured
+69,S2_Q009,music_structured,hard,WRONG,"What is the distribution of album types (Single, EP, Album) by record label type (Major, Independent)?",10 combinations,"The answer is: Based on the provided dataset, there is no explicit ""Single"" album type listed. The album types present are ""Studio,"" ""Live,"" ""Compilation,"" and ""EP."" Among the records associated with Major labels, there are 2 Studio albums and 0 EPs. Among the records associated with Independent labels, there are 18 Studio albums, 4 Live albums, 2 Compilation albums, and 2 EPs.",music_dataset,The answer is: Information not available in the provided context.,"Music	Industry	Dataset
+Record	Labels
+50	records
+label_id
+name
+country
+founding_year
+label_type
+royalty_rate_per_stream
+LBL_0001
+Universal	Records
+USA
+1970
+Major
+0.00456
+LBL_0002
+Sony	Records
+France
+1973
+Major
+0.00538
+LBL_0003
+Warner	Records
+Canada
+1957
+Major
+0.0047
+LBL_0004
+Capitol	Records
+UK
+1953
+M",mistral-small-2603,simple,music_structured
+70,S2_Q012,music_structured,hard,REFUSED,Which artists have tracks in multiple albums and how many albums do they have?,3 artists,"The answer is: Based on the provided dataset, the artist with ID ART_0437 is associated with multiple awards and tracks, but the provided document does not explicitly list a mapping of artists to multiple albums. Therefore, the information to determine which artists have tracks in multiple albums is not available in the context.",music_dataset,"The answer is: The context does not provide information about albums or track-album associations, so it is not possible to determine which artists have tracks in multiple albums.","Music	Industry	Dataset
+Record	Labels
+50	records
+label_id
+name
+country
+founding_year
+label_type
+royalty_rate_per_stream
+LBL_0001
+Universal	Records
+USA
+1970
+Major
+0.00456
+LBL_0002
+Sony	Records
+France
+1973
+Major
+0.00538
+LBL_0003
+Warner	Records
+Canada
+1957
+Major
+0.0047
+LBL_0004
+Capitol	Records
+UK
+1953
+M",mistral-small-2603,simple,music_structured
+71,S2_Q013,music_structured,hard,WRONG,What is the average speechiness score for explicit vs non-explicit tracks?,Explicit 0.103 Non 0.161,"The answer is: Based on the provided dataset, the average speechiness score for explicit tracks is 0.118, while the average speechiness score for non-explicit tracks is 0.096.",music_dataset,The answer is: Information not available in the context.,"2
+297314
+False
+2026-04-27
+CG061JJU537
+0.043
+TRK_02964
+ALB_0481
+ART_0270
+Himself
+7
+286090
+False
+2018-10-07
+BH499HIL887
+0.046
+TRK_03819
+ALB_1283
+ART_0613
+Region	Back	Character
+3
+281790
+False
+2013-02-07
+AD447JMW120
+0.059
+TRK_05413
+ALB_1020
+ART_0161
+Single	Almost	Where
+4
+189503
+False
+2022-08-17
+MM905HFW",mistral-small-2603,simple,music_structured
+72,S2_Q014,music_structured,extremely hard,REFUSED,"Calculate the ""musical diversity score"" for each artist based on the variance of their track features (energy, danceability, valence). Which artist has the highest diversity?",David Davis 0.126,"The answer is: The provided document does not contain information regarding track features such as energy, danceability, or valence, nor does it provide a ""musical diversity score"" for the artists listed. Therefore, it is not possible to calculate these scores or determine which artist has the highest diversity based on the context provided.",music_dataset,"The answer is: The required data to calculate the musical diversity score (variance of track features like energy, danceability, and valence) is not provided in the context.","2002
+LBL_0026
+True
+0.024
+ART_0602
+Chad	Baldwin
+France
+Jazz
+2003
+LBL_0038
+False
+0.02
+ART_0413
+Hunter	Kramer
+Germany
+Jazz
+Hip-Hop
+2023
+LBL_0016
+True
+0.04
+ART_0119
+Katie	Estrada
+Greece
+Jazz
+1996
+LBL_0029
+True
+0.019
+ART_0595
+The	Allens
+Japan
+Jazz
+2014
+LBL_0031
+True
+0.019
+ART_0563
+The	Daviss
+Japan
+Jazz
+P",mistral-small-2603,simple,music_structured
+73,S2_Q015,music_structured,extremely hard,WRONG,"Identify ""overperforming"" artists: those whose award count is disproportionately high relative to their album count and popularity score.",Ortegas 12.00 awards/album,"The answer is: Based on the provided dataset, ART_0437 is the most prominent ""overperforming"" artist. While the dataset lists a single entry for this artist in the Artists table, they are associated with seven distinct awards (AWD_0081, AWD_0382, AWD_0304, AWD_0286, AWD_0041, AWD_0476, and AWD_0043), indicating a high level of industry recognition that is disproportionate to the single record entry provided.",music_dataset,"The answer is: The context does not contain information about album counts or award counts for artists, which are necessary to identify ""overperforming"" artists based on the given criteria.","Music	Industry	Dataset
+Record	Labels
+50	records
+label_id
+name
+country
+founding_year
+label_type
+royalty_rate_per_stream
+LBL_0001
+Universal	Records
+USA
+1970
+Major
+0.00456
+LBL_0002
+Sony	Records
+France
+1973
+Major
+0.00538
+LBL_0003
+Warner	Records
+Canada
+1957
+Major
+0.0047
+LBL_0004
+Capitol	Records
+UK
+1953
+M",mistral-small-2603,simple,music_structured
+74,S2_Q017,music_structured,extremely hard,WRONG,"Calculate the ""genre dominance score"" for each genre based on artist count, album count, and average popularity. Which genre is most dominant?",Rock 0.9127,"The answer is: To calculate the genre dominance score, we first aggregate the data:
+
+*   **Classical:** 19 artists, 3 albums, average popularity 0.031. Score: 19 + 3 + 0.031 = 22.031
+*   **Country:** 11 artists, 3 albums, average popularity 0.035. Score: 11 + 3 + 0.035 = 14.035
+*   **Electronic:** 10 artists, 0 albums, average popularity 0.035. Score: 10 + 0 + 0.035 = 10.035
+*   **Hip-Hop:** 38 artists, 2 albums, average popularity 0.031. Score: 38 + 2 + 0.031 = 40.031
+*   **Indie:** 0 artists, 5 albums, average popularity 0.082. Score: 0 + 5 + 0.082 = 5.082
+*   **Jazz:** 0 artists, 2 albums, average popularity 0.118. Score: 0 + 2 + 0.118 = 2.118
+*   **Metal:** 0 artists, 3 albums, average popularity 0.075. Score: 0 + 3 + 0.075 = 3.075
+*   **Pop:** 0 artists, 1 album, average popularity 0.15. Score: 0 + 1 + 0.15 = 1.15
+*   **Rock:** 0 artists, 4 albums, average popularity 0.088. Score: 0 + 4 + 0.088 = 4.088
+
+The most dominant genre is Hip-Hop.",music_dataset,,"Music	Industry	Dataset
+Record	Labels
+50	records
+label_id
+name
+country
+founding_year
+label_type
+royalty_rate_per_stream
+LBL_0001
+Universal	Records
+USA
+1970
+Major
+0.00456
+LBL_0002
+Sony	Records
+France
+1973
+Major
+0.00538
+LBL_0003
+Warner	Records
+Canada
+1957
+Major
+0.0047
+LBL_0004
+Capitol	Records
+UK
+1953
+M",mistral-small-2603,simple,music_structured
+75,S2_Q018,music_structured,extremely hard,WRONG,"Identify ""prolific years"" for the music industry by counting albums released per year and calculating the year-over-year growth rate.",2011 400% 2008 300% 2000 200%,"The answer is: To identify the prolific years, we count the albums released per year: 1998 (1), 2000 (1), 2002 (1), 2003 (1), 2008 (1), 2011 (2), 2012 (1), 2014 (2), 2015 (2), 2016 (2), 2017 (3), 2018 (1), 2019 (1), 2020 (2), 2021 (2), 2022 (5), 2023 (4), and 2024 (7). The year-over-year growth rate shows significant spikes in activity, particularly in 2022 (a 150% increase from 2021) and 2024 (a 75% increase from 2023), marking these as the most prolific periods in the provided dataset.",music_dataset,The answer is: Information not available in the provided context.,"Music	Industry	Dataset
+Record	Labels
+50	records
+label_id
+name
+country
+founding_year
+label_type
+royalty_rate_per_stream
+LBL_0001
+Universal	Records
+USA
+1970
+Major
+0.00456
+LBL_0002
+Sony	Records
+France
+1973
+Major
+0.00538
+LBL_0003
+Warner	Records
+Canada
+1957
+Major
+0.0047
+LBL_0004
+Capitol	Records
+UK
+1953
+M",mistral-small-2603,simple,music_structured
+76,S2_Q020,music_structured,extremely hard,WRONG,"Identify ""hidden gem"" tracks: high audio quality features (low speechiness, high instrumentalness) from less popular artists (popularity < 0.5) that have not been heavily streamed.",NO RESULTS,"The answer is: Based on the provided data, tracks that exhibit high audio quality features (low speechiness and high instrumentalness) from artists with a popularity score below 0.5 include TRK_00470 (speechiness 0.079, instrumentalness 0.514), TRK_00980 (speechiness 0.106, instrumentalness 0.425), and TRK_01457 (speechiness 0.079, instrumentalness 0.773). These tracks are associated with artists who have lower popularity scores and limited streaming records in the provided context.",music_dataset,,"2018
+True
+AWD_0081
+ART_0437
+Global	Music	Award
+Breakthrough	Artist
+2020
+True
+AWD_0382
+ART_0437
+Streaming	Record	Award
+Best	Album
+2016
+TrueAWD_0304
+ART_0147
+Sound	&	Vision	Prize
+Best	Pop	Artist
+2013
+False
+AWD_0286
+ART_0437
+Golden	Mic
+Song	of	the	Year
+2014
+True
+AWD_0041
+ART_0437
+Golden	Mic
+Top	Produce",mistral-small-2603,simple,music_structured
+1,S3_TATHYBRID_cf649b7b26933abd29572697283fbf67,tathybrid,hard,WRONG,What was the change in Accumulated amortization from 2018 to 2019?,-1073,"The answer is: 3,633",inpixon_2019,"The answer is: -3,529","December 31,
+ 
+ 
+December 31,
+ 
+ 
+ 
+2019
+ 
+ 
+2018
+ 
+ 
+2019
+ 
+ 
+2018
+ 
+Trade Name/Trademarks
+ 
+$
+780
+ 
+ 
+$
+780
+ 
+ 
+$
+(724
+)
+ 
+$
+(574
+)
+Customer Relationships
+ 
+ 
+4,070
+ 
+ 
+ 
+2,620
+ 
+ 
+ 
+(2,574
+)
+ 
+ 
+(2,318
+)
+Developed Technology
+ 
+ 
+21,422
+ 
+ 
+ 
+15,871
+ 
+ 
+ 
+(14,996
+)
+ 
+ 
+(11,873
+)
+Non-compete Agreem",mistral-small-2603,simple,tathybrid
+2,S3_TATHYBRID_f14766d60aaa9fc5ad134af01d563db4,tathybrid,hard,REFUSED,What was the amount in escrow as restricted cash at 2019 and 2018 respectively?,"72,000, 140,000","[Assistant]: The provided text does not contain information regarding the amount in escrow as restricted cash for 2019 and 2018.
+
+The answer is: Not mentioned",inpixon_2019,The answer is: Not available,"31, 2018 was $29.0 million. During the year ended December 31, 2019, the Company received incoming cash flows of $20.7 million from the issuance of common stock, preferred stock and warrants,
+$1.8 million of repayments from a related party note, $7.5 million from promissory notes and $127,000 of net",mistral-small-2603,simple,tathybrid
+3,S3_TATHYBRID_4a97a3a079b9d171bb3e3c05a5d558fa,tathybrid,hard,WRONG,What was the Compensation and related benefits in 2019 and 2018 respectively?,"$3,247, $949","The answer is: 2019: $3,489,000; 2018: $1,494,000",inpixon_2019,"The answer is: 3,489 and 1,494","became CEO in September 2011. Mr. Ali’s salary under the agreement was initially $240,000 per annum plus other benefits including a bonus plan, a housing allowance, health insurance, life insurance
+and other standard Inpixon employee benefits. If Mr. Ali’s employment is terminated without Cause (as ",mistral-small-2603,simple,tathybrid
+4,S3_TATHYBRID_f3f36466e3595177dee05fd432122387,tathybrid,hard,REFUSED,What is the value of real estate taxes in 2018?,398,"The provided report does not contain information regarding the value of real estate taxes for 2018.
+
+The answer is: Not available",lifeway-foods-inc_2019,The context does not explicitly provide a value for real estate taxes in 2018,"Selling expenses      11,062        13,477    
+General and administrative      12,828        13,616    
+Goodwill and intangible asset impairment      –       1,244    
+Amortization expense      192       631   
+Total operating expenses      24,082        28,968    
+                  
+Loss from opera",mistral-small-2603,simple,tathybrid
+5,S3_TATHYBRID_75006d911eb541bafc8bfdfe43399b83,tathybrid,hard,REFUSED,What is the average real estate taxes for 2018 and 2019?,398,"The provided report does not contain information regarding real estate taxes for 2018 and 2019.
+
+The answer is: Not available",lifeway-foods-inc_2019,"The answer is: 4,234","2019      2018    
+Current assets                  
+Cash and cash equivalents    $ 3,836      $ 2,998    
+Accounts receivable, net of allowance for doubtful accounts and discounts & 
+allowances of $1,100 and $1,220 at December 31, 2019 and 2018, 
+respectively      6,692        6,276    
+Inventories,",mistral-small-2603,simple,tathybrid
+6,S3_TATHYBRID_4b33b977256836fc6c3fbda16ba5844d,tathybrid,hard,REFUSED,What is the change in payroll and incentive compensation between 2018 and 2019?,1072,"The provided report does not contain a specific line item for total ""payroll"" or a consolidated figure for ""incentive compensation"" that allows for a direct calculation of the change between 2018 and 2019. While the report details specific stock-based compensation expenses for various plans (e.g., 2017 Plan, 2019 Plan, Retention Award), it does not provide the total payroll or aggregate incentive compensation figures.
+
+The answer is: Not available",lifeway-foods-inc_2019,"The change in stock-based incentive compensation between 2018 and 2019 is $109 - $47 = $62.
+The answer is: 62","awards, and the provision for unrecognized tax benefits. The increase in the effective tax rate from 2018 to 2019 is 
+due to the fact that the company has a number of items that are nondeductible or are discrete adjustments to tax 
+expense. Although similar items were reflected in 2018, the percenta",mistral-small-2603,simple,tathybrid
+7,S3_TATHYBRID_5b53e0ca06203f7703b6c4f8057e3c87,tathybrid,hard,WRONG,What is the percentage constitution of net sales from Frozen Kefir among the total net sales in 2019?,1.73,The answer is: 2%,lifeway-foods-inc_2019,The answer is: 2%,"20     
+  
+Net Sales  
+  
+Net sales were $93,662 for the year ended December 31, 2019, a decrease of $9,688 or 9.4% versus prior year. The 
+net sales softness continued to reflect the overall lower consumption in the dairy and cultured dairy product 
+categories. Versus prior year, the decline was pr",mistral-small-2603,simple,tathybrid
+8,S3_TATHYBRID_077fac86dd9c8cd78b834fbdbe0885be,tathybrid,hard,REFUSED,What is the percentage change in ingredients between 2018 and 2019?,22.91,The answer is: Not mentioned,lifeway-foods-inc_2019,The answer is: Not available,"believe Lifeway is well positioned for long -term growth and value creation with strong industry tailwinds to fuel our 
+business as we increasingly serve consumers looking for more self -care, immunity and gut health options during this 
+time of global health cri sis and uncertainty.”  
+  
+Lifeway e",mistral-small-2603,simple,tathybrid
+9,S3_TATHYBRID_4cb79dfe572f814f50c02a61639f2094,tathybrid,hard,REFUSED,What is the value of recipes in 2018 and 2019 respectively?,"$ 44, $ 44","The provided text does not contain information regarding the value of recipes. The financial tables provided relate to a share repurchase program.
+
+The answer is: Not mentioned",lifeway-foods-inc_2019,The answer is: Not available,"operations could be adversely affected.  
+  
+One key element of our business strategy is to introduce timely, new, cost -effective, and appealing products and to 
+innovate successfully within our existing product categories. New items introduced through our innovation efforts 
+partially offset lower",mistral-small-2603,simple,tathybrid
+10,S3_TATHYBRID_7622984778061cb2468425d5534a99e6,tathybrid,hard,NO ANSWER,What is the change in the value of customer relationships between 2018 and 2019?,0,,lifeway-foods-inc_2019,,"and results of operations.  
+  
+Customers, such as supermarkets and food distributors, cont inue to consolidate. This consolidation has produced 
+larger, more sophisticated organizations with increased negotiating and buying power that are able to resist price 
+increases or demand increased promotio",mistral-small-2603,simple,tathybrid
+11,S3_TATHYBRID_3ead03b4712e86e15034c9fabc0f1b9b,tathybrid,hard,WRONG,What is the average value of trade names for both 2018 and 2019?,2248,"To determine the average value of trade names for 2018 and 2019, we look at the ""Issuer Purchases of Equity Securities"" table provided in the context, which lists the ""Average price paid per share"" for the share repurchase programs during those years.
+
+1.  For Fiscal Year 2018, the average price paid per share was $6.33.
+2.  For Fiscal Year 2019, the average price paid per share was $2.55.
+3.  The average of these two values is ($6.33 + $2.55) / 2 = $8.88 / 2 = $4.44.
+
+The answer is: 4.44",lifeway-foods-inc_2019,The answer is: Not available,"Plans or 
+Programs  
+($ in 
+thousands)    
+                          
+1/1/2018 to 1/31/2018      106,441      $ 8.22       106,441      $ 5,007    
+2/1/2018 to 2/28/2018      24,486      $ 7.21       24,486      $ 4,830    
+4/1/2018 to 4/30/2018      15,433      $ 6.09       15,433      $ 4,736    
+",mistral-small-2603,simple,tathybrid
+12,S3_TATHYBRID_30e01bc5c375a0ca44ab4c0dd14e5e1e,tathybrid,hard,REFUSED,What is the value of vehicles in 2018 and 2019 respectively?,"937, 778","The provided report does not contain information regarding the value of vehicles.
+
+The answer is: Not available",lifeway-foods-inc_2019,,"Plans or 
+Programs  
+($ in 
+thousands)    
+                          
+1/1/2018 to 1/31/2018      106,441      $ 8.22       106,441      $ 5,007    
+2/1/2018 to 2/28/2018      24,486      $ 7.21       24,486      $ 4,830    
+4/1/2018 to 4/30/2018      15,433      $ 6.09       15,433      $ 4,736    
+",mistral-small-2603,simple,tathybrid
+13,S3_TATHYBRID_fe59aeaff2948f598d69f262c6464889,tathybrid,hard,REFUSED,What is the average value of vehicles for 2018 and 2019?,857.5,"[Assistant]: The provided report does not contain information regarding the value of vehicles.
+
+The answer is: Not available",lifeway-foods-inc_2019,The answer is: Not available,"Plans or 
+Programs  
+($ in 
+thousands)    
+                          
+1/1/2018 to 1/31/2018      106,441      $ 8.22       106,441      $ 5,007    
+2/1/2018 to 2/28/2018      24,486      $ 7.21       24,486      $ 4,830    
+4/1/2018 to 4/30/2018      15,433      $ 6.09       15,433      $ 4,736    
+",mistral-small-2603,simple,tathybrid
+14,S3_TATHYBRID_f4c8e2d0155ac338249d0fe6feba49ac,tathybrid,hard,WRONG,What was the low sale price per share for each quarters in 2018 in chronological order?,"$ 5.99, $ 4.79, $ 2.66, $ 1.88","[Assistant]: Based on the provided table of share repurchase programs for 2018, the prices per share listed in chronological order are: $8.22, $7.21, $6.09, $5.46, $3.96, $3.35, $2.99, and $2.25.
+
+The answer is: $8.22, $7.21, $6.09, $5.46, $3.96, $3.35, $2.99, $2.25",lifeway-foods-inc_2019,"The answer is: $8.22, $7.21, $6.09, $5.46, $3.96, $3.35, $2.99, $2.25","Plans or 
+Programs  
+($ in 
+thousands)    
+                          
+1/1/2018 to 1/31/2018      106,441      $ 8.22       106,441      $ 5,007    
+2/1/2018 to 2/28/2018      24,486      $ 7.21       24,486      $ 4,830    
+4/1/2018 to 4/30/2018      15,433      $ 6.09       15,433      $ 4,736    
+",mistral-small-2603,simple,tathybrid
+15,S3_TATHYBRID_719ef48aead1f283a692fedbeae4622a,tathybrid,hard,REFUSED,What is the value of customer relationships in 2018 and 2019 respectively?,"985, 985","The provided text does not contain information regarding the specific value of customer relationships for the years 2018 and 2019.
+
+The answer is: Not mentioned",lifeway-foods-inc_2019,The answer is: Not available,"and results of operations.  
+  
+Customers, such as supermarkets and food distributors, cont inue to consolidate. This consolidation has produced 
+larger, more sophisticated organizations with increased negotiating and buying power that are able to resist price 
+increases or demand increased promotio",mistral-small-2603,simple,tathybrid
+16,S3_TATHYBRID_83cb95ba9efedd8346b5f66758f4ab85,tathybrid,hard,REFUSED,What is the value of buildings and improvements in 2018 and 2019 respectively?,"17,520, 17,332","The provided annual report context does not break down the ""Property, plant and equipment"" line item into specific categories such as buildings and improvements. Therefore, the value of buildings and improvements cannot be determined from the provided text.
+
+The answer is: Not available",lifeway-foods-inc_2019,The answer is: Not available,"Plans or 
+Programs  
+($ in 
+thousands)    
+                          
+1/1/2018 to 1/31/2018      106,441      $ 8.22       106,441      $ 5,007    
+2/1/2018 to 2/28/2018      24,486      $ 7.21       24,486      $ 4,830    
+4/1/2018 to 4/30/2018      15,433      $ 6.09       15,433      $ 4,736    
+",mistral-small-2603,simple,tathybrid
+17,S3_TATHYBRID_0022a9993b61830a838d232e2e840b27,tathybrid,hard,WRONG,What is the amount of net sales from ProBugs Kelir in 2018 and 2019 respectively?,"2,795, 2,780","The answer is: 2019: $2,780; 2018: $2,795",lifeway-foods-inc_2019,"The answer is: 2,795 and 2,780","20     
+  
+Net Sales  
+  
+Net sales were $93,662 for the year ended December 31, 2019, a decrease of $9,688 or 9.4% versus prior year. The 
+net sales softness continued to reflect the overall lower consumption in the dairy and cultured dairy product 
+categories. Versus prior year, the decline was pr",mistral-small-2603,simple,tathybrid
+18,S3_TATHYBRID_05d6f0b7266caa424d82675ec4d0ca2e,tathybrid,hard,REFUSED,What is net sales from cream and other in 2018 and 2019 respectively?,"5,276, 4,228","The provided text does not contain the specific numerical breakdown of net sales for ""cream and other"" for the years 2018 and 2019.
+
+The answer is: Not mentioned",lifeway-foods-inc_2019,The answer is: Not available,"20     
+  
+Net Sales  
+  
+Net sales were $93,662 for the year ended December 31, 2019, a decrease of $9,688 or 9.4% versus prior year. The 
+net sales softness continued to reflect the overall lower consumption in the dairy and cultured dairy product 
+categories. Versus prior year, the decline was pr",mistral-small-2603,simple,tathybrid
+19,S3_TATHYBRID_1098c97fef920d0f4107fa3be6f84e3a,tathybrid,hard,REFUSED,What is the deferred provision (benefit) for income tax for 2018 and 2019 respectively?,"(461), 533","The provided report does not explicitly state the deferred provision (benefit) for income tax for 2018 and 2019. While it mentions deferred income taxes in the balance sheet ($922 for 2019 and $390 for 2018), the specific provision (benefit) amounts are not provided in the text.
+
+The answer is: Not available",lifeway-foods-inc_2019,The answer is: 922 and 390,"awards, and the provision for unrecognized tax benefits. The increase in the effective tax rate from 2018 to 2019 is 
+due to the fact that the company has a number of items that are nondeductible or are discrete adjustments to tax 
+expense. Although similar items were reflected in 2018, the percenta",mistral-small-2603,simple,tathybrid
+20,S3_TATHYBRID_4b7153cbb854c224d6bb0fb509fe74fe,tathybrid,medium,REFUSED,What is the provision (benefit) for total current income taxes for 2018 and 2019 respectively?,"236, 249","[Assistant]: The provided context does not contain the specific breakdown of the provision for total current income taxes for 2018 and 2019.
+
+The answer is: Not available",lifeway-foods-inc_2019,"The answer is: 154 (2019), 106 (2018)","awards, and the provision for unrecognized tax benefits. The increase in the effective tax rate from 2018 to 2019 is 
+due to the fact that the company has a number of items that are nondeductible or are discrete adjustments to tax 
+expense. Although similar items were reflected in 2018, the percenta",mistral-small-2603,simple,tathybrid
+21,S3_TATHYBRID_ccc7a9080e0fea2e3181976dc634e30f,tathybrid,hard,WRONG,"In which year was Operating Leases greater than 100,000?",2022,The answer is: 2019,overseas-shipholding-group-inc_2019,,"adjusted for risk based on the length of the lease term because the rate implicit in the lease is not readily determinable.
+ 
+The Company applied the package of practical expedients that allows companies not to reassess whether any expired or expiring
+contracts are or contain leases, lease classific",mistral-small-2603,simple,tathybrid
+22,S3_TATHYBRID_70b9c20fdab23a9cd16c8474c2be6d9c,tathybrid,hard,REFUSED,"In which year was Increases for positions taken in prior years less than 1,000?",2018,"The provided text does not contain information regarding ""Increases for positions taken in prior years.""
+
+The answer is: Not mentioned",overseas-shipholding-group-inc_2019,The answer is: Not available in context,"Statement on Form S-1 filed on August 20, 2014 and incorporated herein by reference).
+  
+*10.30 Settlement, Release and Indemnity Agreement dated as of February 3, 2015 between the Registrant, certain subsidiaries
+of the Registrant and an executive (filed as Exhibit 10.27 to the Registrant’s Annual ",mistral-small-2603,simple,tathybrid
+23,S3_TATHYBRID_918d6fb907a4ff383e5d8e9da7db2728,tathybrid,hard,REFUSED,What was the Rate change in 2019 and 2018 respectively?,"(84), 0","The provided text does not contain a single ""Rate change"" value for 2019 and 2018, but it does provide the ""Average rate"" for various vessel categories (Jones Act Handysize Product Carriers, Non-Jones Act Handysize Product Carriers, ATBs, and Lightering) for both years.
+
+The answer is: The average rates varied by vessel category and earnings type (Spot vs. Fixed) as detailed in the provided tables.",overseas-shipholding-group-inc_2019,,"primarily resulted from three fewer vessels in operation during most of 2019 compared to 2018 and one less Government of Israel
+voyage in 2019 compared to 2018. This decrease was partially offset by the addition of two new vessels to our fleet at the
+beginning of the fourth quarter of 2019.
+ 
+Reconc",mistral-small-2603,simple,tathybrid
+24,S3_TATHYBRID_65dac64cb09b645dd52cc8f4a696544e,tathybrid,hard,REFUSED,"What is the change in Liabilities: Deferred income taxes from Balance at December 31, 2017 to January 1, 2018?",-108,"The provided text does not contain information regarding the specific balance of ""Liabilities: Deferred income taxes"" at December 31, 2017, or January 1, 2018, nor does it provide a reconciliation that would allow for the calculation of a change between those two specific dates.
+
+The answer is: Not mentioned",overseas-shipholding-group-inc_2019,The answer is: Not determinable from the context.,"in the financial statements. Under this method, deferred tax assets and liabilities are determined based on the differences
+between the financial statements and tax basis of assets and liabilities using enacted tax rates in effect for the year in
+which the differences are expected to reverse. The ef",mistral-small-2603,simple,tathybrid
+25,S3_TATHYBRID_6122b1882bcd7b0a238a04bce284e40e,tathybrid,hard,REFUSED,"In which year was Prepaid expenditures less than 6,000?",2019,"The provided text does not contain information regarding ""Prepaid expenditures.""
+
+The answer is: Not mentioned",overseas-shipholding-group-inc_2019,The answer is: Not available,"deferred finance costs, was not material.
+ 
+In August 2019, two of the Company’s subsidiaries entered into term loans in an aggregate principal amount of $50,000, due 2024,
+to finance the Overseas Gulf Coast and the Overseas Sun Coast. The loans are secured by first preferred ship mortgages on the
+v",mistral-small-2603,simple,tathybrid
+26,S3_TATHYBRID_f0a1bd31aa64c790c41e42920619040b,tathybrid,hard,REFUSED,What was the Prepaid expenditures in 2019 and 2018 respectively?,"5,621, 7,108","The provided text does not contain information regarding ""Prepaid expenditures"" for 2019 and 2018.
+
+The answer is: Not mentioned",overseas-shipholding-group-inc_2019,The answer is: Not available,"Years Ended December 31,  
+  2019   2018  
+Items not yet recognized as a component of net periodic benefit cost (pension and
+other postretirement benefit plans)   (6,409)  (7,192)
+  $ (6,409) $ (7,192)
+ 
+76 Overseas Shipholding Group, Inc. 
+ 
+The following tables present the changes in the balances ",mistral-small-2603,simple,tathybrid
+27,S3_TATHYBRID_0edf2f7aeed2b8ca6a2e0ed95641bf15,tathybrid,hard,REFUSED,What was the Contracts of affreightment revenues in 2019 and 2018 respectively?,"58,589, 68,698","The provided text does not contain information regarding ""Contracts of affreightment revenues"" for 2019 and 2018.
+
+The answer is: Not mentioned",overseas-shipholding-group-inc_2019,The answer is: Not provided,"primarily resulted from three fewer vessels in operation during most of 2019 compared to 2018 and one less Government of Israel
+voyage in 2019 compared to 2018. This decrease was partially offset by the addition of two new vessels to our fleet at the
+beginning of the fourth quarter of 2019.
+ 
+Reconc",mistral-small-2603,simple,tathybrid
+28,S3_TATHYBRID_ff06d83c2832cd8f43f1a6c350b5b7ae,tathybrid,hard,WRONG,"What was the value of Vessels, net in 2019 and 2018 respectively?","644,312, 596,929","The provided context lists ""Vessels and other property, less accumulated depreciation and amortization"" as $737,212 (in thousands) for 2019 and $597,659 (in thousands) for 2018.
+
+The answer is: 2019: $737,212; 2018: $597,659",overseas-shipholding-group-inc_2019,"### Context: primarily resulted from three fewer vessels in operation during most of 2019 compared to 2018 and one less Government of Israel voyage in 2019 compared to 2018. This decrease was partially offset by the addition of two new vessels to our fleet at the beginning of the fourth quarter of 2019.
+
+Reconciliations of TCE revenues, a non-GAAP measure, to shipping revenues as reported in the consolidated statements of operations follows:
+
+| Years Ended December 31, | 2019       | 2018       |
+|--------------------------|------------|------------|
+| Time charter equivalent revenues | $ 335,133  | $ 326,707  |
+| Add: Voyage expenses     | 20,414     | 39,456     |
+| Shipping revenues        | $ 355,547  | $ 366,163  |
+
+Consistent with general practice in the shipping industry, we use TCE revenues, which represents shipping revenues less voyage expenses, as a measure to compare revenue generated from a voyage charter to revenue generated from a time charter. TCE revenues, a non-GAAP measure, provides additional meaningful information in conjunction with shipping revenues, the most directly comparable GAAP measure, because it assists management in decisions regarding the deployment and use of our vessels and in evaluating their financial performance.
+
+39 Overseas Shipholding Group, Inc.
+
+The following table provides","primarily resulted from three fewer vessels in operation during most of 2019 compared to 2018 and one less Government of Israel
+voyage in 2019 compared to 2018. This decrease was partially offset by the addition of two new vessels to our fleet at the
+beginning of the fourth quarter of 2019.
+ 
+Reconc",mistral-small-2603,simple,tathybrid
+29,S3_TATHYBRID_f7af7aebbd48ae1684ba8f8d7402c3fa,tathybrid,hard,REFUSED,What was the Time and bareboat charter revenues revenues in 2019 and 2018 respectively?,"$263,683, $213,923","The provided text does not explicitly state a single line item for ""Time and bareboat charter revenues."" However, it provides ""Time charter equivalent revenues"" of $335,133 for 2019 and $326,707 for 2018, and mentions that total time charter revenue for 2019 was $263,683 ($263,416 lease income + $267 adjustments). The report does not provide a specific breakdown for bareboat charter revenues.
+
+The answer is: Not provided",overseas-shipholding-group-inc_2019,,"primarily resulted from three fewer vessels in operation during most of 2019 compared to 2018 and one less Government of Israel
+voyage in 2019 compared to 2018. This decrease was partially offset by the addition of two new vessels to our fleet at the
+beginning of the fourth quarter of 2019.
+ 
+Reconc",mistral-small-2603,simple,tathybrid

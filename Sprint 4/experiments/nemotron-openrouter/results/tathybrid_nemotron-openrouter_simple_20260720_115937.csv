@@ -1,0 +1,630 @@
+no,question_id,dataset,difficulty,failure_type,question,ground_truth,llm_answer,doc_name,response,context_snippet,model,prompt_strategy
+1,S3_TATHYBRID_cf649b7b26933abd29572697283fbf67,tathybrid,hard,WRONG,What was the change in Accumulated amortization from 2018 to 2019?,-1073,"The answer is: 3,633",inpixon_2019,"The user is asking for the change in Accumulated amortization from 2018 to 2019. I need to look at the intangible assets table in Note 10. The table shows ""Accumulated Amortization"" for December 31, 2019 and December 31, 2018 for each category. I need to calculate the total change across all categories.
+
+From the table:
+- Trade Name/Trademarks: 2019: $(724), 2018: $(574) -> change = -724 - (-574) = -150 (increase in accumulated amortization of 150)
+- Customer Relationships: 2019: $(2,574), 2018: $(2,318) -> change = -2574 - (-2318) = -256
+- Developed Technology: 2019: $(14,996), 2018: $(11,873) -> change = -14996 - (-11873) = -3123
+- Non-compete Agreements: 2019: $(501), 2018: $(400) -> change = -501 - (-400) = -101
+- Export License: 2019: $(13), 2018: $(10) -> change = -13 - (-10) = -3
+
+Total accumulated amortization 2019: $(18,808) (as shown in Totals row)
+Total accumulated amortization 2018: $(15,175) (as shown in Totals row)
+
+Change = -18,808 - (-15,175) = -3,633 (in thousands)
+
+So the accumulated amortization increased by $3,633,000 (or $3.633 million). The question asks ""What was the change in Accumulated amortization from 2018 to 2019?"" The answer should be the numerical change. Since it's in thousands, the change is $","December 31,
+ 
+ 
+December 31,
+ 
+ 
+ 
+2019
+ 
+ 
+2018
+ 
+ 
+2019
+ 
+ 
+2018
+ 
+Trade Name/Trademarks
+ 
+$
+780
+ 
+ 
+$
+780
+ 
+ 
+$
+(724
+)
+ 
+$
+(574
+)
+Customer Relationships
+ 
+ 
+4,070
+ 
+ 
+ 
+2,620
+ 
+ 
+ 
+(2,574
+)
+ 
+ 
+(2,318
+)
+Developed Technology
+ 
+ 
+21,422
+ 
+ 
+ 
+15,871
+ 
+ 
+ 
+(14,996
+)
+ 
+ 
+(11,873
+)
+Non-compete Agreem",nemotron-openrouter,simple
+2,S3_TATHYBRID_f14766d60aaa9fc5ad134af01d563db4,tathybrid,hard,REFUSED,What was the amount in escrow as restricted cash at 2019 and 2018 respectively?,"72,000, 140,000","[Assistant]: The provided text does not contain information regarding the amount in escrow as restricted cash for 2019 and 2018.
+
+The answer is: Not mentioned",inpixon_2019,"The user is asking about the amount in escrow as restricted cash for 2019 and 2018. I need to search the provided context for mentions of ""escrow"", ""restricted cash"", or similar terms.
+
+Looking through the context, I see financial statements, cash flow information, notes payable, and other financial data. Let me search for ""restricted cash"" or ""escrow"".
+
+Scanning the text... I don't see any explicit mention of ""restricted cash"" or ""escrow"" in the provided context. The context includes:
+- Cash and cash equivalents: $4,777 (2019) and $1,008 (2018)
+- Working capital deficit
+- Operating activities
+- Notes payable details
+- Various promissory notes
+- Stock issuances
+- But no mention of restricted cash or escrow amounts.
+
+The question asks for ""amount in escrow as restricted cash at 2019 and 2018 respectively"". Since this information is not present in the provided context, I cannot answer it from the given text.
+
+However, the instruction says to answer according to the report context. If the information is not there, I should state that it's not mentioned or not available in the provided context.
+
+But the format requires: 'The answer is: <answer>' with a simple short answer.
+
+Since the context doesn't contain this information, I should indicate that. Perhaps ""Not mentioned in the provided context"" or ""Information not available"".
+
+Let me double-check the entire context once more for any mention of restricted cash or escrow.
+
+Searching for ""restricted"" - no hits.
+Searching for ""escrow"" - no hits.
+Searching for ""cash"" - only ""cash and cash equivalents"", ""cash flows"", ""cash used"", etc.
+
+The consolidated balance sheets are referenced (page F-3) but not shown in detail. The context shows only a snippet: ""Cash and cash equivalents $4,777 $1,008"" and ""Working capital (deficit) $(6,975) $(3,927)"".
+
+There might be a line for restricted cash in the actual balance sheet, but it's not included in this excerpt.
+
+Given the provided context, the answer should be that this information is not available in the given text.
+
+But the example shows a numerical answer. The instruction says ""answer the question according","31, 2018 was $29.0 million. During the year ended December 31, 2019, the Company received incoming cash flows of $20.7 million from the issuance of common stock, preferred stock and warrants,
+$1.8 million of repayments from a related party note, $7.5 million from promissory notes and $127,000 of net",nemotron-openrouter,simple
+3,S3_TATHYBRID_4a97a3a079b9d171bb3e3c05a5d558fa,tathybrid,hard,WRONG,What was the Compensation and related benefits in 2019 and 2018 respectively?,"$3,247, $949","The answer is: 2019: $3,489,000; 2018: $1,494,000",inpixon_2019,"The answer is: 2019: $3,489,000; 2018: $1,494,000","became CEO in September 2011. Mr. Ali’s salary under the agreement was initially $240,000 per annum plus other benefits including a bonus plan, a housing allowance, health insurance, life insurance
+and other standard Inpixon employee benefits. If Mr. Ali’s employment is terminated without Cause (as ",nemotron-openrouter,simple
+4,S3_TATHYBRID_f3f36466e3595177dee05fd432122387,tathybrid,hard,REFUSED,What is the value of real estate taxes in 2018?,398,"The provided report does not contain information regarding the value of real estate taxes for 2018.
+
+The answer is: Not available",lifeway-foods-inc_2019,The answer is: Not specified in the provided financial statements. Real estate taxes are not listed as a separate line item in the consolidated statements of operations or notes for 2018.,"Selling expenses      11,062        13,477    
+General and administrative      12,828        13,616    
+Goodwill and intangible asset impairment      –       1,244    
+Amortization expense      192       631   
+Total operating expenses      24,082        28,968    
+                  
+Loss from opera",nemotron-openrouter,simple
+5,S3_TATHYBRID_75006d911eb541bafc8bfdfe43399b83,tathybrid,hard,REFUSED,What is the average real estate taxes for 2018 and 2019?,398,"The provided report does not contain information regarding real estate taxes for 2018 and 2019.
+
+The answer is: Not available",lifeway-foods-inc_2019,"The provided financial statements and notes do not contain a specific line item or disclosure for ""real estate taxes"" or ""property taxes"" for 2018 and 2019. The operating expenses are aggregated into categories such as Selling expenses and General and administrative expenses without a breakdown for real estate taxes.
+
+The answer is: Not available in the provided context.","2019      2018    
+Current assets                  
+Cash and cash equivalents    $ 3,836      $ 2,998    
+Accounts receivable, net of allowance for doubtful accounts and discounts & 
+allowances of $1,100 and $1,220 at December 31, 2019 and 2018, 
+respectively      6,692        6,276    
+Inventories,",nemotron-openrouter,simple
+6,S3_TATHYBRID_4b33b977256836fc6c3fbda16ba5844d,tathybrid,hard,REFUSED,What is the change in payroll and incentive compensation between 2018 and 2019?,1072,"The provided report does not contain a specific line item for total ""payroll"" or a consolidated figure for ""incentive compensation"" that allows for a direct calculation of the change between 2018 and 2019. While the report details specific stock-based compensation expenses for various plans (e.g., 2017 Plan, 2019 Plan, Retention Award), it does not provide the total payroll or aggregate incentive compensation figures.
+
+The answer is: Not available",lifeway-foods-inc_2019,"The user is asking for the change in payroll and incentive compensation between 2018 and 2019. I need to find information about payroll and incentive compensation in the provided text.
+
+Looking through the context, I see several mentions of compensation:
+1. Stock-based compensation expenses for various plans (2017 Plan, 2018 Plan, 2019 Plan, 2019 Retention Award, RSA's, Stock Options)
+2. Retirement benefits (defined contribution plan)
+3. Section 162(m) discussion about executive compensation deductibility
+
+But I don't see a specific line item called ""payroll and incentive compensation"" or a clear total payroll figure. The text mentions various compensation expenses but they're broken down by type (stock-based, retirement, etc.) and by plan.
+
+Let me look for any consolidated compensation figure or payroll expense. In the Consolidated Statements of Operations, I see:
+- Selling expenses: $11,062 (2019) vs $13,477 (2018)
+- General and administrative: $12,828 (2019) vs $13,616 (2018)
+
+These likely include payroll, but they're not broken out separately.
+
+The text mentions specific stock-based compensation expenses:
+- 2017 Plan: $288 (2019) vs $636 (2018)
+- 2018 Plan: $0 (2019) vs $0 (2018) - ""no equity-based incentives awarded""
+- 2019 Plan: $51 (2019)
+- 2019 Retention Award: $342 (2019)
+- RSA's: $109 (2019) vs $47 (2018)
+- Stock Options: $1 (2019) vs $9 (2018)
+- Retirement benefits: $367 (2019) vs $417 (2018)
+
+Total stock-based compensation mentioned: $288 + $0 + $51 + $342 + $109 + $1 = $791 (2019) vs $636 + $0 + $0 + $","awards, and the provision for unrecognized tax benefits. The increase in the effective tax rate from 2018 to 2019 is 
+due to the fact that the company has a number of items that are nondeductible or are discrete adjustments to tax 
+expense. Although similar items were reflected in 2018, the percenta",nemotron-openrouter,simple
+7,S3_TATHYBRID_5b53e0ca06203f7703b6c4f8057e3c87,tathybrid,hard,WRONG,What is the percentage constitution of net sales from Frozen Kefir among the total net sales in 2019?,1.73,The answer is: 2%,lifeway-foods-inc_2019,The answer is: 2%,"20     
+  
+Net Sales  
+  
+Net sales were $93,662 for the year ended December 31, 2019, a decrease of $9,688 or 9.4% versus prior year. The 
+net sales softness continued to reflect the overall lower consumption in the dairy and cultured dairy product 
+categories. Versus prior year, the decline was pr",nemotron-openrouter,simple
+8,S3_TATHYBRID_077fac86dd9c8cd78b834fbdbe0885be,tathybrid,hard,REFUSED,What is the percentage change in ingredients between 2018 and 2019?,22.91,The answer is: Not mentioned,lifeway-foods-inc_2019,The answer is: Information not provided in the context,"believe Lifeway is well positioned for long -term growth and value creation with strong industry tailwinds to fuel our 
+business as we increasingly serve consumers looking for more self -care, immunity and gut health options during this 
+time of global health cri sis and uncertainty.”  
+  
+Lifeway e",nemotron-openrouter,simple
+9,S3_TATHYBRID_4cb79dfe572f814f50c02a61639f2094,tathybrid,hard,REFUSED,What is the value of recipes in 2018 and 2019 respectively?,"$ 44, $ 44","The provided text does not contain information regarding the value of recipes. The financial tables provided relate to a share repurchase program.
+
+The answer is: Not mentioned",lifeway-foods-inc_2019,"The provided context does not contain any information about the ""value of recipes"" for 2018 or 2019. The text includes financial data such as net sales, gross profit, expenses, share repurchase details, and product descriptions, but no mention of recipe valuations.
+
+The answer is: Not mentioned in the provided context.","operations could be adversely affected.  
+  
+One key element of our business strategy is to introduce timely, new, cost -effective, and appealing products and to 
+innovate successfully within our existing product categories. New items introduced through our innovation efforts 
+partially offset lower",nemotron-openrouter,simple
+10,S3_TATHYBRID_7622984778061cb2468425d5534a99e6,tathybrid,hard,NO ANSWER,What is the change in the value of customer relationships between 2018 and 2019?,0,,lifeway-foods-inc_2019,"The user is asking about the change in the value of customer relationships between 2018 and 2019. I need to look through the provided context to find information about customer relationships, likely in the intangible assets or goodwill section.
+
+Looking at the context, I see Note 5 – Goodwill and Intangible Assets. It shows:
+- Goodwill: $10,368 for both 2019 and 2018
+- Accumulated impairment losses: ($1,244) for both 2019 and 2018
+- Goodwill (net): $9,124 for both 2019 and 2018
+- Brand names: $3,700 for both 2019 and 2018
+- Goodwill and indefinite lived intangible assets: $12,824 for both 2019 and 2018
+
+I don't see a specific line item for ""customer relationships"" in the provided text. The intangible assets listed are goodwill and brand names. Customer relationships would typically be a separate intangible asset, but it's not shown in the excerpt.
+
+Let me check if there's any other mention of customer relationships in the text. Scanning through... I see mentions of customers in the risk factors section, but no valuation of customer relationships as an asset.
+
+The context provided seems to be a partial annual report. The financial statements show goodwill and brand names as the only intangible assets. There's no customer relationships line item shown.
+
+Since the information isn't in the provided context, I should state that the change cannot be determined from the given information, or that customer relationships aren't separately reported.
+
+However, the user expects a specific answer format. Let me re-read the question: ""What is the change in the value of customer relationships between 2018 and 2019?""
+
+Based on the provided context, there is no mention of customer relationships as a separate intangible asset. The only intangible assets shown are goodwill and brand names, both unchanged between 2018 and 2019.
+
+I should answer that the value is not reported or not separately disclosed in the provided context. But the format requires a simple, short answer.
+
+Perhaps the answer is ""Not disclosed"" or ""No change"" or ""Not separately reported"". Let","and results of operations.  
+  
+Customers, such as supermarkets and food distributors, cont inue to consolidate. This consolidation has produced 
+larger, more sophisticated organizations with increased negotiating and buying power that are able to resist price 
+increases or demand increased promotio",nemotron-openrouter,simple
+11,S3_TATHYBRID_3ead03b4712e86e15034c9fabc0f1b9b,tathybrid,hard,WRONG,What is the average value of trade names for both 2018 and 2019?,2248,"To determine the average value of trade names for 2018 and 2019, we look at the ""Issuer Purchases of Equity Securities"" table provided in the context, which lists the ""Average price paid per share"" for the share repurchase programs during those years.
+
+1.  For Fiscal Year 2018, the average price paid per share was $6.33.
+2.  For Fiscal Year 2019, the average price paid per share was $2.55.
+3.  The average of these two values is ($6.33 + $2.55) / 2 = $8.88 / 2 = $4.44.
+
+The answer is: 4.44",lifeway-foods-inc_2019,The answer is: Information not available in the provided context.,"Plans or 
+Programs  
+($ in 
+thousands)    
+                          
+1/1/2018 to 1/31/2018      106,441      $ 8.22       106,441      $ 5,007    
+2/1/2018 to 2/28/2018      24,486      $ 7.21       24,486      $ 4,830    
+4/1/2018 to 4/30/2018      15,433      $ 6.09       15,433      $ 4,736    
+",nemotron-openrouter,simple
+12,S3_TATHYBRID_30e01bc5c375a0ca44ab4c0dd14e5e1e,tathybrid,hard,REFUSED,What is the value of vehicles in 2018 and 2019 respectively?,"937, 778","The provided report does not contain information regarding the value of vehicles.
+
+The answer is: Not available",lifeway-foods-inc_2019,"The provided context does not contain information about the value of vehicles for 2018 and 2019. The financial statements show categories like ""Property, plant and equipment, net"" but do not break out vehicle values separately.
+
+The answer is: Not available in the provided context","Plans or 
+Programs  
+($ in 
+thousands)    
+                          
+1/1/2018 to 1/31/2018      106,441      $ 8.22       106,441      $ 5,007    
+2/1/2018 to 2/28/2018      24,486      $ 7.21       24,486      $ 4,830    
+4/1/2018 to 4/30/2018      15,433      $ 6.09       15,433      $ 4,736    
+",nemotron-openrouter,simple
+13,S3_TATHYBRID_fe59aeaff2948f598d69f262c6464889,tathybrid,hard,REFUSED,What is the average value of vehicles for 2018 and 2019?,857.5,"[Assistant]: The provided report does not contain information regarding the value of vehicles.
+
+The answer is: Not available",lifeway-foods-inc_2019,The answer is: The provided context does not contain information about vehicle values for 2018 and 2019.,"Plans or 
+Programs  
+($ in 
+thousands)    
+                          
+1/1/2018 to 1/31/2018      106,441      $ 8.22       106,441      $ 5,007    
+2/1/2018 to 2/28/2018      24,486      $ 7.21       24,486      $ 4,830    
+4/1/2018 to 4/30/2018      15,433      $ 6.09       15,433      $ 4,736    
+",nemotron-openrouter,simple
+14,S3_TATHYBRID_f4c8e2d0155ac338249d0fe6feba49ac,tathybrid,hard,WRONG,What was the low sale price per share for each quarters in 2018 in chronological order?,"$ 5.99, $ 4.79, $ 2.66, $ 1.88","[Assistant]: Based on the provided table of share repurchase programs for 2018, the prices per share listed in chronological order are: $8.22, $7.21, $6.09, $5.46, $3.96, $3.35, $2.99, and $2.25.
+
+The answer is: $8.22, $7.21, $6.09, $5.46, $3.96, $3.35, $2.99, $2.25",lifeway-foods-inc_2019,"The user is asking for the low sale price per share for each quarter in 2018 in chronological order. I need to look at the context provided, which appears to be a share repurchase program table showing monthly data for 2018 and 2019.
+
+Looking at the table at the beginning of the context:
+
+```
+Plans or Programs ($ in thousands)    
+                          
+1/1/2018 to 1/31/2018      106,441      $ 8.22       106,441      $ 5,007    
+2/1/2018 to 2/28/2018      24,486      $ 7.21       24,486      $ 4,830    
+4/1/2018 to 4/30/2018      15,433      $ 6.09       15,433      $ 4,736    
+6/1/2018 to 6/30/2018      4,143      $ 5.46       4,143      $ 4,714    
+8/1/2018 to 8/31/2018      1,332      $ 3.96       1,332      $ 4,709    
+9/1/2018 to 9/30/18      40,364      $ 3.35       40,364      $ 4,573    
+11/1/2018 to 11/30/18      17,228      $ 2.99       17,228      $ 4,522    
+12/1/2018 to 12/31/18      8,305      $ 2.25       8,305      $ 4,503    
+Fiscal Year 2018      217,732      $","Plans or 
+Programs  
+($ in 
+thousands)    
+                          
+1/1/2018 to 1/31/2018      106,441      $ 8.22       106,441      $ 5,007    
+2/1/2018 to 2/28/2018      24,486      $ 7.21       24,486      $ 4,830    
+4/1/2018 to 4/30/2018      15,433      $ 6.09       15,433      $ 4,736    
+",nemotron-openrouter,simple
+15,S3_TATHYBRID_719ef48aead1f283a692fedbeae4622a,tathybrid,hard,REFUSED,What is the value of customer relationships in 2018 and 2019 respectively?,"985, 985","The provided text does not contain information regarding the specific value of customer relationships for the years 2018 and 2019.
+
+The answer is: Not mentioned",lifeway-foods-inc_2019,"The user is asking for the value of customer relationships in 2018 and 2019 respectively. I need to search the provided context for this information. The context appears to be from an annual report (10-K) for a company called Lifeway (based on mentions of ""Lifeway's financial assets"" and ""Lifeway has analyzed filing positions""). The context includes risk factors, properties, table of contents, forward-looking statements, and some financial information about investments and income taxes. However, I don't see any specific mention of ""customer relationships"" value for 2018 and 2019. The context mentions ""Two of our customers together accounted for 22% of our net sales in the fiscal year ended December 31, 2019."" But that's about customer concentration, not the value of customer relationships as an intangible asset. There's also mention of ""customer relationships"" in the risk factors: ""We rely on sales made by or through our independent distributors to customers."" But no numerical value for 2018 and 2019. The context includes a table of contents with ""Item 8. Financial Statements and Supplementary Data"" but the actual financial statements aren't provided. The context also includes some fair value discussion: ""Lifeway's financial assets and liabilities that are not carried at fair value on a recurring basis include cash and cash equivalents, accounts receivable, other receivables, accounts payable, accrued expenses and revolving line of credit for which carrying value approximates fair value."" And ""The Company records its investments in equity securities without a readily determinable fair value at cost minus impairment..."" But nothing about customer relationships intangible asset values. The question might be referring to a specific note in the financial statements that isn't included in the provided context. Since the context doesn't contain the answer, I should state that the information is not available in the provided context. However, the instruction says to answer according to the report context. If the context doesn't have it, I should say it's not mentioned. But the example response gave a numerical answer based on some calculation. Let me re-read the context carefully. The context is fragmented and seems to be multiple sections concatenated. There's a mention of ""customer relationships"" in the risk factors: ""The consolidation of retail customers also increases the risk that a significant adverse impact on their business could have a corresponding material adverse impact on","and results of operations.  
+  
+Customers, such as supermarkets and food distributors, cont inue to consolidate. This consolidation has produced 
+larger, more sophisticated organizations with increased negotiating and buying power that are able to resist price 
+increases or demand increased promotio",nemotron-openrouter,simple
+16,S3_TATHYBRID_83cb95ba9efedd8346b5f66758f4ab85,tathybrid,hard,REFUSED,What is the value of buildings and improvements in 2018 and 2019 respectively?,"17,520, 17,332","The provided annual report context does not break down the ""Property, plant and equipment"" line item into specific categories such as buildings and improvements. Therefore, the value of buildings and improvements cannot be determined from the provided text.
+
+The answer is: Not available",lifeway-foods-inc_2019,The answer is: Not provided in the context.,"Plans or 
+Programs  
+($ in 
+thousands)    
+                          
+1/1/2018 to 1/31/2018      106,441      $ 8.22       106,441      $ 5,007    
+2/1/2018 to 2/28/2018      24,486      $ 7.21       24,486      $ 4,830    
+4/1/2018 to 4/30/2018      15,433      $ 6.09       15,433      $ 4,736    
+",nemotron-openrouter,simple
+17,S3_TATHYBRID_0022a9993b61830a838d232e2e840b27,tathybrid,hard,WRONG,What is the amount of net sales from ProBugs Kelir in 2018 and 2019 respectively?,"2,795, 2,780","The answer is: 2019: $2,780; 2018: $2,795",lifeway-foods-inc_2019,"The answer is: 2019: $2,780 thousand; 2018: $2,795 thousand","20     
+  
+Net Sales  
+  
+Net sales were $93,662 for the year ended December 31, 2019, a decrease of $9,688 or 9.4% versus prior year. The 
+net sales softness continued to reflect the overall lower consumption in the dairy and cultured dairy product 
+categories. Versus prior year, the decline was pr",nemotron-openrouter,simple
+18,S3_TATHYBRID_05d6f0b7266caa424d82675ec4d0ca2e,tathybrid,hard,REFUSED,What is net sales from cream and other in 2018 and 2019 respectively?,"5,276, 4,228","The provided text does not contain the specific numerical breakdown of net sales for ""cream and other"" for the years 2018 and 2019.
+
+The answer is: Not mentioned",lifeway-foods-inc_2019,"The provided context does not contain a breakdown of net sales by ""cream and other"" category for 2018 and 2019. Only total net sales figures are mentioned ($93,662 for 2019, down 9.4% from 2018).
+
+The answer is: Not provided in the context","20     
+  
+Net Sales  
+  
+Net sales were $93,662 for the year ended December 31, 2019, a decrease of $9,688 or 9.4% versus prior year. The 
+net sales softness continued to reflect the overall lower consumption in the dairy and cultured dairy product 
+categories. Versus prior year, the decline was pr",nemotron-openrouter,simple
+19,S3_TATHYBRID_1098c97fef920d0f4107fa3be6f84e3a,tathybrid,hard,REFUSED,What is the deferred provision (benefit) for income tax for 2018 and 2019 respectively?,"(461), 533","The provided report does not explicitly state the deferred provision (benefit) for income tax for 2018 and 2019. While it mentions deferred income taxes in the balance sheet ($922 for 2019 and $390 for 2018), the specific provision (benefit) amounts are not provided in the text.
+
+The answer is: Not available",lifeway-foods-inc_2019,"The user is asking for the deferred provision (benefit) for income tax for 2018 and 2019 respectively. I need to find this information in the provided context.
+
+Looking through the context, I see financial statements including balance sheets and income statements. The balance sheet shows ""Deferred income taxes, net"" as $922 for 2019 and $390 for 2018. However, this is a balance sheet item (deferred tax assets/liabilities), not the provision (benefit) for income tax which would be on the income statement.
+
+The income statement (Consolidated Statements of Operations) shows:
+- Net sales
+- Cost of goods sold
+- Gross profit
+- Operating expenses
+- Loss from operations
+
+But I don't see a line item for income tax provision/benefit in the provided income statement excerpt. The income statement seems to be cut off after ""Loss from operations"".
+
+There's mention of ""Income taxes are discussed in Note 10 in the Notes to the Consolidated Financial Statements"" but the notes aren't fully provided in the context.
+
+Let me search for any mention of deferred tax provision or benefit in the text.
+
+I see in the balance sheet: ""Deferred income taxes, net      922       390"" for 2019 and 2018 respectively.
+
+But the question asks for ""deferred provision (benefit) for income tax"" which is an income statement item, not a balance sheet item.
+
+Looking at the text more carefully, I see: ""Lifeway recognizes penalties and interest related to unrecognized tax benefits in the provision (benefit) for income taxes in the consolidated statements of operations.""
+
+But I don't see the actual provision numbers.
+
+The context includes: ""Income taxes are discussed in Note 10 in the Notes to the Consolidated Financial Statements."" But Note 10 isn't fully provided.
+
+Given the information provided, I cannot find the specific deferred provision (benefit) for income tax for 2018 and 2019. The balance sheet shows deferred income taxes net, but that's not the provision.
+
+Wait, let me check if there's more of the income statement. The text shows ""Loss from operations      (1,933  )     (3,110  )"" and then it cuts off. There should be lines for interest expense, income tax provision,","awards, and the provision for unrecognized tax benefits. The increase in the effective tax rate from 2018 to 2019 is 
+due to the fact that the company has a number of items that are nondeductible or are discrete adjustments to tax 
+expense. Although similar items were reflected in 2018, the percenta",nemotron-openrouter,simple
+20,S3_TATHYBRID_4b7153cbb854c224d6bb0fb509fe74fe,tathybrid,medium,REFUSED,What is the provision (benefit) for total current income taxes for 2018 and 2019 respectively?,"236, 249","[Assistant]: The provided context does not contain the specific breakdown of the provision for total current income taxes for 2018 and 2019.
+
+The answer is: Not available",lifeway-foods-inc_2019,"The user is asking for the provision (benefit) for total current income taxes for 2018 and 2019 respectively. I need to find this information in the provided context.
+
+Looking through the context, I see financial statements for Lifeway Foods, Inc. There's a Consolidated Statements of Operations section, but it seems incomplete in the provided text. The statements show Net sales, Cost of goods sold, Gross profit, Operating expenses, Loss from operations, but I don't see a line for income tax provision/benefit.
+
+Let me search for ""income tax"" or ""provision"" in the text.
+
+I see in the first paragraph: ""Income taxes are discussed in Note 10 in the Notes to the Consolidated Financial Statements.""
+
+But the actual Note 10 doesn't appear to be fully included in the context. There's some discussion about income taxes in the accounting policies section, but not the actual provision amounts.
+
+Looking at the Consolidated Statements of Operations shown (F-3 and F-4), they appear to be cut off. The statement shows:
+- Net sales
+- Cost of goods sold
+- Depreciation expense
+- Total cost of goods sold
+- Gross profit
+- Selling expenses
+- General and administrative
+- Goodwill and intangible asset impairment
+- Amortization expense
+- Total operating expenses
+- Loss from operations
+
+But then it cuts off. Normally after ""Loss from operations"" there would be:
+- Other income (expense)
+- Interest expense
+- Income (loss) before income taxes
+- Provision (benefit) for income taxes
+- Net income (loss)
+
+The text mentions: ""We reported a net income of $453 or $0.03 per basic and diluted common share for the year ended December 31, 2019 compared to a net loss of $(3,086) or $(0.19) per basic and diluted common share in the same period in 2018.""
+
+But it doesn't show the income tax provision separately.
+
+Let me check if there's a Statement of Cash Flows or other statement that might show taxes paid.
+
+I see ""Refundable income taxes"" on the balance sheet: $681 for 2019 and $2,748 for 2018. But that's a balance sheet item, not the provision.
+
+There's also ""Accrued","awards, and the provision for unrecognized tax benefits. The increase in the effective tax rate from 2018 to 2019 is 
+due to the fact that the company has a number of items that are nondeductible or are discrete adjustments to tax 
+expense. Although similar items were reflected in 2018, the percenta",nemotron-openrouter,simple
+21,S3_TATHYBRID_ccc7a9080e0fea2e3181976dc634e30f,tathybrid,hard,WRONG,"In which year was Operating Leases greater than 100,000?",2022,The answer is: 2019,overseas-shipholding-group-inc_2019,"The user is asking: ""In which year was Operating Leases greater than 100,000?"" I need to find information about operating leases amounts by year in the provided context.
+
+Looking through the context, I see a table showing ""The Company's lease right-of-use assets and lease liabilities at December 31, 2019 were as follows:"" with operating lease data for December 31, 2019.
+
+For operating leases, it shows:
+- Vessels chartered-in noncurrent operating lease assets: $283,871
+- Office space noncurrent operating lease assets: $2,598
+- Total noncurrent operating lease assets: $286,469
+
+And for operating lease liabilities:
+- Vessels chartered-in operating lease liabilities: Current portion $89,537, Noncurrent $217,511, Total $307,048
+- Office space operating lease liabilities: Current portion $608, Noncurrent $1,990, Total $2,598
+- Total operating lease liabilities: $309,646
+
+All these numbers are for December 31, 2019. The question asks ""In which year was Operating Leases greater than 100,000?"" 
+
+Looking at the numbers, the total operating lease liabilities are $309,646 (which is > 100,000) and total noncurrent operating lease assets are $286,469 (also > 100,000). Both are for 2019.
+
+I don't see any other years mentioned for operating lease totals. There's mention of 2018 for lease expense ($91,350 for charters-in and $659 for office space), but those are expenses, not the lease balances.
+
+The only year with operating lease balances shown is 2019, and they are greater than 100,000. So the answer should be 2019.
+
+Let me double-check if there's any other year mentioned. The context mentions ""For the year ended December 31, 2018, lease expense relating to charters-in was $91,350"" and ""For the","adjusted for risk based on the length of the lease term because the rate implicit in the lease is not readily determinable.
+ 
+The Company applied the package of practical expedients that allows companies not to reassess whether any expired or expiring
+contracts are or contain leases, lease classific",nemotron-openrouter,simple
+22,S3_TATHYBRID_70b9c20fdab23a9cd16c8474c2be6d9c,tathybrid,hard,REFUSED,"In which year was Increases for positions taken in prior years less than 1,000?",2018,"The provided text does not contain information regarding ""Increases for positions taken in prior years.""
+
+The answer is: Not mentioned",overseas-shipholding-group-inc_2019,"The provided context does not contain information about ""Increases for positions taken in prior years"" or any tax-related data with numerical values. The text consists primarily of exhibit listings, company information, and a table of contents for a Form 10-K filing, but does not include the financial statements or notes where such tax position data would be disclosed.
+
+The answer is: Information not available in the provided context.","Statement on Form S-1 filed on August 20, 2014 and incorporated herein by reference).
+  
+*10.30 Settlement, Release and Indemnity Agreement dated as of February 3, 2015 between the Registrant, certain subsidiaries
+of the Registrant and an executive (filed as Exhibit 10.27 to the Registrant’s Annual ",nemotron-openrouter,simple
+23,S3_TATHYBRID_918d6fb907a4ff383e5d8e9da7db2728,tathybrid,hard,REFUSED,What was the Rate change in 2019 and 2018 respectively?,"(84), 0","The provided text does not contain a single ""Rate change"" value for 2019 and 2018, but it does provide the ""Average rate"" for various vessel categories (Jones Act Handysize Product Carriers, Non-Jones Act Handysize Product Carriers, ATBs, and Lightering) for both years.
+
+The answer is: The average rates varied by vessel category and earnings type (Spot vs. Fixed) as detailed in the provided tables.",overseas-shipholding-group-inc_2019,"The user is asking for ""Rate change in 2019 and 2018 respectively"". I need to find what ""Rate"" refers to in the context. The context contains a lot of financial data, shipping revenues, TCE rates, interest rates, tax rates, etc.
+
+Looking at the context, there's a table showing ""Average rate"" for different vessel types for 2019 and 2018. But the question asks for ""Rate change"", which implies a percentage or absolute change year-over-year.
+
+There's also mention of ""effective tax rates for the years ended December 31, 2019 and 2018 were 5.8% and 419.2%, respectively.""
+
+There's ""Interest expense"" but not explicitly an interest rate.
+
+There's ""expected long-term rate of return on plan assets"" but no specific numbers for 2019 and 2018 given in the text.
+
+The most prominent ""rates"" in the context are the TCE (Time Charter Equivalent) rates shown in the table for different vessel categories. But the question asks for ""Rate change"" singular, not multiple rates.
+
+Let me search for ""rate change"" in the text. Not found.
+
+Maybe it refers to the change in TCE revenues? ""During 2019, TCE revenues increased by $8,426, or 2.6%, to $335,133 from $326,707 in 2018.""
+
+Or the change in average daily rates? ""The increase primarily resulted from an increase in average daily rates earned by our fleet...""
+
+But no specific overall average rate change is given.
+
+Wait, the question might be ambiguous. However, in the context of shipping companies, ""rate"" often refers to freight rates or TCE rates. The table shows average rates for different vessel types for spot and fixed earnings for 2019 and 2018. But calculating a single ""rate change"" for the company is not straightforward.
+
+Perhaps the question refers to the effective tax rate change? 5.8% in 2019 vs 419.2% in 2018.
+
+Or interest rate? Not given.
+
+Let me re-read the question: ""What was the Rate change in 2019 and 2018 respectively?"" This phrasing is odd. ""Rate change","primarily resulted from three fewer vessels in operation during most of 2019 compared to 2018 and one less Government of Israel
+voyage in 2019 compared to 2018. This decrease was partially offset by the addition of two new vessels to our fleet at the
+beginning of the fourth quarter of 2019.
+ 
+Reconc",nemotron-openrouter,simple
+24,S3_TATHYBRID_65dac64cb09b645dd52cc8f4a696544e,tathybrid,hard,REFUSED,"What is the change in Liabilities: Deferred income taxes from Balance at December 31, 2017 to January 1, 2018?",-108,"The provided text does not contain information regarding the specific balance of ""Liabilities: Deferred income taxes"" at December 31, 2017, or January 1, 2018, nor does it provide a reconciliation that would allow for the calculation of a change between those two specific dates.
+
+The answer is: Not mentioned",overseas-shipholding-group-inc_2019,"The user is asking for the change in ""Liabilities: Deferred income taxes"" from ""Balance at December 31, 2017"" to ""January 1, 2018"". I need to find this specific information in the provided context.
+
+Looking through the context, I see various financial data but I need to find a specific line item for ""Deferred income taxes"" in a balance sheet or similar statement showing balances at December 31, 2017 and January 1, 2018.
+
+The context contains:
+- Tax accounting policies
+- Accumulated other comprehensive loss tables
+- Pension benefits information
+- Interest expense
+- Income tax expense/benefit
+- Liquidity and sources of capital
+- Intangible assets
+- Debt information
+
+I don't see a clear balance sheet with ""Liabilities: Deferred income taxes"" line item showing both December 31, 2017 and January 1, 2018 balances. The context mentions deferred tax assets and liabilities in the accounting policies section, but not specific balance amounts for those dates.
+
+There's a mention: ""As of December 31, 2019, we had U.S. federal net operating loss carryforwards of approximately $213,800"" but that's for 2019.
+
+There's also: ""Deferred income taxes arise from temporary differences between the financial reporting and the tax basis of assets and liabilities..."" but no specific balances.
+
+The question asks for a change from Dec 31, 2017 to Jan 1, 2018. These are essentially the same date (year-end 2017 = beginning of 2018), so the change would typically be zero unless there was an accounting standard adoption adjustment on Jan 1, 2018.
+
+I see in the accumulated other comprehensive loss table: ""Adoption of accounting standard - reclassification adjustment to retained earnings — (1,483) (1,483)"" for 2018, but that's for accumulated other comprehensive loss, not deferred income taxes.
+
+I don't see the specific data needed to answer this question in the provided context. The context doesn't contain a balance sheet with deferred income tax liabilities for those specific dates.
+
+Since I cannot find the information in the provided context, I should indicate that the information is","in the financial statements. Under this method, deferred tax assets and liabilities are determined based on the differences
+between the financial statements and tax basis of assets and liabilities using enacted tax rates in effect for the year in
+which the differences are expected to reverse. The ef",nemotron-openrouter,simple
+25,S3_TATHYBRID_6122b1882bcd7b0a238a04bce284e40e,tathybrid,hard,REFUSED,"In which year was Prepaid expenditures less than 6,000?",2019,"The provided text does not contain information regarding ""Prepaid expenditures.""
+
+The answer is: Not mentioned",overseas-shipholding-group-inc_2019,"The user is asking about ""Prepaid expenditures"" and wants to know in which year it was less than 6,000. I need to search the provided context for any mention of ""Prepaid expenditures"" or similar terms like ""prepaid expenses"", ""prepayments"", etc., and find the values for different years.
+
+Looking through the context, I see a lot of information about loans, term loans, prepayments on loans, lease commitments, pension plans, accumulated other comprehensive loss, etc. But I don't see a specific line item called ""Prepaid expenditures"" or ""Prepaid expenses"" with numerical values for different years.
+
+The context mentions:
+- ""deferred finance costs"" 
+- ""mandatory prepayments of $1,086 and $1,054"" in 2019
+- ""mandatory prepayment of $28,166 and optional prepayment of $47,000"" in 2018
+- ""voluntary prepayment of $27,500"" in 2018
+- ""cash payment of $27,623"" in 2018
+- Lease commitments for office space
+- Pension benefit payments
+- Time charter revenue
+
+But no clear ""Prepaid expenditures"" line item with yearly values. The question might be referring to a specific financial statement line item that isn't clearly presented in the provided text chunks.
+
+Let me search more carefully for any table or mention of prepaid expenditures/expenses.
+
+Scanning... I see ""For the year ended December 31, 2019, the rental expense for office space... was $648. For the year ended December 31, 2019, cash paid for office space rental was $604"". For 2018, ""rental expense for office space... was $659"".
+
+But these are rental expenses, not prepaid expenditures.
+
+There's also mention of ""non-cash financing activities of $28,993 for obtaining finance right-of-use assets"" for 2019.
+
+And ""lease expense relating to charters-in was $91,350"" for 2018.
+
+But nothing labeled ""Prepaid expenditures"".
+
+Perhaps the question is unanswerable from the given context? But the instruction says to answer according to the report context. If the","deferred finance costs, was not material.
+ 
+In August 2019, two of the Company’s subsidiaries entered into term loans in an aggregate principal amount of $50,000, due 2024,
+to finance the Overseas Gulf Coast and the Overseas Sun Coast. The loans are secured by first preferred ship mortgages on the
+v",nemotron-openrouter,simple
+26,S3_TATHYBRID_f0a1bd31aa64c790c41e42920619040b,tathybrid,hard,REFUSED,What was the Prepaid expenditures in 2019 and 2018 respectively?,"5,621, 7,108","The provided text does not contain information regarding ""Prepaid expenditures"" for 2019 and 2018.
+
+The answer is: Not mentioned",overseas-shipholding-group-inc_2019,"The provided context does not contain information about ""Prepaid expenditures"" for 2019 or 2018. The text includes data on accumulated other comprehensive loss, pension plans, TCE revenues, vessel expenses, debt, leases, and cash flows, but no specific line item for prepaid expenditures or prepaid expenses.
+
+The answer is: Not available in the provided context.","Years Ended December 31,  
+  2019   2018  
+Items not yet recognized as a component of net periodic benefit cost (pension and
+other postretirement benefit plans)   (6,409)  (7,192)
+  $ (6,409) $ (7,192)
+ 
+76 Overseas Shipholding Group, Inc. 
+ 
+The following tables present the changes in the balances ",nemotron-openrouter,simple
+27,S3_TATHYBRID_0edf2f7aeed2b8ca6a2e0ed95641bf15,tathybrid,hard,REFUSED,What was the Contracts of affreightment revenues in 2019 and 2018 respectively?,"58,589, 68,698","The provided text does not contain information regarding ""Contracts of affreightment revenues"" for 2019 and 2018.
+
+The answer is: Not mentioned",overseas-shipholding-group-inc_2019,"The provided context does not contain information about ""Contracts of affreightment revenues"" for 2019 and 2018. The report discusses Time Charter Equivalent (TCE) revenues, shipping revenues, time charter revenues, and breakdowns by vessel type (Jones Act Handysize, Non-Jones Act Handysize, ATBs, Lightering) with spot and fixed earnings, but does not separately disclose contracts of affreightment revenues.
+
+The answer is: Not disclosed in the provided context","primarily resulted from three fewer vessels in operation during most of 2019 compared to 2018 and one less Government of Israel
+voyage in 2019 compared to 2018. This decrease was partially offset by the addition of two new vessels to our fleet at the
+beginning of the fourth quarter of 2019.
+ 
+Reconc",nemotron-openrouter,simple
+28,S3_TATHYBRID_ff06d83c2832cd8f43f1a6c350b5b7ae,tathybrid,hard,WRONG,"What was the value of Vessels, net in 2019 and 2018 respectively?","644,312, 596,929","The provided context lists ""Vessels and other property, less accumulated depreciation and amortization"" as $737,212 (in thousands) for 2019 and $597,659 (in thousands) for 2018.
+
+The answer is: 2019: $737,212; 2018: $597,659",overseas-shipholding-group-inc_2019,"The user is asking for the value of ""Vessels, net"" in 2019 and 2018 respectively. I need to look at the consolidated balance sheets provided in the context.
+
+Looking at the balance sheet section:
+
+```
+OVERSEAS SHIPHOLDING GROUP, INC. AND SUBSIDIARIES
+CONSOLIDATED BALANCE SHEETS
+DOLLARS IN THOUSANDS
+
+  December 31,
+2019   December 31,
+2018  
+ASSETS         
+Current Assets:         
+Cash and cash equivalents  $ 41,503  $ 80,417 
+Restricted cash   60   59 
+Voyage receivables, including unbilled of $5,611 and $10,160, net of reserve for
+doubtful accounts   9,247   16,096 
+Income tax recoverable   1,192   439 
+Other receivables   3,037   3,027 
+Prepaid expenses   1,292   9,886 
+Inventories and other current assets   1,178   2,456 
+Total Current Assets   57,509   112,380 
+Vessels and other property, less accumulated depreciation and amortization   737,212   597,659 
+Deferred drydock expenditures, net   23,734   26,099 
+Total Vessels, Deferred Drydock and Other Property   760,946   623,758 
+```
+
+The line item ""Vessels and other property, less accumulated depreciation and amortization"" shows:
+- 2019: $737,212 (in thousands)
+- 2018: $597,659 (in thousands)
+
+This appears to be the net value of vessels (and other property). The question asks for ""Vessels, net"" which likely refers to this line item.
+
+The values are in thousands of dollars","primarily resulted from three fewer vessels in operation during most of 2019 compared to 2018 and one less Government of Israel
+voyage in 2019 compared to 2018. This decrease was partially offset by the addition of two new vessels to our fleet at the
+beginning of the fourth quarter of 2019.
+ 
+Reconc",nemotron-openrouter,simple
+29,S3_TATHYBRID_f7af7aebbd48ae1684ba8f8d7402c3fa,tathybrid,hard,REFUSED,What was the Time and bareboat charter revenues revenues in 2019 and 2018 respectively?,"$263,683, $213,923","The provided text does not explicitly state a single line item for ""Time and bareboat charter revenues."" However, it provides ""Time charter equivalent revenues"" of $335,133 for 2019 and $326,707 for 2018, and mentions that total time charter revenue for 2019 was $263,683 ($263,416 lease income + $267 adjustments). The report does not provide a specific breakdown for bareboat charter revenues.
+
+The answer is: Not provided",overseas-shipholding-group-inc_2019,"The user is asking for ""Time and bareboat charter revenues"" for 2019 and 2018. I need to find this specific line item in the provided text.
+
+Looking through the context, I see a table titled ""Shipping Revenues"" near the end of the text:
+
+```
+Voyage charter revenues(1)  33,275   83,542 
+Contracts of affreightment revenues   58,589   68,698 
+Total shipping revenues  $ 355,547  $ 366,163 
+```
+
+Wait, this table seems incomplete. It shows Voyage charter revenues and Contracts of affreightment revenues, but the sum of these two (33,275 + 58,589 = 91,864 for 2019) doesn't equal Total shipping revenues (355,547). There must be a missing line for ""Time charter revenues"" or ""Time and bareboat charter revenues"".
+
+Let me search for ""Time charter"" in the text.
+
+Earlier in the text: ""Total time charter revenue for the year ended December 31, 2019 was equal to lease income from lease payments of $263,416 plus straight-line adjustments of $267.""
+
+Also, in the reconciliation table:
+""Time charter equivalent revenues  $ 335,133  $ 326,707""
+""Add: Voyage expenses   20,414   39,456""
+""Shipping revenues  $ 355,547  $ 366,163""
+
+And the breakdown of shipping revenues shows:
+Voyage charter revenues: 33,275 (2019), 83,542 (2018)
+Contracts of affreightment revenues: 58,589 (2019), 68,698 (2018)
+Total shipping revenues: 355,547 (2019), 366,163 (2018)
+
+So Time charter revenues (which would include bareboat charters) = Total shipping revenues - Voyage charter revenues - Contracts of affreightment revenues
+For","primarily resulted from three fewer vessels in operation during most of 2019 compared to 2018 and one less Government of Israel
+voyage in 2019 compared to 2018. This decrease was partially offset by the addition of two new vessels to our fleet at the
+beginning of the fourth quarter of 2019.
+ 
+Reconc",nemotron-openrouter,simple

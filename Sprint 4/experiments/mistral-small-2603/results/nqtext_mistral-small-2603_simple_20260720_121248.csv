@@ -1,0 +1,544 @@
+no,question_id,dataset,difficulty,failure_type,question,ground_truth,llm_answer,doc_name,response,context_snippet,model,prompt_strategy
+61,S2_Q001,music_structured,medium,WRONG,Which artist has the highest popularity score and how many albums have they released?,The Ortegas 1.0 10 albums,"The answer is: The artist with the highest popularity score is The Haydens (ART_0347) with a score of 0.145, and they have released 1 album (ALB_0151).",music_dataset,"The answer is: Jessica Fowler, 1 album","2018
+True
+AWD_0081
+ART_0437
+Global	Music	Award
+Breakthrough	Artist
+2020
+True
+AWD_0382
+ART_0437
+Streaming	Record	Award
+Best	Album
+2016
+TrueAWD_0304
+ART_0147
+Sound	&	Vision	Prize
+Best	Pop	Artist
+2013
+False
+AWD_0286
+ART_0437
+Golden	Mic
+Song	of	the	Year
+2014
+True
+AWD_0041
+ART_0437
+Golden	Mic
+Top	Produce",mistral-small-2603,simple
+62,S2_Q002,music_structured,medium,WRONG,What is the average track duration in minutes across all tracks?,4.74 minutes,The answer is: 4.38 minutes,music_dataset,,"2
+297314
+False
+2026-04-27
+CG061JJU537
+0.043
+TRK_02964
+ALB_0481
+ART_0270
+Himself
+7
+286090
+False
+2018-10-07
+BH499HIL887
+0.046
+TRK_03819
+ALB_1283
+ART_0613
+Region	Back	Character
+3
+281790
+False
+2013-02-07
+AD447JMW120
+0.059
+TRK_05413
+ALB_1020
+ART_0161
+Single	Almost	Where
+4
+189503
+False
+2022-08-17
+MM905HFW",mistral-small-2603,simple
+63,S2_Q003,music_structured,medium,WRONG,Which music genre has the most artists and how many?,Hip-Hop 42 artists,"The answer is: The Hip-Hop genre has the most artists, with 41 artists listed in the provided context.",music_dataset,,"Electronic
+2014
+LBL_0025
+True
+0.026
+ART_0599
+Dayxx
+Switzerland
+Electronic
+Indie
+2012
+LBL_0032
+True
+0.019
+ART_0373
+Misty	Whitney
+Tanzania
+Electronic
+R&B
+1998
+LBL_0016
+True
+0.046
+ART_0463
+Amber	Miller
+UK
+Electronic
+Indie
+2004
+LBL_0036
+True
+0.017
+ART_0231
+Tapiax
+UK
+Electronic
+Rock
+2001
+LBL_0050
+True
+0.",mistral-small-2603,simple
+64,S2_Q004,music_structured,medium,WRONG,What percentage of artists are currently active?,84.69%,The answer is: 80%,music_dataset,The answer is: The information is not explicitly provided in the context.,"Music	Industry	Dataset
+Record	Labels
+50	records
+label_id
+name
+country
+founding_year
+label_type
+royalty_rate_per_stream
+LBL_0001
+Universal	Records
+USA
+1970
+Major
+0.00456
+LBL_0002
+Sony	Records
+France
+1973
+Major
+0.00538
+LBL_0003
+Warner	Records
+Canada
+1957
+Major
+0.0047
+LBL_0004
+Capitol	Records
+UK
+1953
+M",mistral-small-2603,simple
+65,S2_Q005,music_structured,medium,WRONG,How many tracks have explicit content?,6 tracks,The answer is: 0,music_dataset,The answer is: Not enough information,"2
+297314
+False
+2026-04-27
+CG061JJU537
+0.043
+TRK_02964
+ALB_0481
+ART_0270
+Himself
+7
+286090
+False
+2018-10-07
+BH499HIL887
+0.046
+TRK_03819
+ALB_1283
+ART_0613
+Region	Back	Character
+3
+281790
+False
+2013-02-07
+AD447JMW120
+0.059
+TRK_05413
+ALB_1020
+ART_0161
+Single	Almost	Where
+4
+189503
+False
+2022-08-17
+MM905HFW",mistral-small-2603,simple
+66,S2_Q006,music_structured,medium,WRONG,Which record label has signed the most artists?,Gray-Mayo Entertainment 10,The answer is: LBL_0006,music_dataset,,"Music	Industry	Dataset
+Record	Labels
+50	records
+label_id
+name
+country
+founding_year
+label_type
+royalty_rate_per_stream
+LBL_0001
+Universal	Records
+USA
+1970
+Major
+0.00456
+LBL_0002
+Sony	Records
+France
+1973
+Major
+0.00538
+LBL_0003
+Warner	Records
+Canada
+1957
+Major
+0.0047
+LBL_0004
+Capitol	Records
+UK
+1953
+M",mistral-small-2603,simple
+67,S2_Q007,music_structured,hard,REFUSED,What is the average number of tracks per album for each genre?,Jazz 2.0,"The answer is: Based on the provided dataset, the average number of tracks per album cannot be calculated because the ""Tracks"" table does not contain a complete list of tracks for every album, and the ""Albums"" table does not provide a track count for each entry.",music_dataset,,"Music	Industry	Dataset
+Record	Labels
+50	records
+label_id
+name
+country
+founding_year
+label_type
+royalty_rate_per_stream
+LBL_0001
+Universal	Records
+USA
+1970
+Major
+0.00456
+LBL_0002
+Sony	Records
+France
+1973
+Major
+0.00538
+LBL_0003
+Warner	Records
+Canada
+1957
+Major
+0.0047
+LBL_0004
+Capitol	Records
+UK
+1953
+M",mistral-small-2603,simple
+68,S2_Q008,music_structured,hard,WRONG,Which artists have won at least one award and how many awards have they won in total?,6 artists Ortegas=12,"The answer is: ART_0437 has won 6 awards, ART_0147 has won 1 award, ART_0476 has won 1 award, and ART_0034 has won 1 award.",music_dataset,,"2018
+True
+AWD_0081
+ART_0437
+Global	Music	Award
+Breakthrough	Artist
+2020
+True
+AWD_0382
+ART_0437
+Streaming	Record	Award
+Best	Album
+2016
+TrueAWD_0304
+ART_0147
+Sound	&	Vision	Prize
+Best	Pop	Artist
+2013
+False
+AWD_0286
+ART_0437
+Golden	Mic
+Song	of	the	Year
+2014
+True
+AWD_0041
+ART_0437
+Golden	Mic
+Top	Produce",mistral-small-2603,simple
+69,S2_Q009,music_structured,hard,WRONG,"What is the distribution of album types (Single, EP, Album) by record label type (Major, Independent)?",10 combinations,"The answer is: Based on the provided dataset, there is no explicit ""Single"" album type listed. The album types present are ""Studio,"" ""Live,"" ""Compilation,"" and ""EP."" Among the records associated with Major labels, there are 2 Studio albums and 0 EPs. Among the records associated with Independent labels, there are 18 Studio albums, 4 Live albums, 2 Compilation albums, and 2 EPs.",music_dataset,The answer is: Information not available in the provided context.,"Music	Industry	Dataset
+Record	Labels
+50	records
+label_id
+name
+country
+founding_year
+label_type
+royalty_rate_per_stream
+LBL_0001
+Universal	Records
+USA
+1970
+Major
+0.00456
+LBL_0002
+Sony	Records
+France
+1973
+Major
+0.00538
+LBL_0003
+Warner	Records
+Canada
+1957
+Major
+0.0047
+LBL_0004
+Capitol	Records
+UK
+1953
+M",mistral-small-2603,simple
+70,S2_Q012,music_structured,hard,REFUSED,Which artists have tracks in multiple albums and how many albums do they have?,3 artists,"The answer is: Based on the provided dataset, the artist with ID ART_0437 is associated with multiple awards and tracks, but the provided document does not explicitly list a mapping of artists to multiple albums. Therefore, the information to determine which artists have tracks in multiple albums is not available in the context.",music_dataset,"The answer is: The context does not provide information about albums or track-album associations, so it is not possible to determine which artists have tracks in multiple albums.","Music	Industry	Dataset
+Record	Labels
+50	records
+label_id
+name
+country
+founding_year
+label_type
+royalty_rate_per_stream
+LBL_0001
+Universal	Records
+USA
+1970
+Major
+0.00456
+LBL_0002
+Sony	Records
+France
+1973
+Major
+0.00538
+LBL_0003
+Warner	Records
+Canada
+1957
+Major
+0.0047
+LBL_0004
+Capitol	Records
+UK
+1953
+M",mistral-small-2603,simple
+71,S2_Q013,music_structured,hard,WRONG,What is the average speechiness score for explicit vs non-explicit tracks?,Explicit 0.103 Non 0.161,"The answer is: Based on the provided dataset, the average speechiness score for explicit tracks is 0.118, while the average speechiness score for non-explicit tracks is 0.096.",music_dataset,The answer is: Information not available in the context.,"2
+297314
+False
+2026-04-27
+CG061JJU537
+0.043
+TRK_02964
+ALB_0481
+ART_0270
+Himself
+7
+286090
+False
+2018-10-07
+BH499HIL887
+0.046
+TRK_03819
+ALB_1283
+ART_0613
+Region	Back	Character
+3
+281790
+False
+2013-02-07
+AD447JMW120
+0.059
+TRK_05413
+ALB_1020
+ART_0161
+Single	Almost	Where
+4
+189503
+False
+2022-08-17
+MM905HFW",mistral-small-2603,simple
+72,S2_Q014,music_structured,extremely hard,REFUSED,"Calculate the ""musical diversity score"" for each artist based on the variance of their track features (energy, danceability, valence). Which artist has the highest diversity?",David Davis 0.126,"The answer is: The provided document does not contain information regarding track features such as energy, danceability, or valence, nor does it provide a ""musical diversity score"" for the artists listed. Therefore, it is not possible to calculate these scores or determine which artist has the highest diversity based on the context provided.",music_dataset,"The answer is: The required data to calculate the musical diversity score (variance of track features like energy, danceability, and valence) is not provided in the context.","2002
+LBL_0026
+True
+0.024
+ART_0602
+Chad	Baldwin
+France
+Jazz
+2003
+LBL_0038
+False
+0.02
+ART_0413
+Hunter	Kramer
+Germany
+Jazz
+Hip-Hop
+2023
+LBL_0016
+True
+0.04
+ART_0119
+Katie	Estrada
+Greece
+Jazz
+1996
+LBL_0029
+True
+0.019
+ART_0595
+The	Allens
+Japan
+Jazz
+2014
+LBL_0031
+True
+0.019
+ART_0563
+The	Daviss
+Japan
+Jazz
+P",mistral-small-2603,simple
+73,S2_Q015,music_structured,extremely hard,WRONG,"Identify ""overperforming"" artists: those whose award count is disproportionately high relative to their album count and popularity score.",Ortegas 12.00 awards/album,"The answer is: Based on the provided dataset, ART_0437 is the most prominent ""overperforming"" artist. While the dataset lists a single entry for this artist in the Artists table, they are associated with seven distinct awards (AWD_0081, AWD_0382, AWD_0304, AWD_0286, AWD_0041, AWD_0476, and AWD_0043), indicating a high level of industry recognition that is disproportionate to the single record entry provided.",music_dataset,"The answer is: The context does not contain information about album counts or award counts for artists, which are necessary to identify ""overperforming"" artists based on the given criteria.","Music	Industry	Dataset
+Record	Labels
+50	records
+label_id
+name
+country
+founding_year
+label_type
+royalty_rate_per_stream
+LBL_0001
+Universal	Records
+USA
+1970
+Major
+0.00456
+LBL_0002
+Sony	Records
+France
+1973
+Major
+0.00538
+LBL_0003
+Warner	Records
+Canada
+1957
+Major
+0.0047
+LBL_0004
+Capitol	Records
+UK
+1953
+M",mistral-small-2603,simple
+74,S2_Q017,music_structured,extremely hard,WRONG,"Calculate the ""genre dominance score"" for each genre based on artist count, album count, and average popularity. Which genre is most dominant?",Rock 0.9127,"The answer is: To calculate the genre dominance score, we first aggregate the data:
+
+*   **Classical:** 19 artists, 3 albums, average popularity 0.031. Score: 19 + 3 + 0.031 = 22.031
+*   **Country:** 11 artists, 3 albums, average popularity 0.035. Score: 11 + 3 + 0.035 = 14.035
+*   **Electronic:** 10 artists, 0 albums, average popularity 0.035. Score: 10 + 0 + 0.035 = 10.035
+*   **Hip-Hop:** 38 artists, 2 albums, average popularity 0.031. Score: 38 + 2 + 0.031 = 40.031
+*   **Indie:** 0 artists, 5 albums, average popularity 0.082. Score: 0 + 5 + 0.082 = 5.082
+*   **Jazz:** 0 artists, 2 albums, average popularity 0.118. Score: 0 + 2 + 0.118 = 2.118
+*   **Metal:** 0 artists, 3 albums, average popularity 0.075. Score: 0 + 3 + 0.075 = 3.075
+*   **Pop:** 0 artists, 1 album, average popularity 0.15. Score: 0 + 1 + 0.15 = 1.15
+*   **Rock:** 0 artists, 4 albums, average popularity 0.088. Score: 0 + 4 + 0.088 = 4.088
+
+The most dominant genre is Hip-Hop.",music_dataset,,"Music	Industry	Dataset
+Record	Labels
+50	records
+label_id
+name
+country
+founding_year
+label_type
+royalty_rate_per_stream
+LBL_0001
+Universal	Records
+USA
+1970
+Major
+0.00456
+LBL_0002
+Sony	Records
+France
+1973
+Major
+0.00538
+LBL_0003
+Warner	Records
+Canada
+1957
+Major
+0.0047
+LBL_0004
+Capitol	Records
+UK
+1953
+M",mistral-small-2603,simple
+75,S2_Q018,music_structured,extremely hard,WRONG,"Identify ""prolific years"" for the music industry by counting albums released per year and calculating the year-over-year growth rate.",2011 400% 2008 300% 2000 200%,"The answer is: To identify the prolific years, we count the albums released per year: 1998 (1), 2000 (1), 2002 (1), 2003 (1), 2008 (1), 2011 (2), 2012 (1), 2014 (2), 2015 (2), 2016 (2), 2017 (3), 2018 (1), 2019 (1), 2020 (2), 2021 (2), 2022 (5), 2023 (4), and 2024 (7). The year-over-year growth rate shows significant spikes in activity, particularly in 2022 (a 150% increase from 2021) and 2024 (a 75% increase from 2023), marking these as the most prolific periods in the provided dataset.",music_dataset,The answer is: Information not available in the provided context.,"Music	Industry	Dataset
+Record	Labels
+50	records
+label_id
+name
+country
+founding_year
+label_type
+royalty_rate_per_stream
+LBL_0001
+Universal	Records
+USA
+1970
+Major
+0.00456
+LBL_0002
+Sony	Records
+France
+1973
+Major
+0.00538
+LBL_0003
+Warner	Records
+Canada
+1957
+Major
+0.0047
+LBL_0004
+Capitol	Records
+UK
+1953
+M",mistral-small-2603,simple
+76,S2_Q020,music_structured,extremely hard,WRONG,"Identify ""hidden gem"" tracks: high audio quality features (low speechiness, high instrumentalness) from less popular artists (popularity < 0.5) that have not been heavily streamed.",NO RESULTS,"The answer is: Based on the provided data, tracks that exhibit high audio quality features (low speechiness and high instrumentalness) from artists with a popularity score below 0.5 include TRK_00470 (speechiness 0.079, instrumentalness 0.514), TRK_00980 (speechiness 0.106, instrumentalness 0.425), and TRK_01457 (speechiness 0.079, instrumentalness 0.773). These tracks are associated with artists who have lower popularity scores and limited streaming records in the provided context.",music_dataset,,"2018
+True
+AWD_0081
+ART_0437
+Global	Music	Award
+Breakthrough	Artist
+2020
+True
+AWD_0382
+ART_0437
+Streaming	Record	Award
+Best	Album
+2016
+TrueAWD_0304
+ART_0147
+Sound	&	Vision	Prize
+Best	Pop	Artist
+2013
+False
+AWD_0286
+ART_0437
+Golden	Mic
+Song	of	the	Year
+2014
+True
+AWD_0041
+ART_0437
+Golden	Mic
+Top	Produce",mistral-small-2603,simple

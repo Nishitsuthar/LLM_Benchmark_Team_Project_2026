@@ -14,6 +14,8 @@ Usage (from a notebook):
 import os
 import sys
 import time
+import requests
+import json
 import pandas as pd
 import chromadb
 import PyPDF2
@@ -89,6 +91,10 @@ class RAGRunner:
                 api_key=api_keys.DEEPSEEK_API_KEY,
             )
             self._model_id = self.model_cfg["deepseek_id"]
+        elif provider == "openrouter":
+            # OpenRouter uses requests directly (not openai SDK) to support reasoning_details
+            self._client = None
+            self._model_id = self.model_cfg["openrouter_id"]
         else:
             self._client = OpenAI(api_key=api_keys.OPENAI_API_KEY)
             self._model_id = self.model_cfg["openai_id"]
@@ -152,7 +158,31 @@ class RAGRunner:
         provider = self.model_cfg.get("provider", "together")
         for attempt in range(max_retries):
             try:
-                if provider == "gemini":
+                if provider == "openrouter":
+                    resp = requests.post(
+                        url="https://openrouter.ai/api/v1/chat/completions",
+                        headers={
+                            "Authorization": f"Bearer {api_keys.OPENROUTER_API_KEY}",
+                            "Content-Type": "application/json",
+                        },
+                        data=json.dumps({
+                            "model": self._model_id,
+                            "messages": messages,
+                            "temperature": TEMPERATURE,
+                            "max_tokens": MAX_TOKENS,
+                            "reasoning": {"enabled": True},
+                        }),
+                        timeout=120,
+                    )
+                    if resp.status_code == 429:
+                        wait = 60
+                        print(f"  [RATE LIMIT] attempt {attempt+1}/{max_retries} — waiting {wait}s...", flush=True)
+                        time.sleep(wait)
+                        continue
+                    resp.raise_for_status()
+                    data = resp.json()
+                    return data["choices"][0]["message"].get("content") or ""
+                elif provider == "gemini":
                     prompt_parts = []
                     for m in messages:
                         role = m.get("role", "")

@@ -1,0 +1,256 @@
+no,question_id,dataset,difficulty,failure_type,question,ground_truth,llm_answer,doc_name,response,context_snippet,model,prompt_strategy
+30,S3_FINHYBRID_ABMD/2012/page_75.pdf-1,finhybrid,hard,WRONG,"during the 2012 year , did the equity awards in which the prescribed performance milestones were achieved exceed the equity award compensation expense for equity granted during the year?",yes,"The provided text states that for the year ended March 31, 2012, the Company recorded $3.3 million in stock-based compensation expense for equity awards in which the prescribed performance milestones have been achieved or are probable of being achieved. Regarding equity awards granted during the year, the text notes that 607,000 restricted stock and restricted stock units were granted with a weighted-average grant date fair value of $18.13 per share, and 72,000 stock options were granted with a weighted-average exercise price of $17.53. The total compensation expense for all equity awards (including options, restricted stock, restricted stock units, and ESPP) for 2012 was $7.773 million. Since the $3.3 million figure specifically refers to performance-based awards and is a component of the total compensation expense, it does not exceed the total compensation expense for all equity awards granted or recognized during the year.
+
+The answer is: No",ABMD_2012,,"During the three months ended June 30, 2011, performance-based awards of restricted stock units for the potential issuance of 284,000 shares
+of common stock were issued to certain executive officers and members of the senior management, all of which would vest upon achievementof prescribed service m",mistral-small-2603,simple
+31,S3_FINHYBRID_ABMD/2012/page_75.pdf-2,finhybrid,hard,WRONG,"for equity awards where the performance criteria has been met in 2012 , what is the average compensation expense per year over which the cost will be expensed?",1719526 | 1714285.71429,"The provided text states that the remaining unrecognized compensation expense for equity awards as of March 31, 2012, is $3.6 million, and the weighted-average period over which this cost will be recognized is 2.1 years. Dividing the total expense by the number of years ($3.6 million / 2.1 years) results in approximately $1.71 million per year.
+
+The answer is: 1.71 million",ABMD_2012,,"During the three months ended June 30, 2011, performance-based awards of restricted stock units for the potential issuance of 284,000 shares
+of common stock were issued to certain executive officers and members of the senior management, all of which would vest upon achievementof prescribed service m",mistral-small-2603,simple
+32,S3_FINHYBRID_ABMD/2012/page_41.pdf-2,finhybrid,hard,REFUSED,did abiomed outperform the nasdaq medical equipment index?,yes | yes,"The provided text contains a graph description comparing the company's performance to the Nasdaq Medical Equipment index, but it does not provide a definitive conclusion on whether Abiomed outperformed the index.
+
+The answer is: Not specified",ABMD_2012,,"Corporate Background
+We are incorporated in Delaware and trade on the NASDAQ Global Select Market under the ticker symbol ABMD.Our principal executive offices are located at 22 Cherry Hill Drive, Danvers, Massachusetts 01923. Our telephone number is
+(978) 646-1400. We make available, free of charge ",mistral-small-2603,simple
+33,S3_FINHYBRID_ABMD/2012/page_41.pdf-1,finhybrid,hard,REFUSED,did abiomed outperform the nasdaq composite index?,yes | yes,"The provided context includes a graph index for the ""Nasdaq Composite Index"" and ""Nasdaq Medical Equipment"" but does not provide the specific performance data or a comparison analysis required to determine if Abiomed outperformed the index.
+
+The answer is: Not mentioned",ABMD_2012,,"Nasdaq Composite Index 100 94.11 63.12 99.02 114.84 127.66Nasdaq Medical Equipment SIC Code 3840-3849 100 82.91 41.56 77.93 94.54 74.40
+This graph is not “soliciting material” under Regulation 14A or 14C of the rules promulgated under the Securities Exchange Act of 1934,
+is not deemed filed with the",mistral-small-2603,simple
+34,S3_FINHYBRID_ABMD/2012/page_79.pdf-2,finhybrid,hard,WRONG,how much of total future minimum lease payments are due currently?,35% | 2845.5,"The answer is: 1,473",ABMD_2012,"The answer is: 1,473","(approximately U.S. $50,000 at March 31, 2012 exchange rates) per month and the lease term expires in December 2012.
+In July 2008, the Company entered into a lease agreement providing for the lease of a 33,000 square foot manufacturing facility in Athlone,
+Ireland. The lease agreement was for a term",mistral-small-2603,simple
+35,S3_FINHYBRID_ABMD/2012/page_41.pdf-3,finhybrid,hard,REFUSED,what is the roi of an investment in abiomed inc from march 2007 to march 2010?,-24.5% | -0.2445,"The provided context does not contain the specific stock price data for March 2007 and March 2010 required to calculate the exact ROI.
+
+The answer is: Not available",ABMD_2012,,"Indicate by check mark whether the registrant is a shell company (as defined in Rule 12b-2 of the Exchange Act). Yes ‘ NoÈ
+The aggregate market value of the registrant’s common stock as of September 30, 2011, held by non-affiliates of the registrant (without admitting tha t
+any person whose shares a",mistral-small-2603,simple
+36,S3_FINHYBRID_ABMD/2012/page_41.pdf-4,finhybrid,hard,REFUSED,what is the roi of an investment in nasdaq composite index from march 2007 to march 2010?,-1.0% | -0.0098,"The provided context does not contain the specific numerical data required to calculate the ROI for the Nasdaq Composite Index between March 2007 and March 2010. While a graph is mentioned, the specific index values for those years are not provided in the text.
+
+The answer is: Not available",ABMD_2012,,"March 31,
+2012 2011 2010
+(in $000’s)
+Diluted Net Income (Loss) Per ShareNet income (loss) $ 1,495 $(11,755) $(19,024)
+Weighted average shares used in computing basic net income per share 38,374 37,167 36,875
+Effect of dilutive securities 1,798 — —
+Weighted average shares used in computing diluted ne",mistral-small-2603,simple
+37,S3_FINHYBRID_ADI/2009/page_49.pdf-1,finhybrid,hard,WRONG,what is the the interest expense in 2009?,380 | 3.8,"The answer is: 4,094",ADI_2009,"The answer is: 4,094","Interest expense . . . ....................................... 4,094 — —
+Interest income . . . ....................................... (15,621) (41,041) (77,007)
+Other, net . . ............................................ (1,100) (36) (15,727)
+(12,627) (41,077) (92,734)
+Earnings
+Income from continui",mistral-small-2603,simple
+38,S3_FINHYBRID_ADI/2009/page_59.pdf-2,finhybrid,hard,REFUSED,what is the expected growth rate in amortization expense in 2010?,-27.0% | -0.26689,"The provided context does not contain information regarding the growth rate of amortization expense for 2010, only the expected total expense amount.
+
+The answer is: Not available",ADI_2009,The answer is: -41.03%,"Amortization expense from continuing operations, related to intangibles was $7.4 million, $9.3 million and
+$9.2 million in fiscal 2009, 2008 and 2007, respectively.
+The Company expects annual amortization expense for these intangible assets to be:
+Fiscal Years Amortization Expense
+2010 .............",mistral-small-2603,simple
+39,S3_FINHYBRID_ADI/2009/page_90.pdf-1,finhybrid,hard,REFUSED,what is the percentage increase in interest expanse and penalties in 2009?,30.8% | 0.30769,"The provided report does not contain information regarding ""penalties,"" and interest expense was $0 in 2008, making a percentage increase calculation mathematically undefined.
+
+The answer is: Not applicable",ADI_2009,,"settlement and a $7.9 million gain from the sale of an investment.
+Provision for Income Taxes
+2009 2008 2007Fiscal Year
+Provision for Income Taxes .................................... $50,036 $140,925 $159,553
+Effective Income Tax Rate .................................... 16.8% 21.2% 24.1%
+Our effec",mistral-small-2603,simple
+40,S3_FINHYBRID_ADI/2009/page_49.pdf-2,finhybrid,hard,WRONG,"what is the lobor rate as of october 31 , 2009?",29.0% | 0.0029,The answer is: 2.34%,ADI_2009,The answer is: Not available,"Other DSP .............. 6,208 0% (79)% 29,188 1% 33,430 1%
+Total DSP products ...... $ 173,341 9% (34)% $ 264,134 10% $ 247,769 10%
+Total Product Revenue .... $2,014,908 100% (22)% $2,582,931 100% $2,429,721 100%
+Revenue from one-time IP
+license ............... — — 35,000
+Total Revenue ........... ",mistral-small-2603,simple
+41,S3_FINHYBRID_ADI/2009/page_90.pdf-3,finhybrid,hard,REFUSED,what percentage did the balance increase from 2007 to 2009?,83.6% | 0.83648,"The provided text does not contain a specific ""balance"" figure to calculate a percentage increase from 2007 to 2009.
+
+The answer is: Not available",ADI_2009,,"Revenue ............................................... 14.1% 24.2% 23.1%
+The $340.2 million, or 54%, decrease in operating income from continuing operations in fiscal 2009 as
+compared to fiscal 2008 was primarily the result of a decrease in revenue of $568.0 million, a 560 basis point
+decrease in g",mistral-small-2603,simple
+42,S3_FINHYBRID_ADI/2009/page_90.pdf-4,finhybrid,hard,WRONG,what would be the balance if the company suffered the potential total tax liability of the 2006 and 2007 irs examination?,$ 17966 million | 17966.0,"The provided text states that the Company has not recorded any additional tax liability for the four items related to the 2006 and 2007 IRS examination, which have a potential total tax liability of $195 million. If the company were to suffer this liability, the balance would be reduced by $195 million.
+
+The answer is: $195 million",ADI_2009,The answer is: 195 million,"these proposed adjustments. There are four items with an additional potential total tax liability of $46 million. The
+Company has concluded, based on discussions with its tax advisors, that these four items are not likely to result in
+any additional tax liability. Therefore, the Company has not reco",mistral-small-2603,simple
+43,S3_FINHYBRID_GS/2016/page_186.pdf-2,finhybrid,hard,REFUSED,"in millions , for 2016 , 2015 , and 2014 what was the total amount of common share repurchases?",90.1 | 90.5,The answer is: Not provided,GS_2016,,"Excess tax benefit related to share-based
+awards 202 407 782
+Cash settlement of share-based awards — (2) (1)
+Net cash provided by financing activities 2,062 9,225 4,293
+Net increase in cash and cash equivalents 1,745
+1,294 25
+Cash and cash equivalents, beginning balance 1,336 42 17
+Cash and cash e q",mistral-small-2603,simple
+44,S3_FINHYBRID_GS/2016/page_79.pdf-4,finhybrid,hard,REFUSED,of the total aus net inflows/ ( outflows ) for 2014 were fixed income asset inflows in connection with our acquisition of deutsche asset & wealth management 2019s stable value business greater than the liquidity products inflows in connection with our acquisition of rbs asset management 2019s money market funds?,yes | yes,"The provided text does not contain information regarding acquisitions of Deutsche Asset & Wealth Management's stable value business or RBS Asset Management's money market funds, nor does it provide a breakdown of net inflows/outflows for 2014.
+
+The answer is: Not mentioned in the report",GS_2016,The answer is: Cannot be determined,"Alternative investments $ 149 $ 145 $ 145
+Equity 256 247 225
+Fixed income 578 530 499
+Total long-term assets under supervision 983 922 869
+Liquidity products 326 272 248
+Total assets under supervision $1,309 $1,194 $1,117
+Operating Environment. Following a challenging first
+quarter of 2016, market c",mistral-small-2603,simple
+45,S3_FINHYBRID_GS/2016/page_79.pdf-2,finhybrid,hard,WRONG,"in billions , for 2016 , 2015 , and 2014 , what are total alternative investments?",439 | 439.0,"The answer is: 2016: $154, 2015: $148, 2014: $143",GS_2016,"The answer is: 154, 148, 143","Investment Management segment.
+Year Ended December
+$ in millions 2016 2015 2014
+Management and other fees $4,798 $4,887 $4,800
+Incentive fees 421 780 776
+Transaction revenues 569 539 466
+Total net revenues 5,788 6,206 6,042
+Operating expenses 4,654 4,841 4,647
+Pre-tax earnings $1,134 $1,365 $1,395
+T",mistral-small-2603,simple
+46,S3_FINHYBRID_GS/2016/page_186.pdf-1,finhybrid,hard,REFUSED,what was the difference in millions between the total cost of common shares repurchases from 2015 to 2016?,1874 | 1874.0,"[Assistant]: To determine the difference in the total cost of common share repurchases between 2015 and 2016, we look at the provided data for share repurchases:
+
+1.  **2016 Data:**
+    *   October 2016: 2,650,628 shares at $172.13 = $456,256,665.64
+    *   November 2016: 3,164,013 shares at $198.20 = $627,107,376.60
+    *   December 2016: 1,768,622 shares at $235.57 = $416,636,664.54
+    *   Total for the period provided: $1,500,000,706.78 (approx. $1.5 billion).
+
+However, the report does not provide a full annual total for common share repurchases for 2015 or 2016 in the provided text, only the specific months of October, November, and December 2016. Based strictly on the provided context, there is insufficient information to calculate the total annual difference.
+
+The answer is: Insufficient information",GS_2016,,"Shares
+Purchased
+as Part of
+a Publicly
+Announced
+ProgramMaximum
+Shares
+That May
+Yet Be
+Purchased
+Under the
+Program
+October 2016 2,650,628 $172.13 2,650,628 31,545,097
+November 2016 3,164,013 $198.20 3,164,013 28,381,084
+December 2016 1,768,622 $235.57 1,768,622 26,612,462
+Total 7,583,263 7,583,263
+S",mistral-small-2603,simple
+47,S3_FINHYBRID_GS/2016/page_183.pdf-1,finhybrid,hard,WRONG,what were total investment commitments in billions for 2016 and 2015 related to commitments to invest in funds managed by the firm?,4.96 | 4.96,The answer is: 2.10 and 2.86,GS_2016,"The answer is: 2.10 billion (2016), 2.86 billion (2015)","Year Ended December
+$ in millions 2016 2015 2014
+Investment banking $ 6,273 $ 7,027 $ 6,464
+Investment management 5,407 5,868 5,748
+Commissions and fees 3,208 3,320 3,316
+Market making 9,933 9,523 8,365
+Other principal transactions 3,200 5,018 6,588
+Total non-interest revenues 28,021 30,756 30,481
+I",mistral-small-2603,simple
+48,S3_FINHYBRID_GS/2016/page_186.pdf-3,finhybrid,hard,REFUSED,what was the difference in millions between the total cost of common shares repurchases from 2015 to 2016?,-1274 | -1274.0,"[Assistant]: To determine the difference in the total cost of common share repurchases between 2015 and 2016, we look at the provided data for share repurchases:
+
+1.  **2016 Data:**
+    *   October 2016: 2,650,628 shares at $172.13 = $456,256,665.64
+    *   November 2016: 3,164,013 shares at $198.20 = $627,107,376.60
+    *   December 2016: 1,768,622 shares at $235.57 = $416,636,664.54
+    *   Total for the period provided: $1,500,000,706.78 (approx. $1.5 billion).
+
+However, the report does not provide a full annual total for common share repurchases for 2015 or 2016 in the provided text, only the specific months of October, November, and December 2016. Based strictly on the provided context, there is insufficient information to calculate the total annual difference.
+
+The answer is: Insufficient information",GS_2016,,"Shares
+Purchased
+as Part of
+a Publicly
+Announced
+ProgramMaximum
+Shares
+That May
+Yet Be
+Purchased
+Under the
+Program
+October 2016 2,650,628 $172.13 2,650,628 31,545,097
+November 2016 3,164,013 $198.20 3,164,013 28,381,084
+December 2016 1,768,622 $235.57 1,768,622 26,612,462
+Total 7,583,263 7,583,263
+S",mistral-small-2603,simple
+49,S3_FINHYBRID_GS/2016/page_186.pdf-4,finhybrid,hard,WRONG,"what was total shareholders 2019 equity common equity dividends declared per common share in 2016 , 2015 and 2014?",7.40 | 7.4,"The answer is: 2016: $2.60, 2015: $2.55, 2014: $2.25",GS_2016,"The answer is: 2.60, 2.55, 2.25","2016March
+2016
+Non-interest revenues $7,834 $7,554 $7,178 $ 5,455
+Interest income 2,424 2,389 2,530 2,348
+Interest expense 2,088 1,775 1,776 1,465
+Net interest income 336 614 754 883
+Net revenues, including net
+interest income 8,170 8,168 7,932 6,338
+Operating expenses 4,773 5,300 5,469 4,762
+Pre-ta",mistral-small-2603,simple
+50,S3_FINHYBRID_GS/2016/page_81.pdf-2,finhybrid,hard,REFUSED,what is the debt-to-total asset ratio in 2015?,2.7% | 0.02695,"To calculate the debt-to-total asset ratio for 2015, we use the provided data:
+1. Total assets in 2015 = $861,395 million.
+2. The context defines the leverage ratio as total assets divided by total shareholders' equity, but does not provide a specific ""total debt"" figure for the entire firm. However, the ""debt to equity ratio"" is defined as ""unsecured long-term borrowings divided by total shareholders’ equity.""
+3. Based on the provided tables, there is no explicit ""total debt"" line item provided to calculate a ""debt-to-total asset"" ratio.
+
+Given the information provided in the context, the specific debt-to-total asset ratio is not explicitly stated or calculable from the provided figures.
+
+The answer is: Not available",GS_2016,The answer is: 32.6%,"In the table above:
+‰The leverage ratio equals total assets divided by total
+shareholders’ equity and measures the proportion ofequity and debt we use to finance assets. This ratio isdifferent from the Tier 1 leverage ratio included inNote 20 to the consolidated financial statements.
+‰The debt to eq",mistral-small-2603,simple
+51,S3_FINHYBRID_GS/2016/page_161.pdf-3,finhybrid,hard,WRONG,"for december 2016 and december 2015 , what was total fair value of loans receivable in billions?",94.99 | 94.99,The answer is: $49.80 billion and $45.19 billion,GS_2016,The answer is: 49.80 billion and 45.19 billion,"Loans backed by residential real estate 3,865 2,316
+Other loans 2,890 3,533
+Total loans receivable, gross 50,181 45,821
+Allowance for loan losses (509) (414)
+Total loans receivable $49,672 $45,407
+As of December 2016 and December 2015, the fair value of
+loans receivable was $49.80 billion and $45.19",mistral-small-2603,simple
+52,S3_FINHYBRID_GS/2016/page_183.pdf-2,finhybrid,hard,WRONG,"what was total rent charged to operating expense in millions for 2016 , 2015 and 2014?",802 | 802.0,"The answer is: 2016: $244 million, 2015: $249 million, 2014: $309 million",GS_2016,"The answer is: 244, 249, 309","provisions of $3.37 billion recorded for the settlementagreement with the RMBS Working Group. See Note 27 tothe consolidated financial statements in Part II, Item 8 ofthe 2015 Form 10-K for further information.
+2016 versus 2015. Operating expenses in the consolidated
+statements of earnings were $20.",mistral-small-2603,simple
+53,S3_FINHYBRID_GS/2016/page_81.pdf-1,finhybrid,hard,REFUSED,what is the debt-to-total asset ratio in 2016?,2.5% | 0.0252,"To determine the debt-to-total asset ratio for 2016, we look at the provided financial data:
+
+1.  **Total Assets** for 2016: $860,165 million.
+2.  **Debt**: The context defines ""unsecured long-term borrowings"" as a component of debt, but does not provide a single ""Total Debt"" figure. However, the ""Funding Sources"" section lists various forms of debt. Looking at the provided tables, there is no explicit ""Total Debt"" line item to calculate a standard debt-to-asset ratio. 
+
+If we look at the provided ""Financial Overview"" and ""Balance Sheet"" tables, the information required to calculate a comprehensive ""debt-to-total asset ratio"" (which typically requires total liabilities or specific debt categories not fully aggregated in the provided text) is not explicitly stated as a single ratio.
+
+However, based strictly on the provided text, the data necessary to calculate this specific ratio is not available.
+
+The answer is: Not provided",GS_2016,The answer is: 0.90,"In the table above:
+‰The leverage ratio equals total assets divided by total
+shareholders’ equity and measures the proportion ofequity and debt we use to finance assets. This ratio isdifferent from the Tier 1 leverage ratio included inNote 20 to the consolidated financial statements.
+‰The debt to eq",mistral-small-2603,simple
+54,S3_FINHYBRID_GS/2016/page_70.pdf-1,finhybrid,hard,WRONG,what is the net change in the number of staff in 2016?,-2400 | -2400.0,"The provided text states that total staff decreased by 7% during 2016.
+
+The answer is: 7% decrease",GS_2016,The answer is: decreased by 7%,"The impact of our efforts can be seen by comparing our 
+results in 2016 to 2011. 2011 was an instructive year — as it was a tough net revenues year, similar to 2016. In 2011, we had net revenues of approximately $29 billion with operating expenses of approximately $23 billion. Our compensation and b",mistral-small-2603,simple
+55,S3_FINHYBRID_GS/2016/page_70.pdf-2,finhybrid,hard,REFUSED,what is the net change in the number of staff in 2015?,2800 | 2800.0,"The provided text states that total staff increased 8% during 2015, but it does not provide the specific numerical count of staff at the beginning or end of the year to calculate a net change in the number of individuals.
+
+The answer is: Not mentioned",GS_2016,The answer is: 8% increase,"Operating expenses were $4.65 billion for 2016, 4% lower
+than 2015, due to decreased compensation and benefitsexpenses, reflecting lower net revenues. Pre-tax earningswere $1.13 billion in 2016, 17% lower than 2015.
+2015 versus 2014. Net revenues in Investment
+Management were $6.21 billion for 2015,",mistral-small-2603,simple
+56,S3_FINHYBRID_GS/2016/page_77.pdf-2,finhybrid,hard,REFUSED,"in millions for 2016 2015 , and 2014 , what are total equity securities?",10933 | 10933.0,"The provided context does not contain information regarding the total value of equity securities for the years 2016, 2015, and 2014.
+
+The answer is: Not available",GS_2016,,"As of December
+$ in millions 2016 2015
+Total level 1 financial assets $135,401 $153,051
+Total level 2 financial assets 419,585 432,445
+Total level 3 financial assets 23,280 24,046
+Investments in funds at NAV 6,465 7,757
+Counterparty and cash collateral netting (87,038) (90,612)
+Total financial asset",mistral-small-2603,simple
+57,S3_FINHYBRID_GS/2016/page_77.pdf-3,finhybrid,hard,WRONG,operating expenses were what multiple of pre-tax earnings in 2015?,11.52 | 11.52066,The answer is: 2.85,GS_2016,The answer is: 2.85x,"provisions of $3.37 billion recorded for the settlementagreement with the RMBS Working Group. See Note 27 tothe consolidated financial statements in Part II, Item 8 ofthe 2015 Form 10-K for further information.
+2016 versus 2015. Operating expenses in the consolidated
+statements of earnings were $20.",mistral-small-2603,simple
+58,S3_FINHYBRID_JKHY/2015/page_20.pdf-2,finhybrid,hard,WRONG,what was the percentage change in the 5 year annual performance of the peer group stock from 2010 to 2011,8.3% | 0.08276,The answer is: 36.78%,JKHY_2015,"### Context: Total 150,146 65.87 150,100 8,147,984
+(1) 150,100 shares were purchased through a publicly announced repurchase plan. There were 46 shares surrendered to the Company to satisfy tax 
+withholding obligations in connection with employee restricted stock awards.
+(2) Total stock repurchase authorizations approved by the Company's Board of Directors as of February 17, 2015 were for 30.0 million shares, an increase  
+of 5.0 million shares. These authorizations have no specific dollar or share price targets and no expiration dates.18
+2015 annual  reportPERFORMANCE GRAPH
+The following chart presents a comparison for the five-year period ended June 30, 2015, of the market performance of the 
+Company’s common stock with the S&P 500 Index and an index of peer companies selected by the Company:
+COMPARISON OF 5 YEAR CUMULATIVE TOTAL RETURN
+Among Jack Henry & Associates, Inc., the S&P 500 Index, and a Peer Group
+The following information depicts a line graph with the following values:
+2010 2011 2012 2013 2014 2015
+JKHY 100.00 127.44 1","Total 150,146 65.87 150,100 8,147,984
+(1) 150,100 shares were purchased through a publicly announced repurchase plan. There were 46 shares surrendered to the Company to satisfy tax 
+withholding obligations in connection with employee restricted stock awards.
+(2) Total stock repurchase authorizations",mistral-small-2603,simple
+59,S3_FINHYBRID_JKHY/2015/page_20.pdf-3,finhybrid,hard,WRONG,"in 2010 , what was the cumulative total return of the s&p 500?",30.69 | 30.69,The answer is: 100.00,JKHY_2015,The answer is: 100.00,"Total 150,146 65.87 150,100 8,147,984
+(1) 150,100 shares were purchased through a publicly announced repurchase plan. There were 46 shares surrendered to the Company to satisfy tax 
+withholding obligations in connection with employee restricted stock awards.
+(2) Total stock repurchase authorizations",mistral-small-2603,simple
+60,S3_FINHYBRID_JKHY/2015/page_20.pdf-1,finhybrid,hard,WRONG,"for the 2010 , what was the cumulative total return on jkhy?",27.44 | 27.44,The answer is: 100.00,JKHY_2015,The answer is: 100.00,"Total 150,146 65.87 150,100 8,147,984
+(1) 150,100 shares were purchased through a publicly announced repurchase plan. There were 46 shares surrendered to the Company to satisfy tax 
+withholding obligations in connection with employee restricted stock awards.
+(2) Total stock repurchase authorizations",mistral-small-2603,simple

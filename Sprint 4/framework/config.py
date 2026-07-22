@@ -62,6 +62,18 @@ MODELS = {
         "params": "671B",
         "provider": "deepseek",
     },
+    "nemotron-openrouter": {
+        "openrouter_id": "nvidia/nemotron-3-ultra-550b-a55b",
+        "type": "open",
+        "params": "550B",
+        "provider": "openrouter",
+    },
+    "mistral-small-2603": {
+        "openrouter_id": "mistralai/mistral-small-2603",
+        "type": "open",
+        "params": "22B",
+        "provider": "openrouter",
+    },
 }
 
 # ── Dataset → metric mapping (from UDA paper) ────────────────────────────────
