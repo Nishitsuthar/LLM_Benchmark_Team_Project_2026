@@ -370,20 +370,11 @@ function mCell(d,k){
   var c=d[k+'c'],e=d[k+'e'];
   var raw=d[k+'a']||'';
   var preview=esc(tr(raw.replace(/The answer is:\s*/i,'').replace(/\[Assistant\]:\s*/i,''),95));
-  var uid=k+'_'+d.qid.slice(-8);
   return '<div class="mc">'
     +'<div class="ms">'+dot(c,e)+' '+sb(c,e)+'</div>'
-    +(raw?'<div class="ap" id="ap'+uid+'">'+preview+'</div>'
-         +'<button class="exb" onclick="event.stopPropagation();tog(this)" data-target="ap'+uid+'">&#9662; more</button>'
+    +(raw?'<div class="ap">'+preview+'</div>'
         :'<span style="color:var(--mut);font-size:.67rem">&mdash;</span>')
     +'</div>';
-}
-
-function tog(btn){
-  var el=document.getElementById(btn.dataset.target);
-  if(!el) return;
-  el.classList.toggle('open');
-  btn.innerHTML=el.classList.contains('open')?'&#9652; less':'&#9662; more';
 }
 
 function renderTable(){
