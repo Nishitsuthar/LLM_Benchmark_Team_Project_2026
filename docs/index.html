@@ -393,9 +393,9 @@ function renderTable(){
       +'<td><span class="b '+(DC[d.diff]||'')+'">'+d.diff+'</span></td>'
       +'<td><span class="pbadge">'+d.prompt+'</span></td>'
       +'<td style="font-family:monospace;font-size:.7rem;color:var(--ok);max-width:100px;word-break:break-all">'+esc(d.gt)+'</td>'
-      +'<td style="min-width:160px" onclick="event.stopPropagation()">'+mCell(d,'g')+'</td>'
-      +'<td style="min-width:160px" onclick="event.stopPropagation()">'+mCell(d,'n')+'</td>'
-      +'<td style="min-width:160px" onclick="event.stopPropagation()">'+mCell(d,'m')+'</td>'
+      +'<td style="min-width:160px">'+mCell(d,'g')+'</td>'
+      +'<td style="min-width:160px">'+mCell(d,'n')+'</td>'
+      +'<td style="min-width:160px">'+mCell(d,'m')+'</td>'
       +'</tr>';
   }).join('');
 }
