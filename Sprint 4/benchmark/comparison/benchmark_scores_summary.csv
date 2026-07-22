@@ -1,0 +1,10 @@
+model,dataset,total,answered,answer_rate_pct,soft_correct,soft_accuracy_pct
+Gemini Flash-Lite,tathybrid,29,28,96.6,0,0.0
+Gemini Flash-Lite,finhybrid,31,31,100.0,0,0.0
+Gemini Flash-Lite,music_structured,16,16,100.0,0,0.0
+Nemotron-550B,tathybrid,29,29,100.0,2,6.9
+Nemotron-550B,finhybrid,31,30,96.8,0,0.0
+Nemotron-550B,music_structured,16,16,100.0,0,0.0
+Mistral Small-2603,tathybrid,29,24,82.8,0,0.0
+Mistral Small-2603,finhybrid,31,19,61.3,0,0.0
+Mistral Small-2603,music_structured,16,9,56.2,0,0.0

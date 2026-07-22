@@ -1,0 +1,483 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8"/>
+<meta name="viewport" content="width=device-width,initial-scale=1"/>
+<title>LLM Benchmark Dashboard — Sprint 4</title>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet"/>
+<script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.0/dist/chart.umd.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/html2pdf.js/0.10.1/html2pdf.bundle.min.js"></script>
+<style>
+:root{
+  --bg:#f9f9f7;--surf:#fcfcfb;--surf2:#f0efec;--bdr:#e1e0d9;
+  --txt:#0b0b0b;--mut:#898781;--acc:#4a3aa7;--acc2:#1baf7a;
+  /* validated light-surface categorical slots */
+  --gem:#2a78d6;--nem:#1baf7a;--mis:#eda100;
+  --ok:#006300;--err:#d03b3b;--warn:#ec835a;--empty:#898781;
+  --r:12px;
+}
+*{box-sizing:border-box;margin:0;padding:0}
+body{background:var(--bg);color:var(--txt);font-family:'Inter',system-ui,sans-serif}
+a{color:var(--acc)}
+
+.topbar{background:rgba(252,252,251,.96);border-bottom:1px solid var(--bdr);
+  padding:13px 2%;display:flex;align-items:center;justify-content:space-between;
+  position:sticky;top:0;z-index:100;backdrop-filter:blur(10px)}
+.topbar-l h1{font-size:1rem;font-weight:700;
+  background:linear-gradient(135deg,var(--acc),var(--acc2));
+  -webkit-background-clip:text;-webkit-text-fill-color:transparent}
+.topbar-l .sub{font-size:.7rem;color:var(--mut);margin-top:2px}
+.topbar-r{display:flex;gap:8px}
+.btn{background:linear-gradient(135deg,var(--acc),#2a78d6);color:#fff;border:none;
+  padding:7px 16px;border-radius:8px;cursor:pointer;font-size:.78rem;font-weight:600;
+  display:inline-flex;align-items:center;gap:5px;transition:opacity .2s;font-family:inherit}
+.btn:hover{opacity:.82}
+.btn-sm{background:var(--surf2);color:var(--txt);border:1px solid var(--bdr);
+  padding:6px 12px;border-radius:7px;cursor:pointer;font-size:.75rem;font-family:inherit;
+  transition:border-color .2s}
+.btn-sm:hover{border-color:var(--acc);color:var(--acc)}
+
+main{padding:16px 2%;max-width:100%;margin:0 auto}
+.sec-title{font-size:.85rem;font-weight:700;color:var(--txt);
+  margin:24px 0 12px;padding-bottom:7px;border-bottom:1px solid var(--bdr);
+  display:flex;align-items:baseline;gap:8px}
+.sec-title span{font-size:.7rem;color:var(--mut);font-weight:400}
+
+/* KPIs */
+.kpi-row{display:grid;grid-template-columns:repeat(auto-fit,minmax(140px,1fr));gap:12px;margin-bottom:24px}
+.kpi{background:var(--surf);border:1px solid var(--bdr);border-radius:var(--r);
+  padding:15px 17px;transition:border-color .15s}
+.kpi:hover{border-color:var(--acc)}
+.kpi .v{font-size:1.8rem;font-weight:700;line-height:1.1}
+.kpi .l{font-size:.67rem;color:var(--mut);margin-top:4px;text-transform:uppercase;letter-spacing:.7px}
+.kg .l::before{content:'';display:inline-block;width:7px;height:7px;border-radius:50%;background:var(--gem);margin-right:4px;vertical-align:middle}
+.kn .l::before{content:'';display:inline-block;width:7px;height:7px;border-radius:50%;background:var(--nem);margin-right:4px;vertical-align:middle}
+.km .l::before{content:'';display:inline-block;width:7px;height:7px;border-radius:50%;background:var(--mis);margin-right:4px;vertical-align:middle}
+.kt .v{color:var(--acc)} .kf .v{color:var(--err)}
+
+/* Charts */
+.chart-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(340px,1fr));gap:16px;margin-bottom:24px}
+.cc{background:var(--surf);border:1px solid var(--bdr);border-radius:var(--r);padding:18px}
+.cc h3{font-size:.7rem;font-weight:600;color:var(--mut);text-transform:uppercase;
+  letter-spacing:.7px;margin-bottom:12px}
+.cw{position:relative;height:240px}
+
+/* Filters */
+.filters{background:var(--surf);border:1px solid var(--bdr);border-radius:var(--r);
+  padding:13px 16px;margin-bottom:14px;display:flex;flex-wrap:wrap;gap:9px;align-items:center}
+.fg{display:flex;align-items:center;gap:5px}
+.fg label{font-size:.72rem;color:var(--mut);white-space:nowrap}
+select,input[type=text]{background:var(--surf2);color:var(--txt);
+  border:1px solid var(--bdr);border-radius:6px;padding:5px 9px;
+  font-size:.75rem;font-family:inherit;outline:none;cursor:pointer}
+select:focus,input[type=text]:focus{border-color:var(--acc)}
+#fsearch{width:190px}
+.vsep{width:1px;height:20px;background:var(--bdr);flex-shrink:0}
+.rc{margin-left:auto;font-size:.72rem;color:var(--mut)}
+
+/* Table */
+.tw{overflow-x:auto;border-radius:var(--r);border:1px solid var(--bdr)}
+table{width:100%;border-collapse:collapse;font-size:.75rem}
+thead{background:var(--surf2)}
+th{padding:9px 12px;text-align:left;font-weight:600;color:var(--mut);
+  white-space:nowrap;border-bottom:1px solid var(--bdr);
+  font-size:.67rem;text-transform:uppercase;letter-spacing:.6px}
+td{padding:8px 12px;border-bottom:1px solid var(--bdr);vertical-align:top}
+tr:last-child td{border-bottom:none}
+tr:hover td{background:rgba(74,58,167,.04);cursor:pointer}
+
+/* Badges */
+.b{display:inline-block;padding:2px 7px;border-radius:20px;font-size:.65rem;font-weight:600;white-space:nowrap}
+.bw{background:rgba(208,59,59,.1);color:#b02020}
+.br{background:rgba(236,131,90,.15);color:#a04000}
+.bn{background:rgba(137,135,129,.12);color:#52514e}
+.bh{background:rgba(74,58,167,.1);color:#3a2a8a}
+.bm{background:rgba(27,175,122,.1);color:#0d6b48}
+.bx{background:rgba(224,68,128,.1);color:#a0205a}
+.bok{background:rgba(0,99,0,.1);color:#005500}
+.ber{background:rgba(208,59,59,.1);color:#b02020}
+.bem{background:rgba(137,135,129,.1);color:#52514e}
+.chip{display:inline-block;padding:2px 7px;border-radius:5px;font-size:.64rem;
+  font-weight:500;background:rgba(74,58,167,.08);color:#3a2a8a;white-space:nowrap}
+.pbadge{display:inline-block;padding:2px 7px;border-radius:5px;font-size:.64rem;
+  background:rgba(27,175,122,.08);color:#0d6b48;border:1px solid rgba(27,175,122,.2)}
+.dsbadge{display:inline-block;padding:2px 7px;border-radius:5px;font-size:.65rem;
+  background:rgba(74,58,167,.08);color:#3a2a8a}
+
+/* Model cell */
+.mc{display:flex;flex-direction:column;gap:2px}
+.ms{display:flex;align-items:center;gap:4px;font-size:.68rem}
+.dot{width:6px;height:6px;border-radius:50%;flex-shrink:0}
+.dok{background:var(--ok)} .der{background:var(--err)} .dem{background:var(--empty)}
+.ap{font-size:.67rem;color:var(--mut);line-height:1.4;max-height:38px;overflow:hidden}
+.ap.open{max-height:500px}
+.exb{color:var(--acc);font-size:.64rem;cursor:pointer;background:none;
+  border:none;padding:0;font-family:inherit;margin-top:1px}
+
+/* Modal */
+.mbg{display:none;position:fixed;inset:0;background:rgba(0,0,0,.45);
+  z-index:200;align-items:center;justify-content:center;padding:16px}
+.mbg.open{display:flex}
+.mdl{background:var(--surf);border:1px solid var(--bdr);border-radius:16px;
+  padding:24px 26px;max-width:800px;width:100%;max-height:88vh;overflow-y:auto;
+  box-shadow:0 8px 40px rgba(0,0,0,.15)}
+.mhdr{display:flex;justify-content:space-between;align-items:flex-start;gap:10px;margin-bottom:14px}
+.mhdr h2{font-size:.9rem;line-height:1.5;color:var(--txt);flex:1}
+.mclose{background:none;border:none;color:var(--mut);font-size:1.1rem;
+  cursor:pointer;padding:0;flex-shrink:0;font-family:inherit}
+.mclose:hover{color:var(--txt)}
+.mtags{display:flex;gap:6px;flex-wrap:wrap;margin-bottom:12px}
+.msec{margin-bottom:10px}
+.msec h4{font-size:.67rem;color:var(--mut);text-transform:uppercase;letter-spacing:.6px;margin-bottom:4px}
+.gtbox{background:var(--surf2);border-radius:7px;padding:8px 12px;
+  font-family:monospace;font-size:.78rem;color:var(--ok);word-break:break-all}
+.mblock{background:var(--surf2);border-radius:8px;padding:10px 12px;margin-bottom:7px}
+.mbn{font-size:.68rem;font-weight:700;margin-bottom:5px;display:flex;align-items:center;gap:5px}
+.mbt{font-size:.75rem;line-height:1.6;color:var(--txt);white-space:pre-wrap;word-break:break-word}
+
+@media(max-width:700px){
+  main{padding:12px}
+  .topbar{padding:10px 14px}
+  .chart-grid{grid-template-columns:1fr}
+  .kpi-row{grid-template-columns:repeat(2,1fr)}
+  .filters{flex-direction:column;align-items:stretch}
+  #fsearch{width:100%}
+  .vsep{display:none}
+}
+</style>
+</head>
+<body>
+
+<div class="topbar">
+  <div class="topbar-l">
+    <h1>&#9889; LLM Benchmark Dashboard &mdash; Sprint 4</h1>
+    <div class="sub">76 failure questions &middot; Gemini Flash-Lite vs Nemotron-550B vs Mistral Small-2603 &middot; Simple (Zero-shot) &middot; July 2026</div>
+  </div>
+  <div class="topbar-r">
+    <button class="btn-sm" onclick="window.print()">&#128438; Print</button>
+    <button class="btn" onclick="dlPDF()">&#8595; Download PDF</button>
+  </div>
+</div>
+
+<main id="rpt">
+
+<div class="kpi-row" id="kpiRow"></div>
+
+<div class="sec-title">Performance Overview <span>simple zero-shot prompt across all 76 failure questions</span></div>
+<div class="chart-grid">
+  <div class="cc"><h3>Answer Rate by Model</h3><div class="cw"><canvas id="cAR"></canvas></div></div>
+  <div class="cc"><h3>Accuracy (Soft-Match)</h3><div class="cw"><canvas id="cAcc"></canvas></div></div>
+  <div class="cc"><h3>Failures by Category</h3><div class="cw"><canvas id="cCat"></canvas></div></div>
+  <div class="cc"><h3>Questions by Dataset</h3><div class="cw"><canvas id="cDs"></canvas></div></div>
+  <div class="cc"><h3>Failure Type Split</h3><div class="cw"><canvas id="cFT"></canvas></div></div>
+  <div class="cc"><h3>Performance by Difficulty</h3><div class="cw"><canvas id="cDiff"></canvas></div></div>
+</div>
+
+<div class="sec-title">Question-Level Results <span>click any row to see full answers</span></div>
+<div class="filters">
+  <div class="fg"><label>Dataset</label>
+    <select id="fDs" onchange="filt()">
+      <option value="">All Datasets</option>
+      <option value="tathybrid">TatHybrid</option>
+      <option value="finhybrid">FinHybrid</option>
+      <option value="music_structured">Music Structured</option>
+    </select>
+  </div>
+  <div class="vsep"></div>
+  <div class="fg"><label>Category</label>
+    <select id="fCat" onchange="filt()"><option value="">All Categories</option></select>
+  </div>
+  <div class="vsep"></div>
+  <div class="fg"><label>Difficulty</label>
+    <select id="fDiff" onchange="filt()">
+      <option value="">All</option>
+      <option value="hard">Hard</option>
+      <option value="medium">Medium</option>
+      <option value="extremely hard">Extremely Hard</option>
+    </select>
+  </div>
+  <div class="vsep"></div>
+  <div class="fg"><label>Result</label>
+    <select id="fMod" onchange="filt()">
+      <option value="">All</option>
+      <option value="all3">All 3 Failed</option>
+      <option value="gfail">Gemini Failed</option>
+      <option value="nfail">Nemotron Failed</option>
+      <option value="mfail">Mistral Failed</option>
+      <option value="anyok">Any Correct</option>
+    </select>
+  </div>
+  <div class="vsep"></div>
+  <input id="fsearch" type="text" placeholder="Search questions..." oninput="filt()"/>
+  <span class="rc" id="rc"></span>
+  <button class="btn-sm" onclick="resetF()" style="margin-left:auto">Reset</button>
+</div>
+
+<div class="tw">
+<table>
+  <thead><tr>
+    <th>#</th><th>Question</th><th>Category</th><th>Dataset</th>
+    <th>Difficulty</th><th>Prompt</th><th>Ground Truth</th>
+    <th style="color:var(--mut)"><span style="display:inline-block;width:8px;height:8px;border-radius:50%;background:var(--gem);margin-right:5px;vertical-align:middle"></span>Gemini Flash-Lite</th>
+    <th style="color:var(--mut)"><span style="display:inline-block;width:8px;height:8px;border-radius:50%;background:var(--nem);margin-right:5px;vertical-align:middle"></span>Nemotron-550B</th>
+    <th style="color:var(--mut)"><span style="display:inline-block;width:8px;height:8px;border-radius:50%;background:var(--mis);margin-right:5px;vertical-align:middle"></span>Mistral Small-2603</th>
+  </tr></thead>
+  <tbody id="tb"></tbody>
+</table>
+</div>
+
+</main>
+
+<div class="mbg" id="modal" onclick="closeMBG(event)">
+  <div class="mdl">
+    <div class="mhdr">
+      <h2 id="mT"></h2>
+      <button class="mclose" onclick="document.getElementById('modal').classList.remove('open')">&#10005;</button>
+    </div>
+    <div id="mB"></div>
+  </div>
+</div>
+
+<script>
+var DATA = [{"qid": "S3_TATHYBRID_cf649b7b26933abd29572697283fbf67", "ds": "tathybrid", "diff": "hard", "ft": "WRONG", "cat": "Set operations / Decade comparison", "q": "What was the change in Accumulated amortization from 2018 to 2019?", "gt": "-1073", "prompt": "Simple (Zero-shot)", "ga": "The answer is: 3,633", "na": "The user is asking for the change in Accumulated amortization from 2018 to 2019. I need to look at the intangible assets table in Note 10. The table shows \"Accumulated Amortization\" for December 31, 2019 and December 31, 2018 for each category. I need to calculate the total change across all categor...", "ma": "The answer is: -3,529", "gc": 0, "nc": 0, "mc": 0, "ge": 0, "ne": 0, "me": 0}, {"qid": "S3_TATHYBRID_f14766d60aaa9fc5ad134af01d563db4", "ds": "tathybrid", "diff": "hard", "ft": "REFUSED", "cat": "Set operations / Decade comparison", "q": "What was the amount in escrow as restricted cash at 2019 and 2018 respectively?", "gt": "72,000, 140,000", "prompt": "Simple (Zero-shot)", "ga": "[Assistant]: The provided text does not contain information regarding the amount in escrow as restricted cash for 2019 and 2018.\n\nThe answer is: Not mentioned", "na": "The user is asking about the amount in escrow as restricted cash for 2019 and 2018. I need to search the provided context for mentions of \"escrow\", \"restricted cash\", or similar terms.\n\nLooking through the context, I see financial statements, cash flow information, notes payable, and other financial...", "ma": "The answer is: Not available", "gc": 0, "nc": 0, "mc": 0, "ge": 0, "ne": 0, "me": 0}, {"qid": "S3_TATHYBRID_4a97a3a079b9d171bb3e3c05a5d558fa", "ds": "tathybrid", "diff": "hard", "ft": "WRONG", "cat": "Set operations / Decade comparison", "q": "What was the Compensation and related benefits in 2019 and 2018 respectively?", "gt": "$3,247, $949", "prompt": "Simple (Zero-shot)", "ga": "The answer is: 2019: $3,489,000; 2018: $1,494,000", "na": "The answer is: 2019: $3,489,000; 2018: $1,494,000", "ma": "The answer is: 3,489 and 1,494", "gc": 0, "nc": 0, "mc": 0, "ge": 0, "ne": 0, "me": 0}, {"qid": "S3_TATHYBRID_f3f36466e3595177dee05fd432122387", "ds": "tathybrid", "diff": "hard", "ft": "REFUSED", "cat": "Others", "q": "What is the value of real estate taxes in 2018?", "gt": "398", "prompt": "Simple (Zero-shot)", "ga": "The provided report does not contain information regarding the value of real estate taxes for 2018.\n\nThe answer is: Not available", "na": "The answer is: Not specified in the provided financial statements. Real estate taxes are not listed as a separate line item in the consolidated statements of operations or notes for 2018.", "ma": "The context does not explicitly provide a value for real estate taxes in 2018", "gc": 0, "nc": 0, "mc": 0, "ge": 0, "ne": 0, "me": 0}, {"qid": "S3_TATHYBRID_75006d911eb541bafc8bfdfe43399b83", "ds": "tathybrid", "diff": "hard", "ft": "REFUSED", "cat": "Set operations / Decade comparison", "q": "What is the average real estate taxes for 2018 and 2019?", "gt": "398", "prompt": "Simple (Zero-shot)", "ga": "The provided report does not contain information regarding real estate taxes for 2018 and 2019.\n\nThe answer is: Not available", "na": "The provided financial statements and notes do not contain a specific line item or disclosure for \"real estate taxes\" or \"property taxes\" for 2018 and 2019. The operating expenses are aggregated into categories such as Selling expenses and General and administrative expenses without a breakdown for ...", "ma": "The answer is: 4,234", "gc": 0, "nc": 0, "mc": 0, "ge": 0, "ne": 0, "me": 0}, {"qid": "S3_TATHYBRID_4b33b977256836fc6c3fbda16ba5844d", "ds": "tathybrid", "diff": "hard", "ft": "REFUSED", "cat": "Set operations / Decade comparison", "q": "What is the change in payroll and incentive compensation between 2018 and 2019?", "gt": "1072", "prompt": "Simple (Zero-shot)", "ga": "The provided report does not contain a specific line item for total \"payroll\" or a consolidated figure for \"incentive compensation\" that allows for a direct calculation of the change between 2018 and 2019. While the report details specific stock-based compensation expenses for various plans (e.g., 2...", "na": "The user is asking for the change in payroll and incentive compensation between 2018 and 2019. I need to find information about payroll and incentive compensation in the provided text.\n\nLooking through the context, I see several mentions of compensation:\n1. Stock-based compensation expenses for vari...", "ma": "The change in stock-based incentive compensation between 2018 and 2019 is $109 - $47 = $62.\nThe answer is: 62", "gc": 0, "nc": 0, "mc": 0, "ge": 0, "ne": 0, "me": 0}, {"qid": "S3_TATHYBRID_5b53e0ca06203f7703b6c4f8057e3c87", "ds": "tathybrid", "diff": "hard", "ft": "WRONG", "cat": "Conditional filtering / Statistical outlier handling", "q": "What is the percentage constitution of net sales from Frozen Kefir among the total net sales in 2019?", "gt": "1.73", "prompt": "Simple (Zero-shot)", "ga": "The answer is: 2%", "na": "The answer is: 2%", "ma": "The answer is: 2%", "gc": 0, "nc": 0, "mc": 0, "ge": 0, "ne": 0, "me": 0}, {"qid": "S3_TATHYBRID_077fac86dd9c8cd78b834fbdbe0885be", "ds": "tathybrid", "diff": "hard", "ft": "REFUSED", "cat": "Set operations / Decade comparison", "q": "What is the percentage change in ingredients between 2018 and 2019?", "gt": "22.91", "prompt": "Simple (Zero-shot)", "ga": "The answer is: Not mentioned", "na": "The answer is: Information not provided in the context", "ma": "The answer is: Not available", "gc": 0, "nc": 0, "mc": 0, "ge": 0, "ne": 0, "me": 0}, {"qid": "S3_TATHYBRID_4cb79dfe572f814f50c02a61639f2094", "ds": "tathybrid", "diff": "hard", "ft": "REFUSED", "cat": "Set operations / Decade comparison", "q": "What is the value of recipes in 2018 and 2019 respectively?", "gt": "$ 44, $ 44", "prompt": "Simple (Zero-shot)", "ga": "The provided text does not contain information regarding the value of recipes. The financial tables provided relate to a share repurchase program.\n\nThe answer is: Not mentioned", "na": "The provided context does not contain any information about the \"value of recipes\" for 2018 or 2019. The text includes financial data such as net sales, gross profit, expenses, share repurchase details, and product descriptions, but no mention of recipe valuations.\n\nThe answer is: Not mentioned in t...", "ma": "The answer is: Not available", "gc": 0, "nc": 0, "mc": 0, "ge": 0, "ne": 0, "me": 0}, {"qid": "S3_TATHYBRID_7622984778061cb2468425d5534a99e6", "ds": "tathybrid", "diff": "hard", "ft": "NO ANSWER", "cat": "Set operations / Decade comparison", "q": "What is the change in the value of customer relationships between 2018 and 2019?", "gt": "0", "prompt": "Simple (Zero-shot)", "ga": "", "na": "The user is asking about the change in the value of customer relationships between 2018 and 2019. I need to look through the provided context to find information about customer relationships, likely in the intangible assets or goodwill section.\n\nLooking at the context, I see Note 5 \u2013 Goodwill and In...", "ma": "", "gc": 0, "nc": 0, "mc": 0, "ge": 1, "ne": 0, "me": 1}, {"qid": "S3_TATHYBRID_3ead03b4712e86e15034c9fabc0f1b9b", "ds": "tathybrid", "diff": "hard", "ft": "WRONG", "cat": "Set operations / Decade comparison", "q": "What is the average value of trade names for both 2018 and 2019?", "gt": "2248", "prompt": "Simple (Zero-shot)", "ga": "To determine the average value of trade names for 2018 and 2019, we look at the \"Issuer Purchases of Equity Securities\" table provided in the context, which lists the \"Average price paid per share\" for the share repurchase programs during those years.\n\n1.  For Fiscal Year 2018, the average price pai...", "na": "The answer is: Information not available in the provided context.", "ma": "The answer is: Not available", "gc": 0, "nc": 0, "mc": 0, "ge": 0, "ne": 0, "me": 0}, {"qid": "S3_TATHYBRID_30e01bc5c375a0ca44ab4c0dd14e5e1e", "ds": "tathybrid", "diff": "hard", "ft": "REFUSED", "cat": "Set operations / Decade comparison", "q": "What is the value of vehicles in 2018 and 2019 respectively?", "gt": "937, 778", "prompt": "Simple (Zero-shot)", "ga": "The provided report does not contain information regarding the value of vehicles.\n\nThe answer is: Not available", "na": "The provided context does not contain information about the value of vehicles for 2018 and 2019. The financial statements show categories like \"Property, plant and equipment, net\" but do not break out vehicle values separately.\n\nThe answer is: Not available in the provided context", "ma": "", "gc": 0, "nc": 0, "mc": 0, "ge": 0, "ne": 0, "me": 1}, {"qid": "S3_TATHYBRID_fe59aeaff2948f598d69f262c6464889", "ds": "tathybrid", "diff": "hard", "ft": "REFUSED", "cat": "Set operations / Decade comparison", "q": "What is the average value of vehicles for 2018 and 2019?", "gt": "857.5", "prompt": "Simple (Zero-shot)", "ga": "[Assistant]: The provided report does not contain information regarding the value of vehicles.\n\nThe answer is: Not available", "na": "The answer is: The provided context does not contain information about vehicle values for 2018 and 2019.", "ma": "The answer is: Not available", "gc": 0, "nc": 0, "mc": 0, "ge": 0, "ne": 0, "me": 0}, {"qid": "S3_TATHYBRID_f4c8e2d0155ac338249d0fe6feba49ac", "ds": "tathybrid", "diff": "hard", "ft": "WRONG", "cat": "Grouping / Multi-step reasoning", "q": "What was the low sale price per share for each quarters in 2018 in chronological order?", "gt": "$ 5.99, $ 4.79, $ 2.66, $ 1.88", "prompt": "Simple (Zero-shot)", "ga": "[Assistant]: Based on the provided table of share repurchase programs for 2018, the prices per share listed in chronological order are: $8.22, $7.21, $6.09, $5.46, $3.96, $3.35, $2.99, and $2.25.\n\nThe answer is: $8.22, $7.21, $6.09, $5.46, $3.96, $3.35, $2.99, $2.25", "na": "The user is asking for the low sale price per share for each quarter in 2018 in chronological order. I need to look at the context provided, which appears to be a share repurchase program table showing monthly data for 2018 and 2019.\n\nLooking at the table at the beginning of the context:\n\n```\nPlans ...", "ma": "The answer is: $8.22, $7.21, $6.09, $5.46, $3.96, $3.35, $2.99, $2.25", "gc": 0, "nc": 0, "mc": 0, "ge": 0, "ne": 0, "me": 0}, {"qid": "S3_TATHYBRID_719ef48aead1f283a692fedbeae4622a", "ds": "tathybrid", "diff": "hard", "ft": "REFUSED", "cat": "Set operations / Decade comparison", "q": "What is the value of customer relationships in 2018 and 2019 respectively?", "gt": "985, 985", "prompt": "Simple (Zero-shot)", "ga": "The provided text does not contain information regarding the specific value of customer relationships for the years 2018 and 2019.\n\nThe answer is: Not mentioned", "na": "The user is asking for the value of customer relationships in 2018 and 2019 respectively. I need to search the provided context for this information. The context appears to be from an annual report (10-K) for a company called Lifeway (based on mentions of \"Lifeway's financial assets\" and \"Lifeway ha...", "ma": "The answer is: Not available", "gc": 0, "nc": 0, "mc": 0, "ge": 0, "ne": 0, "me": 0}, {"qid": "S3_TATHYBRID_83cb95ba9efedd8346b5f66758f4ab85", "ds": "tathybrid", "diff": "hard", "ft": "REFUSED", "cat": "Set operations / Decade comparison", "q": "What is the value of buildings and improvements in 2018 and 2019 respectively?", "gt": "17,520, 17,332", "prompt": "Simple (Zero-shot)", "ga": "The provided annual report context does not break down the \"Property, plant and equipment\" line item into specific categories such as buildings and improvements. Therefore, the value of buildings and improvements cannot be determined from the provided text.\n\nThe answer is: Not available", "na": "The answer is: Not provided in the context.", "ma": "The answer is: Not available", "gc": 0, "nc": 0, "mc": 0, "ge": 0, "ne": 0, "me": 0}, {"qid": "S3_TATHYBRID_0022a9993b61830a838d232e2e840b27", "ds": "tathybrid", "diff": "hard", "ft": "WRONG", "cat": "Set operations / Decade comparison", "q": "What is the amount of net sales from ProBugs Kelir in 2018 and 2019 respectively?", "gt": "2,795, 2,780", "prompt": "Simple (Zero-shot)", "ga": "The answer is: 2019: $2,780; 2018: $2,795", "na": "The answer is: 2019: $2,780 thousand; 2018: $2,795 thousand", "ma": "The answer is: 2,795 and 2,780", "gc": 1, "nc": 1, "mc": 1, "ge": 0, "ne": 0, "me": 0}, {"qid": "S3_TATHYBRID_05d6f0b7266caa424d82675ec4d0ca2e", "ds": "tathybrid", "diff": "hard", "ft": "REFUSED", "cat": "Set operations / Decade comparison", "q": "What is net sales from cream and other in 2018 and 2019 respectively?", "gt": "5,276, 4,228", "prompt": "Simple (Zero-shot)", "ga": "The provided text does not contain the specific numerical breakdown of net sales for \"cream and other\" for the years 2018 and 2019.\n\nThe answer is: Not mentioned", "na": "The provided context does not contain a breakdown of net sales by \"cream and other\" category for 2018 and 2019. Only total net sales figures are mentioned ($93,662 for 2019, down 9.4% from 2018).\n\nThe answer is: Not provided in the context", "ma": "The answer is: Not available", "gc": 0, "nc": 0, "mc": 0, "ge": 0, "ne": 0, "me": 0}, {"qid": "S3_TATHYBRID_1098c97fef920d0f4107fa3be6f84e3a", "ds": "tathybrid", "diff": "hard", "ft": "REFUSED", "cat": "Set operations / Decade comparison", "q": "What is the deferred provision (benefit) for income tax for 2018 and 2019 respectively?", "gt": "(461), 533", "prompt": "Simple (Zero-shot)", "ga": "The provided report does not explicitly state the deferred provision (benefit) for income tax for 2018 and 2019. While it mentions deferred income taxes in the balance sheet ($922 for 2019 and $390 for 2018), the specific provision (benefit) amounts are not provided in the text.\n\nThe answer is: Not ...", "na": "The user is asking for the deferred provision (benefit) for income tax for 2018 and 2019 respectively. I need to find this information in the provided context.\n\nLooking through the context, I see financial statements including balance sheets and income statements. The balance sheet shows \"Deferred i...", "ma": "The answer is: 922 and 390", "gc": 0, "nc": 0, "mc": 0, "ge": 0, "ne": 0, "me": 0}, {"qid": "S3_TATHYBRID_4b7153cbb854c224d6bb0fb509fe74fe", "ds": "tathybrid", "diff": "medium", "ft": "REFUSED", "cat": "Set operations / Decade comparison", "q": "What is the provision (benefit) for total current income taxes for 2018 and 2019 respectively?", "gt": "236, 249", "prompt": "Simple (Zero-shot)", "ga": "[Assistant]: The provided context does not contain the specific breakdown of the provision for total current income taxes for 2018 and 2019.\n\nThe answer is: Not available", "na": "The user is asking for the provision (benefit) for total current income taxes for 2018 and 2019 respectively. I need to find this information in the provided context.\n\nLooking through the context, I see financial statements for Lifeway Foods, Inc. There's a Consolidated Statements of Operations sect...", "ma": "The answer is: 154 (2019), 106 (2018)", "gc": 0, "nc": 0, "mc": 0, "ge": 0, "ne": 0, "me": 0}, {"qid": "S3_TATHYBRID_ccc7a9080e0fea2e3181976dc634e30f", "ds": "tathybrid", "diff": "hard", "ft": "WRONG", "cat": "Ranking / Year-wise top-1", "q": "In which year was Operating Leases greater than 100,000?", "gt": "2022", "prompt": "Simple (Zero-shot)", "ga": "The answer is: 2019", "na": "The user is asking: \"In which year was Operating Leases greater than 100,000?\" I need to find information about operating leases amounts by year in the provided context.\n\nLooking through the context, I see a table showing \"The Company's lease right-of-use assets and lease liabilities at December 31,...", "ma": "", "gc": 0, "nc": 0, "mc": 0, "ge": 0, "ne": 0, "me": 1}, {"qid": "S3_TATHYBRID_70b9c20fdab23a9cd16c8474c2be6d9c", "ds": "tathybrid", "diff": "hard", "ft": "REFUSED", "cat": "Ranking / Year-wise top-1", "q": "In which year was Increases for positions taken in prior years less than 1,000?", "gt": "2018", "prompt": "Simple (Zero-shot)", "ga": "The provided text does not contain information regarding \"Increases for positions taken in prior years.\"\n\nThe answer is: Not mentioned", "na": "The provided context does not contain information about \"Increases for positions taken in prior years\" or any tax-related data with numerical values. The text consists primarily of exhibit listings, company information, and a table of contents for a Form 10-K filing, but does not include the financi...", "ma": "The answer is: Not available in context", "gc": 0, "nc": 0, "mc": 0, "ge": 0, "ne": 0, "me": 0}, {"qid": "S3_TATHYBRID_918d6fb907a4ff383e5d8e9da7db2728", "ds": "tathybrid", "diff": "hard", "ft": "REFUSED", "cat": "Set operations / Decade comparison", "q": "What was the Rate change in 2019 and 2018 respectively?", "gt": "(84), 0", "prompt": "Simple (Zero-shot)", "ga": "The provided text does not contain a single \"Rate change\" value for 2019 and 2018, but it does provide the \"Average rate\" for various vessel categories (Jones Act Handysize Product Carriers, Non-Jones Act Handysize Product Carriers, ATBs, and Lightering) for both years.\n\nThe answer is: The average r...", "na": "The user is asking for \"Rate change in 2019 and 2018 respectively\". I need to find what \"Rate\" refers to in the context. The context contains a lot of financial data, shipping revenues, TCE rates, interest rates, tax rates, etc.\n\nLooking at the context, there's a table showing \"Average rate\" for dif...", "ma": "", "gc": 0, "nc": 0, "mc": 0, "ge": 0, "ne": 0, "me": 1}, {"qid": "S3_TATHYBRID_65dac64cb09b645dd52cc8f4a696544e", "ds": "tathybrid", "diff": "hard", "ft": "REFUSED", "cat": "Set operations / Decade comparison", "q": "What is the change in Liabilities: Deferred income taxes from Balance at December 31, 2017 to January 1, 2018?", "gt": "-108", "prompt": "Simple (Zero-shot)", "ga": "The provided text does not contain information regarding the specific balance of \"Liabilities: Deferred income taxes\" at December 31, 2017, or January 1, 2018, nor does it provide a reconciliation that would allow for the calculation of a change between those two specific dates.\n\nThe answer is: Not ...", "na": "The user is asking for the change in \"Liabilities: Deferred income taxes\" from \"Balance at December 31, 2017\" to \"January 1, 2018\". I need to find this specific information in the provided context.\n\nLooking through the context, I see various financial data but I need to find a specific line item for...", "ma": "The answer is: Not determinable from the context.", "gc": 0, "nc": 0, "mc": 0, "ge": 0, "ne": 0, "me": 0}, {"qid": "S3_TATHYBRID_6122b1882bcd7b0a238a04bce284e40e", "ds": "tathybrid", "diff": "hard", "ft": "REFUSED", "cat": "Ranking / Year-wise top-1", "q": "In which year was Prepaid expenditures less than 6,000?", "gt": "2019", "prompt": "Simple (Zero-shot)", "ga": "The provided text does not contain information regarding \"Prepaid expenditures.\"\n\nThe answer is: Not mentioned", "na": "The user is asking about \"Prepaid expenditures\" and wants to know in which year it was less than 6,000. I need to search the provided context for any mention of \"Prepaid expenditures\" or similar terms like \"prepaid expenses\", \"prepayments\", etc., and find the values for different years.\n\nLooking thr...", "ma": "The answer is: Not available", "gc": 0, "nc": 1, "mc": 0, "ge": 0, "ne": 0, "me": 0}, {"qid": "S3_TATHYBRID_f0a1bd31aa64c790c41e42920619040b", "ds": "tathybrid", "diff": "hard", "ft": "REFUSED", "cat": "Set operations / Decade comparison", "q": "What was the Prepaid expenditures in 2019 and 2018 respectively?", "gt": "5,621, 7,108", "prompt": "Simple (Zero-shot)", "ga": "The provided text does not contain information regarding \"Prepaid expenditures\" for 2019 and 2018.\n\nThe answer is: Not mentioned", "na": "The provided context does not contain information about \"Prepaid expenditures\" for 2019 or 2018. The text includes data on accumulated other comprehensive loss, pension plans, TCE revenues, vessel expenses, debt, leases, and cash flows, but no specific line item for prepaid expenditures or prepaid e...", "ma": "The answer is: Not available", "gc": 0, "nc": 0, "mc": 0, "ge": 0, "ne": 0, "me": 0}, {"qid": "S3_TATHYBRID_0edf2f7aeed2b8ca6a2e0ed95641bf15", "ds": "tathybrid", "diff": "hard", "ft": "REFUSED", "cat": "Set operations / Decade comparison", "q": "What was the Contracts of affreightment revenues in 2019 and 2018 respectively?", "gt": "58,589, 68,698", "prompt": "Simple (Zero-shot)", "ga": "The provided text does not contain information regarding \"Contracts of affreightment revenues\" for 2019 and 2018.\n\nThe answer is: Not mentioned", "na": "The provided context does not contain information about \"Contracts of affreightment revenues\" for 2019 and 2018. The report discusses Time Charter Equivalent (TCE) revenues, shipping revenues, time charter revenues, and breakdowns by vessel type (Jones Act Handysize, Non-Jones Act Handysize, ATBs, L...", "ma": "The answer is: Not provided", "gc": 0, "nc": 0, "mc": 0, "ge": 0, "ne": 0, "me": 0}, {"qid": "S3_TATHYBRID_ff06d83c2832cd8f43f1a6c350b5b7ae", "ds": "tathybrid", "diff": "hard", "ft": "WRONG", "cat": "Set operations / Decade comparison", "q": "What was the value of Vessels, net in 2019 and 2018 respectively?", "gt": "644,312, 596,929", "prompt": "Simple (Zero-shot)", "ga": "The provided context lists \"Vessels and other property, less accumulated depreciation and amortization\" as $737,212 (in thousands) for 2019 and $597,659 (in thousands) for 2018.\n\nThe answer is: 2019: $737,212; 2018: $597,659", "na": "The user is asking for the value of \"Vessels, net\" in 2019 and 2018 respectively. I need to look at the consolidated balance sheets provided in the context.\n\nLooking at the balance sheet section:\n\n```\nOVERSEAS SHIPHOLDING GROUP, INC. AND SUBSIDIARIES\nCONSOLIDATED BALANCE SHEETS\nDOLLARS IN THOUSANDS\n...", "ma": "### Context: primarily resulted from three fewer vessels in operation during most of 2019 compared to 2018 and one less Government of Israel voyage in 2019 compared to 2018. This decrease was partially offset by the addition of two new vessels to our fleet at the beginning of the fourth quarter of 2...", "gc": 0, "nc": 0, "mc": 0, "ge": 0, "ne": 0, "me": 0}, {"qid": "S3_TATHYBRID_f7af7aebbd48ae1684ba8f8d7402c3fa", "ds": "tathybrid", "diff": "hard", "ft": "REFUSED", "cat": "Set operations / Decade comparison", "q": "What was the Time and bareboat charter revenues revenues in 2019 and 2018 respectively?", "gt": "$263,683, $213,923", "prompt": "Simple (Zero-shot)", "ga": "The provided text does not explicitly state a single line item for \"Time and bareboat charter revenues.\" However, it provides \"Time charter equivalent revenues\" of $335,133 for 2019 and $326,707 for 2018, and mentions that total time charter revenue for 2019 was $263,683 ($263,416 lease income + $26...", "na": "The user is asking for \"Time and bareboat charter revenues\" for 2019 and 2018. I need to find this specific line item in the provided text.\n\nLooking through the context, I see a table titled \"Shipping Revenues\" near the end of the text:\n\n```\nVoyage charter revenues(1)  33,275   83,542 \nContracts of ...", "ma": "", "gc": 0, "nc": 0, "mc": 0, "ge": 0, "ne": 0, "me": 1}, {"qid": "S3_FINHYBRID_ABMD/2012/page_75.pdf-1", "ds": "finhybrid", "diff": "hard", "ft": "WRONG", "cat": "Financial", "q": "during the 2012 year , did the equity awards in which the prescribed performance milestones were achieved exceed the equity award compensation expense for equity granted during the year?", "gt": "yes", "prompt": "Simple (Zero-shot)", "ga": "The provided text states that for the year ended March 31, 2012, the Company recorded $3.3 million in stock-based compensation expense for equity awards in which the prescribed performance milestones have been achieved or are probable of being achieved. Regarding equity awards granted during the yea...", "na": "", "ma": "", "gc": 0, "nc": 0, "mc": 0, "ge": 0, "ne": 1, "me": 1}, {"qid": "S3_FINHYBRID_ABMD/2012/page_75.pdf-2", "ds": "finhybrid", "diff": "hard", "ft": "WRONG", "cat": "Financial", "q": "for equity awards where the performance criteria has been met in 2012 , what is the average compensation expense per year over which the cost will be expensed?", "gt": "1719526 | 1714285.71429", "prompt": "Simple (Zero-shot)", "ga": "The provided text states that the remaining unrecognized compensation expense for equity awards as of March 31, 2012, is $3.6 million, and the weighted-average period over which this cost will be recognized is 2.1 years. Dividing the total expense by the number of years ($3.6 million / 2.1 years) re...", "na": "The user is asking for the average compensation expense per year over which the cost will be expensed for equity awards where performance criteria has been met in 2012.\n\nLet me search the context for relevant information about equity awards with performance criteria met in 2012 and the remaining unr...", "ma": "", "gc": 0, "nc": 0, "mc": 0, "ge": 0, "ne": 0, "me": 1}, {"qid": "S3_FINHYBRID_ABMD/2012/page_41.pdf-2", "ds": "finhybrid", "diff": "hard", "ft": "REFUSED", "cat": "Financial", "q": "did abiomed outperform the nasdaq medical equipment index?", "gt": "yes | yes", "prompt": "Simple (Zero-shot)", "ga": "The provided text contains a graph description comparing the company's performance to the Nasdaq Medical Equipment index, but it does not provide a definitive conclusion on whether Abiomed outperformed the index.\n\nThe answer is: Not specified", "na": "The provided context does not include Abiomed's stock performance data to compare against the Nasdaq Medical Equipment index. The context only shows index values for Nasdaq Composite and Nasdaq Medical Equipment, but not Abiomed's own stock returns.\n\nThe answer is: Cannot be determined from the prov...", "ma": "", "gc": 0, "nc": 0, "mc": 0, "ge": 0, "ne": 0, "me": 1}, {"qid": "S3_FINHYBRID_ABMD/2012/page_41.pdf-1", "ds": "finhybrid", "diff": "hard", "ft": "REFUSED", "cat": "Financial", "q": "did abiomed outperform the nasdaq composite index?", "gt": "yes | yes", "prompt": "Simple (Zero-shot)", "ga": "The provided context includes a graph index for the \"Nasdaq Composite Index\" and \"Nasdaq Medical Equipment\" but does not provide the specific performance data or a comparison analysis required to determine if Abiomed outperformed the index.\n\nThe answer is: Not mentioned", "na": "The user is asking whether Abiomed outperformed the Nasdaq Composite Index based on the provided context. Let me analyze the context carefully.\n\nThe context contains:\n1. A graph/table showing Nasdaq Composite Index and Nasdaq Medical Equipment SIC Code 3840-3849 values over time (100, 94.11, 63.12, ...", "ma": "", "gc": 0, "nc": 0, "mc": 0, "ge": 0, "ne": 0, "me": 1}, {"qid": "S3_FINHYBRID_ABMD/2012/page_79.pdf-2", "ds": "finhybrid", "diff": "hard", "ft": "WRONG", "cat": "Financial", "q": "how much of total future minimum lease payments are due currently?", "gt": "35% | 2845.5", "prompt": "Simple (Zero-shot)", "ga": "The answer is: 1,473", "na": "The answer is: $1,473,000", "ma": "The answer is: 1,473", "gc": 0, "nc": 0, "mc": 0, "ge": 0, "ne": 0, "me": 0}, {"qid": "S3_FINHYBRID_ABMD/2012/page_41.pdf-3", "ds": "finhybrid", "diff": "hard", "ft": "REFUSED", "cat": "Financial", "q": "what is the roi of an investment in abiomed inc from march 2007 to march 2010?", "gt": "-24.5% | -0.2445", "prompt": "Simple (Zero-shot)", "ga": "The provided context does not contain the specific stock price data for March 2007 and March 2010 required to calculate the exact ROI.\n\nThe answer is: Not available", "na": "The user is asking for the ROI (Return on Investment) of an investment in Abiomed Inc from March 2007 to March 2010. I need to find the stock price or cumulative shareholder return data for those dates in the provided context.\n\nLooking at the context, there's a section titled \"comparative shareholde...", "ma": "", "gc": 0, "nc": 0, "mc": 0, "ge": 0, "ne": 0, "me": 1}, {"qid": "S3_FINHYBRID_ABMD/2012/page_41.pdf-4", "ds": "finhybrid", "diff": "hard", "ft": "REFUSED", "cat": "Financial", "q": "what is the roi of an investment in nasdaq composite index from march 2007 to march 2010?", "gt": "-1.0% | -0.0098", "prompt": "Simple (Zero-shot)", "ga": "The provided context does not contain the specific numerical data required to calculate the ROI for the Nasdaq Composite Index between March 2007 and March 2010. While a graph is mentioned, the specific index values for those years are not provided in the text.\n\nThe answer is: Not available", "na": "The user is asking for the ROI of an investment in the Nasdaq Composite Index from March 2007 to March 2010. I need to find the relevant data in the provided context.\n\nLooking at the context, there's a section titled \"COMPARATIVE SHAREHOLDER RETURN\" with a table showing values for different indices ...", "ma": "", "gc": 0, "nc": 0, "mc": 0, "ge": 0, "ne": 0, "me": 1}, {"qid": "S3_FINHYBRID_ADI/2009/page_49.pdf-1", "ds": "finhybrid", "diff": "hard", "ft": "WRONG", "cat": "Financial", "q": "what is the the interest expense in 2009?", "gt": "380 | 3.8", "prompt": "Simple (Zero-shot)", "ga": "The answer is: 4,094", "na": "The answer is: 4,094", "ma": "The answer is: 4,094", "gc": 0, "nc": 0, "mc": 0, "ge": 0, "ne": 0, "me": 0}, {"qid": "S3_FINHYBRID_ADI/2009/page_59.pdf-2", "ds": "finhybrid", "diff": "hard", "ft": "REFUSED", "cat": "Financial", "q": "what is the expected growth rate in amortization expense in 2010?", "gt": "-27.0% | -0.26689", "prompt": "Simple (Zero-shot)", "ga": "The provided context does not contain information regarding the growth rate of amortization expense for 2010, only the expected total expense amount.\n\nThe answer is: Not available", "na": "The user is asking for the \"expected growth rate in amortization expense in 2010\". I need to find information about amortization expense for 2010 and compare it to a previous period to calculate a growth rate.\n\nFrom the context, I see this information:\n\"Amortization expense from continuing operation...", "ma": "The answer is: -41.03%", "gc": 0, "nc": 0, "mc": 0, "ge": 0, "ne": 0, "me": 0}, {"qid": "S3_FINHYBRID_ADI/2009/page_90.pdf-1", "ds": "finhybrid", "diff": "hard", "ft": "REFUSED", "cat": "Financial", "q": "what is the percentage increase in interest expanse and penalties in 2009?", "gt": "30.8% | 0.30769", "prompt": "Simple (Zero-shot)", "ga": "The provided report does not contain information regarding \"penalties,\" and interest expense was $0 in 2008, making a percentage increase calculation mathematically undefined.\n\nThe answer is: Not applicable", "na": "The user is asking for the percentage increase in interest expense and penalties in 2009. I need to find interest expense data for 2009 and compare it to a previous year (likely 2008) to calculate the percentage increase. The context mentions \"penalties\" but I don't see any mention of penalties in t...", "ma": "", "gc": 0, "nc": 0, "mc": 0, "ge": 0, "ne": 0, "me": 1}, {"qid": "S3_FINHYBRID_ADI/2009/page_49.pdf-2", "ds": "finhybrid", "diff": "hard", "ft": "WRONG", "cat": "Financial", "q": "what is the lobor rate as of october 31 , 2009?", "gt": "29.0% | 0.0029", "prompt": "Simple (Zero-shot)", "ga": "The answer is: 2.34%", "na": "The answer is: Not mentioned in the provided context.", "ma": "The answer is: Not available", "gc": 0, "nc": 0, "mc": 0, "ge": 0, "ne": 0, "me": 0}, {"qid": "S3_FINHYBRID_ADI/2009/page_90.pdf-3", "ds": "finhybrid", "diff": "hard", "ft": "REFUSED", "cat": "Financial", "q": "what percentage did the balance increase from 2007 to 2009?", "gt": "83.6% | 0.83648", "prompt": "Simple (Zero-shot)", "ga": "The provided text does not contain a specific \"balance\" figure to calculate a percentage increase from 2007 to 2009.\n\nThe answer is: Not available", "na": "The user is asking about a percentage increase from 2007 to 2009 for \"the balance\". However, the context provided is a financial report with various figures (revenue, operating income, gross margin, R&D expenses, etc.) but no specific line item labeled \"the balance\". I need to infer what \"the balanc...", "ma": "", "gc": 0, "nc": 0, "mc": 0, "ge": 0, "ne": 0, "me": 1}, {"qid": "S3_FINHYBRID_ADI/2009/page_90.pdf-4", "ds": "finhybrid", "diff": "hard", "ft": "WRONG", "cat": "Financial", "q": "what would be the balance if the company suffered the potential total tax liability of the 2006 and 2007 irs examination?", "gt": "$ 17966 million | 17966.0", "prompt": "Simple (Zero-shot)", "ga": "The provided text states that the Company has not recorded any additional tax liability for the four items related to the 2006 and 2007 IRS examination, which have a potential total tax liability of $195 million. If the company were to suffer this liability, the balance would be reduced by $195 mill...", "na": "The user is asking for the balance if the company suffered the potential total tax liability of the 2006 and 2007 IRS examination. I need to find the relevant information in the context.\n\nFrom the context, I can see information about the Fiscal Year 2006 and 2007 IRS Examination. It states: \"There a...", "ma": "The answer is: 195 million", "gc": 0, "nc": 0, "mc": 0, "ge": 0, "ne": 0, "me": 0}, {"qid": "S3_FINHYBRID_GS/2016/page_186.pdf-2", "ds": "finhybrid", "diff": "hard", "ft": "REFUSED", "cat": "Financial", "q": "in millions , for 2016 , 2015 , and 2014 what was the total amount of common share repurchases?", "gt": "90.1 | 90.5", "prompt": "Simple (Zero-shot)", "ga": "The answer is: Not provided", "na": "The user is asking for the total amount of common share repurchases in millions for 2016, 2015, and 2014. I need to find this information in the provided context.\n\nLooking through the context, I see a table showing share repurchases for October, November, and December 2016, but that's only for Q4 20...", "ma": "", "gc": 0, "nc": 0, "mc": 0, "ge": 0, "ne": 0, "me": 1}, {"qid": "S3_FINHYBRID_GS/2016/page_79.pdf-4", "ds": "finhybrid", "diff": "hard", "ft": "REFUSED", "cat": "Financial", "q": "of the total aus net inflows/ ( outflows ) for 2014 were fixed income asset inflows in connection with our acquisition of deutsche asset & wealth management 2019s stable value business greater than the liquidity products inflows in connection with our acquisition of rbs asset management 2019s money market funds?", "gt": "yes | yes", "prompt": "Simple (Zero-shot)", "ga": "The provided text does not contain information regarding acquisitions of Deutsche Asset & Wealth Management's stable value business or RBS Asset Management's money market funds, nor does it provide a breakdown of net inflows/outflows for 2014.\n\nThe answer is: Not mentioned in the report", "na": "The answer is: The provided context does not contain information about Deutsche Asset & Wealth Management's stable value business acquisition or RBS Asset Management's money market funds acquisition in 2014. The only acquisition mentioned is Pacific Global Advisors' solutions business with $18 billi...", "ma": "The answer is: Cannot be determined", "gc": 0, "nc": 0, "mc": 0, "ge": 0, "ne": 0, "me": 0}, {"qid": "S3_FINHYBRID_GS/2016/page_79.pdf-2", "ds": "finhybrid", "diff": "hard", "ft": "WRONG", "cat": "Aggregation", "q": "in billions , for 2016 , 2015 , and 2014 , what are total alternative investments?", "gt": "439 | 439.0", "prompt": "Simple (Zero-shot)", "ga": "The answer is: 2016: $154, 2015: $148, 2014: $143", "na": "The answer is: 2016: 154, 2015: 148, 2014: 143", "ma": "The answer is: 154, 148, 143", "gc": 0, "nc": 0, "mc": 0, "ge": 0, "ne": 0, "me": 0}, {"qid": "S3_FINHYBRID_GS/2016/page_186.pdf-1", "ds": "finhybrid", "diff": "hard", "ft": "REFUSED", "cat": "Financial", "q": "what was the difference in millions between the total cost of common shares repurchases from 2015 to 2016?", "gt": "1874 | 1874.0", "prompt": "Simple (Zero-shot)", "ga": "[Assistant]: To determine the difference in the total cost of common share repurchases between 2015 and 2016, we look at the provided data for share repurchases:\n\n1.  **2016 Data:**\n    *   October 2016: 2,650,628 shares at $172.13 = $456,256,665.64\n    *   November 2016: 3,164,013 shares at $198.20...", "na": "The user is asking for the difference in millions between the total cost of common shares repurchases from 2015 to 2016. I need to find the total cost of common shares repurchased in 2015 and 2016 from the context provided.\n\nLooking through the context, I see a table at the beginning showing share r...", "ma": "", "gc": 0, "nc": 0, "mc": 0, "ge": 0, "ne": 0, "me": 1}, {"qid": "S3_FINHYBRID_GS/2016/page_183.pdf-1", "ds": "finhybrid", "diff": "hard", "ft": "WRONG", "cat": "Financial", "q": "what were total investment commitments in billions for 2016 and 2015 related to commitments to invest in funds managed by the firm?", "gt": "4.96 | 4.96", "prompt": "Simple (Zero-shot)", "ga": "The answer is: 2.10 and 2.86", "na": "The answer is: $2.10 billion for 2016 and $2.86 billion for 2015", "ma": "The answer is: 2.10 billion (2016), 2.86 billion (2015)", "gc": 0, "nc": 0, "mc": 0, "ge": 0, "ne": 0, "me": 0}, {"qid": "S3_FINHYBRID_GS/2016/page_186.pdf-3", "ds": "finhybrid", "diff": "hard", "ft": "REFUSED", "cat": "Financial", "q": "what was the difference in millions between the total cost of common shares repurchases from 2015 to 2016?", "gt": "-1274 | -1274.0", "prompt": "Simple (Zero-shot)", "ga": "[Assistant]: To determine the difference in the total cost of common share repurchases between 2015 and 2016, we look at the provided data for share repurchases:\n\n1.  **2016 Data:**\n    *   October 2016: 2,650,628 shares at $172.13 = $456,256,665.64\n    *   November 2016: 3,164,013 shares at $198.20...", "na": "The user is asking for the difference in millions between the total cost of common shares repurchases from 2015 to 2016. I need to find the total cost of common shares repurchased in 2015 and 2016 from the context provided.\n\nLooking at the context, I see a table at the beginning showing share repurc...", "ma": "", "gc": 0, "nc": 0, "mc": 0, "ge": 0, "ne": 0, "me": 1}, {"qid": "S3_FINHYBRID_GS/2016/page_186.pdf-4", "ds": "finhybrid", "diff": "hard", "ft": "WRONG", "cat": "Financial", "q": "what was total shareholders 2019 equity common equity dividends declared per common share in 2016 , 2015 and 2014?", "gt": "7.40 | 7.4", "prompt": "Simple (Zero-shot)", "ga": "The answer is: 2016: $2.60, 2015: $2.55, 2014: $2.25", "na": "The answer is: $2.60 in 2016, $2.55 in 2015, $2.25 in 2014", "ma": "The answer is: 2.60, 2.55, 2.25", "gc": 0, "nc": 0, "mc": 0, "ge": 0, "ne": 0, "me": 0}, {"qid": "S3_FINHYBRID_GS/2016/page_81.pdf-2", "ds": "finhybrid", "diff": "hard", "ft": "REFUSED", "cat": "Financial", "q": "what is the debt-to-total asset ratio in 2015?", "gt": "2.7% | 0.02695", "prompt": "Simple (Zero-shot)", "ga": "To calculate the debt-to-total asset ratio for 2015, we use the provided data:\n1. Total assets in 2015 = $861,395 million.\n2. The context defines the leverage ratio as total assets divided by total shareholders' equity, but does not provide a specific \"total debt\" figure for the entire firm. However...", "na": "The user is asking for the debt-to-total asset ratio in 2015 based on the provided context. I need to find the relevant financial data in the text to calculate this ratio.\n\nThe debt-to-total asset ratio is typically calculated as Total Debt / Total Assets. Sometimes it's defined as Total Liabilities...", "ma": "The answer is: 32.6%", "gc": 0, "nc": 0, "mc": 0, "ge": 0, "ne": 0, "me": 0}, {"qid": "S3_FINHYBRID_GS/2016/page_161.pdf-3", "ds": "finhybrid", "diff": "hard", "ft": "WRONG", "cat": "Financial", "q": "for december 2016 and december 2015 , what was total fair value of loans receivable in billions?", "gt": "94.99 | 94.99", "prompt": "Simple (Zero-shot)", "ga": "The answer is: $49.80 billion and $45.19 billion", "na": "The answer is: $49.80 billion for December 2016 and $45.19 billion for December 2015", "ma": "The answer is: 49.80 billion and 45.19 billion", "gc": 0, "nc": 0, "mc": 0, "ge": 0, "ne": 0, "me": 0}, {"qid": "S3_FINHYBRID_GS/2016/page_183.pdf-2", "ds": "finhybrid", "diff": "hard", "ft": "WRONG", "cat": "Financial", "q": "what was total rent charged to operating expense in millions for 2016 , 2015 and 2014?", "gt": "802 | 802.0", "prompt": "Simple (Zero-shot)", "ga": "The answer is: 2016: $244 million, 2015: $249 million, 2014: $309 million", "na": "The answer is: $244 million for 2016, $249 million for 2015, $309 million for 2014", "ma": "The answer is: 244, 249, 309", "gc": 0, "nc": 0, "mc": 0, "ge": 0, "ne": 0, "me": 0}, {"qid": "S3_FINHYBRID_GS/2016/page_81.pdf-1", "ds": "finhybrid", "diff": "hard", "ft": "REFUSED", "cat": "Financial", "q": "what is the debt-to-total asset ratio in 2016?", "gt": "2.5% | 0.0252", "prompt": "Simple (Zero-shot)", "ga": "To determine the debt-to-total asset ratio for 2016, we look at the provided financial data:\n\n1.  **Total Assets** for 2016: $860,165 million.\n2.  **Debt**: The context defines \"unsecured long-term borrowings\" as a component of debt, but does not provide a single \"Total Debt\" figure. However, the \"F...", "na": "The user is asking for the debt-to-total asset ratio in 2016 based on the provided context. Let me analyze the context to find this information.\n\nThe context contains financial data from Goldman Sachs 2016 Form 10-K. I need to find:\n1. Total debt (or total liabilities) for 2016\n2. Total assets for 2...", "ma": "The answer is: 0.90", "gc": 0, "nc": 0, "mc": 0, "ge": 0, "ne": 0, "me": 0}, {"qid": "S3_FINHYBRID_GS/2016/page_70.pdf-1", "ds": "finhybrid", "diff": "hard", "ft": "WRONG", "cat": "Financial", "q": "what is the net change in the number of staff in 2016?", "gt": "-2400 | -2400.0", "prompt": "Simple (Zero-shot)", "ga": "The provided text states that total staff decreased by 7% during 2016.\n\nThe answer is: 7% decrease", "na": "The answer is: decreased 7%", "ma": "The answer is: decreased by 7%", "gc": 0, "nc": 0, "mc": 0, "ge": 0, "ne": 0, "me": 0}, {"qid": "S3_FINHYBRID_GS/2016/page_70.pdf-2", "ds": "finhybrid", "diff": "hard", "ft": "REFUSED", "cat": "Financial", "q": "what is the net change in the number of staff in 2015?", "gt": "2800 | 2800.0", "prompt": "Simple (Zero-shot)", "ga": "The provided text states that total staff increased 8% during 2015, but it does not provide the specific numerical count of staff at the beginning or end of the year to calculate a net change in the number of individuals.\n\nThe answer is: Not mentioned", "na": "The answer is: Total staff increased 8% during 2015", "ma": "The answer is: 8% increase", "gc": 0, "nc": 0, "mc": 0, "ge": 0, "ne": 0, "me": 0}, {"qid": "S3_FINHYBRID_GS/2016/page_77.pdf-2", "ds": "finhybrid", "diff": "hard", "ft": "REFUSED", "cat": "Financial", "q": "in millions for 2016 2015 , and 2014 , what are total equity securities?", "gt": "10933 | 10933.0", "prompt": "Simple (Zero-shot)", "ga": "The provided context does not contain information regarding the total value of equity securities for the years 2016, 2015, and 2014.\n\nThe answer is: Not available", "na": "The user is asking for \"total equity securities\" in millions for 2016, 2015, and 2014. I need to search the provided context for this specific line item.\n\nLooking through the context, I see various financial tables:\n1. Fair value hierarchy tables (Level 1, 2, 3 assets/liabilities)\n2. Consolidated St...", "ma": "", "gc": 0, "nc": 0, "mc": 0, "ge": 0, "ne": 0, "me": 1}, {"qid": "S3_FINHYBRID_GS/2016/page_77.pdf-3", "ds": "finhybrid", "diff": "hard", "ft": "WRONG", "cat": "Financial", "q": "operating expenses were what multiple of pre-tax earnings in 2015?", "gt": "11.52 | 11.52066", "prompt": "Simple (Zero-shot)", "ga": "The answer is: 2.85", "na": "The answer is: 2.85", "ma": "The answer is: 2.85x", "gc": 0, "nc": 0, "mc": 0, "ge": 0, "ne": 0, "me": 0}, {"qid": "S3_FINHYBRID_JKHY/2015/page_20.pdf-2", "ds": "finhybrid", "diff": "hard", "ft": "WRONG", "cat": "Financial", "q": "what was the percentage change in the 5 year annual performance of the peer group stock from 2010 to 2011", "gt": "8.3% | 0.08276", "prompt": "Simple (Zero-shot)", "ga": "The answer is: 36.78%", "na": "The answer is: 36.78%", "ma": "### Context: Total 150,146 65.87 150,100 8,147,984\n(1) 150,100 shares were purchased through a publicly announced repurchase plan. There were 46 shares surrendered to the Company to satisfy tax \nwithholding obligations in connection with employee restricted stock awards.\n(2) Total stock repurchase a...", "gc": 0, "nc": 0, "mc": 0, "ge": 0, "ne": 0, "me": 0}, {"qid": "S3_FINHYBRID_JKHY/2015/page_20.pdf-3", "ds": "finhybrid", "diff": "hard", "ft": "WRONG", "cat": "Financial", "q": "in 2010 , what was the cumulative total return of the s&p 500?", "gt": "30.69 | 30.69", "prompt": "Simple (Zero-shot)", "ga": "The answer is: 100.00", "na": "The answer is: 100.00", "ma": "The answer is: 100.00", "gc": 0, "nc": 0, "mc": 0, "ge": 0, "ne": 0, "me": 0}, {"qid": "S3_FINHYBRID_JKHY/2015/page_20.pdf-1", "ds": "finhybrid", "diff": "hard", "ft": "WRONG", "cat": "Financial", "q": "for the 2010 , what was the cumulative total return on jkhy?", "gt": "27.44 | 27.44", "prompt": "Simple (Zero-shot)", "ga": "The answer is: 100.00", "na": "The answer is: 100.00", "ma": "The answer is: 100.00", "gc": 0, "nc": 0, "mc": 0, "ge": 0, "ne": 0, "me": 0}, {"qid": "S2_Q001", "ds": "music_structured", "diff": "medium", "ft": "WRONG", "cat": "Ranking / Top-k", "q": "Which artist has the highest popularity score and how many albums have they released?", "gt": "The Ortegas 1.0 10 albums", "prompt": "Simple (Zero-shot)", "ga": "The answer is: The artist with the highest popularity score is The Haydens (ART_0347) with a score of 0.145, and they have released 1 album (ALB_0151).", "na": "The user is asking for the artist with the highest popularity score and how many albums they have released. I need to examine the context provided.\n\nLooking at the context, there's a section labeled \"Artists\" with 294 records. Each record has fields: artist_id, name, country, primary_genre, secondar...", "ma": "The answer is: Jessica Fowler, 1 album", "gc": 0, "nc": 0, "mc": 0, "ge": 0, "ne": 0, "me": 0}, {"qid": "S2_Q002", "ds": "music_structured", "diff": "medium", "ft": "WRONG", "cat": "Aggregation", "q": "What is the average track duration in minutes across all tracks?", "gt": "4.74 minutes", "prompt": "Simple (Zero-shot)", "ga": "The answer is: 4.38 minutes", "na": "The user is asking for the average track duration in minutes across all tracks. I need to look at the context provided, which contains a dataset with track information. I can see there's a \"Tracks\" section with 44 records, each having a \"duration_ms\" field. I need to calculate the average of these d...", "ma": "", "gc": 0, "nc": 0, "mc": 0, "ge": 0, "ne": 0, "me": 1}, {"qid": "S2_Q003", "ds": "music_structured", "diff": "medium", "ft": "WRONG", "cat": "Ranking / Top-k", "q": "Which music genre has the most artists and how many?", "gt": "Hip-Hop 42 artists", "prompt": "Simple (Zero-shot)", "ga": "The answer is: The Hip-Hop genre has the most artists, with 41 artists listed in the provided context.", "na": "The user is asking which music genre has the most artists and how many, based on the provided context. The context appears to be a dataset with artists, albums, tracks, labels, awards, charts, etc. I need to analyze the artist data to count genres.\n\nLooking at the context, there's a section with art...", "ma": "", "gc": 0, "nc": 0, "mc": 0, "ge": 0, "ne": 0, "me": 1}, {"qid": "S2_Q004", "ds": "music_structured", "diff": "medium", "ft": "WRONG", "cat": "Conditional filtering / Statistical outlier handling", "q": "What percentage of artists are currently active?", "gt": "84.69%", "prompt": "Simple (Zero-shot)", "ga": "The answer is: 80%", "na": "The user is asking for the percentage of artists that are currently active based on the provided context. The context contains a dataset with artist information, including an \"is_active\" field. I need to count the total number of artists and the number of active artists, then calculate the percentag...", "ma": "The answer is: The information is not explicitly provided in the context.", "gc": 0, "nc": 0, "mc": 0, "ge": 0, "ne": 0, "me": 0}, {"qid": "S2_Q005", "ds": "music_structured", "diff": "medium", "ft": "WRONG", "cat": "Others", "q": "How many tracks have explicit content?", "gt": "6 tracks", "prompt": "Simple (Zero-shot)", "ga": "The answer is: 0", "na": "The answer is: The provided context does not contain information about explicit content for tracks. The track features table includes tempo, energy, danceability, valence, acousticness, loudness, instrumentalness, speechiness, liveness, key, mode, and time signature, but no explicit content field.", "ma": "The answer is: Not enough information", "gc": 0, "nc": 0, "mc": 0, "ge": 0, "ne": 0, "me": 0}, {"qid": "S2_Q006", "ds": "music_structured", "diff": "medium", "ft": "WRONG", "cat": "Ranking / Top-k", "q": "Which record label has signed the most artists?", "gt": "Gray-Mayo Entertainment 10", "prompt": "Simple (Zero-shot)", "ga": "The answer is: LBL_0006", "na": "The user is asking which record label has signed the most artists based on the provided context. I need to analyze the Artists data to count how many artists are associated with each label_id.\n\nLooking at the Artists section, there are 294 records with artist_id, name, country, primary_genre, second...", "ma": "", "gc": 0, "nc": 0, "mc": 0, "ge": 0, "ne": 0, "me": 1}, {"qid": "S2_Q007", "ds": "music_structured", "diff": "hard", "ft": "REFUSED", "cat": "Aggregation / Genre-level summary", "q": "What is the average number of tracks per album for each genre?", "gt": "Jazz 2.0", "prompt": "Simple (Zero-shot)", "ga": "The answer is: Based on the provided dataset, the average number of tracks per album cannot be calculated because the \"Tracks\" table does not contain a complete list of tracks for every album, and the \"Albums\" table does not provide a track count for each entry.", "na": "The user is asking for the average number of tracks per album for each genre. I need to analyze the context provided to find this information.\n\nLooking at the context, I see several data tables:\n1. Record Labels (50 records)\n2. Artists (294 records)\n3. Albums (appears to be multiple records)\n4. Trac...", "ma": "", "gc": 0, "nc": 0, "mc": 0, "ge": 0, "ne": 0, "me": 1}, {"qid": "S2_Q008", "ds": "music_structured", "diff": "hard", "ft": "WRONG", "cat": "Ranking / Top-k", "q": "Which artists have won at least one award and how many awards have they won in total?", "gt": "6 artists Ortegas=12", "prompt": "Simple (Zero-shot)", "ga": "The answer is: ART_0437 has won 6 awards, ART_0147 has won 1 award, ART_0476 has won 1 award, and ART_0034 has won 1 award.", "na": "The user is asking which artists have won at least one award and how many awards they've won in total. I need to look at the awards data in the context.\n\nLooking at the context, there's a section with awards data. It appears to be a table with columns: Year, True/False, Award ID, Artist ID, Award Na...", "ma": "", "gc": 0, "nc": 0, "mc": 0, "ge": 0, "ne": 0, "me": 1}, {"qid": "S2_Q009", "ds": "music_structured", "diff": "hard", "ft": "WRONG", "cat": "Filtering / Multi-condition filtering", "q": "What is the distribution of album types (Single, EP, Album) by record label type (Major, Independent)?", "gt": "10 combinations", "prompt": "Simple (Zero-shot)", "ga": "The answer is: Based on the provided dataset, there is no explicit \"Single\" album type listed. The album types present are \"Studio,\" \"Live,\" \"Compilation,\" and \"EP.\" Among the records associated with Major labels, there are 2 Studio albums and 0 EPs. Among the records associated with Independent lab...", "na": "The user is asking for the distribution of album types (Single, EP, Album) by record label type (Major, Independent). I need to analyze the context provided to answer this question.\n\nLooking at the context, I see several tables:\n1. Record Labels (50 records) with label_id, name, country, founding_ye...", "ma": "The answer is: Information not available in the provided context.", "gc": 0, "nc": 0, "mc": 0, "ge": 0, "ne": 0, "me": 0}, {"qid": "S2_Q012", "ds": "music_structured", "diff": "hard", "ft": "REFUSED", "cat": "Filtering / Multi-condition filtering", "q": "Which artists have tracks in multiple albums and how many albums do they have?", "gt": "3 artists", "prompt": "Simple (Zero-shot)", "ga": "The answer is: Based on the provided dataset, the artist with ID ART_0437 is associated with multiple awards and tracks, but the provided document does not explicitly list a mapping of artists to multiple albums. Therefore, the information to determine which artists have tracks in multiple albums is...", "na": "The user is asking: \"Which artists have tracks in multiple albums and how many albums do they have?\" I need to analyze the context provided to answer this question. The context includes several tables: Record Labels, Artists, Tracks, Albums, Awards, Charts, and Track Features. However, the data seem...", "ma": "The answer is: The context does not provide information about albums or track-album associations, so it is not possible to determine which artists have tracks in multiple albums.", "gc": 0, "nc": 0, "mc": 0, "ge": 0, "ne": 0, "me": 0}, {"qid": "S2_Q013", "ds": "music_structured", "diff": "hard", "ft": "WRONG", "cat": "Aggregation", "q": "What is the average speechiness score for explicit vs non-explicit tracks?", "gt": "Explicit 0.103 Non 0.161", "prompt": "Simple (Zero-shot)", "ga": "The answer is: Based on the provided dataset, the average speechiness score for explicit tracks is 0.118, while the average speechiness score for non-explicit tracks is 0.096.", "na": "The user is asking for the average speechiness score for explicit vs non-explicit tracks. I need to look at the context provided to see if this information is available.\n\nLooking at the context, I see a lot of data about tracks, artists, labels, awards, charts, etc. But I need to find information ab...", "ma": "The answer is: Information not available in the context.", "gc": 0, "nc": 0, "mc": 0, "ge": 0, "ne": 0, "me": 0}, {"qid": "S2_Q014", "ds": "music_structured", "diff": "extremely hard", "ft": "REFUSED", "cat": "Ranking / Top-k", "q": "Calculate the \"musical diversity score\" for each artist based on the variance of their track features (energy, danceability, valence). Which artist has the highest diversity?", "gt": "David Davis 0.126", "prompt": "Simple (Zero-shot)", "ga": "The answer is: The provided document does not contain information regarding track features such as energy, danceability, or valence, nor does it provide a \"musical diversity score\" for the artists listed. Therefore, it is not possible to calculate these scores or determine which artist has the highe...", "na": "The answer is: The provided context does not contain track-level audio features such as energy, danceability, or valence needed to calculate a musical diversity score. The dataset includes artist, album, label, award, and chart information, but lacks the specific track feature data required for this...", "ma": "The answer is: The required data to calculate the musical diversity score (variance of track features like energy, danceability, and valence) is not provided in the context.", "gc": 0, "nc": 0, "mc": 0, "ge": 0, "ne": 0, "me": 0}, {"qid": "S2_Q015", "ds": "music_structured", "diff": "extremely hard", "ft": "WRONG", "cat": "Conditional filtering / Statistical outlier handling", "q": "Identify \"overperforming\" artists: those whose award count is disproportionately high relative to their album count and popularity score.", "gt": "Ortegas 12.00 awards/album", "prompt": "Simple (Zero-shot)", "ga": "The answer is: Based on the provided dataset, ART_0437 is the most prominent \"overperforming\" artist. While the dataset lists a single entry for this artist in the Artists table, they are associated with seven distinct awards (AWD_0081, AWD_0382, AWD_0304, AWD_0286, AWD_0041, AWD_0476, and AWD_0043)...", "na": "The user wants to identify \"overperforming\" artists based on the context provided. The context includes three datasets: Record Labels, Artists, and Awards (and Charts, but only 1 record). The question asks for artists whose award count is disproportionately high relative to their album count and pop...", "ma": "The answer is: The context does not contain information about album counts or award counts for artists, which are necessary to identify \"overperforming\" artists based on the given criteria.", "gc": 0, "nc": 0, "mc": 0, "ge": 0, "ne": 0, "me": 0}, {"qid": "S2_Q017", "ds": "music_structured", "diff": "extremely hard", "ft": "WRONG", "cat": "Ranking / Top-k", "q": "Calculate the \"genre dominance score\" for each genre based on artist count, album count, and average popularity. Which genre is most dominant?", "gt": "Rock 0.9127", "prompt": "Simple (Zero-shot)", "ga": "The answer is: To calculate the genre dominance score, we first aggregate the data:\n\n*   **Classical:** 19 artists, 3 albums, average popularity 0.031. Score: 19 + 3 + 0.031 = 22.031\n*   **Country:** 11 artists, 3 albums, average popularity 0.035. Score: 11 + 3 + 0.035 = 14.035\n*   **Electronic:** 1...", "na": "The user wants me to calculate a \"genre dominance score\" for each genre based on artist count, album count, and average popularity, then determine which genre is most dominant. I need to analyze the provided data.\n\nFirst, I need to understand the data structure. There are several tables:\n1. Record L...", "ma": "", "gc": 0, "nc": 0, "mc": 0, "ge": 0, "ne": 0, "me": 1}, {"qid": "S2_Q018", "ds": "music_structured", "diff": "extremely hard", "ft": "WRONG", "cat": "Multi-hop filtering / Subquery aggregation", "q": "Identify \"prolific years\" for the music industry by counting albums released per year and calculating the year-over-year growth rate.", "gt": "2011 400% 2008 300% 2000 200%", "prompt": "Simple (Zero-shot)", "ga": "The answer is: To identify the prolific years, we count the albums released per year: 1998 (1), 2000 (1), 2002 (1), 2003 (1), 2008 (1), 2011 (2), 2012 (1), 2014 (2), 2015 (2), 2016 (2), 2017 (3), 2018 (1), 2019 (1), 2020 (2), 2021 (2), 2022 (5), 2023 (4), and 2024 (7). The year-over-year growth rate...", "na": "The user is asking me to identify \"prolific years\" for the music industry by counting albums released per year and calculating the year-over-year growth rate, based on the provided context.\n\nLooking at the context, I can see there's a dataset with multiple tables: Record Labels, Artists, Albums, etc...", "ma": "The answer is: Information not available in the provided context.", "gc": 0, "nc": 0, "mc": 0, "ge": 0, "ne": 0, "me": 0}, {"qid": "S2_Q020", "ds": "music_structured", "diff": "extremely hard", "ft": "WRONG", "cat": "Multi-hop filtering / Subquery aggregation", "q": "Identify \"hidden gem\" tracks: high audio quality features (low speechiness, high instrumentalness) from less popular artists (popularity < 0.5) that have not been heavily streamed.", "gt": "NO RESULTS", "prompt": "Simple (Zero-shot)", "ga": "The answer is: Based on the provided data, tracks that exhibit high audio quality features (low speechiness and high instrumentalness) from artists with a popularity score below 0.5 include TRK_00470 (speechiness 0.079, instrumentalness 0.514), TRK_00980 (speechiness 0.106, instrumentalness 0.425), ...", "na": "The user wants to identify \"hidden gem\" tracks based on specific criteria:\n1. High audio quality features: low speechiness, high instrumentalness.\n2. From less popular artists: popularity < 0.5.\n3. Not heavily streamed (though streaming data is limited in the context, I need to infer from available ...", "ma": "", "gc": 0, "nc": 0, "mc": 0, "ge": 0, "ne": 0, "me": 1}];
+
+var DSL={tathybrid:'TatHybrid',finhybrid:'FinHybrid',music_structured:'Music Structured'};
+var DC={hard:'bh',medium:'bm','extremely hard':'bx'};
+var FC={WRONG:'bw',REFUSED:'br','NO ANSWER':'bn'};
+var MC={gemini:{n:'Gemini Flash-Lite',c:'#2a78d6',k:'g'},
+        nemotron:{n:'Nemotron-550B',c:'#1baf7a',k:'n'},
+        mistral:{n:'Mistral Small-2603',c:'#eda100',k:'m'}};
+var GD={color:'#898781',font:{size:10}};
+var GR={color:'rgba(193,192,185,.55)'};
+
+function dot(c,e){return '<span class="dot '+(c?'dok':e?'dem':'der')+'"></span>';}
+function sb(c,e){
+  if(c) return '<span class="b bok">&#10003; Correct</span>';
+  if(e) return '<span class="b bem">Empty</span>';
+  return '<span class="b ber">&#10007; Wrong</span>';
+}
+function esc(s){return String(s).replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;');}
+function tr(s,n){n=n||100;return s&&s.length>n?s.slice(0,n)+'...':s||'';}
+
+function renderKPIs(){
+  var n=DATA.length;
+  var gA=DATA.filter(function(d){return !d.ge;}).length;
+  var nA=DATA.filter(function(d){return !d.ne;}).length;
+  var mA=DATA.filter(function(d){return !d.me;}).length;
+  var gC=DATA.filter(function(d){return d.gc;}).length;
+  var nC=DATA.filter(function(d){return d.nc;}).length;
+  var mC=DATA.filter(function(d){return d.mc;}).length;
+  var af=DATA.filter(function(d){return !d.gc&&!d.nc&&!d.mc;}).length;
+  var kpis=[
+    {v:n,        l:'Total Questions', cls:'kt'},
+    {v:gA+'/'+n, l:'Gemini Answered', cls:'kg'},
+    {v:nA+'/'+n, l:'Nemotron Answered',cls:'kn'},
+    {v:mA+'/'+n, l:'Mistral Answered', cls:'km'},
+    {v:gC+'/'+n, l:'Gemini Correct',   cls:'kg'},
+    {v:nC+'/'+n, l:'Nemotron Correct', cls:'kn'},
+    {v:mC+'/'+n, l:'Mistral Correct',  cls:'km'},
+    {v:af,       l:'Failed All 3',     cls:'kf'},
+  ];
+  document.getElementById('kpiRow').innerHTML=kpis.map(function(k){
+    return '<div class="kpi '+k.cls+'"><div class="v">'+k.v+'</div><div class="l">'+k.l+'</div></div>';
+  }).join('');
+}
+
+function mkChart(id,type,data,opts){
+  var base={
+    responsive:true,maintainAspectRatio:false,
+    plugins:{legend:{labels:{color:'#898781',font:{size:11},boxWidth:12}}},
+    scales:{x:{ticks:GD,grid:GR},y:{ticks:GD,grid:GR}}
+  };
+  if(opts) Object.keys(opts).forEach(function(k){base[k]=opts[k];});
+  return new Chart(document.getElementById(id),{type:type,data:data,options:base});
+}
+
+function renderCharts(){
+  var n=DATA.length;
+  var ML=['Gemini Flash-Lite','Nemotron-550B','Mistral Small-2603'];
+  var MC2=['#2a78d6cc','#1baf7acc','#eda100cc'];
+
+  mkChart('cAR','bar',{
+    labels:ML,
+    datasets:[
+      {label:'Answered %',data:[
+        parseFloat((DATA.filter(function(d){return !d.ge;}).length/n*100).toFixed(1)),
+        parseFloat((DATA.filter(function(d){return !d.ne;}).length/n*100).toFixed(1)),
+        parseFloat((DATA.filter(function(d){return !d.me;}).length/n*100).toFixed(1))
+      ],backgroundColor:MC2,borderRadius:4,barThickness:20},
+      {label:'Empty %',data:[
+        parseFloat((DATA.filter(function(d){return d.ge;}).length/n*100).toFixed(1)),
+        parseFloat((DATA.filter(function(d){return d.ne;}).length/n*100).toFixed(1)),
+        parseFloat((DATA.filter(function(d){return d.me;}).length/n*100).toFixed(1))
+      ],backgroundColor:['rgba(137,135,129,.35)','rgba(137,135,129,.35)','rgba(137,135,129,.35)'],borderRadius:4,barThickness:20}
+    ]
+  },{scales:{x:{ticks:GD,grid:GR},y:{max:105,ticks:{callback:function(v){return v+'%';},color:'#898781'},grid:GR}}});
+
+  mkChart('cAcc','bar',{
+    labels:ML,
+    datasets:[{label:'Correct %',data:[
+      parseFloat((DATA.filter(function(d){return d.gc;}).length/n*100).toFixed(1)),
+      parseFloat((DATA.filter(function(d){return d.nc;}).length/n*100).toFixed(1)),
+      parseFloat((DATA.filter(function(d){return d.mc;}).length/n*100).toFixed(1))
+    ],backgroundColor:MC2,borderRadius:4,barThickness:20}]
+  },{scales:{x:{ticks:GD,grid:GR},y:{max:10,ticks:{callback:function(v){return v+'%';},color:'#898781'},grid:GR}}});
+
+  var cats=[...new Set(DATA.map(function(d){return d.cat;}))].sort();
+  mkChart('cCat','bar',{
+    labels:cats,
+    datasets:[
+      {label:'Gemini Failed', data:cats.map(function(c){return DATA.filter(function(d){return d.cat===c&&!d.gc;}).length;}),backgroundColor:'#2a78d688',borderRadius:3,barThickness:11},
+      {label:'Nemotron Failed',data:cats.map(function(c){return DATA.filter(function(d){return d.cat===c&&!d.nc;}).length;}),backgroundColor:'#1baf7a88',borderRadius:3,barThickness:11},
+      {label:'Mistral Failed', data:cats.map(function(c){return DATA.filter(function(d){return d.cat===c&&!d.mc;}).length;}),backgroundColor:'#eda10088',borderRadius:3,barThickness:11}
+    ]
+  },{indexAxis:'y',scales:{x:{ticks:GD,grid:GR},y:{ticks:{color:'#898781',font:{size:9}},grid:GR}}});
+
+  var dsets=['tathybrid','finhybrid','music_structured'];
+  mkChart('cDs','doughnut',{
+    labels:dsets.map(function(d){return DSL[d];}),
+    datasets:[{data:dsets.map(function(d){return DATA.filter(function(r){return r.ds===d;}).length;}),
+      backgroundColor:['#4a3aa7','#1baf7a','#eda100'],borderWidth:0,hoverOffset:8}]
+  },{scales:{},plugins:{legend:{position:'right',labels:{color:'#898781',font:{size:11},boxWidth:12}}}});
+
+  var fts=['WRONG','REFUSED','NO ANSWER'];
+  mkChart('cFT','doughnut',{
+    labels:fts,
+    datasets:[{data:fts.map(function(f){return DATA.filter(function(d){return d.ft===f;}).length;}),
+      backgroundColor:['#d03b3bcc','#a04000cc','#52514ecc'],borderWidth:0,hoverOffset:8}]
+  },{scales:{},plugins:{legend:{position:'right',labels:{color:'#898781',font:{size:11},boxWidth:12}}}});
+
+  var diffs=['hard','medium','extremely hard'];
+  mkChart('cDiff','bar',{
+    labels:diffs,
+    datasets:[
+      {label:'Gemini Failed', data:diffs.map(function(d){return DATA.filter(function(r){return r.diff===d&&!r.gc;}).length;}),backgroundColor:'#2a78d699',borderRadius:4,barThickness:20},
+      {label:'Nemotron Failed',data:diffs.map(function(d){return DATA.filter(function(r){return r.diff===d&&!r.nc;}).length;}),backgroundColor:'#1baf7a99',borderRadius:4,barThickness:20},
+      {label:'Mistral Failed', data:diffs.map(function(d){return DATA.filter(function(r){return r.diff===d&&!r.mc;}).length;}),backgroundColor:'#eda10099',borderRadius:4,barThickness:20}
+    ]
+  },{scales:{x:{ticks:GD,grid:GR},y:{ticks:GD,grid:GR}}});
+}
+
+function populateCats(){
+  var cats=[...new Set(DATA.map(function(d){return d.cat;}))].sort();
+  var sel=document.getElementById('fCat');
+  cats.forEach(function(c){var o=document.createElement('option');o.value=c;o.textContent=c;sel.appendChild(o);});
+}
+
+var filtered=DATA.slice();
+
+function mCell(d,k){
+  var c=d[k+'c'],e=d[k+'e'];
+  var raw=d[k+'a']||'';
+  var preview=esc(tr(raw.replace(/The answer is:\s*/i,'').replace(/\[Assistant\]:\s*/i,''),95));
+  var uid=k+'_'+d.qid.slice(-8);
+  return '<div class="mc">'
+    +'<div class="ms">'+dot(c,e)+' '+sb(c,e)+'</div>'
+    +(raw?'<div class="ap" id="ap'+uid+'">'+preview+'</div>'
+         +'<button class="exb" onclick="event.stopPropagation();tog(this)" data-target="ap'+uid+'">&#9662; more</button>'
+        :'<span style="color:var(--mut);font-size:.67rem">&mdash;</span>')
+    +'</div>';
+}
+
+function tog(btn){
+  var el=document.getElementById(btn.dataset.target);
+  if(!el) return;
+  el.classList.toggle('open');
+  btn.innerHTML=el.classList.contains('open')?'&#9652; less':'&#9662; more';
+}
+
+function renderTable(){
+  var tb=document.getElementById('tb');
+  document.getElementById('rc').textContent=filtered.length+' of '+DATA.length+' questions';
+  if(!filtered.length){
+    tb.innerHTML='<tr><td colspan="10" style="text-align:center;padding:36px;color:var(--mut)">No questions match the current filters.</td></tr>';
+    return;
+  }
+  tb.innerHTML=filtered.map(function(d,i){
+    return '<tr onclick="openM(this)" data-qid="'+esc(d.qid)+'">'
+      +'<td style="color:var(--mut);font-size:.68rem">'+(i+1)+'</td>'
+      +'<td style="min-width:180px;max-width:280px;font-size:.75rem;line-height:1.5">'+esc(d.q)+'</td>'
+      +'<td><span class="chip">'+esc(d.cat)+'</span></td>'
+      +'<td><span class="dsbadge">'+(DSL[d.ds]||d.ds)+'</span></td>'
+      +'<td><span class="b '+(DC[d.diff]||'')+'">'+d.diff+'</span></td>'
+      +'<td><span class="pbadge">'+d.prompt+'</span></td>'
+      +'<td style="font-family:monospace;font-size:.7rem;color:var(--ok);max-width:100px;word-break:break-all">'+esc(d.gt)+'</td>'
+      +'<td style="min-width:160px" onclick="event.stopPropagation()">'+mCell(d,'g')+'</td>'
+      +'<td style="min-width:160px" onclick="event.stopPropagation()">'+mCell(d,'n')+'</td>'
+      +'<td style="min-width:160px" onclick="event.stopPropagation()">'+mCell(d,'m')+'</td>'
+      +'</tr>';
+  }).join('');
+}
+
+function filt(){
+  var ds=document.getElementById('fDs').value;
+  var cat=document.getElementById('fCat').value;
+  var diff=document.getElementById('fDiff').value;
+  var mod=document.getElementById('fMod').value;
+  var q=document.getElementById('fsearch').value.toLowerCase();
+  filtered=DATA.filter(function(d){
+    if(ds   && d.ds!==ds)     return false;
+    if(cat  && d.cat!==cat)   return false;
+    if(diff && d.diff!==diff) return false;
+    if(mod==='all3' && (d.gc||d.nc||d.mc)) return false;
+    if(mod==='gfail' && d.gc) return false;
+    if(mod==='nfail' && d.nc) return false;
+    if(mod==='mfail' && d.mc) return false;
+    if(mod==='anyok' && !d.gc&&!d.nc&&!d.mc) return false;
+    if(q && d.q.toLowerCase().indexOf(q)<0 && d.cat.toLowerCase().indexOf(q)<0) return false;
+    return true;
+  });
+  renderTable();
+}
+
+function resetF(){
+  ['fDs','fCat','fDiff','fMod'].forEach(function(id){document.getElementById(id).value='';});
+  document.getElementById('fsearch').value='';
+  filtered=DATA.slice();
+  renderTable();
+}
+
+function openM(tr){
+  var d=DATA.find(function(x){return x.qid===tr.dataset.qid;});
+  if(!d) return;
+  document.getElementById('mT').textContent=d.q;
+  var mnames={g:'Gemini Flash-Lite',n:'Nemotron-550B',m:'Mistral Small-2603'};
+  var mcolors={g:'#2a78d6',n:'#1baf7a',m:'#eda100'};
+  document.getElementById('mB').innerHTML=
+    '<div class="mtags">'
+      +'<span class="chip">'+esc(d.cat)+'</span>'
+      +'<span class="b '+(DC[d.diff]||'')+'">'+d.diff+'</span>'
+      +'<span class="b '+(FC[d.ft]||'')+'">'+d.ft+'</span>'
+      +'<span class="dsbadge">'+(DSL[d.ds]||d.ds)+'</span>'
+      +'<span class="pbadge">'+d.prompt+'</span>'
+    +'</div>'
+    +'<div class="msec"><h4>Ground Truth</h4>'
+    +'<div class="gtbox">'+esc(d.gt||'&mdash;')+'</div></div>'
+    +['g','n','m'].map(function(k){
+      var c=d[k+'c'],e=d[k+'e'],ans=d[k+'a']||'(no response)';
+      return '<div class="mblock">'
+        +'<div class="mbn" style="color:'+mcolors[k]+'">'+dot(c,e)+' '+mnames[k]+' &mdash; '+(c?'&#10003; Correct':e?'Empty / Refused':'&#10007; Wrong')+'</div>'
+        +'<div class="mbt">'+esc(ans)+'</div>'
+        +'</div>';
+    }).join('');
+  document.getElementById('modal').classList.add('open');
+}
+
+function closeMBG(e){if(e.target.id==='modal') document.getElementById('modal').classList.remove('open');}
+
+function dlPDF(){
+  html2pdf().set({
+    margin:[8,8,8,8],filename:'Sprint4_Benchmark_Report.pdf',
+    image:{type:'jpeg',quality:.88},
+    html2canvas:{scale:1.5,useCORS:true,backgroundColor:'#fcfcfb'},
+    jsPDF:{unit:'mm',format:'a3',orientation:'landscape'}
+  }).from(document.getElementById('rpt')).save();
+}
+
+renderKPIs();
+renderCharts();
+populateCats();
+renderTable();
+</script>
+</body>
+</html>
