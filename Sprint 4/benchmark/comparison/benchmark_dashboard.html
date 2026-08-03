@@ -61,10 +61,7 @@ main{padding:16px 2%;max-width:100%;margin:0 auto}
 .cc{background:var(--surf);border:1px solid var(--bdr);border-radius:var(--r);padding:18px;position:relative}
 .cc h3{font-size:.7rem;font-weight:600;color:var(--mut);text-transform:uppercase;
   letter-spacing:.7px;margin-bottom:12px}
-.cc .dl-btn{position:absolute;top:12px;right:12px;background:none;border:1px solid var(--bdr);
-  border-radius:5px;padding:3px 8px;font-size:.62rem;color:var(--mut);cursor:pointer;
-  font-family:inherit;transition:border-color .15s,color .15s}
-.cc .dl-btn:hover{border-color:var(--acc);color:var(--acc)}
+.cc[onclick]:hover{border-color:var(--acc);box-shadow:0 2px 12px rgba(74,58,167,.08)}
 .cw{position:relative;height:240px}
 
 /* Filters */
@@ -119,7 +116,18 @@ tr:hover td{background:rgba(74,58,167,.04);cursor:pointer}
 .exb{color:var(--acc);font-size:.64rem;cursor:pointer;background:none;
   border:none;padding:0;font-family:inherit;margin-top:1px}
 
-/* Modal */
+/* Chart preview modal */
+.cmbg{display:none;position:fixed;inset:0;background:rgba(0,0,0,.55);
+  z-index:300;align-items:center;justify-content:center;padding:24px}
+.cmbg.open{display:flex}
+.cmdl{background:#fcfcfb;border-radius:16px;padding:28px 32px;
+  width:min(900px,96vw);box-shadow:0 12px 48px rgba(0,0,0,.18);
+  display:flex;flex-direction:column;gap:16px}
+.cmhdr{display:flex;justify-content:space-between;align-items:center}
+.cmhdr h2{font-size:1rem;font-weight:700;color:#0b0b0b}
+.cmhdr-r{display:flex;gap:8px;align-items:center}
+.cw-lg{position:relative;height:480px;width:100%}
+
 .mbg{display:none;position:fixed;inset:0;background:rgba(0,0,0,.45);
   z-index:200;align-items:center;justify-content:center;padding:16px}
 .mbg.open{display:flex}
@@ -170,12 +178,12 @@ tr:hover td{background:rgba(74,58,167,.04);cursor:pointer}
 
 <div class="sec-title">Performance Overview <span>simple zero-shot prompt across all 76 failure questions</span></div>
 <div class="chart-grid">
-  <div class="cc"><h3>Answer Rate by Model</h3><button class="dl-btn" onclick="dlChart('cAR','Answer_Rate')">&#8595; PNG</button><div class="cw"><canvas id="cAR"></canvas></div></div>
-  <div class="cc"><h3>Accuracy (Soft-Match)</h3><button class="dl-btn" onclick="dlChart('cAcc','Accuracy')">&#8595; PNG</button><div class="cw"><canvas id="cAcc"></canvas></div></div>
-  <div class="cc"><h3>Failures by Category</h3><button class="dl-btn" onclick="dlChart('cCat','Failures_by_Category')">&#8595; PNG</button><div class="cw"><canvas id="cCat"></canvas></div></div>
-  <div class="cc"><h3>Questions by Dataset</h3><button class="dl-btn" onclick="dlChart('cDs','Questions_by_Dataset')">&#8595; PNG</button><div class="cw"><canvas id="cDs"></canvas></div></div>
+  <div class="cc" onclick="openChartModal('cAR','Answer Rate by Model')" style="cursor:pointer"><h3>Answer Rate by Model</h3><div class="cw"><canvas id="cAR"></canvas></div></div>
+  <div class="cc"><h3>Accuracy (Soft-Match)</h3><div class="cw"><canvas id="cAcc"></canvas></div></div>
+  <div class="cc" onclick="openChartModal('cCat','Failures by Category')" style="cursor:pointer"><h3>Failures by Category</h3><div class="cw"><canvas id="cCat"></canvas></div></div>
+  <div class="cc" onclick="openChartModal('cDs','Questions by Dataset')" style="cursor:pointer"><h3>Questions by Dataset</h3><div class="cw"><canvas id="cDs"></canvas></div></div>
   <div class="cc"><h3>Failure Type Split</h3><div class="cw"><canvas id="cFT"></canvas></div></div>
-  <div class="cc"><h3>Performance by Difficulty</h3><button class="dl-btn" onclick="dlChart('cDiff','Performance_by_Difficulty')">&#8595; PNG</button><div class="cw"><canvas id="cDiff"></canvas></div></div>
+  <div class="cc" onclick="openChartModal('cDiff','Performance by Difficulty')" style="cursor:pointer"><h3>Performance by Difficulty</h3><div class="cw"><canvas id="cDiff"></canvas></div></div>
 </div>
 
 <div class="sec-title">Question-Level Results <span>click any row to see full answers</span></div>
@@ -233,7 +241,21 @@ tr:hover td{background:rgba(74,58,167,.04);cursor:pointer}
 
 </main>
 
-<div class="mbg" id="modal" onclick="closeMBG(event)">
+<!-- Chart preview modal -->
+<div class="cmbg" id="chartModal" onclick="closeChartModal(event)">
+  <div class="cmdl">
+    <div class="cmhdr">
+      <h2 id="cmTitle"></h2>
+      <div class="cmhdr-r">
+        <button class="btn" onclick="dlChartModal()">&#8595; Download PNG</button>
+        <button class="mclose" onclick="document.getElementById('chartModal').classList.remove('open')" style="font-size:1.3rem;margin-left:4px">&#10005;</button>
+      </div>
+    </div>
+    <div class="cw-lg"><canvas id="cmCanvas"></canvas></div>
+  </div>
+</div>
+
+<!-- Data row modal -->
   <div class="mdl">
     <div class="mhdr">
       <h2 id="mT"></h2>
@@ -291,20 +313,76 @@ function renderKPIs(){
 Chart.register(ChartDataLabels);
 
 var CHARTS={};
+var CHART_CONFIGS={};
+var cmChart=null;
 
-function dlChart(id,name){
-  var chart=CHARTS[id];
-  if(!chart) return;
-  var canvas=document.getElementById(id);
-  var w=canvas.width, h=canvas.height;
+function openChartModal(id,title){
+  var cfg=CHART_CONFIGS[id];
+  if(!cfg) return;
+  document.getElementById('cmTitle').textContent=title;
+
+  // destroy previous
+  if(cmChart){cmChart.destroy();cmChart=null;}
+
+  // deep-clone config and scale up fonts
+  var c=JSON.parse(JSON.stringify(cfg));
+  var scale=2.2;
+  function scaleFont(obj){
+    if(!obj||typeof obj!=='object') return;
+    if(obj.font&&obj.font.size) obj.font.size=Math.round(obj.font.size*scale);
+    Object.values(obj).forEach(function(v){if(v&&typeof v==='object') scaleFont(v);});
+  }
+  scaleFont(c.options);
+
+  // restore callback functions lost in JSON clone
+  if(id==='cAR'){
+    c.options.scales.y.ticks.callback=function(v){return v+'%';};
+    c.options.plugins.datalabels.formatter=function(v){return v>0?v+'%':'';};
+  }
+  if(id==='cAcc'){
+    c.options.scales.y.ticks.callback=function(v){return v+'%';};
+    c.options.plugins.datalabels.formatter=function(v){return v>0?v+'%':'';};
+  }
+  if(id==='cCat'){
+    c.options.plugins.datalabels.formatter=function(v){return v>0?v:'';};
+  }
+  if(id==='cDs'){
+    c.options.plugins.datalabels.formatter=function(v,ctx){
+      var total=ctx.chart.data.datasets[0].data.reduce(function(a,b){return a+b;},0);
+      return v+'\n('+Math.round(v/total*100)+'%)';
+    };
+  }
+  if(id==='cDiff'){
+    c.options.plugins.datalabels.formatter=function(v){return v>0?v:'';};
+  }
+
+  c.options.responsive=true;
+  c.options.maintainAspectRatio=false;
+  // more padding for breathing room
+  c.options.layout={padding:{top:32,right:32,bottom:16,left:16}};
+
+  var canvas=document.getElementById('cmCanvas');
+  cmChart=new Chart(canvas,c);
+  document.getElementById('chartModal').classList.add('open');
+}
+
+function closeChartModal(e){
+  if(e.target.id==='chartModal'){
+    document.getElementById('chartModal').classList.remove('open');
+  }
+}
+
+function dlChartModal(){
+  if(!cmChart) return;
+  var canvas=document.getElementById('cmCanvas');
   var tmp=document.createElement('canvas');
-  tmp.width=w*3; tmp.height=h*3;
+  tmp.width=canvas.width*2; tmp.height=canvas.height*2;
   var ctx=tmp.getContext('2d');
   ctx.fillStyle='#fcfcfb';
   ctx.fillRect(0,0,tmp.width,tmp.height);
   ctx.drawImage(canvas,0,0,tmp.width,tmp.height);
   var a=document.createElement('a');
-  a.download=name+'.png';
+  a.download=document.getElementById('cmTitle').textContent.replace(/\s+/g,'_')+'.png';
   a.href=tmp.toDataURL('image/png');
   a.click();
 }
@@ -319,6 +397,8 @@ function mkChart(id,type,data,opts){
     scales:{x:{ticks:GD,grid:GR},y:{ticks:GD,grid:GR}}
   };
   if(opts) Object.keys(opts).forEach(function(k){base[k]=opts[k];});
+  // store full config for modal re-render
+  CHART_CONFIGS[id]={type:type,data:JSON.parse(JSON.stringify(data)),options:JSON.parse(JSON.stringify(base))};
   var chart=new Chart(document.getElementById(id),{type:type,data:data,options:base});
   CHARTS[id]=chart;
   return chart;
