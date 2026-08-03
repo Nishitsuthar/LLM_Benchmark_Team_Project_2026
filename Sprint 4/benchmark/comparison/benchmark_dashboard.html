@@ -6,6 +6,7 @@
 <title>LLM Benchmark Dashboard — Sprint 4</title>
 <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet"/>
 <script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.0/dist/chart.umd.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/chartjs-plugin-datalabels@2.2.0/dist/chartjs-plugin-datalabels.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/html2pdf.js/0.10.1/html2pdf.bundle.min.js"></script>
 <style>
 :root{
@@ -57,9 +58,13 @@ main{padding:16px 2%;max-width:100%;margin:0 auto}
 
 /* Charts */
 .chart-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(340px,1fr));gap:16px;margin-bottom:24px}
-.cc{background:var(--surf);border:1px solid var(--bdr);border-radius:var(--r);padding:18px}
+.cc{background:var(--surf);border:1px solid var(--bdr);border-radius:var(--r);padding:18px;position:relative}
 .cc h3{font-size:.7rem;font-weight:600;color:var(--mut);text-transform:uppercase;
   letter-spacing:.7px;margin-bottom:12px}
+.cc .dl-btn{position:absolute;top:12px;right:12px;background:none;border:1px solid var(--bdr);
+  border-radius:5px;padding:3px 8px;font-size:.62rem;color:var(--mut);cursor:pointer;
+  font-family:inherit;transition:border-color .15s,color .15s}
+.cc .dl-btn:hover{border-color:var(--acc);color:var(--acc)}
 .cw{position:relative;height:240px}
 
 /* Filters */
@@ -165,12 +170,12 @@ tr:hover td{background:rgba(74,58,167,.04);cursor:pointer}
 
 <div class="sec-title">Performance Overview <span>simple zero-shot prompt across all 76 failure questions</span></div>
 <div class="chart-grid">
-  <div class="cc"><h3>Answer Rate by Model</h3><div class="cw"><canvas id="cAR"></canvas></div></div>
-  <div class="cc"><h3>Accuracy (Soft-Match)</h3><div class="cw"><canvas id="cAcc"></canvas></div></div>
-  <div class="cc"><h3>Failures by Category</h3><div class="cw"><canvas id="cCat"></canvas></div></div>
-  <div class="cc"><h3>Questions by Dataset</h3><div class="cw"><canvas id="cDs"></canvas></div></div>
+  <div class="cc"><h3>Answer Rate by Model</h3><button class="dl-btn" onclick="dlChart('cAR','Answer_Rate')">&#8595; PNG</button><div class="cw"><canvas id="cAR"></canvas></div></div>
+  <div class="cc"><h3>Accuracy (Soft-Match)</h3><button class="dl-btn" onclick="dlChart('cAcc','Accuracy')">&#8595; PNG</button><div class="cw"><canvas id="cAcc"></canvas></div></div>
+  <div class="cc"><h3>Failures by Category</h3><button class="dl-btn" onclick="dlChart('cCat','Failures_by_Category')">&#8595; PNG</button><div class="cw"><canvas id="cCat"></canvas></div></div>
+  <div class="cc"><h3>Questions by Dataset</h3><button class="dl-btn" onclick="dlChart('cDs','Questions_by_Dataset')">&#8595; PNG</button><div class="cw"><canvas id="cDs"></canvas></div></div>
   <div class="cc"><h3>Failure Type Split</h3><div class="cw"><canvas id="cFT"></canvas></div></div>
-  <div class="cc"><h3>Performance by Difficulty</h3><div class="cw"><canvas id="cDiff"></canvas></div></div>
+  <div class="cc"><h3>Performance by Difficulty</h3><button class="dl-btn" onclick="dlChart('cDiff','Performance_by_Difficulty')">&#8595; PNG</button><div class="cw"><canvas id="cDiff"></canvas></div></div>
 </div>
 
 <div class="sec-title">Question-Level Results <span>click any row to see full answers</span></div>
@@ -283,14 +288,40 @@ function renderKPIs(){
   }).join('');
 }
 
+Chart.register(ChartDataLabels);
+
+var CHARTS={};
+
+function dlChart(id,name){
+  var chart=CHARTS[id];
+  if(!chart) return;
+  var canvas=document.getElementById(id);
+  var w=canvas.width, h=canvas.height;
+  var tmp=document.createElement('canvas');
+  tmp.width=w*3; tmp.height=h*3;
+  var ctx=tmp.getContext('2d');
+  ctx.fillStyle='#fcfcfb';
+  ctx.fillRect(0,0,tmp.width,tmp.height);
+  ctx.drawImage(canvas,0,0,tmp.width,tmp.height);
+  var a=document.createElement('a');
+  a.download=name+'.png';
+  a.href=tmp.toDataURL('image/png');
+  a.click();
+}
+
 function mkChart(id,type,data,opts){
   var base={
     responsive:true,maintainAspectRatio:false,
-    plugins:{legend:{labels:{color:'#898781',font:{size:11},boxWidth:12}}},
+    plugins:{
+      legend:{labels:{color:'#898781',font:{size:11},boxWidth:12}},
+      datalabels:{display:false}
+    },
     scales:{x:{ticks:GD,grid:GR},y:{ticks:GD,grid:GR}}
   };
   if(opts) Object.keys(opts).forEach(function(k){base[k]=opts[k];});
-  return new Chart(document.getElementById(id),{type:type,data:data,options:base});
+  var chart=new Chart(document.getElementById(id),{type:type,data:data,options:base});
+  CHARTS[id]=chart;
+  return chart;
 }
 
 function renderCharts(){
@@ -312,7 +343,10 @@ function renderCharts(){
         parseFloat((DATA.filter(function(d){return d.me;}).length/n*100).toFixed(1))
       ],backgroundColor:['rgba(137,135,129,.35)','rgba(137,135,129,.35)','rgba(137,135,129,.35)'],borderRadius:4,barThickness:20}
     ]
-  },{scales:{x:{ticks:GD,grid:GR},y:{max:105,ticks:{callback:function(v){return v+'%';},color:'#898781'},grid:GR}}});
+  },{scales:{x:{ticks:GD,grid:GR},y:{max:105,ticks:{callback:function(v){return v+'%';},color:'#898781'},grid:GR}},
+    plugins:{datalabels:{color:'#52514e',font:{size:10,weight:'600'},anchor:'end',align:'top',
+      formatter:function(v){return v>0?v+'%':'';}},
+      legend:{labels:{color:'#898781',font:{size:11},boxWidth:12}}}});
 
   mkChart('cAcc','bar',{
     labels:ML,
@@ -331,14 +365,23 @@ function renderCharts(){
       {label:'Nemotron Failed',data:cats.map(function(c){return DATA.filter(function(d){return d.cat===c&&!d.nc;}).length;}),backgroundColor:'#1baf7a88',borderRadius:3,barThickness:11},
       {label:'Mistral Failed', data:cats.map(function(c){return DATA.filter(function(d){return d.cat===c&&!d.mc;}).length;}),backgroundColor:'#eda10088',borderRadius:3,barThickness:11}
     ]
-  },{indexAxis:'y',scales:{x:{ticks:GD,grid:GR},y:{ticks:{color:'#898781',font:{size:9}},grid:GR}}});
+  },{indexAxis:'y',scales:{x:{ticks:GD,grid:GR},y:{ticks:{color:'#898781',font:{size:9}},grid:GR}},
+    plugins:{datalabels:{color:'#52514e',font:{size:9,weight:'600'},anchor:'end',align:'right',
+      formatter:function(v){return v>0?v:'';}},
+      legend:{labels:{color:'#898781',font:{size:11},boxWidth:12}}}});
 
   var dsets=['tathybrid','finhybrid','music_structured'];
   mkChart('cDs','doughnut',{
     labels:dsets.map(function(d){return DSL[d];}),
     datasets:[{data:dsets.map(function(d){return DATA.filter(function(r){return r.ds===d;}).length;}),
       backgroundColor:['#4a3aa7','#1baf7a','#eda100'],borderWidth:0,hoverOffset:8}]
-  },{scales:{},plugins:{legend:{position:'right',labels:{color:'#898781',font:{size:11},boxWidth:12}}}});
+  },{scales:{},plugins:{
+    legend:{position:'right',labels:{color:'#898781',font:{size:11},boxWidth:12}},
+    datalabels:{color:'#fff',font:{size:12,weight:'700'},
+      formatter:function(v,ctx){
+        var total=ctx.chart.data.datasets[0].data.reduce(function(a,b){return a+b;},0);
+        return v+'\n('+Math.round(v/total*100)+'%)';
+      }}}});
 
   var fts=['WRONG','REFUSED','NO ANSWER'];
   mkChart('cFT','doughnut',{
@@ -355,7 +398,10 @@ function renderCharts(){
       {label:'Nemotron Failed',data:diffs.map(function(d){return DATA.filter(function(r){return r.diff===d&&!r.nc;}).length;}),backgroundColor:'#1baf7a99',borderRadius:4,barThickness:20},
       {label:'Mistral Failed', data:diffs.map(function(d){return DATA.filter(function(r){return r.diff===d&&!r.mc;}).length;}),backgroundColor:'#eda10099',borderRadius:4,barThickness:20}
     ]
-  },{scales:{x:{ticks:GD,grid:GR},y:{ticks:GD,grid:GR}}});
+  },{scales:{x:{ticks:GD,grid:GR},y:{ticks:GD,grid:GR}},
+    plugins:{datalabels:{color:'#52514e',font:{size:10,weight:'600'},anchor:'end',align:'top',
+      formatter:function(v){return v>0?v:'';}},
+      legend:{labels:{color:'#898781',font:{size:11},boxWidth:12}}}});
 }
 
 function populateCats(){
